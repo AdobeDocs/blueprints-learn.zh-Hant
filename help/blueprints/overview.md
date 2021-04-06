@@ -4,7 +4,7 @@ description: 數位體驗藍圖是可重複實施的，可解決策略和解決�
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 28915e33bffece1d365803db1b03c0460224dd32
+source-git-commit: 3f27f27159d9fb07124f289164dd85941ec58a25
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 * **[客戶活動中心藍圖](/help/blueprints/audience-activation/customer-activity.md)**
 
    *提供代理協助支援與銷售的內容。*
-* **[企業資料探索與報告藍圖](/help/blueprints/data-exploration/overview.md)**
+* **[企業資料探索與報告藍圖](/help/blueprints/data-insights/overview.md)**
 
    *對資料庫中的資料執行探索性查詢和分析。*
 * **[Customer Journey Analytics藍圖](/help/blueprints/customer-journey-analytics/overview.md)**
