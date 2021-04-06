@@ -5,10 +5,10 @@ user-guide-description: 藍圖是可重複實施的，可解決已建立的業�
 product: adobe experience platform
 role: 架構師、開發人員、商業從業人員
 translation-type: tm+mt
-source-git-commit: c867a2956363ae495492a8ad33fd6c2aee9f5f5c
+source-git-commit: 08b0a9e06b4a5cc1f411a3cab1cc23fa47325844
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform與應用程式](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform資料流](/help/blueprints/experience-platform/platform-data-flow.md)
-+ 受眾和個人檔案啟動{#audience-activation}
++ 受眾與個人檔案啟動{#audience-activation}
    + [概觀](/help/blueprints/audience-activation/overview.md)
    + [匿名Audience Activation](/help/blueprints/audience-activation/anonymous.md)
    + [線上／離線Audience Activation](/help/blueprints/audience-activation/online-offline.md)
