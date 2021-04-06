@@ -2,14 +2,14 @@
 title: 數位體驗藍圖
 description: 數位體驗藍圖是可重複實施的，可解決策略和解決現有的業務問題。 它們可加速實現價值，並提供快速的成功途徑。
 solution: Experience Platform
+exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 37ef1ea91b3cf83e9ab444fa0f907d4115d0fd24
+source-git-commit: 28915e33bffece1d365803db1b03c0460224dd32
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # 數位體驗藍圖
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 新增功能
 
-* **[客戶活動中心藍圖](/help/blueprints/customer-activity-hub/overview.md)**
+* **[客戶活動中心藍圖](/help/blueprints/audience-activation/customer-activity.md)**
 
    *提供代理協助支援與銷售的內容。*
 * **[企業資料探索與報告藍圖](/help/blueprints/data-exploration/overview.md)**
