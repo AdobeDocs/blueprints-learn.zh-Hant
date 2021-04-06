@@ -5,7 +5,7 @@ user-guide-description: 藍圖是可重複實施的，可解決已建立的業�
 product: adobe experience platform
 role: 架構師、開發人員、商業從業人員
 translation-type: tm+mt
-source-git-commit: af73c0fa0576cd836685824964bade10c0e0110d
+source-git-commit: c867a2956363ae495492a8ad33fd6c2aee9f5f5c
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform與應用程式](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform資料流](/help/blueprints/experience-platform/platform-data-flow.md)
-+ 描述檔與Audience Activation{#audience-activation}
++ 受眾和個人檔案啟動{#audience-activation}
    + [概觀](/help/blueprints/audience-activation/overview.md)
    + [匿名Audience Activation](/help/blueprints/audience-activation/anonymous.md)
    + [線上／離線Audience Activation](/help/blueprints/audience-activation/online-offline.md)
@@ -29,18 +29,16 @@ ht-degree: 2%
    + [概觀](/help/blueprints/customer-journey-analytics/overview.md)
    + [數位行為資料整合](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
    + [呼叫偏轉](/help/blueprints/customer-journey-analytics/call-deflect.md)
-+ 描述檔擴充的自訂資料科學{#data-science}
-   + [概觀](/help/blueprints/data-science/overview.md)
-+ 資料準備與擷取{#data-ingestion}
++ 資料收集與準備{#data-ingestion}
    + [概觀](/help/blueprints/data-ingestion/overview.md)
-+ 企業資料探索與報告{#data-exploration}
-   + [概觀](/help/blueprints/data-exploration/overview.md)
+   + [伺服器端企業資料收集](/help/blueprints/data-ingestion/server-side-collection.md)
++ 資料分析與自訂資料科學{#data-exploration}
+   + [概觀](/help/blueprints/data-insights/overview.md)
+   + [自訂資料科學以豐富個人檔案](/help/blueprints/data-insights/data-science.md)
 + 多通道消息協調{#multi-channel-message-orchestration}
    + [概觀](/help/blueprints/multi-channel-message-orchestration/overview.md)
    + [批次訊息與Experience Platform](/help/blueprints/multi-channel-message-orchestration/batch-messaging.md)
    + [觸發訊息與Experience Platform](/help/blueprints/multi-channel-message-orchestration/triggered-messaging.md)
-+ 伺服器端企業資料收集{#server-side-enterprise-data-collection}
-   + [概觀](/help/blueprints/server-side-enterprise-data-collection/overview.md)
 + 網頁與行動個人化{#web-personalization}
    + [概觀](/help/blueprints/web-personalization/overview.md)
    + [行為網頁個人化](/help/blueprints/web-personalization/behavioral.md)
