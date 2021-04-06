@@ -3,15 +3,14 @@ title: 線上／離線網路個人化藍本
 description: 將網路個人化與電子郵件及其他已知和匿名通道個人化同步。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
+exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: 9b6c220a515c5abae22b58fe33558d7d2fed375d
+source-git-commit: 2daba1965d6dce011bcce924f8e7471d7dfd42fb
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
-
-
 
 # 線上／離線網路個人化藍本
 
@@ -36,10 +35,10 @@ ht-degree: 0%
 
 ## 瓜德賴爾
 
-* 從Experience Platform到Audience Manager共用的區段在區段實現後幾分鐘內即可共用——不論是透過串流或批次評估方法。 AEP和約4小時之間的初始區段AAM設定同步，讓AEP區段會籍開始在設定檔中AAM實現。 在設定檔中AAM,AEP區段會籍即可透過Adobe Target取得相同的頁面個人化。
-* 請注意，對於在AEP和之間4小時區段設定同步內發生的區段實現AAM，這些區段實現將會在後續AAM的批次區段工作中，以「現有」區段的形式實現。
-* 從AEP批次區段共用——每天一次，或透過API手動啟動。 這些區段會籍一經實現，即可在幾分鐘內共AAM用至Target中，並可供相同／下一頁個人化。
-* 在約p95 5min內實現流分割。 一旦這些區段實現，它們就會在幾分AAM鐘內共用，並可在Target中供相同／下一頁個人化使用。
+* 從Experience Platform到Audience Manager共用的區段在區段實現後幾分鐘內即可共用——不論是透過串流或批次評估方法。 Experience Platform和Audience Manager之間的初始段配置同步約4小時，Experience Platform段成員將開始在Audience Manager配置檔案中實現。 一旦進入Audience Manager設定檔，Experience Platform區段會籍便可透過Adobe Target提供相同的頁面個人化。
+* 請注意，對於在4小時區段配置同步期間在Experience Platform和Audience Manager之間發生的區段實現，這些區段實現將作為「現有」區段在後續批段作業上實現。
+* 從Experience Platform分享批次區段——每天一次，或透過API手動啟動。 在這些區段會籍實現後，幾分鐘內即可共用給Audience Manager，並可在Target中進行相同／下一頁個人化。
+* 串流區段大約在5分鐘內實現。 一旦這些區段實現，它們就會在幾分鐘內共用給Audience Manager，並可在Target中進行相同／下一頁個人化。
 * 依預設，區段共用服務允許每個Adobe Analytics報表套裝共用最多75個對象。 如果客戶有Audience Manager授權，Adobe Analytics與Adobe Target或Audience Manager與Adobe Target之間可共用的受眾數目沒有限制。
 
 ## 實施先決條件
@@ -102,5 +101,3 @@ Web/Mobile個人化藍圖可使用傳統應用程式專用的SDK（例如AppMeas
 * [Adobe Experience Platform公司如何通過Journey Orchestration服務和移動消息服務供應商幫助客戶即時個性化其移動消息服務](https://medium.com/adobetech/how-adobe-experience-platform-helped-a-client-personalize-their-mobile-messaging-in-real-time-with-7d634aefa098)
 * [數秒即可劃分：Adobe Experience Platform如何讓即時客戶個人檔案成為現實](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)
 * [建立最佳線上體驗：利用查詢服務豐富統一的配置檔案](https://medium.com/adobetech/build-an-optimal-online-experience-enrich-unified-profile-with-query-service-8027c196ab33)
-
-
