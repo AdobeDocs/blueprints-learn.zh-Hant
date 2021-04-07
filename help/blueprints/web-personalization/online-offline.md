@@ -1,18 +1,18 @@
 ---
-title: 線上／離線網路個人化藍本
+title: 線上／離線網路個人化藍圖
 description: 將網路個人化與電子郵件及其他已知和匿名通道個人化同步。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: 2daba1965d6dce011bcce924f8e7471d7dfd42fb
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
 
 ---
 
-# 線上／離線網路個人化藍本
+# 線上／離線網路個人化藍圖
 
 將網路個人化與電子郵件及其他已知和匿名通道個人化同步。
 
