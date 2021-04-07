@@ -3,12 +3,12 @@ user-guide-title: 數位體驗藍圖
 breadcrumb-title: '藍圖 '
 user-guide-description: 藍圖是可重複實施的，可解決已建立的業務問題，並包含體系結構圖、技術考量和相關文檔連結。
 product: adobe experience platform
-role: 架構師、開發人員、商業從業人員
+role: Architect, Developer, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 08b0a9e06b4a5cc1f411a3cab1cc23fa47325844
+source-git-commit: f5d8b3fea11df0ffaeb59f0b53e93d76426ef252
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '120'
+ht-degree: 2%
 
 ---
 
@@ -31,9 +31,11 @@ ht-degree: 0%
    + [呼叫偏轉](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + 資料收集與準備{#data-ingestion}
    + [概觀](/help/blueprints/data-ingestion/overview.md)
+   + [資料擷取與準備以Experience Platform](/help/blueprints/data-ingestion/ingestion.md)
    + [伺服器端企業資料收集](/help/blueprints/data-ingestion/server-side-collection.md)
-+ 資料分析與自訂資料科學{#data-exploration}
++ 資料分析、智慧與AI/ML{#data-exploration}
    + [概觀](/help/blueprints/data-insights/overview.md)
+   + [資料分析與智慧](/help/blueprints/data-insights/analysis.md)
    + [自訂資料科學以豐富個人檔案](/help/blueprints/data-insights/data-science.md)
 + 多通道消息協調{#multi-channel-message-orchestration}
    + [概觀](/help/blueprints/multi-channel-message-orchestration/overview.md)
