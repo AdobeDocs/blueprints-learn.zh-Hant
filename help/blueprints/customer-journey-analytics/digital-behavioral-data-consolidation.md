@@ -1,18 +1,18 @@
 ---
-title: 數位行為資料整合方案
+title: 數位行為資料整合藍圖
 description: 分析客戶在整個客戶歷程中的互動並從中獲取見解。
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
+exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
-
-# 數位行為資料整合方案
+# 數位行為資料整合藍圖
 
 透過統一各種網路、行動裝置和離線屬性的資料，以單一的整合檢視跨不同通道的客戶行為。
 
@@ -82,7 +82,3 @@ ht-degree: 0%
 * [Customer Journey Analytics產品說明](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html)
 * [Customer Journey Analytics檔案](https://experienceleague.adobe.com/docs/customer-journey-analytics.html)
 * [Customer Journey Analytics教學課程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html)
-
-
-
-
