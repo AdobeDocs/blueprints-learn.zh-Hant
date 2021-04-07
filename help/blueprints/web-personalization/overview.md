@@ -1,25 +1,26 @@
 ---
-title: 網頁與行動個人化藍圖
+title: 網路與行動個人化
 description: 透過即時客戶個人檔案提供個人化的網頁和行動內容。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
 thumbnail: null
+exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-# 網路與行動個人化藍圖
+# 網路與行動個人化
 
 
-Web和行動個人化藍圖可解決在多個應用程式中使用受眾細分，以個人化和最佳化客戶體驗的能力。 您可以使用客戶行為、人口統計、忠誠度等級和先前交易來個人化版面、行動要求和內容。
+Web和Mobile Personalization可解決在多個應用程式中使用受眾細分來個人化和最佳化客戶體驗的能力。 您可以使用客戶行為、人口統計、忠誠度等級和先前交易來個人化版面、行動要求和內容。
 
-## 藍本
+## 藍圖
 
-| 藍本 | 說明 | Experience Cloud應用程式 |
+| Blueprint | 說明 | Experience Cloud應用程式 |
 |---|---|---|
 | **[行為個人化](behavioral.md)** | <ul><li>根據線上行為和受眾資料進行個人化</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *（可選）*</li><li>Adobe Audience Manager *（可選）*</li></ul> |
 | **[線上／離線網頁個人化](online-offline.md)** | <ul><li>使用離線屬性和事件（交易、保留、CRM和忠誠度資料）進行個人化。</li><li>跨網路、電子郵件和其他已知通道同步個人化。</li></ul> | <ul><li>即時客戶資料平台</li><li>Adobe Target</li><li>Adobe Analytics *（可選）*</li><li>Adobe Audience Manager *（可選）*</li></ul> |
@@ -40,4 +41,3 @@ Web和行動個人化藍圖可解決在多個應用程式中使用受眾細分�
 * [數秒即可劃分：Adobe Experience Platform如何讓即時客戶個人檔案成為現實](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)
 * [分析工作負載和即時客戶概要— 同一腦的兩面，志同道合](https://medium.com/adobetech/analytical-workloads-and-real-time-customer-profile-two-sides-of-the-same-brain-with-a-cdfac85ce8c1)
 * [建立最佳線上體驗：利用查詢服務豐富統一的配置檔案](https://medium.com/adobetech/build-an-optimal-online-experience-enrich-unified-profile-with-query-service-8027c196ab33)
-
