@@ -1,18 +1,18 @@
 ---
-title: 觸發訊息與Adobe Experience Platform情境
+title: 觸發訊息與Adobe Experience Platform藍圖
 description: 使用Adobe Experience Platform作為中心的串流資料、客戶個人檔案和細分，執行觸發式訊息和體驗。
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
+exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: df1e14631eddb0055f8e7a42db1e34d459667433
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 1%
 
 ---
 
-
-# 觸發訊息與Adobe Experience Platform情境
+# 觸發訊息與Adobe Experience Platform藍圖
 
 使用Adobe Experience Platform作為中心的串流資料、客戶個人檔案和細分，執行觸發式訊息和體驗。
 
