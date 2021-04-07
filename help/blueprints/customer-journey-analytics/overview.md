@@ -1,21 +1,21 @@
 ---
-title: Customer Journey Analytics藍圖
+title: Customer Journey Analytics
 description: 從整個客戶歷程統一和分析資料和客戶行為
 solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
+exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
 translation-type: tm+mt
-source-git-commit: e1a9881996a181310bdc32cb083e4c5654139bf0
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 2%
+source-wordcount: '292'
+ht-degree: 4%
 
 ---
 
+# Customer Journey Analytics
 
-# Customer Journey Analytics藍圖
-
-Customer Journey Analytics藍圖說明品牌如何統一來自不同互動通道和來源的客戶資料和行為，以建立所有客戶互動的歷程檢視。 報告和分析可在Customer Journey Analytics應用程式服務中執行，以評估並洞察客戶互動與行為模式。
+Customer Journey Analytics顯示品牌如何從各種互動通道和來源統一客戶資料和行為，以建立所有客戶互動的歷程檢視。 報告和分析可在Customer Journey Analytics應用程式服務中執行，以評估並洞察客戶互動與行為模式。
 
 常見分析包括：
 
@@ -25,9 +25,9 @@ Customer Journey Analytics藍圖說明品牌如何統一來自不同互動通道
 * 哪些促銷活動帶來了轉化和參與度的提升
 * 工具使用分析，以最佳化自助服務體驗
 
-## 藍本
+## 藍圖
 
-| 藍本 | 說明 | Experience Cloud應用程式 |
+| Blueprint | 說明 | Experience Cloud應用程式 |
 |---|---|---|
 | **[數位行為資料整合](digital-behavioral-data-consolidation.md)** | <ul><li>透過統一各種網路、行動裝置和離線屬性的資料，以單一的整合檢視跨不同通道的客戶行為。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics（可選）</li></ul> |
 | **[呼叫中心偏轉](call-deflect.md)** | <ul><li>將客服中心資料與網路、行動裝置和其他互動資料整合，以判斷哪些行為最能指示產生代理協助呼叫。</li><li>然後，這些洞見可用來最佳化客戶體驗，並透過最佳化的自助服務內容與工具，減少代理協助互動的路徑。  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
