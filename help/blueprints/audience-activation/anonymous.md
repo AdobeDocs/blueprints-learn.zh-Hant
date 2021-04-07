@@ -1,19 +1,19 @@
 ---
-title: 匿名Audience Activation
+title: 匿名Audience Activation藍圖
 description: 匿名Audience Activation。
 solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
+exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
 translation-type: tm+mt
-source-git-commit: c4bd4bbd40f2ae6b9ab980c5274a6e2007d976d3
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
-
-# 匿名Audience Activation案例
+# 匿名Audience Activation藍圖
 
 您可以根據匿名和行為客戶資料，跨網路和廣告通道鎖定受眾。 此功能可跨裝置提供個人化且一致的即時客戶體驗。
 
@@ -46,18 +46,3 @@ ht-degree: 0%
 * [Experience Cloud觀眾](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 * [將Audience Manager與Target整合](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
 * [透過Audience Manager分析區段共用](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
