@@ -1,26 +1,26 @@
 ---
-title: 描述檔與Audience Activation藍圖
-description: 使用即時客戶資料平台，提供受眾激活的跨通道廣告​。
+title: 受眾與個人檔案啟動
+description: 透過即時客戶資料平台，提供受眾激活且以個人檔案為中心的客戶體驗​。
 solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: af73c0fa0576cd836685824964bade10c0e0110d
+source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
 
-# 描述檔與Audience Activation藍圖
+# 受眾與Audience Activation
 
-在資料導向式行銷世界中，個人檔案和受眾優先啟動是成功的關鍵。 不過，許多品牌仍將精力集中在通道優先啟動上，這通常會帶來不一致的觸及面和個人化。 透過通道優先的方式，每個通道都成為一個孤島，個人化努力只針對與該通道上的品牌互動的客戶。 此方法無法反映客戶在多個不同觸點與品牌互動的現實。 受眾優先啟動可讓品牌跨多個通道連接客戶互動，以提供集中化的受眾，並可以啟動至所有通道。
+在資料導向式行銷世界中，個人檔案和受眾優先啟動是成功的關鍵。 不過，許多品牌仍將精力集中在通道優先啟動上，這通常會帶來不一致的觸及面和個人化。 透過通道優先的方式，每個通道都成為一個孤島，個人化努力只針對與該通道上的品牌互動的客戶。 此方法無法反映客戶在多個不同觸點與品牌互動的現實。 個人檔案和受眾優先啟動功能可讓品牌跨多個通道連接客戶互動，以便提供集中的個人檔案和受眾，並可以啟動至所有通道。
 
-## 藍本
+## 藍圖
 
-| 藍本 | 說明 | Experience Cloud應用程式 |
+| Blueprint | 說明 | Experience Cloud應用程式 |
 |---|---|---|
 | **[匿名網頁與廣告Audience Activation](anonymous.md)** | <ul><li>針對網路和廣告通道上的受眾提供匿名和行為客戶資料。</li><li>與協力廠商受眾資料整合，以提升個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
 | **[線上／離線+ PII個人檔案與Audience Activation](online-offline.md)** | <ul><li>啟動至已知的個人檔案型目標，例如電子郵件提供者、社交網路和廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、交易、CRM或忠誠度資料，以及線上行為，以進行線上鎖定和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> 即時客戶資料平台</li><li>Adobe Audience Manager（可選）</li></ul> |
