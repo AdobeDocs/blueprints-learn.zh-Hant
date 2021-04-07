@@ -1,18 +1,19 @@
 ---
-title: 個人檔案與企業目標Audience Activation
+title: 企業目標藍圖的設定檔與Audience Activation
 description: 個人檔案與企業目標Audience Activation
 solution: Experience Platform,Real-time Customer Data Platform,Target,Audience Manager,Analytics,Experience Cloud Services,Data Collection
 kt: 7086
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
 translation-type: tm+mt
-source-git-commit: 98d44067a1640dc8b695cb0d25f69ec26be647e1
+source-git-commit: 2fa5fc1def554713b057e1478bdd65a15913e0e4
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
 
-# 企業目標的設定檔和Audience Activation方案
+
+# 企業目標藍圖的設定檔與Audience Activation
 
 複製並更新企業資料儲存區的設定檔變更，以利啟動和報告使用案例。
 
