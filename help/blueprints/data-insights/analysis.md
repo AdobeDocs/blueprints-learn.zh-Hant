@@ -6,9 +6,9 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: 77ddc003d4328074ad269de5837a02f5e6d6add5
+source-git-commit: cd98c46d948af9026449c947496df82fd1be6718
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,6 @@ Experience Platform的查詢服務允許對資料執行SQL查詢。 資料科學
 ## 應用程式
 
 * Adobe Experience Platform
-
-## 藍本
-
-| 藍本 | 說明 | Experience Cloud應用程式／服務 |
-|---|---|---|
-| **資料探索——資料的原始查詢** | <ul><li>使用交互查詢用戶介面或連接的SQL客戶端在資料湖中寫入和執行SQL查詢。 Data Science Workspace也可用來查詢及洞察Experience Platform中的原始資料。</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
-| **企業儀表板** | <ul><li>將Business Intelligence工具與Experience Platform連接，以視覺化資料，以便控制面板和報告使用案例。</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
 ## 建築
 
