@@ -5,29 +5,22 @@ solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
 translation-type: tm+mt
-source-git-commit: 7a097d7579d0e217ee5c6b469856bf786b17e6cb
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 # 描述檔擴充藍圖的自訂資料科學
 
-此藍圖顯示資料科學工作區如何使用Adobe Experience Platform的資料來訓練、部署和評分模型，以提供機器學習見解。 這些模型可直接輸出至啟用即時客戶個人檔案的資料集。 機器學習深入資訊的範例包括終身價值、產品與類別相似性、轉換傾向或流失傾向。
+自訂資料科學以豐富個人檔案藍圖說明如何在資料科學工作區中使用Adobe Experience Platform的資料來訓練、部署和計分模型，以提供機器學習見解。 這些模型可直接輸出至啟用即時客戶個人檔案的資料集，以進一步豐富客戶個人檔案。 然後，這些洞見可以據以個人化。 機器學習深入資訊的範例包括終身價值評分、產品與類別相似性、轉換傾向或流失傾向。
 
 ## 使用案例
 
 * 從Experience Platform中的客戶資料擷取見解並探索模式。 從這些資料中訓練和評分模型。
 * 利用模型導向的見解和屬性豐富即時客戶個人檔案，以便更精細的個人化和最佳化歷程。
 * 訓練和分數模型，以判斷客戶見解，例如客戶終身價值、轉換或流失傾向、產品與內容相關性，以及參與分數。
-
-## 藍本
-
-| 藍本 | 方案說明 | Experience Cloud應用程式 |
-|---|---|---|
-| 探索性資料科學 | <ul><li>發現信號、完整性、資料正確性</li><li>使用資料科學工具發掘新見解</li></ul> | <ul><li>Experience Platform智慧</li></ul> |
-| 使用AI/ML<br>擴充描述檔——批次 | <ul><li>發現、製作、訓練、部署、評分和操作模型。</li><li>將模型預測推播至描述檔或資料湖，以進行批次啟動。</li></ul> | <ul><li>Experience Platform智慧</li></ul> |
 
 ## 建築
 
