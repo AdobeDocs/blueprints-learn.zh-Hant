@@ -6,7 +6,7 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -14,7 +14,6 @@ ht-degree: 0%
 ---
 
 # 網路與行動個人化
-
 
 Web和Mobile Personalization可解決在多個應用程式中使用受眾細分來個人化和最佳化客戶體驗的能力。 您可以使用客戶行為、人口統計、忠誠度等級和先前交易來個人化版面、行動要求和內容。
 
