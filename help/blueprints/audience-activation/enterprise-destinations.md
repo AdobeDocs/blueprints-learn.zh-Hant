@@ -1,21 +1,21 @@
 ---
-title: 企業目標藍圖的設定檔與Audience Activation
-description: 個人檔案與企業目標Audience Activation
-solution: Experience Platform,Real-time Customer Data Platform,Target,Audience Manager,Analytics,Experience Cloud Services,Data Collection
-kt: 7086
-exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
+title: 企業目標受眾與個人檔案啟動藍圖
+description: 受眾和個人檔案啟動至企業目標
+solution: Experience Platform,Real-time Customer Data Platform
+kt: 7475
+exl-id: null
 translation-type: tm+mt
-source-git-commit: 2fa5fc1def554713b057e1478bdd65a15913e0e4
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
 
 
-# 企業目標藍圖的設定檔與Audience Activation
+# 企業目標受眾與個人檔案啟動藍圖
 
-複製並更新企業資料儲存區的設定檔變更，以利啟動和報告使用案例。
+複製和更新企業資料儲存區的個人檔案和讀者變更，以利啟動和報告使用案例。
 
 透過客戶從即時客戶資料平台到企業系統和應用程式的動作通知，向客戶發起銷售或支援動作。
 
@@ -79,10 +79,12 @@ ht-degree: 0%
 
 ## 相關檔案
 
+* [目標檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
+* [企業雲端儲存目標](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/overview.html?lang=en#catalog)
+* [HTTP目標](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/http-destination.html?lang=en#overview)
 * [即時客戶資料平台產品說明](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
 * [描述檔與區段指南](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 * [區段檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
-* [目標檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
 
 ## 相關影片與Tutorials
 
