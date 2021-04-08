@@ -5,9 +5,9 @@ solution: Experience Platform, Target, Audience Manager, Analytics, Experience C
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: e9e8473f62fa222e483f7aeed33148433f1ec427
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,24 @@ ht-degree: 0%
 
 依預設，區段共用服務允許每個Adobe Analytics報表套裝共用最多75個對象。 如果Audience Manager用於觀眾共用，則可共用的觀眾數目沒有限制。 
 
+## 實施模式
+
+Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
+
+1. 使用平台網頁SDK/行動SDK和Edge Network。
+1. 使用傳統應用程式專用的SDK（例如AppMeasurement.js）
+
+### 1.平台網頁／行動SDK與Edge方法
+
+<img src="assets/websdkflow.svg" alt="平台網頁SDK/行動SDK與Edge網路方法的參考架構" style="border:1px solid #4a4a4a" />
+
+### 2.應用程式專用的SDK方法
+
+<img src="assets/appsdkflow.png" alt="應用程式專用SDK方法的參考架構" style="border:1px solid #4a4a4a" />
+
+
+
+
 ## 實施先決條件
 
 | 應用程式／服務 | 必要的程式庫 | 附註 |
@@ -65,21 +83,6 @@ ht-degree: 0%
 1. [請求人員與觀眾共用服務的布建(Shared Audiences)](https://www.adobe.com/go/audiences)
 1. 在[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html)或[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html)和[中建立區段，以設定這些觀眾以分享至Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)(如果使用Audience Manager或Adobe Analytics)
 1. 在Adobe Target提供受眾後，就可用於Adobe Target的[定位體驗](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)
-
-
-## 實施資料流圖
-
-「網頁／行動個人化藍圖」可透過使用平台網頁SDK或行動SDK和Edge網路，或使用傳統應用程式專用的SDK（例如AppMeasurement.js）來實作。
-
-### 平台網頁／行動SDK與Edge網路方法
-
-<img src="assets/websdkflow.svg" alt="平台網頁SDK/行動SDK與Edge網路方法的參考架構" style="border:1px solid #4a4a4a" />
-
-
-### 應用程式專用的SDK方法
-
-<img src="assets/appsdkflow.png" alt="應用程式專用SDK方法的參考架構" style="border:1px solid #4a4a4a" />
-
 
 ## 相關檔案
 
