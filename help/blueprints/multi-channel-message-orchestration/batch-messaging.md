@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
+source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 建築
 
-<img src="assets/aepbatch.svg" alt="批傳訊和Adobe Experience Platform情境的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/aepbatch.svg" alt="批傳訊與Adobe Experience Platform藍圖的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 瓜德賴爾
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 建立任何客戶專屬的命名空間。
 1. 將身分新增至結構。
 1. 啟用描述檔和資料集。
-1. 為即時客戶個人檔案的不同檢視設定合併規則（可選）。
+1. 為[!UICONTROL 即時客戶資料]（可選）的不同檢視設定合併規則。
 1. 建立促銷活動使用的區段。
 
 #### 來源／目標
