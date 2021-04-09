@@ -6,9 +6,9 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: cd98c46d948af9026449c947496df82fd1be6718
+source-git-commit: 9a5137c5e71946c258cb94188ee53d742396d361
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Data Analysis and Intelligence包括Adobe Experience Platform內部對資料湖中存在的資料執行探索性查詢和分析的能力。
 
-Experience Platform的查詢服務允許對資料執行SQL查詢。 資料科學工作區可讓資料探索、資料科學和機器學習工作量在資料上執行。
+Experience Platform的[!UICONTROL 查詢服務]允許對資料執行SQL查詢。 [!UICONTROL Data Science ] Workspace可讓資料探索、資料科學和機器學習工作量在資料上執行。
 
-此外，Experience Platform允許與第三方SQL客戶端、介面和Business Intelligence(BI)工具的連接，使用PostgreSQL協定直接連接、訪問和查詢Experience Platform內的資料。
+此外，Experience Platform允許與第三方SQL客戶端、介面和Business Intelligence(BI)工具的連接，使用[!DNL PostgreSQL]協定直接連接、訪問和查詢Experience Platform中的資料。
 
 某些護欄適用於查詢超時和查詢結果中包含的資料量，如方案詳細資訊中所述。
 
@@ -47,10 +47,10 @@ Experience Platform的查詢服務允許對資料執行SQL查詢。 資料科學
 
 1. 設定資料集和結構，以便將資料擷取至資料湖。
 1. 收錄資料。
-1. 確認資料可供查詢服務和資料科學工作區用於原始存取和查詢。
-1. 將Business Intelligence工具和SQL用戶端連接至查詢服務，以進行視覺化、資料查詢和探索。
+1. 確認資料可供[!UICONTROL 查詢服務]和[!UICONTROL 資料科學工作區]用於原始存取和查詢。
+1. 將Business Intelligence工具和SQL客戶端連接到[!UICONTROL 查詢服務]，以實現可視化、資料查詢和探索。
 
 ## 相關檔案
 
 * [Adobe Experience Platform智慧產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [查詢服務文檔](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
+* [[!UICONTROL 查詢服] 務文檔](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
