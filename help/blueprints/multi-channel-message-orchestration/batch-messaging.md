@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 * 促銷活動是所有作用中描述檔的真實來源，這表示描述檔必須存在於促銷活動中，且不應根據Experience Platform區段建立新的描述檔。
 * 從Experience Platform實現的區段成員資格對於批次（每天1次）和流（約5分鐘）都是延遲的
 
-**即時客戶資料平台區段共用給促銷活動：**
+**[!UICONTROL 即時客戶資料平台區] 段共用至促銷活動：**
 
 * 建議20個區段上限
 * 啟動限制為每24小時
