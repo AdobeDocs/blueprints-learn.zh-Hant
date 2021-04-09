@@ -6,9 +6,9 @@ kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
 translation-type: tm+mt
-source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
+source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,6 @@ ht-degree: 0%
 ## 相關檔案
 
 * [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=en)
-* [Experience Cloud觀眾](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
+* [Experience Cloud觀 [!UICONTROL 眾]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 * [將Audience Manager與Target整合](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
-* [透過Audience Manager分析區段共用](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
+* [Adobe Analytics區段Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
