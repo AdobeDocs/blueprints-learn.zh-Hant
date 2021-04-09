@@ -5,9 +5,9 @@ solution: Experience Platform, Target, Audience Manager, Analytics, Experience C
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 translation-type: tm+mt
-source-git-commit: 087da6c5c5c6a6e9deee890d2ea02cf8591bdf15
+source-git-commit: 870541f548266ab82d74fec2e84b8cb6d5c952eb
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -41,12 +41,12 @@ ht-degree: 0%
 
 Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
-1. 使用平台網頁SDK/行動SDK和Edge Network。
+1. 使用[!UICONTROL 平台網頁SDK]或[!UICONTROL 平台行動SDK]和[!UICONTROL 邊緣網路]。
 1. 使用傳統應用程式專用的SDK（例如AppMeasurement.js）
 
 ### 1.平台網頁／行動SDK與Edge方法
 
-<img src="assets/websdkflow.svg" alt="平台網頁SDK/行動SDK與Edge網路方法的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/websdkflow.svg" alt="[!UICONTROL Platform Web SDK]或[!UICONTROL Platform Mobile SDK]和[!UICONTROL Edge Network]方法的參考體系結構" style="border:1px solid #4a4a4a" />
 
 ### 2.應用程式專用的SDK方法
 
@@ -59,10 +59,10 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 | 應用程式／服務 | 必要的程式庫 | 附註 |
 |---|---|---|
-| Adobe Target | 平台網頁SDK*、at.js 0.9.1+或mbox.js 61+ | at.js是偏好的，因為mbox.js不再開發。 |
-| Adobe Audience Manager（選用） | Platform Web SDK*或dil.js 5.0+ |  |
-| Adobe Analytics（選用） | 平台網頁SDK*或AppMeasurement.js 1.6.4+ |  |
-| Experience Cloud身分服務 | 平台網頁SDK*或VisitorAPI.js 2.0+ |  |
+| Adobe Target | [!UICONTROL 平台網頁SDK]*、at.js 0.9.1+或mbox.js 61+ | at.js是偏好的，因為mbox.js不再開發。 |
+| Adobe Audience Manager（選用） | [!UICONTROL Platform Web SDK]*或dil.js 5.0+ |  |
+| Adobe Analytics（選用） | [!UICONTROL Platform Web SDK]*或AppMeasurement.js 1.6.4+ |  |
+| Experience Cloud身分服務 | [!UICONTROL 平台網頁SDK]*或VisitorAPI.js 2.0+ |  |
 | Experience Platform行動SDK（選用） | iOS和Android™適用的4.11或更新版本 |  |
 | Experience Platform網頁SDK | 1.0，目前的Experience PlatformSDK版本有[Experience Cloud應用程式尚未支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
 
@@ -70,7 +70,7 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 1. [為您的網](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) 頁或行動應用程式實作Adobe定位。
 
-   如果使用Audience Manager或分析：
+   如果使用Audience Manager或Adobe Analytics:
 
 1. [實施Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html)
 1. [實施Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
