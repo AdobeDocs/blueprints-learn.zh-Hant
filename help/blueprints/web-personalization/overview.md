@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
+source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Web和Mobile Personalization可解決在多個應用程式中使用受眾細分�
 
 | Blueprint | 說明 | Experience Cloud應用程式 |
 |---|---|---|
-| **[行為個人化](behavioral.md)** | <ul><li>根據線上行為和受眾資料進行個人化</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *（可選）*</li><li>Adobe Audience Manager *（可選）*</li></ul> |
-| **[線上／離線網頁個人化](online-offline.md)** | <ul><li>使用離線屬性和事件（交易、保留、CRM和忠誠度資料）進行個人化。</li><li>跨網路、電子郵件和其他已知通道同步個人化。</li></ul> | <ul><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Target</li><li>Adobe Analytics *（可選）*</li><li>Adobe Audience Manager *（可選）*</li></ul> |
+| **[行為網頁／行動個人化](behavioral.md)** | <ul><li>根據線上行為和受眾資料進行個人化</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *（可選）*</li><li>Adobe Audience Manager *（可選）*</li></ul> |
+| **[線上／離線網路／行動個人化](online-offline.md)** | <ul><li>使用離線屬性和事件（交易、保留、CRM和忠誠度資料）進行個人化。</li><li>跨網路、電子郵件和其他已知通道同步個人化。</li></ul> | <ul><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Target</li><li>Adobe Analytics *（可選）*</li><li>Adobe Audience Manager *（可選）*</li></ul> |
 
 ## 相關部落格文章
 
