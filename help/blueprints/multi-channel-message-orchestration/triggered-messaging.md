@@ -5,10 +5,10 @@ solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
+source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 1%
+source-wordcount: '621'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 * 目前不支援Offer decisioning
 * 請參閱[Experience Platform的概要檔案和資料接收護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 
-### Campaign Standard
+### Adobe Campaign Standard
 
 * 吞吐量僅支援14 tps（每小時50k）
 * 不支援區段會籍啟始的歷程
@@ -69,7 +69,7 @@ ht-degree: 1%
 #### 架構／資料集
 
 1. 根據客戶提供的資料，在Experience Platform中設定個別描述檔、體驗事件和多實體結構。
-1. 建立下列促銷活動結構：broadLog、trackingLog、非交付項位址和描述檔偏好設定（選用）。
+1. 為以下項目建立Adobe Campaign方案：broadLog、trackingLog、非交付項位址和描述檔偏好設定（選用）。
 1. 將資料使用標籤新增至資料集以利管理。
 1. 建立策略以對目標實施治理。
 
@@ -79,16 +79,16 @@ ht-degree: 1%
 1. 將身分新增至結構。
 1. 啟用描述檔和資料集。
 1. 為[!UICONTROL 即時客戶資料]（可選）的不同檢視設定合併規則。
-1. 建立促銷活動使用的區段。
+1. 建立區段以利Adobe Campaign使用。
 
 #### 來源／目標
 
 1. 使用串流API和來源連接器將資料內嵌至Experience Platform。
-1. 設定[!DNL Azure] blob儲存目標以搭配促銷活動使用。
+1. 配置[!DNL Azure]blob儲存目標以用於Adobe Campaign。
 
 #### 行動應用程式部署
 
-1. 實作Campaign Classic的促銷活動SDK或Campaign Standard的Experience PlatformSDK。 如果有Experience Platform Launch，建議使用Campaign Classic/標準擴充功能與Experience PlatformSDK。
+1. 實作Adobe Campaign Classic的Adobe CampaignSDK或Adobe Campaign Standard的Experience PlatformSDK。 如果有Experience Platform Launch，建議將Adobe Campaign Classic或Adobe Campaign Standard擴充功能與Experience PlatformSDK搭配使用。
 
 
 ### Journey Orchestration
@@ -97,7 +97,7 @@ ht-degree: 1%
 1. 設定外部資料來源。
 1. 設定自訂動作。
 
-### Campaign Standard
+### Adobe Campaign Standard
 
 1. 使用適當的個人化設定來設定訊息範本。
 1. 設定匯出工作流程以匯出交易訊息記錄檔。 建議最多每四小時執行一次。
@@ -107,7 +107,7 @@ ht-degree: 1%
 
 * [Adobe Experience Platform檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=en)
 * [Journey Orchestration檔案](https://experienceleague.adobe.com/docs/journey-orchestration.html?lang=en)
-* [Campaign Classic檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
-* [Campaign Standard檔案](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=en)
+* [Adobe Campaign Classic檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=en)
+* [Adobe Campaign Standard檔案](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=en)
 * [Experience Platform Launch檔案](https://experienceleague.adobe.com/docs/launch.html?lang=en)
 * [Experience Platform行動SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=en)
