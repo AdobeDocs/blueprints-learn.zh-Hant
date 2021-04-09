@@ -1,22 +1,22 @@
 ---
 title: 客戶活動中心藍圖
-description: 即時客戶個人檔案查閱，以提供代理商協助支援和銷售的內容。
+description: '[!UICONTROL 即時客戶描述檔] 查閱，為代理協助支援和銷售提供內容。'
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c,4f15aa5d-9ee3-4d92-8012-3e2f0c0d615f
 translation-type: tm+mt
-source-git-commit: 98d44067a1640dc8b695cb0d25f69ec26be647e1
+source-git-commit: f217273f29e1091a121a60c2a19d71190df0f0ff
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
 
 # 客戶活動中心藍圖
 
-客戶活動中心藍圖顯示外部應用程式如何存取Adobe Experience Platform的即時客戶個人檔案。
+客戶活動中心藍圖顯示外部應用程式如何訪問Adobe Experience Platform的[!UICONTROL 即時客戶概要檔案]。
 
-外部應用程式可透過APIGET要求存取即時客戶個人檔案。 然後，儲存在描述檔中的屬性、事件、區段成員資格和模型導向功能可用於這些外部非Adobe應用程式。
+外部應用程式可以透過APIGET要求存取設定檔。 然後，儲存在描述檔中的屬性、事件、區段成員資格和模型導向功能可用於這些外部非Adobe應用程式。
 
 有了這項功能，當客戶呼叫您的客服中心時，您就可以呈現豐富的內容。 例如，支援代理可以洞察客戶的終身價值、客戶流失傾向或行銷宣傳的曝光度。 銷售代理也可以從更深入的情境或洞察客戶中獲益。
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 瓜德賴爾
 
-* [即時客戶個人檔案資料的護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [即時客 [!UICONTROL 戶資料的護] 欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 
 ## 實施步驟
 
@@ -46,6 +46,6 @@ ht-degree: 0%
 ## 相關檔案
 
 * [Adobe Experience Platform啟動產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform0.html)
-* [即時客戶個人檔案檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en)
+* [[!UICONTROL 即時客戶描述] 檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en)
 * [描述檔護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [描述檔查閱API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
