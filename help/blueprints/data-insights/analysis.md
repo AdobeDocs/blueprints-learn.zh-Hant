@@ -6,7 +6,7 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: 9a5137c5e71946c258cb94188ee53d742396d361
+source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Experience Platform的[!UICONTROL 查詢服務]允許對資料執行SQL查詢。
 
 此外，Experience Platform允許與第三方SQL客戶端、介面和Business Intelligence(BI)工具的連接，使用[!DNL PostgreSQL]協定直接連接、訪問和查詢Experience Platform中的資料。
 
-某些護欄適用於查詢超時和查詢結果中包含的資料量，如方案詳細資訊中所述。
+某些護欄適用於查詢超時和查詢結果中包含的資料量，如Blueprint詳細資訊中所述。
 
 ## 使用案例
 
