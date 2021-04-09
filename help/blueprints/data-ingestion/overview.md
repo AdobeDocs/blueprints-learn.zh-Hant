@@ -6,9 +6,9 @@ kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
+source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ ht-degree: 0%
 
 | Blueprint | 說明 | Experience Cloud應用程式 |
 |---|---|---|
-| **[資料準備與擷取至Experience Platform](ingestion.md)** | <ul><li>資料準備和擷取藍圖涵蓋所有資料準備和擷取至Adobe Experience Platform的方法。</ul></li> | <ul><li> Adobe Experience Platform </ul></li> |
-| **[伺服器端轉送——企業版收集](server-side-collection.md)** | <ul><li>啟動至已知的個人檔案型目標，例如電子郵件提供者、社交網路和廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、交易、CRM或忠誠度資料，以及線上行為，以進行線上鎖定和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager（可選）</li></ul> |
+| **[資料準備與擷取](ingestion.md)** | <ul><li>資料準備和擷取藍圖涵蓋所有資料準備和擷取至Adobe Experience Platform的方法。</ul></li> | <ul><li> Adobe Experience Platform </ul></li> |
+| **[伺服器端企業資料收集](server-side-collection.md)** | <ul><li>啟動至已知的個人檔案型目標，例如電子郵件提供者、社交網路和廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、交易、CRM或忠誠度資料，以及線上行為，以進行線上鎖定和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager（可選）</li></ul> |
