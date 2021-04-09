@@ -6,9 +6,9 @@ kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1,5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
+source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -41,12 +41,9 @@ ht-degree: 0%
 | 資料準備方法 | 說明 |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [!UICONTROL 資料科學工作區] -資料準備 | 模型驅動的轉換，指令碼式轉換。<br>[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) |
->[!NOTE]
->
->|外部ETL工具（[!DNL Snaplogic]、[!DNL Mulesoft]、[!DNL Informatica]等） |在ETL工具中執行複雜轉換，並使用標準Experience Platform來源API或連接器來擷取產生的資料。                                                                                                                                                               |
-
-| [!UICONTROL 查詢服務] —— 資料準備                                  |將聯接、拆分、合併、轉換、查詢和篩選資料放入新資料集。 使用建立表作為選擇(CTAS)<br>[文檔](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en#sql)                                                                       |
-| XDM映射器和資料準備功能（流和批處理）     |在Experience Platform擷取期間，將CSV或JSON格式的來源屬性對應至XDM屬性。<br>在所吸收的資料上計算函式；即資料格式、拆分、串連等。<br>[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) |
+| 外部ETL工具（[!DNL Snaplogic]、[!DNL Mulesoft]、[!DNL Informatica]等） | 在ETL工具中執行複雜的轉換，並使用標準Experience Platform[!UICONTROL 流服務] API或來源連接器來收錄結果資料。 |
+| [!UICONTROL 查詢服務] -資料準備 | 將連接、分割、合併、轉換、查詢和篩選資料整合為新資料集。 使用建立表作為選擇(CTAS)<br>[文檔](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en#sql) |
+| XDM映射器和資料準備功能（流和批處理） | 在Experience Platform擷取期間，將CSV或JSON格式的來源屬性對應至XDM屬性。<br>在所吸收的資料上計算函式；即資料格式、拆分、串連等。<br>[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) |
 
 ## 相關部落格文章
 
