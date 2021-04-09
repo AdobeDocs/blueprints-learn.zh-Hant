@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
+source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 | Blueprint | 說明 | Experience Cloud應用程式 |
 |---|---|---|
-| **[匿名網頁與廣告Audience Activation](anonymous.md)** | <ul><li>針對網路和廣告通道上的受眾提供匿名和行為客戶資料。</li><li>與協力廠商受眾資料整合，以提升個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
-| **[線上／離線+ PII個人檔案與Audience Activation](online-offline.md)** | <ul><li>啟動至已知的個人檔案型目標，例如電子郵件提供者、社交網路和廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、交易、CRM或忠誠度資料，以及線上行為，以進行線上鎖定和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager（可選）</li></ul> |
+| **[匿名Audience Activation](anonymous.md)** | <ul><li>針對網路和廣告通道上的受眾提供匿名和行為客戶資料。</li><li>與協力廠商受眾資料整合，以提升個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
+| **[線上／離線Audience Activation](online-offline.md)** | <ul><li>啟動至已知的個人檔案型目標，例如電子郵件提供者、社交網路和廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、交易、CRM或忠誠度資料，以及線上行為，以進行線上鎖定和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager（可選）</li></ul> |
 | **[受眾和個人檔案啟動至企業目標](enterprise-destinations.md)** | <ul><li>複製和更新企業資料儲存區的個人檔案和讀者變更，以利啟動和報告使用案例。 </li></ul><ul><li>通過從[!UICONTROL 即時客戶資料平台]到企業系統和應用程式的客戶操作通知，向客戶發起銷售或支援操作。</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform啟動</li><li>Adobe Audience Manager（可選）</li></ul> |
 | **[客戶活動中心](customer-activity.md)** | <ul><li>為代理支援的互動（例如支援和銷售體驗）提供更深入的消費者情境。 使用Experience Platform的描述檔查閱，工程師可以接收更多消費者的相關內容，例如最近購買、促銷活動互動、傾向、受眾會籍，以及儲存在即時客戶描述檔中的其他屬性和見解。</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
