@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: 2404d871a852df8fed3adb97a79cc15e994db762
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 1%
@@ -78,7 +78,7 @@ ht-degree: 1%
 1. 建立任何客戶專屬的命名空間。
 1. 將身分新增至結構。
 1. 啟用描述檔和資料集。
-1. 為即時客戶個人檔案的不同檢視設定合併規則（可選）。
+1. 為[!UICONTROL 即時客戶資料]（可選）的不同檢視設定合併規則。
 1. 建立促銷活動使用的區段。
 
 #### 來源／目標
