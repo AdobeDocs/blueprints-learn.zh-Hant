@@ -5,7 +5,7 @@ solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
 translation-type: tm+mt
-source-git-commit: 8bcd82eac5e8837c3cd84524174cf5792d73ac6e
+source-git-commit: ee1d97af9bf58076fbce24fbc8a3f0d50a4b52a0
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 複製和更新企業資料儲存區的個人檔案和讀者變更，以利啟動和報告使用案例。
 
-透過客戶從即時客戶資料平台到企業系統和應用程式的動作通知，向客戶發起銷售或支援動作。
+通過從[!UICONTROL 即時客戶資料平台]到企業系統和應用程式的客戶操作通知，向客戶發起銷售或支援操作。
 
 ## 使用案例
 
@@ -79,14 +79,14 @@ ht-degree: 0%
 ## 相關檔案
 
 * [目標檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html)
-* [企業雲端儲存目標](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/overview.html?lang=en#catalog)
+* [雲端儲存空間目標概觀](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/overview.html?lang=en#catalog)
 * [HTTP目標](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/http-destination.html?lang=en#overview)
-* [即時客戶資料平台產品說明](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
+* [[!UICONTROL 即時客戶資料平台產] 品說明](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
 * [描述檔與區段指南](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
 * [區段檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 
 ## 相關影片與Tutorials
 
-* [即時客戶資料平台概觀](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
-* [即時客戶資料平台示範](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html)
+* [[!UICONTROL 即時客戶資料平] 台](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html)
+* [即時客 [!UICONTROL 戶資料平台示範]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html)
 * [建立區段](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
