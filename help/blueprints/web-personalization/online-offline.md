@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
+source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '865'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ ht-degree: 0%
 
 Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
-1. 使用平台網頁SDK/行動SDK和Edge Network。
+1. 使用[!UICONTROL 平台網頁SDK]或[!UICONTROL 平台行動SDK]和[!UICONTROL 邊緣網路]。
 1. 使用傳統應用程式專用的SDK（例如AppMeasurement.js）
 
 ### 1.平台網頁／行動SDK與Edge方法
 
-<img src="assets/websdkflow.svg" alt="平台網頁SDK/行動SDK與Edge網路方法的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/websdkflow.svg" alt="[!UICONTROL Platform Web SDK]或[!UICONTROL Platform Mobile SDK]和[!UICONTROL Edge Network]方法的參考體系結構" style="border:1px solid #4a4a4a" />
 
 ### 2.應用程式專用的SDK方法
 
@@ -60,10 +60,10 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 | 應用程式／服務 | 必要的程式庫 | 附註 |
 |---|---|---|
-| Adobe Target | 平台網頁SDK*、at.js 0.9.1+或mbox.js 61+ | at.js是偏好的，因為mbox.js不再開發。 |
-| Adobe Audience Manager（選用） | Platform Web SDK*或dil.js 5.0+ |  |
-| Adobe Analytics（選用） | 平台網頁SDK*或AppMeasurement.js 1.6.4+ | Adobe Analytics追蹤必須使用地區資料收集(RDC)。 |
-| Experience CloudID服務 | 平台網頁SDK*或VisitorAPI.js 2.0+ | （建議）使用Experience Platform Launch來部署ID服務，以確保在任何應用程式呼叫前設定ID |
+| Adobe Target | [!UICONTROL 平台網頁SDK]*、at.js 0.9.1+或mbox.js 61+ | at.js是偏好的，因為mbox.js不再開發。 |
+| Adobe Audience Manager（選用） | [!UICONTROL Platform Web SDK]*或dil.js 5.0+ |  |
+| Adobe Analytics（選用） | [!UICONTROL Platform Web SDK]*或AppMeasurement.js 1.6.4+ | Adobe Analytics追蹤必須使用地區資料收集(RDC)。 |
+| Experience CloudID服務 | [!UICONTROL 平台網頁SDK]*或VisitorAPI.js 2.0+ | （建議）使用Experience Platform Launch來部署ID服務，以確保在任何應用程式呼叫前設定ID |
 | Experience Platform行動SDK（選用） | iOS和Android™適用的4.11或更新版本 |  |
 | Experience Platform網頁SDK | 1.0，目前的Experience PlatformSDK版本有[Experience Cloud應用程式尚未支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
 
