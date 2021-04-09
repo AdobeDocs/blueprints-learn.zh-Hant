@@ -4,9 +4,9 @@ description: 數位體驗藍圖是可重複實施的，可解決策略和解決�
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 3c139ed925fc7999ea3b7e6eb21bf68ae9ff23cb
+source-git-commit: 5ee692fb1ffe0e360f561a8fdaa0c21b6545d41b
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,8 @@ ht-degree: 0%
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><img alt="數位行為資料整合藍圖的縮圖影像" src="customer-journey-analytics/assets/CJA.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><strong>網頁／行動個人化藍圖</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><strong>數位行為資料整合藍圖 
+</strong></a></div>
     <p><em>針對不同通道的客戶行為提供單一的整合檢視。</em></p>
   </td>
 </tr>
