@@ -4,18 +4,16 @@ description: 數位體驗藍圖是可重複實施的，可解決策略和解決�
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 translation-type: tm+mt
-source-git-commit: 652f8d2cab997418aa8752d3d2c80f715ef6a85c
+source-git-commit: b5b2fff60678a9a36ffffd0a2bf22c8f76573a3e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
 # 數位體驗藍圖
 
-數位體驗藍圖是可重複實施的，可解決策略和解決現有的業務問題。 藍圖可加速實現價值，並提供快速的成功之路。
-
-每個Blueprint都為Adobe客戶提供一系列的工件，以說明高價值的商業問題、架構、實作步驟、技術考量，以及相關檔案的連結。
+數位體驗藍圖是可重複實施的，可讓您解決策略並快速解決既定的業務問題。 每個Blueprint都提供一系列工件，可說明高價值業務問題、架構、實施步驟、技術考量，以及相關檔案的連結。
 
 ## 新增功能
 
