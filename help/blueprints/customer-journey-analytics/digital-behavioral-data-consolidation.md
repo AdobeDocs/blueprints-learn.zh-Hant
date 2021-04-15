@@ -1,18 +1,18 @@
 ---
-title: 數位行為資料整合藍圖
+title: 跨通道歷程分析
 description: 分析客戶在整個客戶歷程中的互動並從中獲取見解。
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 translation-type: tm+mt
-source-git-commit: 844fff1cefe367575beb5c03aa0f0d026eb9f39b
+source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
 
-# 數位行為資料整合藍圖
+# 跨通道歷程分析藍圖
 
 透過統一各種網路、行動裝置和離線屬性的資料，以單一的整合檢視跨不同通道的客戶行為。
 
