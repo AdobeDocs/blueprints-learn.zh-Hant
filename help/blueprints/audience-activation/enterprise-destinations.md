@@ -5,18 +5,16 @@ solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
 translation-type: tm+mt
-source-git-commit: a63da7d5da3038cf66b5f2c99e117d4aa5b21cc1
+source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
 
 # 企業目標受眾與個人檔案啟動藍圖
 
-複製和更新企業資料儲存區的個人檔案和讀者變更，以利啟動和報告使用案例。<!-- This sentence is difficult to mentally process because there's no verb. Describe what the customer can do with this feature. The first paragraph on a page should not be an abstract description.-->
-
-通過從[!UICONTROL 即時客戶資料平台]到企業系統和應用程式的客戶操作通知，向客戶發起銷售或支援操作。<!-- What kinds of sales or support actions? You might add a "For example...." The content in these blueprints should be more simple and friendly.-->
+以串流或批次方式從[!UICONTROL 即時客戶資料平台]分享個人檔案和觀眾變更和事件至企業資料存放區和應用程式。 這些描述檔和受眾事件可用於啟動客戶的銷售或支援活動，例如跟蹤放棄的應用程式流程或網路研討會註冊，或用[!UICONTROL 即時客戶資料平台]的最新客戶屬性和智慧更新企業應用程式。
 
 ## 使用案例
 
@@ -49,7 +47,7 @@ ht-degree: 0%
 
 ## 實施步驟
 
-1. 建立要收錄的資料結構。<!-- Cross-references to these topics would be helpful -->
+1. 建立要收錄的資料結構。
 1. 建立資料集以供收錄。
 1. 在架構上設定正確的身分和身分名稱空間，以確保所擷取的資料可接合到統一的描述檔中。
 1. 啟用結構描述檔和資料集以進行描述檔處理。
