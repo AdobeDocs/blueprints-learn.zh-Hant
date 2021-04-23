@@ -1,6 +1,6 @@
 ---
 title: 跨通道歷程分析
-description: 分析客戶在整個客戶歷程中的互動並從中獲取見解。
+description: 分析整個客戶歷程中的客戶互動並從中擷取深入見解。
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
@@ -8,77 +8,76 @@ translation-type: tm+mt
 source-git-commit: b0664edc3d29d693d33eefc3b3c6da8bf7308224
 workflow-type: tm+mt
 source-wordcount: '568'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
 # 跨通道歷程分析藍圖
 
-透過統一各種網路、行動裝置和離線屬性的資料，以單一的整合檢視跨不同通道的客戶行為。
+統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。
 
 ## 使用案例
 
-* 分析案頭和行動裝置上的客戶互動，以瞭解客戶行為並獲取見解，以最佳化數位客戶體驗。
-* 分析跨通道的客戶互動，包括數位和離線通道（例如支援互動和店內購買），以便更好地瞭解和最佳化客戶歷程。 
+* 分析桌上型裝置與行動裝置上的客戶互動，以瞭解客戶行為並擷取深入見解，以最佳化數位客戶體驗。
+* 分析各通道中的客戶互動，包括數位與離線通道，例如支援互動與店內購買，以更好地瞭解並最佳化客戶歷程。 
 
 ## 應用程式
 
 * Adobe Experience Platform
 * Customer Journey Analytics
-* Adobe Analytics（可選）
+* Adobe Analytics (可選)
 
 ## 整合模式
 
-* Adobe Experience Platform→Customer Journey Analytics
-* Adobe Analytics→Adobe Experience Platform→Customer Journey Analytics
+* Adobe Experience Platform → Customer Journey Analytics
+* Adobe Analytics → Adobe Experience Platform → Customer Journey Analytics
 
-## 建築
+## 架構
 
-<img src="assets/CJA.svg" alt="Customer Journey Analytics藍圖的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/CJA.svg" alt="Customer Journey Analytics Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
-## 瓜德賴爾
+## 護欄
 
-將資料擷取至Customer Journey Analytics:
+將資料擷取到 Customer Journey Analytics：
 
-* 資料擷取至湖泊：API ~ 7 GB/小時，源介面~ 200 GB/小時，流到湖的時間~ 15分鐘，Adobe Analytics源介面到湖的時間~ 45分鐘。
-* 在資料發佈至資料湖後，最多需要90分鐘才能處理至Customer Journey Analytics。
+* 將資料擷取到資料湖：API 約 7 GB/時，來源連接器約 200 GB/時，串流到資料湖約 15 分鐘，Adobe Analytics 來源連接器到資料湖約 45 分鐘。
+* 在資料發佈到資料湖後，最長可能需要 90 分鐘才可處理到 Customer Journey Analytics 中。
 
 ## 實施步驟
 
-1. 配置資料集和方案。
-1. 將資料內嵌至平台。
-資料必須先匯入平台，才能處理為Customer Journey Analytics。
-1. 分析要聯合分析的跨通道事件資料集，以確定它們有共同的命名空間ID，或是透過基於欄位的Customer Journey Analytics拼接功能重新鍵入。 
+1. 設定資料集與方案。
+1. 擷取資料至 Platform。資料在處理到 Customer Journey Analytics 之前，必須先擷取到 Platform。
+1. 分析要統一分析的跨通道事件資料集，以確保它們具有共同的命名空間 ID，或者透過 Customer Journey Analytics 基於欄位的結合功能重建索引鍵。 
 
    >[!NOTE]
    >
-   >Customer Journey Analytics目前不使用Experience Platform設定檔或身分服務進行拼接。
+   >Customer Journey Analytics 目前不使用 Experience Platform Profile 或 Identity 服務進行接合。
 
-1. 在資料上執行任何自訂資料準備或使用現場識別連結，以確保在時間系列資料集上有共同的索引鍵可吸收至Customer Journey Analytics。
-1. 為查閱資料提供可連結至事件資料欄位的主要ID。 在授權中計算為列。
-1. 設定描述檔資料的相同主要ID，作為事件資料的主要ID。
-1. 設定資料連線，將資料從Experience Platform內嵌至Customer Journey Analytics。 資料進入資料湖後，90分鐘內就會處理至Customer Journey Analytics。
-1. 在連線上設定資料檢視，以選取要包含在檢視中的特定維度和量度。 資料檢視中也會設定歸因和配置設定。 這些設定是在報告時計算。
-1. 建立專案，在Analysis Workspace內設定控制面板和報表。
+1. 執行任何自訂資料準備或對資料使用基於欄位的身份接合，以確保時間序列資料集的公用鍵擷取到 Customer Journey Analytics。
+1. 為查詢資料提供一個可以加入事件資料中某個欄位的主要 ID。在授權中計算為列。
+1. 將個人資料的同一主要 ID 設定為事件資料的主要 ID。
+1. 設定資料連接以將資料從 Experience Platform 擷取到 Customer Journey Analytics。在資料進入資料湖後，將在 90 分鐘內處理到 Customer Journey Analytics。
+1. 設定連接的資料視圖以選擇要納入視圖中的特定維度與指標。屬性與分配設定亦會在資料視圖中設定。這些設定在報告時計算。
+1. 建立專案以在 Analysis Workspace 中設定儀表板和報告。
 
-## 實作考量
+## 實施考量
 
-### 身分聯繫考量事項
+### 身份接合考量
 
-* 要統一的時間系列資料在每個記錄上都必須有相同的ID名稱空間。
-* 統一不同資料集的聯合過程要求在資料集上使用共同的主要人員／實體密鑰。
-* 目前不支援次要基於金鑰的聯盟。
-* 基於欄位的身份拼接處理允許基於後續的瞬時ID記錄（如驗證ID）重新鍵入行中的身份。 這可讓您將分散的記錄解析為單一ID，以便在人員層級進行分析，而非在裝置或Cookie層級進行分析。
-* 縫合每週進行一次，縫合後重播。
+* 要聯合的時間序列資料必須在每條記錄上具有相同的 ID 命名空間。
+* 聯合不同資料集的過程需要所有資料集具有一個公共的主要人員/實體鍵。
+* 基於次要鍵的聯合目前不受支援。
+* 基於欄位的身份接合過程允許根據後續暫時 ID 記錄 (如驗證 ID) 對列中的身份重建索引鍵。這允許不同的記錄使用單一 ID，以便在個人層級分析，而非在裝置或 cookie 層級分析。
+* 接合每週進行一次，並在接合後重播。
 
-## 常見問答集
+## 常見問題
 
-* 資料模型在Customer Journey Analytics中的下游影響是什麼？
+* Customer Journey Analytics 中的資料模型對下游有何影響？
 
-   同一XDM欄位的對象和屬性在Customer Journey Analytics中合併為一個維。 至  將不同資料集的多個屬性合併到同一Customer Journey Analytics維中，資料集應引用相同的XDM欄位或模式。
+   同一 XDM 欄位的物件與屬性在 Customer Journey Analytics 中合併成一個維度。若要將不同資料集中的多個屬性合併成同一個 Customer Journey Analytics 維度，資料集應參考同一個 XDM 欄位或方案。
 
-## 相關檔案
+## 相關文件
 
-* [Customer Journey Analytics產品說明](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html)
-* [Customer Journey Analytics檔案](https://experienceleague.adobe.com/docs/customer-journey-analytics.html)
-* [Customer Journey Analytics教學課程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html)
+* [Customer Journey Analytics 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/customer-journey-analytics.html)
+* [Customer Journey Analytics 文件](https://experienceleague.adobe.com/docs/customer-journey-analytics.html?lang=zh-Hant)
+* [Customer Journey Analytics 教學課程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html?lang=zh-Hant)
