@@ -1,5 +1,5 @@
 ---
-title: 網路與行動個人化
+title: '網路與行動個人化 '
 description: 使用[!UICONTROL 即時客戶個人檔案]提供個人化網頁和行動內容。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
@@ -9,20 +9,20 @@ translation-type: tm+mt
 source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 0%
+ht-degree: 90%
 
 ---
 
-# 網路與行動個人化
+# 網路 / 行動個人化
 
-Web和Mobile Personalization可解決在多個應用程式中使用受眾細分來個人化和最佳化客戶體驗的能力。 您可以使用客戶行為、人口統計、忠誠度等級和先前交易來個人化版面、行動要求和內容。
+網路與行動個人化 允許在多個應用程式中使用對象細分，以個人化和最佳化客戶體驗。您可以使用客戶行為、人口統計資料、忠誠度及之前的異動來個人化版面配置、行動呼籲及內容。
 
-| Blueprint | 說明 | Experience Cloud應用程式 |
+| Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
-| **[行為網頁／行動個人化](behavioral.md)** | <ul><li>根據線上行為和受眾資料進行個人化</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *（可選）*</li><li>Adobe Audience Manager *（可選）*</li></ul> |
-| **[線上／離線網路／行動個人化](online-offline.md)** | <ul><li>使用離線屬性和事件（交易、保留、CRM和忠誠度資料）進行個人化。</li><li>跨網路、電子郵件和其他已知通道同步個人化。</li></ul> | <ul><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Target</li><li>Adobe Analytics *（可選）*</li><li>Adobe Audience Manager *（可選）*</li></ul> |
+| **[行為網頁／行動個人化](behavioral.md)** | <ul><li>基於線上行為及對象資料進行個人化</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
+| **[線上／離線網路／行動個人化](online-offline.md)** | <ul><li>使用離線屬性和事件 (異動、保留、CRM 及忠誠度資料) 個人化。</li><li>在網路、電子郵件及其他已知的通道上同步個人化。</li></ul> | <ul><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Target</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
 
-## 相關部落格文章
+## 相關部落格貼文
 
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
