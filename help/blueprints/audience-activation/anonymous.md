@@ -1,6 +1,6 @@
 ---
-title: 匿名Audience Activation藍圖
-description: 匿名Audience Activation。
+title: 匿名 Audience Activation Blueprint
+description: 匿名 Audience Activation。
 solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
@@ -9,24 +9,24 @@ translation-type: tm+mt
 source-git-commit: 37416aafc997838888edec2658d2621d20839f94
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 87%
 
 ---
 
 # 匿名Audience Activation藍圖
 
-您可以根據匿名和行為客戶資料，跨網路和廣告通道鎖定受眾。 此功能可跨裝置提供個人化且一致的即時客戶體驗。
+您可以根據匿名和行為客戶資料定位網路及廣告通道上的對象。此功能可在各裝置中實現個人化的統一即時客戶體驗。
 
 ## 使用案例
 
-* 執行匿名數位受眾鎖定和個人化。
-* 建立受支援廣告網路的受眾，以鎖定目標受眾。
+* 執行匿名的數位對象目標定位與個人化。
+* 建置要在支援的廣告網路上進行目標定位的對象。
 
 ## 應用程式
 
 * Adobe Audience Manager
 
-## 建築
+## 架構
 
 <img src="assets/aam.svg" alt="匿名Audience Activation藍圖的參考體系結構" style="border:1px solid #4a4a4a" />
 
@@ -34,15 +34,15 @@ ht-degree: 0%
 
 <!-- These steps should link to help. -->
 
-1. [實施Audience Manager](https://experienceleague.corp.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides)。
-1. 收集資料以Audience Manager。
-1. 設定用於區段定義的信號和特徵。
-1. 在Audience Manager中建立區段。
-1. 設定Audience Manager中的目標以共用觀眾。
+1. [實施 Audience Manager](https://experienceleague.corp.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=en#implementation-integration-guides)。
+1. 收集資料至 Audience Manager。
+1. 設定訊號與特性以用於區段定義。
+1. 在 Audience Manager 中建立區段。
+1. 在 Audience Manager 中設定目標以分享對象。
 
-## 相關檔案
+## 相關文件
 
-* [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=en)
-* [Experience Cloud觀 [!UICONTROL 眾]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
-* [將Audience Manager與Target整合](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
-* [Adobe Analytics區段Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
+* [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=zh-Hant)
+* [[!UICONTROL Experience Cloud 受眾]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=zh-Hant)
+* [整合 Audience Manager 與 Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=zh-Hant)
+* [Adobe Analytics區段Audience Manager](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
