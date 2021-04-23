@@ -1,6 +1,6 @@
 ---
 title: 行為網頁個人化藍圖
-description: 根據線上行為和受眾資料進行個人化。
+description: 基於線上行為及對象資料進行個人化。
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
@@ -8,34 +8,34 @@ translation-type: tm+mt
 source-git-commit: 870541f548266ab82d74fec2e84b8cb6d5c952eb
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 0%
+ht-degree: 78%
 
 ---
 
 # 行為網頁／行動個人化藍圖
 
-根據線上行為和受眾資料進行個人化。
+基於線上行為及對象資料進行個人化。
 
 ## 使用案例
 
-* 著陸頁面最佳化
-* 行為定位
-* 根據先前的產品／內容檢視、產品／內容親和力、環境屬性、協力廠商受眾資料和人口統計資料進行個人化
+* 登陸頁面最佳化
+* 行為目標定位
+* 基於先前產品 / 內容視圖、產品 / 內容相似性、環境屬性、協力廠商受眾資料及人口統計資料的個人化
 
 ## 應用程式
 
 * Adobe Target
-* Adobe Analytics（可選）
-* Adobe Audience Manager（可選）
+* Adobe Analytics (可選)
+* Adobe Audience Manager (可選)
 
-## 建築
+## 架構
 
 <img src="assets/personalization.svg" alt="行為網站個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
 
 
-## 瓜德賴爾
+## 護欄
 
-依預設，區段共用服務允許每個Adobe Analytics報表套裝共用最多75個對象。 如果Audience Manager用於觀眾共用，則可共用的觀眾數目沒有限制。 
+依照預設，區段分享服務允許最多與 75 個對象分享每個 Adobe Analytics 報告套裝。如果使用 Audience Manager 和對象分享，可以分享的對象數量則沒有限制。 
 
 ## 實施模式
 
@@ -50,48 +50,48 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 ### 2.應用程式專用的SDK方法
 
-<img src="assets/appsdkflow.png" alt="應用程式專用SDK方法的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/appsdkflow.png" alt="應用程式特定 SDK 方法的參考架構" style="border:1px solid #4a4a4a" />
 
 
 
 
 ## 實施先決條件
 
-| 應用程式／服務 | 必要的程式庫 | 附註 |
+| 應用程式 / 服務 | 所需的資料庫 | 附註 |
 |---|---|---|
-| Adobe Target | [!UICONTROL 平台網頁SDK]*、at.js 0.9.1+或mbox.js 61+ | at.js是偏好的，因為mbox.js不再開發。 |
-| Adobe Audience Manager（選用） | [!UICONTROL Platform Web SDK]*或dil.js 5.0+ |  |
-| Adobe Analytics（選用） | [!UICONTROL Platform Web SDK]*或AppMeasurement.js 1.6.4+ |  |
-| Experience Cloud身分服務 | [!UICONTROL 平台網頁SDK]*或VisitorAPI.js 2.0+ |  |
-| Experience Platform行動SDK（選用） | iOS和Android™適用的4.11或更新版本 |  |
-| Experience Platform網頁SDK | 1.0，目前的Experience PlatformSDK版本有[Experience Cloud應用程式尚未支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
+| Adobe Target | [!UICONTROL 平台網頁SDK]*、at.js 0.9.1+或mbox.js 61+ | 首選 at.js，因為 mbox.js 不再進行開發。 |
+| Adobe Audience Manager (可選) | [!UICONTROL Platform Web SDK]*或dil.js 5.0+ |  |
+| Adobe Analytics (可選) | [!UICONTROL Platform Web SDK]*或AppMeasurement.js 1.6.4+ |  |
+| Experience Cloud Identity 服務 | [!UICONTROL 平台網頁SDK]*或VisitorAPI.js 2.0+ |  |
+| Experience Platform Mobile SDK (可選) | iOS 和 Android™ 的 4.11 或更高版本 |  |
+| Experience Platform Web SDK | 1.0，目前的 Experience Platform SDK 版本具有[ Experience Cloud 應用程式尚不支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
 
 ## 實施步驟
 
-1. [為您的網](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html) 頁或行動應用程式實作Adobe定位。
+1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)。
 
    如果使用Audience Manager或Adobe Analytics:
 
-1. [實施Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html)
-1. [實施Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
-1. [實作Experience Cloud身分服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html)
+1. [實施 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)
+1. [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)
+1. [實施 Experience Cloud Identity 服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=zh-Hant)
 
    >[!NOTE]
    >
-   >每個應用程式都必須使用Experience CloudID，並且是同一Experience Cloud組織的一部分，才能允許應用程式之間的觀眾共用。
+   >每個應用程式必須使用 Experience Cloud ID 且屬於同一 Experience Cloud Org，才允許在應用程式之間進行對象分享。
 
-1. [請求人員與觀眾共用服務的布建(Shared Audiences)](https://www.adobe.com/go/audiences)
-1. 在[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html)或[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html)和[中建立區段，以設定這些觀眾以分享至Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)(如果使用Audience Manager或Adobe Analytics)
-1. 在Adobe Target提供受眾後，就可用於Adobe Target的[定位體驗](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)
+1. [請求佈建人員與對象分享服務 (已分享對象)](https://www.adobe.com/go/audiences)
+1. 在 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=zh-Hant) 或 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html?lang=zh-Hant) 中建置區段，並[設定這些對象分享到 Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant) (若使用 Audience Manager 或 Adobe Analytics)
+1. 一旦可在 Adobe Target 中使用對象後，便可將之用於[使用 Adobe Target 的目標定位體驗](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=zh-Hant)
 
-## 相關檔案
+## 相關文件
 
-* [Experience Cloud觀眾](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
-* [將Audience Manager與Adobe Target整合](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html)
+* [Experience Cloud 受眾](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=zh-Hant)
+* [整合 Audience Manager 與 Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=zh-Hant)
 * [Adobe Analytics透過Adobe Audience Manager分享區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
 
 
-## 相關部落格文章
+## 相關部落格貼文
 
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
