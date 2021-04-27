@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: 37416aafc997838888edec2658d2621d20839f94
+source-git-commit: 2f35195b875d85033993f31c8cef0f85a7f6cccc
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 69%
+source-wordcount: '1091'
+ht-degree: 48%
 
 ---
 
@@ -35,11 +35,23 @@ ht-degree: 69%
 
 ## 護欄
 
-* 無論是透過串流或批次評估方法，在數分鐘內從 Experience Platform 分享區段到 Audience Manager 的區段實現。Experience Platform和Audience Manager之間的初始段配置同步約4小時，Experience Platform段成員將開始在Audience Manager配置檔案中實現。 一旦進入Audience Manager設定檔，Experience Platform區段會籍便可透過Adobe Target提供相同的頁面個人化。
-* 請注意，對於在4小時區段配置同步期間在Experience Platform和Audience Manager之間發生的區段實現，這些區段實現將作為「現有」區段在後續批段作業上實現。
-* 從Experience Platform分享批次區段——每天一次，或透過API手動啟動。 在這些區段會籍實現後，幾分鐘內即可共用給Audience Manager，並可在Target中進行相同／下一頁個人化。
-* 串流區段大約在5分鐘內實現。 一旦這些區段實現，它們就會在幾分鐘內共用給Audience Manager，並可在Target中進行相同／下一頁個人化。
-* 依照區段分享服務允許最多與 75 個對象分享每個 Adobe Analytics 報告套裝。如果客戶擁有 Audience Manager 授權，則 Adobe Analytics 與 Adobe Target 之間或者 Audience Manager 與 Adobe Target 之間可以分享的對象數量沒有限制。
+### 區段評估與啟用的護欄
+
+|分段類型 |頻率 |吞吐量 |延遲（區段評估） |延遲（區段啟動） |
+|-|-|-|-|-|
+|邊緣區隔 | Edge分段目前為測試版，可讓Experience Platform邊緣網路上評估有效的即時分段，以便透過Adobe Target和AdobeJourney Optimizer進行即時、相同的頁面決策。 |  |約100毫秒 |可立即在Adobe Target個人化、在Edge Profile中查閱個人檔案，以及透過Cookie型目的地啟動。 |
+|串流區段 |每次將新串流事件或記錄擷取至即時客戶個人檔案，且區段定義為有效的串流區段時。 <br>如需串流區 [段準](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant) 則的指引，請參閱區段檔案 |每秒最多1500個事件。| ~ p95 &lt;5分鐘 |一旦這些區段實現，它們就會在幾分鐘內共用給Audience Manager和觀眾共用服務，並可在Adobe Target提供相同／下一頁個人化。 |
+|增量分段 |自上次增量或批次區段評估後，每小時一次新資料已納入即時客戶個人檔案。 |  |  |當這些區段會籍實現後，幾分鐘內即可與Audience Manager和觀眾分享服務共用，並可在Adobe Target進行相同／下一頁個人化。 |
+|批次劃分 |根據預定的系統集排程，或透過API手動啟動臨機，每天一次。 |  |每個作業大約1小時（最多10 TB配置檔案儲存大小），每個作業2小時（10 TB到100 TB配置檔案儲存大小）。 批次區段工作效能取決於設定檔數目、設定檔大小和評估的區段數目。 |當這些區段會籍實現後，幾分鐘內即可與Audience Manager和觀眾分享服務共用，並可在Adobe Target進行相同／下一頁個人化。 |
+
+### 跨應用程式觀眾共用的防護欄
+
+
+|觀眾分享整合模式 |詳細資訊 |頻率 |吞吐量 |延遲（區段評估） |延遲（區段啟動） |
+|-|-|-|-|-|-|
+|即時客戶資料平台以進行Audience Manager |  |視區段類型而定——請參閱上述區段護欄表格。 |視區段類型而定——請參閱上述區段護欄表格。 |視區段類型而定——請參閱上述區段護欄表格。 |完成區段評估後幾分鐘內完成。<br>即時客戶資料平台與Audience Manager之間的初始觀眾設定同步大約需要4小時。<br>在4小時期間實現的任何讀者會籍都會寫入後續批次分段工作的Audience Manager，成為「現有」讀者會籍。|
+|Adobe Analytics到Audience Manager |依預設，每個Adobe Analytics報表套裝最多可共用75個觀眾。 如果使用Audience Manager授權，Adobe Analytics與Adobe Target或Adobe Audience Manager與Adobe Target之間可共用的觀眾數目沒有限制。 |  |  |  |  |
+|Adobe Analytics到即時客戶資料平台 |目前不提供。 |  |  |  |  |
 
 ## 實施模式
 
@@ -84,7 +96,7 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 * [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant)
 * [Experience Platform 細分概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant)
-* [串流細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
+* [串流細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 * [Experience Platform Segment Builder 概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)
 * [Audience Manager 來源連接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)
 * [Adobe Analytics透過Adobe Audience Manager分享區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
