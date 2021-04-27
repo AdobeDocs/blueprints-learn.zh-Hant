@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
+source-git-commit: 2f35195b875d85033993f31c8cef0f85a7f6cccc
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 81%
+source-wordcount: '990'
+ht-degree: 35%
 
 ---
 
@@ -36,13 +36,27 @@ ht-degree: 81%
 ## 護欄
 
 * [個人資料與細分準則](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
-* 批次區段作業根據預先確定的排程每天執行一次。區段匯出作業然後在排程的目標傳送之前執行。請注意，區段作業與目標傳送作業為分別執行。批次區段作業與匯出作業的效能取決於個人資料的數量、個人資料的大小以及評估的區段數量。
-* 串流區段作業在串流資料到達個人資料後的數分鐘內評估，並且立即將區段會籍寫入個人資料，同時傳送要訂閱的應用程式之事件。
-* 串流區段會籍立即對串流目標起作用，根據目標的擷取模式，將在單一會籍事件或多個設定檔事件的微批次中傳送。對於在透過排程的批次區段傳送予以傳遞的串流中評估的任何區段，排程的目標將在傳送之前啟動從設定檔的區段匯出作業。
-* 若要將[!UICONTROL 即時客戶資料平台]區段會籍共用給Audience Manager，流式區段會在幾分鐘內發生，批次區段的批次區段評估完成後幾分鐘內發生。
-* 無論是透過串流或批次評估方法，在數分鐘內從 Experience Platform 分享區段到 Audience Manager 的區段實現。一旦初次建立區段後，Experience Platform與Audience Manager之間會有初始區段設定同步，約4小時後，Experience Platform區段成員資格便可開始在Audience Manager描述檔中實現。 在 Experience Platform 和 Audience Manager 對象分享組態之前或者對象中繼資料從 Experience Platform 同步到 Audience Manager 之前實現的對象會籍，將不會在 Audience Manager 中實現，直到其中「現有」區段被分享的下列區段作業執行。
-* 批次區段作業中的批次或串流目標作業可以分享設定檔屬性更新以及區段會籍。
-* 僅更新串流細分作業到串流目標分享區段會籍。
+
+### 區段評估與啟用的護欄
+
+|分段類型 |頻率 |吞吐量 |延遲（區段評估） |延遲（區段啟動） |啟動裝載 |
+|-|-|-|-|-|-|
+|邊緣區隔 | Edge分段目前為測試版，可讓Experience Platform邊緣網路上評估有效的即時分段，以便透過Adobe Target和AdobeJourney Optimizer進行即時、相同的頁面決策。 |  |約100毫秒 |可立即在Adobe Target個人化、在Edge Profile中查閱個人檔案，以及透過Cookie型目的地啟動。 | Edge提供的觀眾會籍，適用於個人檔案查閱和Cookie型目的地。<br>Adobe Target和Journey Optimizer提供「對象會籍」和「個人檔案」屬性。|
+|串流區段 |每次將新串流事件或記錄擷取至即時客戶個人檔案，且區段定義為有效的串流區段時。 <br>如需串流區 [段準](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant) 則的指引，請參閱區段檔案 |每秒最多1500個事件。| ~ p95 &lt;5分鐘 |串流目標：串流觀眾會籍會在約10分鐘內啟動，或根據目的地的需求進行微批次啟動。<br>計畫目標：串流觀眾會籍會根據排程的目的地傳送時間，以批次方式啟動。|串流目標：對象會籍變更、身分值和描述檔屬性。<br>計畫目標：對象會籍變更、身分值和描述檔屬性。|
+|增量分段 |自上次增量或批次區段評估後，每小時一次新資料已納入即時客戶個人檔案。 |  |  |串流目標：增量觀眾會籍會在約10分鐘內啟動，或根據目的地需求進行微批。<br>計畫目標：增量觀眾會籍會根據排程的目的地傳送時間，以批次方式啟用。|串流目標：受眾會籍僅會變更和識別值。<br>計畫目標：對象會籍變更、身分值和描述檔屬性。|
+|批次劃分 |根據預定的系統集排程，或透過API手動啟動臨機，每天一次。 |  |每個作業大約1小時（最多10 TB配置檔案儲存大小），每個作業2小時（10 TB到100 TB配置檔案儲存大小）。 批次區段工作效能取決於設定檔數目、設定檔大小和評估的區段數目。 |串流目標：根據目的地的需求，在區段評估或微批處理完成約10個內啟動批次觀眾會籍。<br>計畫目標：批次觀眾會籍會根據排程的目的地傳送時間來啟用。|串流目標：受眾會籍僅會變更和識別值。<br>計畫目標：對象會籍變更、身分值和描述檔屬性。 |
+
+### 跨應用程式觀眾分享的護欄
+
+|觀眾應用程式整合 |頻率 |吞吐量／卷 |延遲（區段評估） |延遲（區段啟動） |
+|-|-|-|-|-|
+|即時客戶資料平台以進行Audience Manager |視區段類型而定——請參閱上述區段護欄表格。 |視區段類型而定——請參閱上述區段護欄表格。 |視區段類型而定——請參閱上述區段護欄表格。 |完成區段評估後幾分鐘內完成。<br>即時客戶資料平台與Audience Manager之間的初始觀眾設定同步大約需要4小時。<br>在4小時期間實現的任何讀者會籍都會寫入後續批次分段工作的Audience Manager，成為「現有」讀者會籍。|
+|Adobe Analytics到Audience Manager |  |依預設，每個Adobe Analytics報表套裝最多可共用75個觀眾。 如果使用Audience Manager授權，Adobe Analytics與Adobe Target或Adobe Audience Manager與Adobe Target之間可共用的觀眾數目沒有限制。 |  |  |
+|Adobe Analytics到即時客戶資料平台 |目前不提供 |目前不提供 |目前不提供 |目前不提供 |
+
+
+
+
 
 ## 實施步驟
 
@@ -64,7 +78,7 @@ ht-degree: 81%
 
 * [即時客戶資料平台產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
 * [描述檔與區段指南](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
-* [細分文件](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
+* [細分文件](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
 * [目標文件](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=zh-Hant)
 
 ## 相關視訊與教學課程
