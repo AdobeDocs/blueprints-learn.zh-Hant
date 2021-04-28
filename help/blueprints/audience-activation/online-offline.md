@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: 24b6ffe3021389d33e84688a8f1a90711ca4b772
+source-git-commit: db083e30d8add029e99cade25d561a26da78338e
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 35%
+source-wordcount: '1040'
+ht-degree: 34%
 
 ---
 
@@ -51,8 +51,10 @@ ht-degree: 35%
 | 受眾應用程式整合 | 頻率 | 吞吐量／卷 | 延遲（區段評估） | 延遲（區段啟動） |
 |---|---|---|---|---|
 | 即時客戶資料平台以Audience Manager | 依據分段類型——請參閱上述分段護欄表格。 | 依據分段類型——請參閱上述分段護欄表格。 | 依據分段類型——請參閱上述分段護欄表格。 | 分部評估完成後幾分鐘內完成。<br>即時客戶資料平台與Audience Manager之間的初始觀眾設定同步大約需要4小時。<br>在4小時期間實現的任何讀者會籍都會寫入後續批次分段工作的Audience Manager，成為「現有」讀者會籍。 |
-| Adobe Analytics到Audience Manager |  | 依預設，每個Adobe Analytics報表套裝最多可共用75個觀眾。 如果使用Audience Manager授權，Adobe Analytics與Adobe Target或Adobe Audience Manager與Adobe Target之間可共用的觀眾數目沒有限制。 |  |  |
+| 即時客戶資料平台到Ad Cloud | 請注意，從即時客戶資料平台分享受眾至Adobe Advertising Cloud需要Audience Manager。 適用於Audience Manger即時客戶資料平台分享的保證，將適用於整合即時客戶資料平台受眾至Advertising Cloud。 | - | - | - |
 | Adobe Analytics客戶即時資料平台 | 目前不提供 | 目前不提供 | 目前不提供 | 目前不提供 |
+| Adobe Analytics到Audience Manager | - | 依預設，每個Adobe Analytics報表套裝最多可共用75個觀眾。 如果使用Audience Manager授權，Adobe Analytics與Adobe Target或Adobe Audience Manager與Adobe Target之間可共用的觀眾數目沒有限制。 | - | - |
+
 
 
 
