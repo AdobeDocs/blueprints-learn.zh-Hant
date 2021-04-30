@@ -1,15 +1,15 @@
 ---
 title: 資料分析與智慧藍圖
-description: 這份藍圖顯示了Adobe Experience Platform內部對資料湖中存在的資料執行探索性查詢和分析的能力。
+description: 此 Blueprint 顯示 Adobe Experience Platform 中對資料湖中現有資料執行探索查詢和分析的功能。
 solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: 009a55715b832c3167e9a3413ccf89e0493227df
+source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 0%
+ht-degree: 44%
 
 ---
 
@@ -25,32 +25,32 @@ Experience Platform的[!UICONTROL 查詢服務]允許對資料執行SQL查詢。
 
 ## 使用案例
 
-* 資料的互動式查詢和聚合
-* 行與欄存取所擷取的資料以供探索和驗證
-* 透過Business Intelligence工具控制面板和視覺化資料
+* 互動式查詢與資料彙總
+* 存取擷取資料列與欄以進行探索和驗證
+* 透過 Business Intelligence 工具進行儀表板處理與視覺化
 
 ## 應用程式
 
 * Adobe Experience Platform
 
-## 建築
+## 架構
 
-<img src="assets/dataexplore.svg" alt="企業資料探索與報告藍圖的參考體系結構" style="border:1px solid #4a4a4a" />
+<img src="assets/data_exploration.svg" alt="企業資料探索與報告 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
-## 瓜德賴爾
+## 護欄
 
-* 互動式查詢的10分鐘時限
-* 在UI中傳回100個記錄限制
-* 通過SQL連接器返回的50,000個記錄限制
+* 互動式查詢限時 10 分鐘
+* UI 中傳回限 100 條記錄
+* SQL 連接器中傳回限 50,000 條記錄
 
 ## 實施步驟
 
-1. 設定資料集和結構，以便將資料擷取至資料湖。
-1. 收錄資料。
+1. 為資料湖的資料擷取設定資料集與方案。
+1. 擷取資料。
 1. 確認資料可供[!UICONTROL 查詢服務]和[!UICONTROL 資料科學工作區]用於原始存取和查詢。
 1. 將Business Intelligence工具和SQL客戶端連接到[!UICONTROL 查詢服務]，以實現可視化、資料查詢和探索。
 
-## 相關檔案
+## 相關文件
 
-* [Adobe Experience Platform智慧產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [[!UICONTROL 查詢服] 務文檔](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en)
+* [Adobe Experience Platform Intelligence 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+* [Query Service 文件](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)
