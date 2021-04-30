@@ -1,49 +1,49 @@
 ---
-title: 描述檔擴充藍圖的自訂資料科學
-description: 此藍圖說明Adobe Experience Platform的資料科學工作區如何使用Experience Platform內的資料來訓練、部署及評分模型，以從資料中提供機器學習見解。
+title: 自訂 Profile Enrichment 藍圖的資料科學
+description: 此藍圖顯示 Adobe Experience Platform 的 Data Science Workspace 如何使用 Experience Platform 中的資料訓練、部署及評分模型，以從資料中獲取機器學習深入見解。
 solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
 translation-type: tm+mt
-source-git-commit: 2343151a1ed5374c299fb9317f6282c232d5d23b
+source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 0%
+ht-degree: 69%
 
 ---
 
-# 描述檔擴充藍圖的自訂資料科學
+# 自訂 Profile Enrichment 藍圖的資料科學
 
 Custom Data Science for Profile Excremint Blueprint說明如何在[!UICONTROL 資料科學工作區]中使用Adobe Experience Platform的資料來訓練、部署和計分模型，以提供機器學習見解。 這些模型可直接輸出至啟用[!UICONTROL 即時客戶個人檔案]的資料集，以進一步豐富客戶個人檔案。 然後，這些洞見可以據以個人化。 機器學習深入資訊的範例包括終身價值評分、產品與類別相似性、轉換傾向或流失傾向。
 
 ## 使用案例
 
-* 從Experience Platform中的客戶資料擷取見解並探索模式。 從這些資料中訓練和評分模型。
+* 從 Experience Platform 中的客戶資料擷取深入見解並探索模式。從這些資料對模型進行訓練和評分。
 * 利用模型導向的見解和屬性豐富[!UICONTROL 即時客戶個人檔案]，以便更精細的個人化和最佳化歷程。
-* 訓練和分數模型，以判斷客戶見解，例如客戶終身價值、轉換或流失傾向、產品與內容相關性，以及參與分數。
+* 對模型訓練和評分以確定客戶深入見解，例如客戶期限值、轉換或退訂傾向性、產品和內容相似性及參與分數。
 
-## 建築
+## 架構
 
-<img src="assets/datascience.svg" alt="基於定制資料科學的輪廓富集藍圖參考體系結構" style="border:1px solid #4a4a4a" />
+<img src="assets/data_science.svg" alt="為豐富設定檔自訂資料科學 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 實施步驟
 
-1. 建立結構描述和資料集。
-1. 將資料內嵌至Experience Platform。
-1. 建立DSW筆記本。
-1. 選擇語言。 支援Python和PySpark。
-1. 在筆記型電腦中製作模型。
+1. 建立方案和資料集。
+1. 擷取資料到 Experience Platform。
+1. 建立 DSW 筆記本。
+1. 選擇語言。支援 Python 和 PySpark。
+1. 在筆記本中建立模型。
 1. 訓練模型。
-1. 對模型進行分數，以便使用目標資料產生預測。
+1. 對模型評分以使用目標資料產生預測。
 1. 如果將模型結果推送至[!UICONTROL 即時客戶描述檔]，請啟用描述檔的模型結果資料集。
 
-## 相關檔案
+## 相關文件
 
-* [Adobe Experience Platform智慧產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [[!UICONTROL Data Science ] Workspace檔案](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en)
-* [[!UICONTROL Data Science ] Workspace教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/understanding-data-science-workspace.html)
+* [Adobe Experience Platform Intelligence 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+* [Data Science Workspace 文件](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=zh-Hant)
+* [Data Science Workspace 教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/understanding-data-science-workspace.html?lang=zh-Hant)
 
-## 相關部落格文章
+## 相關部落格貼文
 
 * [[!DNL Simplifying the Data Science Lifecycle with Adobe Platform Experience]](https://medium.com/adobetech/simplifying-the-data-science-lifecycle-with-adobe-platform-experience-8ea4f056d82f)
 * [[!DNL Content and Commerce AI: Personalizing Your Interactions with Customers Through Content Intelligence]](https://medium.com/adobetech/content-and-commerce-ai-personalizing-your-interactions-with-customers-through-content-intelligence-dc182601deab)
