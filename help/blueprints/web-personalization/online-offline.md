@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: 9a52c5f9513e39b31956aaa0f30cad1426b63a95
+source-git-commit: ed56e79cd45c956cab23c640810dc8e1cc204c16
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 48%
+source-wordcount: '648'
+ht-degree: 80%
 
 ---
 
@@ -31,27 +31,11 @@ ht-degree: 48%
 
 ## 架構
 
-<img src="assets/onoff.svg" alt="線上／離線網頁個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/online_offline_personalization.svg" alt="線上／離線網頁個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 護欄
 
-### 區段評估與啟用的護欄
-
-| 區段類型 | 頻率 | 吞吐量 | 延遲（區段評估） | 延遲（區段啟動） |
-|---|---|---|---|---|
-| 邊緣分段 | 邊緣分割目前是測試版，可讓Experience Platform邊緣網路上評估有效的即時分割，以便透過Adobe Target和AdobeJourney Optimizer進行即時、相同的頁面決策。 |  | ~100 ms | 可立即在Adobe Target個人化、在Edge Profile中查閱個人檔案，以及透過Cookie型目的地啟動。 |
-| 串流細分 | 每當新的串流事件或記錄被收錄到即時客戶個人檔案中，且區段定義是有效的串流區段。 <br>如需串流區 [段準](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant) 則的指引，請參閱區段檔案 | 每秒最多1500個事件。 | ~ p95 &lt;5分鐘 | 一旦這些區段實現，它們就會在幾分鐘內共用給Audience Manager和觀眾共用服務，並可在Adobe Target提供相同／下一頁個人化。 |
-| 增量分段 | 針對自上次增量或批次區段評估以來已納入即時客戶個人檔案的新資料，每小時一次。 |  |  | 在這些區段會籍實現後，幾分鐘內即可與Audience Manager和觀眾分享服務共用，並可在Adobe Target進行相同／下一頁個人化。 |
-| 批次分段 | 每天根據預定的系統集排程一次，或透過API手動啟動臨機。 |  | 每個作業大約1小時（最多10 TB配置檔案儲存大小），每個作業2小時（10 TB到100 TB配置檔案儲存大小）。 批次區段工作效能取決於設定檔數目、設定檔大小和評估的區段數目。 | 在這些區段會籍實現後，幾分鐘內即可與Audience Manager和觀眾分享服務共用，並可在Adobe Target進行相同／下一頁個人化。 |
-
-### 跨應用程式觀眾共用的防護欄
-
-
-| 觀眾分享整合模式 | 詳細資訊 | 頻率 | 吞吐量 | 延遲（區段評估） | 延遲（區段啟動） |
-|---|---|---|---|---|---|
-| 即時客戶資料平台以Audience Manager |  | 依據分段類型——請參閱上述分段護欄表格。 | 依據分段類型——請參閱上述分段護欄表格。 | 依據分段類型——請參閱上述分段護欄表格。 | 分部評估完成後幾分鐘內完成。<br>即時客戶資料平台與Audience Manager之間的初始觀眾設定同步大約需要4小時。<br>在4小時期間實現的任何讀者會籍都會寫入後續批次分段工作的Audience Manager，成為「現有」讀者會籍。 |
-| Adobe Analytics到Audience Manager | 依預設，每個Adobe Analytics報表套裝最多可共用75個觀眾。 如果使用Audience Manager授權，Adobe Analytics與Adobe Target或Adobe Audience Manager與Adobe Target之間可共用的觀眾數目沒有限制。 |  |  |  |  |
-| Adobe Analytics客戶即時資料平台 | 目前不提供。 |  |  |  |  |
+請參閱「觀眾與描述檔啟動藍圖」區段- [LINK](../audience-activation/overview.md)下的護欄
 
 ## 實施模式
 
@@ -62,11 +46,11 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 ### 1.平台網頁／行動SDK與Edge方法
 
-<img src="assets/websdkflow.svg" alt="[!UICONTROL Platform Web SDK]或[!UICONTROL Platform Mobile SDK]和[!UICONTROL Edge Network]方法的參考體系結構" style="border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.svg" alt="[!UICONTROL Platform Web SDK]或[!UICONTROL Platform Mobile SDK]和[!UICONTROL Edge Network]方法的參考體系結構" style="border:1px solid #4a4a4a" />
 
 ### 2.應用程式專用的SDK方法
 
-<img src="assets/appsdkflow.png" alt="應用程式特定 SDK 方法的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/app_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 實施先決條件
 
@@ -96,7 +80,7 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 * [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant)
 * [Experience Platform 細分概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant)
-* [串流細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html)
+* [串流細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
 * [Experience Platform Segment Builder 概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)
 * [Audience Manager 來源連接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)
 * [Adobe Analytics透過Adobe Audience Manager分享區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
