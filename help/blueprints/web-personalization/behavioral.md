@@ -5,7 +5,7 @@ solution: Experience Platform, Target, Audience Manager, Analytics, Experience C
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 translation-type: tm+mt
-source-git-commit: 870541f548266ab82d74fec2e84b8cb6d5c952eb
+source-git-commit: 76fe52d8e83e075f9e7ce6e8596880181b01a7fd
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 78%
@@ -30,7 +30,7 @@ ht-degree: 78%
 
 ## 架構
 
-<img src="assets/personalization.svg" alt="行為網站個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.svg" alt="行為網站個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
 
 
 ## 護欄
@@ -46,14 +46,11 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 ### 1.平台網頁／行動SDK與Edge方法
 
-<img src="assets/websdkflow.svg" alt="[!UICONTROL Platform Web SDK]或[!UICONTROL Platform Mobile SDK]和[!UICONTROL Edge Network]方法的參考體系結構" style="border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.svg" alt="[!UICONTROL Platform Web SDK]或[!UICONTROL Platform Mobile SDK]和[!UICONTROL Edge Network]方法的參考體系結構" style="border:1px solid #4a4a4a" />
 
 ### 2.應用程式專用的SDK方法
 
-<img src="assets/appsdkflow.png" alt="應用程式特定 SDK 方法的參考架構" style="border:1px solid #4a4a4a" />
-
-
-
+<img src="assets/app_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 實施先決條件
 
