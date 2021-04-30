@@ -1,51 +1,51 @@
 ---
-title: 資料準備和擷取藍圖
-description: 這份藍圖顯示了在Adobe Experience Platform收集和準備資料的所有方法。
+title: 資料準備與擷取 Blueprint
+description: 此 Blueprint 顯示可在 Adobe Experience Platform 中擷取和準備資料的所有方法。
 solution: Experience Platform,Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1,5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
 translation-type: tm+mt
-source-git-commit: 37416aafc997838888edec2658d2621d20839f94
+source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 0%
+ht-degree: 84%
 
 ---
 
-# 資料準備和擷取藍圖
+# 資料準備與擷取 Blueprint
 
-資料準備和擷取藍圖涵蓋所有資料準備和擷取至Adobe Experience Platform的方法。
+資料準備與擷取 Blueprint 涵蓋可在 Adobe Experience Platform 中準備和擷取資料的所有方法。
 
-資料準備包括將來源資料對應至Experience Data Model(XDM)架構。 它還包括對資料執行轉換，包括日期格式、欄位拆分／串連／轉換，以及記錄的連接／合併／重新鍵入。 資料準備有助於統一客戶資料，提供匯整／篩選分析，包括報告或準備客戶個人檔案組合／資料科學／啟動的資料。
+資料準備包括將來源資料對應至Experience Data Model(XDM)架構。 它還包括對資料執行轉換，包括資料格式化、欄位拆分 / 聯結 / 轉換以及記錄的接合 / 合併 / 重建按鍵索引。資料準備有助於統一客戶資料以提供彙總 / 篩選的分析，包括為客戶設定檔匯整 / 資料科學 / 啟用報告或準備資料。
 
-## 建築
+## 架構
 
-<img src="assets/dataingest.svg" alt="資料準備與擷取藍圖的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/data_ingestion.svg" alt="資料準備與擷取 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 資料擷取方法
 
 | 擷取方法 | 說明 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 網頁／行動SDK | 延遲：<ul><li>即時——與Edge Network相同的頁面集合</li><li>串流擷取至描述檔~1分鐘</li><li>串流擷取至資料湖（微批次~15分鐘）</ul>檔案： <ul><li>[網頁SDK](https://experienceleague.corp.adobe.com/docs/web-sdk.html)</li><li>[行動SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en)</li></ul> |
-| 串流來源 | 延遲：<ul><li>即時——與Edge Network相同的頁面集合</li><li>串流擷取至描述檔~1分鐘</li><li>串流擷取至資料湖（微批次~15分鐘）</li></ul>[檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#connectors) |
-| 串流API | 延遲：<ul><li>即時——與Edge Network相同的頁面集合</li><li>串流擷取至描述檔~1分鐘</li><li>串流擷取至資料湖（微批次~15分鐘）</li><li>7 GB/小時</li></ul>[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=en#what-can-you-do-with-streaming-ingestion%3F) |
-| ETL工具 | 使用ETL工具，在將擷取至Experience Platform之前修改和轉換企業資料。<br><br>延遲：<ul><li>根據外部ETL工具調度的時序，在提取方法的基礎上應用標準的提取保障。</li></ul> |
-| 批來源 | 已排程從來源擷取<br>延遲：~ 200 GB/小時<br><br>[說明檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#connectors)<br>[視訊Tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html) |
-| 批次API | 延遲：<ul><li>依大小和流量載入大約45分鐘，批次擷取至描述檔</li><li>依據大小和流量負載，批次擷取資料湖</li></ul>[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=en#batch) |
-| Adobe應用程式連接器 | 自動收錄源自Adobe Experience Cloud應用程式的資料<ul><li>Adobe Analytics:[說明檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#connectors)和[教學課程影片](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)</li><li>Audience Manager:[說明檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=en#connectors)和[教學課程影片](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)</li></ul> |
+| Web/Mobile SDK | 延遲：<ul><li>即時 - 同頁集合到 Edge 網路</li><li>大約 1 分鐘串流擷取到設定檔</li><li>串流擷取到資料湖 (微批次約 15 分鐘)</ul>文件： <ul><li>[Web SDK](https://experienceleague.corp.adobe.com/docs/web-sdk.html)</li><li>[Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)</li></ul> |
+| 串流來源 | 延遲：<ul><li>即時 - 同頁集合到 Edge 網路</li><li>大約 1 分鐘串流擷取到設定檔</li><li>串流擷取到資料湖 (微批次約 15 分鐘)</li></ul>[文件](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant#connectors) |
+| 串流 API | 延遲：<ul><li>即時 - 同頁集合到 Edge 網路</li><li>大約 1 分鐘串流擷取到設定檔</li><li>串流擷取到資料湖 (微批次約 15 分鐘)</li><li>7 GB/時</li></ul>[文件](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hant#what-can-you-do-with-streaming-ingestion%3F) |
+| ETL 工具 | 在擷取到 Experience Platform 之前，使用 ETL 工具修改和轉換企業資料。<br><br>延時：<ul><li>時間取決於外部 ETL 工具排程，然後基於擷取所用方法套用標準擷取護欄。</li></ul> |
+| 批次來源 | 已排程從來源擷取<br>延遲：約 200 GB/時<br><br>[文件](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#connectors)<br>[視訊教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html?lang=zh-Hant) |
+| 批次 API | 延遲：<ul><li>批次擷取到設定檔取決於大小和流量，約 45 分鐘</li><li>批次擷取到資料湖取決於大小和流量</li></ul>[文件](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=zh-Hant#batch) |
+| Adobe 應用程式連接器 | 自動擷取來自 Adobe Experience Cloud 應用程式的資料<ul><li>Adobe Analytics：[文件](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant#connectors)與[視訊教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)</li><li>Audience Manager：[文件](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant#connectors)與[視訊教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html?lang=zh-Hant)</li></ul> |
 
 
 ## 資料準備方法
 
-| 資料準備方法 | 說明 |
+| 資料準備的方法 | 說明 |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [!UICONTROL 資料科學工作區] -資料準備 | 模型驅動的轉換，指令碼式轉換。<br>[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) |
+| [!UICONTROL 資料科學工作區] -資料準備 | 模型驅動的轉換，指令檔化的轉換。<br>[文件](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=zh-Hant) |
 | 外部ETL工具（[!DNL Snaplogic]、[!DNL Mulesoft]、[!DNL Informatica]等） | 在ETL工具中執行複雜的轉換，並使用標準Experience Platform[!UICONTROL 流服務] API或來源連接器來收錄結果資料。 |
-| [!UICONTROL 查詢服務] -資料準備 | 將連接、分割、合併、轉換、查詢和篩選資料整合為新資料集。 使用建立表作為選擇(CTAS)<br>[文檔](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en#sql) |
-| XDM映射器和資料準備功能（流和批處理） | 在Experience Platform擷取期間，將CSV或JSON格式的來源屬性對應至XDM屬性。<br>在所吸收的資料上計算函式；即資料格式、拆分、串連等。<br>[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) |
+| [!UICONTROL 查詢服務] -資料準備 | 將連接、分割、合併、轉換、查詢和篩選資料整合為新資料集。 使用建立表作為選擇(CTAS)<br>[文檔](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant#sql) |
+| XDM映射器和資料準備功能（流和批處理） | 在Experience Platform擷取期間，將CSV或JSON格式的來源屬性對應至XDM屬性。<br>在資料擷取時計算其功能；即資料格式化、拆分、聯結等。<br>[文件](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hant) |
 
-## 相關部落格文章
+## 相關部落格貼文
 
 * [[!DNL Leveraging External Data Platforms in Adobe Experience Platform Journey Orchestration]](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17?source=your_stories_page-------------------------------------)
 * [[!DNL High Throughput Ingestion with Iceberg]](https://medium.com/adobetech/high-throughput-ingestion-with-iceberg-ccf7877a413f?source=your_stories_page-------------------------------------)
