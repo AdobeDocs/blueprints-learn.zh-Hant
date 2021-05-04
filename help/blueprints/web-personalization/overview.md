@@ -6,10 +6,10 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
+source-git-commit: 61cb72965cd528cf264231058b1010829a87df9e
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 90%
+source-wordcount: '247'
+ht-degree: 78%
 
 ---
 
@@ -21,6 +21,14 @@ ht-degree: 90%
 |---|---|---|
 | **[行為網頁／行動個人化](behavioral.md)** | <ul><li>基於線上行為及對象資料進行個人化</li></ul> | <ul><li>Adobe Target</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
 | **[線上／離線網路／行動個人化](online-offline.md)** | <ul><li>使用離線屬性和事件 (異動、保留、CRM 及忠誠度資料) 個人化。</li><li>在網路、電子郵件及其他已知的通道上同步個人化。</li></ul> | <ul><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Target</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
+
+## 網路與行動個人化的護欄
+
+請參閱「觀眾與描述檔啟動藍圖」區段- [LINK](../audience-activation/overview.md)下的護欄
+
+### 線上／離線個人化護欄圖
+
+<img src="assets/personalization_guardrails.svg" alt="線上／離線網頁個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 相關部落格貼文
 
