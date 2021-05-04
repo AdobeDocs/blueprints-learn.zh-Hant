@@ -6,10 +6,10 @@ kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
 translation-type: tm+mt
-source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
+source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 44%
+source-wordcount: '291'
+ht-degree: 36%
 
 ---
 
@@ -39,9 +39,8 @@ Experience Platform的[!UICONTROL 查詢服務]允許對資料執行SQL查詢。
 
 ## 護欄
 
-* 互動式查詢限時 10 分鐘
-* UI 中傳回限 100 條記錄
-* SQL 連接器中傳回限 50,000 條記錄
+請參閱查詢服務產品文檔以獲取有關最佳實踐和護欄的詳細資訊。
+[查詢服務指南](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/writing-queries.html?lang=en#best-practices)
 
 ## 實施步驟
 
