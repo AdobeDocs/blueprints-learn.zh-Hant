@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 translation-type: tm+mt
-source-git-commit: ed56e79cd45c956cab23c640810dc8e1cc204c16
+source-git-commit: 61cb72965cd528cf264231058b1010829a87df9e
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 80%
+source-wordcount: '676'
+ht-degree: 77%
 
 ---
 
@@ -31,11 +31,17 @@ ht-degree: 80%
 
 ## 架構
 
-<img src="assets/online_offline_personalization.svg" alt="線上／離線網頁個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
+### 線上／離線個人化架構圖及即時客戶資料平台、目標和Audience Manager
+
+<img src="assets/online_offline_personalization_with_apps.svg" alt="線上／離線網頁個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 護欄
 
 請參閱「觀眾與描述檔啟動藍圖」區段- [LINK](../audience-activation/overview.md)下的護欄
+
+### 線上／離線個人化護欄圖
+
+<img src="assets/personalization_guardrails.svg" alt="線上／離線網頁個人化藍圖的護欄圖" style="border:1px solid #4a4a4a" />
 
 ## 實施模式
 
