@@ -5,7 +5,7 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: 61cb72965cd528cf264231058b1010829a87df9e
+source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 74%
@@ -34,6 +34,7 @@ ht-degree: 74%
 ### 線上／離線Audience Activation與目標
 
 <img src="assets/online_offline_activation.svg" alt="線上／離線Audience Activation藍圖的參考架構" style="border:1px solid #4a4a4a" />
+<br>
 
 ### 使用Experience Cloud應用程式進行線上／離線Audience Activation
 
