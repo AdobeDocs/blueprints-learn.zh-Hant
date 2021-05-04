@@ -6,7 +6,7 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 translation-type: tm+mt
-source-git-commit: 58368eb06b9bbd6c332424bdcfa2789dde7d4c2f
+source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 16%
@@ -29,11 +29,13 @@ ht-degree: 16%
 
 ## 受眾和個人檔案啟動藍圖的保障
 
+* [個人資料與細分準則](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+
 ### 護欄圖
 
 <img src="assets/activation_guardrails.svg" alt="受眾和個人檔案啟動藍圖的保護圖" style="border:1px solid #4a4a4a" />
 
-* [個人資料與細分準則](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+
 
 ### 區段評估與啟用的護欄
 
