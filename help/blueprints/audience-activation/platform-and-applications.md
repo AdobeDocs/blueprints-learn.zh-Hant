@@ -1,18 +1,18 @@
 ---
-title: 使用Experience Cloud應用程式啟動受眾和個人檔案
-description: 使用Experience Cloud應用程式啟動受眾和個人檔案
+title: 使用Experience Cloud應用程式啟動受眾和個人檔案藍圖
+description: 在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: null
 translation-type: tm+mt
-source-git-commit: d30af99dc08d0bc723edc4c1c4705ebc07c3c7b7
+source-git-commit: c1a281f0808a0f081b2b63927a8bddb6377bbbad
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 34%
+source-wordcount: '289'
+ht-degree: 33%
 
 ---
 
-# 使用Experience Cloud應用程式啟動受眾和個人檔案
+# 使用Experience Cloud應用程式啟動受眾和個人檔案藍圖
 
 在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用。 在Experience Platform中建立並分享豐富的客戶細分和見解，並與Experience Cloud應用程式分享。
 
@@ -36,16 +36,15 @@ ht-degree: 34%
 
 ## 架構
 
-[有關與Experience Platform應用程式整合的Experience Platform的其他體系結構圖，請參見Experience Cloud和應用程式體系結構部分。](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html)
-
 ### 使用Experience Cloud應用程式啟動受眾和個人檔案
 
 <img src="assets/activation+apps.svg" alt="使用Experience Cloud應用程式啟動觀眾和個人檔案的參考架構" style="border:1px solid #4a4a4a" />
-<br>
+
+有關與Experience Platform及其與Experience Cloud應用程式整合相關的其他體系結構圖，請參見[Adobe Experience Platform與應用程式圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html)。
 
 ## 護欄
 
-[請參閱「對象與描述檔啟動概述」頁面中概述的防護欄](overview.md)
+請參閱「對象與設定檔啟動概述」頁面[的護欄](overview.md)
 
 ## 相關文件
 
