@@ -5,10 +5,10 @@ solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 37416aafc997838888edec2658d2621d20839f94
+source-git-commit: 81df87f850b7ac4be9dce7a3b96d39a3a47685c5
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 81%
+source-wordcount: '694'
+ht-degree: 68%
 
 ---
 
@@ -68,23 +68,23 @@ ht-degree: 81%
 
 #### 方案 / 資料集
 
-1. 在 Experience Platform 中基於客戶提供的資料設定個別設定檔、體驗事件及多實體方案。
-1. 為以下項目建立Adobe Campaign方案：broadLog、trackingLog、非交付項位址和描述檔偏好設定（選用）。
-1. 新增資料使用標籤至資料集以進行治理。
-1. 建立政策以在目標上執行治理。
+1. [在 Experience Platform 中基於客戶提供的資料設定個別設定檔、體驗事件及多實體方案。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
+1. 為broadLog、trackingLog、非交付項位址和描述檔偏好設定建立Adobe Campaign結構（選用）。
+1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) 要收錄資料的資料Experience Platform。
+1. [將資料使用](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) Experience Platform新增至資料集以利管理。
+1. [建立政策以在目標上執行治理。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html)
 
 #### 設定檔 / 身份
 
-1. 建立任何客戶特定的命名空間。
-1. 新增身份至方案。
-1. 為設定檔啟用方案和資料集。
-1. 為[!UICONTROL 即時客戶資料]（可選）的不同檢視設定合併規則。
+1. [建立任何客戶專屬的命名空間](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
+1. [將身分新增至結構](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
+1. [為配置檔案啟用模式和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html)。
+1. [為「即時客](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) 戶個人資料」的 [!UICONTROL 不同檢視設定合併政策] （可選）。
 1. 建立區段以利Adobe Campaign使用。
 
 #### 來源 / 目標
 
-1. 使用串流 API 和來源連接器將資料擷取到 Experience Platform。
-1. 配置[!DNL Azure]blob儲存目標以用於Adobe Campaign。
+1. [使用串流API和來](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion) 源連接器，將資料內嵌至Experience Platform。1配置 [!DNL Azure] blob儲存目標以用於Adobe Campaign。
 
 #### 行動應用程式部署
 
