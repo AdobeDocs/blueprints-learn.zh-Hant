@@ -5,7 +5,7 @@ user-guide-description: Blueprints 是可重複的實施，用於解決既有的
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
 translation-type: tm+mt
-source-git-commit: d30af99dc08d0bc723edc4c1c4705ebc07c3c7b7
+source-git-commit: b8770bdc4db581be11b347e3788b1d6e6534fe10
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 75%
@@ -24,7 +24,7 @@ ht-degree: 75%
    + [匿名 Audience Activation](/help/blueprints/audience-activation/anonymous.md)
    + [線上/離線 Audience Activation](/help/blueprints/audience-activation/online-offline.md)
    + [啟動至企業目標](/help/blueprints/audience-activation/enterprise-destinations.md)
-   + [使用Experience Cloud應用程式的受眾](/help/blueprints/audience-activation/platform-and-applications.md)
+   + [使用Experience Cloud應用程式啟動](/help/blueprints/audience-activation/platform-and-applications.md)
    + [客戶活動中樞 ](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
