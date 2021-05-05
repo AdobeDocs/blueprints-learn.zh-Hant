@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7722
 exl-id: null
 translation-type: tm+mt
-source-git-commit: 0f69d5b2422cc9750ed9c71ea0c10e3271973bf2
+source-git-commit: d81329f6e90a0bdc0b76a41e4045b8e1aa5f89cd
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 34%
+source-wordcount: '264'
+ht-degree: 37%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 34%
 
 在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用。 建立並分享豐富的Experience Platform客戶細分和見解，並與Experience Cloud應用程式分享。
 
-使用Experience Cloud應用程式啟動會與[線上／離線Audience Activation藍圖](online-offline.md)緊密一致。 此藍圖中提供其他詳細資訊，說明Experience Platform與Experience Cloud應用程式之間的整合。
+使用Experience Cloud應用程式啟動會與[線上／離線Audience Activation藍圖](online-offline.md)緊密一致。
 
 ## 使用案例
 
@@ -35,8 +35,6 @@ ht-degree: 34%
    * Journey Optimizer
 
 ## 架構
-
-### 使用Experience Cloud應用程式啟動受眾和個人檔案
 
 <img src="assets/activation+apps.svg" alt="使用Experience Cloud應用程式啟動觀眾和個人檔案的參考架構" style="border:1px solid #4a4a4a" />
 
