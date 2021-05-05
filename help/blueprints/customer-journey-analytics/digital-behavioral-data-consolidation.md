@@ -5,10 +5,10 @@ solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
 translation-type: tm+mt
-source-git-commit: 58368eb06b9bbd6c332424bdcfa2789dde7d4c2f
+source-git-commit: 6365fa00a77ba22774b2d6de3e882a3e09dcae0f
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 98%
+source-wordcount: '547'
+ht-degree: 91%
 
 ---
 
@@ -38,8 +38,9 @@ ht-degree: 98%
 
 ## 實施步驟
 
-1. 設定資料集與方案。
-1. 擷取資料至 Platform。資料在處理到 Customer Journey Analytics 之前，必須先擷取到 Platform。
+1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) 要收錄的資料架構。
+1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) 要收錄的資料資料集。
+1. [將資料內嵌至平台](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)。資料在處理到 Customer Journey Analytics 之前，必須先擷取到 Platform。
 1. 分析要統一分析的跨通道事件資料集，以確保它們具有共同的命名空間 ID，或者透過 Customer Journey Analytics 基於欄位的結合功能重建索引鍵。 
 
    >[!NOTE]
