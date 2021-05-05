@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
 translation-type: tm+mt
-source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
+source-git-commit: 2fc1adc04a9ca2184c88970d5ba0785957327f68
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 69%
+source-wordcount: '543'
+ht-degree: 63%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 69%
 使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。
 
 啟用對象至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。
+
+線上／離線Audience Activation藍圖與[觀眾和描述檔啟動與Experience Cloud應用程式藍圖](platform-and-applications.md)緊密一致。 [「使用Experience Cloud應用程式啟動觀眾和設定檔」Blueprint](platform-and-applications.md)中提供了其他詳細資訊   特定於Experience Platform和Experience Cloud應用程式之間的整合。
 
 ## 使用案例
 
@@ -42,7 +44,7 @@ ht-degree: 69%
 
 ## 護欄
 
-請參閱觀眾與設定檔啟動概述頁面- [LINK](overview.md)中概述的護欄
+[請參閱「對象與描述檔啟動概述」頁面中概述的護欄。](overview.md)
 
 ## 實施步驟
 
