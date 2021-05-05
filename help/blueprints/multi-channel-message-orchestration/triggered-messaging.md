@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 translation-type: tm+mt
-source-git-commit: 81df87f850b7ac4be9dce7a3b96d39a3a47685c5
+source-git-commit: 01f70fe432d7be38b71889ae19c0d5fe4cf0f78a
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 68%
@@ -78,7 +78,7 @@ ht-degree: 68%
 
 1. [建立任何客戶專屬的命名空間](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
 1. [將身分新增至結構](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
-1. [為配置檔案啟用模式和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html)。
+1. [為配置檔案啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html)。
 1. [為「即時客](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) 戶個人資料」的 [!UICONTROL 不同檢視設定合併政策] （可選）。
 1. 建立區段以利Adobe Campaign使用。
 
