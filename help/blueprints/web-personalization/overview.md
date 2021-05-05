@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
 translation-type: tm+mt
-source-git-commit: da21d1796eb9a2c9c0f087d82606874ca55bd4ea
+source-git-commit: d30af99dc08d0bc723edc4c1c4705ebc07c3c7b7
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '254'
 ht-degree: 76%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 76%
 
 ## 網路與行動個人化的護欄
 
-有關受眾和個人檔案啟動的護欄，請參閱「受眾和個人檔案啟動藍圖」區段- [LINK](../audience-activation/overview.md)下的護欄
+[有關受眾和個人檔案啟動的護欄，請參閱「受眾和個人檔案啟動藍圖」區段下的護欄。](../audience-activation/overview.md)
 
 ### 線上／離線個人化護欄圖
 
