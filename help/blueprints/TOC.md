@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b8770bdc4db581be11b347e3788b1d6e6534fe10
 workflow-type: tm+mt
 source-wordcount: '120'
-ht-degree: 75%
+ht-degree: 95%
 
 ---
 
@@ -19,24 +19,24 @@ ht-degree: 75%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform 與應用程式](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform 資料流程](/help/blueprints/experience-platform/platform-data-flow.md)
-+ 受眾與個人檔案啟動{#audience-activation}
++ 對象與個人資料啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
-   + [匿名 Audience Activation](/help/blueprints/audience-activation/anonymous.md)
-   + [線上/離線 Audience Activation](/help/blueprints/audience-activation/online-offline.md)
-   + [啟動至企業目標](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + [匿名對象啟用](/help/blueprints/audience-activation/anonymous.md)
+   + [線上/離線對象啟用](/help/blueprints/audience-activation/online-offline.md)
+   + [啟用至企業目標](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [使用Experience Cloud應用程式啟動](/help/blueprints/audience-activation/platform-and-applications.md)
    + [客戶活動中樞 ](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
    + [跨通道歷程分析](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
    + [呼叫改向](/help/blueprints/customer-journey-analytics/call-deflect.md)
-+ 資料收集與準備{#data-ingestion}
++ 資料彙集與準備 {#data-ingestion}
    + [概覽](/help/blueprints/data-ingestion/overview.md)
    + [資料準備與擷取 ](/help/blueprints/data-ingestion/ingestion.md)
    + [伺服器端企業資料彙集 ](/help/blueprints/data-ingestion/server-side-collection.md)
-+ 資料分析、智慧與AI/ML{#data-exploration}
++ 資料分析、情報與 AI/ML {#data-exploration}
    + [概覽](/help/blueprints/data-insights/overview.md)
-   + [資料分析與智慧](/help/blueprints/data-insights/analysis.md)
+   + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
    + [自訂資料科學以豐富個人資料 ](/help/blueprints/data-insights/data-science.md)
 + 多通道訊息協調 {#multi-channel-message-orchestration}
    + [概覽](/help/blueprints/multi-channel-message-orchestration/overview.md)
@@ -45,5 +45,5 @@ ht-degree: 75%
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
-   + [線上／離線個人化](/help/blueprints/web-personalization/online-offline.md)
+   + [線上/離線個人化](/help/blueprints/web-personalization/online-offline.md)
 
