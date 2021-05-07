@@ -1,23 +1,23 @@
 ---
-title: 資料收集與準備
+title: 資料彙集與準備
 description: 此 Blueprint 顯示可在 Adobe Experience Platform 中擷取和準備資料的所有方法。
 solution: Experience Platform, Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cbc9c48041d00c45fc75d3bb65bd865f1f7ecc9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # 資料收集與準備
 
-資料收集與準備涵蓋所有資料準備與接收至Adobe Experience Platform的方法。 以及通過側轉向企業目的地收集資料到Adobe Experience Platform邊緣網路和後續資料轉發的能力。
+資料彙集與準備涵蓋可在 Adobe Experience Platform 中準備和擷取資料的所有方法。以及能夠彙集資料到 Adobe Experience Platform 的邊緣網路和後續透過用戶端轉寄來轉寄資料到企業目標。
 
-資料準備包括將來源資料對應至Experience Data Model(XDM)架構。 它還包括對資料執行轉換，包括資料格式化、欄位拆分 / 聯結 / 轉換以及記錄的接合 / 合併 / 重建按鍵索引。資料準備有助於統一客戶資料以提供彙總 / 篩選的分析，包括為客戶設定檔匯整 / 資料科學 / 啟用報告或準備資料。
+資料準備包括將來源資料對應至 Experience Data Model (XDM) 方案。它還包括對資料執行轉換，包括資料格式化、欄位拆分 / 聯結 / 轉換以及記錄的接合 / 合併 / 重建按鍵索引。資料準備有助於統一客戶資料以提供彙總 / 篩選的分析，包括為客戶個人資料匯整 / 資料科學 / 啟用報告或準備資料。
 
 | Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
