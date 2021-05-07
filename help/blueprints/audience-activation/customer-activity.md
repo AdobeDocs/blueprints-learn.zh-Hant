@@ -1,6 +1,6 @@
 ---
 title: 客戶活動中心 Blueprint
-description: '[!UICONTROL 即時客戶個人資料查詢，提供代理協助的支援及銷售之內容。]'
+description: '[!UICONTROL 即時客戶個人資料]查詢，提供代理協助的支援及銷售之內容。'
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c,4f15aa5d-9ee3-4d92-8012-3e2f0c0d615f
@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 73%
+ht-degree: 79%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 73%
 
 客戶活動中心 Blueprint 顯示外部應用程式如何存取 Adobe Experience Platform 的[!UICONTROL 即時客戶個人資料]。
 
-外部應用程式可以透過APIGET要求存取設定檔。 儲存在個人資料中的屬性、事件、區段會籍及模型驅動的功能然後可用於這些外部非 Adobe 應用程式。
+外部應用程式可以透過 API GET 請求存取個人資料。儲存在個人資料中的屬性、事件、區段會籍及模型驅動的功能然後可用於這些外部非 Adobe 應用程式。
 
 有了此功能，您可以在客戶呼叫您的呼叫中心時顯示豐富的內容。例如，支援代理可以看見客戶的期限值、反感或接觸行銷活動的傾向性。銷售代理亦會受益，因為他們可以知道客戶的更多背景或洞察其客戶。
 
@@ -35,13 +35,13 @@ ht-degree: 73%
 
 ## 護欄
 
-* [即時客戶個人資料的護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+* [[!UICONTROL 即時客戶個人資料]的護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 ## 實施步驟
 
-1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) 要收錄的資料架構。
-1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) 要收錄的資料資料集。
-1. [在方案上設定正確的身份和身份命名空間，以確保擷取的資料可以嵌入統一的設定檔。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
+1. [建立要擷取的資料方案。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
+1. [為要擷取的資料建立資料集。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
+1. [在方案上設定正確的身份和身份命名空間，以確保擷取的資料可以嵌入統一的個人資料。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)
 1. [為配置檔案啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html)。
 1. [擷取資料到 Experience Platform。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
 1. [設定合併策略](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html)。
@@ -50,6 +50,6 @@ ht-degree: 73%
 ## 相關文件
 
 * [Adobe Experience Platform Activation 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform0.html)
-* [即時客戶個人資料文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
+* [[!UICONTROL 即時客戶個人資料]文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
 * [個人資料護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [個人資料查詢 API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
