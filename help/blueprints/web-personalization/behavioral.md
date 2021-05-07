@@ -1,5 +1,5 @@
 ---
-title: 行為網頁個人化藍圖
+title: 行為網路個人化 Blueprint
 description: 基於線上行為及對象資料進行個人化。
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
@@ -8,11 +8,11 @@ translation-type: tm+mt
 source-git-commit: 76fe52d8e83e075f9e7ce6e8596880181b01a7fd
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# 行為網頁／行動個人化藍圖
+# 行為網路/行動個人化 Blueprint
 
 基於線上行為及對象資料進行個人化。
 
@@ -30,7 +30,7 @@ ht-degree: 78%
 
 ## 架構
 
-<img src="assets/behavioral_personalization.svg" alt="行為網站個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.svg" alt="行為網路個人化 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
 
 ## 護欄
@@ -39,16 +39,16 @@ ht-degree: 78%
 
 ## 實施模式
 
-Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
+網路/行動個人化 Blueprint 可透過下列方法實施，如下所述。
 
-1. 使用[!UICONTROL 平台網頁SDK]或[!UICONTROL 平台行動SDK]和[!UICONTROL 邊緣網路]。
-1. 使用傳統應用程式專用的SDK（例如AppMeasurement.js）
+1. 使用 [!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 及 [!UICONTROL Edge Network]。
+1. 使用傳統應用程式特定的 SDK（例如 AppMeasurement.js）
 
-### 1.平台網頁／行動SDK與Edge方法
+### 1. Platform Web/Mobile SDK 與 Edge 方法
 
-<img src="assets/web_sdk_flow.svg" alt="[!UICONTROL Platform Web SDK]或[!UICONTROL Platform Mobile SDK]和[!UICONTROL Edge Network]方法的參考體系結構" style="border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.svg" alt="[!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 與 [!UICONTROL Edge Network] 方法的參考架構" style="border:1px solid #4a4a4a" />
 
-### 2.應用程式專用的SDK方法
+### 2. 應用程式特定的 SDK 方法
 
 <img src="assets/app_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="border:1px solid #4a4a4a" />
 
@@ -56,18 +56,18 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 | 應用程式 / 服務 | 所需的資料庫 | 附註 |
 |---|---|---|
-| Adobe Target | [!UICONTROL 平台網頁SDK]*、at.js 0.9.1+或mbox.js 61+ | 首選 at.js，因為 mbox.js 不再進行開發。 |
-| Adobe Audience Manager (可選) | [!UICONTROL Platform Web SDK]*或dil.js 5.0+ |  |
-| Adobe Analytics (可選) | [!UICONTROL Platform Web SDK]*或AppMeasurement.js 1.6.4+ |  |
-| Experience Cloud Identity 服務 | [!UICONTROL 平台網頁SDK]*或VisitorAPI.js 2.0+ |  |
+| Adobe Target | [!UICONTROL Platform Web SDK]*、at.js 0.9.1+ 或 mbox.js 61+ | 首選 at.js，因為 mbox.js 不再進行開發。 |
+| Adobe Audience Manager (可選) | [!UICONTROL Platform Web SDK]* 或 dil.js 5.0+ |  |
+| Adobe Analytics (可選) | [!UICONTROL Platform Web SDK]* 或 AppMeasurement.js 1.6.4+ |  |
+| Experience Cloud Identity 服務 | [!UICONTROL Platform Web SDK]* 或 VisitorAPI.js 2.0+ |  |
 | Experience Platform Mobile SDK (可選) | iOS 和 Android™ 的 4.11 或更高版本 |  |
-| Experience Platform Web SDK | 1.0，目前的 Experience Platform SDK 版本具有[ Experience Cloud 應用程式尚不支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
+| Experience Platform Web SDK | 1.0，目前的 Experience Platform SDK 版本具有[Experience Cloud 應用程式尚不支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
 
 ## 實施步驟
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)。
 
-   如果使用Audience Manager或Adobe Analytics:
+   如果使用 Audience Manager 或 Adobe Analytics：
 
 1. [實施 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)
 1. [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)
@@ -85,7 +85,7 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 * [Experience Cloud 受眾](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=zh-Hant)
 * [整合 Audience Manager 與 Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=zh-Hant)
-* [Adobe Analytics透過Adobe Audience Manager分享區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
+* [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
 
 
 ## 相關部落格貼文
