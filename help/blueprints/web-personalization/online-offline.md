@@ -1,5 +1,5 @@
 ---
-title: 線上／離線網路個人化藍圖
+title: 線上/離線網路個人化 Blueprint
 description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
@@ -8,18 +8,18 @@ translation-type: tm+mt
 source-git-commit: d30af99dc08d0bc723edc4c1c4705ebc07c3c7b7
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
-# 線上／離線網路／行動個人化藍圖
+# 線上/離線網路/行動個人化 Blueprint
 
 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 
 ## 使用案例
 
 * 登陸頁面最佳化
-* 行為與離線設定檔目標定位
+* 行為與離線個人資料目標定位
 * 除離線深入見解 (如異動、忠誠度與 CRM 資料及建模的深入見解) 外，基於之前產品/內容視圖、產品/內容相似性、環境屬性、協力廠商對象資料及人口統計資料的個人化
 
 ## 應用程式
@@ -31,7 +31,7 @@ ht-degree: 80%
 
 ## 架構
 
-<img src="assets/online_offline_personalization_with_apps.svg" alt="線上／離線網頁個人化藍圖的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/online_offline_personalization_with_apps.svg" alt="線上/離線網路個人化 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 護欄
 
@@ -39,16 +39,16 @@ ht-degree: 80%
 
 ## 實施模式
 
-Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
+網路/行動個人化 Blueprint 可透過下列方法實施，如下所述。
 
-1. 使用[!UICONTROL 平台網頁SDK]或[!UICONTROL 平台行動SDK]和[!UICONTROL 邊緣網路]。
-1. 使用傳統應用程式專用的SDK（例如AppMeasurement.js）
+1. 使用 [!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 及 [!UICONTROL Edge Network]。
+1. 使用傳統應用程式特定的 SDK（例如 AppMeasurement.js）
 
-### 1.平台網頁／行動SDK與Edge方法
+### 1. Platform Web/Mobile SDK 與 Edge 方法
 
-<img src="assets/web_sdk_flow.svg" alt="[!UICONTROL Platform Web SDK]或[!UICONTROL Platform Mobile SDK]和[!UICONTROL Edge Network]方法的參考體系結構" style="border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.svg" alt="[!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 與 [!UICONTROL Edge Network] 方法的參考架構" style="border:1px solid #4a4a4a" />
 
-### 2.應用程式專用的SDK方法
+### 2. 應用程式特定的 SDK 方法
 
 <img src="assets/app_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="border:1px solid #4a4a4a" />
 
@@ -56,12 +56,12 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 
 | 應用程式 / 服務 | 所需的資料庫 | 附註 |
 |---|---|---|
-| Adobe Target | [!UICONTROL 平台網頁SDK]*、at.js 0.9.1+或mbox.js 61+ | 首選 at.js，因為 mbox.js 不再進行開發。 |
-| Adobe Audience Manager (可選) | [!UICONTROL Platform Web SDK]*或dil.js 5.0+ |  |
-| Adobe Analytics (可選) | [!UICONTROL Platform Web SDK]*或AppMeasurement.js 1.6.4+ | Adobe Analytics 追蹤必須使用 Regional Data Collection (RDC)。 |
-| Experience Cloud ID 服務 | [!UICONTROL 平台網頁SDK]*或VisitorAPI.js 2.0+ | (推薦) 使用 Experience Platform Launch 部署 ID 服務以確保在任何應用程式調用之前設定 ID |
+| Adobe Target | [!UICONTROL Platform Web SDK]*、at.js 0.9.1+ 或 mbox.js 61+ | 首選 at.js，因為 mbox.js 不再進行開發。 |
+| Adobe Audience Manager (可選) | [!UICONTROL Platform Web SDK]* 或 dil.js 5.0+ |  |
+| Adobe Analytics (可選) | [!UICONTROL Platform Web SDK]* 或 AppMeasurement.js 1.6.4+ | Adobe Analytics 追蹤必須使用 Regional Data Collection (RDC)。 |
+| Experience Cloud ID 服務 | [!UICONTROL Platform Web SDK]* 或 VisitorAPI.js 2.0+ | (推薦) 使用 Experience Platform Launch 部署 ID 服務以確保在任何應用程式調用之前設定 ID |
 | Experience Platform Mobile SDK (可選) | iOS 和 Android™ 的 4.11 或更高版本 |  |
-| Experience Platform Web SDK | 1.0，目前的 Experience Platform SDK 版本具有[ Experience Cloud 應用程式尚不支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
+| Experience Platform Web SDK | 1.0，目前的 Experience Platform SDK 版本具有[Experience Cloud 應用程式尚不支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
 
 
 ## 實施步驟
@@ -69,7 +69,7 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)
 1. [實施 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant) (可選)
 1. [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant) (可選)
-1. [[!UICONTROL 實施 Experience Platform 與即時客戶設定檔]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)
+1. [實施 Experience Platform 與[!UICONTROL 即時客戶個人資料]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)
 1. 實施 [Experience Cloud Identity 服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=zh-Hant) 或 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
    >[!NOTE]
    >
@@ -83,7 +83,7 @@ Web/Mobile個人化藍圖可透過下列方法實作，如下所述。
 * [串流細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
 * [Experience Platform Segment Builder 概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)
 * [Audience Manager 來源連接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)
-* [Adobe Analytics透過Adobe Audience Manager分享區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
+* [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
 * [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
 * [Experience Cloud ID 服務文件](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)
 * [Experience Platform Launch 文件](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)
