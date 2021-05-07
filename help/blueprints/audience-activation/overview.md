@@ -1,5 +1,5 @@
 ---
-title: 受眾與個人檔案啟動
+title: 對象與個人資料啟用
 description: 透過即時客戶資料平台，提供受眾已啟用和以個人資料為中心的客戶體驗。
 solution: Experience Platform, Real-time Customer Data Platform
 kt: null
@@ -9,24 +9,24 @@ translation-type: tm+mt
 source-git-commit: 5471d9c0f6fdef6fbac72d5d35f32353ea5a5ee8
 workflow-type: tm+mt
 source-wordcount: '678'
-ht-degree: 28%
+ht-degree: 91%
 
 ---
 
 
-# 受眾與個人檔案啟動
+# 對象與個人資料啟用
 
-在資料導向式行銷世界中，受眾和個人檔案啟動是成功的關鍵。 但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
+以對象與個人資料啟用是資料驅動行銷領域成功的關鍵。但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
 
-採用以通道為優先的方法時，每個通道皆是孤島，個人化工作僅強調在該通道上與品牌互動的客戶。此方法無法反映客戶透過很多不同的接觸點與品牌互動的現實情況。受眾和個人檔案啟動可讓品牌跨多個通道連接客戶互動，以便提供集中的個人檔案和受眾，並可以啟動至所有通道。
+採用以通道為優先的方法時，每個通道皆是孤島，個人化工作僅強調在該通道上與品牌互動的客戶。此方法無法反映客戶透過很多不同的接觸點與品牌互動的現實情況。對象與個人資料啟用允許品牌連接多個通道中的客戶互動，以提供可向所有通道啟用的集中化個人資料與對象。
 
 | Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
-| **[匿名 Audience Activation](anonymous.md)** | <ul><li>為匿名和行為客戶資料定位網路及廣告通道上的對象。</li><li>整合協力廠商對象資料以增強個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
-| **[線上/離線 Audience Activation](online-offline.md)** | <ul><li>啟動至已知的基於個人檔案的目的地，例如電子郵件提供者、社交網路和廣告目的地。 </li><li>使用離線屬性和事件，例如離線訂單、交易、CRM或忠誠度資料，以及線上行為，以進行線上鎖定和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager (可選)</li></ul> |
-| **[受眾和個人檔案啟動至企業目標](enterprise-destinations.md)** | <ul><li>複製和更新企業資料儲存區的個人檔案和讀者變更，以利啟動和報告使用案例。 </li></ul><ul><li>通過從[!UICONTROL 即時客戶資料平台]到企業系統和應用程式的客戶操作通知，向客戶發起銷售或支援操作。</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform啟動</li><li>Adobe Audience Manager (可選)</li></ul> |
-| **[使用Experience Cloud應用程式啟動受眾和個人檔案](platform-and-applications.md)** | </ul><li>在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用</li><li>建立並分享豐富的Experience Platform客戶細分和見解，並與Experience Cloud應用程式分享</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform啟動</li><li>Experience Cloud 應用程式</li></ul> |
-| **[客戶活動中樞](customer-activity.md)** | <ul><li>為代理支援的互動提供更深入的消費者背景，例如支援和銷售經驗。使用Experience Platform的描述檔查閱，工程師可以接收更多有關消費者的內容，例如最近購買、促銷活動互動、傾向、受眾會籍，以及儲存在即時客戶描述檔中的其他屬性和見解。</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
+| **[匿名對象啟用](anonymous.md)** | <ul><li>為匿名和行為客戶資料定位網路及廣告通道上的對象。</li><li>整合協力廠商對象資料以增強個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
+| **[線上/離線對象啟用](online-offline.md)** | <ul><li>啟用至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager (可選)</li></ul> |
+| **[對象與個人資料啟用至企業目標](enterprise-destinations.md)** | <ul><li>複製和更新企業資料儲存區的個人資料和對象變更，以用於啟用和報告使用案例。 </li></ul><ul><li>透過從[!UICONTROL 即時客戶資料平台]到企業系統和應用程式的客戶操作通知，向客戶發起銷售或支援操作。</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Adobe Audience Manager (可選)</li></ul> |
+| **[使用Experience Cloud應用程式啟動受眾和個人檔案](platform-and-applications.md)** | </ul><li>在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用</li><li>建立並分享豐富的Experience Platform客戶細分和見解，並與Experience Cloud應用程式分享</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
+| **[客戶活動中樞](customer-activity.md)** | <ul><li>為代理支援的互動提供更深入的消費者背景，例如支援和銷售經驗。使用對 Experience Platform 的個人資料查詢，代理可以獲得關於消費者的更多背景，例如最近的購買、行銷活動互動、傾向性、對象會籍，以及即時客戶個人資料中儲存的其他屬性和深入見解。</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
 
 
@@ -37,20 +37,20 @@ ht-degree: 28%
 
 ### 啟用屬性和身分
 
-* [!UICONTROL 即時客戶資料平台可啟] 用觀眾會籍，以及針對選取要啟動之區段成員的個人檔案所發生的屬性和身分變更。如果您的目標是啟用屬性或身分識別，您必須定義全域區段，其中包含所有要傳送屬性和身分更新的描述檔。 此時，您可以選取要在目標設定中啟動的區段和所需屬性。
-* 請注意，批次目標不支援啟動僅限屬性的變更事件。 完整或增加的觀眾會籍可隨選取的屬性一起傳送，以進行啟動，但您無法透過批次目的地啟用僅限屬性的變更事件。
+* [!UICONTROL 即時客戶資料平台]可啟用對象會籍，以及針對選取要啟用之區段成員的個人資料所發生的屬性和身分變更。如果您的目標是啟用屬性或身分識別，您必須定義全域區段，其中包含所有要向其傳送屬性和身分更新的個人資料。此時，您可以選取要作為目標設定一部分啟用的區段和所需屬性。
+* 請注意，批次目標不支援啟用僅限屬性的變更事件。完整或增加的對象會籍可隨選取的屬性一起傳送，以進行啟用，但您無法透過批次目標啟用僅限屬性的變更事件。
 
-### 將批次區段啟用至串流目的地
+### 啟用批次區段至串流目標
 
-* 支援「串流目的地的批次區段啟動」。 當區段工作完成以進行串流啟動時，批次區段工作會將訊息置於管道上
+* 支援批次區段啟用至串流目標。當區段作業完成以進行串流啟用後，批次區段作業會將訊息置於管道上
 
-### 啟動串流區段至批次目的地
+### 啟用串流區段至批次目標
 
-* 支援將串流區段啟動至批次目的地。 批目標計畫根據批目標計畫導出配置檔案段成員資格。 這包括透過串流和批次方法所決定的區段成員資格。
+* 支援將串流區段啟動至批次目的地。 批次目標排程根據批次目標排程匯出個人資料區段會籍。這包括透過串流和批次方法確定的區段會籍。
 
-### 啟動體驗事件
+### 體驗事件的啟用
 
-* 不支援啟動原始體驗事件。 若要針對體驗事件啟動，必須使用包含或排除體驗事件邏輯的必要規則來建立區段。 這會建立根據體驗事件定義的區段，而且區段成員資格可以啟動為原始體驗事件的代理。 另請考慮使用[!UICONTROL 啟動伺服器端]來啟動透過SDK收集的原始體驗事件。
+* 不支援啟用原始體驗事件。若要對體驗事件啟用，必須使用包含或排除體驗事件邏輯的必要規則來建立區段。這會建立根據體驗事件定義的區段，而且區段會籍可以啟用為原始體驗事件的代理。另請考慮使用 [!UICONTROL Launch Server Side] 來啟用透過 SDK 收集的原始體驗事件。
 
 
 ## 相關部落格貼文
