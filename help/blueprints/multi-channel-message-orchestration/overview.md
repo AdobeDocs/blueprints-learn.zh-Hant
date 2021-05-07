@@ -5,11 +5,11 @@ solution: Experience Platform
 kt: null
 thumbnail: null
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9a5137c5e71946c258cb94188ee53d742396d361
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '233'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 92%
 
 | Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
-| **批處理和事務性消息傳遞** | <ul><li>建立及執行排程的批次傳出行銷活動</li><li>傳送異動訊息</li></ul> | <ul><li>Adobe Campaign Classic 與 Managed Services</li><li>Adobe Campaign Standard</li></ul> |
-| **[批次訊息與Adobe Experience Platform](batch-messaging.md)** | <ul><li>使用 Adobe Experience Platform 作為客戶設定檔與細分的中樞，以執行排程的批次訊息傳送行銷活動</li></ul> | <ul><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Campaign Classic、Managed Services 或 Campaign Standard</li><li>支援的協力廠商訊息服務供應商</li></ul> |
-| **[觸發訊息與Adobe Experience Platform](triggered-messaging.md)** | <ul><li>使用 Adobe Experience Platform 作為串流資料、客戶設定檔與細分的中樞，以執行觸發的串流訊息傳送，使用 Journey Orchestration 串流歷程協調與訊息傳送</li></ul> | <ul><li>Adobe Experience Platform</li><li>Journey Orchestration</li><li>Adobe Campaign 或用於訊息傳送的其他協力廠商應用程式</li></ul> |
+| **批次與異動訊息** | <ul><li>建立及執行排程的批次傳出行銷活動</li><li>傳送異動訊息</li></ul> | <ul><li>Adobe Campaign Classic 與 Managed Services</li><li>Adobe Campaign Standard</li></ul> |
+| **[批次訊息傳送與 Adobe Experience Platform](batch-messaging.md)** | <ul><li>使用 Adobe Experience Platform 作為客戶個人資料與細分的中樞，以執行排程的批次訊息傳送行銷活動</li></ul> | <ul><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Campaign Classic、Managed Services 或 Campaign Standard</li><li>支援的協力廠商訊息服務供應商</li></ul> |
+| **[觸發的訊息傳送與 Adobe Experience Platform](triggered-messaging.md)** | <ul><li>使用 Adobe Experience Platform 作為串流資料、客戶個人資料與細分的中樞，以執行觸發的串流訊息傳送，使用 Journey Orchestration 串流歷程協調與訊息傳送</li></ul> | <ul><li>Adobe Experience Platform</li><li>Journey Orchestration</li><li>Adobe Campaign 或用於訊息傳送的其他協力廠商應用程式</li></ul> |
