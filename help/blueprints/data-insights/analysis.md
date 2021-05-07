@@ -1,5 +1,5 @@
 ---
-title: 資料分析與智慧藍圖
+title: 資料分析與情報 Blueprint
 description: 此 Blueprint 顯示 Adobe Experience Platform 中對資料湖中現有資料執行探索查詢和分析的功能。
 solution: Experience Platform
 kt: 7207
@@ -9,19 +9,19 @@ translation-type: tm+mt
 source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 31%
+ht-degree: 85%
 
 ---
 
-# 資料分析與智慧藍圖
+# 資料分析與情報 Blueprint
 
-Data Analysis and Intelligence包括Adobe Experience Platform內部對資料湖中存在的資料執行探索性查詢和分析的能力。
+資料分析與情報包括 Adobe Experience Platform 中對資料湖中現有資料執行探索查詢和分析的功能。
 
-Experience Platform的[!UICONTROL 查詢服務]允許對資料執行SQL查詢。 [!UICONTROL Data Science ] Workspace可讓資料探索、資料科學和機器學習工作量在資料上執行。
+Experience Platform 的[!UICONTROL 查詢服務]顯示對資料執行的 SQL 查詢。[!UICONTROL Data Science Workspace] 可對資料執行資料探索、資料科學及機器學習工作。
 
-此外，Experience Platform允許與第三方SQL客戶端、介面和Business Intelligence(BI)工具的連接，使用[!DNL PostgreSQL]協定直接連接、訪問和查詢Experience Platform中的資料。
+此外，Experience Platform 還允許連接協力廠商 SQL 用戶端、介面及 Business Intelligence (BI) 工具，以使用 [!DNL PostgreSQL]通訊協定直接連接、存取及查詢 Experience Platform 中的資料。
 
-某些護欄適用於查詢超時和查詢結果中包含的資料量，如Blueprint詳細資訊中所述。
+某些護欄適用於查詢逾時以及包含在查詢結果中的資料量，如 Blueprint 詳情中所述。
 
 ## 使用案例
 
@@ -44,13 +44,13 @@ Experience Platform的[!UICONTROL 查詢服務]允許對資料執行SQL查詢。
 
 ## 實施步驟
 
-1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) 要收錄的資料架構。
-1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) 要收錄的資料資料集。
+1. [建立要擷取的資料方案。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
+1. [為要擷取的資料建立資料集。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
 1. [擷取資料到 Experience Platform。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
-1. 確認資料可供[!UICONTROL 查詢服務]和[!UICONTROL 資料科學工作區]用於原始存取和查詢。
-1. 將Business Intelligence工具和SQL客戶端連接到[!UICONTROL 查詢服務]，以實現可視化、資料查詢和探索。
+1. 確認資料可用於 [!UICONTROL Query Service] 及 [!UICONTROL Data Science Workspace] 以進行原始存取與查詢。
+1. 將 Business Intelligence 工具和 SQL 用戶端連接到 [!UICONTROL Query Service] 以進行視覺化、資料查詢和探索。
 
 ## 相關文件
 
 * [Adobe Experience Platform Intelligence 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Query Service 文件](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)
+* [[!UICONTROL Query Service] 文件](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)
