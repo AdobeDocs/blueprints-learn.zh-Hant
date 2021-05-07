@@ -1,5 +1,5 @@
 ---
-title: 呼叫偏轉分析藍圖
+title: 呼叫改向分析 Blueprint
 description: 在客戶聯絡呼叫中心之前分析客戶行為。
 solution: Experience Platform, Customer Journey Analytics
 kt: 7209
@@ -8,11 +8,11 @@ translation-type: tm+mt
 source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
-# 呼叫偏轉歷程分析藍圖
+# 呼叫改向歷程分析 Blueprint
 
 在客戶聯絡呼叫中心之前分析客戶在桌面和行動裝置上的行為。瞭解您的客戶嘗試完成哪些操作、他們查看什麼內容以及在聯絡客戶支援之前搜尋哪些詞語，以發現改善客戶歷程的機會。確定可以改善的內容和自助服務工具，以協助您的客戶不需要致電而自行解決問題。
 
@@ -36,8 +36,8 @@ ht-degree: 93%
 
 ## 實施步驟
 
-1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html) 要收錄的資料架構。
-1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) 要收錄的資料資料集。
+1. [建立要擷取的資料方案。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
+1. [為要擷取的資料建立資料集。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
 1. [擷取資料到 Experience Platform。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)資料在擷取到 Customer Journey Analytics 之前，必須先擷取到 Platform。
 1. 分析跨通道事件資料集。
 聯合分析的資料集必須具有公共的命名空間 ID，或者透過 Customer Journey Analytics 基於欄位的功能重建索引鍵。 
