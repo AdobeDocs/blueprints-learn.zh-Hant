@@ -1,5 +1,5 @@
 ---
-title: 觸發訊息與Adobe Experience Platform藍圖
+title: 觸發的訊息傳送與 Adobe Experience Platform Blueprint
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
@@ -8,11 +8,11 @@ translation-type: tm+mt
 source-git-commit: 01f70fe432d7be38b71889ae19c0d5fe4cf0f78a
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 68%
+ht-degree: 81%
 
 ---
 
-# 觸發訊息與Adobe Experience Platform藍圖
+# 觸發的訊息傳送與 Adobe Experience Platform Blueprint
 
 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 
@@ -25,7 +25,7 @@ ht-degree: 68%
 
 ## 架構
 
-<img src="assets/triggered.svg" alt="觸發訊息與Adobe Experience Platform藍圖的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/triggered.svg" alt="觸發的訊息傳送與 Adobe Experience Platform Blueprint 之參考架構" style="border:1px solid #4a4a4a" />
 
 ## 整合模式
 
@@ -49,10 +49,10 @@ ht-degree: 68%
    * 批次區段 (每 24 小時重新整理一次)
    * 串流區段 (&lt;5 分鐘資格)
 * 批次區段：確保您瞭解符合資格使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
-* 串流區段：確保設定檔資格的初始高載可隨每個歷程及所有歷程中符合資格的每日串流流量一起處理
+* 串流區段：確保個人資料資格的初始高載可隨每個歷程及所有歷程中符合資格的每日串流流量一起處理
 * 最終目標必須支援 REST API 和 JSON 負載
 * 目前不支援 Offer Decisioning
-* 請參閱 [Experience Platform 的設定檔和資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+* 請參閱 [Experience Platform 的個人資料和資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 ### Adobe Campaign Standard
 
@@ -68,19 +68,19 @@ ht-degree: 68%
 
 #### 方案 / 資料集
 
-1. [在 Experience Platform 中基於客戶提供的資料設定個別設定檔、體驗事件及多實體方案。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
-1. 為broadLog、trackingLog、非交付項位址和描述檔偏好設定建立Adobe Campaign結構（選用）。
+1. [在 Experience Platform 中基於客戶提供的資料設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
+1. 建立 broadLog、trackingLog、無法送達的地址及個人資料偏好設定 (可選)　的 Adobe Campaign 方案。
 1. [建立](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) 要收錄資料的資料Experience Platform。
 1. [將資料使用](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html) Experience Platform新增至資料集以利管理。
 1. [建立政策以在目標上執行治理。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html)
 
-#### 設定檔 / 身份
+#### 個人資料 / 身份
 
 1. [建立任何客戶專屬的命名空間](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
 1. [將身分新增至結構](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
 1. [為配置檔案啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html)。
 1. [為「即時客](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html) 戶個人資料」的 [!UICONTROL 不同檢視設定合併政策] （可選）。
-1. 建立區段以利Adobe Campaign使用。
+1. 建立 Adobe Campaign 使用的區段。
 
 #### 來源 / 目標
 
@@ -88,7 +88,7 @@ ht-degree: 68%
 
 #### 行動應用程式部署
 
-1. 實作Adobe Campaign Classic的Adobe CampaignSDK或Adobe Campaign Standard的Experience PlatformSDK。 如果有Experience Platform Launch，建議將Adobe Campaign Classic或Adobe Campaign Standard擴充功能與Experience PlatformSDK搭配使用。
+1. 對 Adobe Campaign Classic 實施 Adobe Campaign SDK，或對 Adobe Campaign Standard 實施 Experience Platform SDK。如果 Experience Platform Launch 存在，建議 Adobe Campaign Classic 或 Adobe Campaign Standard 延伸與 Experience Platform SDK 一起使用。
 
 
 ### Journey Orchestration
@@ -107,7 +107,7 @@ ht-degree: 68%
 
 * [Adobe Experience Platform 文件](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 * [Journey Orchestration 文件](https://experienceleague.adobe.com/docs/journey-orchestration.html?lang=zh-Hant)
-* [Adobe Campaign Classic檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
-* [Adobe Campaign Standard檔案](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant)
+* [Adobe Campaign Classic 文件](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
+* [Adobe Campaign Standard 文件](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant)
 * [Experience Platform Launch 文件](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
 * [Experience Platform Mobile SDK 文件](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
