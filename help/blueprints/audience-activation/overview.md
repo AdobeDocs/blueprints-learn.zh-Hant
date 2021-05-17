@@ -5,11 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-translation-type: tm+mt
-source-git-commit: 5471d9c0f6fdef6fbac72d5d35f32353ea5a5ee8
+source-git-commit: fb0ed8245f2be9b9260afbc3b749fde0eae58b5c
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 91%
+source-wordcount: '941'
+ht-degree: 66%
 
 ---
 
@@ -28,6 +27,17 @@ ht-degree: 91%
 | **[使用Experience Cloud應用程式啟動受眾和個人檔案](platform-and-applications.md)** | </ul><li>在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用</li><li>建立並分享豐富的Experience Platform客戶細分和見解，並與Experience Cloud應用程式分享</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
 | **[客戶活動中樞](customer-activity.md)** | <ul><li>為代理支援的互動提供更深入的消費者背景，例如支援和銷售經驗。使用對 Experience Platform 的個人資料查詢，代理可以獲得關於消費者的更多背景，例如最近的購買、行銷活動互動、傾向性、對象會籍，以及即時客戶個人資料中儲存的其他屬性和深入見解。</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
+## 即時客戶個人檔案架構
+
+下圖概述了該Experience Platform的即時客戶概要檔案的核心元件。
+
+首先將資料來源收錄在Experience Platform中。 如果資料來源已設定為進行描述檔處理，則會饋送至即時客戶描述檔。 為每個資料源和為每個資料源配置的每個主ID記錄建立單個配置檔案片段或文檔。 此外，當資料被擷取至描述檔時，身分服務也會處理資料。 來自資料來源的任何記錄，若資料來源中有多個標示於架構中的身分，且記錄中填入了對應值，則會處理為身分服務中的身分關係。
+
+請注意，身分服務不會處理只有一個身分的記錄，因為此類記錄沒有可進一步填入圖表的身分連結。 請注意，身分服務不會將主要身分與次要身分區分。 它只是跨身分處理身分關係。
+
+合併描述檔片段會發生在身分圖提供已相關之各種來源描述檔片段間的關係時。 合併策略確定要合併哪些源片段以及將哪些標識圖用作這些片段。 只要描述檔存取，就會合併描述檔片段，以確保描述檔的最新組合檢視。 管理和原則規則可確保只有已授權的區段和屬性才能啟動至指定的目的地。
+
+<img src="assets/profile_architecture.jpg" alt="即時客戶個人檔案的參考架構" style="border:1px solid #4a4a4a" />
 
 
 ## 受眾和個人檔案啟動藍圖的保障
