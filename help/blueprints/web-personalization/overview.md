@@ -5,11 +5,11 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d30af99dc08d0bc723edc4c1c4705ebc07c3c7b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '254'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 87%
 
 ## 網路與行動個人化的護欄
 
-[有關受眾和個人檔案啟動的護欄，請參閱「受眾和個人檔案啟動藍圖」區段下的護欄。](../audience-activation/overview.md)
+[如需對象與個人資料啟用相關的護欄，請參閱「對象與個人資料啟用 Blueprints」章節下的護欄。](../audience-activation/overview.md)
 
-### 線上／離線個人化護欄圖
+### 線上/離線個人化護欄圖
 
 <img src="assets/personalization_guardrails.svg" alt="線上/離線網路個人化 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
