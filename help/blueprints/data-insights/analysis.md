@@ -5,11 +5,11 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039,a972ea56-d1c8-45da-9044-ed31222a2441
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -39,14 +39,14 @@ Experience Platform 的[!UICONTROL 查詢服務]顯示對資料執行的 SQL 查
 
 ## 護欄
 
-請參閱查詢服務產品文檔以獲取有關最佳實踐和護欄的詳細資訊。
-[查詢服務指南](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/writing-queries.html?lang=en#best-practices)
+請參閱查詢服務產品文件，以了解關於最佳實踐與護欄的詳細資訊。
+[查詢服務指南](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/writing-queries.html?lang=zh-Hant#best-practices)
 
 ## 實施步驟
 
-1. [建立要擷取的資料方案。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html)
-1. [為要擷取的資料建立資料集。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
-1. [擷取資料到 Experience Platform。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)
+1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=zh-Hant)。
+1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
+1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。
 1. 確認資料可用於 [!UICONTROL Query Service] 及 [!UICONTROL Data Science Workspace] 以進行原始存取與查詢。
 1. 將 Business Intelligence 工具和 SQL 用戶端連接到 [!UICONTROL Query Service] 以進行視覺化、資料查詢和探索。
 
