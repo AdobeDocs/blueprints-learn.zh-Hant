@@ -1,26 +1,26 @@
 ---
-title: 使用Experience Cloud應用程式啟動受眾和個人檔案藍圖
-description: 在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用。
+title: 使用 Experience Cloud 應用程式的對象與個人資料啟用 Blueprint
+description: 在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: null
 source-git-commit: f527b23587e4ec893532997c3c99270946d7fa31
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 39%
+ht-degree: 92%
 
 ---
 
-# 使用Experience Cloud應用程式啟動受眾和個人檔案藍圖
+# 使用 Experience Cloud 應用程式的對象與個人資料啟用 Blueprint
 
-在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用。 建立並分享豐富的Experience Platform客戶細分和見解，並與Experience Cloud應用程式分享。
+在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們。在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們。
 
-使用Experience Cloud應用程式啟動會與[線上／離線Audience Activation藍圖](online-offline.md)緊密一致。
+使用 Experience Cloud 應用程式的啟用與[線上/離線對象啟用 Blueprint](online-offline.md) 密切一致。
 
 ## 使用案例
 
-* 透過Experience Cloud提供支援的客戶互動通道，個人化並鎖定目標。
-* 在Experience Platform和Experience Cloud應用程式之間共用觀眾和個人檔案資料。
+* Experience Cloud 支援的各客戶互動頻道中的個人化和目標。
+* 在 Experience Platform 與 Experience Cloud 應用程式之間分享對象和個人資料。
 
 ## 應用程式
 
@@ -35,16 +35,16 @@ ht-degree: 39%
 
 ## 架構
 
-[有關與Experience Platform應用程式整合的Experience Platform的其他體系結構圖，請參見Experience Cloud和應用程式體系結構部分。](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html)
+[有關與Experience Platform應用程式整合的Experience Platform的其他體系結構圖，請參見Experience Cloud和應用程式體系結構部分。](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=zh-Hant)
 
-### 使用Experience Cloud應用程式啟動受眾和個人檔案
+### 使用 Experience Cloud 應用程式的對象與個人資料啟用
 
-<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="使用Experience Cloud應用程式啟動觀眾和個人檔案的參考架構" style="border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="使用 Experience Cloud 應用程式的對象與個人資料啟用之參考架構" style="border:1px solid #4a4a4a" />
 <br>
 
 ## 護欄
 
-請參閱「對象與設定檔啟動概述」頁面[的護欄](overview.md)
+請參閱[「對象與個人資料啟用」概觀頁面所述的護欄](overview.md)
 
 ## 相關文件
 
