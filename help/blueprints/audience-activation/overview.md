@@ -8,7 +8,7 @@ exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 source-git-commit: 8cdb08ae29b766adf16877919af82d0691768576
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 66%
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 66%
 | **[匿名對象啟用](anonymous.md)** | <ul><li>為匿名和行為客戶資料定位網路及廣告通道上的對象。</li><li>整合協力廠商對象資料以增強個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
 | **[線上/離線對象啟用](online-offline.md)** | <ul><li>啟用至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager (可選)</li></ul> |
 | **[對象與個人資料啟用至企業目標](enterprise-destinations.md)** | <ul><li>複製和更新企業資料儲存區的個人資料和對象變更，以用於啟用和報告使用案例。 </li></ul><ul><li>透過從[!UICONTROL 即時客戶資料平台]到企業系統和應用程式的客戶操作通知，向客戶發起銷售或支援操作。</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Adobe Audience Manager (可選)</li></ul> |
-| **[使用Experience Cloud應用程式啟動受眾和個人檔案](platform-and-applications.md)** | <ul><li>在Experience Platform中管理個人檔案和受眾，並與Experience Cloud應用程式共用</li><li>建立並分享豐富的Experience Platform客戶細分和見解，並與Experience Cloud應用程式分享</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
+| **[使用 Experience Cloud 應用程式的對象與個人資料啟用](platform-and-applications.md)** | <ul><li>在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們</li><li>在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
 | **[客戶活動中樞](customer-activity.md)** | <ul><li>為代理支援的互動提供更深入的消費者背景，例如支援和銷售經驗。使用對 Experience Platform 的個人資料查詢，代理可以獲得關於消費者的更多背景，例如最近的購買、行銷活動互動、傾向性、對象會籍，以及即時客戶個人資料中儲存的其他屬性和深入見解。</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
 ## 即時客戶個人檔案架構
@@ -40,7 +40,7 @@ ht-degree: 66%
 <img src="assets/profile_architecture.jpg" alt="即時客戶個人檔案的參考架構" style="border:1px solid #4a4a4a" />
 
 
-## 受眾和個人檔案啟動藍圖的保障
+## 對象與個人資料啟用 Blueprints 的護欄
 
 * [個人資料與細分準則](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
@@ -56,7 +56,7 @@ ht-degree: 66%
 
 ### 啟用串流區段至批次目標
 
-* 支援將串流區段啟動至批次目的地。 批次目標排程根據批次目標排程匯出個人資料區段會籍。這包括透過串流和批次方法確定的區段會籍。
+* 支援串流區段啟用至批次目標。批次目標排程根據批次目標排程匯出個人資料區段會籍。這包括透過串流和批次方法確定的區段會籍。
 
 ### 體驗事件的啟用
 
