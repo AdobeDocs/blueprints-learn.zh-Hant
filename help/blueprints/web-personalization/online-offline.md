@@ -4,11 +4,11 @@ description: 同步網路個人化與電子郵件及其他已知和匿名的通�
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d30af99dc08d0bc723edc4c1c4705ebc07c3c7b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 97%
 
 ## 護欄
 
-[請參閱「Web and Mobile Personalization Blueprints概述」頁面上的護欄。](overview.md)
+[請參閱「網路與行動個人化 Blueprints」概觀頁面所述的護欄。](overview.md)
 
 ## 實施模式
 
@@ -84,7 +84,7 @@ ht-degree: 97%
 * [Experience Platform Segment Builder 概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)
 * [Audience Manager 來源連接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)
 * [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
-* [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
 * [Experience Cloud ID 服務文件](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)
 * [Experience Platform Launch 文件](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)
 
