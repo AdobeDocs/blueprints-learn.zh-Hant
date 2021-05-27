@@ -5,9 +5,9 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: 7722
 exl-id: null
 source-git-commit: f527b23587e4ec893532997c3c99270946d7fa31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 92%
 
 ## 架構
 
-[有關與Experience Platform應用程式整合的Experience Platform的其他體系結構圖，請參見Experience Cloud和應用程式體系結構部分。](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=zh-Hant)
+[如需與 Experience Cloud 應用程式整合的 Experience Platform 相關的其他架構圖，請參閱 Experience Platform 和應用程式架構部分。](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=zh-Hant)
 
 ### 使用 Experience Cloud 應用程式的對象與個人資料啟用
 
