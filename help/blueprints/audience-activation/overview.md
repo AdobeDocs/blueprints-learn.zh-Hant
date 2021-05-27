@@ -6,9 +6,9 @@ kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 source-git-commit: 8cdb08ae29b766adf16877919af82d0691768576
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 72%
 | **[使用 Experience Cloud 應用程式的對象與個人資料啟用](platform-and-applications.md)** | <ul><li>在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們</li><li>在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
 | **[客戶活動中樞](customer-activity.md)** | <ul><li>為代理支援的互動提供更深入的消費者背景，例如支援和銷售經驗。使用對 Experience Platform 的個人資料查詢，代理可以獲得關於消費者的更多背景，例如最近的購買、行銷活動互動、傾向性、對象會籍，以及即時客戶個人資料中儲存的其他屬性和深入見解。</li></ul> | <ul><li>Adobe Experience Platform</li></ul> |
 
-## 即時客戶個人檔案架構
+## 即時客戶個人資料架構
 
-下圖概述了該Experience Platform的即時客戶概要檔案的核心元件。
+下圖概述了 Experience Platform 的即時客戶個人資料的核心元件。
 
-首先將資料來源收錄在Experience Platform中。 如果資料來源已設定為進行描述檔處理，則會饋送至即時客戶描述檔。 為每個資料源和為每個資料源配置的每個主ID記錄建立單個配置檔案片段或文檔。 此外，當資料被擷取至描述檔時，身分服務也會處理資料。 來自資料來源的任何記錄，若資料來源中有多個標示於架構中的身分，且記錄中填入了對應值，則會處理為身分服務中的身分關係。
+先將資料來源擷取到 Experience Platform。如果資料來源已設定為進行個人資料處理，則會饋入至即時客戶個人資料。為每個資料來源以及設定用於每個資料來源的每個主要 ID 記錄建立單一個人資料片段或文件。此外，資料被擷取至個人資料時，亦會受到身分服務的處理。若資料來源中有多個標示於架構中的身分，且來自資料來源的任何記錄中填入了對應值，則記錄會處理為身分服務中的身分關係。
 
-請注意，身分服務不會處理只有一個身分的記錄，因為此類記錄沒有可進一步填入圖表的身分連結。 請注意，身分服務不會將主要身分與次要身分區分。 它只是跨身分處理身分關係。
+請注意，身分服務不會處理只有一個身分的記錄，因為此類記錄沒有可進一步填入圖表的身分連結。請注意，身分服務不會區分主要身分與次要身分。它只是跨身分處理身分關係。
 
-合併描述檔片段會發生在身分圖提供已相關之各種來源描述檔片段間的關係時。 合併策略確定要合併哪些源片段以及將哪些標識圖用作這些片段。 只要描述檔存取，就會合併描述檔片段，以確保描述檔的最新組合檢視。 管理和原則規則可確保只有已授權的區段和屬性才能啟動至指定的目的地。
+在身分圖提供已關聯之各種來源個人資料片段間的關係時，會發生個人資料片段合併。合併策略確定要合併哪些來源片段以及將哪些身分圖用作這些片段。任何時候只要存取個人資料，就會合併個人資料片段，以確保個人資料的最新組合檢視。管理和原則規則可確保只有已授權的區段和屬性才能啟動至指定的目的地。
 
-<img src="assets/profile_architecture.jpg" alt="即時客戶個人檔案的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/profile_architecture.jpg" alt="即時客戶個人資料的參考架構" style="border:1px solid #4a4a4a" />
 
 
 ## 對象與個人資料啟用 Blueprints 的護欄
