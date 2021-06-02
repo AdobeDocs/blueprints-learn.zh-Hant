@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 70b3bf294741888c3d109a2d4ef710d428800abf
+source-git-commit: 6c4b72159d4ba2a171215678e4e4842956d82745
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 11%
@@ -18,13 +18,13 @@ ht-degree: 11%
 
 此架構圖顯示 Adobe Experience Platform 如何與 Adobe Experience Cloud 應用程式及應用程式服務連結。
 
-<img src="assets/aep+apps_vertical.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a" />
+<img src="assets/aep+apps_vertical.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:80%;" />
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
 ## Adobe Experience Platform 與應用程式詳細架構圖
 
-<img src="assets/aep+apps_horizontal.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a" />
+<img src="assets/aep+apps_horizontal.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:80%;" />
 
 ## Adobe Experience Platform與Experience Cloud應用程式整合
 
