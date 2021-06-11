@@ -1,30 +1,30 @@
 ---
-user-guide-title: 數位體驗 Blueprint
+user-guide-title: 數位體驗 Blueprints
 breadcrumb-title: 'Blueprints '
-user-guide-description: Blueprints 是可重複的實施，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
+user-guide-description: Blueprints 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
 source-git-commit: 70b3bf294741888c3d109a2d4ef710d428800abf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '119'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# 數位體驗 Blueprint {#architecture}
+# 數位體驗 Blueprints {#architecture}
 
 + [概覽](/help/blueprints/overview.md)
-+ 架構概述{#architecture-overview}
++ 架構概覽 {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform 與應用程式](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform 資料流程](/help/blueprints/experience-platform/platform-data-flow.md)
-+ 對象與個人資料啟用 {#audience-activation}
++ 對象與設定檔啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
    + [匿名對象啟用](/help/blueprints/audience-activation/anonymous.md)
    + [線上/離線對象啟用](/help/blueprints/audience-activation/online-offline.md)
    + [啟用至企業目標](/help/blueprints/audience-activation/enterprise-destinations.md)
-   + [使用 Experience Cloud 應用程式的啟用](/help/blueprints/audience-activation/platform-and-applications.md)
-   + [客戶活動中樞 ](/help/blueprints/audience-activation/customer-activity.md)
+   + [使用 Experience Cloud 應用程式啟用](/help/blueprints/audience-activation/platform-and-applications.md)
+   + [客戶活動中樞](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
    + [跨通道歷程分析](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
@@ -36,7 +36,7 @@ ht-degree: 98%
 + 資料分析、情報與 AI/ML {#data-exploration}
    + [概覽](/help/blueprints/data-insights/overview.md)
    + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
-   + [自訂資料科學以豐富個人資料 ](/help/blueprints/data-insights/data-science.md)
+   + [自訂資料科學以豐富設定檔](/help/blueprints/data-insights/data-science.md)
 + 多通道訊息協調 {#multi-channel-message-orchestration}
    + [概覽](/help/blueprints/multi-channel-message-orchestration/overview.md)
    + [批次訊息傳送與 Experience Platform](/help/blueprints/multi-channel-message-orchestration/batch-messaging.md)
