@@ -6,9 +6,9 @@ kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
 source-git-commit: 6c4b72159d4ba2a171215678e4e4842956d82745
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 11%
 
 <img src="assets/aep+apps_horizontal.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:80%;" />
 
-## Adobe Experience Platform與Experience Cloud應用程式整合
+## Adobe Experience Platform 與 Experience Cloud 應用程式整合
 
 <table class="relative-table wrapped" style="width: 100%;" >
    <colgroup>
@@ -38,45 +38,45 @@ ht-degree: 11%
   <tbody>
     <tr>
       <th>應用程式</th>
-      <th>Experience Platform到應用程式</th>
-      <th>應用程式到Experience Platform</th>
-      <th>相關藍圖</th>
+      <th>Experience Platform 到應用程式</th>
+      <th>應用程式到 Experience Platform</th>
+      <th>相關 Blueprints</th>
     </tr>
     <tr>
       <td colspan="1">Ad Cloud</td>
       <td colspan="1">
         <ul>
-          <li>即時客戶資料平台中定義的對象可共用至Ad Cloud，以透過Audience Manager鎖定目標。</li>
+          <li>在即時客戶資料平台中定義的對象可透過 Audience Manager 共用至 Ad Cloud，以進行目標定位。</li>
         </ul>
       </td>
-      <td colspan="1">無當前整合</td>
+      <td colspan="1">目前無整合</td>
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=en">匿名對象啟用</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=zh-Hant">匿名對象啟用</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">線上/離線對象啟用</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant">線上/離線對象啟用</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">使用Experience Platform和應用程式啟動</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>Analytics</td>
-      <td>無當前整合</td>
+      <td>目前無整合</td>
       <td>
         <ul>
-          <li>Analytics收集的資料可傳送至Experience Platform資料湖和設定檔存放區。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en">Analytics Data Connector</a>
+          <li>Analytics 收集的資料可傳送至 Experience Platform 資料湖和設定檔儲存區。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant">Analytics Data Connector</a>
           </li>
         </ul>
       </td>
       <td>
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-data-flow.html?lang=en">Experience Platform資料流程</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-data-flow.html?lang=zh-Hant">Experience Platform 資料流程</a>
           </li>
         </ul>
         <p>
@@ -88,25 +88,25 @@ ht-degree: 11%
       <td>Audience Manager</td>
       <td>
         <ul>
-          <li>可以與Audience Manager共用在即時客戶資料平台中定義的對象，以啟用至第三方Cookie目的地。</li>
+          <li>可以與 Audience Manager 共用在即時客戶資料平台中定義的對象，以啟用至第三方 Cookie 目的地。</li>
         </ul>
       </td>
       <td>
         <ul>
-          <li>收集和評估的受眾成員資格資料可以共用至Experience Platform資料湖和設定檔存放區。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=en">Audience Manager 來源連接器</a>
+          <li>收集的資料和評估的對象會籍可以共用至 Experience Platform 資料湖和設定檔儲存區。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a>
           </li>
         </ul>
       </td>
       <td>
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=en">匿名對象啟用</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=zh-Hant">匿名對象啟用</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">線上/離線對象啟用</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant">線上/離線對象啟用</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">使用Experience Platform和應用程式啟動</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a>
           </li>
         </ul>
       </td>
@@ -115,18 +115,18 @@ ht-degree: 11%
       <td colspan="1">Campaign Classic</td>
       <td colspan="1">
         <ul>
-          <li>可在即時Campaign Classic資料平台中定義的受眾可以共用給客戶，作為啟動行銷活動的受眾。</li>
+          <li>在即時客戶資料平台中定義的對象可以共用至 Campaign Classic，作為啟動行銷活動的對象。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>Campaign所收集的互動和促銷活動資料可擷取至Experience Platform，作為資料來源，以便透過即時客戶資料平台建立受眾，並透過Customer Journey Analytics和Experience Platform查詢服務及資料科學工作區進行分析，以供進一步使用。</li>
+          <li>Campaign 所收集的互動和行銷活動資料可作為資料來源擷取至 Experience Platform，以便透過即時客戶資料平台進一步用於對象建立，以及透過 Customer Journey Analytics 和 Experience Platform 查詢服務及資料科學工作區進一步用於分析。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/batch-messaging.html?lang=en">批次傳訊</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/batch-messaging.html?lang=zh-Hant">批次訊息傳送</a>
           </li>
         </ul>
       </td>
@@ -135,18 +135,18 @@ ht-degree: 11%
       <td colspan="1">Campaign Standard</td>
       <td colspan="1">
         <ul>
-          <li>可在即時Campaign Standard資料平台中定義的受眾可以共用給客戶，作為啟動行銷活動的受眾。</li>
+          <li>在即時客戶資料平台中定義的對象可以共用至 Campaign Standard，作為啟動行銷活動的對象。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>Campaign所收集的互動和促銷活動資料可擷取至Experience Platform，作為資料來源，以便透過即時客戶資料平台建立受眾，並透過Customer Journey Analytics和Experience Platform查詢服務及資料科學工作區進行分析，以供進一步使用。</li>
+          <li>Campaign 所收集的互動和行銷活動資料可作為資料來源擷取至 Experience Platform，以便透過即時客戶資料平台進一步用於對象建立，以及透過 Customer Journey Analytics 和 Experience Platform 查詢服務及資料科學工作區進一步用於分析。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/batch-messaging.html?lang=en">批次傳訊</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/batch-messaging.html?lang=zh-Hant">批次訊息傳送</a>
           </li>
         </ul>
       </td>
@@ -155,14 +155,14 @@ ht-degree: 11%
       <td colspan="1">Customer Journey Analytics</td>
       <td colspan="1">
         <ul>
-          <li>收集並擷取至Experience Platform資料湖的資料可供處理至Customer Journey Analytics。 </li>
+          <li>收集並擷取至 Experience Platform 資料湖的資料可供處理 Customer Journey Analytics。 </li>
         </ul>
       </td>
-      <td colspan="1">目前沒有可用的整合。 從Customer Journey Analytics分享受眾結果的Experience Platform能力，在藍圖上。</td>
+      <td colspan="1">目前沒有可用的整合。從 Customer Journey Analytics 共用對象結果到 Experience Platform 的能力正在設計中。</td>
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=en">Customer Journey Analytics</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=zh-Hant">Customer Journey Analytics</a>
           </li>
         </ul>
       </td>
@@ -171,14 +171,14 @@ ht-degree: 11%
       <td colspan="1">Experience Manager</td>
       <td colspan="1">
         <ul>
-          <li>Experience Platform設定檔可直接在伺服器端存取，以透過Experience Manager提供個人化體驗。 請注意，個人化活動最常透過Target整合透過Experience Manager傳送。 </li>
+          <li>Experience Platform 設定檔可直接在伺服器端存取，以支援透過 Experience Manager 提供的個人化體驗。請注意，個人化活動最常透過 Experience Manager 經由 Target 整合傳送。 </li>
         </ul>
       </td>
-      <td colspan="1">不會透過Experience ManagerWeb和行動SDK直接收集目前在Experience Platform網站上執行的整合、行為和互動。</td>
+      <td colspan="1">不會直接透過 Experience Platform Web 和 Mobile SDK 收集目前在 Experience Manager 網站上執行的整合、行為和互動。</td>
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">線上/離線對象啟用</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant">線上/離線對象啟用</a>
           </li>
         </ul>
       </td>
@@ -187,91 +187,91 @@ ht-degree: 11%
       <td colspan="1">Journey Optimizer</td>
       <td colspan="1">
         <ul>
-          <li>擷取至Experience Platform的資料事件和設定檔可供Journey Optimizer使用，以起始並支援Journey Optimizer中的歷程。</li>
+          <li>擷取至 Experience Platform 的資料事件和設定檔可供 Journey Optimizer 使用，以發起並支援 Journey Optimizer 中的歷程。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>Journey Optimizer產生的互動和促銷活動資料會收集到Experience Platform中，以供透過即時客戶資料平台建立受眾，以及透過Customer Journey Analytics、Experience Platform查詢服務和資料科學工作區進行分析時進一步使用。</li>
+          <li>Journey Optimizer 所生成的互動和行銷活動資料被收集至 Experience Platform，以便透過即時客戶資料平台進一步用於對象建立，以及透過 Customer Journey Analytics、Experience Platform 查詢服務及資料科學工作區進一步用於分析。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/triggered-messaging.html?lang=en">觸發訊息</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/triggered-messaging.html?lang=zh-Hant">觸發的訊息傳送</a>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
       <td colspan="1">Magento</td>
-      <td colspan="1">無當前整合</td>
-      <td colspan="1">無當前整合</td>
-      <td colspan="1">無當前整合</td>
+      <td colspan="1">目前無整合</td>
+      <td colspan="1">目前無整合</td>
+      <td colspan="1">目前無整合</td>
     </tr>
     <tr>
       <td colspan="1">Marketo</td>
       <td colspan="1">
         <ul>
-          <li>可在即時客戶資料平台中定義的對象可以與Marketo共用，作為對象，以啟動Marketo促銷活動和更新Marketo物件。</li>
+          <li>在即時客戶資料平台中定義的對象可以共用至 Marketo，作為啟動 Marketo 行銷活動和更新 Marketo 物件的對象。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>Marketo帳戶、連絡人和商機資料，以及Marketo所產生的互動和行銷活動資料，會匯入Experience Platform中，以便透過B2B-CDP建立受眾，以及透過Customer Journey Analytics、Experience Platform查詢服務和資料科學工作區進行分析時進一步使用。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en">Marketo Engage連接器</a>
+          <li>Marketo 帳戶、連絡人和商機資料以及 Marketo 所產生的互動和行銷活動資料，會擷取至 Experience Platform 中，以便透過 B2B-CDP 進一步用於對象構建，以及透過 Customer Journey Analytics、Experience Platform 查詢服務和資料科學工作區進一步用於分析。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant">Marketo Engage Connector</a>
           </li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>B2B啟動 — 開發中</li>
+          <li>B2B Activation - 開發中</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td colspan="1">Real-time CDP</td>
+      <td colspan="1">即時 CDP</td>
       <td colspan="1">
         <ul>
-          <li>匯入和收集至Experience Platform的資料是匯整即時客戶設定檔的資料來源，為即時客戶資料平台提供支援。</li>
+          <li>擷取和收集至 Experience Platform 的資料是匯整即時客戶設定檔的資料來源，這些設定檔為即時客戶資料平台提供支援。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>「對象」和「設定檔」量度會傳送至「Experience Platform」資料湖，以支援「設定檔分析」報表控制面板。</li>
-          <li>資料湖中的「對象」和「設定檔」資料可透過Query Service、Data Science Workspace和Customer Journey Analytics，用於進一步深入分析。</li>
+          <li>「對象」和「設定檔」量度指標會傳送至 Experience Platform 資料湖，以支援設定檔深入分析報告控制面板。</li>
+          <li>資料湖中的「對象」和「設定檔」資料可用於透過查詢服務、資料科學工作區和 Customer Journey Analytics 進一步進行深入分析。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">線上/離線對象啟用</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant">線上/離線對象啟用</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">使用Experience Platform和應用程式啟動</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td colspan="1">目標</td>
+      <td colspan="1">Target</td>
       <td colspan="1">
         <ul>
-          <li>可在即時客戶資料平台中定義的對象可共用至Target，並用於Target提供的個人化和鎖定體驗。 </li>
-          <li>藍圖中會提供與Target的直接Experience Edge整合，以提供即時區段成員資格和設定檔屬性存取。</li>
+          <li>在即時客戶資料平台中定義的對象可共用至 Target，並用於 Target 提供的個人化和目標定位體驗。 </li>
+          <li>Experience Edge 與 Target 進行直接整合，以用於即時區段會籍和設定檔屬性存取的能力正在設計中。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
-          <li>針對Target體驗和互動收集的資料可透過Experience PlatformWeb SDK收集以Experience Platform。 這些資料可用於透過即時客戶資料平台建立受眾，以及透過Customer Journey Analytics進行分析，  Experience Platform查詢服務與資料科學工作區。</li>
+          <li>為 Target 體驗和互動收集的資料可透過 Experience Platform Web SDK 收集至 Experience Platform。這些資料可用於透過即時客戶資料平台進行對象構建，以及用於透過 Customer Journey Analytics、Experience Platform 查詢服務和資料科學工作區進行分析。</li>
         </ul>
       </td>
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en">線上/離線對象啟用</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant">線上/離線對象啟用</a>
           </li>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">使用Experience Platform和應用程式啟動</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a>
           </li>
         </ul>
       </td>
