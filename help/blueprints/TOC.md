@@ -4,10 +4,10 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Blueprints 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
+source-git-commit: 366c1c90e8132faac85da17eade60e3b7be77906
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 100%
+source-wordcount: '118'
+ht-degree: 98%
 
 ---
 
@@ -29,6 +29,10 @@ ht-degree: 100%
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
    + [跨通道歷程分析](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
    + [呼叫改向](/help/blueprints/customer-journey-analytics/call-deflect.md)
++ 客戶歷程{#customer-journeys}
+   + [概覽](/help/blueprints/customer-journeys/overview.md)
+   + [批次訊息傳送與 Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
+   + [觸發的訊息傳送與 Experience Platform](/help/blueprints/customer-journeys/triggered-messaging.md)
 + 資料彙集與準備 {#data-ingestion}
    + [概覽](/help/blueprints/data-ingestion/overview.md)
    + [資料準備與擷取 ](/help/blueprints/data-ingestion/ingestion.md)
@@ -37,10 +41,6 @@ ht-degree: 100%
    + [概覽](/help/blueprints/data-insights/overview.md)
    + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
    + [自訂資料科學以豐富設定檔](/help/blueprints/data-insights/data-science.md)
-+ 多通道訊息協調 {#customer-journeys}
-   + [概覽](/help/blueprints/customer-journeys/overview.md)
-   + [批次訊息傳送與 Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
-   + [觸發的訊息傳送與 Experience Platform](/help/blueprints/customer-journeys/triggered-messaging.md)
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
