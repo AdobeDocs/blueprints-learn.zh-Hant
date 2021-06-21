@@ -3,11 +3,10 @@ title: 數位體驗 Blueprint
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
 solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-translation-type: ht
-source-git-commit: 9e0954334e8b8a8c5bf52651611e7afa165f6d21
-workflow-type: ht
+source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
+workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -32,18 +31,18 @@ ht-degree: 100%
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/triggered-messaging.html?lang=zh-Hant"><img alt="觸發的訊息與 Experience Platform Blueprint 的縮圖影像" src="multi-channel-message-orchestration/assets/triggered.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/multi-channel-message-orchestration/triggered-messaging.html?lang=zh-Hant"><strong>觸發的訊息傳送與 Experience Platform</strong></a></div>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/triggered-messaging.html"><img alt="觸發的訊息與 Experience Platform Blueprint 的縮圖影像" src="customer-journeys/assets/triggered.svg" /></a>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/triggered-messaging.html"><strong>觸發的訊息傳送與 Experience Platform</strong></a></div>
     <p><em>使用 [!UICONTROL Platform] 作為中樞的觸發訊息與體驗。</em></p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant"><img alt="線上/離線對象啟用 Blueprint 的縮圖影像" src="audience-activation/assets/online_offline_activation.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant"><strong>線上/離線對象啟用</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><strong>線上/離線對象啟用</strong></a></div>
     <p><em>傳遞由受眾啟用的跨通道廣告。</em></p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=zh-Hant"><img alt="數位行為資料整合 Blueprint 的縮圖影像" src="customer-journey-analytics/assets/CJA.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=zh-Hant"><strong>數位行為資料整合</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><strong>數位行為資料整合</strong></a></div>
     <p><em>為不同通道的客戶行為提供單一的整合視圖。</em></p>
   </td>
 </tr>
