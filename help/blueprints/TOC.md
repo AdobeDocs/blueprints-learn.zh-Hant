@@ -4,9 +4,9 @@ breadcrumb-title: 'Blueprints '
 user-guide-description: Blueprints 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, Business Practitioner
-source-git-commit: 366c1c90e8132faac85da17eade60e3b7be77906
+source-git-commit: d2bd81f4c4c7145508cfea74c74c0d9f62e0a884
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '116'
 ht-degree: 98%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 98%
 + 客戶歷程{#customer-journeys}
    + [概覽](/help/blueprints/customer-journeys/overview.md)
    + [批次訊息傳送與 Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
-   + [觸發的訊息傳送與 Experience Platform](/help/blueprints/customer-journeys/triggered-messaging.md)
+   + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
 + 資料彙集與準備 {#data-ingestion}
    + [概覽](/help/blueprints/data-ingestion/overview.md)
    + [資料準備與擷取 ](/help/blueprints/data-ingestion/ingestion.md)
