@@ -3,10 +3,9 @@ title: 客戶活動中心 Blueprint
 description: '[!UICONTROL 即時客戶個人資料]查詢，提供代理協助的支援及銷售之內容。'
 solution: Experience Platform,Data Collection
 kt: 7195
-exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c,4f15aa5d-9ee3-4d92-8012-3e2f0c0d615f
-translation-type: ht
-source-git-commit: d6eaf978a8f587b881480c14f192cb9e29e3c7e2
-workflow-type: ht
+exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
+source-git-commit: 8b055d87a9c55b640bd35e54325977526ce21d94
+workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 100%
 
@@ -32,7 +31,6 @@ ht-degree: 100%
 
 <img src="assets/customer_activity_hub.svg" alt="客戶活動中心 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
-
 ## 護欄
 
 * [[!UICONTROL 即時客戶個人資料]的護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
@@ -51,5 +49,5 @@ ht-degree: 100%
 
 * [Adobe Experience Platform Activation 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform0.html)
 * [[!UICONTROL 即時客戶個人資料]文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
-* [個人資料護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+* [個人資料護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [個人資料查詢 API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)
