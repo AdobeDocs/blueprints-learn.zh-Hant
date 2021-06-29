@@ -8,7 +8,7 @@ exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
 source-git-commit: 584007cc71e00729732c67a97546e2c21aed3f87
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 97%
       <td>目前無整合</td>
       <td>
         <ul>
-          <li>Analytics 收集的資料可傳送至 Experience Platform 資料湖和設定檔儲存區。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant">Analytics Data Connector</a>
+          <li>Analytics 收集的資料可傳送至 Experience Platform 資料湖和設定檔儲存區。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant">Analytics 資料連接器</a>
           </li>
         </ul>
       </td>
@@ -93,7 +93,7 @@ ht-degree: 97%
       </td>
       <td>
         <ul>
-          <li>收集的資料和評估的對象會籍可以共用至 Experience Platform 資料湖和設定檔儲存區。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a>
+          <li>收集的資料和評估的對象會籍可以共用至 Experience Platform 資料湖和設定檔儲存區。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a>
           </li>
         </ul>
       </td>
@@ -126,7 +126,7 @@ ht-degree: 97%
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=en">批次訊息傳送</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=zh-Hant">批次訊息傳送</a>
           </li>
         </ul>
       </td>
@@ -162,7 +162,7 @@ ht-degree: 97%
       <td colspan="1">
         <ul>
           <li>
-            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=en">Customer Journey Analytics</a>
+            <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=zh-Hant">Customer Journey Analytics</a>
           </li>
         </ul>
       </td>
@@ -218,7 +218,7 @@ ht-degree: 97%
       </td>
       <td colspan="1">
         <ul>
-          <li>Marketo 帳戶、連絡人和商機資料以及 Marketo 所產生的互動和行銷活動資料，會擷取至 Experience Platform 中，以便透過 B2B-CDP 進一步用於對象構建，以及透過 Customer Journey Analytics、Experience Platform 查詢服務和資料科學工作區進一步用於分析。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant">Marketo Engage Connector</a>
+          <li>Marketo 帳戶、連絡人和商機資料以及 Marketo 所產生的互動和行銷活動資料，會擷取至 Experience Platform 中，以便透過 B2B-CDP 進一步用於對象構建，以及透過 Customer Journey Analytics、Experience Platform 查詢服務和資料科學工作區進一步用於分析。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant">Marketo Engage 連接器</a>
           </li>
         </ul>
       </td>
