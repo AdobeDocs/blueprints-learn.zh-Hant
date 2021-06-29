@@ -5,10 +5,10 @@ solution: Experience Platform, Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 55e2bf2ac2339b0a6bf4a6ba3a4592ea511dd858
+source-git-commit: 64f29b492d010539e310c7d24979dedee56068f7
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 100%
+source-wordcount: '968'
+ht-degree: 97%
 
 ---
 
@@ -39,6 +39,11 @@ ht-degree: 100%
 
 在身分圖提供已關聯之各種來源個人資料片段間的關係時，會發生個人資料片段合併。合併策略確定要合併哪些來源片段以及將哪些身分圖用作這些片段。任何時候只要存取個人資料，就會合併個人資料片段，以確保個人資料的最新組合檢視。管理和原則規則可確保只有已授權的區段和屬性才能啟動至指定的目的地。
 
+## 區段與目的地概觀
+
+下圖概述各種分段方法，以及各種設定檔和受眾啟用模式。
+
+<img src="assets/segmentation_destination_overview.png" alt="即時客戶個人資料的參考架構" style="border:1px solid #4a4a4a" width="90%"/>
 
 ## 對象與個人資料啟用 Blueprints 的護欄
 
