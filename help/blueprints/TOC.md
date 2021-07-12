@@ -3,8 +3,8 @@ user-guide-title: 數位體驗 Blueprints
 breadcrumb-title: 'Blueprints '
 user-guide-description: Blueprints 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
-role: Architect, Developer, Business Practitioner
-source-git-commit: 55e2bf2ac2339b0a6bf4a6ba3a4592ea511dd858
+role: Architect, Developer, User
+source-git-commit: 1c352489190da65d9c39e126456980d7aa7981f1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 95%
