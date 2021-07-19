@@ -5,9 +5,9 @@ solution: Experience Platform, Target, Audience Manager, Analytics, Experience C
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 source-git-commit: 848f1366f3dd2d7948a31cfc606e906ec7f74fbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,11 +41,11 @@ ht-degree: 98%
 網路/行動個人化 Blueprint 可透過下列方法實施，如下所述。
 
 1. 使用 [!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 及 [!UICONTROL Edge Network]。
-1. 使用傳統應用程式特定的 SDK（例如 AppMeasurement.js）
+1. 使用傳統應用程式特定的 SDK (例如 AppMeasurement.js)
 
 ### 1. Platform Web/Mobile SDK 與 Edge 方法
 
-[請參閱Experience Platform網頁和行動SDK Blueprint](../data-ingestion/websdk.md)
+[請參閱 Experience Platform Web 和 Mobile SDK Blueprint](../data-ingestion/websdk.md)
 
 ### 2. 應用程式特定的 SDK 方法
 
@@ -84,7 +84,7 @@ ht-degree: 98%
 
 * [Experience Cloud 受眾](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=zh-Hant)
 * [整合 Audience Manager 與 Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=zh-Hant)
-* [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html)
+* [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
 
 
 ## 相關部落格貼文
