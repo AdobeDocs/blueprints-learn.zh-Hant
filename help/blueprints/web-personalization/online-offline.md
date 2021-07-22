@@ -4,10 +4,10 @@ description: 同步網路個人化與電子郵件及其他已知和匿名的通�
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 848f1366f3dd2d7948a31cfc606e906ec7f74fbb
-workflow-type: ht
-source-wordcount: '640'
-ht-degree: 100%
+source-git-commit: 176f4950ffb5b21005b6ad8cfbb993186086442b
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 87%
 
 ---
 
@@ -53,6 +53,11 @@ ht-degree: 100%
 
 ## 實施先決條件
 
+身分先決條件
+
+* 將受眾從Adobe Experience Platform共用至Adobe Target需要使用ECID做為身分。
+* 替代身分可用來透過Audience Manager與Adobe Target共用Experience Platform對象，因為只要同時收集到ECID和替代ID以供Audience Manager,Audience Manager就能將替代ID解析為ECID。 請注意，Audience Manager和Target會透過ECID身分識別解析對象成員資格，因此要將對象共用至Adobe Target，仍需要ECID。
+
 | 應用程式 / 服務 | 所需的資料庫 | 附註 |
 |---|---|---|
 | Adobe Target | [!UICONTROL Platform Web SDK]*、at.js 0.9.1+ 或 mbox.js 61+ | 首選 at.js，因為 mbox.js 不再進行開發。 |
@@ -61,6 +66,8 @@ ht-degree: 100%
 | Experience Cloud ID 服務 | [!UICONTROL Platform Web SDK]* 或 VisitorAPI.js 2.0+ | (推薦) 使用 Experience Platform Launch 部署 ID 服務以確保在任何應用程式調用之前設定 ID |
 | Experience Platform Mobile SDK (可選) | iOS 和 Android™ 的 4.11 或更高版本 |  |
 | Experience Platform Web SDK | 1.0，目前的 Experience Platform SDK 版本具有[Experience Cloud 應用程式尚不支援的各種使用案例](https://github.com/adobe/alloy/projects/5) |  |
+
+
 
 
 ## 實施步驟
@@ -83,7 +90,7 @@ ht-degree: 100%
 * [Experience Platform Segment Builder 概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)
 * [Audience Manager 來源連接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)
 * [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
-* [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
+* [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
 * [Experience Cloud ID 服務文件](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)
 * [Experience Platform Launch 文件](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)
 
