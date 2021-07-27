@@ -4,10 +4,10 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 1c352489190da65d9c39e126456980d7aa7981f1
+source-git-commit: c5fd3f33d48d830b5e5058b919e814e7f84ace81
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 100%
+source-wordcount: '121'
+ht-degree: 95%
 
 ---
 
@@ -45,5 +45,5 @@ ht-degree: 100%
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
-   + [線上/離線個人化](/help/blueprints/web-personalization/online-offline.md)
+   + [使用線上和離線資料進行個人化](/help/blueprints/web-personalization/online-offline.md)
 
