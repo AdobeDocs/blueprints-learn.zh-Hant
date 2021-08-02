@@ -1,14 +1,15 @@
 ---
 title: 匿名對象啟用 Blueprint
-description: 匿名對象啟用。
+description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。 此功能可在各裝置中實現個人化的統一即時客戶體驗。
+landing-page-description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。
 solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 53914ce36ef0e48734c04818fbf8a5285fbb14ab
-workflow-type: ht
-source-wordcount: '158'
-ht-degree: 100%
+source-git-commit: f461f94dcd4a1c15e09269edcf0121f83f2f896d
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 83%
 
 ---
 
