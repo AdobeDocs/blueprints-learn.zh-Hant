@@ -4,10 +4,10 @@ description: 同步網路個人化與電子郵件及其他已知和匿名的通�
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 3e3077c2a5f6dd67ccc4645ad2340efcbb4f4137
+source-git-commit: 8f1d76c317dbe4c7e916b4513960b4549a2d3424
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 85%
+source-wordcount: '748'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 85%
 身分先決條件
 
 * 將受眾從Adobe Experience Platform共用至Adobe Target需要使用ECID做為身分。
-* 替代身分可用來透過Audience Manager與Adobe Target共用Experience Platform對象，因為只要同時收集到ECID和替代ID以供Audience Manager,Audience Manager就能將替代ID解析為ECID。 請注意，Audience Manager和Target會透過ECID身分識別解析對象成員資格，因此要將對象共用至Adobe Target，仍需要ECID。
+* 替代身分可用來透過Audience Manager與Adobe Target共用Experience Platform對象，因為只要同時收集到ECID和替代ID並同時在Audience Manager和Experience Platform中使用相同的身分命名空間，Audience Manager就能將替代ID解析為ECID。 請注意，Audience Manager和Target會透過ECID身分識別解析對象成員資格，因此要將對象共用至Adobe Target，仍需要ECID。
 
 | 應用程式 / 服務 | 所需的資料庫 | 附註 |
 |---|---|---|
