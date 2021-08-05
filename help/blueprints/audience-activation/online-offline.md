@@ -1,23 +1,23 @@
 ---
-title: 線上/離線對象啟用 Blueprint
+title: 透過線上和離線資料Blueprint啟動
 description: 線上/離線對象啟用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: f527b23587e4ec893532997c3c99270946d7fa31
-workflow-type: ht
-source-wordcount: '522'
-ht-degree: 100%
+source-git-commit: 8f1d76c317dbe4c7e916b4513960b4549a2d3424
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 91%
 
 ---
 
-# 線上/離線對象啟用 Blueprint
+# 透過線上和離線資料Blueprint啟動
 
 使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。
 
 啟用對象至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。
 
-線上/離線對象啟用 Blueprint 與[使用 Experience Cloud 應用程式的對象與個人資料啟用 Blueprint](platform-and-applications.md) 密切一致。其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
+透過線上和離線資料Blueprint進行啟動會與[透過Experience Cloud應用程式Blueprint進行的受眾和設定檔啟動](platform-and-applications.md)緊密一致。 其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
 
 ## 使用案例
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## 架構
 
-### 包含目標的線上/離線對象啟用
+### 透過目的地啟動線上和離線資料
 
 <img src="assets/online_offline_activation.svg" alt="線上/離線對象啟用 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 <br>
@@ -69,4 +69,4 @@ ht-degree: 100%
 
 * [[!UICONTROL 即時客戶資料平台]概覽](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=zh-Hant)
 * [[!UICONTROL 即時客戶資料平台]示範](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=zh-Hant)
-* [建立區段](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=zh-Hant)
+* [建立區段](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
