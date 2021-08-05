@@ -1,17 +1,17 @@
 ---
-title: 對象與個人資料啟用至企業目標 Blueprint
+title: 檔案和企業串流目的地Blueprint的受眾和設定檔啟用
 description: 對象與個人資料啟用至企業目標
 solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5,None
-source-git-commit: 2fc1adc04a9ca2184c88970d5ba0785957327f68
-workflow-type: ht
-source-wordcount: '411'
-ht-degree: 100%
+source-git-commit: 8f1d76c317dbe4c7e916b4513960b4549a2d3424
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 94%
 
 ---
 
-# 對象與個人資料啟用至企業目標 Blueprint
+# 檔案和企業串流目的地Blueprint的受眾和設定檔啟用
 
 以串流或批次方式從[!UICONTROL 即時客戶資料平台]分享個人資料及對象變更與事件至企業資料儲存空間和應用程式。這些個人資料和對象事件可用於啟動對客戶的銷售或支援行動，例如跟進放棄的應用程式程序或網路研討會註冊，或者用[!UICONTROL 即時客戶資料平台]中的最新客戶屬性和情報更新企業應用程式。
 
@@ -56,4 +56,4 @@ ht-degree: 100%
 
 * [[!UICONTROL 即時客戶資料平台]概覽](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=zh-Hant)
 * [[!UICONTROL 即時客戶資料平台]示範](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=zh-Hant)
-* [建立區段](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=zh-Hant)
+* [建立區段](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
