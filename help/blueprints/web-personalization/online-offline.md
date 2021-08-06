@@ -1,12 +1,13 @@
 ---
 title: 使用線上和離線資料的網頁/行動個人化
 description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
+landing-page-description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 8f1d76c317dbe4c7e916b4513960b4549a2d3424
+source-git-commit: aa0cb68acc93821b978e58f638f8ab16a33cdfe6
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '760'
 ht-degree: 84%
 
 ---
