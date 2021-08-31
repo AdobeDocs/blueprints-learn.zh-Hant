@@ -4,10 +4,10 @@ description: 分析整個客戶歷程中的客戶互動並從中擷取深入見�
 solution: Experience Platform, Customer Journey Analytics, Data Collection
 kt: 7208
 exl-id: b042909c-d323-40d5-8b35-f3e5e3e26694
-source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
-workflow-type: ht
-source-wordcount: '548'
-ht-degree: 100%
+source-git-commit: 2cf3445775b2db827938d2927214a4073da20cdb
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 91%
 
 ---
 
@@ -39,8 +39,8 @@ ht-degree: 100%
 
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=zh-Hant)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
-1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。資料在處理到 Customer Journey Analytics 之前，必須先擷取到 Platform。
-1. 分析要統一分析的跨通道事件資料集，以確保它們具有共同的命名空間 ID，或者透過 Customer Journey Analytics 基於欄位的結合功能重建索引鍵。 
+1. 擷取資料到 Experience Platform。資料在處理到 Customer Journey Analytics 之前，必須先擷取到 Platform。如需資料擷取和資料來源類型的詳細資訊，請參閱下列檔案。 [資](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant) 料來源，包 [括Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant)。[資料擷取教學課程](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)
+1. 分析要統一分析的跨通道事件資料集，以確保它們具有共同的命名空間 ID，或者透過 Customer Journey Analytics 基於欄位的結合功能重建索引鍵。 請參閱跨管道分析檔案，進一步了解Customer Journey Analytics中的身分匯整。 [身分識別匯整](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en)
 
    >[!NOTE]
    >

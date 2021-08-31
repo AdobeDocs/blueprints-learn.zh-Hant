@@ -5,10 +5,10 @@ solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 45e47c3ac88a67069485952aaa57741820c37143
-workflow-type: ht
-source-wordcount: '250'
-ht-degree: 100%
+source-git-commit: 724d4c1016bbbdc7431df159af052f587288d2bf
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 96%
 
 ---
 
@@ -19,8 +19,9 @@ Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源�
 常見分析包括：
 
 * 頂端 / 底部轉換路徑
+* 管道參與和轉換
 * 最熱門的內容
-* 類別與產品
+* 排名在前的類別和產品
 * 哪些行銷活動促成了轉換及參與度的提升
 * 工具使用分析以最佳化自助服務體驗
 
