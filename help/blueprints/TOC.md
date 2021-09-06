@@ -4,16 +4,17 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: a13f31837a507711bb27f2fcc0d49c44ffe0a8d7
+source-git-commit: 7c958db2f2bb9cac4d15420d824de0f9722a8135
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 數位體驗 Blueprint {#architecture}
 
 + [概覽](/help/blueprints/overview.md)
++ [查看所有使用案例](/help/blueprints/use-cases.md)
 + 架構概覽 {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform 與應用程式](/help/blueprints/experience-platform/platform-applications.md)

@@ -1,10 +1,9 @@
 ---
 title: 數位體驗 Blueprint
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
-solution: Experience Platform
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 83cda30e0fac5c3a2c38ca4b2df2c2405736e4a0
-workflow-type: ht
+source-git-commit: d35b3cc34e0b3ab6fce9fc15a96e5f1183b0a0fd
+workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 100%
 
@@ -32,17 +31,17 @@ ht-degree: 100%
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=zh-Hant"><img alt="觸發的訊息與 Experience Platform Blueprint 的縮圖影像" src="customer-journeys/assets/journey-optimizer.png" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=zh-Hant"><strong>觸發的訊息傳送與 Experience Platform</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>觸發的訊息傳送與 Experience Platform</strong></a></div>
     <p><em>使用 [!UICONTROL Platform] 作為中樞的觸發訊息與體驗。</em></p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant"><img alt="線上/離線對象啟用 Blueprint 的縮圖影像" src="audience-activation/assets/online_offline_activation.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant"><strong>線上/離線對象啟用</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html"><strong>線上/離線對象啟用</strong></a></div>
     <p><em>傳遞由受眾啟用的跨通道廣告。</em></p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=zh-Hant"><img alt="數位行為資料整合 Blueprint 的縮圖影像" src="customer-journey-analytics/assets/CJA.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=zh-Hant"><strong>數位行為資料整合</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><strong>數位行為資料整合</strong></a></div>
     <p><em>為不同通道的客戶行為提供單一的整合視圖。</em></p>
   </td>
 </tr>
