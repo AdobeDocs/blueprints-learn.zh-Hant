@@ -1,13 +1,13 @@
 ---
 title: 數位體驗藍圖的使用案例
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
-source-git-commit: 3a923b26f91b9d40969a182bdd5271f40fb9a1d0
+exl-id: 7ec2b5c9-b46c-4434-b0d3-8aba863e9006
+source-git-commit: c80967fc9463996b4a3892dd5d0e76270d9247d1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '691'
+ht-degree: 75%
 
 ---
-
 
 # 數位體驗藍圖的使用案例
 
