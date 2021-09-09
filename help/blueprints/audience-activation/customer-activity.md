@@ -4,10 +4,10 @@ description: '[!UICONTROL 即時客戶個人資料]查詢，提供代理協助�
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 8b055d87a9c55b640bd35e54325977526ce21d94
-workflow-type: ht
-source-wordcount: '384'
-ht-degree: 100%
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 ## 實施步驟
 
-1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=zh-Hant)。
+1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [在方案上設定正確的身份和身份命名空間](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)，以確保擷取的資料可以嵌入統一的個人資料。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
@@ -49,5 +49,5 @@ ht-degree: 100%
 
 * [Adobe Experience Platform Activation 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform0.html)
 * [[!UICONTROL 即時客戶個人資料]文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
-* [個人資料護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+* [個人資料護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 * [個人資料查詢 API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)

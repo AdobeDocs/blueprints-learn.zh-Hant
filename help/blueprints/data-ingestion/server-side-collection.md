@@ -4,16 +4,16 @@ description: 由 Experience Platform SDK 串流彙集的資料至目標
 solution: Experience Platform,Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 3bcb5d798986e563fda6f40fc730ff62b74b3187
-workflow-type: ht
-source-wordcount: '228'
-ht-degree: 100%
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 82%
 
 ---
 
 # 伺服器端企業資料彙集 Blueprint
 
-伺服器端企業資料彙集 Blueprint 顯示如何將透過 Adobe Experience Platform Web 和 Mobile SDK 彙集的資料，從 Experience Platform Edge Network 轉寄到指定目標。您可以根據在 Experience Platform Launch 中設定的事件和規則轉寄從 SDK 彙集的所有原始資料或特定資料。
+伺服器端企業資料彙集 Blueprint 顯示如何將透過 Adobe Experience Platform Web 和 Mobile SDK 彙集的資料，從 Experience Platform Edge Network 轉寄到指定目標。您可以根據標籤屬性（先前稱為Launch）中設定的事件和規則，轉送從SDK收集的所有原始資料或特定資料。
 
 ## 使用案例
 
@@ -30,8 +30,8 @@ ht-degree: 100%
 
 ## 相關文件
 
-[Experience Platform Launch 伺服器端文件](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=zh-Hant#server-side-info)
-[Experience Platform Launch 伺服器端影片](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=zh-Hant)
+* [事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+* [事件轉送影片](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=zh-Hant)
 
 ## 相關部落格貼文
 

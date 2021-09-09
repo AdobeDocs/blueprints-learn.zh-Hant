@@ -4,10 +4,10 @@ description: 此藍圖顯示 Adobe Experience Platform 的 Data Science Workspac
 solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
-workflow-type: ht
-source-wordcount: '399'
-ht-degree: 100%
+source-git-commit: c26bf7523dc9b3310678a4129ea10ad06ef5e7cb
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 83%
 
 ---
 
@@ -27,15 +27,15 @@ ht-degree: 100%
 
 ## 實施步驟
 
-1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=zh-Hant)。
+1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。
-1. 建立 DSW 筆記本。
+1. [建立DSW筆記本](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/load-data-in-jupyterlab-notebooks.html?lang=en)。
 1. 選擇語言。支援 Python 和 PySpark。
-1. 在筆記本中建立模型。
-1. 訓練模型。
-1. 對模型評分以使用目標資料產生預測。
-1. 如果將模型結果推送到[!UICONTROL 即時客戶個人資料]，則為個人資料啟用模型結果資料集。
+1. [在筆記本中建立模型。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/recipe-builder-template.html?lang=en)
+1. [訓練模型](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en)。
+1. [對模型評分以使用目標資料產生預測。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en)
+1. [如果將模型結果推送至即時客戶設定檔，請啟用設定檔的 [!UICONTROL 模型結果資料集]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/dsw-profile-segmentation.html?lang=en)。
 
 ## 相關文件
 

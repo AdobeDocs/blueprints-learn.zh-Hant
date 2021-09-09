@@ -4,10 +4,10 @@ description: 在客戶聯絡呼叫中心之前分析客戶行為。
 solution: Experience Platform, Customer Journey Analytics
 kt: 7209
 exl-id: 13593c1c-4c58-4b8a-aa6c-7530fd679a14
-source-git-commit: 9fe9d67c5f97b633e45155bd54e2006f1b797332
-workflow-type: ht
-source-wordcount: '639'
-ht-degree: 100%
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ## 實施步驟
 
-1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=zh-Hant)。
+1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。資料在擷取到 Customer Journey Analytics 之前，必須先擷取到 Platform。
 1. 分析跨通道事件資料集。

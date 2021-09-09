@@ -4,10 +4,10 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 7c958db2f2bb9cac4d15420d824de0f9722a8135
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '129'
+ht-degree: 84%
 
 ---
 

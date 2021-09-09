@@ -4,10 +4,10 @@ description: 使用 Adobe Experience Platform 做為串流資料、客戶個人�
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: dc13a1fe9a32f70497c5c73485618e6989b7a644
-workflow-type: ht
-source-wordcount: '700'
-ht-degree: 100%
+source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 98%
 
 ---
 
@@ -37,8 +37,8 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 
 * 客戶必須有可建立應用程式的行動裝置開發人員
 * Adobe Experience Platform Mobile SDK
-* Adobe Launch
-   * 行動裝置屬性
+* 資料收集
+   * 行動標籤屬性
       * 擴充功能：
          * Adobe Journey Optimizer 擴充功能
          * Adobe Experience Platform Edge Network
@@ -73,7 +73,7 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 
 #### 方案 / 資料集
 
-1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/create-a-schema.html?lang=zh-Hant)
+1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)
 1. 建立 broadLog、trackingLog、無法送達的地址及個人資料偏好設定 (可選)　的 Adobe Campaign 方案。
 1. 在 Experience Platform 中為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [在 Experience Platform 中新增使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
@@ -82,7 +82,7 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 #### 個人資料 / 身份
 
 1. [建立任何客戶特定的命名空間。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)
-1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)。
+1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 1. 為[!UICONTROL 即時客戶個人資料]的不同檢視[設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant) (可選)。
 1. 建立行銷活動使用的區段。
