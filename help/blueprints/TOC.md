@@ -4,10 +4,10 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: ec32344078e8bad9639d8d11ce93ed68fda186f3
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 84%
+source-wordcount: '123'
+ht-degree: 83%
 
 ---
 
@@ -28,8 +28,6 @@ ht-degree: 84%
    + [客戶活動中樞](/help/blueprints/audience-activation/customer-activity.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
-   + [跨通道歷程分析](/help/blueprints/customer-journey-analytics/digital-behavioral-data-consolidation.md)
-   + [呼叫改向](/help/blueprints/customer-journey-analytics/call-deflect.md)
 + 客戶歷程 {#customer-journeys}
    + [概覽](/help/blueprints/customer-journeys/overview.md)
    + [批次訊息傳送與 Experience Platform](/help/blueprints/customer-journeys/batch-messaging.md)
