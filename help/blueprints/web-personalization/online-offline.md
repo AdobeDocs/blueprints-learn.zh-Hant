@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: aa0cb68acc93821b978e58f638f8ab16a33cdfe6
+source-git-commit: 5e93d3a5a09a3a20418ec7e563b93d22aef3ddc7
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 84%
 * [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
 * [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
 * [Experience Cloud ID 服務文件](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)
-* [Experience Platform Launch 文件](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=zh-Hant)
+* [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 
 ## 相關部落格貼文
 

@@ -2,10 +2,10 @@
 title: 數位體驗 Blueprint
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: d35b3cc34e0b3ab6fce9fc15a96e5f1183b0a0fd
+source-git-commit: d2b0643bd567a10b27591d22480db1bde2a0a36a
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 93%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 100%
     <p><em>傳遞由受眾啟用的跨通道廣告。</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=zh-Hant"><img alt="數位行為資料整合 Blueprint 的縮圖影像" src="customer-journey-analytics/assets/CJA.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html"><strong>數位行為資料整合</strong></a></div>
+    <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=en"><img alt="數位行為資料整合 Blueprint 的縮圖影像" src="customer-journey-analytics/assets/CJA.svg" /></a>
+    <div><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=en"><strong>跨通道歷程分析</strong></a></div>
     <p><em>為不同通道的客戶行為提供單一的整合視圖。</em></p>
   </td>
 </tr>
