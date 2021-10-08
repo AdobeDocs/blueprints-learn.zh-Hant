@@ -4,10 +4,10 @@ description: 線上/離線對象啟用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: e4e4838813d68ed3dc209c71354a86c1af264f1a
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 91%
 
 * 分享個人資料資料到目標需要您在目標負載中包含目標使用的特定身份值。對目標必要的任何身份必須擷取到 Platform，並且設定為[!UICONTROL 即時客戶個人資料]的身份。
 
-* 對於其中對象從 Experience Platform 分享至 Audience Manager 的啟用狀況，[!UICONTROL 即時客戶個人資料]中包含的所有身份將分享至 Audience Manager。當所需的目標身份包含在[!UICONTROL 即時客戶個人資料]中時，或者[!UICONTROL 即時客戶個人資料]中的身份可以關聯至 Audience Manager 中連結的所需目標身份時，Experience Platform 中的對象可透過 Audience Manager 目標分享。
+* 在啟用案例中，會從Experience Platform共用閱聽眾，以Audience Manager下列身分自動共用：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 目前不會共用客戶命名空間。 當所需的目標身份包含在[!UICONTROL 即時客戶個人資料]中時，或者[!UICONTROL 即時客戶個人資料]中的身份可以關聯至 Audience Manager 中連結的所需目標身份時，Experience Platform 中的對象可透過 Audience Manager 目標分享。
 
 ## 相關文件
 
