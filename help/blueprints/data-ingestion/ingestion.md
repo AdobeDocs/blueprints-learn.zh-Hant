@@ -5,7 +5,7 @@ solution: Experience Platform,Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 761b60e15c518aec2e295be0a45275bafe59479e
+source-git-commit: 642143ea2e2a28f66dd7b56a807fa952c2f5b4ac
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 架構
 
-<img src="assets/data_ingestion.png" alt="資料準備與擷取 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep_data_flow.png" alt="資料準備與擷取 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
 
 ## 資料擷取護欄
 
