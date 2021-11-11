@@ -4,7 +4,7 @@ description: 使用 Adobe Experience Platform 作為客戶個人資料與細分�
 solution: Experience Platform, Campaign
 kt: 7196
 exl-id: 4e55218c-c158-4f78-9f0b-c03528d992fa
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 99%
@@ -32,7 +32,7 @@ ht-degree: 99%
 
 ## 架構
 
-<img src="assets/aepbatch.svg" alt="批次訊息傳送與 Adobe Experience Platform Blueprint 之參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/aepbatch.svg" alt="批次訊息傳送與 Adobe Experience Platform Blueprint 之參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 護欄
 

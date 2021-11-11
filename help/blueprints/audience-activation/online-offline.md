@@ -4,10 +4,10 @@ description: 線上/離線對象啟用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: e4e4838813d68ed3dc209c71354a86c1af264f1a
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '532'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 啟用對象至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。
 
-透過線上和離線資料Blueprint進行啟動會與[透過Experience Cloud應用程式Blueprint進行的受眾和設定檔啟動](platform-and-applications.md)緊密一致。 其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
+透過線上和離線資料藍圖啟動會與 [透過Experience Cloud應用程式啟動受眾和設定檔Blueprint](platform-and-applications.md). 其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
 
 ## 使用案例
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ### 透過目的地啟動線上和離線資料
 
-<img src="assets/online_offline_activation.svg" alt="線上/離線對象啟用 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/online_offline_activation.svg" alt="線上/離線對象啟用 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
 ## 護欄

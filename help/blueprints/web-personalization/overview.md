@@ -5,7 +5,7 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 3e3077c2a5f6dd67ccc4645ad2340efcbb4f4137
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 97%
@@ -27,7 +27,7 @@ ht-degree: 97%
 
 ### 線上/離線個人化護欄圖
 
-<img src="assets/personalization_guardrails.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/personalization_guardrails.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 相關部落格貼文
 

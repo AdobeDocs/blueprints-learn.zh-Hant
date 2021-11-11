@@ -4,7 +4,7 @@ description: 透過Real-time Customer Data Platform提供以帳戶為基礎的�
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
 exl-id: null
-source-git-commit: d811d82418d477372caa9e5b0b67af197275d459
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 5%
@@ -30,7 +30,7 @@ ht-degree: 5%
 
 ## 架構
 
-<img src="assets/b2b-activation.svg" alt="B2B啟動Blueprint的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/b2b-activation.svg" alt="B2B啟動Blueprint的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
 ## 護欄

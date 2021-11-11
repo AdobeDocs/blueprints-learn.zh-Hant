@@ -4,7 +4,7 @@ description: 由 Experience Platform SDK 串流彙集的資料至目標
 solution: Experience Platform,Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 82%
@@ -26,7 +26,7 @@ ht-degree: 82%
 
 ## 架構
 
-<img src="assets/enterprise_collection.svg" alt="企業資料彙集的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/enterprise_collection.svg" alt="企業資料彙集的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 相關文件
 

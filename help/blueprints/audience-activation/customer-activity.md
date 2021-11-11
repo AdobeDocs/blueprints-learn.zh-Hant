@@ -4,7 +4,7 @@ description: '[!UICONTROL 即時客戶個人資料]查詢，提供代理協助�
 solution: Experience Platform,Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 3c950cebaa25901ae50433775c510ed834d8bcd5
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 98%
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 ## 架構
 
-<img src="assets/customer_activity_hub.svg" alt="客戶活動中心 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/customer_activity_hub.svg" alt="客戶活動中心 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 護欄
 

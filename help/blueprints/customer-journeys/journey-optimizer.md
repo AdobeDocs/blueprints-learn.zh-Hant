@@ -4,7 +4,7 @@ description: 使用 Adobe Experience Platform 做為串流資料、客戶個人�
 solution: Experience Platform, Campaign, Journey Orchestration
 kt: 7197
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: d19f42a181b51135c3cf672eeb957709279fe49a
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 94%
@@ -24,7 +24,7 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 
 ## 架構
 
-<img src="assets/journey-optimizer.png" alt="觸發的訊息傳送與 Adobe Experience Platform Blueprint 之參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/journey-optimizer.png" alt="觸發的訊息傳送與 Adobe Experience Platform Blueprint 之參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 整合模式
 
@@ -53,7 +53,7 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 
 ## 護欄
 
-* 如需Journey Optimizer [LINK](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)護欄的詳細資訊，請參閱連結
+* 如需Journey Optimizer護欄的詳細資訊，請參閱連結 [連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)
 * 批次區段 — 需要確保您瞭解符合資格使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
 * 串流區段 — 需要確保個人資料資格的初始高載可隨每個歷程及所有歷程中符合資格的每日串流流量一起處理
 * 個人資料更新活動 — 即時客戶個人資料可從歷程內以原生方式更新。將更新處理至個人資料儲存區時，延遲最多 1 分鐘

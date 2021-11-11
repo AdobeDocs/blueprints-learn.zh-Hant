@@ -4,7 +4,7 @@ description: 此藍圖顯示 Adobe Experience Platform 的 Data Science Workspac
 solution: Experience Platform,Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: c26bf7523dc9b3310678a4129ea10ad06ef5e7cb
+source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 83%
@@ -23,19 +23,19 @@ ht-degree: 83%
 
 ## 架構
 
-<img src="assets/data_science.svg" alt="為豐富個人資料自訂資料科學 Blueprint 的參考架構" style="border:1px solid #4a4a4a" />
+<img src="assets/data_science.svg" alt="為豐富個人資料自訂資料科學 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 實施步驟
 
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。
-1. [建立DSW筆記本](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/load-data-in-jupyterlab-notebooks.html?lang=en)。
+1. [建立DSW筆記本](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/load-data-in-jupyterlab-notebooks.html?lang=en).
 1. 選擇語言。支援 Python 和 PySpark。
 1. [在筆記本中建立模型。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/recipe-builder-template.html?lang=en)
-1. [訓練模型](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en)。
+1. [訓練模型](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en).
 1. [對模型評分以使用目標資料產生預測。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/schedule-training-scoring.html?lang=en)
-1. [如果將模型結果推送至即時客戶設定檔，請啟用設定檔的 [!UICONTROL 模型結果資料集]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/dsw-profile-segmentation.html?lang=en)。
+1. [如果將模型結果推送至 [!UICONTROL 即時客戶個人檔案]](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-science-workspace/dsw-profile-segmentation.html?lang=en).
 
 ## 相關文件
 
