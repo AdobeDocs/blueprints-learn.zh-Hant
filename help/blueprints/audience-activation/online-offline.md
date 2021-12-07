@@ -4,10 +4,10 @@ description: 線上/離線對象啟用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+source-git-commit: c51ea51266ef61d5fdfdb50f4e0c1316790b1986
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 85%
+source-wordcount: '729'
+ht-degree: 62%
 
 ---
 
@@ -56,7 +56,15 @@ ht-degree: 85%
 
 * 分享個人資料資料到目標需要您在目標負載中包含目標使用的特定身份值。對目標必要的任何身份必須擷取到 Platform，並且設定為[!UICONTROL 即時客戶個人資料]的身份。
 
-* 在啟用案例中，會從Experience Platform共用閱聽眾，以Audience Manager下列身分自動共用：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 目前不會共用客戶命名空間。 當所需的目標身份包含在[!UICONTROL 即時客戶個人資料]中時，或者[!UICONTROL 即時客戶個人資料]中的身份可以關聯至 Audience Manager 中連結的所需目標身份時，Experience Platform 中的對象可透過 Audience Manager 目標分享。
+### 受眾從Real-time Customer Data Platform分享至Audience Manager
+
+* 當區段評估完成並寫入即時Audience Manager設定檔（不論是批次或串流）,RT-CDP的受眾成員資格會立即以串流方式共用給客戶。 如果符合資格的設定檔包含相關設定檔裝置的地區路由資訊，則來自RTCDP的對象成員資格會在相關Audience ManagerEdge上以串流方式符合資格。 如果RTCDP中的配置檔案不包含區域路由資訊，則配置檔案成員會發送到Audience Manager中心位置，以便進行基於批次的評估和激活。 符合Edge啟動資格的設定檔將在RTCDP區段資格後的數分鐘內啟動，不符合Edge啟動資格的設定檔將在Audience Manager中樞中心啟動，且可能有12至24小時的處理時間範圍。
+
+* 當Analytics資料啟用以收集至設定檔時，可從Analytics Data Connector收集要儲存設定檔相關裝置資訊的Audience Manager邊緣的地區路由資訊，或直接從WebSDK收集為個別設定檔記錄類別資料集，之後必須為設定檔啟用。
+
+* 在啟用案例中，會從Experience Platform共用閱聽眾，以Audience Manager下列身分自動共用：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 目前不共用自訂命名空間。
+
+當所需的目標身份包含在[!UICONTROL 即時客戶個人資料]中時，或者[!UICONTROL 即時客戶個人資料]中的身份可以關聯至 Audience Manager 中連結的所需目標身份時，Experience Platform 中的對象可透過 Audience Manager 目標分享。
 
 ## 相關文件
 
