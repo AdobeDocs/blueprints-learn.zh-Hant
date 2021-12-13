@@ -5,10 +5,10 @@ solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: ec32344078e8bad9639d8d11ce93ed68fda186f3
+source-git-commit: 18c5ac6e01636d4d3b0ea0eb2edb92c949c870c5
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 88%
+source-wordcount: '304'
+ht-degree: 73%
 
 ---
 
@@ -25,9 +25,12 @@ Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源�
 * 哪些行銷活動促成了轉換及參與度的提升
 * 工具使用分析以最佳化自助服務體驗
 
-| Blueprint | 說明 | Experience Cloud 應用程式 |
-|---|---|---|
-| **[跨通道歷程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)** | <ul><li>統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (可選)</li></ul> |
+如需Customer Journey Analytics使用案例的完整清單，請參閱此處的Customer Journey Analytics檔案。
+
+## [Customer Journey Analytics使用案例連結](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en)
+
+主要使用案例範例包括下列。
+| Blueprint |說明 |Experience Cloud應用程式 | |—|—|—| | **[跨管道歷程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (可選)</li></ul>|
 | **[呼叫改向歷程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>整合呼叫中心資料與網路、行動裝置及其他互動資料，確定哪些行為對產生代理協助的呼叫最有意義。</li><li>接著可將這些深入見解用於最佳化客戶體驗，透過最佳化的自助服務內容與工具縮短代理協助的互動路徑。  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
 ## Customer Journey Analytics藍圖護欄圖

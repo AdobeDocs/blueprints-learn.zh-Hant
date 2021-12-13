@@ -1,18 +1,18 @@
 ---
-title: B2B啟動與行銷
+title: B2B分析與啟用
 description: 透過Real-time Customer Data Platform提供以帳戶為基礎的受眾和以設定檔為中心的客戶體​驗。
 solution: Experience Platform, Real-time Customer Data Platform
 kt: 9311
-thumbnail: null
-source-git-commit: bc8aab586175ab004614764645ee8a86713b407b
+exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
+source-git-commit: 7a26fa761cce509c15678a341e2ed3a8542330d6
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 38%
+source-wordcount: '177'
+ht-degree: 35%
 
 ---
 
 
-# B2B啟動與行銷
+# B2B分析與啟用
 
 B2B受眾和設定檔啟動是資料導向行銷領域成功的關鍵。 但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
 
@@ -20,4 +20,5 @@ B2B受眾和設定檔啟動是資料導向行銷領域成功的關鍵。 但許�
 
 | Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
+| **[B2B分析](b2bactivation.md)** | <ul><li>在客戶歷程分析中加入B2B帳戶資訊</li></ul> | <ul><li>AdobeCustomer Journey Analytics</li></ul> |
 | **[B2BAudience Activation](b2bactivation.md)** | <ul><li>跨網路、電子郵件和廣告頻道鎖定B2B受眾。</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B版</li></ul> |
