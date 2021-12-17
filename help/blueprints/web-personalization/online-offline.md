@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+source-git-commit: b52346f224964b50ff5e5e553eca88670b7580f3
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 85%
+source-wordcount: '1065'
+ht-degree: 57%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 85%
 * 登陸頁面最佳化
 * 行為與離線個人資料目標定位
 * 除離線深入見解 (如異動、忠誠度與 CRM 資料及建模的深入見解) 外，基於之前產品/內容視圖、產品/內容相似性、環境屬性、協力廠商對象資料及人口統計資料的個人化
+* 在使用Adobe Target的網站和行動應用程式上共用和鎖定Real-time Customer Data Platform中定義的對象。
 
 ## 應用程式
 
@@ -28,6 +29,46 @@ ht-degree: 85%
 * Adobe Target
 * Adobe Audience Manager (可選)：新增協力廠商對象資料、基於協作的裝置圖、在 Adobe Analytics 中顯示 Platform 區段的能力，以及在 Platform 中顯示 Adobe Analytics 區段的能力
 * Adobe Analytics (可選)：新增基於歷史行為資料以及 Adobe Analytics 資料的細分建立區段的能力
+
+## 整合模式
+
+<table class="tg" style="undefined;table-layout: fixed; width: 790px">
+<colgroup>
+<col style="width: 20px">
+<col style="width: 276px">
+<col style="width: 229px">
+<col style="width: 265px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-y6fn">#</th>
+    <th class="tg-f7v4">整合模式</th>
+    <th class="tg-y6fn">功能</th>
+    <th class="tg-f7v4">先決條件</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">透過受眾共用服務方法，將受眾串流和批次共用給Target和Audience Manager</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 透過受眾共用服務，從RTCDP共用串流和批次受眾至Target及Audience Manager。 即時評估的對象需要整合模式3中概述的WebSDK和即時對象評估。</span></td>
+    <td class="tg-73oq"> — 必須透過受眾共用服務布建受眾投影。<br> — 與Target整合需要與Experience Platform例項相同的IMS組織。<br> — 身分必須解析為ECID才能共用至邊緣，Target才能執行動作。 AAM有獨立的已核准身分清單，可比對<br> — 此整合不需要部署WebSDK。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2</td>
+    <td class="tg-73oq">透過Edge方法將RTCDP串流和批次受眾共用給Target</td>
+    <td class="tg-0lax"> — 透過Edge Network將串流和批次受眾從RTCDP共用至Target。 即時評估的對象需要整合模式3中概述的WebSDK和即時對象評估。</td>
+    <td class="tg-73oq"><span style="text-decoration:none"> — 目前測試版</span><br> — 必須在RTCDP目標中配置目標目標。<br> — 與Target整合需要與Experience Platform例項相同的IMS組織。<br>WebSDK不是必要項目。 支援WebSDk和AT.js。 <br> — 如果使用AT.js，則僅支援對ECID進行設定檔查閱。 <br> — 若要在Edge上查閱自訂ID命名空間，需要WebSDK部署，且每個身分必須在身分對應中設定為身分。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">3</td>
+    <td class="tg-73oq">透過使用WebSDK的Edge網路與Target共用的Edge上，進行RTCDP即時區段評估。</td>
+    <td class="tg-0lax"> — 即時評估Edge上相同或下一頁個人化的對象。</td>
+    <td class="tg-73oq"><span style="text-decoration:none"> — 目前測試版</span><br> — 必須在RTCDP目標中配置目標目標。<br> — 與Target整合需要與Experience Platform例項相同的IMS組織。<br> — 必須實作WebSDK。<br> — 也支援透過API使用。</td>
+  </tr>
+</tbody>
+</table>
+
 
 ## 架構
 
@@ -78,10 +119,11 @@ ht-degree: 85%
 1. [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant) (可選)
 1. [實施 Experience Platform 與[!UICONTROL 即時客戶個人資料]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)
 1. 實施 [Experience Cloud Identity 服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=zh-Hant) 或 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
+1. [請求在 Experience Platform 與 Adobe Target 之間佈建對象分享 (已分享對象)](https://www.adobe.com/go/audiences)
    >[!NOTE]
    >
-   >每個應用程式必須使用 Experience Cloud ID 且屬於同一 Experience Cloud Org，才允許在應用程式之間進行對象分享。
-1. [請求在 Experience Platform 與 Adobe Target 之間佈建對象分享 (已分享對象)](https://www.adobe.com/go/audiences)
+   >在RTCDP和Adobe Target之間使用「對象共用」服務時，必須使用Experience CloudID共用對象，並成為相同Experience Cloud組織的一部分。若要支援ECID以外的身分識別，必須使用WebSDK和Experience Edge Network。
+
 
 ## 相關文件
 
