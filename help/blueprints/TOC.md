@@ -4,10 +4,10 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 18c5ac6e01636d4d3b0ea0eb2edb92c949c870c5
+source-git-commit: 12a791205a2d8ee1cd0a7184eba54340f7d9ab1d
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 77%
+source-wordcount: '142'
+ht-degree: 73%
 
 ---
 
@@ -15,6 +15,12 @@ ht-degree: 77%
 
 + [概覽](/help/blueprints/overview.md)
 + [查看所有使用案例](/help/blueprints/use-cases.md)
++ 查看所有行業成功案例{#industry-success-stories}
+   + [概覽](/help/blueprints/industry-success-stories/overview.md)
+   + [服裝](/help/blueprints/industry-success-stories/apparel.md)
+   + [零售](/help/blueprints/industry-success-stories/retail.md)
+   + [電信](/help/blueprints/industry-success-stories/telecommunications.md)
+   + [旅宿業](/help/blueprints/industry-success-stories/travel-hospitality.md)
 + 架構概覽 {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform 與應用程式](/help/blueprints/experience-platform/platform-applications.md)
@@ -26,10 +32,9 @@ ht-degree: 77%
    + [啟動至檔案和企業串流目的地](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [使用 Experience Cloud 應用程式啟用](/help/blueprints/audience-activation/platform-and-applications.md)
    + [客戶活動中樞](/help/blueprints/audience-activation/customer-activity.md)
-+ B2B分析與啟用{#b2b-activation}
++ B2B啟動與行銷{#b2b-activation}
    + [概覽](/help/blueprints/b2b/overview.md)
    + [B2B啟動](/help/blueprints/b2b/b2bactivation.md)
-   + [B2B分析](/help/blueprints/b2b/b2banalysis.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
 + 客戶歷程 {#customer-journeys}
