@@ -3,7 +3,7 @@ title: 零售業 — 使用Experience Cloud應用程式啟動
 description: 跨數位媒體、電子郵件、推播和網頁通道提供即時的客戶體驗。
 solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
-source-git-commit: 6da7ce0e5ae27fd7946c57f1a05a55a98026839d
+source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 15%
@@ -22,18 +22,19 @@ ht-degree: 15%
 
 ## 交付的業務價值
 
-| 目標 | 戰術 | 未鎖定的值 |
+| 目標 | 戰術 | 值已解除鎖定 |
 |---|---|---|
-| **協調即時客戶歷程&#x200B;**<br></br>**促使新客戶重複購買&#x200B;**<br></br>**改善行銷效率並降低媒體成本**</ul> | <ul><li>強大的資料和身分策略可提升全面的即時設定檔。</li><li>即時進行客戶和交易資料串流，包括90天的歷史載入</li><li>將區段串流化至Google和Adobe Target，強化媒體支出和個人化工作。</li><li>透過Adobe Campaign的即時客戶歷程，包含評估效能的策略</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> 跨媒體、電子郵件、推播和網路提供即時的客戶體驗</li><li><strong>資料來源：</strong> 串流資料，涵蓋此零售商的設定檔商店、訂單系統、產品目錄和零售門店。</li><li><strong>即時媒體啟用：</strong>將區段串流至Google媒體，以利歸因和抑制廣告</li><li><strong>即時Web個人化：</strong>將區段串流至Adobe Target，以便啟用零售商的網路體驗。</li><li><strong>Journey Orchestration規模：</strong>即時觸發訊息，充分運用所有可用客戶資料，並在電子郵件和推播通道中即時啟用</li></ul> |
+| **協調即時客戶歷程&#x200B;**<br></br>**促使新客戶重複購買&#x200B;**<br></br>**改善行銷效率並降低媒體成本**</ul> | <ul><li>強大的資料和身分策略可提升全面的即時設定檔。</li><li>即時進行客戶和交易資料串流，包括90天的歷史載入</li><li>將區段串流化至Google和Adobe Target，強化媒體支出和個人化工作。</li><li>透過Adobe Campaign的即時客戶歷程，包含評估效能的策略</li></ul> | <ul><li><strong>Real-time Customer Data Platform:</strong> 跨媒體、電子郵件、推播和網路提供即時的客戶體驗</li><li><strong>資料來源：</strong> 串流資料，涵蓋此零售商的設定檔商店、訂單系統、產品目錄和零售門市。</li><li><strong>即時媒體啟用：</strong>將區段串流至Google媒體，以利歸因和抑制廣告</li><li><strong>即時Web個人化：</strong>將區段串流至Adobe Target，以便啟用零售商的網路體驗。</li><li><strong>Journey Orchestration規模：</strong>即時觸發訊息，充分運用所有可用客戶資料，並在電子郵件和推播通道中啟用即時</li></ul> |
 
-## 重要Blueprint:透過Experience Cloud應用程式啟動受眾
+## 主要Blueprint:透過Experience Cloud應用程式啟動受眾
 
-<strong>說明</strong>
+### 說明
+
 <ul><li>在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們</li><li>在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們</li></ul>
 
-<strong>Experience Cloud 應用程式</strong>
-<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> 
-<br>
+### Experience Cloud 應用程式
+
+<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul>
 
 ### Blueprint架構
 
