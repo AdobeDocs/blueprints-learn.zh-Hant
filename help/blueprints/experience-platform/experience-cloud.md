@@ -5,29 +5,22 @@ solution: Experience Platform, Campaign, Analytics, Target, Audience Manager, Ma
 kt: 7200
 thumbnail: null
 exl-id: 67f7e236-4fa2-434d-af22-953e94a079c1
-source-git-commit: 070c78ee3cf32e70af90c6cbcdd77d5258a32fb7
+source-git-commit: ad3e1a7a6a870785653394472db186c535dd814c
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 34%
+ht-degree: 71%
 
 ---
 
 # Adobe Experience Cloud 架構圖
 
 以下架構圖表說明Adobe Experience Platform如何連線及與Adobe Experience Cloud應用程式整合，以在資料、內容和體驗傳遞之間大規模實現個人化。
-<br>
-<br>
-<img src="assets/pers_at_scale.png" alt="Experience Cloud" style="width:80%; border:1px solid #4a4a4a" />
-<br>
-<br>
-以下架構圖說明Adobe Experience Cloud應用程式和Adobe Experience Platform如何融入企業客戶體驗架構。
-<br>
-<br>
-<img src="assets/aec_experience_architecture.svg" alt="Experience Cloud" style="width:80%; border:1px solid #4a4a4a" />
-<br>
+
+<img src="assets/pers_at_scale.png" alt="Experience Cloud" style="width:95%; border:1px solid #4a4a4a" /><br>下面的架構圖說明了 Adobe Experience Cloud 應用程式和 Adobe Experience Platform 如何適合企業客戶體驗架構。
+
+<img src="assets/aec_experience_architecture.svg" alt="Experience Cloud" style="width:95%; border:1px solid #4a4a4a" />
 <br>
 
-以下架構圖說明Adobe Experience Platform如何連線及與Adobe Experience Cloud應用程式整合。
-<br>
-<br>
-<img src="assets/experience_cloud.svg" alt="Experience Cloud" style="width:80%; border:1px solid #4a4a4a" />
+下面的架構圖說明 Adobe Experience Platform 如何連接 Adobe Experience Cloud 應用程式並與之整合。
+
+<img src="assets/experience_cloud.svg" alt="Experience Cloud" style="width:95%; border:1px solid #4a4a4a" />
