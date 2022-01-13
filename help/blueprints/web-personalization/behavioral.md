@@ -5,10 +5,10 @@ landing-page-description: 了解如何根據線上行為和受眾資料進行個
 solution: Experience Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+source-git-commit: 070c78ee3cf32e70af90c6cbcdd77d5258a32fb7
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 98%
 
 ## 架構
 
-<img src="assets/behavioral_personalization.svg" alt="行為網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/behavioral_personalization.png" alt="行為網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 
 ## 護欄

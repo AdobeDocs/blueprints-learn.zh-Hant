@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 0de426911553ae3b7907d7d08b25a07a11b34c0f
+source-git-commit: 070c78ee3cf32e70af90c6cbcdd77d5258a32fb7
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 57%
+source-wordcount: '1143'
+ht-degree: 53%
 
 ---
 
@@ -76,9 +76,13 @@ ht-degree: 57%
 
 <img src="assets/RTCDP+Target.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
+流程體系結構
+
+<img src="assets/RTCDP+Target_flow.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+
 詳細架構
 
-<img src="assets/online_offline_personalization_with_apps.svg" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/personalization_with_apps.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a"/>
 
 ## 護欄
 
@@ -125,7 +129,7 @@ ht-degree: 57%
 1. [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant) (可選)
 1. [實施 Experience Platform 與[!UICONTROL 即時客戶個人資料]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)
 1. 實施 [Experience Cloud Identity 服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=zh-Hant) 或 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
-1. [請求在 Experience Platform 與 Adobe Target 之間佈建對象分享 (已分享對象)](https://www.adobe.com/go/audiences)
+1. [啟用Adobe Target作為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) 或對象共用方法 [請求布建以在Experience Platform和Adobe Target之間共用受眾（共用受眾）](https://www.adobe.com/go/audiences) 從Experience Platform共用對象至Target。
    >[!NOTE]
    >
    >在RTCDP和Adobe Target之間使用「對象共用」服務時，必須使用Experience CloudID共用對象，並成為相同Experience Cloud組織的一部分。若要支援ECID以外的身分識別，必須使用WebSDK和Experience Edge Network。
@@ -136,6 +140,7 @@ ht-degree: 57%
 * [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant)
 * [Experience Platform 細分概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant)
 * [串流細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
+* [Adobe Target Connection for Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
 * [Experience Platform Segment Builder 概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)
 * [Audience Manager 來源連接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)
 * [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
