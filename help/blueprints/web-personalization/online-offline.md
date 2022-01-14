@@ -5,7 +5,7 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 070c78ee3cf32e70af90c6cbcdd77d5258a32fb7
+source-git-commit: 0746a479d4e651244995a8c355ed4c58b968f0c1
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 53%
@@ -123,6 +123,7 @@ ht-degree: 53%
 
 
 ## 實施步驟
+
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)
 1. [實施 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant) (可選)

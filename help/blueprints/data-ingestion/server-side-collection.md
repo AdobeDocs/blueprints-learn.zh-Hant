@@ -4,10 +4,10 @@ description: 由 Experience Platform SDK 串流彙集的資料至目標
 solution: Experience Platform,Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 55584ea85570bbcd4c959b0bd94b9e0bdc2e962f
+source-git-commit: 0415f2fb46b3a8d667c938c6ae13affb683530c6
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 82%
+source-wordcount: '235'
+ht-degree: 77%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 82%
 
 * [事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 * [事件轉送影片](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=zh-Hant)
+* [事件轉送課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) 網頁SDK教學課程的
 
 ## 相關部落格貼文
 
