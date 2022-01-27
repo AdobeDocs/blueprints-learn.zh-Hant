@@ -1,23 +1,23 @@
 ---
-title: 透過線上和離線資料Blueprint啟動
+title: 使用聯機和離線資料藍圖激活
 description: 線上/離線對象啟用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 0415f2fb46b3a8d667c938c6ae13affb683530c6
+source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 透過線上和離線資料Blueprint啟動
+# 使用聯機和離線資料藍圖激活
 
 使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。
 
 啟用對象至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。
 
-透過線上和離線資料藍圖啟動會與 [透過Experience Cloud應用程式啟動受眾和設定檔Blueprint](platform-and-applications.md). 其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
+使用線上和離線資料藍圖的激活與 [使用Experience Cloud應用程式藍圖激活受眾和配置檔案](platform-and-applications.md)。 其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
 
 ## 使用案例
 
@@ -32,7 +32,7 @@ ht-degree: 62%
 
 ## 架構
 
-### 透過目的地啟動線上和離線資料
+### 使用目標進行聯機和離線資料激活
 
 <img src="assets/online_offline_activation.svg" alt="線上/離線對象啟用 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 <br>
@@ -56,13 +56,13 @@ ht-degree: 62%
 
 * 分享個人資料資料到目標需要您在目標負載中包含目標使用的特定身份值。對目標必要的任何身份必須擷取到 Platform，並且設定為[!UICONTROL 即時客戶個人資料]的身份。
 
-### 受眾從Real-time Customer Data Platform分享至Audience Manager
+### 從Real-time Customer Data Platform到Audience Manager的觀眾分享
 
-* 當區段評估完成並寫入即時Audience Manager設定檔（不論是批次或串流）,RT-CDP的受眾成員資格會立即以串流方式共用給客戶。 如果符合資格的設定檔包含相關設定檔裝置的地區路由資訊，則來自RTCDP的對象成員資格會在相關Audience ManagerEdge上以串流方式符合資格。 如果RTCDP中的配置檔案不包含區域路由資訊，則配置檔案成員會發送到Audience Manager中心位置，以便進行基於批次的評估和激活。 符合Edge啟動資格的設定檔將在RTCDP區段資格後的數分鐘內啟動，不符合Edge啟動資格的設定檔將在Audience Manager中樞中心啟動，且可能有12至24小時的處理時間範圍。
+* 一旦完成段評估並將其寫入即時客戶配置檔案（無論段評估是批處理還是流處理）,RT-CDP的受眾成員身份將以流方式共用到Audience Manager。 如果限定的簡檔包含相關簡檔設備的區域路由資訊，則RTCDP的觀眾成員在相關的Audience Manager邊緣上以流方式限定。 如果RTCDP中的配置檔案不包含區域路由資訊，則配置檔案成員身份將發送到Audience Manager中心位置，以便進行基於批次的評估和激活。 符合邊緣激活資格的配置檔案將在RTCDP的細分市場鑑定後幾分鐘內激活，不符合邊緣激活資格的配置檔案將在Audience Manager集線器中獲得資格，並可能有12-24小時的處理時間。
 
-* 當Analytics資料啟用以收集至設定檔時，可從Analytics Data Connector收集要儲存設定檔相關裝置資訊的Audience Manager邊緣的地區路由資訊，或直接從Web SDK以獨立的設定檔記錄類別資料集的形式收集，然後必須為設定檔啟用。
+* Audience Manager邊緣儲存配置檔案相關設備資訊的區域路由資訊可在啟用分析資料收集以進行配置檔案時從分析資料連接器收集，或直接從Web SDK作為單獨的配置檔案記錄類資料集收集，然後必須為配置檔案啟用該資料集。
 
-* 在啟用案例中，會從Experience Platform共用閱聽眾，以Audience Manager下列身分自動共用：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 目前不共用自訂命名空間。
+* 對於從Experience Platform到Audience Manager的受眾共用的激活情形，將自動共用以下標識：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 當前，未共用自定義命名空間。
 
 當所需的目標身份包含在[!UICONTROL 即時客戶個人資料]中時，或者[!UICONTROL 即時客戶個人資料]中的身份可以關聯至 Audience Manager 中連結的所需目標身份時，Experience Platform 中的對象可透過 Audience Manager 目標分享。
 

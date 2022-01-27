@@ -4,7 +4,7 @@ breadcrumb-title: 'Blueprint '
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 role: Architect, Developer, User
-source-git-commit: 12a791205a2d8ee1cd0a7184eba54340f7d9ab1d
+source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 73%
@@ -20,7 +20,7 @@ ht-degree: 73%
    + [服裝](/help/blueprints/industry-success-stories/apparel.md)
    + [零售](/help/blueprints/industry-success-stories/retail.md)
    + [電信](/help/blueprints/industry-success-stories/telecommunications.md)
-   + [旅宿業](/help/blueprints/industry-success-stories/travel-hospitality.md)
+   + [旅行和招待](/help/blueprints/industry-success-stories/travel-hospitality.md)
 + 架構概覽 {#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform 與應用程式](/help/blueprints/experience-platform/platform-applications.md)
@@ -28,13 +28,13 @@ ht-degree: 73%
 + 對象與個人資料啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
    + [匿名對象啟用](/help/blueprints/audience-activation/anonymous.md)
-   + [使用線上和離線資料啟動](/help/blueprints/audience-activation/online-offline.md)
-   + [啟動至檔案和企業串流目的地](/help/blueprints/audience-activation/enterprise-destinations.md)
+   + [使用聯機和離線資料激活](/help/blueprints/audience-activation/online-offline.md)
+   + [激活到檔案和企業流目標](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [使用 Experience Cloud 應用程式啟用](/help/blueprints/audience-activation/platform-and-applications.md)
    + [客戶活動中樞](/help/blueprints/audience-activation/customer-activity.md)
-+ B2B啟動與行銷{#b2b-activation}
++ B2B激活和營銷{#b2b-activation}
    + [概覽](/help/blueprints/b2b/overview.md)
-   + [B2B啟動](/help/blueprints/b2b/b2bactivation.md)
+   + [B2B激活](/help/blueprints/b2b/b2bactivation.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
 + 客戶歷程 {#customer-journeys}
@@ -53,5 +53,5 @@ ht-degree: 73%
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
-   + [使用線上和離線資料進行個人化](/help/blueprints/web-personalization/online-offline.md)
+   + [使用線上和離線資料實現個性化](/help/blueprints/web-personalization/online-offline.md)
 

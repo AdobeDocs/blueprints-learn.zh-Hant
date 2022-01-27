@@ -5,7 +5,7 @@ solution: Experience Platform, Campaign, Analytics, Target, Audience Manager, Ma
 kt: 7200
 thumbnail: null
 exl-id: 67f7e236-4fa2-434d-af22-953e94a079c1
-source-git-commit: ad3e1a7a6a870785653394472db186c535dd814c
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 71%
@@ -14,7 +14,7 @@ ht-degree: 71%
 
 # Adobe Experience Cloud 架構圖
 
-以下架構圖表說明Adobe Experience Platform如何連線及與Adobe Experience Cloud應用程式整合，以在資料、內容和體驗傳遞之間大規模實現個人化。
+下面的體系結構圖說明了Adobe Experience Platform如何與Adobe Experience Cloud應用程式連接並與之整合，以實現跨資料、內容和體驗交付的大規模個性化。
 
 <img src="assets/pers_at_scale.png" alt="Experience Cloud" style="width:95%; border:1px solid #4a4a4a" /><br>下面的架構圖說明了 Adobe Experience Cloud 應用程式和 Adobe Experience Platform 如何適合企業客戶體驗架構。
 

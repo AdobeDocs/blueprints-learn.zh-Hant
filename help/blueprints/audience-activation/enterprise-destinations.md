@@ -1,17 +1,17 @@
 ---
-title: 檔案和企業串流目的地Blueprint的受眾和設定檔啟用
+title: 對檔案和企業流目標的受眾和配置檔案激活藍圖
 description: 對象與個人資料啟用至企業目標
 solution: Experience Platform,Real-time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
-source-git-commit: dd01bd48f2bb5a250ead4b4b28b6228c0cbd2517
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 93%
 
 ---
 
-# 檔案和企業串流目的地Blueprint的受眾和設定檔啟用
+# 對檔案和企業流目標的受眾和配置檔案激活藍圖
 
 以串流或批次方式從[!UICONTROL 即時客戶資料平台]分享個人資料及對象變更與事件至企業資料儲存空間和應用程式。這些個人資料和對象事件可用於啟動對客戶的銷售或支援行動，例如跟進放棄的應用程式程序或網路研討會註冊，或者用[!UICONTROL 即時客戶資料平台]中的最新客戶屬性和情報更新企業應用程式。
 

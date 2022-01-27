@@ -5,10 +5,10 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 0e981eba79a4a99c32598a8d018beff7cec1da0e
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

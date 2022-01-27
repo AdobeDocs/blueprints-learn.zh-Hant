@@ -1,7 +1,6 @@
 ---
-source-git-commit: 8225c25ca54acb10ff9e9dd07d869b0c9a626c0b
-workflow-type: ht
-translation-type: ht
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 100%
 
@@ -12,7 +11,7 @@ ht-degree: 100%
 
 ## Adobe 開放原始碼行為準則
 
-本專案已採用 [Adobe 開放原始碼管理辦法](code-of-conduct.md)或 [.NET Foundation 管理辦法](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
+本專案已採用[《Adobe 開放原始碼管理準則》](code-of-conduct.md)或[《.NET Foundation 管理準則》](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻內容](contributing.md)一文。
 
 ## 關於您對 Adobe 內容的貢獻
 
@@ -22,7 +21,7 @@ ht-degree: 100%
 
 ### 微小變更
 
-如果您想善意促成微小的更新，請瀏覽相關文章，然後按一下文章中的&#x200B;**編輯**&#x200B;連結以進入文章的 GitHub 原始碼。然後，直接使用 GitHub UI 進行更新。如需詳細資訊，請參閱一般的 [Adobe 文件貢獻者指南](https://docs.adobe.com/content/help/zh-Hant/contributor/contributor-guide/introduction.html)。
+如果您想善意促成微小的更新，請瀏覽相關文章，然後按一下文章中的&#x200B;**編輯**&#x200B;連結以進入文章的 GitHub 原始碼。然後，直接使用 GitHub UI 進行更新。如需詳細資訊，請參閱一般的 [Adobe 文件貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
 
 Adobe 使用條款舉例說明了如何提交對此存放庫中文件及代碼的輕微修正或澄清。
 
@@ -44,7 +43,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社群貢獻者可使用 GitHub UI 基本編輯或複刻存放庫以進行重大變更。
 
-如需詳細資訊，請參閱 [Adobe 文件貢獻者指南](https://docs.adobe.com/content/help/zh-Hant/contributor/contributor-guide/introduction.html)。
+如需詳細資訊，請參閱 [Adobe 文件貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用 Markdown 設定主題格式
 

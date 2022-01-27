@@ -5,10 +5,10 @@ solution: Experience Platform, Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 18c5ac6e01636d4d3b0ea0eb2edb92c949c870c5
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 73%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,21 +19,21 @@ Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源�
 常見分析包括：
 
 * 頂端 / 底部轉換路徑
-* 管道參與和轉換
+* 渠道參與和轉換
 * 最熱門的內容
-* 排名在前的類別和產品
+* 頂級類別和產品
 * 哪些行銷活動促成了轉換及參與度的提升
 * 工具使用分析以最佳化自助服務體驗
 
-如需Customer Journey Analytics使用案例的完整清單，請參閱此處的Customer Journey Analytics檔案。
+在此處找到的Customer Journey Analytics文檔中可找到Customer Journey Analytics使用案例的完整清單。
 
-## [Customer Journey Analytics使用案例連結](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en)
+## [Customer Journey Analytics用例連結](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en)
 
-主要使用案例範例包括下列。
-| Blueprint |說明 |Experience Cloud應用程式 | |—|—|—| | **[跨管道歷程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (可選)</li></ul>|
+主要使用案例示例包括以下內容。
+|藍圖 |描述 |Experience Cloud應用程式 | |—|—| | **[跨通道行程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (可選)</li></ul>|
 | **[呼叫改向歷程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>整合呼叫中心資料與網路、行動裝置及其他互動資料，確定哪些行為對產生代理協助的呼叫最有意義。</li><li>接著可將這些深入見解用於最佳化客戶體驗，透過最佳化的自助服務內容與工具縮短代理協助的互動路徑。  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
-## Customer Journey Analytics藍圖護欄圖
+## Customer Journey Analytics藍圖的護欄圖
 
 ![護欄圖](assets/cja_guardrails.png)
 

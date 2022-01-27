@@ -1,22 +1,22 @@
 ---
-title: 數位體驗藍圖的使用案例
+title: 數字型驗藍圖的使用案例
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
 exl-id: 7ec2b5c9-b46c-4434-b0d3-8aba863e9006
-source-git-commit: c80967fc9463996b4a3892dd5d0e76270d9247d1
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 75%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 數位體驗藍圖的使用案例
+# 數字型驗藍圖的使用案例
 
-其中哪些使用案例對您的業務很重要？ 探索哪個數位體驗藍圖可滿足您的業務目標。
+這些使用情形中哪些對您的業務很重要？ 瞭解哪些數字型驗藍圖可滿足您的業務目標。
 
 <table>
 
 <tr>
-  <th>使用案例</th>
+  <th>用例</th>
   <th>Blueprint</th>
   <th>類別</th>
  </tr>
@@ -61,8 +61,7 @@ ht-degree: 75%
  <tr>
   <td>分析桌上型裝置與行動裝置上的客戶互動，以瞭解客戶行為並擷取深入見解，以最佳化數位客戶體驗。</td>
   <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=en">交叉
-  管道</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/digital-behavioral-data-consolidation.html?lang=en">跨通道</a></td>
   <td rowspan="4" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">Customer Journey Analytics</td>
  </tr>
  <tr>
@@ -79,8 +78,7 @@ ht-degree: 75%
  <tr>
   <td>排程的電子郵件行銷活動.</td>
   <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=en">批次
-  傳訊與平台</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=en">批處理消息和平台</a></td>
   <td rowspan="6" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">客戶歷程</td>
  </tr>
  <tr>
@@ -103,15 +101,13 @@ ht-degree: 75%
  <tr>
   <td></td>
   <td style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/ingestion.html?lang=en">資料
-  準備和擷取</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/ingestion.html?lang=en">資料準備和接收</a></td>
   <td rowspan="4" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">資料彙集與準備</td>
  </tr>
  <tr>
   <td>使用單一集合標記從網路或行動裝置彙集資料，減輕用戶端瀏覽器及應用程式上的代碼權重。將彙集的資料傳播到各個端點以提供單一的資料彙集來源。</td>
   <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/server-side-collection.html?lang=en">AEP
-  收集企業（事件轉送）</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/server-side-collection.html?lang=en">AEP收集企業（事件轉發）</a></td>
  </tr>
  <tr>
   <td>將彙集的資料轉寄到合作夥伴應用程式或資料儲存位置以根據彙集的資料建置見解與應用程式。</td>
@@ -119,15 +115,13 @@ ht-degree: 75%
  <tr>
   <td></td>
   <td style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html?lang=en">Web SDK
-  資料收集</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html?lang=en">Web SDK資料收集</a></td>
  </tr>
  <tr>
   <td>互動式查詢與資料彙總.</td>
   <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
   href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-exploration/analysis.html?lang=en">資料分析與情報</a></td>
-  <td rowspan="6" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">資料
-  Analytics、Intelligence和ML</td>
+  <td rowspan="6" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">資料分析、智慧和ML</td>
  </tr>
  <tr>
   <td>存取擷取資料列與欄以進行探索和驗證.</td>
@@ -138,8 +132,7 @@ ht-degree: 75%
  <tr>
   <td>從 Experience Platform 中的客戶資料擷取深入見解並探索模式。從這些資料對模型進行訓練和評分。</td>
   <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-exploration/data-science.html?lang=en">客戶
-  設定檔擴充的資料科學</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-exploration/data-science.html?lang=en">客戶資料科學在檔案資料豐富中的應用</a></td>
  </tr>
  <tr>
   <td>使用模型驅動的深入見解和屬性豐富的即時客戶個人資料，以進行更細緻的個人化和最佳的歷程最佳化。</td>

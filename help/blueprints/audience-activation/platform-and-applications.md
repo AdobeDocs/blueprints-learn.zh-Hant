@@ -3,7 +3,8 @@ title: 使用 Experience Cloud 應用程式的對象與個人資料啟用 Bluepr
 description: 在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
-source-git-commit: bc8aab586175ab004614764645ee8a86713b407b
+exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
+source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%

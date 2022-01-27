@@ -1,18 +1,18 @@
 ---
-title: 使用線上和離線資料的網頁/行動個人化
+title: Web/Mobile個性化，包括線上和離線資料
 description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 landing-page-description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 0746a479d4e651244995a8c355ed4c58b968f0c1
+source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 53%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 使用線上和離線資料的網頁/行動個人化
+# Web/Mobile個性化，包括線上和離線資料
 
 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 
@@ -21,7 +21,7 @@ ht-degree: 53%
 * 登陸頁面最佳化
 * 行為與離線個人資料目標定位
 * 除離線深入見解 (如異動、忠誠度與 CRM 資料及建模的深入見解) 外，基於之前產品/內容視圖、產品/內容相似性、環境屬性、協力廠商對象資料及人口統計資料的個人化
-* 在使用Adobe Target的網站和行動應用程式上共用和鎖定Real-time Customer Data Platform中定義的對象。
+* 在使用Adobe Target的網站和移動應用上分享和瞄準Real-time Customer Data Platform定義的受眾。
 
 ## 應用程式
 
@@ -50,21 +50,21 @@ ht-degree: 53%
 <tbody>
   <tr>
     <td class="tg-0lax">1</td>
-    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">透過受眾共用服務方法，將受眾串流和批次共用給Target和Audience Manager</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 透過受眾共用服務，從RTCDP共用串流和批次受眾至Target及Audience Manager。 即時評估的對象需要整合模式3中概述的WebSDK和即時對象評估。</span></td>
-    <td class="tg-73oq"> — 必須透過受眾共用服務布建受眾投影。<br> — 與Target整合需要與Experience Platform例項相同的IMS組織。<br> — 身分必須解析為ECID才能共用至邊緣，Target才能執行動作。 AAM有獨立的已核准身分清單，可比對<br> — 此整合不需要部署WebSDK。</td>
+    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">通過「觀眾共用服務」方法，將RTCDP流和批量觀眾共用到目標和Audience Manager</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 通過「受眾共用」服務，從RTCDP到「目標」和「Audience Manager」共用流和批量受眾。 即時評估的受眾需要WebSDK和整合模式3中概述的即時受眾評估。</span></td>
+    <td class="tg-73oq"> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。 AAM有單獨的已批准身份清單<br> — 此整合不需要WebSDK部署。</td>
   </tr>
   <tr>
     <td class="tg-0lax">2</td>
-    <td class="tg-73oq">透過Edge方法將RTCDP串流和批次受眾共用給Target</td>
-    <td class="tg-0lax"> — 透過Edge Network將串流和批次受眾從RTCDP共用至Target。 即時評估的對象需要整合模式3中概述的WebSDK和即時對象評估。</td>
-    <td class="tg-73oq"><span style="text-decoration:none"> — 目前測試版</span><br> — 必須在RTCDP目標中配置目標目標。<br> — 與Target整合需要與Experience Platform例項相同的IMS組織。<br>WebSDK不是必要項目。 支援WebSDk和AT.js。 <br> — 如果使用AT.js，則僅支援對ECID進行設定檔查閱。 <br> — 若要在Edge上查閱自訂ID命名空間，需要WebSDK部署，且每個身分必須在身分對應中設定為身分。</td>
+    <td class="tg-73oq">通過邊緣方法將RTCDP流和批訪問群體共用到目標</td>
+    <td class="tg-0lax"> — 通過邊緣網路將流和批訪問群體從RTCDP共用到目標。 即時評估的受眾需要WebSDK和整合模式3中概述的即時受眾評估。</td>
+    <td class="tg-73oq"> — 必須在RTCDP目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br>不需要WebSDK。 支援WebSDk和AT.js。 <br> — 如果僅使用AT.js，則支援對ECID的配置檔案查找。 <br> — 對於邊緣上的自定義ID命名空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
-    <td class="tg-73oq">透過使用WebSDK的Edge網路與Target共用的Edge上，進行RTCDP即時區段評估。</td>
-    <td class="tg-0lax"> — 即時評估Edge上相同或下一頁個人化的對象。</td>
-    <td class="tg-73oq"><span style="text-decoration:none"> — 目前測試版</span><br> — 必須在RTCDP目標中配置目標目標。<br> — 與Target整合需要與Experience Platform例項相同的IMS組織。<br> — 必須實作WebSDK。<br> — 也支援透過API使用。</td>
+    <td class="tg-73oq">使用WebSDK通過邊緣網路在與目標共用的邊緣上進行RTCDP即時段評估。</td>
+    <td class="tg-0lax"> — 即時評估受眾，以便在邊緣上實現相同或下一頁個性化。</td>
+    <td class="tg-73oq"> — 必須在RTCDP目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須實現WebSDK。<br> — 也通過API支援。</td>
   </tr>
 </tbody>
 </table>
@@ -72,7 +72,7 @@ ht-degree: 53%
 
 ## 架構
 
-概述架構
+概述體系結構
 
 <img src="assets/RTCDP+Target.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
@@ -80,7 +80,12 @@ ht-degree: 53%
 
 <img src="assets/RTCDP+Target_flow.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
-詳細架構
+<br>
+
+<img src="assets/RTCDP+Target_sequence.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+
+
+詳細體系結構
 
 <img src="assets/personalization_with_apps.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a"/>
 
@@ -105,10 +110,10 @@ ht-degree: 53%
 
 ## 實施先決條件
 
-身分先決條件
+身份先決條件
 
-* 將受眾從Adobe Experience Platform共用至Adobe Target需要使用ECID做為身分。
-* 替代身分也可用來透過Audience Manager與Adobe Target共用Experience Platform對象。 Experience Platform會透過下列支援的命名空間啟用對象以Audience Manager:IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 請注意，Audience Manager和Target會透過ECID身分識別解析對象成員資格，因此要將對象共用至Adobe Target，仍需要ECID。
+* 分享從Adobe Experience Platform到Adobe Target的受眾需要使用ECID作為身份。
+* 可以使用替代身份通過Audience Manager將Experience Platform觀眾分享給Adobe Target。 Experience Platform通過以下受支援的命名空間激活受眾以Audience Manager:IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 請注意，Audience Manager和目標通過ECID標識解析受眾成員身份，因此，最終與Adobe Target共用的受眾仍需要ECID。
 
 | 應用程式 / 服務 | 所需的資料庫 | 附註 |
 |---|---|---|
@@ -130,10 +135,10 @@ ht-degree: 53%
 1. [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant) (可選)
 1. [實施 Experience Platform 與[!UICONTROL 即時客戶個人資料]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)
 1. 實施 [Experience Cloud Identity 服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=zh-Hant) 或 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
-1. [啟用Adobe Target作為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) 或對象共用方法 [請求布建以在Experience Platform和Adobe Target之間共用受眾（共用受眾）](https://www.adobe.com/go/audiences) 從Experience Platform共用對象至Target。
+1. [使Adobe Target成為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) 或者為觀眾分享的方式 [請求設定Experience Platform與Adobe Target（共用受眾）之間的受眾共用](https://www.adobe.com/go/audiences) 共用從Experience Platform到目標的受眾。
    >[!NOTE]
    >
-   >在RTCDP和Adobe Target之間使用「對象共用」服務時，必須使用Experience CloudID共用對象，並成為相同Experience Cloud組織的一部分。若要支援ECID以外的身分識別，必須使用WebSDK和Experience Edge Network。
+   >在RTCDP和Adobe Target之間使用「受眾共用」服務時，必須使用Experience CloudID共用受眾，並且是同一Experience Cloud組織的一部分。支援ECID以外的標識需要使用WebSDK和體驗邊緣網路。
 
 
 ## 相關文件
@@ -141,13 +146,13 @@ ht-degree: 53%
 * [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant)
 * [Experience Platform 細分概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant)
 * [串流細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
-* [Adobe Target Connection for Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
+* [Adobe TargetReal-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
 * [Experience Platform Segment Builder 概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)
 * [Audience Manager 來源連接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)
 * [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
 * [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
 * [Experience Cloud ID 服務文件](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)
-* [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Experience Platform標籤文檔](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 
 ## 相關部落格貼文
 

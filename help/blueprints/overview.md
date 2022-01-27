@@ -2,7 +2,7 @@
 title: 數位體驗 Blueprint
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: d2b0643bd567a10b27591d22480db1bde2a0a36a
+source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 93%
