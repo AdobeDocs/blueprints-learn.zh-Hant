@@ -5,8 +5,8 @@ solution: Experience Platform, Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
 source-git-commit: a86df4a1b2de38bcb244a6afe1cea87adc7e26fa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1041'
+ht-degree: 38%
 
 ---
 

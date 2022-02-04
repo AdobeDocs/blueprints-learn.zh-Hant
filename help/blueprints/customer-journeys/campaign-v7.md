@@ -3,7 +3,8 @@ title: 市場活動v7藍圖
 description: Adobe Campaignv7是為電子郵件和直郵等傳統營銷渠道構建的宣傳工具。 它提供強大的ETL和資料管理功能，幫助制定和組織完美的活動。 其業務流程引擎為豐富的多點觸控營銷計畫提供了支援，其核心是基於批處理的驅動行程。  它還配備了即時消息伺服器，使營銷團隊能夠基於來自任何IT系統的包含所有內容的負載來發送預定義的消息，用於諸如密碼重置、訂單確認、電子回執等等。
 solution: Campaign Classic v7
 hidefromtoc: true
-source-git-commit: a86df4a1b2de38bcb244a6afe1cea87adc7e26fa
+exl-id: d8cae05f-cf29-45f6-8ee0-1d670a31bdcc
+source-git-commit: 13f750c0ff820ab01ed4fc615aba864bc2dc7b75
 workflow-type: tm+mt
 source-wordcount: '1236'
 ht-degree: 3%

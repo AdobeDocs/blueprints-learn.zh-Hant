@@ -4,8 +4,8 @@ description: 數位體驗 Blueprint 為可重複的實施，用於執行策略�
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: a86df4a1b2de38bcb244a6afe1cea87adc7e26fa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 87%
 
 ---
 
