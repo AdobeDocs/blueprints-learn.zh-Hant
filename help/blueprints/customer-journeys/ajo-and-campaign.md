@@ -2,9 +2,7 @@
 title: Journey Optimizer與Adobe Campaign藍圖
 description: 演示Adobe Journey Optimizer如何與Adobe Campaign一起通過利用市場活動中的即時消息伺服器來本機發送消息
 solution: Experience Platform, Journey Optimizer, Campaign v8, Campaign Classic v7, Campaign Standard
-hidefromtoc: true
-exl-id: 214126d1-d106-4d1a-9fa3-92c40dc5f187
-source-git-commit: 13f750c0ff820ab01ed4fc615aba864bc2dc7b75
+source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 23%

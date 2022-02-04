@@ -1,17 +1,15 @@
 ---
-title: 與Real-Time CDP藍圖一起開展運動
+title: Real-Time CDP與Adobe Campaign藍圖
 description: 展示Adobe Experience Platform及其即時客戶概要資訊和集中細分工具如何與Adobe Campaign一起進行個性化對話。
 solution: Experience Platform, Campaign v8, Campaign Classic v7, Campaign Standard
-hidefromtoc: true
-exl-id: 5bff46c5-00e9-4e0d-a222-d15767159a97
-source-git-commit: 13f750c0ff820ab01ed4fc615aba864bc2dc7b75
+source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '764'
 ht-degree: 55%
 
 ---
 
-# 與Real-Time CDP藍圖一起開展運動
+# Real-Time CDP與Adobe Campaign藍圖
 
 展示Adobe Experience Platform及其即時客戶概要資訊和集中細分工具如何與Adobe Campaign一起進行個性化對話。
 

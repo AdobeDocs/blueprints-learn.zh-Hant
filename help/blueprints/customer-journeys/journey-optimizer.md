@@ -3,9 +3,9 @@ title: Journey Optimizer — 觸發的訊息傳送與 Adobe Experience Platform 
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Experience Platform, Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: a86df4a1b2de38bcb244a6afe1cea87adc7e26fa
+source-git-commit: 2ead62f94e761cd9453be284a9fde3c5803879eb
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1046'
 ht-degree: 38%
 
 ---
@@ -38,6 +38,13 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
 | [第三方消息傳遞](3rd-party-messaging.md) | 演示如何將Adobe Journey Optimizer與第三方消息傳遞系統一起使用，以協調和發送個性化通信 | 在客戶與您的品牌或公司進行互動時，立即提供1:1的個性化通信<br><br>注意事項：<br><ul><li>第三方系統必須支援用於驗證的承載令牌</li><li>由於多租戶體系結構，不支援靜態IP</li><li>在每秒API調用時，請注意第三方系統的體系結構限制。  可能需要客戶從第三方供應商購買更多卷以支援來自Journey Optimizer的卷</li><li>不支援消息或負載中的Offer decisioning</li></ul> |
+
+<br>
+
+## 整合模式
+
+| 整合 | 說明 | 功能 |
+| :-- | :--- | :--- |
 | [Journey Optimizer與Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用Adobe Journey Optimizer來協調利用即時客戶概要資訊的1:1體驗，並利用本機Adobe Campaign事務性消息傳遞系統來發送消息 | 利用Journey Optimizer的即時客戶概況和能力，在利用Adobe Campaign的本機即時消息傳遞功能進行最後一英里通信的同時，協調即時體驗<br><br>注意事項：<br><ul><li>市場活動應用程式必須位於v7版本>21.1或v8上</li><li>消息傳送吞吐量</li><ul><li>活動v7 — 每小時最多5萬</li><li>促銷v8 — 每小時最多100萬</li><li>Campaign Standard — 每小時最多5萬</li></ul><li>不執行限制，因此使用案例需要企業架構師進行技術審查</li><li>不支援在市場活動發送的消息中利用Offer decisioning</li></ul> |
 
 <br>
