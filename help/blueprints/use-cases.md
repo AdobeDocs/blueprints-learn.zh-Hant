@@ -2,10 +2,10 @@
 title: 數字型驗藍圖的使用案例
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
 exl-id: 7ec2b5c9-b46c-4434-b0d3-8aba863e9006
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: 3afcc2c293242a3b68ee4e4603ab686f6b309232
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '692'
+ht-degree: 74%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 0%
  <tr>
   <td>排程的電子郵件行銷活動.</td>
   <td rowspan="2" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/batch-messaging.html?lang=en">批處理消息和平台</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/campaign-managed-cloud-services.html?lang=en">市場活動管理Cloud Services</a></td>
   <td rowspan="6" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)">客戶歷程</td>
  </tr>
  <tr>
