@@ -2,9 +2,10 @@
 title: 市場活動v7藍圖
 description: Adobe Campaignv7是為電子郵件和直郵等傳統營銷渠道構建的宣傳工具。 它提供強大的ETL和資料管理功能，幫助制定和組織完美的活動。 其業務流程引擎為豐富的多點觸控營銷計畫提供了支援，其核心是基於批處理的驅動行程。  它還配備了即時消息伺服器，使營銷團隊能夠基於來自任何IT系統的包含所有內容的負載來發送預定義的消息，用於諸如密碼重置、訂單確認、電子回執等等。
 solution: Campaign Classic v7
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
+source-git-commit: 0c072465c2cac954631fe3a8dbdcef280ee397ab
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1193'
 ht-degree: 3%
 
 ---
@@ -35,7 +36,7 @@ Adobe Campaignv7是為電子郵件和直郵等傳統營銷渠道構建的宣傳�
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
 | [Journey Optimizer與Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用Adobe Journey Optimizer來協調利用即時客戶概要資訊的1:1體驗，並利用本機Adobe Campaign事務性消息傳遞系統來發送消息 | 利用Journey Optimizer的即時客戶概況和能力，在利用Adobe Campaign的本機即時消息傳遞功能進行最後一英里通信的同時，協調即時體驗<br><br>注意事項：<br><ul><li>通過即時消息伺服器每小時最多可發送5萬條消息<li>沒有從Journey Optimizer執行限制，因此確保售前企業架構師進行技術審查</li><li>offer decisioning在Campaign v7即時消息伺服器負載中不受支援</li></ul> |
-| [Real-Time CDP與Adobe Campaign](rtcdp-and-campaign.md) | 展示Adobe Experience PlatformReal-Time CDP及其集中分割工具如何與Adobe Campaign一起進行個性化對話 | <ul><li>通過生產化目的地與Adobe Campaignv8以本地方式分享Experience Platform觀眾</li><li>本機支援將交付和交互資料從客戶對話中接收回Experience Platform，以增強即時客戶概要資訊並提供關於消息傳遞活動的跨渠道報告</li></ul> |
+| [Real-Time CDP與Adobe Campaign](rtcdp-and-campaign.md) | 展示Adobe Experience PlatformReal-Time CDP及其集中分割工具如何與Adobe Campaign一起進行個性化對話 | <ul><li>利用雲儲存檔案交換和Adobe Campaign接收工作流共用從Real-Time CDP到Adobe Campaign的受眾 </li><li>輕鬆地將客戶對話中的交付和交互資料共用回Adobe Campaign的即時CDP中，以增強即時客戶概要資訊並提供關於消息傳遞活動的跨渠道報告</li></ul> |
 
 <br>
 
@@ -88,9 +89,7 @@ Adobe Campaignv7是為電子郵件和直郵等傳統營銷渠道構建的宣傳�
 ### 即時消息伺服器調整
 
 * 每小時最多可發送5萬條消息
-* 預設情況下，只設定一(1)個即時消息伺服器。 這是為了確保通過會話令牌與伺服器進行任何通信，該令牌將在24小時後過期
-* （可選）您可以部署多達八(8)個即時消息伺服器，但身份驗證因此只支援用戶/通過
-* 建議的方法總是利用一個即時消息伺服器盡可能利用基於會話令牌的身份驗證
+* 預設情況下，配置兩個即時消息伺服器。 能夠擴展到多達八個即時消息伺服器。
 
 ### SMS配置
 
