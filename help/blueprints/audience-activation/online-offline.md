@@ -4,10 +4,10 @@ description: 線上/離線對象啟用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
+source-git-commit: c4adcc5d23bb0482a348d7b5b2b70b06ff2873e8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '764'
+ht-degree: 59%
 
 ---
 
@@ -58,9 +58,9 @@ ht-degree: 0%
 
 ### 從Real-time Customer Data Platform到Audience Manager的觀眾分享
 
-* 一旦完成段評估並將其寫入即時客戶配置檔案（無論段評估是批處理還是流處理）,RT-CDP的受眾成員身份將以流方式共用到Audience Manager。 如果限定的簡檔包含相關簡檔設備的區域路由資訊，則RTCDP的觀眾成員在相關的Audience Manager邊緣上以流方式限定。 如果RTCDP中的配置檔案不包含區域路由資訊，則配置檔案成員身份將發送到Audience Manager中心位置，以便進行基於批次的評估和激活。 符合邊緣激活資格的配置檔案將在RTCDP的細分市場鑑定後幾分鐘內激活，不符合邊緣激活資格的配置檔案將在Audience Manager集線器中獲得資格，並可能有12-24小時的處理時間。
+* 一旦完成段評估並將其寫入即時客戶配置檔案（無論段評估是批處理還是流處理）,RT-CDP的受眾成員身份將以流方式共用到Audience Manager。 如果限定的簡檔包含相關簡檔設備的區域路由資訊，則RTCDP的觀眾成員在相關的Audience Manager邊緣上以流方式限定。 如果將區域路由資訊應用於過去14天內時間戳記的配置檔案，則將在Audience Manager邊緣上以流形式進行計算。 如果RTCDP中的配置檔案不包含區域路由資訊或區域路由資訊大於14天，則配置檔案成員資格將發送到Audience Manager中心位置以進行基於批的評估和激活。 符合邊緣激活資格的配置檔案將在RTCDP的細分市場鑑定後幾分鐘內激活，不符合邊緣激活資格的配置檔案將在Audience Manager集線器中獲得資格，並且可能有12-24小時的處理時間。
 
-* Audience Manager邊緣儲存配置檔案相關設備資訊的區域路由資訊可在啟用分析資料收集以進行配置檔案時從分析資料連接器收集，或直接從Web SDK作為單獨的配置檔案記錄類資料集收集，然後必須為配置檔案啟用該資料集。
+* 可以從Audience Manager、訪問者ID服務、分析、啟動或直接從Web SDK中收集儲存了Audience Manager配置檔案的邊緣區域路由資訊，以便使用「資料捕獲區域資訊」 XDM欄位組作為單獨的配置檔案記錄類資料集進行Experience Platform。
 
 * 對於從Experience Platform到Audience Manager的受眾共用的激活情形，將自動共用以下標識：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 當前，未共用自定義命名空間。
 
