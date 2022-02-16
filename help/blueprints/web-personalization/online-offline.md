@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 5e27cc2f0114e404c6b6bb1e6f88a79d762f9e03
+source-git-commit: d639a2c76290588f92e443f645e95864caac442a
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 46%
+source-wordcount: '1147'
+ht-degree: 40%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 46%
 
 * [!UICONTROL 即時客戶資料平台]
 * Adobe Target
-* Adobe Audience Manager (可選)：新增協力廠商對象資料、基於協作的裝置圖、在 Adobe Analytics 中顯示 Platform 區段的能力，以及在 Platform 中顯示 Adobe Analytics 區段的能力
+* Adobe Audience Manager（可選）:增加第三方觀眾資料、基於合作的設備圖表、在Adobe Analytics面對Real-time Customer Data Platform觀眾的能力，以及在Real-time Customer Data Platform面對Adobe Analytics觀眾的能力
 * Adobe Analytics (可選)：新增基於歷史行為資料以及 Adobe Analytics 資料的細分建立區段的能力
 
 ## 整合模式
@@ -50,21 +50,21 @@ ht-degree: 46%
 <tbody>
   <tr>
     <td class="tg-0lax">1</td>
-    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">通過「觀眾共用服務」方法，將RTCDP流和批量觀眾共用到目標和Audience Manager</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 通過「受眾共用」服務，從RTCDP到「目標」和「Audience Manager」共用流和批量受眾。 即時評估的受眾需要WebSDK和整合模式3中概述的即時受眾評估。</span></td>
-    <td class="tg-73oq"> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。<br> — 此整合不需要WebSDK部署。</td>
+<td class="tg-73oq">Real-time Customer Data Platform與目標共用邊緣上的即時段評估</td>
+    <td class="tg-0lax"> — 即時評估受眾，以便在邊緣上實現相同或下一頁個性化。</td>
+    <td class="tg-73oq"> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須實現WebSDK。<br> — 當前不提供基於移動SDK和API的實現</td> 
   </tr>
   <tr>
     <td class="tg-0lax">2</td>
-    <td class="tg-73oq">通過邊緣方法將RTCDP流和批訪問群體共用到目標</td>
-    <td class="tg-0lax"> — 通過邊緣網路將流和批訪問群體從RTCDP共用到目標。 即時評估的受眾需要WebSDK和整合模式3中概述的即時受眾評估。</td>
-    <td class="tg-73oq"> — 必須在RTCDP目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br>不需要WebSDK。 <br> — 如果僅使用AT.js，則支援對ECID的配置檔案查找。 <br> — 對於邊緣上的自定義ID命名空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</td>
+    <td class="tg-73oq">Real-time Customer Data Platform通過Edge方法流式傳輸和批量訪問群共用到目標</td>
+    <td class="tg-0lax"> — 通過邊緣網路將流媒體和批量觀眾從Real-time Customer Data Platform共用到目標。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。</td>
+    <td class="tg-73oq"> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br>不需要WebSDK。 <br> — 如果僅使用AT.js，則支援對ECID的配置檔案查找。 <br> — 對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
-    <td class="tg-73oq">使用WebSDK通過邊在與目標共用的邊上執行RTCDP即時段評估。</td>
-    <td class="tg-0lax"> — 即時評估受眾，以便在邊緣上實現相同或下一頁個性化。</td>
-    <td class="tg-73oq"> — 必須在RTCDP目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須實現WebSDK。<br> — 基於移動SDK和API的實施尚不可用</td>
+    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">Real-time Customer Data Platform流和批量觀眾共用，通過觀眾共用服務方法實現目標和Audience Manager</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 通過觀眾共用服務將流媒體和批量觀眾從Real-time Customer Data Platform分到目標和Audience Manager。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。</span></td>
+    <td class="tg-73oq"> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。<br> — 此整合不需要WebSDK部署。</td>
   </tr>
 </tbody>
 </table>
@@ -97,37 +97,26 @@ ht-degree: 46%
 
 網路/行動個人化 Blueprint 可透過下列方法實施，如下所述。
 
-1. 使用 [!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 及 [!UICONTROL Edge Network]。
+1. 使用 [!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 及 [!UICONTROL Edge Network]。[請參閱 Experience Platform Web 和 Mobile SDK Blueprint](../data-ingestion/websdk.md)
 1. 使用傳統應用程式特定的 SDK (例如 AppMeasurement.js)
-
-### 1. Platform Web/Mobile SDK 與 Edge 方法
-
-[請參閱 Experience Platform Web 和 Mobile SDK Blueprint](../data-ingestion/websdk.md)
-
-### 2. 應用程式特定的 SDK 方法
-
 <img src="assets/app_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 實施考量
 
 身份先決條件
 
-* 分享從Adobe Experience Platform到Adobe Target的受眾需要使用ECID作為身份。
+* 在利用上面概述的與邊緣網路和WebSDK的整合模式1時，可以利用任何主身份。 首次登錄個性化要求個性化請求集主標識與來自Real-time Customer Data Platform的配置檔案的主標識匹配。 在集線器上處理匿名設備和已知客戶之間的身份拼接，然後投影到邊緣。 因此，如果將主標識設定為設備標識符，則在匿名和已知配置檔案已統一的後續會話之前，已知客戶資料將不會應用。
+* 在使用上文整合模式3所概述的受眾共用服務時，分享從Adobe Experience Platform到Adobe Target的受眾需要將ECID作為身份。
 * 可以使用替代身份通過Audience Manager將Experience Platform觀眾分享給Adobe Target。 Experience Platform通過以下受支援的命名空間激活受眾以Audience Manager:IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 請注意，Audience Manager和目標通過ECID標識解析受眾成員身份，因此，最終與Adobe Target共用的受眾仍需要ECID。
 
 ## 實施步驟
-
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)
 1. [實施 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant) (可選)
 1. [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant) (可選)
 1. [實施 Experience Platform 與[!UICONTROL 即時客戶個人資料]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)
-1. 實施 [Experience Cloud身份服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=zh-Hant) 或 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant) Experience PlatformWeb SDK是即時邊緣分割的必需項，但是從RTCDP到目標共用流和批訪問群體時不是必需的。 請注意，通過移動SDK進行即時分段的支援仍在開發中。
+1. 實施 [Experience Cloud身份服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html?lang=zh-Hant) 或 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant) Experience PlatformWeb SDK是即時邊緣分割的必需工具，但是從Real-time Customer Data Platform到目標共用流和批訪問群集則不是必需的。 請注意，目前不支援通過Mobile SDK和API進行即時分段。
 1. [使Adobe Target成為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) 或者為觀眾分享的方式 [請求設定Experience Platform與Adobe Target（共用受眾）之間的受眾共用](https://www.adobe.com/go/audiences) 共用從Experience Platform到目標的受眾。
-   >[!NOTE]
-   >
-   >在RTCDP和Adobe Target之間使用「受眾共用」服務時，必須使用Experience CloudID共用受眾，並且是同一Experience Cloud組織的一部分。支援ECID以外的標識需要使用WebSDK和體驗邊緣網路。
-
 
 ## 相關文件
 
