@@ -3,13 +3,15 @@ user-guide-title: 數位體驗 Blueprint
 breadcrumb-title: 'Blueprint '
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
+mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 66b0ceec973d31a902eef0c3a86bd7fcd51b7b8a
+source-git-commit: 28774e211ceedec2e099abbe0dbfee91267bda21
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 68%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # 數位體驗 Blueprint {#architecture}
 
@@ -28,7 +30,9 @@ ht-degree: 68%
 + 對象與個人資料啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
    + [匿名對象啟用](/help/blueprints/audience-activation/anonymous.md)
-   + [使用聯機和離線資料激活](/help/blueprints/audience-activation/online-offline.md)
+   + [激活社交和廣告渠道]{#audience-activation}
+      + [使用聯機和離線資料激活](/help/blueprints/audience-activation/online-offline.md)
+      + [激活到Facebook自定義受眾](/help/blueprints/audience-activation/destinations/facebook.md)
    + [激活到檔案和企業流目標](/help/blueprints/audience-activation/enterprise-destinations.md)
    + [使用 Experience Cloud 應用程式啟用](/help/blueprints/audience-activation/platform-and-applications.md)
    + [客戶活動中樞](/help/blueprints/audience-activation/customer-activity.md)
@@ -61,4 +65,3 @@ ht-degree: 68%
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
    + [使用線上和離線資料實現個性化](/help/blueprints/web-personalization/online-offline.md)
-
