@@ -4,10 +4,10 @@ description: 線上/離線對象啟用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: c4adcc5d23bb0482a348d7b5b2b70b06ff2873e8
+source-git-commit: 53ef83cbaa9dde0793e379c0044f449cfca078ab
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 59%
+source-wordcount: '743'
+ht-degree: 61%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 59%
 
 啟用對象至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。
 
-使用線上和離線資料藍圖的激活與 [使用Experience Cloud應用程式藍圖激活受眾和配置檔案](platform-and-applications.md)。 其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
+其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
 
 ## 使用案例
 
