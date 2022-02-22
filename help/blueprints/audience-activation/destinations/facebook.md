@@ -3,13 +3,13 @@ title: 激活到Facebook自定義受眾
 description: 激活到Facebook自定義受眾。
 solution: Experience Platform, Real-time Customer Data Platform, Data Collection
 kt: 7086
-source-git-commit: f1477d39a2b2349708ad74625bab6c5f4012ae1e
+exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
+source-git-commit: 051b094412419363e5e2406f2e436cc528bd409e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '957'
+ht-degree: 3%
 
 ---
-
 
 # 激活到Facebook自定義受眾
 
@@ -18,7 +18,10 @@ ht-degree: 0%
 ## 使用案例
 
 * 對社交及廣告目標上已知對象的對象目標定位。
-* 使用線上和離線屬性的線上個人化。應用程式
+* 使用線上和離線屬性的線上個人化。
+
+## 應用程式
+
 * 即時客戶資料平台
 
 ## 架構
@@ -31,7 +34,7 @@ ht-degree: 0%
    * 使用現成的命名空間（如電子郵件、電子郵件SHA256哈希）（可用）。
    * Facebook有一個支援的身份清單。 為了激活到Facebook自定義受眾，必須在要激活的配置檔案中存在支援的身份之一。
    * 以下標識目前受Facebook支援：GAID、IDFA、phone_sha256、email_lc_sha256、extern_id。
-   * 有關其他詳細資訊，請參閱 [Facebook目的地指南](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en)。
+   * 有關其他詳細資訊，請參閱 [Facebook目的地指南](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html)。
    * 建立自定義命名空間，其中非現成命名空間對於適用的標識不可用。
 1. 配置配置檔案資料源架構和資料集。
    * 為所有配置檔案記錄源資料建立配置檔案記錄方案。
@@ -66,7 +69,7 @@ ht-degree: 0%
    * 複查給定段的段結果計數。
    * 調查應包括在段中的配置檔案，以驗證段成員資格是否包括在配置檔案的段成員資格部分中。
 1. 在「目標」配置中配置訪問群體到目標的傳遞。
-   * 查看 [Facebook目的地指南](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en) 有關配置Facebook目標的詳細資訊。
+   * 查看 [Facebook目的地指南](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html) 有關配置Facebook目標的詳細資訊。
    * 配置目標時，選擇要激活到目標的受眾。
    * 確定希望目標資料流開始將訪問群體傳送到目標的預定開始日期。
    * 每個目標都具有要發送的必需屬性和可選屬性。
@@ -87,4 +90,4 @@ ht-degree: 0%
 
 ## 相關文件
 
-激活到Facebook自定義受眾 —  [目標配置](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html?lang=en)
+激活到Facebook自定義受眾 —  [目標配置](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/facebook.html)

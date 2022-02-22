@@ -1,79 +1,93 @@
 ---
-title: 使用聯機和離線資料藍圖激活
-description: 線上/離線對象啟用。
-solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+title: 激活到Google客戶匹配
+description: 激活到FGoogle客戶匹配。
+solution: Experience Platform, Real-time Customer Data Platform, Data Collection
 kt: 7086
-source-git-commit: f1477d39a2b2349708ad74625bab6c5f4012ae1e
+source-git-commit: 0a0181a5fd84a645344fadefd47838237807c97c
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 61%
+source-wordcount: '1010'
+ht-degree: 3%
 
 ---
 
-# 使用聯機和離線資料藍圖激活
 
-使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。
+# 激活到FGoogle客戶匹配
 
-啟用對象至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。
-
-其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
+從多個來源接收客戶資料以構建客戶的單個配置檔案視圖，將這些配置檔案細分為構建的受眾以進行營銷和個性化，將這些受眾共用到社交廣告網路，如Google客戶匹配以針對這些受眾進行目標和個性化活動。 Google客戶匹配允許您使用線上和離線資料，跨Google自有和運營的物業與客戶聯繫和重新接觸，例如：搜索、購物、Gmail和YouTube。
 
 ## 使用案例
 
 * 對社交及廣告目標上已知對象的對象目標定位。
 * 使用線上和離線屬性的線上個人化。
-* 啟用對象至已知通道，例如電子郵件和簡訊。
 
 ## 應用程式
 
-* Adobe Experience Platform
-* [!UICONTROL 即時客戶資料平台]
+* 即時客戶資料平台
 
 ## 架構
 
-### 使用目標進行聯機和離線資料激活
-
-<img src="assets/online_offline_activation.svg" alt="線上/離線對象啟用 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
-<br>
-
-## 護欄
-
-[請參閱「對象與個人資料啟用」概觀頁面所述的護欄。](overview.md)
+<img src="../assets/gcm.png" alt="Google客戶匹配激活的參考體系結構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 實施步驟
 
-1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
-1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
-1. [在方案上設定正確的身份和身份命名空間](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)，以確保擷取的資料可以嵌入統一的個人資料。
-1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
-1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。
-1. [在 Experience Platform 與 Audience Manager 之間為 Experience Platform 中定義要分享至 Audience Manager 的對象佈建[!UICONTROL 即時客戶資料平台]區段分享。](https://www.adobe.com/go/audiences)
-1. 在 Experience Platform 中[建立區段](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html?lang=zh-Hant)。系統會自動確定區段是作為批次還是串流評估。
-1. 將用於個人資料屬性和對象會籍分享的目標[設定為所需的目標。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html?lang=zh-Hant)
+1. 配置要在配置檔案資料源中使用的標識命名空間。
+   * 使用現成的命名空間（如電子郵件、電子郵件SHA256哈希）（可用）。
+   * Google客戶匹配包含支援的身份清單。 要激活到Google客戶匹配，必須在要激活的配置檔案中顯示支援的身份之一。
+   * Google客戶匹配當前支援以下標識：GAID、IDFA、phone_sha256_e.164、email_lc_sha256、user_id。
+   * 有關其他詳細資訊，請參閱 [Google客戶匹配目標指南](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html)。
+   * 建立自定義命名空間，其中非現成命名空間對於適用的標識不可用。
+1. 配置配置檔案資料源架構和資料集。
+   * 為所有配置檔案記錄源資料建立配置檔案記錄方案。
+      * 指定每個架構的主標識和次標識。
+      * 啟用架構以接收配置檔案。
+   * 為所有配置檔案記錄源資料建立配置檔案記錄資料集，分配關聯的架構。
+      * 啟用資料集以接收配置檔案。
+   * 為所有基於配置檔案時間序列的源資料建立配置檔案體驗事件方案。
+      * 指定架構的主標識和次標識。
+   * 啟用架構以接收配置檔案。
+   * 為所有配置檔案體驗事件源資料建立配置檔案體驗事件資料集，並分配關聯的架構。
+      * 啟用資料集以接收配置檔案。
+1. 使用源連接器將源資料接收到上面配置的關聯資料集。
+   * 使用憑據配置源連接器帳戶。
+   * 配置資料流，將指定時間表的源檔案或資料夾位置的資料接收到指定的資料集。
+   * 將源資料中的任何欄位映射到目標架構。
+   * 將任何欄位轉換為正確的格式以接收為Experience Platform。
+      * 日期轉換
+      * 在適當時轉換為小寫 — 例如電子郵件地址
+      * 模式轉換（例如電話號碼）
+      * 如果源資料中不存在，則為體驗事件記錄添加唯一記錄ID。
+      * 轉換陣列和映射類型欄位以確保正確映射和建模陣列和映射以在Experience Platform中分段。
+1. 配置配置檔案合併策略以確保正確配置標識圖以及在合併配置檔案時應包括哪些資料集。
+1. 執行資料流後，確保配置檔案資料接收成功且無錯誤。
+   * Inspect幾個配置檔案的身份圖以確保正確處理身份關係。
+   * Inspect多個配置檔案的屬性和事件，以確保正確接收配置檔案的屬性和事件。
+1. 創作段以建立配置檔案受眾
+   * 使用屬性和事件規則在段生成器中生成段。
+   * 保存段以進行評估。 段將按指定的計畫每天計算一次。
+      * 如果段規則適合流分段，則當為配置檔案接收新的流資料時，將評估段。 在計畫的批處理分段期間，流段也將每天評估一次。
+1. 確保分部業績符合預期。
+   * 複查給定段的段結果計數。
+   * 調查應包括在段中的配置檔案，以驗證段成員資格是否包括在配置檔案的段成員資格部分中。
+1. 在「目標」配置中配置訪問群體到目標的傳遞。
+   * 查看 [Google客戶匹配目標指南](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html) 有關配置Facebook目標的詳細資訊。
+   * 配置目標時，選擇要激活到目標的受眾。
+   * 確定希望目標資料流開始將訪問群體傳送到目標的預定開始日期。
+   * 每個目標都具有要發送的必需屬性和可選屬性。
+      * 對於Google客戶匹配，必須包括其中一個必需標識，並用於將Experience Platform內受眾中的配置檔案與Google客戶匹配可瞄準的配置檔案進行匹配。
+   * 每個目標還具有指定的傳遞類型，無論是流傳輸還是批處理、基於檔案或JSON負載。
+      * 對於Google客戶匹配，以流式方式將受眾成員身份以JSON格式交付給Google客戶匹配終結點。
+      * 在流式處理或Experience Platform中的批分段評估之後，將以流式方式交付受眾成員。
+1. 確保目標流已按預期將受眾傳遞到目標。
+   * 檢查監視介面，確認已將受眾與預期的配置檔案數量一起交付。 受眾大小應反映激活的配置檔案的預期數量，並指出特定目標(如Google客戶匹配)將需要某些欄位，如電子郵件哈希標識，如果不存在於作為受眾成員的配置檔案中，則不會將其激活到目標。
+   * 檢查是否有任何跳過的配置檔案標識缺失或屬性缺失（必需）。
+   * 檢查是否有其他需要解決的錯誤。
+1. 驗證受眾是否已使用預期的受眾成員數激活到最終目標。
+   * 完成激活流程後，切換到您的Google廣告帳戶。 激活的段在您的Google帳戶中顯示為客戶清單。 請注意，根據您的網段大小，除非有100多個活動用戶提供服務，否則不會填充某些受眾。
 
-## 實施考量
+## 護欄
 
-* 分享個人資料資料到目標需要您在目標負載中包含目標使用的特定身份值。對目標必要的任何身份必須擷取到 Platform，並且設定為[!UICONTROL 即時客戶個人資料]的身份。
-
-### 從Real-time Customer Data Platform到Audience Manager的觀眾分享
-
-* 一旦完成段評估並將其寫入即時客戶配置檔案（無論段評估是批處理還是流處理）,RT-CDP的受眾成員身份將以流方式共用到Audience Manager。 如果限定的簡檔包含相關簡檔設備的區域路由資訊，則RTCDP的觀眾成員在相關的Audience Manager邊緣上以流方式限定。 如果將區域路由資訊應用於過去14天內時間戳記的配置檔案，則將在Audience Manager邊緣上以流形式進行計算。 如果RTCDP中的配置檔案不包含區域路由資訊或區域路由資訊大於14天，則配置檔案成員資格將發送到Audience Manager中心位置以進行基於批的評估和激活。 符合邊緣激活資格的配置檔案將在RTCDP的細分市場鑑定後幾分鐘內激活，不符合邊緣激活資格的配置檔案將在Audience Manager集線器中獲得資格，並且可能有12-24小時的處理時間。
-
-* 可以從Audience Manager、訪問者ID服務、分析、啟動或直接從Web SDK中收集儲存了Audience Manager配置檔案的邊緣區域路由資訊，以便使用「資料捕獲區域資訊」 XDM欄位組作為單獨的配置檔案記錄類資料集進行Experience Platform。
-
-* 對於從Experience Platform到Audience Manager的受眾共用的激活情形，將自動共用以下標識：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 當前，未共用自定義命名空間。
-
-當所需的目標身份包含在[!UICONTROL 即時客戶個人資料]中時，或者[!UICONTROL 即時客戶個人資料]中的身份可以關聯至 Audience Manager 中連結的所需目標身份時，Experience Platform 中的對象可透過 Audience Manager 目標分享。
+[輪廓和分段護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 ## 相關文件
 
-* [[!UICONTROL 即時客戶資料平台]產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
-* [個人資料與細分準則](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
-* [細分文件](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
-* [目標文件](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=zh-Hant)
-
-## 相關視訊與教學課程
-
-* [[!UICONTROL 即時客戶資料平台]概覽](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=zh-Hant)
-* [[!UICONTROL 即時客戶資料平台]示範](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=zh-Hant)
-* [建立區段](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html)
+激活到Google客戶匹配 —  [目標配置](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html)
