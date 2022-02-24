@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 91db73c9fb14d461ee62444199c3d053bd094639
+source-git-commit: 106f0f8c68cd77cc187f03d406b24baf1032feba
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 41%
+source-wordcount: '1172'
+ht-degree: 40%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 41%
   <tr>
     <td class="tg-0lax">3</td>
     <td class="tg-73oq"><span style="font-weight:400;font-style:normal">Real-time Customer Data Platform流和批量觀眾共用，通過觀眾共用服務方法實現目標和Audience Manager</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 通過觀眾共用服務將流媒體和批量觀眾從Real-time Customer Data Platform分到目標和Audience Manager。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 通過觀眾共用服務將流媒體和批量觀眾從Real-time Customer Data Platform分到目標和Audience Manager。 當希望從第三方資料和Audience Manager受眾獲得額外的豐富時，可以利用這種整合模式。 否則優選整合模式1和2。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。</span></td>
     <td class="tg-73oq"> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。<br> — 此整合不需要WebSDK部署。</td>
   </tr>
 </tbody>
