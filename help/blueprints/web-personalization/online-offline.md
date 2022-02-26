@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 8d01529c611b2dabeeb6b11a227e7c3a9f132774
+source-git-commit: 7d614edd9d6db1d6da936c79f4de9bb66db72c0b
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 31%
+source-wordcount: '1463'
+ht-degree: 30%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 31%
   <tr>
     <td class="tg-0lax">1</td>
 <td class="tg-73oq">對從Real-time Customer Data Platform到目標共用的邊緣進行即時段評估</td>
-    <td class="tg-0lax"> — 即時評估受眾，以便在邊緣上實現相同或下一頁個性化。<br> — 通過邊緣網路將流媒體和批量觀眾從Real-time Customer Data Platform共用到目標。</td>
+    <td class="tg-0lax"> — 即時評估受眾，以便在邊緣上實現相同或下一頁個性化。<br> — 此外，流或批處理中評估的任何段也將投影到邊緣網路，以納入邊緣段評估和個性化。</td>
     <td class="tg-73oq"> — 必須在「體驗邊緣」中配置資料流，並啟用「目標」和「Experience Platform」擴展，「目標」目標配置中將提供資料流ID。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須實現WebSDK。<br> — 當前不提供基於移動SDK和API的實現</td> 
   </tr>
   <tr>
