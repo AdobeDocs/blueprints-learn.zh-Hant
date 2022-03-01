@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 2b2e9a7b849b71ac4b827a3783820a7e4b8ad6f1
+source-git-commit: bf2fd224c0eb3e4933dd39a9c26aeaf613fe5abc
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 29%
+source-wordcount: '1521'
+ht-degree: 30%
 
 ---
 
@@ -52,24 +52,24 @@ ht-degree: 29%
     <td class="tg-0lax">1</td>
 <td class="tg-73oq">對從Real-time Customer Data Platform到目標共用的邊緣進行即時段評估</td>
     <td class="tg-0lax"> — 即時評估受眾，以便在邊緣上實現相同或下一頁個性化。<br> — 此外，任何以流式處理或批處理方式評估的網段也將投影到邊緣網路，以納入邊緣網段評估和個性化。</td>
-    <td class="tg-73oq"><br> — 實施模式1，詳見下文。<br> — 必須實施Web/Mobile SDK。<br> — 請注意，當前不提供基於移動SDK和API的即時分段支援<br> — 必須在「體驗邊緣」中配置資料流，並啟用「目標」和「Experience Platform」擴展，「目標」目標配置中將提供資料流ID。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td> 
+    <td class="tg-73oq"> — 實施模式1，詳見下文。<br> — 必須實施Web/Mobile SDK。<br> — 請注意，當前不提供基於移動SDK和API的即時分段支援<br> — 必須在「體驗邊緣」中配置資料流，並啟用「目標」和「Experience Platform」擴展，「目標」目標配置中將提供資料流ID。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td> 
   </tr>
   <tr>
     <td class="tg-0lax">2</td>
     <td class="tg-73oq">通過Edge方法從Real-time Customer Data Platform到Target流媒體和批量訪問群共用</td>
     <td class="tg-0lax"> — 通過邊緣網路將流媒體和批量觀眾從Real-time Customer Data Platform共用到目標。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。<br> — 此整合通常用於使用傳統SDK共用流和批訪問群體，而不是遷移到Edge Collection和WebSDK，後者可支援即時、流和批訪問群體，如整合方案1中所述。</td>
-    <td class="tg-73oq"><br> — 實施模式1或2，詳見下文。<br>- Web/Mobile SDK不需要將流和批訪問群共用到目標，但需要啟用即時邊緣段評估，如整合模式1中所述。 <br> — 如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。 <br> — 對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。<br> — 必須在體驗邊緣中配置Datastream,Datastream ID將在目標目標配置中提供。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td>
+    <td class="tg-73oq"> — 實施模式1或2，詳見下文。<br>- Web/Mobile SDK不需要將流和批訪問群共用到目標，但需要啟用即時邊緣段評估，如整合模式1中所述。 <br> — 如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。 <br> — 對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。<br> — 必須在體驗邊緣中配置Datastream,Datastream ID將在目標目標配置中提供。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
     <td class="tg-73oq"><span style="font-weight:400;font-style:normal">通過受眾共用服務方式從Real-time Customer Data Platform到目標和Audience Manager的流式和批量受眾共用</span></td>
     <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 通過觀眾共用服務將流媒體和批量觀眾從Real-time Customer Data Platform分到目標和Audience Manager。<br>  — 當希望從第三方資料和Audience Manager受眾獲得更多資訊時，可以利用這種整合模式。 否則優選整合模式1和2。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。</span></td>
-    <td class="tg-73oq"><br> — 實施模式1或2，詳見下文。<br> — 此整合不需要Web/Mobile SDK部署。<br> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。</td>
+    <td class="tg-73oq"> — 實施模式1或2，詳見下文。<br> — 此整合不需要Web/Mobile SDK部署。<br> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。</td>
   </tr>
 </tbody>
 </table>
 
-## 方案1和方案2的體系結構 — 通過邊緣網路即時、流式和批量觀眾共用
+## 方案1和方案2 — 即時、流式和批量訪問群共用到Adobe Target
 
 架構
 
@@ -79,11 +79,11 @@ ht-degree: 29%
 
 <img src="assets/RTCDP+Target_flow.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
-整合模式1的概述體系結構
+用例方案1和2的概述體系結構
 
 <img src="assets/personalization_with_apps.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a"/>
 
-### 方案1的實施步驟，也支援方案2
+### 用例方案1的實施步驟，也支援用例方案2
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)
 1. [實施 Experience Platform 與[!UICONTROL 即時客戶個人資料]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)
@@ -91,7 +91,7 @@ ht-degree: 29%
 1. [使用邊緣資料流配置邊緣網路](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 1. [使Adobe Target成為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
 
-## 方案3的體系結構 — 通過對Adobe Target和Audience Manager的觀眾共用服務進行流式和批式觀眾共用
+## 方案3 — 通過向Adobe Target和Audience Manager提供受眾共用服務進行流式和批式受眾共用
 
 架構
 
@@ -108,7 +108,7 @@ ht-degree: 29%
 1. （可選） [使用邊緣資料流配置邊緣網路](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) (這僅是整合模式2所必需的，在這種模式下，不需要將受眾分享給Audience Manager或由Audience Manager受眾或資料豐富受眾)。
 1. （可選） [使Adobe Target成為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) 從Real-time Customer Data Platform直接到Edge與通過觀眾共用服務和Audience Manager共用流和批量觀眾。
 
-### 實施模式
+## 實施模式
 
 通過多種實現方法支援線上和離線個性化。
 
@@ -119,9 +119,10 @@ ht-degree: 29%
 
 <br>
 序列圖
+
 <img src="assets/RTCDP+Target_sequence.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
-### 實施模式2 — 支援使用案例方案3和2。 應用程式特定的SDK
+### 實施模式2 — 支援使用案例方案2和3。 應用程式特定的SDK
 
 使用傳統的特定於應用程式的SDK（例如AT.js和AppMeasurement.js）
 <img src="assets/app_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="width:80%; border:1px solid #4a4a4a" />
@@ -134,8 +135,8 @@ ht-degree: 29%
 
 身份先決條件
 
-* 在利用上面概述的與邊緣網路和WebSDK的整合模式1時，可以利用任何主身份。 首次登錄個性化要求個性化請求集主標識與來自Real-time Customer Data Platform的配置檔案的主標識匹配。 在集線器上處理匿名設備和已知客戶之間的身份拼接，然後投影到邊緣。 因此，如果將主標識設定為設備標識符，則在匿名和已知配置檔案已統一的後續會話之前，已知客戶資料將不會應用。
-* 在使用上文整合模式3所概述的受眾共用服務時，分享從Adobe Experience Platform到Adobe Target的受眾需要將ECID作為身份。
+* 在利用Edge網路和WebSDK中概述的實施模式1時，可以利用任何主身份。 首次登錄個性化要求個性化請求集主標識與來自Real-time Customer Data Platform的配置檔案的主標識匹配。 在集線器上處理匿名設備和已知客戶之間的身份拼接，然後投影到邊緣。
+* 在使用上述用例方案3中概述的受眾共用服務時，要將ECID作為身份，就必須分享從Adobe Experience Platform到Adobe Target的受眾。
 * 可以使用替代身份通過Audience Manager將Experience Platform觀眾分享給Adobe Target。 Experience Platform通過以下受支援的命名空間激活受眾以Audience Manager:IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 請注意，Audience Manager和目標通過ECID標識解析受眾成員身份，因此，最終與Adobe Target共用的受眾仍需要ECID。
 
 ## 相關文件
