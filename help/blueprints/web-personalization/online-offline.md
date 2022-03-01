@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 4d02197b437c167a90cbadf16b0b19fc733a9f65
+source-git-commit: 2b2e9a7b849b71ac4b827a3783820a7e4b8ad6f1
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 30%
+source-wordcount: '1548'
+ht-degree: 29%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 30%
 * Adobe Audience Manager（可選）:增加第三方觀眾資料、基於合作的設備圖表、在Adobe Analytics面對Real-time Customer Data Platform觀眾的能力，以及在Real-time Customer Data Platform面對Adobe Analytics觀眾的能力
 * Adobe Analytics (可選)：新增基於歷史行為資料以及 Adobe Analytics 資料的細分建立區段的能力
 
-## 整合模式
+## 使用案例方案
 
 <table class="tg" style="undefined;table-layout: fixed; width: 790px">
 <colgroup>
@@ -42,7 +42,7 @@ ht-degree: 30%
 <thead>
   <tr>
     <th class="tg-y6fn">#</th>
-    <th class="tg-f7v4">整合模式</th>
+    <th class="tg-f7v4">使用案例方案</th>
     <th class="tg-y6fn">功能</th>
     <th class="tg-f7v4">先決條件</th>
   </tr>
@@ -52,49 +52,38 @@ ht-degree: 30%
     <td class="tg-0lax">1</td>
 <td class="tg-73oq">對從Real-time Customer Data Platform到目標共用的邊緣進行即時段評估</td>
     <td class="tg-0lax"> — 即時評估受眾，以便在邊緣上實現相同或下一頁個性化。<br> — 此外，任何以流式處理或批處理方式評估的網段也將投影到邊緣網路，以納入邊緣網段評估和個性化。</td>
-    <td class="tg-73oq"> — 必須在「體驗邊緣」中配置資料流，並啟用「目標」和「Experience Platform」擴展，「目標」目標配置中將提供資料流ID。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須實現WebSDK。<br> — 當前不提供基於移動SDK和API的實現</td> 
+    <td class="tg-73oq"><br> — 實施模式1，詳見下文。<br> — 必須實施Web/Mobile SDK。<br> — 請注意，當前不提供基於移動SDK和API的即時分段支援<br> — 必須在「體驗邊緣」中配置資料流，並啟用「目標」和「Experience Platform」擴展，「目標」目標配置中將提供資料流ID。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td> 
   </tr>
   <tr>
     <td class="tg-0lax">2</td>
     <td class="tg-73oq">通過Edge方法從Real-time Customer Data Platform到Target流媒體和批量訪問群共用</td>
     <td class="tg-0lax"> — 通過邊緣網路將流媒體和批量觀眾從Real-time Customer Data Platform共用到目標。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。<br> — 此整合通常用於使用傳統SDK共用流和批訪問群體，而不是遷移到Edge Collection和WebSDK，後者可支援即時、流和批訪問群體，如整合方案1中所述。</td>
-    <td class="tg-73oq"> — 必須在體驗邊緣中配置Datastream,Datastream ID將在目標目標配置中提供。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br>- WebSDK不是將流和批訪問群共用到目標的必要條件，儘管它需要啟用即時邊緣段評估，如整合模式1中所述。 <br> — 如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。 <br> — 對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</td>
+    <td class="tg-73oq"><br> — 實施模式1或2，詳見下文。<br>- Web/Mobile SDK不需要將流和批訪問群共用到目標，但需要啟用即時邊緣段評估，如整合模式1中所述。 <br> — 如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。 <br> — 對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。<br> — 必須在體驗邊緣中配置Datastream,Datastream ID將在目標目標配置中提供。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
     <td class="tg-73oq"><span style="font-weight:400;font-style:normal">通過受眾共用服務方式從Real-time Customer Data Platform到目標和Audience Manager的流式和批量受眾共用</span></td>
     <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 通過觀眾共用服務將流媒體和批量觀眾從Real-time Customer Data Platform分到目標和Audience Manager。<br>  — 當希望從第三方資料和Audience Manager受眾獲得更多資訊時，可以利用這種整合模式。 否則優選整合模式1和2。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。</span></td>
-    <td class="tg-73oq"> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。<br> — 此整合不需要WebSDK部署。</td>
+    <td class="tg-73oq"><br> — 實施模式1或2，詳見下文。<br> — 此整合不需要Web/Mobile SDK部署。<br> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。</td>
   </tr>
 </tbody>
 </table>
 
+## 方案1和方案2的體系結構 — 通過邊緣網路即時、流式和批量觀眾共用
 
-## 整合模式1的體系結構
-
-
-整合模式1的詳細體系結構
+架構
 
 <img src="assets/RTCDP+Target.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
-整合模式1的序列圖
+序列詳細資訊
 
 <img src="assets/RTCDP+Target_flow.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
-
-<br>
-
-<img src="assets/RTCDP+Target_sequence.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 整合模式1的概述體系結構
 
 <img src="assets/personalization_with_apps.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a"/>
 
-
-## 整合模式1的實施
-
-在邊緣上即時分割 [!UICONTROL 平台Web SDK] 和 [!UICONTROL 邊緣網路] 必須得到實施。 [請參閱 Experience Platform Web 和 Mobile SDK Blueprint](../data-ingestion/websdk.md)
-
-### 整合模式1的實施步驟
+### 方案1的實施步驟，也支援方案2
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)
 1. [實施 Experience Platform 與[!UICONTROL 即時客戶個人資料]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)
@@ -102,12 +91,13 @@ ht-degree: 30%
 1. [使用邊緣資料流配置邊緣網路](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 1. [使Adobe Target成為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
 
-## 整合模式2和3的實施
+## 方案3的體系結構 — 通過對Adobe Target和Audience Manager的觀眾共用服務進行流式和批式觀眾共用
 
-使用傳統的特定於應用程式的SDK（例如AT.js和AppMeasurement.js）
-<img src="assets/app_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+架構
 
-### 整合模式2和3的實施步驟
+<img src="assets/audience_share_architecture.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+
+### 方案3的實施步驟，也支援方案2
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html)
 1. [實施 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant) (可選)
@@ -117,6 +107,24 @@ ht-degree: 30%
 1. [請求設定Experience Platform與Adobe Target（共用受眾）之間的受眾共用](https://www.adobe.com/go/audiences) 共用從Experience Platform到目標的受眾。
 1. （可選） [使用邊緣資料流配置邊緣網路](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) (這僅是整合模式2所必需的，在這種模式下，不需要將受眾分享給Audience Manager或由Audience Manager受眾或資料豐富受眾)。
 1. （可選） [使Adobe Target成為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) 從Real-time Customer Data Platform直接到Edge與通過觀眾共用服務和Audience Manager共用流和批量觀眾。
+
+### 實施模式
+
+通過多種實現方法支援線上和離線個性化。
+
+### 實施模式1 — 支援使用案例方案1和2。 帶Web/Mobile SDK的邊緣網路（推薦方法）
+
+將邊緣網路與Web/Mobile SDK配合使用
+<img src="assets/web_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+
+<br>
+序列圖
+<img src="assets/RTCDP+Target_sequence.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+
+### 實施模式2 — 支援使用案例方案3和2。 應用程式特定的SDK
+
+使用傳統的特定於應用程式的SDK（例如AT.js和AppMeasurement.js）
+<img src="assets/app_sdk_flow.png" alt="應用程式特定 SDK 方法的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 護欄
 
