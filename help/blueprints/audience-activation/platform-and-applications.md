@@ -4,10 +4,10 @@ description: 在 Experience Platform 中管理個人資料和對象，以及與 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
+source-git-commit: 0f0cd7487c67066b3d1d7ec162fadc634b50627b
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 100%
+source-wordcount: '269'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們。在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們。
 
-使用 Experience Cloud 應用程式的啟用與[線上/離線對象啟用 Blueprint](online-offline.md) 密切一致。
+使用Experience Cloud應用程式激活與 [已知客戶激活藍圖](known.md)。
 
 ## 使用案例
 

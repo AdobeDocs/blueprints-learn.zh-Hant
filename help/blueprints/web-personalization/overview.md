@@ -5,25 +5,31 @@ solution: Experience Platform, Real-time Customer Data Platform, Target, Audienc
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: aba3bfcecac07cb51393fef9e6278d9d6af3e377
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 66%
 
 ---
 
 # 網路/行動個人化
 
-網路與行動個人化允許在多個應用程式中使用對象細分，以個人化和最佳化客戶體驗。您可以使用客戶行為、人口統計資料、忠誠度及之前的異動來個人化版面配置、行動呼籲及內容。
+Web和Mobile Personalization能夠跨多個應用程式使用個人資料和受眾細分來個性化和優化客戶體驗。 客戶行為、人口統計、忠誠度級別和以前的事務可用於個性化佈局、行動要求和內容。
+
+<br>
 
 | Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
 | **[行為網路/行動個人化](behavioral.md)** | <ul><li>基於線上行為及對象資料進行個人化</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *（可選）*</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
-| **[Web/Mobile個性化，包括線上和離線資料](online-offline.md)** | <ul><li>使用離線屬性和事件 (異動、保留、CRM 及忠誠度資料) 個人化。</li><li>在網路、電子郵件及其他已知的通道上同步個人化。</li></ul> | <ul><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Target</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
+| **[Web/Mobile個性化，包括線上和離線資料](online-offline.md)** | <ul><li>完整的客戶配置檔案和增強的細分功能提供了改進的個性化體驗。</li><li>使用離線屬性和事件 (異動、保留、CRM 及忠誠度資料) 個人化。</li><li>在網路、電子郵件及其他已知的通道上同步個人化。</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
+
+<br>
 
 ## 網路與行動個人化的護欄
 
-[如需對象與個人資料啟用相關的護欄，請參閱「對象與個人資料啟用 Blueprints」章節下的護欄。](../audience-activation/overview.md)
+[有關與受眾和配置檔案激活相關的護欄，請參閱配置檔案和分段護欄文檔。](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+
+<br>
 
 ### 線上/離線個人化護欄圖
 
@@ -33,15 +39,9 @@ ht-degree: 0%
 
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
-* [[!DNL Adobe Experience Platform’s Identity Service — How to Solve the Customer Identity Conundrum]](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
 * [[!DNL Content and Commerce AI: Personalizing Your Interactions with Customers Through Content Intelligence]](https://medium.com/adobetech/content-and-commerce-ai-personalizing-your-interactions-with-customers-through-content-intelligence-dc182601deab)
 * [[!DNL How Adobe Experience Platform Predictive Audiences improves Personalized Experiences]](https://medium.com/adobetech/how-adobe-experience-platform-predictive-audiences-improves-personalized-experiences-1f75a60cb7a3)
 * [[!DNL Adobe Experience Platform Web SDK for Audience Management]](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
-* [[!DNL Demonstrating the Power of Adobe’s New Journey Orchestration Service to Build Personalized Omnichannel Experiences in Real-Time]](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
-* [[!DNL Real-Time Scoring to Improve Personalization with Adobe Experience Platform]](https://medium.com/adobetech/real-time-scoring-to-improve-personalization-with-adobe-experience-platform-78d3a47406f7)
 * [[!DNL Implementing Adobe Experience Platform Real-Time Customer Profile through our “Customer Zero” Program]](https://medium.com/adobetech/implementing-adobe-experience-platform-real-time-customer-profile-through-our-customer-zero-32e7cd952896)
-* [[!DNL How Adobe Experience Platform Can Help Customers Personalize Their Mobile Messaging in Real-Time with Journey Orchestration Service and a Mobile Messaging Vendor]](https://medium.com/adobetech/how-adobe-experience-platform-helped-a-client-personalize-their-mobile-messaging-in-real-time-with-7d634aefa098)
-* [[!DNL Data-Driven Marketing Campaigns using Adobe Experience Platform’s Unified Profile in Adobe Campaign]](https://medium.com/adobetech/data-driven-marketing-campaigns-using-adobe-experience-platforms-unified-profile-in-adobe-campaign-9d9a97e183c4)
 * [[!DNL Segmentation in Seconds: How Adobe Experience Platform Made Real-time Customer Profiles a Reality]](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)
-* [[!DNL Analytical Workloads and Real-Time Customer Profile — Two Sides of the Same Brain with a Single-Minded Purpose]](https://medium.com/adobetech/analytical-workloads-and-real-time-customer-profile-two-sides-of-the-same-brain-with-a-cdfac85ce8c1)
 * [[!DNL Build an Optimal Online Experience: Enrich Unified Profile with Query Service]](https://medium.com/adobetech/build-an-optimal-online-experience-enrich-unified-profile-with-query-service-8027c196ab33)

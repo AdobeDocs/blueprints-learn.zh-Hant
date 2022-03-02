@@ -2,10 +2,10 @@
 title: 數字型驗藍圖的使用案例
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
 exl-id: 7ec2b5c9-b46c-4434-b0d3-8aba863e9006
-source-git-commit: 3afcc2c293242a3b68ee4e4603ab686f6b309232
+source-git-commit: 657e94baf69ba1898a163a082fbfef36fdfd9a3a
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 74%
+source-wordcount: '691'
+ht-degree: 72%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 74%
  <tr>
   <td>對社交及廣告目標上已知對象的對象目標定位。</td>
   <td rowspan="3" style="vertical-align: middle; border-left: 1px solid rgb(219,219,219); border-right:  1px solid rgb(219,219,219)"><a
-  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=zh-Hant">線上/離線對象啟用</a></td>
+  href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html?lang=en">已知客戶激活</a></td>
  </tr>
  <tr>
   <td>使用線上和離線屬性的線上個人化。</td>
