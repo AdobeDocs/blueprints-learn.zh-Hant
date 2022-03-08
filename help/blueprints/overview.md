@@ -2,10 +2,10 @@
 title: 數位體驗 Blueprint
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 274f87c0d9bf7e9276b978a097a9633a55f09ede
+source-git-commit: 7611084c357e721f954ff980ef88b965609dd5ed
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 78%
+source-wordcount: '255'
+ht-degree: 83%
 
 ---
 
@@ -35,8 +35,8 @@ ht-degree: 78%
     <p><em>使用[!UICONTROL平台]作為中心中心，發送消息並影響客戶的即時體驗。</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html"><img alt="已知客戶激活藍圖的縮略圖" src="audience-activation/assets/online_offline_activation.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known.html"><strong>線上/離線對象啟用</strong></a></div>
+    <a href="/help/blueprints/audience-activation/known.md"><img alt="已知客戶激活藍圖的縮略圖" src="audience-activation/assets/online_offline_activation.svg" /></a>
+    <div><a href="/help/blueprints/audience-activation/known.md"><strong>線上/離線對象啟用</strong></a></div>
     <p><em>傳遞由受眾啟用的跨通道廣告。</em></p>
   </td>
   <td>
