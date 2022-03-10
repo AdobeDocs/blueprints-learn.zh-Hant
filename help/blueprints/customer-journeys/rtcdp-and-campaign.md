@@ -1,17 +1,18 @@
 ---
-title: Real-Time CDP與Adobe Campaign藍圖
-description: 展示Adobe Experience Platform及其即時客戶概要資訊和集中細分工具如何與Adobe Campaign一起進行個性化對話。
+title: Real-Time CDP與Adobe Campaign整合模式
+description: 展示 Adobe Experience Platform 及其即時客戶設定檔和集中式細分工具如何與 Adobe Campaign 一起使用，以提供個人化的對話體驗。
 solution: Experience Platform, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
+source-git-commit: e158cb7c14970a9deb035fde50c9c070b0760203
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 55%
+source-wordcount: '767'
+ht-degree: 60%
 
 ---
 
-# Real-Time CDP與Adobe Campaign藍圖
+# Real-Time CDP與Adobe Campaign整合模式
 
-展示Adobe Experience Platform及其即時客戶概要資訊和集中細分工具如何與Adobe Campaign一起進行個性化對話。
+展示 Adobe Experience Platform 及其即時客戶設定檔和集中式細分工具如何與 Adobe Campaign 一起使用，以提供個人化的對話體驗。
 
 <br>
 
@@ -24,7 +25,7 @@ ht-degree: 55%
 
 ## 架構
 
-<img src="assets/rtcdp-campaign-architecture.svg" alt="批次訊息傳送與 Adobe Experience Platform Blueprint 之參考架構" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/rtcdp-campaign-architecture.svg" alt="批量消息和Adobe Experience Platform整合模式的參考體系結構" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
