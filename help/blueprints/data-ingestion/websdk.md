@@ -5,10 +5,10 @@ solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
+source-git-commit: 992528c2dcde4a0ace0b67cb6c84de4844693304
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 63%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,4 +21,5 @@ ht-degree: 63%
 ## 參考文件
 
 * [Experience Platform Web/Mobile SDK 概覽](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
-* [使用Web SDK教程實施Adobe Experience Cloud](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html)
+* [使用 Web SDK 教學課程實作 Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
+* [在移動應用教程中實施Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)
