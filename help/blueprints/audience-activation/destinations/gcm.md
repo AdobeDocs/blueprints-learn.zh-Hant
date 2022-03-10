@@ -3,7 +3,8 @@ title: 激活到Google客戶匹配
 description: 激活到FGoogle客戶匹配。
 solution: Experience Platform, Real-time Customer Data Platform, Data Collection
 kt: 7086
-source-git-commit: 0a0181a5fd84a645344fadefd47838237807c97c
+exl-id: 32bdc04d-b101-4b17-af27-329e5c71d888
+source-git-commit: 60d99de0ec64a091662f0921b23aea0725965681
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 3%
@@ -11,7 +12,7 @@ ht-degree: 3%
 ---
 
 
-# 激活到FGoogle客戶匹配
+# 激活到Google客戶匹配
 
 從多個來源接收客戶資料以構建客戶的單個配置檔案視圖，將這些配置檔案細分為構建的受眾以進行營銷和個性化，將這些受眾共用到社交廣告網路，如Google客戶匹配以針對這些受眾進行目標和個性化活動。 Google客戶匹配允許您使用線上和離線資料，跨Google自有和運營的物業與客戶聯繫和重新接觸，例如：搜索、購物、Gmail和YouTube。
 
