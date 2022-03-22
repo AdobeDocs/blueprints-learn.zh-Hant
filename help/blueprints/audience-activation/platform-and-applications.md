@@ -4,9 +4,9 @@ description: 在 Experience Platform 中管理個人資料和對象，以及與 
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 8d9875595cb5cb4a4815fff9213defc2921e647d
+source-git-commit: 2b4e1f7134b240b68a432bfd70fe698ff634857a
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '741'
 ht-degree: 46%
 
 ---
@@ -52,17 +52,19 @@ ht-degree: 46%
 
 ### 從Real-time Customer Data Platform到Audience Manager的觀眾分享
 
+* 有關更多詳細資訊，請參閱以下文檔。 [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant).
+
 * 一旦完成段評估並將其寫入即時客戶配置檔案（無論段評估是批處理還是流處理）,RT-CDP的受眾成員身份將以流方式共用到Audience Manager。 如果限定的簡檔包含相關簡檔設備的區域路由資訊，則RTCDP的觀眾成員在相關的Audience Manager邊緣上以流方式限定。 如果將區域路由資訊應用於過去14天內時間戳記的配置檔案，則將在Audience Manager邊緣上以流形式進行計算。 如果RTCDP中的配置檔案不包含區域路由資訊或區域路由資訊大於14天，則配置檔案成員資格將發送到Audience Manager中心位置以進行基於批的評估和激活。 符合邊緣激活資格的配置檔案將在RTCDP的細分市場鑑定後幾分鐘內激活，不符合邊緣激活資格的配置檔案將在Audience Manager集線器中獲得資格，並且可能有12-24小時的處理時間。
 
 * 可以從Audience Manager、訪問者ID服務、分析、啟動或直接從Web SDK中收集儲存了Audience Manager配置檔案的邊緣區域路由資訊，以便使用「資料捕獲區域資訊」 XDM欄位組作為單獨的配置檔案記錄類資料集進行Experience Platform。
 
-* 對於從Experience Platform到Audience Manager的受眾共用的激活情形，將自動共用以下標識：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 當前，未共用自定義命名空間。
+* 對於從Experience Platform到Audience Manager的受眾共用的激活情形，將自動共用以下標識：ECID、IDFA、GAID、散列電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID。 當前，未共用自定義命名空間。
 
 * 當所需的目標身份包含在[!UICONTROL 即時客戶個人資料]中時，或者[!UICONTROL 即時客戶個人資料]中的身份可以關聯至 Audience Manager 中連結的所需目標身份時，Experience Platform 中的對象可透過 Audience Manager 目標分享。
 
 ### 從Real-time Customer Data Platform到目標的觀眾共用
 
-* 查看 [Web/Mobile個性化，帶線上和離線資料藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) 有關從Real-time Customer Data Platform到塔吉特共用簡介和觀眾的更多詳情。
+* 查看 [Web/MobilePersonalization提供線上和離線資料藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) 有關從Real-time Customer Data Platform到塔吉特共用簡介和觀眾的更多詳情。
 
 ### 從Real-time Customer Data Platform到運動和Journey Optimizer的觀眾分享
 
