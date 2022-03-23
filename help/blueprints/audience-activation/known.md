@@ -4,10 +4,10 @@ description: 線上/離線對象啟用。
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 20dd657a85ffeb8ae2f160855369643c2f2743bb
+source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '561'
+ht-degree: 69%
 
 ---
 
@@ -29,19 +29,25 @@ ht-degree: 0%
 
 * Adobe Experience Platform
 * [!UICONTROL 即時客戶資料平台]
+* 基於Audience Manager的目的地還可用於基於人員的Facebook、LinkedIn和Google客戶匹配活動。
 
 ## 架構
 
-### 使用目標進行聯機和離線資料激活
+### 已知客戶激活(通過Real-time Customer Data Platform)
 
-<img src="assets/online_offline_activation.svg" alt="線上/離線對象啟用 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="已知客戶激活藍圖的參考體系結構" style="width:80%; border:1px solid #4a4a4a" />
+<br>
+
+### 通過基於Audience Manager人的目的地激活已知客戶
+
+<img src="assets/AAM_PBD.svg" alt="已知客戶激活藍圖的參考體系結構" style="width:80%; border:1px solid #4a4a4a" />
 <br>
 
 ## 護欄
 
 [請參閱「受眾和配置檔案激活概述」頁上概述的護欄](overview.md)。
 
-## 實施步驟
+## Real-time Customer Data Platform實施步驟
 
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
@@ -57,6 +63,12 @@ ht-degree: 0%
 * 分享個人資料資料到目標需要您在目標負載中包含目標使用的特定身份值。對目標必要的任何身份必須擷取到 Platform，並且設定為[!UICONTROL 即時客戶個人資料]的身份。
 
 * 查看 [使用Experience Cloud應用程式藍圖激活受眾和配置檔案](platform-and-applications.md) 有關分享從Real-time Customer Data Platform到Audience Manager、分析、目標、活動和Journey Optimizer的受眾的更多詳細資訊。
+
+## 基於人員的目標的Audience Manager實施步驟
+
+* 有關實施Audience Manager的詳細資訊，請參閱以下 [文檔](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)。
+
+* 有關在Audience Manager中實施基於人員的目標的詳細資訊，請參閱以下 [文檔](https://experienceleague.adobe.com/docs/audience-manager/user-guide/faqs/faq-people-based-destinations.html)。
 
 ## 相關文件
 
