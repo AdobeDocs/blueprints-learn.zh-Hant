@@ -6,10 +6,10 @@ solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: f46c09a88cf2b49c816ab27c5daef20c01e99b09
+source-git-commit: 64e7b61c1b4b1d600641fd3299a2b84154873cfb
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 40%
+source-wordcount: '397'
+ht-degree: 41%
 
 ---
 
@@ -26,6 +26,9 @@ ht-degree: 40%
 
 ## 應用程式
 
+* Audience Manager
+* 即時客戶資料平台
+
 Audience Manager和Real-time Customer Data Platform都可以利用匿名Audience Activation為現場和廣告目的地提供支援。 請注意，Real-time Customer Data Platform僅支援包含匿名設備標識符的廣告目標的子集，這些標識符在 [目標文檔](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en)。
 
 Microsoft必應、GoogleDV360和TradeDesk是Real-time Customer Data Platform基於匿名設備目標的主要支援廣告目的地。 除此之外，Real-time Customer Data Platform還支援在 [目標文檔](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en) 如 [已知客戶激活藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html)。
@@ -34,9 +37,9 @@ Microsoft必應、GoogleDV360和TradeDesk是Real-time Customer Data Platform基�
 
 <img src="assets/anonymous_activation.svg" alt="匿名對象啟用 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
-## 實施步驟
+<br>
 
-<!-- These steps should link to help. -->
+## 實施步驟
 
 1. [實施 Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant#implementation-integration-guides)。
 1. 收集資料至 Audience Manager。
