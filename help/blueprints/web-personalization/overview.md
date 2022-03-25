@@ -1,11 +1,11 @@
 ---
 title: '網路與行動個人化 '
 description: 提供包含[!UICONTROL 即時客戶個人資料]的個人化網路和行動內容。
-solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: aba3bfcecac07cb51393fef9e6278d9d6af3e377
+source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 66%
@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # 網路/行動個人化
 
-Web和Mobile Personalization能夠跨多個應用程式使用個人資料和受眾細分來個性化和優化客戶體驗。 客戶行為、人口統計、忠誠度級別和以前的事務可用於個性化佈局、行動要求和內容。
+Web和MobilePersonalization解決了跨多個應用程式使用個人資料和受眾細分來個性化和優化客戶體驗的能力。 客戶行為、人口統計、忠誠度級別和以前的事務可用於個性化佈局、行動要求和內容。
 
 <br>
 

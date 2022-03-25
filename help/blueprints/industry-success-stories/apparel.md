@@ -1,40 +1,40 @@
 ---
-title: 服裝產業 — 使用Experience Cloud應用程式啟動
-description: 使用多個Blueprint來啟用即時行銷、跨管道啟用和跨管道分析。
-solution: Experience Platform, Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
+title: 服裝行業 — 激活Experience Cloud應用程式
+description: 已使用多個Bluinter來實現即時營銷、跨渠道激活和跨渠道分析。
+solution: Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration
 kt: 9487
-source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
+exl-id: f1a3e785-c804-43bd-90de-da4359bdd810
+source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
+# 服裝業業務挑戰
 
-# 服裝業的商業挑戰
+這家具體的吸引公司是設計，開發，製造以及全球鞋類，服裝，設備，配件和服務的營銷和銷售的全球領先企業。
 
-該具體吸引力公司是設計、開發、製造以及全球鞋類、服裝、設備、配件和服務營銷和銷售的全球領先者。
+他們的全球技術團隊正在使用Adobe Experience Platform和相關的Adobe解決方案來解決以下關鍵棘手問題：
 
-他們的全球技術團隊正在使用Adobe Experience Platform和相關的Adobe解決方案來解決以下關鍵難題：
-
-* 一致的跨通道訊息和啟用
-* 觸發式即時行銷
-* 個人化和衡量行銷活動成效的能力，以及執行客戶360分析和歸因的能力
+* 一致的跨渠道消息傳遞和激活
+* 基於觸發器的即時營銷
+* Personalization和衡量市場活動效果和執行客戶能力的能力360分析和歸因
 
 ## Adobe方法
 
-* 建立堅實的Platform基礎，為業務提供價值，並在企業範圍內獲得採用。
-* 與技術團隊合作，確保技術實施能夠帶來業務價值。
-* 建立360檢視，以便直接劃分、啟用和報告促銷活動。
-* 自動觸發並協調個人化客戶歷程。
+* 建立強大的平台基礎，為業務提供價值，並在整個企業範圍內得到採用。
+* 與技術團隊協作，確保通過技術實施實現業務價值。
+* 建立360視圖，查看此服裝公司的客戶，以便直接分段、激活和報告市場活動。
+* 自動化觸發並協調個性化的客戶旅程。
 
 ## 交付的業務價值
 
-| 目標 | 戰術 | 值已解除鎖定 |
+| 目標 | 戰術 | 值已解鎖 |
 |---|---|---|
-| **連線的跨通道體驗&#x200B;**<br></br>**促進參與和保留&#x200B;**<br></br>**資料加速化和深入分析**</ul> | <ul><li>已上線數個企業資料集，以建立數千萬個設定檔和數百個區段、數個目的地，以及報表控制面板</li><li>使用Real-time Customer Data Platform啟用多個目的地</li><li>透過「客戶歷程分析」解除鎖定客戶層級分析功能</li><li>透過Adobe Journey Optimizer實作之客戶互動的自動事件觸發器</li></ul> | <ul><li><strong> 客戶設定檔： </strong>360度客戶細分檢視</li><li><strong>目標激活： </strong>在付費媒體、電子郵件和社交平台上啟動</li><li><strong>客戶分析和歸因： </strong>跨管道歸因分析可隨選提供，且易於分配<li><strong>Journey Orchestration: </strong> 使用即時內容建立並運作觸發的促銷活動和已排程的促銷活動</li></ul> |
+| **連接的跨通道體驗&#x200B;**<br></br>**驅動器項目和保留&#x200B;**<br></br>**資料民主化與洞察力**</ul> | <ul><li>已裝載多個企業資料集以建立數千萬個配置檔案和數百個資料段、多個目標和報告控制板</li><li>使用Real-time Customer Data Platform在多個目的地激活</li><li>客戶級別分析功能與客戶行程分析一起解鎖</li><li>通過Adobe Journey Optimizer實施的客戶交互自動事件觸發器</li></ul> | <ul><li><strong> 客戶概要資訊： </strong>360度客戶細分視圖</li><li><strong>目標激活： </strong>在付費媒體、電子郵件和社交平台上激活</li><li><strong>客戶分析和屬性： </strong>可用的Ad-Hoc且易於分佈的跨通道屬性分析<li><strong>Journey Orchestration: </strong> 使用即時上下文建立並操作觸發的市場活動和計畫的市場活動</li></ul> |
 
-## 主要Blueprint:透過Experience Cloud應用程式啟動受眾
+## 主藍圖：使用Experience Cloud應用程式進行受眾和激活
 
 ### 說明
 
@@ -42,12 +42,8 @@ ht-degree: 16%
 
 ### Experience Cloud 應用程式
 
-<ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul>
+<ul><li>Adobe Experience Platform</li><li>[!UICONTROLReal-time Customer Data Platform]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul>
 
-### Blueprint架構
+### 藍圖體系結構
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant"><img alt="使用受眾啟用、客戶歷程分析和客戶歷程藍圖的服裝業務縮圖影像" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en"/></a>
-
-
-
-
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant"><img alt="使用受眾激活、客戶行程分析和客戶行程的服裝業務縮略圖藍圖" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en"/></a>

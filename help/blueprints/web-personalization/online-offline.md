@@ -2,10 +2,10 @@
 title: Web/Mobile個性化，包括線上和離線資料
 description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 landing-page-description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
-solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 0dda473e727ee367f6fa9ad78c9201d18bc064b9
+source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
 workflow-type: tm+mt
 source-wordcount: '1531'
 ht-degree: 22%
@@ -19,7 +19,7 @@ ht-degree: 22%
 
 * 使用線上和離線資料以及已知配置檔案進行線上個性化
 * 登陸頁面最佳化
-* 基於先前的產品/內容視圖、產品/內容親和性、環境屬性和人口結構，以及離線資料（如交易、忠誠度和CRM資料）和模型化的洞見
+* Personalization基於先前的產品/內容視圖、產品/內容親和性、環境屬性和人口結構，以及離線資料（如交易、忠誠度和CRM資料），以及模型化的洞察
 * 在使用Adobe Target的網站和移動應用上分享和瞄準Real-time Customer Data Platform定義的受眾。
 
 ## 應用程式
@@ -57,7 +57,7 @@ ht-degree: 22%
     <td class="tg-0lax">2</td>
     <td class="tg-73oq">通過Edge方法從Real-time Customer Data Platform到Target流媒體和批量訪問群共用</td>
     <td class="tg-0lax"> — 通過邊緣網路將流媒體和批量觀眾從Real-time Customer Data Platform共用到目標。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。<br> — 此整合通常用於使用傳統SDK共用流和批訪問群體，而不是遷移到Edge Collection和WebSDK，後者可支援即時、流和批訪問群體，如整合方案1中所述。</td>
-    <td class="tg-73oq"> — 實施模式1或2，詳見下文。<br>- Web/Mobile SDK不需要將流和批訪問群共用到目標，但需要啟用即時邊緣段評估，如整合模式1中所述。 <br> — 如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。 <br> — 對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。<br> — 必須在體驗邊緣中配置Datastream,Datastream ID將在目標目標配置中提供。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td>
+    <td class="tg-73oq"> — 實施模式1或2，詳見下文。<br>- Web/MobileSDK不需要將流和批訪問群共用到目標，但需要啟用即時邊緣段評估，如整合模式1中所述。 <br> — 如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。 <br> — 對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。<br> — 必須在體驗邊緣中配置Datastream,Datastream ID將在目標目標配置中提供。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
