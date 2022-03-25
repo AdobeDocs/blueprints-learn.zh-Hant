@@ -1,8 +1,9 @@
 ---
 title: Journey Optimizer與Adobe Campaign藍圖
 description: 演示Adobe Journey Optimizer如何與Adobe Campaign一起通過利用市場活動中的即時消息伺服器來本機發送消息
-solution: Experience Platform, Journey Optimizer, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
+exl-id: 076446a9-dfb9-464c-a04f-6864b8cb7b48
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 23%
@@ -127,7 +128,7 @@ ht-degree: 23%
 * 消息模板需要配置適當的個性化上下文
 * 導出工作流需要配置為將事務性消息傳遞日誌導出回Experience Platform。 建議最多每4小時運行一次
 
-### 移動推送配置（可選）
+### Mobile推送配置（可選）
 
 1. 實施Experience PlatformMobile SDK以收集推送令牌和登錄資訊，以將其與已知客戶配置檔案綁定
 1. 利用Adobe標籤並建立具有以下副檔名的移動屬性：

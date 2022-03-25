@@ -1,8 +1,9 @@
 ---
 title: Journey Optimizer — 第三方資訊傳遞藍圖
 description: 演示如何將Adobe Journey Optimizer與第三方消息傳遞系統配合使用來協調和發送個性化通信。
-solution: Experience Platform, Journey Optimizer
-source-git-commit: 1c46cbdfc395de4fc9139966cf869ba1feeceaaa
+solution: Journey Optimizer
+exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 30%

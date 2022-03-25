@@ -1,9 +1,9 @@
 ---
 title: Journey Optimizer — 觸發的訊息傳送與 Adobe Experience Platform Blueprint
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
-solution: Experience Platform, Journey Optimizer
+solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 2ead62f94e761cd9453be284a9fde3c5803879eb
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 38%
@@ -139,7 +139,7 @@ Adobe Experience Platform
 1. 身分 邊緣網路
 1. 行動裝置核心
 1. 確保您有專用資料流用於移動應用部署與Web部署
-1. 有關詳細資訊，請遵循 [Adobe Journey Optimizer移動指南](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
+1. 有關詳細資訊，請遵循 [Adobe Journey OptimizerMobile指南](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
 
 
 ## 相關文件

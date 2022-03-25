@@ -1,35 +1,35 @@
 ---
-title: 電信產業 — Journey Optimizer觸發式訊息傳送
-description: 提供客戶量身打造的即時交易，同時讓客戶有效率地加入，以提升長期忠誠度。
-solution: Experience Platform, Journey Optimizer
+title: 電信行業 — Journey Optimizer用於觸發資訊
+description: 提供客戶即時定制交易，同時高效地讓客戶加入長期忠誠度。
+solution: Journey Optimizer
 kt: 9486
-source-git-commit: c393d73d2fa7acd4e5c2d99c098503b023b6115d
+exl-id: fa4a6569-3972-4b97-91f1-7ca8ffd3c5b3
+source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 10%
 
 ---
 
+# 電信行業業務挑戰
 
-# 電信行業的商業挑戰
+在實施此藍圖之前，電信公司的「添加新線路」電子郵件活動取決於用戶是否已轉換並僅在經過7天的等待期後才檢查此內容。 一旦滿足這些標準，就會啟動任何附加的接觸點。
 
-在實作此Blueprint之前，電信公司的「新增線路」電子郵件促銷活動取決於使用者是否已轉換，且只會在等候7天後檢查。 一旦滿足這些標準，就會啟動任何其他接觸點。
-
-必須解決這一限制，以便對希望在當前狀態7天等待期之前添加線路的用戶啟動更及時的後續行動。
+必須解決這一限制，以便對希望在當前狀態7天等待期之前添加一行的用戶啟動更及時的後續行動。
 
 ## Adobe方法
 
-* Adobe Analytics資料可識別無法轉換以新增行的使用者，會作為資料來源納入，供Adobe Journey Optimizer使用。
-* Adobe Journey Optimizer會不時使用規則，讓客戶收到自訂的「放棄」訊息，以鼓勵客戶在帳戶中新增一行以進行轉換。
+* Adobe Analytics資料將作為資料源包括，供Adobe Journey Optimizer使用。
+* Adobe Journey Optimizer會不時使用一條規則，讓客戶收到定製的「放棄」消息，以鼓勵客戶通過在其帳戶中添加新行來進行轉換。
 
 
 ## 交付的業務價值
 
-| 目標 | 戰術 | 值已解除鎖定 |
+| 目標 | 戰術 | 值已解鎖 |
 |---|---|---|
-| **促進更高的促銷活動轉換率&#x200B;**<br></br>**增加年度客戶收入**</ul> | <ul><li>對於對新增行有興趣但尚未轉換的使用者，幾乎即時建立新區段。</li><li>對於具有第二個接觸點的未轉換客戶，對感興趣的非轉換客戶，請加以追蹤。 </li><li>使用測試策略來測量歷程效能，並針對透過電子郵件的轉換進行最佳化。</li></ul> | <ul><li><strong>高品質的相關體驗：</strong> 隨著歷程協調就位，客戶將體驗更相關的訊息，以降低電子郵件清單流失率。</li><li><strong>Journey Orchestration規模：</strong>您可以建立個人化且更及時的歷程，以促進轉換數和總收入的增加。</li></ul> |
+| **提高促銷活動轉換率&#x200B;**<br></br>**增加年度客戶收入**</ul> | <ul><li>為已顯示有興趣添加行但尚未轉換的用戶幾乎即時建立新段。</li><li>未轉換客戶的驅動器跟蹤，第二個觸點用於感興趣的非轉換器。 </li><li>使用測試策略來衡量行程效能並優化通過電子郵件進行轉換。</li></ul> | <ul><li><strong>高質量、相關經驗：</strong> 隨著行程協調到位，客戶將體驗到更相關的消息傳遞，從而減少電子郵件清單的混亂。</li><li><strong>Journey Orchestration:</strong>可以建立個性化且更及時的行程，以推動轉換和總收入的增加。</li></ul> |
 
-## 主要Blueprint:透過Experience Cloud應用程式啟動受眾
+## 主藍圖：使用Experience Cloud應用程式進行受眾和激活
 
 ### 說明
 
@@ -39,11 +39,6 @@ ht-degree: 10%
 
 <ul><li>Adobe Journey Optimizer</li></ul>
 
-### Blueprint架構
+### 藍圖體系結構
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en"><img alt="電信業務的縮圖影像提供即時量身打造的交易，同時有效率的客戶加入，以保持長期忠誠度。" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/journey-optimizer.png?lang=en"/></a>
-
-
-
-
-
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en"><img alt="電信業務的縮略圖影像提供定製的即時交易，同時高效地讓客戶加入長期忠誠度。" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/journey-optimizer.png?lang=en"/></a>
