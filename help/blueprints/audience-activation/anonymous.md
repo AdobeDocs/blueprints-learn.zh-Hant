@@ -6,10 +6,10 @@ solution: Experience Platform, Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 64e7b61c1b4b1d600641fd3299a2b84154873cfb
+source-git-commit: 4a46b7a4c278107c806d3ddd14591c7abe1a13d3
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 41%
+source-wordcount: '380'
+ht-degree: 33%
 
 ---
 
@@ -39,15 +39,13 @@ Microsoft必應、GoogleDV360和TradeDesk是Real-time Customer Data Platform基�
 
 <br>
 
-## 實施步驟
+## 實施步驟以Audience Manager
 
-1. [實施 Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant#implementation-integration-guides)。
-1. 收集資料至 Audience Manager。
-1. 設定訊號與特性以用於區段定義。
-1. 在 Audience Manager 中建立區段。
-1. 在 Audience Manager 中設定目標以分享對象。
+* 有關實施Audience Manager的詳細資訊，請參閱以下 [文檔](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)。
 
-有關Real-time Customer Data Platform的實施步驟，請參閱 [已知客戶激活藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html)。
+## Real-time Customer Data Platform實施步驟
+
+* Real-time Customer Data Platform的執行步驟見 [文檔](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html)。
 
 ## 相關文件
 
