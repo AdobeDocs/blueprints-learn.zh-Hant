@@ -1,11 +1,11 @@
 ---
 title: Web/Mobile SDK資料彙集 Blueprint
 description: 此 Blueprint 展示了透過 Experience Platform Web 和 Mobile SDK 的架構和擷取
-solution: Experience Platform,Data Collection
+solution: Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 992528c2dcde4a0ace0b67cb6c84de4844693304
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%

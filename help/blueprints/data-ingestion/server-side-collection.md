@@ -1,13 +1,13 @@
 ---
 title: 伺服器端企業資料彙集 Blueprint
 description: 由 Experience Platform SDK 串流彙集的資料至目標
-solution: Experience Platform,Data Collection
+solution: Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: a347672abe145f5cb1eedee79bc4d8d4c08d991e
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 77%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

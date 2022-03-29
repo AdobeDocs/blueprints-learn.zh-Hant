@@ -1,14 +1,14 @@
 ---
 title: 資料準備與擷取 Blueprint
 description: 此 Blueprint 顯示可在 Adobe Experience Platform 中擷取和準備資料的所有方法。
-solution: Experience Platform,Data Collection
+solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 992528c2dcde4a0ace0b67cb6c84de4844693304
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '652'
+ht-degree: 96%
 
 ---
 

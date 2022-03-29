@@ -2,14 +2,14 @@
 title: 匿名對象啟用 Blueprint
 description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。此功能可在各裝置中實現個人化的統一即時客戶體驗。
 landing-page-description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。
-solution: Experience Platform, Audience Manager
+solution: Audience Manager, Experience Platform
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 4a46b7a4c278107c806d3ddd14591c7abe1a13d3
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 33%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

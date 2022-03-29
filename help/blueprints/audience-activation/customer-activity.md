@@ -1,10 +1,10 @@
 ---
 title: 客戶活動中心 Blueprint
 description: '"[!UICONTROL 即時客戶概要資訊] 查找為代理支援和銷售提供上下文。」'
-solution: Experience Platform,Data Collection
+solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 687e5d61be990b7a837e413d4643cffde4f1d584
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 95%

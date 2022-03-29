@@ -1,13 +1,13 @@
 ---
 title: 自訂 Profile Enrichment 藍圖的資料科學
 description: 此藍圖顯示 Adobe Experience Platform 的 Data Science Workspace 如何使用 Experience Platform 中的資料訓練、部署及評分模型，以從資料中獲取機器學習深入見解。
-solution: Experience Platform,Data Collection
+solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
