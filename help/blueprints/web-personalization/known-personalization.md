@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 817ec1be3d4754ca3fb4fc9767ca79e516b6ab47
+source-git-commit: b050017505b8d77fcf507e4dec147b66c561779a
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 20%
+source-wordcount: '1233'
+ht-degree: 22%
 
 ---
 
@@ -29,44 +29,13 @@ ht-degree: 20%
 * Adobe Audience Manager（可選）:添加第三方受眾資料，基於合作的設備圖
 * Adobe Analytics (可選)：新增基於歷史行為資料以及 Adobe Analytics 資料的細分建立區段的能力
 
-## 使用案例方案
+## 整合模式
 
-<table class="tg" style="undefined;table-layout: fixed; width: 790px">
-<colgroup>
-<col style="width: 20px">
-<col style="width: 276px">
-<col style="width: 229px">
-<col style="width: 265px">
-</colgroup>
-<thead>
-  <tr>
-    <th class="tg-y6fn">#</th>
-    <th class="tg-f7v4">使用案例方案</th>
-    <th class="tg-y6fn">功能</th>
-    <th class="tg-f7v4">先決條件</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0lax">1</td>
-<td class="tg-73oq">對從Real-time Customer Data Platform到目標共用的邊緣進行即時段評估</td>
-    <td class="tg-0lax"> — 即時評估受眾，以便在邊緣上實現相同或下一頁個性化。<br> — 此外，任何以流式處理或批處理方式評估的網段也將投影到邊緣網路，以納入邊緣網段評估和個性化。</td>
-    <td class="tg-73oq"> — 實施模式1，詳見下文。<br> — 必須實施Web/Mobile SDK。<br> — 注意，Mobile軟體開發工具包目前不提供即時分段支援<br> — 必須在「體驗邊緣」中配置資料流，並啟用「目標」和「Experience Platform」擴展，「目標」目標配置中將提供資料流ID。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td> 
-  </tr>
-  <tr>
-    <td class="tg-0lax">2</td>
-    <td class="tg-73oq">通過Edge方法從Real-time Customer Data Platform到Target流媒體和批量訪問群共用</td>
-    <td class="tg-0lax"> — 通過邊緣網路將流媒體和批量觀眾從Real-time Customer Data Platform共用到目標。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。<br> — 此整合通常用於使用傳統SDK共用流和批訪問群體，而不是遷移到Edge Collection和WebSDK，後者可支援即時、流和批訪問群體，如整合方案1中所述。</td>
-    <td class="tg-73oq"> — 實施模式1或2，詳見下文。<br>- Web/Mobile SDK不需要將流和批訪問群共用到目標，但需要啟用即時邊緣段評估，如整合模式1中所述。 <br> — 如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。 <br> — 對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。<br> — 必須在體驗邊緣中配置Datastream,Datastream ID將在目標目標配置中提供。<br> — 必須在Real-time Customer Data Platform目標中配置目標目標。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">3</td>
-    <td class="tg-73oq"><span style="font-weight:400;font-style:normal">通過受眾共用服務方式從Real-time Customer Data Platform到目標和Audience Manager的流式和批量受眾共用</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal"> — 通過觀眾共用服務將流媒體和批量觀眾從Real-time Customer Data Platform分到目標和Audience Manager。<br>  — 當希望從第三方資料和Audience Manager受眾獲得更多資訊時，可以利用這種整合模式。 否則優選整合模式1和2。 即時評估的受眾需要WebSDK和整合模式1中概述的即時受眾評估。</span></td>
-    <td class="tg-73oq"> — 實施模式1或2，詳見下文。<br> — 此整合不需要Web/MobileSDK部署。<br> — 必須通過觀眾共用服務提供觀眾投影。<br> — 與目標整合需要與Experience Platform實例相同的IMS組織。<br> — 必須將標識解析為ECID，以便共用到邊緣，以便Target在上執行操作。</td>
-  </tr>
-</tbody>
-</table>
+| # | 整合模式 | 功能 | 先決條件 |
+|---|---|---|---|
+| 1 | 對從Real-time Customer Data Platform到目標共用的邊緣進行即時段評估 | <ul><li>即時評估受眾，以便在邊緣上實現相同或下一頁個性化。</li><li>此外，任何以流式處理或批處理方式評估的段也將投影到邊緣網路，以納入邊緣段評估和個性化。</li></ul> | <ul><li>必須實現Web/MobileSDK。</li><li>必須在已啟用目標和Experience Platform擴展的體驗邊緣中配置資料流</li><li>必須在Real-time Customer Data Platform目標中配置目標目標。</li><li>與目標整合需要與Experience Platform實例相同的IMS組織。</li></ul> |
+| 2 | 通過Edge方法從Real-time Customer Data Platform到Target流媒體和批量訪問群共用 | <ul><li>通過邊緣網路將流和批量觀眾從Real-time Customer Data Platform共用到目標。 即時評估的受眾需要WebSDK和邊緣網路實現。</li></ul> | <ul><li>Web/MobileSDK不需要將流和批訪問群共用到目標，儘管它需要啟用即時邊緣段評估。</li><li>如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。</li><li>對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</li><li>必須在Real-time Customer Data Platform目標中配置目標目標。</li><li>與目標整合需要與Experience Platform實例相同的IMS組織。</li></ul> |
+| 3 | 通過受眾共用服務方式從Real-time Customer Data Platform到目標和Audience Manager的流式和批量受眾共用 | <ul><li>當希望從第三方資料和Audience Manager受眾獲得額外的豐富時，可以利用這種整合模式。</li></ul> | <ul><li>Web/MobileSDK不需要將流和批訪問群共用到目標，儘管它需要啟用即時邊緣段評估。</li><li>如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。</li><li>對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</li><li>必須通過觀眾共用服務來提供觀眾投影。</li><li>必須在Real-time Customer Data Platform目標中配置目標目標。</li><li>與目標整合需要與Experience Platform實例相同的IMS組織。</li></ul> |
 
 ## 即時、流式和批量訪問共用到Adobe Target
 
