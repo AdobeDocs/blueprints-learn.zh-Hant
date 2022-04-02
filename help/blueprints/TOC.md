@@ -5,7 +5,7 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 274f87c0d9bf7e9276b978a097a9633a55f09ede
+source-git-commit: d80f7171c61373f4757d2a84313d0ceab800d29b
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 64%
@@ -59,6 +59,7 @@ ht-degree: 64%
    + [資料準備與擷取 ](/help/blueprints/data-ingestion/ingestion.md)
    + [伺服器端企業資料彙集 ](/help/blueprints/data-ingestion/server-side-collection.md)
    + [Experience Platform Web SDK](/help/blueprints/data-ingestion/websdk.md)
+   + [應用程式SDK](/help/blueprints/data-ingestion/appsdk.md)
 + 資料分析、情報與 AI/ML {#data-exploration}
    + [概覽](/help/blueprints/data-insights/overview.md)
    + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
@@ -66,4 +67,4 @@ ht-degree: 64%
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
-   + [使用線上和離線資料實現個性化](/help/blueprints/web-personalization/online-offline.md)
+   + [已知客戶Personalization](/help/blueprints/web-personalization/known-personalization.md)

@@ -4,9 +4,9 @@ description: 線上/離線對象啟用。
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
+source-git-commit: 4fef6460b305dc01671eeb9a90e58483f42d35e2
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '558'
 ht-degree: 69%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 69%
 
 ## 應用程式
 
-* Adobe Experience Platform
 * [!UICONTROL 即時客戶資料平台]
 * 基於Audience Manager的目的地還可用於基於人員的Facebook、LinkedIn和Google客戶匹配活動。
 
