@@ -5,7 +5,7 @@ solution: Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 4fef6460b305dc01671eeb9a90e58483f42d35e2
+source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 65%
@@ -16,11 +16,11 @@ ht-degree: 65%
 
 下面的體系結構圖說明了利用Experience PlatformWeb SDK的整合路徑和資料收集。
 
-<img src="assets/web_sdk_flow.png" alt="使用 Experience Platform Web 和 Mobile SDK 實施的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_flow.png" alt="使用 Experience Platform Web 和 Mobile SDK 實施的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
 序列圖
 
-<img src="assets/web_sdk_sequence.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/web_sdk_sequence.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
 ## 參考文件
 

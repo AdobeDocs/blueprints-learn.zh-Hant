@@ -4,7 +4,7 @@ description: 在 Experience Platform 中管理個人資料和對象，以及與 
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
+source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 46%
@@ -39,7 +39,7 @@ ht-degree: 46%
 
 ### 使用 Experience Cloud 應用程式的對象與個人資料啟用
 
-<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="使用 Experience Cloud 應用程式的對象與個人資料啟用之參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="使用 Experience Cloud 應用程式的對象與個人資料啟用之參考架構" style="width:90%; border:1px solid #4a4a4a" />
 <br>
 
 ## 護欄
@@ -64,7 +64,7 @@ ht-degree: 46%
 
 ### 從Real-time Customer Data Platform到目標的觀眾共用
 
-* 查看 [Web/MobilePersonalization提供線上和離線資料藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) 有關從Real-time Customer Data Platform到塔吉特共用簡介和觀眾的更多詳情。
+* 查看 [Web/Mobile個性化，帶線上和離線資料藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) 有關從Real-time Customer Data Platform到塔吉特共用簡介和觀眾的更多詳情。
 
 ### 從Real-time Customer Data Platform到運動和Journey Optimizer的觀眾分享
 

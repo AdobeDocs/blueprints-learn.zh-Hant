@@ -5,7 +5,7 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 4fef6460b305dc01671eeb9a90e58483f42d35e2
+source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 64%
@@ -33,7 +33,7 @@ Web和Mobile Personalization能夠跨多個應用程式使用個人資料和受�
 
 ### 已知客戶Personalization瓜德拉伊圖
 
-<img src="assets/personalization_guardrails.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/personalization_guardrails.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
 ## 相關部落格貼文
 

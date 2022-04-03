@@ -4,10 +4,10 @@ description: 此藍圖顯示 Adobe Experience Platform 的 Data Science Workspac
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '453'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 架構
 
-<img src="assets/data_science.svg" alt="為豐富個人資料自訂資料科學 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/data_science.svg" alt="為豐富個人資料自訂資料科學 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
 ## 實施步驟
 

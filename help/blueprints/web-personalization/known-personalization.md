@@ -5,7 +5,7 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 00204aad85bcf05702fdf837f19dd4abed33f2ce
+source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 22%
@@ -19,7 +19,7 @@ ht-degree: 22%
 
 * 使用已知客戶資料線上個性化
 * 登陸頁面最佳化
-* Personalization基於先前的產品/內容視圖、產品/內容親和性、環境屬性和人口結構，以及離線資料（如交易、忠誠度和CRM資料），以及模型化的洞察
+* 基於先前的產品/內容視圖、產品/內容親和性、環境屬性和人口結構，以及離線資料（如交易、忠誠度和CRM資料）和模型化的洞見
 * 在使用Adobe Target的網站和移動應用上分享和瞄準Real-time Customer Data Platform定義的受眾。
 
 ## 應用程式
@@ -41,15 +41,15 @@ ht-degree: 22%
 
 架構
 
-<img src="assets/RTCDP+Target.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/RTCDP+Target.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
 序列詳細資訊
 
-<img src="assets/RTCDP+Target_flow.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/RTCDP+Target_flow.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
 概述體系結構
 
-<img src="assets/personalization_with_apps.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a"/>
+<img src="assets/personalization_with_apps.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a"/>
 
 ## 實施模式
 
