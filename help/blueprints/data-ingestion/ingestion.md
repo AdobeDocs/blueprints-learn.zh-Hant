@@ -5,7 +5,7 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: c08dbf26ad559d48dfc8af5e19ec30e5bbfced65
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 96%
@@ -20,13 +20,13 @@ ht-degree: 96%
 
 ## 架構
 
-<img src="../experience-platform/assets/aep_data_flow.png" alt="資料準備與擷取 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep_data_flow.svg" alt="資料準備與擷取 Blueprint 的參考架構" style="width:80%; border:1px solid #4a4a4a" />
 
 ## 資料擷取護欄
 
 下圖說明了將資料擷取至 Adobe Experience Platform 的平均效能護欄和延遲。
 
-<img src="../experience-platform/assets/aep_data_flow_guardrails.png" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="90%" />
+<img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="90%" />
 
 ## 資料擷取方法
 
