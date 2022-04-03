@@ -2,10 +2,10 @@
 title: 數位體驗 Blueprint
 description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 58e589d230d1f5d8506869d02ad2bb0ddc966b7d
+source-git-commit: 5f35c36d3ef426396aadf0292e291d7738520032
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 83%
+source-wordcount: '254'
+ht-degree: 81%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 83%
   </td>
   <td>
     <a href="/help/blueprints/audience-activation/known.md"><img alt="已知客戶激活藍圖的縮略圖" src="audience-activation/assets/known_activation.svg" /></a>
-    <div><a href="/help/blueprints/audience-activation/known.md"><strong>線上/離線對象啟用</strong></a></div>
+    <div><a href="/help/blueprints/audience-activation/known.md"><strong>已知客戶激活</strong></a></div>
     <p><em>傳遞由受眾啟用的跨通道廣告。</em></p>
   </td>
   <td>

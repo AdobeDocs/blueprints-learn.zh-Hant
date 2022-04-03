@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: 798dec7767938b85d0b8c41438a0782ef179bf68
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 73%
+source-wordcount: '312'
+ht-degree: 71%
 
 ---
 
@@ -33,9 +33,13 @@ Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源�
 |藍圖 |描述 |Experience Cloud應用程式 | |—|—| | **[跨通道行程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (可選)</li></ul>|
 | **[呼叫改向歷程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>整合呼叫中心資料與網路、行動裝置及其他互動資料，確定哪些行為對產生代理協助的呼叫最有意義。</li><li>接著可將這些深入見解用於最佳化客戶體驗，透過最佳化的自助服務內容與工具縮短代理協助的互動路徑。  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
+## Customer Journey Analytics藍圖體系結構
+
+![體系結構圖](assets/CJA.svg)
+
 ## Customer Journey Analytics藍圖的護欄圖
 
-![護欄圖](assets/cja_guardrails.png)
+![護欄圖](assets/cja_guardrails.svg)
 
 ## 相關部落格貼文
 
