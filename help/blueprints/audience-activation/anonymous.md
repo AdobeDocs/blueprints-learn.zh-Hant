@@ -2,11 +2,11 @@
 title: 匿名對象啟用 Blueprint
 description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。此功能可在各裝置中實現個人化的統一即時客戶體驗。
 landing-page-description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。
-solution: Audience Manager, Experience Platform
+solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 16c05fcb36fb3f11b0d86ad30710e399cecc05c0
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 33%
@@ -15,7 +15,7 @@ ht-degree: 33%
 
 # 匿名對象啟用 Blueprint
 
-匿名用戶激活是指基於匿名設備和行為資料，通過Web、移動和廣告渠道針對受眾進行目標和個性化設定的能力。
+匿名受眾激活是指能夠基於匿名設備和行為資料通過Web、移動和廣告渠道對受眾進行目標和個性化設定。
 
 ## 使用案例
 
