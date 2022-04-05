@@ -1,9 +1,9 @@
 ---
 title: 市場活動v8藍圖
 description: Adobe Campaignv8是為電子郵件和直郵等傳統營銷渠道而構建的下一代宣傳工具。 它提供強大的ETL和資料管理功能，幫助制定和組織完美的活動。 其業務流程引擎為豐富的多點觸控營銷計畫提供了支援，其核心是基於批處理的驅動行程。  它還配備了可擴展的即時消息伺服器，使營銷團隊能夠基於來自任何IT系統的包含所有內容的負載來發送預定義的消息，用於諸如密碼重置、訂單確認、電子回執等等。
-solution: Campaign v8
+solution: Campaign,Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: 0c072465c2cac954631fe3a8dbdcef280ee397ab
+source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 3%

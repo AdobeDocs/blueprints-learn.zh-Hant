@@ -2,13 +2,13 @@
 title: Web/MobilePersonalization概述
 description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 landing-page-description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
-solution: Experience Platform, Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
+source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 22%
 
 * 使用已知客戶資料線上個性化
 * 登陸頁面最佳化
-* 基於先前的產品/內容視圖、產品/內容親和性、環境屬性和人口結構，以及離線資料（如交易、忠誠度和CRM資料）和模型化的洞見
+* Personalization基於先前的產品/內容視圖、產品/內容親和性、環境屬性和人口結構，以及離線資料（如交易、忠誠度和CRM資料），以及模型化的洞察
 * 在使用Adobe Target的網站和移動應用上分享和瞄準Real-time Customer Data Platform定義的受眾。
 
 ## 應用程式
