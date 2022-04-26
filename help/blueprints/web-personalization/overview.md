@@ -31,7 +31,7 @@ Web和MobilePersonalization解決了跨多個應用程式使用個人資料和�
 
 <br>
 
-### 已知客戶Personalization瓜德拉伊圖
+### 已知客戶個性化護欄圖
 
 <img src="assets/personalization_guardrails.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
