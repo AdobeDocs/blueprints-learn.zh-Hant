@@ -1,10 +1,11 @@
 ---
-title: offer decisioning
+title: 帶Offer decisioning的Web/Mobile個性化
 description: 跨渠道向消費者提供個性化服務，包括亭子和代理協助體驗。
 solution: Experience Platform, Journey Optimizer
-source-git-commit: fe2681bce2882d43ae24f185a0bd22e952978466
+exl-id: f2a6e7fd-c8bb-4356-8ca1-96956662ecf5
+source-git-commit: 3e75ce52939c84ce9ae1faf72f7f1508d74c1ecc
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
