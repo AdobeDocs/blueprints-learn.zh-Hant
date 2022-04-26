@@ -5,7 +5,7 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: ae12e10c85efaf5d4af2b9d02d3aca6a0378cf2d
+source-git-commit: fb981a16bc02190731a7c1dac8cc6bd5f0667304
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 61%
@@ -47,10 +47,10 @@ ht-degree: 61%
    + [概覽](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer{#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
-      + [Journey Optimizer與Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
-      + [第三方消息傳遞](/help/blueprints/customer-journeys/3rd-party-messaging.md)
       + offer decisioning{#offer-decisioning}
          + [offer decisioning](/help/blueprints/customer-journeys/offer_decisioning/offers-edge.md)
+      + [Journey Optimizer與Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
+      + [第三方消息傳遞](/help/blueprints/customer-journeys/3rd-party-messaging.md)
    + Campaign v8{#campaign-v8}
       + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
    + Campaign v7{#campaign-v7}
@@ -69,4 +69,4 @@ ht-degree: 61%
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
-   + [已知客戶Personalization](/help/blueprints/web-personalization/known-personalization.md)
+   + [已知客戶個性化](/help/blueprints/web-personalization/known-personalization.md)
