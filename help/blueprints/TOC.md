@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: fb981a16bc02190731a7c1dac8cc6bd5f0667304
+source-git-commit: 96d4e0c62b85070e1650adf637519098d227c53d
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 61%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -69,4 +69,5 @@ ht-degree: 61%
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
-   + [已知客戶個性化](/help/blueprints/web-personalization/known-personalization.md)
+   + [已知客戶Personalization](/help/blueprints/web-personalization/known-personalization.md)
+   + [offer decisioning](/help/blueprints/web-personalization/offers-edge.md)
