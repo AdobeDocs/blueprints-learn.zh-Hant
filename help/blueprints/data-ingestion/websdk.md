@@ -5,19 +5,20 @@ solution: Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 3e75ce52939c84ce9ae1faf72f7f1508d74c1ecc
+source-git-commit: 3c134d6a4f8afb091631c14b05f34d6133a8865b
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 27%
+source-wordcount: '237'
+ht-degree: 24%
 
 ---
 
 
 # 概覽
 
-有關Web和Mobile SDK的概述和詳細資訊，請參閱以下內容。
+有關Web和Mobile SDK以及邊緣網路伺服器API的概述和詳細資訊，請參閱以下內容。
 * [WebSDK概述](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hant)
 * [MobileSDK概述](https://aep-sdks.gitbook.io/docs/)
+* [邊緣網路伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 有關WebSDK中支援哪些應用程式功能的詳細概要，請參見以下文檔。
 * [WebSDK應用程式功能支援](https://github.com/orgs/adobe/projects/18/views/1)
@@ -28,7 +29,7 @@ ht-degree: 27%
 * [Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html)
 * [目標分析](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html)
 
-## Experience PlatformWeb/Mobile SDK部署
+## Experience PlatformWeb/Mobile SDK或邊緣網路伺服器API部署
 
 下面的體系結構圖說明了利用Experience PlatformWeb SDK進行部署和資料收集。
 
