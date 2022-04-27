@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 8ad119551e25c1f6acb66fec544c8a67b26c0927
+source-git-commit: c840330d6c81831b868e81d3452d0c416bf55938
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 59%
+source-wordcount: '192'
+ht-degree: 56%
 
 ---
 
@@ -61,8 +61,9 @@ ht-degree: 59%
    + [概覽](/help/blueprints/data-ingestion/overview.md)
    + [資料準備與擷取 ](/help/blueprints/data-ingestion/ingestion.md)
    + [伺服器端企業資料彙集 ](/help/blueprints/data-ingestion/server-side-collection.md)
-   + [Experience Platform Web SDK](/help/blueprints/data-ingestion/websdk.md)
-   + [應用程式SDK](/help/blueprints/data-ingestion/appsdk.md)
+   + 部署{#deployment}
+      + [Experience PlatformWeb SDK和邊緣網路](/help/blueprints/data-ingestion/websdk.md)
+      + [應用程式SDK](/help/blueprints/data-ingestion/appsdk.md)
 + 資料分析、情報與 AI/ML {#data-exploration}
    + [概覽](/help/blueprints/data-insights/overview.md)
    + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
@@ -70,5 +71,5 @@ ht-degree: 59%
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化](/help/blueprints/web-personalization/behavioral.md)
-   + [已知客戶Personalization](/help/blueprints/web-personalization/known-personalization.md)
+   + [已知客戶個性化](/help/blueprints/web-personalization/known-personalization.md)
    + [offer decisioning](/help/blueprints/web-personalization/offers-edge.md)

@@ -1,14 +1,14 @@
 ---
-title: Web/Mobile SDK資料彙集 Blueprint
-description: 此 Blueprint 展示了透過 Experience Platform Web 和 Mobile SDK 的架構和擷取
-solution: Data Collection
+title: Web/Mobile SDK、邊緣網路部署藍圖
+description: 此藍圖顯示了通過Experience PlatformWeb、移動SDK和邊緣網路的體系結構和接收
+solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 3c134d6a4f8afb091631c14b05f34d6133a8865b
+source-git-commit: c840330d6c81831b868e81d3452d0c416bf55938
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 24%
+source-wordcount: '241'
+ht-degree: 15%
 
 ---
 
