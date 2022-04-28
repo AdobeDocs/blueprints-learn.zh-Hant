@@ -3,9 +3,9 @@ title: offer decisioning
 description: 跨渠道向消費者提供個性化服務，包括亭子、代理協助體驗，以及電子郵件和其他出站遞送。
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 9cdb1bf7a8e97fce6a41fb135441c12ed8e477e0
+source-git-commit: fd8762711a6c3b04d0dd991e4dced2fb6be48c13
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '820'
 ht-degree: 20%
 
 ---
@@ -22,7 +22,7 @@ Adobe決策管理是作為Adobe Journey Optimizer的一部分提供的服務。 
 
 要瞭解有關邊緣上的決策管理的詳細資訊，請參閱 [邊緣決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/offers-edge.html?lang=en) 藍圖。
 
-要瞭解有關決策管理的更多資訊，請參閱此處的產品文檔(https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+要瞭解有關決策管理的詳細資訊，請參閱產品文檔 [這裡](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
 
 ## 使用案例
 
@@ -57,7 +57,8 @@ Adobe Experience Platform
 
 ## 護欄
 
-[Journey Optimizer護欄產品連結](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)
+* 有關Journey Optimizer護欄，請參閱以下 [Journey Optimizer瓜德賴爾](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)
+* 有關Offer decisioning護欄，請參閱以下內容 [offer decisioning產品說明](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)。
 
 
 ### 資料擷取護欄
