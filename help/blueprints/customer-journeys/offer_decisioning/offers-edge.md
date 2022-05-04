@@ -3,10 +3,10 @@ title: offer decisioning
 description: 通過包括即時Web和移動體驗在內的渠道向消費者提供個性化服務。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: bfc8133f0a48cb35dd62e74e92eeb041e93be5c7
+source-git-commit: bedfce6f9ded6c168656e8c37c59f85f250481a1
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 21%
+source-wordcount: '757'
+ht-degree: 22%
 
 ---
 
@@ -82,7 +82,6 @@ Adobe Experience Platform
 
 * 對於基於API伺服器到伺服器的實現，使用邊緣網路服務API將伺服器直接實現到伺服器的Offer decisioning。
    * [邊緣網路伺服器API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/deliver-offers.html)
-   * [決策API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html)
 
 <br>
 
