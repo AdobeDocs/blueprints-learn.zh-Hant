@@ -3,7 +3,7 @@ title: offer decisioning
 description: 通過包括即時Web和移動體驗在內的渠道向消費者提供個性化服務。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: fd8762711a6c3b04d0dd991e4dced2fb6be48c13
+source-git-commit: bfc8133f0a48cb35dd62e74e92eeb041e93be5c7
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 21%
@@ -56,7 +56,7 @@ Adobe Experience Platform
 
 ## 護欄
 
-* 有關Journey Optimizer護欄，請參閱以下 [Journey Optimizer瓜德賴爾](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)
+* 有關Journey Optimizer護欄，請參閱以下 [Journey Optimizer瓜德賴爾](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)。
 * 有關Offer decisioning護欄，請參閱以下內容 [offer decisioning產品說明](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)。
 
 ### 資料擷取護欄
