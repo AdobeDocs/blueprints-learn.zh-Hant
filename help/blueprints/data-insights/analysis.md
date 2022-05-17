@@ -5,10 +5,10 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: a972ea56-d1c8-45da-9044-ed31222a2441
-source-git-commit: 4eb6100fa29eac9426fd03ccceadc0a64f1d4b8f
+source-git-commit: 011f5b247ccd606348b4cbb4210218f28eddbd4c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 91%
+source-wordcount: '318'
+ht-degree: 73%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 91%
 
 資料分析與情報包括 Adobe Experience Platform 中對資料湖中現有資料執行探索查詢和分析的功能。
 
-Experience Platform 的[!UICONTROL 查詢服務]顯示對資料執行的 SQL 查詢。[!UICONTROL Data Science Workspace] 可對資料執行資料探索、資料科學及機器學習工作。
+Experience Platform 的[!UICONTROL 查詢服務]顯示對資料執行的 SQL 查詢。
 
-此外，Experience Platform 還允許連接協力廠商 SQL 用戶端、介面及 Business Intelligence (BI) 工具，以使用 [!DNL PostgreSQL]通訊協定直接連接、存取及查詢 Experience Platform 中的資料。
+Experience Platform允許與第三方SQL客戶端、介面和Business Intelligence(BI)工具連接，以直接連接、訪問和查詢Experience Platform內的資料，使用 [!DNL PostgreSQL] 協定。
 
-某些護欄適用於查詢逾時以及包含在查詢結果中的資料量，如 Blueprint 詳情中所述。
+某些護欄適用於查詢超時和查詢結果中包含的資料量，如下面的護欄部分所述。
 
 ## 使用案例
 

@@ -2,9 +2,10 @@
 title: offer decisioning概述
 description: 跨客戶旅程提供個性化服務。
 solution: Experience Platform, Journey Optimizer
-source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
+exl-id: f6271802-faab-4ffc-92d6-4c4d7d423ed4
+source-git-commit: 8842b8637a30151577a93653c16b4d37e2cf7c27
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Journey Optimizer習慣於在適當的時間為您的客戶在所有接觸點上
 
 <img src="../assets/offers_overview.png" alt="offer decisioning" style="width:100%; border:1px solid #4a4a4a" />
 
-決策管理可以通過兩種方式之一進行部署。
+決策管理可以通過兩種方式之一部署在邊緣或通過集線器。 每種方法都具有一組特定的介面和協定，用於操作服務，如下面分別介紹的藍圖中所述。 其他詳細資訊也可在決策管理文檔中獲取 [這裡](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html)。
 
 ## 中心的決策管理
 

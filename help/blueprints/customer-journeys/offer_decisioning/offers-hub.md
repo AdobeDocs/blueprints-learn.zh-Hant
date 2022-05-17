@@ -3,9 +3,9 @@ title: offer decisioning
 description: 跨渠道向消費者提供個性化服務，包括亭子、代理協助體驗，以及電子郵件和其他出站遞送。
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
+source-git-commit: 011f5b247ccd606348b4cbb4210218f28eddbd4c
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '881'
 ht-degree: 18%
 
 ---
@@ -30,7 +30,8 @@ Journey Optimizer習慣於在適當的時間為您的客戶在所有接觸點上
 
 * 在售貨亭和商店體驗上提供個性化服務。
 * 通過座席輔助體驗（例如呼叫中心或銷售互動）提供個性化服務。
-* 包括在電子郵件、SMS或其他出站交互中的服務。
+* 包括在電子郵件、SMS、移動推送通知或其他出站交互中的服務。
+* 向外部ESP和消息傳遞系統提供服務，以便交付。
 * 跨渠道行程執行 — 通過Adobe Journey Optimizer提供跨Web、移動、電子郵件和其他交互渠道的一致性。
 
 <br>
@@ -40,12 +41,6 @@ Journey Optimizer習慣於在適當的時間為您的客戶在所有接觸點上
 <img src="../assets/offers_hub.svg" alt="邊緣藍圖上的參考體系結構Offer decisioning" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
-
-## 整合模式
-
-| 整合 | 說明 |
-| :-- | :--- |
-| [offer decisioningAdobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html) | offer decisioning可以與Adobe Target整合，以便作為目標體驗來測試和提供服務。 |
 
 ## 先決條件
 
