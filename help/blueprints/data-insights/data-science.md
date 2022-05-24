@@ -4,10 +4,10 @@ description: 此藍圖顯示 Adobe Experience Platform 的 Data Science Workspac
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 011f5b247ccd606348b4cbb4210218f28eddbd4c
+source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 68%
+source-wordcount: '505'
+ht-degree: 47%
 
 ---
 
@@ -30,6 +30,25 @@ ht-degree: 68%
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。
+
+要將模型結果導入即時客戶概要檔案，請確保在接收資料之前執行以下操作：
+
+1. [在方案上設定正確的身份和身份命名空間](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)，以確保擷取的資料可以嵌入統一的個人資料。
+1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
+
+## 實施考量
+
+* 在大多數情況下，模型結果應被作為配置檔案屬性而不是體驗事件來接收。 模型結果可以是簡單的屬性字串。 如果要接收多個模型結果，建議使用陣列或映射類型欄位。
+* 可利用作為統一配置檔案屬性資料的每日導出的每日配置檔案快照資料集來訓練關於配置檔案屬性資料的模型。 可以訪問配置檔案快照資料集文檔 [這裡](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html#profile-attribute-datasets)。
+* 為從Experience Platform中提取資料，可使用以下方法
+   * 資料存取SDK
+      * 資料以原始檔案形式
+      * 配置檔案體驗事件資料仍處於未統一的原始狀態。
+   * RTCDP目標
+      * 只能獲取配置檔案屬性和段成員身份。
+   * 查詢服務
+      * 訪問大量原始資料可能導致查詢在10分鐘超時。 建議以增量方式查詢資料。
+
 
 ## 相關文件
 

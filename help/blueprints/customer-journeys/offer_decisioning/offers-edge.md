@@ -3,10 +3,10 @@ title: offer decisioning
 description: 通過包括即時Web和移動體驗在內的渠道向消費者提供個性化服務。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 7f566536c4ff5a6af321d60058ad67c13c28bf64
+source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 21%
+source-wordcount: '847'
+ht-degree: 19%
 
 ---
 
@@ -57,6 +57,10 @@ Adobe Experience Platform
 
 * 有關Journey Optimizer護欄，請參閱以下 [Journey Optimizer瓜德賴爾](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)。
 * 有關Offer decisioning護欄，請參閱以下內容 [offer decisioning產品說明](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)。
+* 每秒請求數= 5000。
+* 響應延遲&lt; 250毫秒。
+* 訪問邊緣即時配置檔案。 配置檔案中將只提供邊緣投影觀眾和配置檔案屬性。
+* 如果第一次體驗需要個性化，則中心將是理想的，因為完整配置檔案可用。 邊緣配置檔案必須與集線器同步，以便首次獲得邊緣體驗。 因此，從邊緣獲得的第一次體驗將不包括先前上載到集線器的配置檔案資料。
 
 ### 資料擷取護欄
 

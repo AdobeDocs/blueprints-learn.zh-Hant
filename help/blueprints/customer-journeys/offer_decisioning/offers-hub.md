@@ -3,10 +3,10 @@ title: offer decisioning
 description: 跨渠道向消費者提供個性化服務，包括亭子、代理協助體驗，以及電子郵件和其他出站遞送。
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 011f5b247ccd606348b4cbb4210218f28eddbd4c
+source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 18%
+source-wordcount: '901'
+ht-degree: 17%
 
 ---
 
@@ -56,6 +56,9 @@ Adobe Experience Platform
 
 * 有關Journey Optimizer護欄，請參閱以下 [Journey Optimizer瓜德賴爾](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)。
 * 有關Offer decisioning護欄，請參閱以下內容 [offer decisioning產品說明](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)。
+* 每秒請求數= 2000。
+* 響應延遲&lt; 500毫秒。
+* 訪問全面即時客戶配置檔案，包括訪問者成員身份、屬性和體驗事件。
 
 
 ### 資料擷取護欄
