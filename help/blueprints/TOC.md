@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: fff87b7bbea6db6bb5af0386b5919e78077a7858
+source-git-commit: f39c916d4b13d17eb3705c7adf01353929ff7956
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 55%
+source-wordcount: '194'
+ht-degree: 54%
 
 ---
 
@@ -62,6 +62,7 @@ ht-degree: 55%
    + [概覽](/help/blueprints/data-ingestion/overview.md)
    + [資料準備與擷取 ](/help/blueprints/data-ingestion/ingestion.md)
    + [事件轉發](/help/blueprints/data-ingestion/server-side-collection.md)
+   + [多沙盒資料收集](/help/blueprints/data-ingestion/multi-sandbox-data-collection.md)
    + 部署{#deployment}
       + [Experience PlatformWeb SDK和邊緣網路](/help/blueprints/data-ingestion/websdk.md)
       + [應用程式SDK](/help/blueprints/data-ingestion/appsdk.md)
