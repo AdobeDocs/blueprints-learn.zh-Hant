@@ -5,10 +5,10 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 3e75ce52939c84ce9ae1faf72f7f1508d74c1ecc
+source-git-commit: 5ee530220cd5928f9ab4aabd50148b963273d67c
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 90%
+source-wordcount: '674'
+ht-degree: 89%
 
 ---
 
@@ -45,8 +45,7 @@ ht-degree: 90%
 
 | 資料準備的方法 | 說明 |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [!UICONTROL Data Science Workspace] - 資料準備 | 模型驅動的轉換，指令檔化的轉換。<br>[文件](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=zh-Hant) |
-| 外部 ETL 工具 ([!DNL Snaplogic]、[!DNL Mulesoft]、[!DNL Informatica]等) | 在 ETL 工具中執行複雜的轉換，並使用標準 Experience Platform [!UICONTROL Flow Service] API 或來源連接器來擷取結果資料。 |
+| 外部ETL工具([!DNL Snaplogic]。 [!DNL Mulesoft]。 [!DNL Informatica]等) | 在 ETL 工具中執行複雜的轉換，並使用標準 Experience Platform [!UICONTROL Flow Service] API 或來源連接器來擷取結果資料。 |
 | [!UICONTROL 查詢服務] - 資料準備 | 將連接、分割、合併、轉換、查詢和篩選資料整合為新資料集。使用 Create Table as Select (CTAS) <br>[文件](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant#sql) |
 | XDM Mapper 與資料準備功能 (串流與批次) | 在 Experience Platform 擷取期間，將 CSV 或 JSON 格式的來源屬性對應至 XDM 屬性。<br>在資料擷取時計算其功能；即資料格式化、拆分、聯結等。<br>[文件](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=zh-Hant) |
 

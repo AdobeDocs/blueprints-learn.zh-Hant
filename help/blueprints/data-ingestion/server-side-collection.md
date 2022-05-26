@@ -4,16 +4,16 @@ description: 由 Experience Platform SDK 串流彙集的資料至目標
 solution: Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: e6ef8a1e7b90778c0163227e32d2691dfaf9c9d2
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 77%
+source-wordcount: '231'
+ht-degree: 63%
 
 ---
 
-# 伺服器端企業資料彙集 Blueprint
+# 事件轉發藍圖
 
-伺服器端企業資料彙集 Blueprint 顯示如何將透過 Adobe Experience Platform Web 和 Mobile SDK 彙集的資料，從 Experience Platform Edge Network 轉寄到指定目標。您可以根據在標籤屬性中配置的事件和規則（以前稱為「啟動」）轉發從SDK收集的所有原始資料或特定資料。
+事件轉發藍圖顯示如何將通過Adobe Experience PlatformWeb和移動SDK收集的資料從Experience Platform邊緣網路轉發到所需的目標。 您可以根據在標籤屬性中配置的事件和規則（以前稱為「啟動」）轉發從SDK收集的所有原始資料或特定資料。
 
 ## 使用案例
 
@@ -22,7 +22,7 @@ ht-degree: 77%
 
 ## 應用程式
 
-* Adobe Experience Platform 集合
+* Adobe Experience Platform 資料彙集
 
 ## 架構
 
