@@ -4,7 +4,7 @@ description: 激活到Facebook自定義受眾。
 solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 6fa38772f77ffd565580db55f8f2889b0e703949
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 ## 架構
 
-<img src="../assets/facebook.png" alt="facebook定制Audience Activation的參考體系結構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../assets/facebook.svg" alt="facebook定制Audience Activation的參考體系結構" style="width:90%; border:1px solid #4a4a4a" />
 
 ## 實施步驟
 
