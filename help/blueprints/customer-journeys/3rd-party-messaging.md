@@ -3,7 +3,7 @@ title: Journey Optimizer — 第三方資訊傳遞藍圖
 description: 演示如何將Adobe Journey Optimizer與第三方消息傳遞系統配合使用來協調和發送個性化通信。
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
+source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 30%
@@ -51,7 +51,7 @@ Adobe Experience Platform
    * 流段（&lt;5分鐘限定）
 * 批次區段 — 需要確保您瞭解符合資格使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
 * 串流區段 — 需要確保個人資料資格的初始高載可隨每個歷程及所有歷程中符合資格的每日串流流量一起處理
-* offer decisioning不受支援
+* 不支援中的決策管理
 * 與第三方系統的出站整合
    * 不支援單個靜態IP，因為我們的基礎架構是多租戶（必須允許列出所有資料中心IP）
    * 自定義操作僅支援POST和PUT方法

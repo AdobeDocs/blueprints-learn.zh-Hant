@@ -3,7 +3,7 @@ title: Journey Optimizer與Adobe Campaign藍圖
 description: 演示Adobe Journey Optimizer如何與Adobe Campaign一起通過利用市場活動中的即時消息伺服器來本機發送消息
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: 076446a9-dfb9-464c-a04f-6864b8cb7b48
-source-git-commit: d19555201107b6aa827e63eb8ecff8642d9f967c
+source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 23%
@@ -56,7 +56,7 @@ ht-degree: 23%
    * 流段（&lt;5分鐘限定）
 * 批次區段 — 需要確保您瞭解符合資格使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
 * 串流區段 — 需要確保個人資料資格的初始高載可隨每個歷程及所有歷程中符合資格的每日串流流量一起處理
-* offer decisioning不受支援
+* 不支援中的決策管理
 * 不支援業務事件
 * 與第三方系統的出站整合
    * 不支援單個靜態IP，因為我們的基礎架構是多租戶（必須允許列出所有資料中心IP）
@@ -76,7 +76,7 @@ ht-degree: 23%
 * AC(v7)僅支援活動啟動行程
    * 沒有段或段成員資格啟動「旅程」
    * 不支援閱讀受眾和基於業務事件的行程，因為它可以發送到執行實例的卷
-* AC(v7)或AC(v8)都不支援消息Offer decisioning
+* AC(v7)或AC(v8)都不支援消息中的「決策管理」
 * 未對市場活動進行的出站API調用進行限制
 * 事務性消息日誌未本機同步到AEP。 需要咨詢工作。 最多每4小時導出日誌的建議
 
@@ -128,7 +128,7 @@ ht-degree: 23%
 * 消息模板需要配置適當的個性化上下文
 * 導出工作流需要配置為將事務性消息傳遞日誌導出回Experience Platform。 建議最多每4小時運行一次
 
-### Mobile推送配置（可選）
+### 移動推送配置（可選）
 
 1. 實施Experience PlatformMobile SDK以收集推送令牌和登錄資訊，以將其與已知客戶配置檔案綁定
 1. 利用Adobe標籤並建立具有以下副檔名的移動屬性：
