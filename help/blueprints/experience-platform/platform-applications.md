@@ -5,10 +5,10 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 64c3ae4c706ef24808818af99e65c2f30f4f5c13
+source-git-commit: 02a2f679921e63d99101ec8c20c2d8419b1ff6fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '939'
+ht-degree: 99%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 <img src="assets/aep+apps_vertical.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%;" />
 
->[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
-
 ## Adobe Experience Platform 與應用程式詳細架構圖
 
 <img src="assets/aep+apps_horizontal.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%;" />
+
+>[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
 ## Adobe Experience Platform 與 Experience Cloud 應用程式整合
 
