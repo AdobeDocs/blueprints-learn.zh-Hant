@@ -1,14 +1,14 @@
 ---
 title: 行為網路個人化 Blueprint
-description: 瞭解如何根據線上行為和受眾資料個性化內容。
+description: 了解如何根據線上行為和受眾資料進行個人化內容。
 landing-page-description: 了解如何根據線上行為和受眾資料進行個人化。
 solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
 source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

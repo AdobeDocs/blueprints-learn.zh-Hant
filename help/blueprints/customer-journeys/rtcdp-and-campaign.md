@@ -5,8 +5,8 @@ solution: Real-time Customer Data Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
 source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 60%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +106,7 @@ ht-degree: 60%
 * 兩種支援的與移動設備整合推送通知的方法：
    * Experience Platform Mobile SDK
    * 活動移動SDK
-* Experience PlatformMobileSDK路由：
+* Experience Platform移動SDK路由：
    * 利用Adobe標籤和Campaign Classic擴展設定與Experience Platform移動SDK的整合
    * 需要有關Adobe標籤和資料收集的工作知識
    * 在Android和iOS都需要具有推送通知的移動開發經驗來部署SDK，與FCM(Android)和APNS(iOS)整合以獲得推送令牌，配置應用以接收推送通知和處理推送交互
@@ -114,7 +114,7 @@ ht-degree: 60%
    * 請關注 [市場活動SDK文檔]（市場活動移動SDK請遵循此處概述的部署文檔）
 
    >[!IMPORTANT]
-   >如果您部署市場活動SDK並正在使用其他Experience Cloud應用程式，則需要使用Experience PlatformMobileSDK進行資料收集。 這將在設備上建立重複的客戶端調用。
+   >如果您部署市場活動SDK並正在使用其他Experience Cloud應用程式，則需要使用Experience Platform移動SDK進行資料收集。 這將在設備上建立重複的客戶端調用。
 
 ## 相關文件
 

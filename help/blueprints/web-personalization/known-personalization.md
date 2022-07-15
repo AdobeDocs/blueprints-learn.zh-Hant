@@ -1,5 +1,5 @@
 ---
-title: Web/MobilePersonalization概述
+title: Web/Mobile個性化概述
 description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 landing-page-description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
@@ -7,19 +7,19 @@ kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
 source-git-commit: 9d9daf96b9ad36d3f384f486e156a79e679494d9
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Web/MobilePersonalization
+# Web/移動個性化與已知客戶資料
 
 ## 使用案例
 
 * 使用已知客戶資料線上個性化
 * 登陸頁面最佳化
-* Personalization基於先前的產品/內容視圖、產品/內容親和性、環境屬性和人口結構，以及離線資料（如交易、忠誠度和CRM資料），以及模型化的洞察
+* 基於先前的產品/內容視圖、產品/內容親和性、環境屬性和人口結構，以及離線資料（如交易、忠誠度和CRM資料）和模型化的洞見
 * 在使用Adobe Target的網站和移動應用上分享和瞄準Real-time Customer Data Platform定義的受眾。
 
 ## 應用程式
@@ -34,8 +34,8 @@ ht-degree: 20%
 | 整合模式 | 功能 | 先決條件 |
 |---|---|---|
 | 對從Real-time Customer Data Platform到目標共用的邊緣進行即時段評估 | <ul><li>即時評估受眾，以便在邊緣上實現相同或下一頁個性化。</li><li>此外，任何以流式處理或批處理方式評估的段也將投影到邊緣網路，以納入邊緣段評估和個性化。</li></ul> | <ul><li>必須實現Web/Mobile SDK或邊緣網路伺服器API</li><li>必須在已啟用目標和Experience Platform擴展的體驗邊緣中配置資料流</li><li>必須在Real-time Customer Data Platform目標中配置目標目標。</li><li>與目標整合需要與Experience Platform實例相同的IMS組織。</li></ul> |
-| 通過Edge方法從Real-time Customer Data Platform到Target流媒體和批量訪問群共用 | <ul><li>通過邊緣網路將流和批量觀眾從Real-time Customer Data Platform共用到目標。 即時評估的受眾需要WebSDK和邊緣網路實現。</li></ul> | <ul><li>Web/MobileSDK不需要將流和批訪問群共用到目標，儘管它需要啟用即時邊緣段評估。</li><li>如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。</li><li>對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</li><li>必須在Real-time Customer Data Platform目標中配置目標目標。</li><li>與目標整合需要與Experience Platform實例相同的IMS組織。</li></ul> |
-| 通過受眾共用服務方式從Real-time Customer Data Platform到目標和Audience Manager的流式和批量受眾共用 | <ul><li>當希望從第三方資料和Audience Manager受眾獲得額外的豐富時，可以利用這種整合模式。</li></ul> | <ul><li>Web/MobileSDK不需要將流和批訪問群共用到目標，儘管它需要啟用即時邊緣段評估。</li><li>如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。</li><li>對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</li><li>必須通過觀眾共用服務來提供觀眾投影。</li><li>與目標整合需要與Experience Platform實例相同的IMS組織。</li><li>只有來自生產沙盒的觀眾支援觀眾共用核心服務。</li></ul> |
+| 通過Edge方法從Real-time Customer Data Platform到Target流媒體和批量訪問群共用 | <ul><li>通過邊緣網路將流和批量觀眾從Real-time Customer Data Platform共用到目標。 即時評估的受眾需要WebSDK和邊緣網路實現。</li></ul> | <ul><li>Web/Mobile SDK不需要用於將流和批訪問群共用到目標，儘管它需要啟用即時邊緣段評估。</li><li>如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。</li><li>對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</li><li>必須在Real-time Customer Data Platform目標中配置目標目標。</li><li>與目標整合需要與Experience Platform實例相同的IMS組織。</li></ul> |
+| 通過受眾共用服務方式從Real-time Customer Data Platform到目標和Audience Manager的流式和批量受眾共用 | <ul><li>當希望從第三方資料和Audience Manager受眾獲得額外的豐富時，可以利用這種整合模式。</li></ul> | <ul><li>Web/Mobile SDK不需要用於將流和批訪問群共用到目標，儘管它需要啟用即時邊緣段評估。</li><li>如果使用AT.js，則只支援針對ECID標識命名空間的配置檔案整合。</li><li>對於邊緣上的自定義標識名稱空間查找，需要WebSDK部署，並且必須在標識映射中將每個標識設定為標識。</li><li>必須通過觀眾共用服務來提供觀眾投影。</li><li>與目標整合需要與Experience Platform實例相同的IMS組織。</li><li>只有來自生產沙盒的觀眾支援觀眾共用核心服務。</li></ul> |
 
 ## 即時、流式和批量訪問共用到Adobe Target
 
@@ -57,7 +57,7 @@ ht-degree: 20%
 
 ### 實施模式1 — 帶Web/Mobile SDK或邊緣網路API的邊緣網路（推薦方法）
 
-* 將邊緣網路與Web/MobileSDK配合使用。 即時邊緣分割需要Web/MobileSDK或Edge API實現方法。
+* 將邊緣網路與Web/Mobile SDK配合使用。 即時邊緣分割需要Web/Mobile SDK或Edge API實現方法。
 * [請參閱Experience PlatformWeb和移動SDK藍圖](../data-ingestion/websdk.md) 基於SDK的實現。
 * [請參閱邊緣網路伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) 用於基於API的帶邊緣配置檔案的Adobe Target實現。
 
@@ -117,7 +117,7 @@ ht-degree: 20%
 
 ### 相關部落格貼文
 
-* [Adobe宣佈與Adobe Target和Real-time Customer Data Platform同版加強Personalization](https://blog.adobe.com/en/publish/2021/10/05/adobe-announces-same-page-enhanced-personalization-with-adobe-target-real-time-customer-data-platform)
+* [Adobe宣佈與Adobe Target和Real-time Customer Data Platform推出同一頁增強個性化](https://blog.adobe.com/en/publish/2021/10/05/adobe-announces-same-page-enhanced-personalization-with-adobe-target-real-time-customer-data-platform)
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Adobe Experience Platform’s Identity Service — How to Solve the Customer Identity Conundrum]](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
 * [[!DNL Adobe Experience Platform Web SDK for Audience Management]](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
