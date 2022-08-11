@@ -2,10 +2,10 @@
 title: 數字型驗藍圖行業成功案例
 description: 數字型驗藍圖成功案例展示了各行業如何利用由Adobe Experience Platform支援的Adobe Experience Cloud應用程式實現商業價值。
 exl-id: 9e73bae3-ba34-4819-a54e-710965fe74d9
-source-git-commit: 1bea087acd18e4cfe931984731c90d8a0148d363
+source-git-commit: 3de073a8e11dfc228c597f52f494159725eef1ed
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 7%
+source-wordcount: '255'
+ht-degree: 1%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 7%
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant"><img alt="服裝行業的縮略圖影像，使用受眾激活、客戶行程分析和客戶行程藍圖" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/industry-success-stories/apparel.html"><img alt="服裝行業的縮略圖影像，使用受眾激活、客戶行程分析和客戶行程藍圖" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
     </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en"><img alt="零售行業的縮略圖影像，使用「激活」和「線上/離線資料」和「Journey Optimizer藍圖」" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/industry-success-stories/retail.html"><img alt="零售行業的縮略圖影像，使用「激活」和「線上/離線資料」和「Journey Optimizer藍圖」" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
 
 </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en"><img alt="Journey Optimizer藍圖的縮略圖" src="../customer-journeys/assets/ajo-architecture.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/industry-success-stories/telecommunications.html"><img alt="Journey Optimizer藍圖的縮略圖" src="../customer-journeys/assets/ajo-architecture.svg" /></a>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/online-offline.html?lang=en"><img alt="激活聯機/離線資料藍圖的縮略圖" src="../audience-activation/assets/known_activation.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/industry-success-stories/travel-hospitality.html"><img alt="激活聯機/離線資料藍圖的縮略圖" src="../audience-activation/assets/known_activation.svg" /></a>
   </td>
 </tr>
 <tr>
