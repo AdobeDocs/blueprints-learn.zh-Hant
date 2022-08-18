@@ -5,10 +5,10 @@ solution: Experience Platform
 kt: 7207
 thumbnail: null
 exl-id: 3b22dfdd-3fbe-40b3-b798-1ee983723039
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: 6d44401fba8cc75402d4303825e32e7948753449
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '171'
+ht-degree: 100%
 
 ---
 
@@ -17,8 +17,6 @@ ht-degree: 0%
 資料分析、情報與 AI/ML 包括 Adobe Experience Platform 中對資料湖中現有資料執行探索查詢和分析的功能。
 
 Experience Platform 的[!UICONTROL 查詢服務]顯示對資料執行的 SQL 查詢。此外，Experience Platform 還允許連接協力廠商 SQL 用戶端、介面及 Business Intelligence (BI) 工具，以使用 [!DNL PostgreSQL]通訊協定直接連接、存取及查詢 Experience Platform 中的資料。
-
-[!UICONTROL Data Science Workspace] 可對資料執行資料探索、資料科學及機器學習工作。模型可以接受訓練、評分和操作，進一步豐富客戶個人資料，並深入洞察客戶行為和體驗。
 
 | Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|

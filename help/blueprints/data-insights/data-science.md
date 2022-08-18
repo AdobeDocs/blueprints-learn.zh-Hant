@@ -1,19 +1,19 @@
 ---
 title: 自訂 Profile Enrichment 藍圖的資料科學
-description: 此藍圖顯示 Adobe Experience Platform 的 Data Science Workspace 如何使用 Experience Platform 中的資料訓練、部署及評分模型，以從資料中獲取機器學習深入見解。
+description: 此藍圖顯示了如何將基於資料科學的見解引入Experience Platform以豐富即時客戶概要資訊。
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 56ed25f8ed954126c3291559b7f67f04565c01d4
+source-git-commit: 6d44401fba8cc75402d4303825e32e7948753449
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 47%
+source-wordcount: '463'
+ht-degree: 45%
 
 ---
 
 # 自訂 Profile Enrichment 藍圖的資料科學
 
-定制資料科學用於配置檔案濃縮藍圖說明了如何使用Adobe Experience Platform的資料來訓練、部署和評分模型，從而從資料科學和機器學習工具中提供機器學習對Experience Platform和Real-time Customer Data Platform的洞見。 模型化的洞察能夠被引入Experience Platform，以豐富即時客戶概況。 機器學習深入見解的範例包括期限值評分、產品和類別親和性、轉換傾向性或退訂傾向性。
+定制資料科學用於配置檔案濃縮藍圖說明了如何使用資料來訓練、部署和評分模型，從而從資料科學和機器學習工具提供機器學習對Experience Platform和Real-time Customer Data Platform的洞見。 模型化的洞察能夠被引入Experience Platform，以豐富即時客戶概況。 機器學習深入見解的範例包括期限值評分、產品和類別親和性、轉換傾向性或退訂傾向性。
 
 ## 使用案例
 
@@ -45,10 +45,7 @@ ht-degree: 47%
       * 資料以原始檔案形式
       * 配置檔案體驗事件資料仍處於未統一的原始狀態。
    * RTCDP目標
-      * 只能獲取配置檔案屬性和段成員身份。
-   * 查詢服務
-      * 訪問大量原始資料可能導致查詢在10分鐘超時。 建議以增量方式查詢資料。
-
+      * 可以對配置檔案屬性和段成員身份進行表述。
 
 ## 相關文件
 
