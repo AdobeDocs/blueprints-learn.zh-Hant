@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: f1d2bc62d07b5cd42e5745320dd6371debb41cfe
+source-git-commit: dfd1592c79fd20899705e68cfd4cd1a1bb3ebb87
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 68%
+source-wordcount: '400'
+ht-degree: 56%
 
 ---
 
@@ -16,8 +16,9 @@ ht-degree: 68%
 
 Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源的客戶資料與行為，以為所有客戶互動建立基於歷程的視圖。可在 Customer Journey Analytics 應用程式服務中執行報告與分析，以評估和洞察客戶互動及行為模式。
 
-常見分析包括：
+常見用例包括：
 
+* 建立和發佈訪問群體到Real-time Customer Data Platform
 * 頂端 / 底部轉換路徑
 * 渠道參與和轉換
 * 最熱門的內容
@@ -30,7 +31,7 @@ Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源�
 ## [Customer Journey Analytics用例連結](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=en)
 
 主要使用案例示例包括以下內容。
-|藍圖 |描述 |Experience Cloud應用程式 | |—|—| | **[跨通道行程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (可選)</li></ul>|
+|藍圖 |描述 |Experience Cloud應用程式 | |—|—| | **[跨通道行程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (可選)</li></ul>| | **[將觀眾發佈到Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)** | <ul><li>建立和發佈在Adobe Experience Platform的「即時客戶概要檔案」Customer Journey Analytics(CJA)中確定的客戶群，以便客戶定位和個性化。 非常適合於使用歷史資料或通過Customer Journey Analytics中的精細篩選和計算欄位來更精細的受眾建立受眾。</li></ul> | <ul><li>即時客戶資料平台</li><li>Customer Journey Analytics</li> |
 | **[呼叫改向歷程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/call-center.html)** | <ul><li>整合呼叫中心資料與網路、行動裝置及其他互動資料，確定哪些行為對產生代理協助的呼叫最有意義。</li><li>接著可將這些深入見解用於最佳化客戶體驗，透過最佳化的自助服務內容與工具縮短代理協助的互動路徑。  </li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li> |
 
 ## Customer Journey Analytics藍圖體系結構

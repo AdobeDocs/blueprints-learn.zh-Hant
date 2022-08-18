@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: ac995cdb942fd14d87281c4b499239732a1e4019
+source-git-commit: dfd1592c79fd20899705e68cfd4cd1a1bb3ebb87
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 54%
+source-wordcount: '199'
+ht-degree: 52%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 54%
    + [B2B激活](/help/blueprints/b2b/b2bactivation.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
+   + [將CJA受眾共用到RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
 + 客戶歷程 {#customer-journeys}
    + [概覽](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer{#journey-optimizer}
