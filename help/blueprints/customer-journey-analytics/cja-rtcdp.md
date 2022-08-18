@@ -4,7 +4,7 @@ description: 在Customer Journey Analytics中統一和分析資料和客戶行�
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
-source-git-commit: 0d188a41b6c90bc838eaf4b1d0d1f31b3596e7ca
+source-git-commit: 8a252e0f061bddb14ce1a21b49137a22fdf700da
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 22%
@@ -15,6 +15,10 @@ ht-degree: 22%
 
 建立並發佈在Adobe Experience Platform的Customer Journey Analytics(CJA)中確定的客戶群，以便客戶定位和個性化。 非常適合於使用歷史資料或通過Customer Journey Analytics中的精細篩選和計算欄位來更精細的受眾建立受眾。
 
+## Customer Journey Analytics受眾發佈指南
+
+請參閱以下檔案，瞭解從Customer Journey Analytics到Real-time Customer Data Platform的受眾的實施和配置指南。 [文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
+
 ## Customer Journey Analytics藍圖體系結構
 
 ![體系結構圖](assets/CJA_RTCDP.svg)
@@ -22,10 +26,6 @@ ht-degree: 22%
 ## Customer Journey Analytics藍圖的護欄圖
 
 ![護欄圖](assets/cja_guardrails.svg)
-
-## Customer Journey Analytics受眾發佈指南
-
-請參閱以下檔案，瞭解從Customer Journey Analytics到Real-time Customer Data Platform的受眾的實施和配置指南。 [文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
 
 ## 相關部落格貼文
 
