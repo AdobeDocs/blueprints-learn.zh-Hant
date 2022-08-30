@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 310ef2284ffbc58d74f1924f5fe73ca226201da0
+source-git-commit: 590096ff0f2f96871fd03623fc167d215d55cdb8
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 18%
+source-wordcount: '1379'
+ht-degree: 17%
 
 ---
 
@@ -59,6 +59,7 @@ ht-degree: 18%
 
 * 將邊緣網路與Web/Mobile SDK配合使用。 即時邊緣分割需要Web/Mobile SDK或Edge API實現方法。
 * [請參閱Experience PlatformWeb和移動SDK藍圖](../data-ingestion/websdk.md) 基於SDK的實現。
+* 在Mobile SDK中使用 [Adobe Journey Optimizer — 決策擴展](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning) 必須安裝在移動SDK中。
 * [請參閱邊緣網路伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) 用於基於API的帶邊緣配置檔案的Adobe Target實現。
 
 ### 實施模式2 — 特定於應用程式的SDK
@@ -71,7 +72,7 @@ ht-degree: 18%
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)
 1. [實施Experience Platform和 [!UICONTROL 即時客戶概要資訊]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant) 通過配置適用的 [合併策略](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=en#create-a-merge-policy) 在邊上處於活動狀態。
-1. 實施 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant) 或Experience Platform移動SDK。 Experience PlatformWeb/Mobile SDK或EDGE API是即時邊緣分割的必需項，但是從Real-time Customer Data Platform到目標共用流和批量訪問群體時則不是必需項。
+1. 實施 [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant) 或 [Experience Platform移動SDK](https://aep-sdks.gitbook.io/docs/) 安裝了正確的擴展(目標或Adobe Journey Optimizer — 決定)。 Experience PlatformWeb/Mobile SDK或EDGE API是即時邊緣分割的必需項，但是從Real-time Customer Data Platform到目標共用流和批量訪問群體時則不是必需項。
 1. [使用邊緣資料流配置邊緣網路](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 1. [使Adobe Target成為Real-time Customer Data Platform內的目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en)
 1. （可選） [實施Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)。
