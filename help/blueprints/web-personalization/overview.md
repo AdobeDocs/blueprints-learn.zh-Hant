@@ -5,10 +5,10 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 310ef2284ffbc58d74f1924f5fe73ca226201da0
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 64%
+source-wordcount: '240'
+ht-degree: 62%
 
 ---
 
@@ -21,7 +21,7 @@ Web和Mobile Personalization能夠跨多個應用程式使用個人資料和受�
 | Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
 | **[行為網路/行動個人化](behavioral.md)** | <ul><li>基於線上行為及對象資料進行個人化</li></ul> | <ul><li>Adobe Target</li><li>Adobe Real-time Customer Data Platform *（可選）*</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
-| **[Web/移動個性化與已知客戶資料](known-personalization.md)** | <ul><li>完整的客戶配置檔案和增強的細分功能提供了改進的個性化體驗。</li><li>使用離線屬性和事件 (異動、保留、CRM 及忠誠度資料) 個人化。</li><li>在網路、電子郵件及其他已知的通道上同步個人化。</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Analytics *(可選)*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
+| **[Web/移動個性化與已知客戶資料](known-personalization.md)** | <ul><li>完整的客戶配置檔案和增強的細分功能提供了改進的個性化體驗。</li><li>使用離線屬性和事件 (異動、保留、CRM 及忠誠度資料) 個人化。</li><li>在網路、電子郵件及其他已知的通道上同步個人化。</li></ul> | <ul><li>Adobe Target</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Adobe Analytics或Customer Journey Analytics *（可選）*</li><li>Adobe Audience Manager *(可選)*</li></ul> |
 
 <br>
 
@@ -33,7 +33,7 @@ Web和Mobile Personalization能夠跨多個應用程式使用個人資料和受�
 
 ### 已知客戶個性化護欄圖
 
-<img src="assets/personalization_guardrails.png" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/personalization_guardrails.svg" alt="線上/離線網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
 ## 相關部落格貼文
 
