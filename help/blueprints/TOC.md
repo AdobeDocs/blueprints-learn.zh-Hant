@@ -1,14 +1,14 @@
 ---
 user-guide-title: 數位體驗 Blueprint
-breadcrumb-title: 'Blueprint '
+breadcrumb-title: Blueprint
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: c0994c3f09d854c635049054328abcd2d552c28e
+source-git-commit: 4aced09f12b47c0af25af7aaa97085a607d749b3
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 51%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 51%
 
 + [概覽](/help/blueprints/overview.md)
 + [查看所有使用案例](/help/blueprints/use-cases.md)
-+ 查看所有行業成功案例{#industry-success-stories}
++ 垂直行業藍圖{#vertical-blueprints}
    + [概覽](/help/blueprints/industry-success-stories/overview.md)
    + [服裝](/help/blueprints/industry-success-stories/apparel.md)
    + [零售](/help/blueprints/industry-success-stories/retail.md)
