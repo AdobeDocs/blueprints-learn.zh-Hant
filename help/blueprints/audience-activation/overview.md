@@ -5,10 +5,10 @@ solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 17faffdd972f2485951ac1e870b578e9b1a011a5
+source-git-commit: 56df8ad75940a6924cdef18c81acb91ee7471db6
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 95%
+source-wordcount: '861'
+ht-degree: 91%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 95%
 
 以對象與個人資料啟用是資料驅動行銷領域成功的關鍵。但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
 
-採用以通道為優先的方法時，每個通道皆是孤島，個人化工作僅強調在該通道上與品牌互動的客戶。此方法無法反映客戶透過很多不同的接觸點與品牌互動的現實情況。對象與個人資料啟用允許品牌連接多個通道中的客戶互動，以提供可向所有通道啟用的集中化個人資料與對象。
+採用以通道為優先的方法時，每個通道皆是孤島，個人化工作僅強調在該通道上與品牌互動的客戶。此方法無法反映客戶在許多不同接觸點與品牌互動的事實。 對象與個人資料啟用允許品牌連接多個通道中的客戶互動，以提供可向所有通道啟用的集中化個人資料與對象。
 
 | Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
 | **[匿名對象啟用](anonymous.md)** | <ul><li>為匿名和行為客戶資料定位網路及廣告通道上的對象。</li><li>整合協力廠商對象資料以增強個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
-| **[已知客戶激活](known.md)** | <ul><li>啟用至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager (可選)</li></ul> |
+| **[已知客戶啟用](known.md)** | <ul><li>啟用至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager (可選)</li></ul> |
 | **[使用 Experience Cloud 應用程式的對象與個人資料啟用](platform-and-applications.md)** | <ul><li>在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們</li><li>在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
+| **[區段符合](segment-match.md)** | <ul><li>透過更佳的控管、權限和偏好管理系統，行銷人員可進一步增強其與主要合作夥伴的第一方驗證受眾。</li></ul> | <ul><li>Adobe Experience Platform </li></ul> |
 
 ## 即時客戶個人資料架構
 
@@ -51,11 +52,11 @@ ht-degree: 95%
 ### 啟用屬性和身分
 
 * [!UICONTROL 即時客戶資料平台]可啟用對象會籍，以及針對選取要啟用之區段成員的個人資料所發生的屬性和身分變更。如果您的目標是啟用屬性或身分識別，您必須定義全域區段，其中包含所有要向其傳送屬性和身分更新的個人資料。此時，您可以選取要作為目標設定一部分啟用的區段和所需屬性。
-* 請注意，批次目標不支援啟用僅限屬性的變更事件。可以隨選定的屬性一起發送完整或增量訪問群體成員身份以進行激活。
+* 請注意，批次目標不支援啟用僅限屬性的變更事件。完整或增量受眾成員資格可與選取的屬性一起傳送以進行啟用。
 
 ### 啟用批次區段至串流目標
 
-* 支援批次區段啟用至串流目標。由於配置檔案符合批處理段作業的受眾成員資格，因此可以通過流式激活來激活這些實現。
+* 支援批次區段啟用至串流目標。由於設定檔符合批次區段工作的對象成員資格，因此這些實現可透過串流啟動來啟動。
 
 ### 啟用串流區段至批次目標
 
