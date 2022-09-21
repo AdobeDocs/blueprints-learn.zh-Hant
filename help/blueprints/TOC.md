@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 833524d20fe69a08a299035020e29d2d877b797d
+source-git-commit: 9fac27843985da725ffac9c6b01518b595fdb22b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 51%
+source-wordcount: '210'
+ht-degree: 49%
 
 ---
 
@@ -27,6 +27,9 @@ ht-degree: 51%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform 與應用程式](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform 資料流程](/help/blueprints/experience-platform/platform-data-flow.md)
+   + 部署模型{#deployment}
+      + [Experience PlatformWeb SDK和邊緣網路](/help/blueprints/data-ingestion/websdk.md)
+      + [應用程式SDK](/help/blueprints/data-ingestion/appsdk.md)
 + 對象與個人資料啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
    + [匿名對象啟用 (AAM)](/help/blueprints/audience-activation/anonymous.md)
@@ -61,14 +64,11 @@ ht-degree: 51%
    + Campaign v7{#campaign-v7}
       + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
       + [Real-Time CDP搭配Adobe Campaign](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
-+ 資料彙集與準備 {#data-ingestion}
++ 資料擷取與資料匯出{#data-ingestion}
    + [概覽](/help/blueprints/data-ingestion/overview.md)
    + [資料準備與擷取 ](/help/blueprints/data-ingestion/ingestion.md)
    + [事件轉送](/help/blueprints/data-ingestion/server-side-collection.md)
    + [多沙箱資料收集](/help/blueprints/data-ingestion/multi-sandbox-data-collection.md)
-   + 部署{#deployment}
-      + [Experience PlatformWeb SDK和邊緣網路](/help/blueprints/data-ingestion/websdk.md)
-      + [應用程式SDK](/help/blueprints/data-ingestion/appsdk.md)
 + 資料分析、情報與 AI/ML {#data-exploration}
    + [概覽](/help/blueprints/data-insights/overview.md)
    + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
