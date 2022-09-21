@@ -5,7 +5,7 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 9fac27843985da725ffac9c6b01518b595fdb22b
+source-git-commit: fc247d3a933d6df33e43f3a1f55f9dfb1eba35a6
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 49%
@@ -40,8 +40,8 @@ ht-degree: 49%
          + [啟動Google Customer Match](/help/blueprints/audience-activation/destinations/gcm.md)
       + [啟動至檔案和企業串流目的地](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [客戶活動中樞](/help/blueprints/audience-activation/customer-activity.md)
+      + [區段符合](/help/blueprints/audience-activation/segment-match.md)
    + [使用 Experience Cloud 應用程式啟用](/help/blueprints/audience-activation/platform-and-applications.md)
-   + [區段符合](/help/blueprints/audience-activation/segment-match.md)
 + B2B啟動與行銷{#b2b-activation}
    + [概覽](/help/blueprints/b2b/overview.md)
    + [B2B啟動](/help/blueprints/b2b/b2bactivation.md)
