@@ -5,9 +5,9 @@ landing-page-description: 了解如何根據線上行為和受眾資料進行個
 solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 24d5ec498d09f6dac443561bd530d58a33dae7af
+source-git-commit: 83f1f5e0e508d35d6711710cdb4d367f67e4f715
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '609'
 ht-degree: 94%
 
 ---
@@ -39,13 +39,13 @@ ht-degree: 94%
 網路/行動個人化 Blueprint 可透過下列方法實施，如下所述。
 
 1. 使用 [!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 及 [!UICONTROL Edge Network]。[請參閱 Experience Platform Web 和 Mobile SDK Blueprint](../data-ingestion/websdk.md)
-1. 使用傳統應用程式特定的 SDK (例如 AppMeasurement.js). [請參閱應用程式特定的SDK藍圖](../data-ingestion/appsdk.md)
+1. 使用傳統應用程式特定的 SDK (例如 AppMeasurement.js). [請參閱應用程式專屬的SDK Blueprint](../data-ingestion/appsdk.md)
 
 ## 實施步驟
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)。
 
-### 實施步驟 — Audience Manager或Adobe Analytics
+### 實作步驟 — Audience Manager或Adobe Analytics
 
 1. [實施 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)
 1. [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)
@@ -59,7 +59,7 @@ ht-degree: 94%
 1. 在 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=zh-Hant) 或 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder.html?lang=zh-Hant) 中建置區段，並[設定這些對象分享到 Experience Cloud](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant) (若使用 Audience Manager 或 Adobe Analytics)
 1. 一旦可在 Adobe Target 中使用對象後，便可將之用於[使用 Adobe Target 的目標定位體驗](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=zh-Hant)
 
-### 實施步驟 — Real-time Customer Data Platform
+### 實作步驟 — Real-time Customer Data Platform
 
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
@@ -86,7 +86,6 @@ ht-degree: 94%
 
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
-* [[!DNL How Adobe Experience Platform Predictive Audiences improves Personalized Experiences]](https://medium.com/adobetech/how-adobe-experience-platform-predictive-audiences-improves-personalized-experiences-1f75a60cb7a3)
 * [[!DNL Adobe Experience Platform Web SDK for Audience Management]](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
 * [[!DNL Implementing Adobe Experience Platform Real-Time Customer Profile through our “Customer Zero” Program]](https://medium.com/adobetech/implementing-adobe-experience-platform-real-time-customer-profile-through-our-customer-zero-32e7cd952896)
 * [[!DNL How Adobe Experience Platform Can Help Customers Personalize Their Mobile Messaging in Real-Time with Journey Orchestration Service and a Mobile Messaging Vendor]](https://medium.com/adobetech/how-adobe-experience-platform-helped-a-client-personalize-their-mobile-messaging-in-real-time-with-7d634aefa098)

@@ -1,38 +1,38 @@
 ---
 title: 中心的決策管理
-description: 跨渠道向消費者提供個性化服務，包括亭子、代理協助體驗，以及電子郵件和其他出站遞送。
+description: 在各管道（包括資訊站、代理程式協助的體驗，以及電子郵件和其他傳出傳遞）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 5b2f7531cc05178127fb08d3fdafcbce70192ecd
+source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '907'
 ht-degree: 17%
 
 ---
 
-# Journey Optimizer — 中心決策管理
+# Journey Optimizer — 中心的決策管理
 
-要瞭解有關決策管理的詳細資訊，請參閱產品文檔 [這裡](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) 和決策管理概述 [這裡](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-overview.html)
+若要深入了解決策管理，請參閱產品檔案 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) 和決策管理概述 [此處](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en)
 
-Adobe決策管理是作為Adobe Journey Optimizer的一部分提供的服務。 此藍圖概述了應用程式的使用案例和技術功能，並深入介紹了構成決策管理的各種體系結構元件和考慮事項。
+Adobe決策管理是Adobe Journey Optimizer中提供的服務。 此藍圖概述了應用程式的使用案例和技術功能，並深入介紹構成「決策管理」的各種體系結構元件和注意事項。
 
-Journey Optimizer習慣於在適當的時間為您的客戶在所有接觸點上提供最佳服務和體驗。 決策管理通過集中的營銷優惠和決策引擎來輕鬆實現個性化，該引擎將規則和約束應用於Adobe Experience Platform建立的豐富的即時概要檔案，以幫助您在適當的時間向客戶發送適當的優惠。
+Journey Optimizer可用來在適當的時間，跨所有接觸點為客戶提供最佳選件和體驗。 Decision Management透過集中的行銷選件資料庫和決策引擎，將規則和限制套用至Adobe Experience Platform建立的豐富即時設定檔，協助您在正確的時間為客戶傳送正確的優惠方案，讓個人化更加輕鬆。
 
-決策管理可以通過兩種方式之一進行部署。 第一種是通過Adobe Experience Platform中心，該中心是一個中央資料中心體系結構。 在&quot;集線器&quot;方法中，服務的執行、個性化和交付時間超過500毫秒。 因此，中心架構最適合不需要亞秒延遲的客戶體驗，例如，包括為諸如呼叫中心或個人交互中的亭子或代理輔助體驗提供的服務決定。 插入電子郵件和出站活動的優惠也由中心方法提供支援。
+決策管理可以通過以下兩種方式之一進行部署。 第一個是透過Adobe Experience Platform中樞，這是中央資料中心架構。 在「中樞」方法中，會執行、個人化優惠，並在超過500毫秒的延遲內提供。 因此，中心架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或個人互動中）提供的選件決策。 插入電子郵件和傳出行銷活動的優惠方案，也由中樞方法提供支援。
 
-第二種方法是通過「體驗邊緣網路」，它是一個分佈於全球各地、地理位置分佈的基礎架構，可提供快速的次秒和毫秒的體驗。 最終消費者體驗由最靠近消費者地理位置的邊緣基礎架構執行，以最小化延遲。 Edge上的Decision Management旨在提供即時消費者體驗，如Web或移動入站個性化請求。
+第二種方法是透過Experience Edge Network，這是分散於全球各地的基礎架構，可提供亞秒數及毫秒的快速體驗。 由最接近消費者地理位置的邊緣基礎架構執行的最終消費者體驗，以將延遲降至最低。 Edge上的決策管理可提供即時消費者體驗，例如網路或行動傳入個人化請求。
 
-此藍圖將介紹中心上的決策管理的具體內容。
+此藍圖將涵蓋中心上「決策管理」的詳細資訊。
 
-要瞭解有關邊緣上的決策管理的詳細資訊，請參閱 [邊緣決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-edge.html) 藍圖。
+若要進一步了解Edge上的決策管理，請參閱 [邊緣決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en) 藍圖。
 
-## 在集線器上進行決策管理的使用案例
+## 中心上決策管理的使用案例
 
-* 在售貨亭和商店體驗上提供個性化服務。
-* 通過座席輔助體驗（例如呼叫中心或銷售互動）提供個性化服務。
-* 包括在電子郵件、SMS、移動推送通知或其他出站交互中的服務。
-* 向外部ESP和消息傳遞系統提供服務，以便交付。
-* 跨渠道行程執行 — 通過Adobe Journey Optimizer提供跨Web、移動、電子郵件和其他交互渠道的一致性。
+* 資訊站和商店體驗上的個人化優惠方案。
+* 通過座席輔助體驗（如呼叫中心或銷售互動）提供個性化優惠。
+* 包含在電子郵件、簡訊、行動推播通知或其他傳出互動中的選件。
+* 提供外部ESP和郵件傳送系統的選件以進行傳送。
+* 跨管道歷程執行 — 透過Adobe Journey Optimizer，提供網頁、行動裝置、電子郵件和其他互動管道的一致性。
 
 <br>
 
@@ -46,39 +46,39 @@ Journey Optimizer習慣於在適當的時間為您的客戶在所有接觸點上
 
 Adobe Experience Platform
 
-* 必須先在系統中配置架構和資料集，然後才能配置Journey Optimizer資料源
-* 對於基於經驗事件類的架構，當希望觸發的事件不是基於規則的事件時，添加「業務流程事件ID」欄位組
-* 對於基於單個配置檔案類的架構，添加「配置檔案test詳細資訊」欄位組，以便能夠載入test配置檔案以與Journey Optimizer一起使用
+* 必須先在系統中設定結構和資料集，才能設定Journey Optimizer資料來源
+* 如果您想要觸發非規則型事件的事件，則針對體驗事件類別型結構新增「Orchestration eventID」欄位群組
+* 針對個別設定檔類別型結構，新增「設定檔測試詳細資料」欄位群組，以便載入測試設定檔以與Journey Optimizer搭配使用
 
 <br>
 
 ## 護欄
 
-* 有關Journey Optimizer護欄，請參閱以下 [Journey Optimizer瓜德賴爾](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)。
-* 有關決策管理護欄，請參閱以下內容 [決策管理產品說明](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)。
+* 若為Journey Optimizer護欄，請參閱下列 [Journey Optimizer護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
+* 有關決策管理護欄，請參閱以下內容 [決策管理產品說明](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
 * 每秒請求數= 2000。
 * 響應延遲&lt; 500毫秒。
-* 訪問全面即時客戶配置檔案，包括訪問者成員身份、屬性和體驗事件。
+* 存取完整即時客戶設定檔，包括受眾會籍、屬性和體驗事件。
 
 
 ### 資料擷取護欄
 
-<img src="../assets/aep-data-ingestion-details-latency.svg" alt="參考建築Journey Optimizer藍圖" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../assets/aep-data-ingestion-details-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 <br>
 
 ### 激活護欄
 
-<img src="../assets/ajo-activation-details-latency.svg" alt="參考建築Journey Optimizer藍圖" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../assets/ajo-activation-details-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 <br>
 
 ## 實施模式
 
-* 通過與直接整合在電子郵件、簡訊和出站通道中實現 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/offers-e2e.html)。
-* 對於基於伺服器API的決策管理實施， [決策API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html)。
-* 對於實施基於批的決策以批量將優惠遞送到消息遞送應用程式，使用 [批處理決策API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/batch-decisioning-api.html)。
-* 對於基於邊緣的即時體驗，請使用Web/Mobile SDK或邊緣決策API，如 [邊緣藍圖上的決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-edge.html)。
+* 透過與直接整合，在電子郵件、簡訊和傳出通道中實作 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/offers-e2e.html).
+* 針對以伺服器API為基礎的決策管理實作，請運用 [決策API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html).
+* 若要實作批次決策以大量傳送選件給訊息傳送應用程式，請使用 [批次決策API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/batch-decisioning-api.html).
+* 若為Edge型即時體驗，請依照 [邊緣藍圖上的決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en).
 <br>
 
 ## 實施步驟
@@ -98,7 +98,7 @@ Adobe Experience Platform
 1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 1. 為[!UICONTROL 即時客戶個人資料]的不同檢視[設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant) (可選)。
-1. 為行程使用建立段。
+1. 建立歷程使用情形的區段。
 
 #### 來源 / 目標
 

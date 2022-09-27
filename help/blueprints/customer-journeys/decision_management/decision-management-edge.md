@@ -1,33 +1,33 @@
 ---
 title: 邊緣決策管理
-description: 通過包括即時Web和移動體驗在內的渠道向消費者提供個性化服務。
+description: 跨管道（包括即時網路和行動體驗）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 5b2f7531cc05178127fb08d3fdafcbce70192ecd
+source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '854'
 ht-degree: 19%
 
 ---
 
-# Journey Optimizer — 邊緣決策管理
+# Journey Optimizer — 邊緣的決策管理
 
-要瞭解有關決策管理的詳細資訊，請參閱產品文檔 [這裡](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) 和決策管理概述 [這裡](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-overview.html)
+若要深入了解決策管理，請參閱產品檔案 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) 和決策管理概述 [此處](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en)
 
-Adobe決策管理是作為Adobe Journey Optimizer的一部分提供的服務。 此藍圖概述了應用程式的使用案例和技術功能，並深入介紹了構成決策管理的各種體系結構元件和考慮事項。
+Adobe決策管理是Adobe Journey Optimizer中提供的服務。 此藍圖概述了應用程式的使用案例和技術功能，並深入介紹構成「決策管理」的各種體系結構元件和注意事項。
 
-決策管理可以通過兩種方式之一進行部署。 第一種是通過Adobe Experience Platform集線器，它是一個資料中心體系結構。 在「集線器」方法中，服務執行、個性化並以第二延遲提供。 因此，中心架構最適合不需要亞秒延遲的客戶體驗，例如，包括為諸如呼叫中心或個人交互中的亭子或代理輔助體驗提供的服務決定。
+決策管理可以通過以下兩種方式之一進行部署。 第一個是透過Adobe Experience Platform Hub，這是單一資料中心架構。 在「中樞」方法中，選件會執行、個人化，並在第二次延遲時傳送。 因此，中心架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或座席輔助體驗（例如在呼叫中心或人員互動中）提供的選件決策。
 
-第二種方法是通過「體驗邊緣網路」，它是一個分佈於全球各地、地理位置分佈的基礎架構，可提供快速的次秒和毫秒的體驗。 最終消費者體驗由最靠近消費者地理位置的邊緣基礎架構執行，以最小化延遲。 Edge上的決策管理旨在提供即時的消費者體驗。 這些包括Web或移動入站個性化請求等體驗。
+第二種方法是透過Experience Edge Network，這是分散於全球各地的基礎架構，可提供亞秒數及毫秒的快速體驗。 由最接近消費者地理位置的邊緣基礎架構執行的最終消費者體驗，以將延遲降至最低。 Edge上的決策管理旨在提供即時消費者體驗。 這些包括網頁或行動傳入個人化請求之類的體驗。
 
-此藍圖將涵蓋邊緣決策管理的具體內容。
+此藍圖將涵蓋邊緣決策管理的詳細資訊。
 
-要瞭解有關集線器上的決策管理的詳細資訊，請參閱 [中心的決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/offer-decisioning/decision-management-hub.html) 藍圖。
+若要進一步了解中樞上的決策管理，請參閱 [中心的決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=en) 藍圖。
 
 ## 邊緣決策管理的使用案例
 
-* 通過Web或移動入站體驗實現線上個性化。
-* 跨渠道行程執行 — 通過Adobe Journey Optimizer提供跨Web、移動、電子郵件和其他交互渠道的一致性。
+* 透過網頁或行動傳入體驗進行線上個人化。
+* 跨管道歷程執行 — 透過Adobe Journey Optimizer，提供網頁、行動裝置、電子郵件和其他互動管道的一致性。
 
 <br>
 
@@ -41,49 +41,49 @@ Adobe決策管理是作為Adobe Journey Optimizer的一部分提供的服務。 
 
 | 整合 | 說明 |
 | :-- | :--- |
-| [與Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html) | 決策管理可以與Adobe Target整合，以便作為目標體驗來測試和提供服務。 |
+| [使用Adobe Target進行決策管理](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html) | 決策管理可與Adobe Target整合，以便以Target體驗的形式測試和提供選件。 |
 
 ## 先決條件
 
 Adobe Experience Platform
 
-* 必須先在系統中配置架構和資料集，然後才能配置Journey Optimizer資料源
-* 對於基於經驗事件類的架構，當希望觸發的事件不是基於規則的事件時，添加「業務流程事件ID」欄位組
-* 對於基於單個配置檔案類的架構，添加「配置檔案test詳細資訊」欄位組，以便能夠載入test配置檔案以與Journey Optimizer一起使用
+* 必須先在系統中設定結構和資料集，才能設定Journey Optimizer資料來源
+* 如果您想要觸發非規則型事件的事件，則針對體驗事件類別型結構新增「Orchestration eventID」欄位群組
+* 針對個別設定檔類別型結構，新增「設定檔測試詳細資料」欄位群組，以便載入測試設定檔以與Journey Optimizer搭配使用
 
 <br>
 
 ## 護欄
 
-* 有關Journey Optimizer護欄，請參閱以下 [Journey Optimizer瓜德賴爾](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html)。
-* 有關決策管理護欄，請參閱以下內容 [決策管理產品說明](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)。
+* 若為Journey Optimizer護欄，請參閱下列 [Journey Optimizer護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html).
+* 有關決策管理護欄，請參閱以下內容 [決策管理產品說明](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html).
 * 每秒請求數= 5000。
 * 響應延遲&lt; 250毫秒。
-* 訪問邊緣即時配置檔案。 配置檔案中將只提供邊緣投影觀眾和配置檔案屬性。
-* 如果第一次體驗需要個性化，則中心將是理想的，因為完整配置檔案可用。 邊緣配置檔案必須與集線器同步，以便首次獲得邊緣體驗。 因此，從邊緣獲得的第一次體驗將不包括先前上載到集線器的配置檔案資料。
+* 存取邊緣即時設定檔。 設定檔中將僅提供邊緣預計對象和設定檔屬性。
+* 如果首次體驗中需要個人化，則中心會是理想的選擇，因為有完整的設定檔可用。 邊緣設定檔必須從中樞同步，才能第一次出現邊緣體驗。 因此，來自Edge的第一個體驗將不包含先前上傳至中樞的設定檔資料。
 
 ### 資料擷取護欄
 
-<img src="../assets/aep-data-ingestion-details-latency.svg" alt="參考建築Journey Optimizer藍圖" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../assets/aep-data-ingestion-details-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 <br>
 
 ### 激活護欄
 
-<img src="../assets/ajo-activation-details-latency.svg" alt="參考建築Journey Optimizer藍圖" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../assets/ajo-activation-details-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 <br>
 
 ## 實施模式
 
-* 使用Web或移動SDK在網站和移動應用程式上部署，以在部署SDK的位置實施決策管理。
-   * [Web/Mobile SDK藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/data-ingestion/websdk.html)
+* 將網頁或行動SDK用於在網站和行動應用程式上部署，以實作部署SDK的決策管理。
+   * [Web/Mobile SDK藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/websdk.html?lang=en)
    * [WebSDK](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html)
-   * [移動軟體開發工具包](https://aep-sdks.gitbook.io/docs/)
+   * [MobileSDK](https://aep-sdks.gitbook.io/docs/)
 
 或
 
-* 對於基於API伺服器到伺服器的實現，使用邊緣網路服務API直接將伺服器到伺服器執行決策管理。
+* 若是以API伺服器對伺服器為基礎的實作，請使用邊緣網路服務API，將決策管理的伺服器對伺服器實作直接使用。
    * [邊緣網路伺服器API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/deliver-offers.html)
 
 <br>
@@ -105,7 +105,7 @@ Adobe Experience Platform
 1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 1. 為[!UICONTROL 即時客戶個人資料]的不同檢視[設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant) (可選)。
-1. 為行程使用建立段。
+1. 建立歷程使用情形的區段。
 
 #### 來源 / 目標
 

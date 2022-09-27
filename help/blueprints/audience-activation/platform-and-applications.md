@@ -4,10 +4,10 @@ description: 在 Experience Platform 中管理個人資料和對象，以及與 
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 094591020413933932356cb8c393bf569bcfca50
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 46%
+source-wordcount: '739'
+ht-degree: 47%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 46%
 
 在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們。在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們。
 
-使用Experience Cloud應用程式激活與 [已知客戶激活藍圖](known.md)。
+通過Experience Cloud應用程式激活與 [已知客戶啟用Blueprint](known.md).
 
 ## 使用案例
 
@@ -35,7 +35,7 @@ ht-degree: 46%
 
 ## 架構
 
-查看 [Experience Platform和應用程式體系結構部分](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=zh-Hant) 有關與Experience Platform與Experience Cloud應用程式整合相關的其他體系結構圖。
+請參閱 [Experience Platform和應用程式體系結構部分](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=zh-Hant) 以取得與Experience Platform與Experience Cloud應用程式整合相關的其他架構圖表。
 
 ### 使用 Experience Cloud 應用程式的對象與個人資料啟用
 
@@ -50,25 +50,25 @@ ht-degree: 46%
 
 * 分享個人資料資料到目標需要您在目標負載中包含目標使用的特定身份值。對目標必要的任何身份必須擷取到 Platform，並且設定為[!UICONTROL 即時客戶個人資料]的身份。
 
-### 從Real-time Customer Data Platform到Audience Manager的觀眾分享
+### 受眾從Real-time Customer Data Platform分享至Audience Manager
 
-* 有關更多詳細資訊，請參閱以下文檔。 [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant).
+* 如需詳細資訊，請參閱下列檔案。 [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant).
 
-* 一旦完成段評估並將其寫入即時客戶配置檔案（無論段評估是批處理還是流處理）,RT-CDP的受眾成員身份將以流方式共用到Audience Manager。 如果限定的簡檔包含相關簡檔設備的區域路由資訊，則RTCDP的觀眾成員在相關的Audience Manager邊緣上以流方式限定。 如果將區域路由資訊應用於過去14天內時間戳記的配置檔案，則將在Audience Manager邊緣上以流形式進行計算。 如果RTCDP中的配置檔案不包含區域路由資訊或區域路由資訊大於14天，則配置檔案成員資格將發送到Audience Manager中心位置以進行基於批的評估和激活。 符合邊緣激活資格的配置檔案將在RTCDP的細分市場鑑定後幾分鐘內激活，不符合邊緣激活資格的配置檔案將在Audience Manager集線器中獲得資格，並且可能有12-24小時的處理時間。
+* 當區段評估完成並寫入即時Audience Manager設定檔（不論是批次或串流）,RT-CDP的受眾成員資格會立即以串流方式共用給客戶。 如果符合資格的設定檔包含相關設定檔裝置的地區路由資訊，則來自RTCDP的對象成員資格會在相關Audience ManagerEdge上以串流方式符合資格。 如果將地區路由資訊套用至過去14天具有時間戳記的設定檔，則會在串流的Audience Manager邊緣上評估。 如果RTCDP中的配置檔案不包含區域路由資訊或區域路由資訊大於14天，則配置檔案成員會發送到Audience Manager中心位置，以便進行基於批次的評估和激活。 符合Edge啟動資格的設定檔將在RTCDP區段資格後的數分鐘內啟動，不符合Edge啟動資格的設定檔將在Audience Manager中樞中心啟動，且可能有12至24小時的處理時間範圍。
 
-* 可以從Audience Manager、訪問者ID服務、分析、啟動或直接從Web SDK中收集儲存了Audience Manager配置檔案的邊緣區域路由資訊，以便使用「資料捕獲區域資訊」 XDM欄位組作為單獨的配置檔案記錄類資料集進行Experience Platform。
+* 您可以收集Audience Manager設定檔所儲存的地區路由資訊，以從Audience Manager、訪客ID服務、Analytics、Launch，或直接從Web SDKExperience Platform為個別的設定檔記錄類別資料集，使用「資料擷取地區資訊」XDM欄位群組。
 
-* 對於從Experience Platform到Audience Manager的受眾共用的激活情形，將自動共用以下標識：ECID、IDFA、GAID、散列電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID。 當前，未共用自定義命名空間。
+* 在啟用案例中，會從Experience Platform共用閱聽眾，以Audience Manager下列身分自動共用：ECID、IDFA、GAID、雜湊電子郵件地址(EMAIL_LC_SHA256)、AdCloud ID。 目前不共用自訂命名空間。
 
 * 當所需的目標身份包含在[!UICONTROL 即時客戶個人資料]中時，或者[!UICONTROL 即時客戶個人資料]中的身份可以關聯至 Audience Manager 中連結的所需目標身份時，Experience Platform 中的對象可透過 Audience Manager 目標分享。
 
-### 從Real-time Customer Data Platform到目標的觀眾共用
+### 從Real-time Customer Data Platform到Target的受眾共用
 
-* 查看 [Web/Mobile個性化，帶線上和離線資料藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/online-offline.html) 有關從Real-time Customer Data Platform到塔吉特共用簡介和觀眾的更多詳情。
+* 請參閱 [已知客戶個人化 — Target和RTCDP Blueprint](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html) 如需從Real-time Customer Data Platform共用設定檔和對象的其他詳細資訊，請參閱Target。
 
-### 從Real-time Customer Data Platform到運動和Journey Optimizer的觀眾分享
+### 從Real-time Customer Data Platform到Campaign和Journey Optimizer的受眾共用
 
-* 查看 [客戶旅程藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html) 有關分享簡介和觀眾的更多詳情，請訪問Real-time Customer Data Platform、競選和Journey Optimizer。
+* 請參閱 [客戶歷程藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html) 如需共用設定檔和對象的詳細資訊，請參閱Real-time Customer Data Platform、Campaign和Journey Optimizer。
 
 ## 相關文件
 
