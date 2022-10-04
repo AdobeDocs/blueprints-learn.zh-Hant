@@ -1,33 +1,35 @@
 ---
-title: 市場活動v8藍圖
-description: Adobe Campaignv8是為電子郵件和直郵等傳統營銷渠道而構建的下一代宣傳工具。 它提供強大的ETL和資料管理功能，幫助制定和組織完美的活動。 其業務流程引擎為豐富的多點觸控營銷計畫提供了支援，其核心是基於批處理的驅動行程。  它還配備了可擴展的即時消息伺服器，使營銷團隊能夠基於來自任何IT系統的包含所有內容的負載來發送預定義的消息，用於諸如密碼重置、訂單確認、電子回執等等。
+title: 促銷活動v8 Blueprint、促銷活動與AEP
+description: Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如電子郵件和直接郵件）而建置。 它提供強大的ETL和資料管理功能，以幫助策劃和組織完美的促銷活動。 其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。  此外，它還隨附可擴充的即時訊息伺服器，讓行銷團隊能根據來自任何IT系統的包含所有內容的裝載，傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
 solution: Campaign,Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: 37fa3bc00175a4636766564f0b8fb847fa8a951e
+source-git-commit: f8116387105cf1fe0adfc148562529d62ca90cfc
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1059'
 ht-degree: 3%
 
 ---
 
-# 市場活動v8藍圖
+# 促銷活動v8 Blueprint
 
-Adobe Campaignv8是為電子郵件和直郵等傳統營銷渠道而構建的下一代宣傳工具。 它提供強大的ETL和資料管理功能，幫助制定和組織完美的活動。 其業務流程引擎為豐富的多點觸控營銷計畫提供了支援，其核心是基於批處理的驅動行程。  它還配備了可擴展的即時消息伺服器，使營銷團隊能夠基於來自任何IT系統的包含所有內容的負載來發送預定義的消息，用於諸如密碼重置、訂單確認、電子回執等等。
+Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如電子郵件和直接郵件）而建置。 它提供強大的ETL和資料管理功能，以幫助策劃和組織完美的促銷活動。 其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。  此外，它還隨附可擴充的即時訊息伺服器，讓行銷團隊能根據來自任何IT系統的包含所有內容的裝載，傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
 
 <br>
 
 ## 使用案例
 
-* 高度複雜的基於批處理的消息傳遞程式
+* 高度複雜的基於批處理的報文傳送程式
 * 引導與再行銷活動
-* 直郵廣告、手冊和雜誌活動
-* 簡單事務性消息傳遞（即密碼重置、電子郵件接收、訂單確認等）
+* 直接郵件廣告、手冊和雜誌宣傳
+* 簡單的交易式訊息（例如密碼重設、電子郵件接收、訂單確認等）
+* 將Campaign資料整合至Adobe Experience Platform以進行分析和建立設定檔
+* 共用Real-time Customer Data Platform對象至Campaign。
 
 <br>
 
 ## 架構
 
-<img src="assets/campaign-v8-architecture.svg" alt="市場活動v8藍圖的參考體系結構" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/campaign-v8-architecture.svg" alt="Campaign v8 Blueprint的參考架構" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -35,90 +37,90 @@ Adobe Campaignv8是為電子郵件和直郵等傳統營銷渠道而構建的下�
 
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| [Journey Optimizer與Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用Adobe Journey Optimizer來協調利用即時客戶概要資訊的1:1體驗，並利用本機Adobe Campaign事務性消息傳遞系統來發送消息 | 利用Journey Optimizer的即時客戶概況和能力，在利用Adobe Campaign的本機即時消息傳遞功能進行最後一英里通信的同時，協調即時體驗<br><br>注意事項：<br><ul><li>通過即時消息伺服器每小時最多可發送100萬條消息<li>沒有從Journey Optimizer執行限制，因此確保售前企業架構師進行技術審查</li><li>將Campaign v8的有效負載不支援決策管理</li></ul> |
+| [Journey Optimizer搭配Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用Adobe Journey Optimizer利用即時客戶設定檔來協調1:1體驗，並運用原生Adobe Campaign交易訊息系統來傳送訊息 | 運用Journey Optimizer的即時客戶個人檔案和強大功能，協調即時體驗，同時運用Adobe Campaign的原生即時訊息傳送功能進行最後一英里的通訊<br><br>考量事項：<br><ul><li>可通過即時消息伺服器每小時發送最多100萬條消息<li>不會從Journey Optimizer執行限制，以確保售前企業架構師的技術審查</li><li>Campaign v8裝載不支援決策管理</li></ul> |
 
 <br>
 
 ## 先決條件
 
 
-### 應用伺服器和即時消息伺服器
+### 應用程式伺服器和即時消息伺服器
 
-* Adobe Campaign客戶端控制台需要交互和使用Campaign v8軟體。 它是基於Windows的客戶端，使用標準的Internet協定（SOAP、HTTP等）。 確保您在組織中啟用了分發、安裝和運行軟體所需的權限
+* 必須有Adobe Campaign用戶端主控台才能與Campaign v8軟體互動和使用。 它是基於Windows的客戶端，使用標準Internet協定（SOAP、HTTP等）。 請確定您的組織已啟用必要權限，以分發、安裝及執行軟體
 
-* IP地址允許清單
-   * 確定所有用戶在訪問客戶端控制台期間將利用的IP範圍
-   * 標識允許哪些企業系統與即時消息伺服器通話，並確保它們具有靜態分配的IP或範圍，您可以允許清單
-   * 可通過「市場活動控制面板」設定和控制
-* sFTP密鑰管理
-   * 使SSH公共密鑰可用於市場活動提供的sFTP。 可通過「市場活動控制面板」設定和控制此操作。
+* IP位址允許清單
+   * 識別所有使用者在存取用戶端主控台期間將利用的IP範圍
+   * 標識將允許哪些企業系統與即時消息伺服器對話，並確保它們具有靜態分配的IP或範圍，您可以允許列出
+   * 這可透過「促銷活動控制面板」來設定及控制
+* sFTP金鑰管理
+   * 具有可與Campaign提供的sFTP搭配使用的SSH公開金鑰。 這可透過「促銷活動控制面板」來設定及控制。
 
 ### 電子郵件
 
-* 使子域準備好用於消息發送
-* 子域可以完全委託給Adobe（推薦），也可以使用CNAME指向特定於Adobe的DNS伺服器（自定義）
-* 每個子域都需要GoogleTXT記錄，以確保良好的可交付性
+* 已準備好要用於訊息傳送的子網域
+* 子網域可以完全委派給Adobe（建議），或CNAME可用來指向Adobe特定的DNS伺服器（自訂）
+* 每個子網域都需要Google TXT記錄，以確保良好的傳遞能力
 
 ### 行動裝置推送
 
-* 讓移動開發人員可以部署、配置和構建移動應用
-* Adobe只提供SDK從FCM(Android)和APNS(iOS)收集必要資訊，將消息負載發送到伺服器。 如何對移動應用進行編碼、部署、管理和調試是客戶的責任
+* 讓行動開發人員可部署、設定和建置行動應用程式
+* Adobe僅提供SDK來收集來自FCM(Android)和APNS(iOS)以傳送訊息裝載至其伺服器的必要資訊。 客戶應負責如何對行動應用程式進行編碼、部署、管理和除錯
 
-### Webapps（可選）
+### 網頁應用程式（可選）
 
-* 可以為托管的市場活動取消訂閱和登錄頁委託其他子域
-* 強烈建議使用SSL證書
+* 可以為托管的取消訂閱和登錄頁面委派其他子網域
+* 強烈建議使用SSL憑證
 
 <br>
 
 ## 護欄
 
-### 應用程式伺服器調整大小
+### 應用程式伺服器大小調整
 
-* 儲存可以擴展到200M的配置檔案，並有可能擴展到1B配置檔案
-* 通過Adobe Admin Console設定和控制用戶訪問
-* 資料載入到市場活動預期將通過批處理檔案完成
-   * API資料載入支援主要用於管理資料庫中的配置檔案或簡單對象（即建立和更新）。 它不打算用於載入大量資料或類似批處理的操作。
-   * 不支援使用API讀取資料以用於自定義應用程式
-   * 通過API載入的資料將存放到應用程式資料庫中，然後每小時複製一次到雲資料庫
-* API調用限制為每秒15次或每天15萬次
+* 儲存可以擴展到2億個配置檔案，有可能擴展到1B配置檔案
+* 透過Adobe Admin Console設定及控制使用者存取權
+* 載入至Campaign的資料應透過批次檔案完成
+   * API資料載入支援主要用於管理資料庫內的設定檔或簡單物件（即建立和更新）。 它不用於載入大量資料或批處理操作。
+   * 不支援使用API來讀取自訂應用程式用途的資料
+   * 透過API載入的資料會儲存在應用程式資料庫中，然後每小時複製到雲端資料庫
+* API呼叫以每秒15次或每天15萬次為上限
 
-### 批消息伺服器調整
+### 批次傳訊伺服器大小調整
 
-* 可擴展到每小時處理多達2000萬條消息
+* 可擴展以處理每小時多達2000萬條報文
 
-### 即時消息伺服器調整
+### 即時消息伺服器大小調整
 
 * 每小時最多可發送100萬條消息
-* 預設情況下，配置兩個即時消息伺服器。 能夠擴展到多達八個即時消息伺服器。
+* 預設會布建兩個即時訊息伺服器。 能夠擴展至最多八個即時消息傳送伺服器。
 
-### SMS配置
+### SMS設定
 
-* 市場活動提供了與SMS提供商整合的能力。 供應商由客戶採購並與用於發送基於SMS的消息的促銷活動整合
-* 支援通過SMPP協定
-* 有三(3)種不同的SMS,Adobe都能支援：
-   * SMS MT（移動終止）:Adobe Campaign通過SMPP提供商向行動電話發送的簡訊。
-   * SMS MO(Mobile Sourced):由移動端通過SMPP提供商發送給Adobe Campaign的SMS。
-   * SMS SR（狀態報告）、 DR或DLR（交貨回執）:移動設備通過SMPP提供商發送給Adobe Campaign的回執，表示SMS已成功接收。 Adobe Campaign可能還會收到SR，指出無法傳遞消息，通常會提供錯誤描述。
+* Campaign提供與簡訊提供者整合的功能。 提供者由客戶採購，並與行銷活動整合，以傳送以簡訊為基礎的訊息
+* 支援是透過SMPP通訊協定
+* 簡訊有三(3)種，Adobe皆可支援：
+   * SMS MT（已終止行動）:由Adobe Campaign透過SMPP提供者向行動電話發出的簡訊。
+   * SMS MO（行動產生）:行動裝置透過SMPP提供者傳送至Adobe Campaign的SMS。
+   * SMS SR（狀態報表）、DR或DLR（傳送回執）:行動裝置透過SMPP提供者傳送至Adobe Campaign的回執，指出SMS已成功接收。 Adobe Campaign也可能會收到SR，指出無法傳送訊息，且通常包含錯誤的說明。
 
-### 移動推送配置
+### 行動推送設定
 
-* 僅市場活動SDK支援市場活動v8。 聯繫Adobe客戶服務以獲得訪問
-* 請關注 [市場活動SDK文檔](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en) 瞭解如何安裝和配置SDK
+* Campaign v8僅支援Campaign SDK。 聯絡Adobe客戶服務以取得存取權
+* 請遵循 [Campaign SDK檔案](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=en) 了解如何安裝和設定SDK
 
    >[!IMPORTANT]
-   >其他Experience Cloud應用程式將需要使用Experience Platform移動SDK進行資料收集。 這是另一個SDK，需要在「活動SDK」旁邊安裝
+   >其他Experience Cloud應用程式則需使用Experience Platform行動SDK進行資料收集。 這是不同的SDK，需要與Campaign SDK一起安裝
 
 <br>
 
 ## 實施步驟
 
-請參閱入門指南 [執行Adobe CampaignV8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=en)
+請參閱快速入門手冊， [實作Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=en)
 
 
 ## 相關文件
 
-* [市場活動v8文檔](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=en)
-* [市場活動v8產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-* [Experience Platform標籤文檔](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
+* [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=en)
+* [Campaign v8產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
+* [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
 * [Experience Platform Mobile SDK 文件](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)

@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 84eb7427077a068c3fe3b2cfc4856e115427f4ca
+source-git-commit: f8116387105cf1fe0adfc148562529d62ca90cfc
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 50%
+source-wordcount: '213'
+ht-degree: 48%
 
 ---
 
@@ -60,9 +60,10 @@ ht-degree: 50%
       + [第三方傳訊](/help/blueprints/customer-journeys/3rd-party-messaging.md)
    + Campaign v8{#campaign-v8}
       + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
+      + [Real-Time CDP搭配Adobe Campaign v8](/help/blueprints/customer-journeys/rtcdp-and-campaign-v8.md)
    + Campaign v7{#campaign-v7}
       + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
-      + [Real-Time CDP搭配Adobe Campaign](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
+      + [Real-Time CDP搭配Adobe Campaign v7](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
 + 資料擷取與資料匯出{#data-ingestion}
    + [概覽](/help/blueprints/data-ingestion/overview.md)
    + [資料準備與擷取 ](/help/blueprints/data-ingestion/ingestion.md)
