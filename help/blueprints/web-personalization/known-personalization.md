@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 31f5e095ed5817ea1f6586aecdd13c1e06fb5e4a
+source-git-commit: 6901596cbb661ffa8cf57c6ae958db1978bf1520
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 17%
 
 * [!UICONTROL 即時客戶資料平台]
 * Adobe Target
-* Adobe Audience Manager（可選）:新增協力廠商受眾資料、以合作為基礎的裝置圖表
+* Adobe Audience Manager（可選）:新增第三方受眾資料
 * Adobe Analytics或Customer Journey Analytics（可選）:新增根據歷史客戶和行為資料建立區段並執行微調細分的功能
 
 ## 整合模式
