@@ -1,5 +1,5 @@
 ---
-title: 事件轉發藍圖
+title: 事件轉送Blueprint
 description: 由 Experience Platform SDK 串流彙集的資料至目標
 solution: Data Collection
 kt: 7202
@@ -11,9 +11,9 @@ ht-degree: 61%
 
 ---
 
-# 事件轉發藍圖
+# 事件轉送Blueprint
 
-事件轉發藍圖顯示如何將通過Adobe Experience PlatformWeb和移動SDK收集的資料從Experience Platform邊緣網路轉發到所需的目標。 您可以根據在標籤屬性中配置的事件和規則（以前稱為「啟動」）轉發從SDK收集的所有原始資料或特定資料。
+事件轉送Blueprint會顯示透過Adobe Experience Platform Web和Mobile SDK收集的資料，如何從Experience Platform邊緣網路轉送至所需的目的地。 您可以根據標籤屬性（先前稱為Launch）中設定的事件和規則，轉送從SDK收集的所有原始資料或特定資料。
 
 ## 使用案例
 
@@ -30,9 +30,9 @@ ht-degree: 61%
 
 ## 相關文件
 
-* [事件轉發文檔](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
-* [事件轉發視頻](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=zh-Hant)
-* [事件轉發課](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) Web SDK教程
+* [事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+* [事件轉送影片](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=zh-Hant)
+* [事件轉送課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) 網頁SDK教學課程的
 
 ## 相關部落格貼文
 

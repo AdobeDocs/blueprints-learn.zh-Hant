@@ -31,12 +31,12 @@ ht-degree: 81%
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=zh-Hant"><img alt="觸發的訊息與 Experience Platform Blueprint 的縮圖影像" src="customer-journeys/assets/ajo-architecture.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>跨通道業務流程</strong></a></div>
-    <p><em>使用[!UICONTROL平台]作為中心中心，發送消息並影響客戶的即時體驗。</em></p>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>跨管道協調</strong></a></div>
+    <p><em>使用[!UICONTROL Platform]作為中心，即時傳送訊息並影響客戶體驗。</em></p>
   </td>
   <td>
-    <a href="/help/blueprints/audience-activation/known.md"><img alt="已知客戶激活藍圖的縮略圖" src="audience-activation/assets/known_activation.svg" /></a>
-    <div><a href="/help/blueprints/audience-activation/known.md"><strong>已知客戶激活</strong></a></div>
+    <a href="/help/blueprints/audience-activation/known.md"><img alt="已知客戶啟動Blueprint的縮圖影像" src="audience-activation/assets/known_activation.svg" /></a>
+    <div><a href="/help/blueprints/audience-activation/known.md"><strong>已知客戶啟用</strong></a></div>
     <p><em>傳遞由受眾啟用的跨通道廣告。</em></p>
   </td>
   <td>

@@ -23,21 +23,21 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 * 購物車與申請表格放棄
 * 位置觸發的訊息
 * 體育場內體驗
-* 抵達前的旅行和招待以及入住體驗
+* 抵達前的旅宿和住宿體驗
 
 <br>
 
 ## 架構
 
-<img src="assets/ajo-architecture.svg" alt="參考建築Journey Optimizer藍圖" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/ajo-architecture.svg" alt="參考架構Journey Optimizer Blueprint" style="width:100%; border:1px solid #4a4a4a" />
 
 <br>
 
-## 藍圖方案
+## Blueprint藍圖方案
 
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| [第三方消息傳遞](3rd-party-messaging.md) | 演示如何將Adobe Journey Optimizer與第三方消息傳遞系統一起使用，以協調和發送個性化通信 | 在客戶與您的品牌或公司進行互動時，立即提供1:1的個性化通信<br><br>注意事項：<br><ul><li>第三方系統必須支援用於驗證的承載令牌</li><li>由於多租戶體系結構，不支援靜態IP</li><li>在每秒API調用時，請注意第三方系統的體系結構限制。  可能需要客戶從第三方供應商購買更多卷以支援來自Journey Optimizer的卷</li><li>不支援消息或負載中的決策管理</li></ul> |
+| [第三方傳訊](3rd-party-messaging.md) | 展示如何搭配第三方訊息系統使用Adobe Journey Optimizer來協調和傳送個人化通訊 | 在客戶與您的品牌或公司互動時，立即提供1:1的個人化通訊<br><br>考量事項：<br><ul><li>第三方系統必須支援用於驗證的承載令牌</li><li>由於多租用戶架構，不支援靜態IP</li><li>每秒的API呼叫次數，請注意協力廠商系統的架構限制。  客戶可能需要向第三方供應商購買額外的卷，以支援來自Journey Optimizer的卷</li><li>在消息或負載中不支援決策管理</li></ul> |
 
 <br>
 
@@ -45,7 +45,7 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 
 | 整合 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| [Journey Optimizer與Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用Adobe Journey Optimizer來協調利用即時客戶概要資訊的1:1體驗，並利用本機Adobe Campaign事務性消息傳遞系統來發送消息 | 利用Journey Optimizer的即時客戶概況和能力，在利用Adobe Campaign的本機即時消息傳遞功能進行最後一英里通信的同時，協調即時體驗<br><br>注意事項：<br><ul><li>市場活動應用程式必須位於v7版本>21.1或v8上</li><li>消息傳送吞吐量</li><ul><li>活動v7 — 每小時最多5萬</li><li>促銷v8 — 每小時最多100萬</li><li>Campaign Standard — 每小時最多5萬</li></ul><li>不執行限制，因此使用案例需要企業架構師進行技術審查</li><li>不支援在市場活動發送的消息中使用決策管理</li></ul> |
+| [Journey Optimizer搭配Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用Adobe Journey Optimizer利用即時客戶設定檔來協調1:1體驗，並運用原生Adobe Campaign交易訊息系統來傳送訊息 | 運用Journey Optimizer的即時客戶個人檔案和強大功能，協調即時體驗，同時運用Adobe Campaign的原生即時訊息傳送功能進行最後一英里的通訊<br><br>考量事項：<br><ul><li>Campaign應用程式必須位於v7版本編號>21.1或v8</li><li>報文傳送吞吐量</li><ul><li>Campaign v7 — 每小時最多5萬</li><li>Campaign v8 — 每小時最多100萬</li><li>Campaign Standard — 每小時最多5萬</li></ul><li>不執行限制，因此使用案例需要企業架構師的技術審查</li><li>不支援在Campaign傳送的訊息中使用決策管理</li></ul> |
 
 <br>
 
@@ -53,15 +53,15 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 
 Adobe Experience Platform
 
-* 必須先在系統中配置架構和資料集，然後才能配置Journey Optimizer資料源
-* 對於基於經驗事件類的架構，當希望觸發的事件不是基於規則的事件時，添加「業務流程事件ID」欄位組
-* 對於基於單個配置檔案類的架構，添加「配置檔案test詳細資訊」欄位組，以便能夠載入test配置檔案以與Journey Optimizer一起使用
+* 必須先在系統中設定結構和資料集，才能設定Journey Optimizer資料來源
+* 如果您想要觸發非規則型事件的事件，則針對體驗事件類別型結構新增「Orchestration eventID」欄位群組
+* 針對個別設定檔類別型結構，新增「設定檔測試詳細資料」欄位群組，以便載入測試設定檔以與Journey Optimizer搭配使用
 
 電子郵件
 
-* 必須準備好子域以用於消息發送
-* 子域可以完全委託給Adobe（推薦），也可以使用CNAME指向特定於Adobe的DNS伺服器（自定義）
-* 每個子域都需要GoogleTXT記錄，以確保良好的可交付性
+* 必須有子網域準備好用於訊息傳送
+* 子網域可以完全委派給Adobe（建議），或CNAME可用來指向Adobe特定的DNS伺服器（自訂）
+* 每個子網域都需要Google TXT記錄，以確保良好的傳遞能力
 
 行動裝置推送
 
@@ -74,30 +74,30 @@ Adobe Experience Platform
 
 [Journey Optimizer護欄產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=en)
 
-請注意上述連結中未列出的這些內容：
+請注意上述連結中未列出的這些：
 
 * 批次區段 — 需要確保您瞭解符合資格使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
 * 串流區段 — 需要確保個人資料資格的初始高載可隨每個歷程及所有歷程中符合資格的每日串流流量一起處理
-* 僅在消息中本機支援決策管理（無自定義操作）
-* 支援的消息類型：
+* 僅在報文中本機支援「決策管理」（無自定義操作）
+* 支援的訊息類型：
    * 電子郵件
    * 推送 (FCM / APNS)
-   * 自定義操作（通過Rest API）
-* 與第三方系統的出站整合
+   * 自訂動作（透過Rest API）
+* 傳出整合至第三方系統
    * 不支援單個靜態IP，因為我們的基礎架構是多租戶（必須允許列出所有資料中心IP）
-   * 自定義操作僅支援POST和PUT方法
-   * 通過用戶/通過或授權令牌進行身份驗證
-* 無法將Adobe Experience Platform或Journey Optimizer的各個部件包裝和在各種沙箱之間移動。 必須在新環境中重新實施
+   * 自訂動作僅支援POST和PUT方法
+   * 透過使用者/通過或授權Token進行驗證
+* 無法在各種沙箱之間封裝及移動Adobe Experience Platform或Journey Optimizer的個別元件。 必須在新環境中重新實作
 
 ### 資料擷取護欄
 
-<img src="assets/aep-data-ingestion-details-latency.svg" alt="參考建築Journey Optimizer藍圖" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/aep-data-ingestion-details-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 <br>
 
 ### 激活護欄
 
-<img src="assets/ajo-activation-details-latency.svg" alt="參考建築Journey Optimizer藍圖" style="width:80%; border:1px solid #4a4a4a" />
+<img src="assets/ajo-activation-details-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:80%; border:1px solid #4a4a4a" />
 
 <br>
 
@@ -118,7 +118,7 @@ Adobe Experience Platform
 1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 1. 為[!UICONTROL 即時客戶個人資料]的不同檢視[設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant) (可選)。
-1. 為行程使用建立段。
+1. 建立歷程使用情形的區段。
 
 #### 來源 / 目標
 
@@ -126,26 +126,26 @@ Adobe Experience Platform
 
 ### Journey Optimizer
 
-1. 配置Experience Platform資料源並確定快取哪些欄位作為配置檔案的一部分流資料用於啟動客戶行程必須先在Journey Optimizer內配置流資料，才能獲取業務流程ID。 此業務流程ID隨後將提供給開發人員以用於接收
+1. 設定Experience Platform資料來源，並決定在設定檔中應快取哪些欄位。串流資料是用來起始客戶歷程，必須先在Journey Optimizer中設定，才能取得協調ID。 然後，系統會將此協調ID提供給開發人員，以便用於擷取
 1. 設定外部資料來源。
 1. 設定自訂動作。
 
-### 移動推送配置
+### 行動推送設定
 
-1. 實施Experience PlatformMobile SDK以收集推送令牌和登錄資訊，以將其與已知客戶配置檔案綁定
-1. 利用Adobe標籤並建立具有以下副檔名的移動屬性：
+1. 實作Experience PlatformMobile SDK以收集推送代號和登入資訊，以系結回已知的客戶設定檔
+1. 運用Adobe標籤，並使用下列擴充功能建立行動屬性：
 1. Adobe Journey Optimizer
 1. Adobe Experience Platform Edge Network
 1. 身分 邊緣網路
 1. 行動裝置核心
-1. 確保您有專用資料流用於移動應用部署與Web部署
-1. 有關詳細資訊，請遵循 [Adobe Journey Optimizer移動指南](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
+1. 針對行動應用程式部署與網頁部署，確保您擁有專屬的資料流
+1. 如需詳細資訊，請參閱 [Adobe Journey Optimizer Mobile指南](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
 
 
 ## 相關文件
 
-* [Experience Platform文檔](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-* [Experience Platform標籤文檔](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
+* [Experience Platform檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
+* [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
 * [Experience Platform Mobile SDK 文件](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
 * [Journey Optimizer 文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=en)
 * [Journey Optimizer產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
