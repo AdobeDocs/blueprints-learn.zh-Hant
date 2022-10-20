@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 6901596cbb661ffa8cf57c6ae958db1978bf1520
+source-git-commit: 4ada1c55ea67a2d723050a2c72b4ab02c9394660
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '249'
+ht-degree: 43%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 0%
 + 垂直行業藍圖{#vertical-blueprints}
    + [概覽](/help/blueprints/vertical-blueprints/overview.md)
    + [服裝](/help/blueprints/vertical-blueprints/apparel.md)
+   + [醫療保健](/help/blueprints/vertical-blueprints/healthcare-vertical.md)
    + [零售](/help/blueprints/vertical-blueprints/retail.md)
    + [電信](/help/blueprints/vertical-blueprints/telecommunications.md)
    + [旅宿業](/help/blueprints/vertical-blueprints/travel-hospitality.md)
@@ -26,9 +27,10 @@ ht-degree: 0%
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform 與應用程式](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform 資料流程](/help/blueprints/experience-platform/platform-data-flow.md)
-   + 部署模式{#deployment}
+   + 部署{#deployment}
       + [Experience PlatformWeb SDK和邊緣網路](/help/blueprints/data-ingestion/websdk.md)
       + [應用程式SDK](/help/blueprints/data-ingestion/appsdk.md)
+      + [護欄](/help/blueprints/experience-platform/deployment/guardrails.md)
 + 對象與個人資料啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
    + [匿名對象啟用 (AAM)](/help/blueprints/audience-activation/anonymous.md)
