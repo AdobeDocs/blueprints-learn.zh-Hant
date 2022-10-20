@@ -3,9 +3,9 @@ title: 邊緣決策管理
 description: 跨管道（包括即時網路和行動體驗）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
+source-git-commit: 1c05a017e7729d2be676203c2bc06bddd5f9141a
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '853'
 ht-degree: 19%
 
 ---
@@ -64,13 +64,13 @@ Adobe Experience Platform
 
 ### 資料擷取護欄
 
-<img src="../assets/aep-data-ingestion-details-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### 激活護欄
 
-<img src="../assets/ajo-activation-details-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:80%; border:1px solid #4a4a4a" />
+<img src="../../experience-platform/assets/activation-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
