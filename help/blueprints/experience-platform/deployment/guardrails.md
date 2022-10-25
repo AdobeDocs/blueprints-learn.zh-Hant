@@ -3,10 +3,10 @@ title: Experience Platform和應用程式護欄
 description: 護欄定義了對Adobe Experience Platform和應用程式中的元件和服務的效能期望和影響
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: 8a53151558f4df9d2909d43d13bdbd800adbc79f
+source-git-commit: e75f8b39b52794b61c4efd33df1f658a6615a7b8
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 25%
+source-wordcount: '297'
+ht-degree: 24%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 25%
 [身分護欄](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
 
 [查詢服務護欄](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
+
+[目標激活護欄](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
 
 [Journey Optimizer護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en)
 
