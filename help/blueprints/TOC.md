@@ -5,9 +5,9 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 4ada1c55ea67a2d723050a2c72b4ab02c9394660
+source-git-commit: e7a640580038c547cf983956ed155099aa14b159
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 43%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 43%
 + 垂直行業藍圖{#vertical-blueprints}
    + [概覽](/help/blueprints/vertical-blueprints/overview.md)
    + [服裝](/help/blueprints/vertical-blueprints/apparel.md)
-   + [醫療保健](/help/blueprints/vertical-blueprints/healthcare-vertical.md)
    + [零售](/help/blueprints/vertical-blueprints/retail.md)
    + [電信](/help/blueprints/vertical-blueprints/telecommunications.md)
    + [旅宿業](/help/blueprints/vertical-blueprints/travel-hospitality.md)

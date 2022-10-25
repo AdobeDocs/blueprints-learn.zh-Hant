@@ -2,10 +2,10 @@
 title: Journey Optimizer與Adobe Campaign v7 Blueprint
 description: 示範Adobe Journey Optimizer如何與Adobe Campaign搭配使用，以利用Campaign中的即時訊息伺服器原生傳送訊息
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: 6901596cbb661ffa8cf57c6ae958db1978bf1520
+source-git-commit: a74ef566bf468c5508263f4070beaf6d0cd73a0e
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 23%
+source-wordcount: '975'
+ht-degree: 24%
 
 ---
 
@@ -68,16 +68,14 @@ ht-degree: 23%
 ### 促銷活動(v7)
 
 * 消息中心的執行實例必須由Adobe管理Cloud Services托管
-* 需要位於v7版本>21.1或v8
+* 必須位於v7版本編號>21.1
 * 報文傳送吞吐量
    * AC(v7)每小時5萬
-   * AC(v8)每小時最多1M（基於包）
 * AC(v7)僅支援事件起始歷程的
    * 未起始歷程的區段或區段成員資格
    * 由於可傳送至執行例項的數量，不支援閱讀對象和業務事件型歷程
-* AC(v7)或AC(v8)均不支援報文中的「決策管理」
+* AC(v7)不支援報文中的「決策管理」
 * 未對Campaign進行傳出API呼叫限制
-* 有了Campaign v8.4，您就可以在Experience Platform中運用Adobe Campaign Managed Services Source Connector，將傳送和追蹤事件從Campaign同步至Experience Platform。 如需詳細資訊，請參閱來源連接器檔案。 [連結](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
 
 <br>
 
@@ -114,8 +112,7 @@ ht-degree: 23%
 ### Campaign v7
 
 * 傳訊範本必須以適當的個人化內容來設定
-* 針對Campaign standard — 匯出工作流程需要設定，以將交易式訊息記錄檔匯出回Experience Platform。 建議最多每4小時執行一次。
-* 若使用Campaign v8.4，可在Experience Platform中運用Adobe Campaign Managed Services來源連接器，將傳送和追蹤事件從Campaign同步至Experience Platform。 如需詳細資訊，請參閱來源連接器檔案。 [連結](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
+* 適用於Campaign v7 — 匯出工作流程需要設定，以將交易式訊息記錄檔匯出回Experience Platform。 建議最多每4小時執行一次。
 
 ### 行動推送設定（選用）
 
@@ -135,11 +132,6 @@ ht-degree: 23%
 
 ## 相關文件
 
-* [Experience Platform檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-* [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
-* [Experience Platform Mobile SDK 文件](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
 * [Journey Optimizer 文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=en)
 * [Journey Optimizer產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=en)
 * [Campaign v7檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
-* [Campaign Standard 文件](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant)
