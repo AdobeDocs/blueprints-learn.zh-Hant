@@ -5,9 +5,9 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: ad83e4e71f82d12b8aa2f3ef98a9614deb666a4c
+source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1389'
 ht-degree: 17%
 
 ---
@@ -34,8 +34,8 @@ ht-degree: 17%
 | 整合模式 | 功能 | 先決條件 |
 |---|---|---|
 | 對從Real-time Customer Data Platform共用至Target的Edge進行即時區段評估 | <ul><li>在Edge上即時評估相同或下一頁個人化的對象。</li><li>此外，以串流或批次方式評估的任何區段也會投影至邊緣網路，以納入邊緣區段評估和個人化中。</li></ul> | <ul><li>必須實作Web/Mobile SDK，或使用邊緣網路伺服器API</li><li>必須在Experience Edge中設定資料流，並啟用Target和Experience Platform擴充功能</li><li>Target目的地必須在Real-time Customer Data Platform目的地中設定。</li><li>與Target整合需要與Experience Platform例項相同的IMS組織。</li></ul> |
-| 透過Edge方法將受眾從Real-time Customer Data Platform串流和批次共用至Target | <ul><li>透過邊緣網路將串流和批次對象從Real-time Customer Data Platform共用至Target。 即時評估的對象需要WebSDK和邊緣網路實作。</li></ul> | <ul><li>將串流和批次對象共用至Target並不需要Web/Mobile SDK，不過需要Web/Mobile SDK才能進行即時邊緣區段評估。</li><li>如果使用AT.js，則僅支援針對ECID身分命名空間的設定檔整合。</li><li>在Edge上進行自訂身分命名空間查閱時，需要部署WebSDK/Edge API，且每個身分必須在身分對應中設定為身分。</li><li>Target目的地必須在Real-time Customer Data Platform目的地中設定，僅支援RTCDP中的生產沙箱。</li><li>與Target整合需要與Experience Platform例項相同的IMS組織。</li></ul> |
-| 透過受眾共用服務方法，從Real-time Customer Data Platform串流和批次共用受眾至Target和Audience Manager | <ul><li>當需要從第三方資料和Audience Manager中的對象進行額外擴充時，可運用此整合模式。</li></ul> | <ul><li>將串流和批次對象共用至Target並不需要Web/Mobile SDK，不過需要Web/Mobile SDK才能進行即時邊緣區段評估。</li><li>如果使用AT.js，則僅支援針對ECID身分命名空間的設定檔整合。</li><li>在Edge上進行自訂身分命名空間查閱時，需要部署WebSDK/Edge API，且每個身分必須在身分對應中設定為身分。</li><li>必須透過受眾共用服務布建受眾投影。</li><li>與Target整合需要與Experience Platform例項相同的IMS組織。</li><li>只有來自prod沙箱的受眾支援受眾共用核心服務。</li></ul> |
+| 透過Edge方法將受眾從Real-time Customer Data Platform串流和批次共用至Target | <ul><li>透過邊緣網路將串流和批次對象從Real-time Customer Data Platform共用至Target。 即時評估的對象需要WebSDK和邊緣網路實作。</li></ul> | <ul><li>將串流和批次RTCDP對象共用至Target時，不需要Target的Web/Mobile SDK或Edge API實作，不過需要進行上述的即時邊緣區段評估。</li><li>如果使用AT.js，則僅支援針對ECID身分命名空間的設定檔整合。</li><li>在Edge上進行自訂身分命名空間查閱時，需要部署WebSDK/Edge API，且每個身分必須在身分對應中設定為身分。</li><li>Target目的地必須在Real-time Customer Data Platform目的地中設定，僅支援RTCDP中的預設生產沙箱。</li><li>與Target整合需要與Experience Platform例項相同的IMS組織。</li></ul> |
+| 透過受眾共用服務方法，從Real-time Customer Data Platform串流和批次共用受眾至Target和Audience Manager | <ul><li>當需要從第三方資料和Audience Manager中的對象進行額外擴充時，可運用此整合模式。</li></ul> | <ul><li>將串流和批次對象共用至Target並不需要Web/Mobile SDK，不過需要Web/Mobile SDK才能進行即時邊緣區段評估。</li><li>如果使用AT.js，則僅支援針對ECID身分命名空間的設定檔整合。</li><li>在Edge上進行自訂身分命名空間查閱時，需要部署WebSDK/Edge API，且每個身分必須在身分對應中設定為身分。</li><li>必須透過受眾共用服務布建受眾投影。</li><li>與Target整合需要與Experience Platform例項相同的IMS組織。</li><li>只有來自預設生產沙箱的對象才支援對象共用核心服務。</li></ul> |
 
 ## 即時、串流和批次受眾共用至Adobe Target
 
