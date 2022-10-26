@@ -3,7 +3,7 @@ title: Experience Platform和應用程式護欄
 description: 護欄定義了對Adobe Experience Platform和應用程式中的元件和服務的效能期望和影響
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: e75f8b39b52794b61c4efd33df1f658a6615a7b8
+source-git-commit: e22c01fb768eed22d71748fd1e5bd8d3bc25068c
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 24%
@@ -13,7 +13,7 @@ ht-degree: 24%
 
 # 護欄
 
-護欄是建議的閾值，可為資料和系統使用提供指導、優化效能，以及避免在Adobe Experience Platform和應用程式中出現錯誤或意外結果。 護欄旨在反映系統約束和效能期望，以便於客戶架構和使用案例效能優化。 護欄不是服務級別協定，有關特定產品服務級別協定的資訊，請參閱以下連結的產品說明文檔。
+護欄是建議的閾值，可為資料和系統使用提供指導、優化效能，以及避免在Adobe Experience Platform和應用程式中出現錯誤或意外結果。 護欄旨在反映系統約束和效能期望，以促進客戶架構和使用案例效能優化。 護欄不是服務級別協定，有關特定產品服務級別協定的資訊，請參閱以下連結的產品說明文檔。
 
 
 ## Adobe Experience Platform和應用程式的護欄
