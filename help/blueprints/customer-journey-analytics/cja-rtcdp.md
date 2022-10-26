@@ -1,31 +1,34 @@
 ---
 title: Customer Journey AnalyticsReal-time Customer Data Platform
-description: 在Customer Journey Analytics中統一和分析資料和客戶行為，發佈從CJA到RTCDP的受眾
+description: 在Customer Journey Analytics中統一和分析客戶歷程中的資料和客戶行為，從CJA發佈受眾到RTCDP
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
-source-git-commit: 8a252e0f061bddb14ce1a21b49137a22fdf700da
+exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
+source-git-commit: d47efe9bb7d19a745e0d75d21a09cb87912bd60b
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 22%
+source-wordcount: '189'
+ht-degree: 20%
 
 ---
 
 # Customer Journey AnalyticsReal-time Customer Data Platform
 
-建立並發佈在Adobe Experience Platform的Customer Journey Analytics(CJA)中確定的客戶群，以便客戶定位和個性化。 非常適合於使用歷史資料或通過Customer Journey Analytics中的精細篩選和計算欄位來更精細的受眾建立受眾。
+建立Customer Journey Analytics(CJA)中識別的對象，並將其發佈至Adobe Experience Platform中的「即時客戶設定檔」，以便鎖定客戶並個人化。 非常適合使用歷史資料建立對象，或透過精細篩選和運算欄位建立更完善的對象(Customer Journey Analytics)。
 
-## Customer Journey Analytics受眾發佈指南
+## Customer Journey Analytics對象發佈指南
 
-請參閱以下檔案，瞭解從Customer Journey Analytics到Real-time Customer Data Platform的受眾的實施和配置指南。 [文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
+請參閱下列檔案，以取得從Customer Journey Analytics發佈至Real-time Customer Data Platform之對象的實作與設定指引。 [文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
 
 ## Customer Journey Analytics藍圖體系結構
 
-![體系結構圖](assets/CJA_RTCDP.svg)
+![架構圖](assets/CJA_RTCDP.svg)
 
-## Customer Journey Analytics藍圖的護欄圖
+## Customer Journey Analytics藍圖護欄圖
 
-![護欄圖](assets/cja_guardrails.svg)
+* 有關詳細的護欄和端到端延遲，請參閱 [部署護欄文檔](../experience-platform/deployment/guardrails.md)
+
+![護欄圖](../experience-platform/assets/CJA_guardrails.svg)
 
 ## 相關部落格貼文
 

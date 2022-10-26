@@ -1,21 +1,21 @@
 ---
-title: 已知客戶激活
+title: 已知客戶啟用
 description: 線上/離線對象啟用。
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 69%
+source-wordcount: '568'
+ht-degree: 68%
 
 ---
 
-# 已知客戶激活藍圖
+# 已知客戶啟用Blueprint
 
 使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。
 
-擴展的具有內置治理控制的標識符提供了更多與已知客戶溝通的機會。 啟用對象至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。
+具有內建控管控制的擴充識別碼可提供更多與已知客戶通訊的機會。 啟用對象至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。
 
 其他詳細資料在[對象與個人資料啟用中提供，其中 Experience Cloud 應用程式 Blueprint](platform-and-applications.md) 特定於 Experience Platform 與 Experience Cloud 應用程式之間的互動。
 
@@ -28,25 +28,25 @@ ht-degree: 69%
 ## 應用程式
 
 * [!UICONTROL 即時客戶資料平台]
-* 基於Audience Manager的目的地還可用於基於人員的Facebook、LinkedIn和Google客戶匹配活動。
+* Audience Manager以人物為基礎的目的地也可用於以人物為基礎的Facebook、LinkedIn和Google客戶比對的啟動。
 
 ## 架構
 
-### 已知客戶激活(通過Real-time Customer Data Platform)
+### 透過Real-time Customer Data Platform啟用已知客戶
 
-<img src="assets/known_activation.svg" alt="已知客戶激活藍圖的參考體系結構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="已知客戶啟動Blueprint的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 <br>
 
-### 通過基於Audience Manager人的目的地激活已知客戶
+### 透過以Audience Manager人為基礎的目的地啟動已知客戶
 
-<img src="assets/AAM_PBD.svg" alt="已知客戶激活藍圖的參考體系結構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/AAM_PBD.svg" alt="已知客戶啟動Blueprint的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 <br>
 
 ## 護欄
 
-[請參閱「受眾和配置檔案激活概述」頁上概述的護欄](overview.md)。
+[請參閱對象和設定檔啟用概述頁面上概述的護欄](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/overview.html?lang=en#guardrails-for-audience-and-profile-activation-blueprints).
 
-## Real-time Customer Data Platform實施步驟
+## 適用於Real-time Customer Data Platform的實作步驟
 
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
@@ -61,13 +61,13 @@ ht-degree: 69%
 
 * 分享個人資料資料到目標需要您在目標負載中包含目標使用的特定身份值。對目標必要的任何身份必須擷取到 Platform，並且設定為[!UICONTROL 即時客戶個人資料]的身份。
 
-* 查看 [使用Experience Cloud應用程式藍圖激活受眾和配置檔案](platform-and-applications.md) 有關分享從Real-time Customer Data Platform到Audience Manager、分析、目標、活動和Journey Optimizer的受眾的更多詳細資訊。
+* 請參閱 [透過Experience Cloud應用程式啟動受眾和設定檔Blueprint](platform-and-applications.md) 如需從Real-time Customer Data Platform共用受眾至Audience Manager、Analytics、Target、Campaign和Journey Optimizer的其他詳細資訊。
 
-## 基於人員的目標的Audience Manager實施步驟
+## 以Audience Manager人物為基礎的目的地的實作步驟
 
-* 有關實施Audience Manager的詳細資訊，請參閱以下 [文檔](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)。
+* 如需實作Audience Manager的詳細資訊，請參閱下列 [檔案](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant).
 
-* 有關在Audience Manager中實施基於人員的目標的詳細資訊，請參閱以下 [文檔](https://experienceleague.adobe.com/docs/audience-manager/user-guide/faqs/faq-people-based-destinations.html)。
+* 如需在Audience Manager中實作People Based Destinations的詳細資訊，請參閱下列內容 [檔案](https://experienceleague.adobe.com/docs/audience-manager/user-guide/faqs/faq-people-based-destinations.html).
 
 ## 相關文件
 
