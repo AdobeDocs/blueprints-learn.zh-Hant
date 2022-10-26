@@ -3,10 +3,10 @@ title: Experience Platform和應用程式護欄
 description: 護欄定義了對Adobe Experience Platform和應用程式中的元件和服務的效能期望和影響
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: e22c01fb768eed22d71748fd1e5bd8d3bc25068c
+source-git-commit: f618f3be083e15ebd0a00fcb242bd2ca07798272
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 24%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,15 +38,19 @@ ht-degree: 24%
 
 ### 資料擷取
 
-下圖說明了將資料擷取至 Adobe Experience Platform 的平均效能護欄和延遲。
-
 <img src="../assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" />
+
+<br>
+
+### 區段
+
+<img src="../assets/segmentation_guardrails.svg" alt="Experience Platform分段護欄" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Journey Optimizer
 
-<img src="../assets/activation-latency.svg" alt="參考架構Journey Optimizer Blueprint" style="width:85%; border:1px solid #4a4a4a" />
+<img src="../assets/AJO_guardrails.svg" alt="參考架構Journey Optimizer Blueprint" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
