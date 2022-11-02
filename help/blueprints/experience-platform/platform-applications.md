@@ -5,10 +5,10 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 83f1f5e0e508d35d6711710cdb4d367f67e4f715
+source-git-commit: 79e349d8b8dcb1626cccfff2ad56160bb9babd76
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 58%
+source-wordcount: '987'
+ht-degree: 51%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 58%
 <td>Analytics</td>
 <td>
 <ul>
-<li>目前無整合</li>
+<li>透過Web/Mobile SDK收集的資料可轉送至Adobe Analytics。</li>
 </ul>
 </td>
 <td>
@@ -89,7 +89,7 @@ ht-degree: 58%
 </td>
 <td>
 <ul>
-<li>收集的資料和評估的對象會籍可以共用至 Experience Platform 資料湖和個人資料儲存區。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a></li>
+<li>從Audience Manager收集和評估的資料，以及對象成員資格，可以與Experience Platform資料湖和設定檔存放區共用。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a></li>
 </ul>
 </td>
 <td>
@@ -141,6 +141,9 @@ ht-degree: 58%
 <td colspan="1">
 <ul>
 <li>收集並擷取至 Experience Platform 資料湖的資料可供處理 Customer Journey Analytics。 </li>
+<li>可將Real-time Customer Data Platform的設定檔和對象資料擷取至CJA。 <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en">RTCDP與CJA整合</a>.
+</li>
+</ul>
 </ul>
 </td>
 <td colspan="1">
@@ -191,15 +194,15 @@ ht-degree: 58%
 </td>
 </tr>
 <tr>
-<td colspan="1">Magento</td>
+<td colspan="1">Adobe Commerce</td>
 <td colspan="1">
 <ul>
-<li>目前無整合</li>
+<li>Real-time Customer Data Platform中建置的設定檔和對象可在Adobe Commerce中供個人化使用。 </li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>Magento原生的資料可透過Magento來源連接器傳送至Experience Platform。 </li>
+<li>Adobe Commerce原生的資料可透過Adobe Commerce來源連接器傳送至Experience Platform。 </li>
 </ul>
 </td>
 <td colspan="1">目前無整合</td>
@@ -218,7 +221,7 @@ ht-degree: 58%
 </td>
 <td colspan="1">
 <ul>
-<li>B2B Activation - 開發中</li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=en">B2B啟動Blueprint</a></li>
 </ul>
 </td>
 </tr>
