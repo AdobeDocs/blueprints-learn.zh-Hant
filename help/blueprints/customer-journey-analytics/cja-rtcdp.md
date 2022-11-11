@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
-source-git-commit: d47efe9bb7d19a745e0d75d21a09cb87912bd60b
+source-git-commit: 985f7320db7c77b8541ec4ef76b1eb7ad0caae56
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 20%
+source-wordcount: '392'
+ht-degree: 9%
 
 ---
 
@@ -29,6 +29,18 @@ ht-degree: 20%
 * 有關詳細的護欄和端到端延遲，請參閱 [部署護欄文檔](../experience-platform/deployment/guardrails.md)
 
 ![護欄圖](../experience-platform/assets/CJA_guardrails.svg)
+
+## 常見問題
+
+* 如果CJA傳送的RTCDP中不存在對應的設定檔，會建立新的設定檔，還是只有已存在設定檔的對象會從CJA記錄？ 是，將會建立新的設定檔。 因此，如果您的RTCDP實作僅針對已知客戶，則應編寫CJA對象規則，以僅篩選具有已知身分的設定檔。 如果不需要，這將確保RTCDP設定檔計數不會從匿名設定檔中增加。
+
+* CJA會以管道事件或也會前往資料湖的一般檔案形式傳送對象資料嗎？ CJA受眾會透過管道串流至RTCDP設定檔服務，但資料也會以資料集的形式儲存在Data Lake中。
+
+* CJA會傳送哪些身分識別？ CJA會在CJA設定期間傳送任何已設為「人員ID」的身分識別。
+
+* 主要身分設定為什麼？ 將CJA設為主要「人員」ID時，使用者所選取的任何身分。
+
+* Identity Service是否也會處理CJA訊息？ 亦即CJA可以透過受眾共用，將身分新增至設定檔身分圖表嗎？ 否，身分識別服務不會處理CJA訊息。
 
 ## 相關部落格貼文
 

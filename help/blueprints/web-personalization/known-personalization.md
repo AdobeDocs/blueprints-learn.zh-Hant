@@ -5,10 +5,10 @@ landing-page-description: 同步網路個人化與電子郵件及其他已知和
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: 87679928d2bfcfe74c85bb054341c662999e52a5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 17%
+source-wordcount: '1625'
+ht-degree: 15%
 
 ---
 
@@ -82,13 +82,17 @@ ht-degree: 17%
 
 [請參閱「網路與行動個人化 Blueprints」概觀頁面所述的護欄。](overview.md)
 
+* 邊緣設定檔僅會在使用者於邊緣處於作用中狀態時建立，亦即其設定檔會透過Web/Mobile SDK或邊緣伺服器API將串流事件提交至邊緣。 這通常對應於在網站或行動應用程式上處於作用中狀態的使用者。
+* 邊緣設定檔的預設存留時間為14天。 如果使用者尚未收集使用中的邊緣事件，則設定檔閒置14天後會在邊緣過期。 設定檔在集線器中將保持有效，並且當使用者再次在邊緣上變為活動狀態時，會與邊緣同步。
+* 在邊緣上建立新的設定檔時，會非同步呼叫中樞，以擷取已透過目的地為邊緣投影設定的任何對象和屬性。 由於這是非同步程式，集線器配置檔案可能需要1秒到數分鐘的時間才能同步到邊緣。 因此，無法保證新設定檔具有來自第一頁體驗中樞的設定檔內容。 這同樣適用於新收集的資料到中樞。 此資料會以非同步方式投影至邊緣，因此資料到達適當邊緣的時間會與邊緣活動分開。 只有邊緣上作用中的設定檔才會保留從中樞投影的屬性和對象。
+
 ## 實施考量
 
 身分先決條件
 
 * 透過Edge網路和WebSDK使用上述實作模式1時，可運用任何主要身分。 首次登入個人化需要個人化請求設定的主要身分，與Real-time Customer Data Platform中設定檔的主要身分相符。 匿名裝置與已知客戶之間的身分識別拼接會在中樞進行處理，然後投影至邊緣。
 * 請注意，消費者造訪或登入網站之前上傳至中心的資料，將無法立即供個人化使用。 中心資料必須先有作用中的邊緣設定檔，才能同步至。 建立後，邊緣設定檔會以非同步方式與中樞設定檔同步，進而產生下一頁個人化。
-* 從Adobe Experience Platform共用受眾至Adobe Target時，若要使用上述整合第2和第3方所述的受眾共用服務，必須以ECID作為身分。
+* 從Adobe Experience Platform共用受眾至Adobe Target時，若要使用上述整合模式2和3所述的受眾共用服務，必須以ECID作為身分。
 * 替代身分也可用來透過Audience Manager與Adobe Target共用Experience Platform對象。 Experience Platform會透過下列支援的命名空間啟用對象以Audience Manager:IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。 請注意，Audience Manager和Target會透過ECID身分識別解析受眾成員資格，因此消費者在身分圖中仍需要有ECID，才能最終分享至Adobe Target。
 
 ## 相關文件
