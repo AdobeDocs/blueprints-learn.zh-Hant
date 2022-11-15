@@ -3,9 +3,10 @@ title: 資料存取和匯出Blueprint
 description: 此Blueprint提供並概述可從Adobe Experience Platform和應用程式存取和匯出資料的所有方法。
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Tags
-source-git-commit: 67e66068bb8a2106dd8aa9784b5a39377225c045
+exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
+source-git-commit: c0fe0e94e30351f593e32ea0e6809dd832f976ad
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1513'
 ht-degree: 2%
 
 ---
@@ -50,7 +51,7 @@ Blueprint分為兩個類別，以從Experience Platform和應用程式存取資�
 
 * 即時客戶個人檔案 [護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) 的上界。
 * 專為一次單一設定檔查閱而設計。 不用於大量存取設定檔或下載整個設定檔母體，以用於分析或資料科學。
-* 設定檔查詢回應時間會貼上至設定檔護欄。 低延遲需求 — 例如針對相同頁面個人化需求，應使用邊緣設定檔或客戶個人化目的地，以低延遲設定檔存取。 [檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en).
+* 設定檔查詢回應時間會貼上至設定檔護欄。 即時低延遲需求 — 例如針對相同頁面個人化需求，應從到利用邊緣設定檔 [Adobe Target Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) 或 [自訂個人化連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en) 用於在瀏覽器和應用程式個人化中即時存取設定檔。
 
 ### 資料存取API {#data-access-api}
 
@@ -129,7 +130,7 @@ Blueprint分為兩個類別，以從Experience Platform和應用程式存取資�
 
 #### 使用案例
 
-* 啟用設定檔屬性資訊，包括對企業間資料存放區、分析工具、電子郵件系統或支援系統的對象成員資格。
+* 啟用設定檔屬性資訊，包括內部企業資料存放區、分析工具、電子郵件系統或支援系統的對象成員資格。
 * 為外部廣告供應商啟用設定檔對象成員資格，以定位並個人化設定檔的內容。
 
 #### 考量事項
@@ -154,13 +155,3 @@ Blueprint分為兩個類別，以從Experience Platform和應用程式存取資�
 * 您可以逐一對歷程中的每個事件或設定檔，以串流方式執行自訂動作。 無法跨客戶歷程執行大量作業或以檔案或匯總請求形式大量資料輸出。
 * 串流存取即時客戶設定檔屬性和體驗事件，可包含在啟用裝載中。
 * 在將事件傳送至外部目的地之前，可以篩選事件資料並套用簡單的對應轉換。
-
-
-
-
-
-
-
-
-
-
