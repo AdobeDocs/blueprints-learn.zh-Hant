@@ -3,13 +3,13 @@ title: Experience Platform和應用程式護欄
 description: 護欄定義了對Adobe Experience Platform和應用程式中的元件和服務的效能期望和影響
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
-source-git-commit: 24699f79ed4966a72f78138ad9dd9f3763674b4e
+exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
+source-git-commit: f208fcd938bfc12882421f213192a6888f546a79
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '307'
 ht-degree: 19%
 
 ---
-
 
 # 護欄
 
@@ -79,6 +79,8 @@ ht-degree: 19%
 [Experience Platform 情報](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 
 [Intelligent Services](https://helpx.adobe.com/legal/product-descriptions/intelligent-services.html)
+
+[資料Distiller](https://helpx.adobe.com/legal/product-descriptions/data-distiller.html)
 
 [Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html)
 
