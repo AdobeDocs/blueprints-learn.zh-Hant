@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: d952442d066ea99f5b089f85798129dd0e40daec
+source-git-commit: fd8dd3caee5cbf450c5f00266c74ccdef7cd1de9
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 44%
+source-wordcount: '262'
+ht-degree: 41%
 
 ---
 
@@ -79,6 +79,10 @@ ht-degree: 44%
    + [概覽](/help/blueprints/data-insights/overview.md)
    + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
    + [自訂資料科學以豐富個人資料](/help/blueprints/data-insights/data-science.md)
++ 使用Marketo和Workfront最佳化Campaign供應鏈{#optimize-campaign-supply-chain-with-marketo-and-workfront}
+   + [概覽](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/overview.md)
+   + [客戶成功案例](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/customer-success-stories.md)
+   + [Intang and Create](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/intake-and-create.md)
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化 - Target](/help/blueprints/web-personalization/behavioral.md)
