@@ -2,7 +2,7 @@
 description: 吸收和建立 — 使用Marketo和Workfront最佳化Campaign供應鏈
 title: Intang and Create
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: 2baa77bfe61abc1e4cf2aa9dbfe344f1b1e280ce
+source-git-commit: 52d71533a6d33cc35b5158007d9851dc880bc937
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要進一步了解Workfront中用於組織行銷活動工作的不同類型物件，以及其如何對應至Marketo Engage方案，請查看 [Marketo和Workfront概述](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/overview.md){target=&quot;_blank&quot;}。
+>若要進一步了解Workfront中用於組織行銷活動工作的不同類型物件，以及其如何對應至Marketo Engage方案，請查看 [Marketo和Workfront概述](/help/blueprints/b2b/campaign-supply-chain/overview.md){target=&quot;_blank&quot;}。
 
 ## 為自動化準備您的Campaign開發流程 {#prepare-your-campaign-development-process-for-automation}
 

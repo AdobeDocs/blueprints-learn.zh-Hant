@@ -2,7 +2,7 @@
 description: 概覽 — 使用Marketo和Workfront最佳化Campaign供應鏈
 title: 概覽
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: 2baa77bfe61abc1e4cf2aa9dbfe344f1b1e280ce
+source-git-commit: 52d71533a6d33cc35b5158007d9851dc880bc937
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 0%
@@ -147,7 +147,7 @@ Workfront專案可經過範本化，以便在每次執行特定行銷策略時�
 
 ### 開始使用Workfront Fusion、Workfront和Marketo Engage整合 {#getting-started-with-workfront-fusion}
 
-* [Intang and Create](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/intake-and-create.md){target=&quot;_blank&quot;} — 促銷活動開發自動化與Marketo Engage及Workfront
+* [Intang and Create](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md){target=&quot;_blank&quot;} — 促銷活動開發自動化與Marketo Engage及Workfront
 
 * 證明並核准（即將推出）
 
