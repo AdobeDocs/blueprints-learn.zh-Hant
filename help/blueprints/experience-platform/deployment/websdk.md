@@ -5,9 +5,9 @@ solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: e07ff74f901932c42ddaf6cb36b557535b9a2c43
+source-git-commit: 0b0f77eaf903f592993ed8f4abe29827b733c769
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 如需Web和Mobile SDK以及邊緣網路伺服器API的概述和詳細資訊，請參閱下列內容。
 * [WebSDK概述](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hant)
-* [MobileSDK概述](https://aep-sdks.gitbook.io/docs/)
+* [MobileSDK概述](https://developer.adobe.com/client-sdks/documentation/)
 * [邊緣網路伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 如需WebSDK支援哪些應用程式功能的詳細概述，請參閱下列檔案。
