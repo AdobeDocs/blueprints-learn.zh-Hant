@@ -2,7 +2,7 @@
 description: 吸收和建立 — 使用Marketo和Workfront最佳化Campaign供應鏈
 title: Intang and Create
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: 52d71533a6d33cc35b5158007d9851dc880bc937
+source-git-commit: c33790d001c98628fcaa57f0ef8ebf449adb8af2
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -157,4 +157,4 @@ ht-degree: 0%
 
 * [Adobe Workfront模組](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target=&quot;_blank&quot;}
 
-* [Marketo和Workfront概述](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/overview.md){target=&quot;_blank&quot;}
+* [Marketo和Workfront概述](/help/blueprints/b2b/campaign-supply-chain/overview.md){target=&quot;_blank&quot;}
