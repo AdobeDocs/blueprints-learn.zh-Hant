@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: e07ff74f901932c42ddaf6cb36b557535b9a2c43
+source-git-commit: 2baa77bfe61abc1e4cf2aa9dbfe344f1b1e280ce
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 41%
+source-wordcount: '261'
+ht-degree: 42%
 
 ---
 
@@ -45,6 +45,10 @@ ht-degree: 41%
 + B2B啟動與行銷{#b2b-activation}
    + [概覽](/help/blueprints/b2b/overview.md)
    + [B2B啟動](/help/blueprints/b2b/b2bactivation.md)
+   + Campaign供應鏈及Marketo和Workfront{#optimize-campaign-supply-chain-with-marketo-and-workfront}
+      + [概覽](/help/blueprints/b2b/campaign-supply-chain/overview.md)
+      + [客戶成功案例](/help/blueprints/b2b/campaign-supply-chain/customer-success-stories.md)
+      + [Intang and Create](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
    + [共用CJA受眾至RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
@@ -79,10 +83,6 @@ ht-degree: 41%
    + [概覽](/help/blueprints/data-insights/overview.md)
    + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
    + [自訂資料科學以豐富個人資料](/help/blueprints/data-insights/data-science.md)
-+ 使用Marketo和Workfront最佳化Campaign供應鏈{#optimize-campaign-supply-chain-with-marketo-and-workfront}
-   + [概覽](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/overview.md)
-   + [客戶成功案例](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/customer-success-stories.md)
-   + [Intang and Create](/help/blueprints/optimize-campaign-supply-chain-with-marketo-and-workfront/intake-and-create.md)
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
    + [行為個人化 - Target](/help/blueprints/web-personalization/behavioral.md)
