@@ -5,7 +5,7 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 2baa77bfe61abc1e4cf2aa9dbfe344f1b1e280ce
+source-git-commit: af390011dc068c4289f98d7fc0108ce48a5375c7
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 42%
@@ -47,8 +47,8 @@ ht-degree: 42%
    + [B2B啟動](/help/blueprints/b2b/b2bactivation.md)
    + Campaign供應鏈及Marketo和Workfront{#optimize-campaign-supply-chain-with-marketo-and-workfront}
       + [概覽](/help/blueprints/b2b/campaign-supply-chain/overview.md)
-      + [客戶成功案例](/help/blueprints/b2b/campaign-supply-chain/customer-success-stories.md)
       + [Intang and Create](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md)
+      + [客戶成功案例](/help/blueprints/b2b/campaign-supply-chain/customer-success-stories.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
    + [共用CJA受眾至RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
