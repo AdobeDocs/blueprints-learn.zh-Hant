@@ -5,7 +5,7 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: fd8dd3caee5cbf450c5f00266c74ccdef7cd1de9
+source-git-commit: e07ff74f901932c42ddaf6cb36b557535b9a2c43
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 41%
@@ -27,8 +27,8 @@ ht-degree: 41%
    + [Experience Platform 與應用程式](/help/blueprints/experience-platform/platform-applications.md)
    + [Experience Platform 資料流程](/help/blueprints/experience-platform/platform-data-flow.md)
    + 部署{#deployment}
-      + [Experience PlatformWeb SDK和邊緣網路](/help/blueprints/data-ingestion/websdk.md)
-      + [應用程式SDK](/help/blueprints/data-ingestion/appsdk.md)
+      + [Experience PlatformWeb SDK和邊緣網路](/help/blueprints/experience-platform/deployment/websdk.md)
+      + [應用程式SDK](/help/blueprints/experience-platform/deployment/appsdk.md)
       + [護欄](/help/blueprints/experience-platform/deployment/guardrails.md)
 + 對象與個人資料啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
