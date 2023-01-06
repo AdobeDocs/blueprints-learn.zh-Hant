@@ -1,8 +1,8 @@
 ---
-source-git-commit: f323d2deee5547abd0ccc8247a23ac7a144b2f07
+source-git-commit: b8709e01d7771ac9002fbc286c2d9709ef3d0ca2
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # 貢獻
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 貢獻者指南文件
 
-請參閱[貢獻者指南](https://docs.adobe.com/content/help/zh-Hant/contributor/contributor-guide/introduction.html)。
+請參閱[貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 有疑問嗎？
 
