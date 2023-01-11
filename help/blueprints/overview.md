@@ -31,7 +31,7 @@ ht-degree: 81%
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=zh-Hant"><img alt="觸發的訊息與 Experience Platform Blueprint 的縮圖影像" src="customer-journeys/assets/ajo-architecture.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html"><strong>跨管道協調</strong></a></div>
+    <div><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=zh-Hant"><strong>跨管道協調</strong></a></div>
     <p><em>使用[!UICONTROL Platform]作為中心，即時傳送訊息並影響客戶體驗。</em></p>
   </td>
   <td>
