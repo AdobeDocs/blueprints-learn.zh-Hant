@@ -1,31 +1,39 @@
 ---
-title: 數位體驗 Blueprint
-description: 數位體驗 Blueprint 為可重複的實施，用於執行策略和解決既有的企業問題。可加速創造價值，提供快速的成功路徑。
+title: 數位體驗藍圖
+description: 數位體驗藍圖是可重複的實作，可解決策略並解決已建立的業務問題。 可加速創造價值，提供快速的成功路徑。
+doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 5f35c36d3ef426396aadf0292e291d7738520032
+source-git-commit: f60a787630d68388fc4887f3df1756528fca446d
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 81%
+ht-degree: 58%
 
 ---
 
-# 數位體驗 Blueprint
+# 數位體驗藍圖
 
-數位體驗 Blueprint 為可重複的實施，用於執行策略和快速解決既有的企業問題。每個 Blueprint 提供一系列成品，以說明高價值企業問題、架構、實施步驟、技術考量以及相關文件的連結。
+數位體驗藍圖是可重複的實施，可讓您解決策略並快速解決既定的業務問題。 每個 Blueprint 提供一系列成品，以說明高價值企業問題、架構、實施步驟、技術考量以及相關文件的連結。
+
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
 
 ## 新增功能
 
-* **[對象與個人資料啟用至企業目標 Blueprint](/help/blueprints/audience-activation/enterprise-destinations.md)**
+* **[企業Blueprint目標的受眾和設定檔啟用](/help/blueprints/audience-activation/enterprise-destinations.md)**
 
    *讓所有系統的客戶個人資料保持最新狀態，支援銷售和支援團隊。*
-* **[客戶活動中心 Blueprint](/help/blueprints/audience-activation/customer-activity.md)**
+* **[客戶活動中心藍圖](/help/blueprints/audience-activation/customer-activity.md)**
 
    *提供代理協助的支援及銷售之內容。*
-* **[資料分析與情報 Blueprint](/help/blueprints/data-insights/analysis.md)**
+* **[資料分析與智慧藍圖](/help/blueprints/data-insights/analysis.md)**
 
    *提供資料湖中資料的說明性查詢與分析。*
 
-## 重要 Blueprint
+## 精選藍圖
 
 <table style="table-layout:fixed">
 <tr>
@@ -49,7 +57,7 @@ ht-degree: 81%
 
 ## 部落格貼文
 
-* [[!DNL Introducing Adobe Experience Platform’s New Digital Experience Blueprints]](https://medium.com/adobetech/introducing-adobe-experience-platforms-new-digital-experience-blueprints-93a6b5f5da7c)
+* [[!DNL Introducing Adobe Experience Platform's New Digital Experience Blueprints]](https://medium.com/adobetech/introducing-adobe-experience-platforms-new-digital-experience-blueprints-93a6b5f5da7c)
 * [[!DNL Blueprint for Audience Activation in Adobe Experience Platform]](https://medium.com/adobetech/a-blueprint-for-audience-activation-in-adobe-experience-platform-b2b30fae90fd)
 * [[!DNL Blueprint for Web/Mobile Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Blueprint for Cross-Channel Orchestration in Adobe Experience Platform]](https://medium.com/adobetech/blueprint-for-multi-channel-orchestration-in-adobe-experience-platform-c68317e94184)
