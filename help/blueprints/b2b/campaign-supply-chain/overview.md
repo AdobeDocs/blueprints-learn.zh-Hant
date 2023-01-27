@@ -1,15 +1,15 @@
 ---
-description: 概覽 — 使用Marketo和Workfront最佳化Campaign供應鏈
-title: 概覽
+title: 具有Marketo和Workfront藍圖的促銷活動供應鏈
+description: 概覽 — 使用Marketo和Workfront藍圖最佳化促銷活動供應鏈
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: 52d71533a6d33cc35b5158007d9851dc880bc937
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 概覽 {#overview}
+# 具有Marketo和Workfront藍圖的促銷活動供應鏈 {#overview}
 
 ## 利用優化的促銷活動供應鏈實現更快的上市時間 {#achieving-faster-time-to-market-with-optimized-campaign-supply-chain}
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 將多管道行銷啟動系統(Marketo Engage)與行銷規劃和記錄系統(Workfront)整合後，您就能提升行銷活動速度，並為相關人士提供更佳的可見度。
 
-有了Workfront Fusion，行銷營運團隊基本上可以消除將行銷簡報轉譯為行銷活動時容易出現錯誤的手動步驟。 Workfront Fusion提供Workfront與Marketo Engage之間的立即可用整合層，在系統之間開發工作流程時可提供彈性和效率。 您可以進一步了解如何設定整合，以及可以採取哪些動作來自動化工作流程 [此處](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target=&quot;_blank&quot;}。
+有了Workfront Fusion，行銷營運團隊基本上可以消除將行銷簡報轉譯為行銷活動時容易出現錯誤的手動步驟。 Workfront Fusion提供Workfront與Marketo Engage之間的立即可用整合層，在系統之間開發工作流程時可提供彈性和效率。 您可以進一步了解如何設定整合，以及可以採取哪些動作來自動化工作流程 [此處](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}.
 
 ## 行銷活動規劃至執行 — 自動化使用案例 {#campaign-planning-to-execution-automation-use-cases}
 
@@ -147,7 +147,7 @@ Workfront專案可經過範本化，以便在每次執行特定行銷策略時�
 
 ### 開始使用Workfront Fusion、Workfront和Marketo Engage整合 {#getting-started-with-workfront-fusion}
 
-* [Intang and Create](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md){target=&quot;_blank&quot;} — 促銷活動開發自動化與Marketo Engage及Workfront
+* [Intang and Create](/help/blueprints/b2b/campaign-supply-chain/intake-and-create.md){target="_blank"}  — 透過Marketo Engage和Workfront實現Campaign開發自動化
 
 * 證明並核准（即將推出）
 
@@ -155,10 +155,10 @@ Workfront專案可經過範本化，以便在每次執行特定行銷策略時�
 
 ### 管理Marketo Engage促銷活動名稱及其相關聯的URL {#managing-marketo-engage-campaign-names}
 
-標準化促銷活動和URL的命名慣例，是在Marketo Engage中準確管理方案的關鍵基礎，有助於在整個促銷活動供應鏈中推動更一致的流程。 若您想尋找相關工具，建議您查看一些免費開放原始碼工具，來自 [Adobe成功服務](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target=&quot;_blank&quot;}，可讓您建立一致的方法來建立和管理Marketo Engage促銷活動及其相關的URL。
+標準化促銷活動和URL的命名慣例，是在Marketo Engage中準確管理方案的關鍵基礎，有助於在整個促銷活動供應鏈中推動更一致的流程。 若您想尋找相關工具，建議您查看一些免費開放原始碼工具，來自 [Adobe成功服務](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"} 可讓您建立一致的方法來建立和管理Marketo Engage促銷活動及其相關的URL。
 
 ### 資源 {#resources}
 
-* [Workfront Fusion for Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target=&quot;_blank&quot;}
+* [Workfront Fusion for Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
 
-* [Workfront Fusion for Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target=&quot;_blank&quot;}
+* [Workfront Fusion for Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}

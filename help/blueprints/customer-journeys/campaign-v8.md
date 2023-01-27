@@ -1,16 +1,16 @@
 ---
-title: 促銷活動v8 Blueprint、促銷活動與AEP
+title: Campaign v8 Blueprint、Campaign與平台
 description: Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如電子郵件和直接郵件）而建置。 它提供強大的ETL和資料管理功能，以幫助策劃和組織完美的促銷活動。 其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。  此外，它還隨附可擴充的即時訊息伺服器，讓行銷團隊能根據來自任何IT系統的包含所有內容的裝載，傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
 solution: Campaign,Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: c79422931cb4305347a4034ae1cb6bac2be1e229
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 促銷活動v8 Blueprint
+# 促銷活動v8藍圖
 
 Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如電子郵件和直接郵件）而建置。 它提供強大的ETL和資料管理功能，以幫助策劃和組織完美的促銷活動。 其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。  此外，它還隨附可擴充的即時訊息伺服器，讓行銷團隊能根據來自任何IT系統的包含所有內容的裝載，傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
 
@@ -45,7 +45,7 @@ Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如
 ## 先決條件
 
 
-### 應用程式伺服器和即時消息伺服器
+### 應用伺服器和即時消息伺服器
 
 * 必須有Adobe Campaign用戶端主控台才能與Campaign v8軟體互動和使用。 它是基於Windows的客戶端，使用標準Internet協定（SOAP、HTTP等）。 請確定您的組織已啟用必要權限，以分發、安裝及執行軟體
 
@@ -62,7 +62,7 @@ Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如
 * 子網域可以完全委派給Adobe（建議），或CNAME可用來指向Adobe特定的DNS伺服器（自訂）
 * 每個子網域都需要Google TXT記錄，以確保良好的傳遞能力
 
-### 行動裝置推送
+### 行動推播
 
 * 讓行動開發人員可部署、設定和建置行動應用程式
 * Adobe僅提供SDK來收集來自FCM(Android)和APNS(iOS)以傳送訊息裝載至其伺服器的必要資訊。 客戶應負責如何對行動應用程式進行編碼、部署、管理和除錯
@@ -86,11 +86,11 @@ Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如
    * 透過API載入的資料會儲存在應用程式資料庫中，然後每小時複製到雲端資料庫
 * API呼叫以每秒15次或每天15萬次為上限
 
-### 批次傳訊伺服器大小調整
+### 批次報文傳送伺服器大小調整
 
 * 可擴展以處理每小時多達2000萬條報文
 
-### 即時消息伺服器大小調整
+### 即時報文傳送伺服器大小調整
 
 * 每小時最多可發送100萬條消息
 * 預設會布建兩個即時訊息伺服器。 能夠擴展至最多八個即時消息傳送伺服器。
@@ -114,12 +114,12 @@ Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如
 
 <br>
 
-## 實施步驟
+## 實作步驟
 
 請參閱快速入門手冊， [實作Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=en)
 
 
-## 相關文件
+## 相關檔案
 
 * [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=en)
 * [Campaign v8產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)

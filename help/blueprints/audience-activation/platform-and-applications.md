@@ -1,17 +1,17 @@
 ---
-title: 使用 Experience Cloud 應用程式的對象與個人資料啟用 Blueprint
+title: 透過Experience Cloud應用程式啟動受眾和設定檔藍圖
 description: 在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們。
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 6f10178e2d8d8877ec254e6ca83d1711fa4a82b0
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 39%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 使用 Experience Cloud 應用程式的對象與個人資料啟用 Blueprint
+# 透過Experience Cloud應用程式啟動受眾和設定檔藍圖
 
 在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們。在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們。
 
@@ -41,16 +41,16 @@ ht-degree: 39%
 
 請參閱 [Experience Platform和應用程式體系結構部分](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=zh-Hant) 以取得與Experience Platform與Experience Cloud應用程式整合相關的其他架構圖表。
 
-### 使用 Experience Cloud 應用程式的對象與個人資料啟用
+### 透過Experience Cloud應用程式啟動受眾和設定檔
 
-<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="使用 Experience Cloud 應用程式的對象與個人資料啟用之參考架構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="透過Experience Cloud應用程式啟動受眾和設定檔的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 <br>
 
 ## 護欄
 
 請參閱[「對象與個人資料啟用」概觀頁面所述的護欄](overview.md) 和 [部署護欄](../experience-platform/deployment/guardrails.md) 頁面。
 
-## 實施考量
+## 實作考量事項
 
 * 分享個人資料資料到目標需要您在目標負載中包含目標使用的特定身份值。對目標必要的任何身份必須擷取到 Platform，並且設定為[!UICONTROL 即時客戶個人資料]的身份。
 
@@ -81,14 +81,14 @@ ht-degree: 39%
 
 * 請參閱 [與Customer Journey Analytics共用的RTCDP受眾](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en) 如需共用Real-time Customer Data Platform受眾以Customer Journey Analytics的其他詳細資訊。
 
-## 相關文件
+## 相關檔案
 
 * [[!UICONTROL 即時客戶資料平台]產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
 * [個人資料與細分準則](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 * [細分文件](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
 * [目標文件](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html?lang=zh-Hant)
 
-## 相關視訊與教學課程
+## 相關影片和教學課程
 
 * [[!UICONTROL 即時客戶資料平台]概覽](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=zh-Hant)
 * [[!UICONTROL 即時客戶資料平台]示範](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/demo.html?lang=zh-Hant)

@@ -1,19 +1,19 @@
 ---
-title: 匿名對象啟用 Blueprint
+title: 匿名Audience Activation藍圖
 description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。 此功能可在各裝置中實現個人化的統一即時客戶體驗。
 landing-page-description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。
 solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 16c05fcb36fb3f11b0d86ad30710e399cecc05c0
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 33%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 匿名對象啟用 Blueprint
+# 匿名Audience Activation藍圖
 
 「匿名受眾啟動」是指根據匿名裝置和行為資料，在網路、行動裝置和廣告通路上鎖定並個人化受眾的功能。
 
@@ -31,7 +31,7 @@ ht-degree: 33%
 
 可運用Audience Manager和Real-time Customer Data Platform來支援站上和廣告目的地的匿名Audience Activation。 請注意，Real-time Customer Data Platform僅支援包含匿名裝置識別碼的廣告目的地子集，如 [目的地檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en).
 
-Microsoft Bing、Google DV360和TradeDesk是主要支援的Real-time Customer Data Platform廣告目的地，用於匿名裝置型鎖定目標。 除此之外，Real-time Customer Data Platform還支援許多已知客戶型目的地，如 [目的地檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en) 和如 [客戶啟用藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
+Microsoft Bing、Google DV360和TradeDesk是主要支援的Real-time Customer Data Platform廣告目的地，用於匿名裝置型鎖定目標。 除此之外，Real-time Customer Data Platform還支援許多已知客戶型目的地，如 [目的地檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en) 和如 [已知客戶啟用Blueprint](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
 
 ## 架構
 
@@ -43,11 +43,11 @@ Microsoft Bing、Google DV360和TradeDesk是主要支援的Real-time Customer Da
 
 * 如需實作Audience Manager的詳細資訊，請參閱下列 [檔案](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant).
 
-## 適用於Real-time Customer Data Platform的實作步驟
+## Real-time Customer Data Platform的實作步驟
 
 * 如需Real-time Customer Data Platform的實作步驟，請參閱下列 [檔案](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
 
-## 相關文件
+## 相關檔案
 
 * [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=zh-Hant)
 * [Experience Cloud [!UICONTROL 受眾]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=zh-Hant)

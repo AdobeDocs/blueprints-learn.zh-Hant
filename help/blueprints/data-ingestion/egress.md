@@ -1,36 +1,36 @@
 ---
-title: 資料存取和匯出Blueprint
+title: 資料存取與匯出藍圖
 description: 此Blueprint提供並概述可從Adobe Experience Platform和應用程式存取和匯出資料的所有方法。
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Tags
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: c0fe0e94e30351f593e32ea0e6809dd832f976ad
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 資料存取和匯出Blueprint
+# 資料存取與匯出藍圖
 
 資料存取和匯出Blueprint概述了所有可從Adobe Experience Platform和應用程式存取或匯出資料的方法。
 
 Blueprint分為兩個類別，以從Experience Platform和應用程式存取資料。 首先，從Experience Platform和應用程式中獲取資料的方法；這可視為資料輸出的推送類型方法。 其次，從Experience Platform和應用程式獲取資料的方法；這可視為資料存取的提取類型方法。
 
-資料存取方法
+資料存取方法：
 
 * [即時客戶設定檔存取API](#rtcp-profile-access-api)
 * [資料存取API](#data-access-api)
 * [查詢服務](#query-service)
 
-資料匯出方法
+資料匯出方法：
 
 * [用戶端標籤](#client-side-tags-extensions)
 * [事件轉送](#event-forwarding)
 * [Real-time Customer Data Platform目的地](#RTCDP-destinations)
 * [Journey Optimizer自訂動作](#jo-custom-actions)
 
-## 資料存取和匯出概觀架構
+## 資料存取與匯出概觀架構
 
 <img src="../experience-platform/assets/aep_data_flow.svg" alt="資料準備與擷取 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
@@ -49,7 +49,7 @@ Blueprint分為兩個類別，以從Experience Platform和應用程式存取資�
 
 #### 考量事項
 
-* 即時客戶個人檔案 [護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) 的上界。
+* 即時客戶個人檔案 [護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant) 的上界。
 * 專為一次單一設定檔查閱而設計。 不用於大量存取設定檔或下載整個設定檔母體，以用於分析或資料科學。
 * 設定檔查詢回應時間會貼上至設定檔護欄。 即時低延遲需求 — 例如針對相同頁面個人化需求，應從到利用邊緣設定檔 [Adobe Target Connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=en) 或 [自訂個人化連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en) 用於在瀏覽器和應用程式個人化中即時存取設定檔。
 
@@ -111,13 +111,13 @@ Blueprint分為兩個類別，以從Experience Platform和應用程式存取資�
 
 請參閱下列內容 [事件轉送](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en) 檔案以取得其他資訊。
 
-#### 使用卡塞亞
+#### 使用案例
 
 * 使用Adobe的伺服器端事件轉送，直接從用戶端環境收集原始串流資訊至企業端點。
 
 #### 考量事項
 
-* 若要使用事件轉送，必須使用WebSDK或MobileSDK將資料傳送至邊緣網路。
+* 若要使用事件轉送，必須使用Web SDK或MobileSDK將資料傳送至邊緣網路。
 * 事件轉送方法會因為頁面上新增其他標籤，而縮短頁面載入時間並減輕重量。
 * 目前不支援從邊緣設定檔或其他資料來源進行擴充。
 * 支援有限的資料過濾和簡單的映射轉換。
@@ -151,7 +151,7 @@ Blueprint分為兩個類別，以從Experience Platform和應用程式存取資�
 
 #### 考量事項
 
-* 吞吐量的護欄，由 [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en) 以及 [即時客戶個人檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) 的上界。
+* 吞吐量的護欄，由 [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en) 以及 [即時客戶個人檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant) 的上界。
 * 您可以逐一對歷程中的每個事件或設定檔，以串流方式執行自訂動作。 無法跨客戶歷程執行大量作業或以檔案或匯總請求形式大量資料輸出。
 * 串流存取即時客戶設定檔屬性和體驗事件，可包含在啟用裝載中。
 * 在將事件傳送至外部目的地之前，可以篩選事件資料並套用簡單的對應轉換。

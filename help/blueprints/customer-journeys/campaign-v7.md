@@ -3,10 +3,10 @@ title: Campaign v7 Blueprint
 description: Adobe Campaign v7是專為傳統行銷管道（例如電子郵件和直接郵件）所建置的宣傳工具。 它提供強大的ETL和資料管理功能，以幫助策劃和組織完美的促銷活動。 其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。  此外，它還隨附即時訊息伺服器，讓行銷團隊能根據來自任何IT系統的包含所有內容的裝載，針對密碼重設、訂單確認、電子收據等項目傳送預先定義的訊息。
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
-source-git-commit: a74ef566bf468c5508263f4070beaf6d0cd73a0e
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Campaign v7是專為傳統行銷管道（例如電子郵件和直接郵件
 
 * IP位址允許清單
    * 識別所有使用者在存取用戶端主控台期間將利用的IP範圍
-   * 標識將允許哪些企業系統與即時消息伺服器對話，並確保它們具有靜態分配的IP或範圍，您可以允許列出
+   * 標識將允許哪些企業系統與即時消息伺服器對話，並確保它們具有靜態分配的IP或範圍，您可允許列出該範圍
    * 這可透過「促銷活動控制面板」來設定及控制
 * sFTP金鑰管理
    * 具有可與Campaign提供的sFTP搭配使用的SSH公開金鑰。 這可透過「促銷活動控制面板」來設定及控制。
@@ -59,7 +59,7 @@ Adobe Campaign v7是專為傳統行銷管道（例如電子郵件和直接郵件
 * 子網域可以完全委派給Adobe（建議），或CNAME可用來指向Adobe特定的DNS伺服器（自訂）
 * 每個子網域都需要Google TXT記錄，以確保良好的傳遞能力
 
-### 行動裝置推送
+### 行動推播
 
 * 讓行動開發人員可部署、設定和建置行動應用程式
 * Adobe僅提供SDK來收集來自FCM(Android)和APNS(iOS)以傳送訊息裝載至其伺服器的必要資訊。 客戶應負責如何對行動應用程式進行編碼、部署、管理和除錯
@@ -82,7 +82,7 @@ Adobe Campaign v7是專為傳統行銷管道（例如電子郵件和直接郵件
    * 不支援使用API來讀取自訂應用程式用途的資料
 * API呼叫以每秒15次或每天15萬次為上限
 
-### 批次傳訊伺服器大小調整
+### 批次報文傳送伺服器大小調整
 
 * 可擴展以處理每小時多達250萬條報文
 
@@ -118,12 +118,12 @@ Adobe Campaign v7是專為傳統行銷管道（例如電子郵件和直接郵件
 
 <br>
 
-## 實施步驟
+## 實作步驟
 
 請參閱 [快速入門手冊](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=en) 實作Adobe Campaign v7
 
 
-## 相關文件
+## 相關檔案
 
 * [Campaign v7檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
 * [Campaign v7產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)

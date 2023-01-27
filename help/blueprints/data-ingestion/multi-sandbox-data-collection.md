@@ -1,59 +1,59 @@
 ---
-title: 多沙盒事件轉發資料收集藍圖
-description: 使用事件轉發將SDKExperience Platform到多個沙箱來將收集的資料流
+title: 多沙箱事件轉送資料收集藍圖
+description: 使用事件轉送將Experience PlatformSDK收集的資料串流至多個沙箱
 solution: Data Collection
 kt: 7202
-source-git-commit: 8ea7041103f86f034740f00a607ae36ca0b358cf
+exl-id: c24a47fe-b3da-4170-9416-74d2b6a18f32
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 多沙盒事件轉發資料收集藍圖
+# 多沙箱事件轉送資料收集藍圖
 
-多沙盒事件轉發資料收集藍圖顯示了如何配置使用Adobe Experience PlatformWeb和移動SDK收集的資料以收集單個事件並轉發到多個AEP沙盒。 此藍圖是使用「Adobe」標籤的「事件轉發」功能的特定用例。
+多沙箱事件轉送資料收集Blueprint會顯示如何使用Adobe Experience Platform Web和Mobile SDK收集的資料進行設定，以收集單一事件並轉送至多個AEP沙箱。 此Blueprint是使用「Adobe標籤」之「事件轉送」功能的特定使用案例。
 
-除了使用「事件轉發」功能複製事件外，您還可以添加、過濾或處理符合其他沙箱要求的原始收集資料。 例如，沙盒A需要接收所有事件資料元素，沙盒B應僅接收非PII資料。
+除了複製事件外，您也可以使用事件轉送功能，新增、篩選或操控原始收集的資料，使其符合其他沙箱的需求。 例如，沙箱A需要接收所有事件資料元素，沙箱B應僅接收非PII資料。
 
-事件轉發使用單獨的標籤屬性，該屬性包含滿足資料要求所必需的資料元素、規則和擴展。 在傳入事件時，您的事件轉發屬性可以收集資料並根據需要進行管理，然後再轉發。
+事件轉送使用個別的標籤屬性，其中包含您資料需求所需的資料元素、規則和擴充功能。 若有傳入的事件，您的事件轉送屬性可以收集資料，並在轉送前視需要進行管理。
 
-目標sadnbox需要配置HTTP流終結點，該終結點將由事件轉發HTTPS擴展使用。
+您的目的地sadnbox將需要設定好供事件轉送HTTPS擴充功能使用的HTTP串流端點。
 
 
 
 ## 使用案例
 
-* 全局資料報告 — 使用多個沙箱隔離操作環境時，需要將資料收集整合到一個沙箱以進行跨沙箱報告。 事件轉發到報告沙盒允許每個沙盒操作環境在將資料即時收集到報告沙盒時發送資料
-* 根據每個沙箱操作環境的不同資料規則跨沙箱管理資料收集。 需要篩選敏感資料（如醫療保健和金融服務）的此類操作環境
+* 全域資料報表 — 使用多個沙箱來隔離作業環境，且需要將資料收集合併至一個沙箱，以便進行跨沙箱報表。 事件轉送至報表沙箱可讓每個沙箱作業環境在資料即時收集時，將資料傳送至報表沙箱
+* 根據每個沙箱作業環境的不同資料規則，管理不同沙箱的資料收集。 需要篩選敏感資料（如醫療保健和金融服務）的此類操作環境
 
 ## 應用程式
 
-* Adobe Experience Platform 集合
+* Adobe Experience Platform 資料彙集
 
 ## 架構
 
-<img src="assets/multi-Sandbox-Data-Collection.svg" alt="多沙盒事件轉發的參考體系結構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/multi-Sandbox-Data-Collection.svg" alt="多沙箱事件轉送的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
-1. 標籤作者既定義了標籤屬性，也定義了事件轉發屬性。 在此，作者將定義管理資料收集的資料元素、規則和操作。 請記住，標籤屬性代碼在客戶端上運行，並由CDN主機分發。 事件轉發屬性代碼在Adobe Edge伺服器上運行。
+1. 標籤作者會定義標籤屬性和事件轉送屬性。 作者將在此定義管理資料收集的資料元素、規則和動作。 請記住，標籤屬性程式碼會在用戶端上執行，並由CDN主機分發。 事件轉送屬性程式碼會在Adobe Edge伺服器上執行。
 
-1. 在客戶端上收集的資料會發送到邊緣伺服器。 客戶還可以選擇先將資料發送到自己的伺服器作為伺服器端收集的方法。
-WebSDK可以提供伺服器到伺服器的收集功能。 但是，這確實需要一種不同的寫程式模型來實現。 請參閱文檔 **邊緣網路伺服器API概述** 下
+1. 在用戶端上收集的資料會傳送至邊緣網路。 客戶也可以選擇先將資料傳送至自己的伺服器，作為伺服器端收集的方法。  Web SDK可提供伺服器對伺服器的收集功能。 但這確實需要不同的程式設計模型才能實施。 請參閱本檔案 **邊緣網路伺服器API概述** low
 
-1. Platform Edge Server接收資料收集負載並協調資料到所需系統（如Target和Analytics）的流。
+1. Platform Edge Network會接收資料收集裝載，並協調資料流至必要的系統，例如Target和Analytics。
 
-1. 事件轉發屬性資料元素用於訪問負載中到達的事件資料。 在轉發之前，還可以使用規則根據需要操縱事件資料。 例如，將資料格式化為流資料接收所需的XDM
+1. 事件轉送屬性資料元素可用來存取到達裝載中的事件資料。 在轉送前，也可以視需要使用規則來操控事件資料。 例如，將資料格式化為串流資料擷取所需的XDM
 
-1. 事件轉發提供HTTPS擴展，該擴展提供將事件資料轉發到HTTPS端點的功能。
+1. 事件轉送提供HTTPS擴充功能，可將事件資料轉送至HTTPS端點。
 
-1. 沙盒2配置了接收轉發事件的流端點。
+1. 沙箱2的設定是接收轉送事件的串流端點。
 
-## 相關文件
+## 相關檔案
 
-* [事件轉發文檔](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
-* [事件轉發視頻](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=zh-Hant)
-* [事件轉發課](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) Web SDK教程
-* [Experience PlatformWebSDK概述](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
+* [事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+* [事件轉送影片](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=zh-Hant)
+* [事件轉送課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) 網頁SDK教學課程的
+* [Experience PlatformWeb SDK概述](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
 * [邊緣網路伺服器API概述](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 ## 相關部落格貼文

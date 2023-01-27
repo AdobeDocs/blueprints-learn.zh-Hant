@@ -1,26 +1,27 @@
 ---
-title: Customer Journey AnalyticsJourney Optimizer
-description: 在Customer Journey Analytics中統一和分析資料和客戶行為，包括Journey Optimizer的交付和交互資料。
+title: Customer Journey AnalyticsJourney Optimizer Blueprint
+description: 在Customer Journey Analytics中統一和分析客戶歷程中的資料和客戶行為，包括Journey Optimizer的傳遞和互動資料。
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
-source-git-commit: 2f0d018f10bedece6d29a3942578dcd489637373
+exl-id: 5ae084bf-a98d-418a-8038-e6f849ff7c1d
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 2%
+source-wordcount: '142'
+ht-degree: 0%
 
 ---
 
-# Customer Journey AnalyticsJourney Optimizer
+# Customer Journey AnalyticsJourney Optimizer Blueprint
 
-Journey Optimizer的資料共用到Experience Platform的資料湖，可供Customer Journey Analytics內的攝取、分析和報告。 旅程交付、互動和效能可在Customer Journey Analytics內分析和報告。
+來自Journey Optimizer的資料會共用至Experience Platform的資料湖，並可在Customer Journey Analytics內擷取、分析和製作報表。 您可以在Customer Journey Analytics中分析及報告歷程傳送、互動和成效。
 
-另外，以Customer Journey Analytics形式創作的受眾可以發佈到Experience Platform即時客戶概要檔案，並可在Journey Optimizer執行行程。
+此外，在Customer Journey Analytics中撰寫的受眾可發佈至Experience Platform即時客戶設定檔，並可在Journey Optimizer中執行歷程。
 
 ## 實作指南
 
-有關Journey Optimizer資料在Customer Journey Analytics內的實施和配置的指導，請參閱以下檔案。 [文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/reports/sharing-overview.html)
+請參閱下列檔案，以取得在Customer Journey Analytics中實作和設定Journey Optimizer資料的指引。 [文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/reports/sharing-overview.html)
 
-## 與Journey OptimizerCustomer Journey Analytics的建築
+## 使用Journey Optimizer進行Customer Journey Analytics的架構
 
-![體系結構圖](assets/CJA_AJO.svg)
+![架構圖](assets/CJA_AJO.svg)

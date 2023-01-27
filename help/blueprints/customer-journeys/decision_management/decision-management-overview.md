@@ -1,18 +1,18 @@
 ---
-title: 決策管理概觀
+title: 決策管理藍圖
 description: 在客戶歷程中提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: b3d4e89c7e4170ffee2cc1776ffa26d2e0ce79e6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Journey Optimizer — 決策管理概觀
+# Journey Optimizer — 決策管理藍圖
 
-若要深入了解決策管理，請參閱產品檔案 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
+若要深入了解決策管理，請參閱 [產品檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html)
 
 Adobe決策管理是Adobe Journey Optimizer中提供的服務。 此藍圖概述了應用程式的使用案例和技術功能，並深入介紹構成「決策管理」的各種體系結構元件和注意事項。
 
@@ -25,7 +25,7 @@ Journey Optimizer可用來在適當的時間，跨所有接觸點為客戶提供
 
 <img src="../assets/offers_overview.png" alt="決策管理" style="width:100%; border:1px solid #4a4a4a" />
 
-決策管理可以通過兩種方式之一部署在邊緣或集線器上。 每種方法都有一組特定的介面和協定，用於運行服務，如下面分別參考的藍圖中所述。 決策管理檔案中也提供其他詳細資訊 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
+決策管理可以通過兩種方式之一部署在邊緣或集線器上。 每種方法都有一組特定的介面和協定，用於運行服務，如下面分別參考的藍圖中所述。 其他詳細資訊也可在 [決策管理檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html).
 
 ## 中心的決策管理
 
@@ -62,7 +62,7 @@ Journey Optimizer可用來在適當的時間，跨所有接觸點為客戶提供
 * 存取邊緣即時設定檔。 設定檔中將僅提供邊緣預計對象和設定檔屬性。
 * 如果首次體驗中需要個人化，則中心會是理想的選擇，因為有完整的設定檔可用。 邊緣設定檔必須從中樞同步，才能第一次出現邊緣體驗。 因此，來自Edge的第一個體驗將不包含先前上傳至中樞的設定檔資料。
 
-## 相關文件
+## 相關檔案
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html)
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html)

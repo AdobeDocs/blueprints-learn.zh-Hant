@@ -1,17 +1,17 @@
 ---
-title: B2B啟動
+title: B2B受眾和設定檔啟用藍圖
 description: 透過Real-time Customer Data Platform提供以帳戶為基礎的受眾和以設定檔為中心的客戶體​驗。
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: 6059edc6a6b65e87ed1c06a072feea45703e9103
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 5%
+source-wordcount: '842'
+ht-degree: 4%
 
 ---
 
-# B2B受眾和設定檔啟用
+# B2B受眾和設定檔啟用藍圖
 
 使用與個別客戶系結的帳戶、機會和銷售機會資訊，建立可操作的b2b設定檔，以改進跨管道的個人化和鎖定目標。
 
@@ -80,13 +80,13 @@ ht-degree: 5%
 * 請參閱目的地檔案，以取得有關目的地的特定指引。 [目標護欄](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=en)
 
 
-## 實施步驟
+## 實作步驟
 
 如需如何實作和設定Real-time Customer Data Platform B2B版的指引，請參閱Real-time Customer Data Platform檔案的B2B版。 [B2B版Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
 
 有兩種可能的實施模式。 從Marketo Engage內嵌B2B資料和設定檔，或從其他CRM資料來源內嵌B2B資料。
 
-## 實施考量
+## 實作考量事項
 
 藍圖主要考量事項和設定的指引。
 
@@ -94,7 +94,7 @@ ht-degree: 5%
 * 僅Real-time Customer Data PlatformB2B版不建議鉛啟動和培養。 對於此使用案例，建議使用銷售機會培養工具(例如Marketo Engage)。
 * AEP的Marketo Engage目的地連接器可將對象推送至Marketo Engage以進行啟用，只會推送電子郵件地址和ECID。 如果該聯繫人尚未存在，則不會建立新的銷售機會，因此需要將配置檔案和銷售機會資料內嵌到Marketo Engage中。
 
-## 相關文件
+## 相關檔案
 
 * [B2B版Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)

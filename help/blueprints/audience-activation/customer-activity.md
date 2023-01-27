@@ -1,19 +1,19 @@
 ---
-title: 客戶活動中心 Blueprint
-description: '"[!UICONTROL 即時客戶概要資訊] 查找為代理支援和銷售提供上下文。」'
+title: 客戶活動中心藍圖
+description: '"[!UICONTROL 即時客戶個人檔案] 為代理輔助支援和銷售提供上下文的查閱。」'
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 3425495df36ff8da0f2fd737b35d294ccafe31bd
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 客戶活動中心 Blueprint
+# 客戶活動中心藍圖
 
-客戶活動中心 Blueprint 顯示外部應用程式如何存取 Adobe Experience Platform 的[!UICONTROL 即時客戶個人資料]。
+Customer Activity Hub Blueprint顯示外部應用程式如何存取Adobe Experience Platform [!UICONTROL 即時客戶個人檔案].
 
 外部應用程式可以透過 API GET 請求存取個人資料。儲存在個人資料中的屬性、事件、區段會籍及模型驅動的功能然後可用於這些外部非 Adobe 應用程式。
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 
 * [[!UICONTROL 即時客戶個人資料]的護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
-## 實施步驟
+## 實作步驟
 
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
@@ -45,9 +45,9 @@ ht-degree: 95%
 1. [設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant)。
 1. 使用[實體 API 從記錄實體或體驗事件實體查詢個人資料屬性](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=zh-Hant)。
 
-## 相關文件
+## 相關檔案
 
 * [Adobe Experience Platform Activation 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform0.html)
 * [[!UICONTROL 即時客戶個人資料]文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
-* [個人資料護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
+* [個人資料護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 * [個人資料查詢 API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html)

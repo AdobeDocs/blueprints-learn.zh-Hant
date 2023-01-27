@@ -1,17 +1,17 @@
 ---
-title: 自訂 Profile Enrichment 藍圖的資料科學
+title: 設定檔擴充藍圖的自訂資料科學
 description: 此藍圖顯示如何將資料科學型的深入分析內嵌至Experience Platform中，以豐富即時客戶個人檔案。
 solution: Data Collection
 kt: 7203
 exl-id: e5ec6886-4fa4-4c9b-a2d8-e843d7758669,f0efaf3c-6c4f-47c3-ab8a-e8e146dd071c
-source-git-commit: 6f10178e2d8d8877ec254e6ca83d1711fa4a82b0
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 自訂 Profile Enrichment 藍圖的資料科學
+# 設定檔擴充藍圖的自訂資料科學
 
 設定檔擴充藍圖的自訂資料科學說明如何使用資料來訓練、部署和計分模型，以透過資料科學和機器學習工具提供機器學習對Experience Platform和Real-time Customer Data Platform的深入分析。 模型化的深入分析可擷取至Experience Platform中，以豐富即時客戶設定檔。 機器學習深入見解的範例包括期限值評分、產品和類別親和性、轉換傾向性或退訂傾向性。
 
@@ -29,7 +29,7 @@ ht-degree: 42%
 
 * 有關將資料科學結果Experience Platform到中的詳細防護欄和端到端延遲，而「即時客戶配置檔案」是指 [部署護欄文檔](../experience-platform/deployment/guardrails.md).
 
-## 實施步驟
+## 實作步驟
 
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
@@ -40,7 +40,7 @@ ht-degree: 42%
 1. [在方案上設定正確的身份和身份命名空間](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)，以確保擷取的資料可以嵌入統一的個人資料。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 
-## 實施考量
+## 實作考量事項
 
 * 在大多數情況下，模型結果應擷取為設定檔屬性，而非體驗事件。 模型結果可以是簡單的屬性字串。 如果要擷取多個模型結果，建議使用陣列或對應類型欄位。
 * 每日設定檔快照資料集是統一設定檔屬性資料的每日匯出，可用來訓練設定檔屬性資料的模型。 可訪問配置檔案快照資料集文檔 [此處](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html#profile-attribute-datasets).
@@ -51,7 +51,7 @@ ht-degree: 42%
    * RTCDP目標
       * 可調整設定檔屬性和區段成員資格。
 
-## 相關文件
+## 相關檔案
 
 * [Adobe Experience Platform Intelligence 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 * [Adobe Experience Platform查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)

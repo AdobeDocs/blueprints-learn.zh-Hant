@@ -4,10 +4,10 @@ description: 護欄定義了對Adobe Experience Platform和應用程式中的元
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: f208fcd938bfc12882421f213192a6888f546a79
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 19%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 19%
 
 [邊緣網路API護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=en)
 
-[即時客戶設定檔護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)
+[即時客戶設定檔護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 [身分護欄](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
 
@@ -70,19 +70,19 @@ ht-degree: 19%
 
 [Experience Platform收集Enterprise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
 
-[即時客戶資料平台](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform.html)
+[即時客戶資料平台](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
 
 [B2B客戶資料平台](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-b2b.html)
 
 [Experience Platform 啟用](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform0.html)
 
-[Experience Platform 情報](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
+[Experience Platform 情報](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 
 [Intelligent Services](https://helpx.adobe.com/legal/product-descriptions/intelligent-services.html)
 
 [資料Distiller](https://helpx.adobe.com/legal/product-descriptions/data-distiller.html)
 
-[Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html)
+[Customer Journey Analytics](https://helpx.adobe.com/tw/legal/product-descriptions/customer-journey-analytics.html)
 
 [Journey Optimizer](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
 

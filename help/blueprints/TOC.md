@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: af390011dc068c4289f98d7fc0108ce48a5375c7
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

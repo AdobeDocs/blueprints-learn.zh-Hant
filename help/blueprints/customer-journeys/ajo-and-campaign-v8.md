@@ -1,15 +1,16 @@
 ---
-title: Journey Optimizer與Adobe Campaign v8 Blueprint
+title: Journey Optimizer搭配Adobe Campaign v8blueprint
 description: 示範Adobe Journey Optimizer如何與Adobe Campaign搭配使用，以利用Campaign中的即時訊息伺服器原生傳送訊息
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
-source-git-commit: a74ef566bf468c5508263f4070beaf6d0cd73a0e
+exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Journey Optimizer搭配Adobe Campaign v8
+# Journey Optimizer搭配Adobe Campaign v8blueprint
 
 示範如何搭配Adobe Journey Optimizer使用Adobe Campaign，利用Campaign中的即時訊息伺服器以原生方式傳送訊息。
 
@@ -76,11 +77,11 @@ ht-degree: 22%
 
 <br>
 
-## 實施步驟
+## 實作步驟
 
 ### Adobe Experience Platform
 
-#### 方案 / 資料集
+#### 結構/資料集
 
 1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)
 1. 為Adobe Campaign broadLog、trackingLog和無法傳送的位址表建立以體驗事件類別為基礎的結構（選用）。
@@ -88,15 +89,15 @@ ht-degree: 22%
 1. [在 Experience Platform 中新增使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
 1. [建立政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=zh-Hant)以在目標上執行治理。
 
-#### 個人資料 / 身份
+#### 設定檔/身分
 
 1. [建立任何客戶特定的命名空間。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)
-1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
+1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 1. 為[!UICONTROL 即時客戶個人資料]的不同檢視[設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant) (可選)。
 1. 建立歷程使用情形的區段。
 
-#### 來源 / 目標
+#### 來源/目的地
 
 1. 使用串流 API 和來源連接器[將資料擷取到 Experience Platform。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)
 
@@ -106,7 +107,7 @@ ht-degree: 22%
 1. 設定外部資料來源
 1. 設定Campaign執行個體的自訂動作
 
-### 促銷活動v8
+### Campaign v8
 
 * 傳訊範本必須以適當的個人化內容來設定
 * 針對Campaign standard — 匯出工作流程需要設定，以將交易式訊息記錄檔匯出回Experience Platform。 建議最多每4小時執行一次。
@@ -128,7 +129,7 @@ ht-degree: 22%
 
 <br>
 
-## 相關文件
+## 相關檔案
 
 * [Journey Optimizer 文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=en)
 * [Journey Optimizer產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)

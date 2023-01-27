@@ -5,14 +5,14 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 5c3c94b6-c928-4d93-8b38-f8bd2aad2e68
-source-git-commit: 1d286f4dabe71f359c14a88c91f306ea443646a6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 資料收集與準備
+# 資料收集與準備 藍圖
 
 資料彙集與準備涵蓋可在 Adobe Experience Platform 中準備和擷取資料的所有方法。以及能夠彙集資料到 Adobe Experience Platform 的邊緣網路和後續透過用戶端轉寄來轉寄資料到企業目標。
 

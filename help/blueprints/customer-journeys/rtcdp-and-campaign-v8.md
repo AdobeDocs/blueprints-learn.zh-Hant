@@ -2,10 +2,11 @@
 title: Real-Time CDP與Adobe Campaign v8整合模式
 description: 展示Adobe Experience Platform及其即時客戶個人檔案和集中化細分工具如何與Adobe Campaign v8搭配使用，以提供個人化的對話。
 solution: Real-time Customer Data Platform, Campaign
-source-git-commit: f8116387105cf1fe0adfc148562529d62ca90cfc
+exl-id: d0291088-02ed-4e7e-b538-018ea40e38c6
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 29%
 
 <br>
 
-## 實施步驟
+## 實作步驟
 
 請參閱下列檔案，了解如何將Campaign v8來源連接器設定為Adobe Experience Platform，以及將Real-time Customer Data Platform目的地連接器設定為Campaign v8。
 [Campaign與AEP連接器](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-aep.html?lang=en)
@@ -60,7 +61,7 @@ ht-degree: 29%
 * 啟動延遲最少3小時
 * 僅聯合結構屬性可用於激活（不支援陣列/地圖/體驗事件）
 * 建議每個區段最多20個屬性
-* 所有「已實現」區段會籍的個人資料為每個區段一個檔案；或者擁有「已實現」和「已退出」個人資料的檔案，則將區段匯集新增為一個屬性
+* 具有「已實現」區段成員資格的所有設定檔的每個區段有一個檔案，或如果區段成員資格已新增為檔案中「已實現」和「已退出」設定檔的屬性
 * 支援增量和完整區段匯出
 * 不支援檔案加密
 * 請參閱AEP的設定檔和資料擷取護欄 —  [連結](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)

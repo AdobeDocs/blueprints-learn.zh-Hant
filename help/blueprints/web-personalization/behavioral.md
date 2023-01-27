@@ -1,18 +1,18 @@
 ---
-title: 行為網路個人化 Blueprint
+title: 行為網站個人化Blueprint
 description: 了解如何根據線上行為和受眾資料進行個人化內容。
 landing-page-description: 了解如何根據線上行為和受眾資料進行個人化。
 solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7085thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 52d71533a6d33cc35b5158007d9851dc880bc937
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 行為網路/行動個人化 Blueprint
+# 行為網頁/行動個人化藍圖
 
 基於線上行為及對象資料進行個人化。
 
@@ -34,14 +34,14 @@ ht-degree: 94%
 <img src="assets/behavioral_personalization.svg" alt="行為網路個人化 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
 
-## 實施模式
+## 實作模式
 
 網路/行動個人化 Blueprint 可透過下列方法實施，如下所述。
 
 1. 使用 [!UICONTROL Platform Web SDK] 或 [!UICONTROL Platform Mobile SDK] 及 [!UICONTROL Edge Network]。[請參閱 Experience Platform Web 和 Mobile SDK Blueprint](../experience-platform/deployment/websdk.md)
 1. 使用傳統應用程式特定的 SDK (例如 AppMeasurement.js). [請參閱應用程式專屬的SDK Blueprint](../experience-platform/deployment/appsdk.md)
 
-## 實施步驟
+## 實作步驟
 
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)。
 
@@ -71,7 +71,7 @@ ht-degree: 94%
 1. 將用於個人資料屬性和對象會籍分享的目標[設定為所需的目標。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/create-destinations-and-activate-data.html?lang=zh-Hant)
 
 
-## 相關文件
+## 相關檔案
 
 * [Experience Cloud 受眾](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=zh-Hant)
 * [整合 Audience Manager 與 Adobe Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=zh-Hant)
@@ -87,6 +87,6 @@ ht-degree: 94%
 * [[!DNL Blueprint for Web Personalization using Adobe Experience Platform Real-Time Customer Profile]](https://medium.com/adobetech/blueprint-for-web-personalization-using-adobe-experience-platform-real-time-customer-profile-fef2ce7a4b2f)
 * [[!DNL Integrating Adobe Experience Platform Decisioning Engine with AEM Websites]](https://jaeness.medium.com/integrating-adobe-experience-platform-decisioning-engine-with-aem-websites-9c222acd12e2)
 * [[!DNL Adobe Experience Platform Web SDK for Audience Management]](https://medium.com/adobetech/adobe-experience-platform-web-sdk-for-audience-management-751fa6d063bc)
-* [[!DNL Implementing Adobe Experience Platform Real-Time Customer Profile through our “Customer Zero” Program]](https://medium.com/adobetech/implementing-adobe-experience-platform-real-time-customer-profile-through-our-customer-zero-32e7cd952896)
+* [[!DNL Implementing Adobe Experience Platform Real-Time Customer Profile through our "Customer Zero" Program]](https://medium.com/adobetech/implementing-adobe-experience-platform-real-time-customer-profile-through-our-customer-zero-32e7cd952896)
 * [[!DNL How Adobe Experience Platform Can Help Customers Personalize Their Mobile Messaging in Real-Time with Journey Orchestration Service and a Mobile Messaging Vendor]](https://medium.com/adobetech/how-adobe-experience-platform-helped-a-client-personalize-their-mobile-messaging-in-real-time-with-7d634aefa098)
 * [[!DNL Segmentation in Seconds: How Adobe Experience Platform Made Real-time Customer Profiles a Reality]](https://medium.com/adobetech/segmentation-in-seconds-how-adobe-experience-platform-made-real-time-customer-profiles-a-reality-a7a8552b0847)

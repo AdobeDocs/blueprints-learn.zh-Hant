@@ -4,10 +4,10 @@ description: 由 Experience Platform SDK 串流彙集的資料至目標
 solution: Data Collection
 kt: 7202
 exl-id: 8d6f0705-628b-44e4-a3fc-da6c5e308a5b
-source-git-commit: 7181c1dc3f823a9ea6f0e95f036eb4623b1b6c3b
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 61%
+ht-degree: 58%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 61%
 
 <img src="assets/enterprise_collection.svg" alt="企業資料彙集的參考架構" style="width:90%; border:1px solid #4a4a4a" />
 
-## 相關文件
+## 相關檔案
 
 * [事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 * [事件轉送影片](https://experienceleague.adobe.com/docs/launch-learn/tutorials/server-side/overview.html?lang=zh-Hant)

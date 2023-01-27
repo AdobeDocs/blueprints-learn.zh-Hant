@@ -1,32 +1,32 @@
 ---
-title: Adobe Experience Platform 與應用程式架構圖
+title: Adobe Experience Platform和應用程式架構圖
 description: 此架構圖顯示 Adobe Experience Platform 如何與其他 Adobe Experience Cloud 應用程式及應用程式服務連結。
 solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 122e317b34c7704dc80da11d08b9a8ff955dfa8c
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 51%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Adobe Experience Platform 與應用程式
+# Adobe Experience Platform與應用程式架構圖
 
-## Adobe Experience Platform 與應用程式架構圖
+## Adobe Experience Platform與應用程式架構圖
 
 此架構圖顯示 Adobe Experience Platform 如何與 Adobe Experience Cloud 應用程式及應用程式服務連結。
 
 <img src="assets/aep+apps_vertical.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%;" />
 
-## Adobe Experience Platform 與應用程式詳細架構圖
+## Adobe Experience Platform與應用程式詳細架構圖
 
 <img src="assets/aep-app-architecture.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%;" />
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
-## Adobe Experience Platform 與 Experience Cloud 應用程式整合
+## Adobe Experience Platform與Experience Cloud應用程式整合
 
 <table class="relative-table wrapped" style="width: 100%;">
 <colgroup>
@@ -94,7 +94,7 @@ ht-degree: 51%
 </td>
 <td>
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=en">匿名對象啟用</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=zh-Hant">匿名對象啟用</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html">已知客戶啟用</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a></li>
 </ul>
@@ -153,7 +153,7 @@ ht-degree: 51%
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=en">Customer Journey Analytics</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=zh-Hant">Customer Journey Analytics</a></li>
 </ul>
 </td>
 </tr>
@@ -241,7 +241,7 @@ ht-degree: 51%
 <td colspan="1">
 <ul>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">已知客戶啟用</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">使用 Experience Platform 和應用程式啟用</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a></li>
 </ul>
 </td>
 </tr>
@@ -260,7 +260,7 @@ ht-degree: 51%
 <td colspan="1">
 <ul>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">已知客戶啟用</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=en">使用 Experience Platform 和應用程式啟用</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a></li>
 </ul>
 </td>
 </tr>

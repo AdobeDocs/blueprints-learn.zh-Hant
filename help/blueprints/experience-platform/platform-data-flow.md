@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Platform 資料流程圖
+title: Adobe Experience Platform資料流架構圖
 description: 此架構圖顯示資料如何流入和流出 Adobe Experience Platform。
 solution: Data Collection
 kt: 7198
 thumbnail: null
 exl-id: 5016f657-dd55-4ab7-859d-c97bc5edff76
-source-git-commit: c08dbf26ad559d48dfc8af5e19ec30e5bbfced65
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 100%
+source-wordcount: '76'
+ht-degree: 81%
 
 ---
 
-# Adobe Experience Platform 資料流程架構
+# Adobe Experience Platform 資料流程架構 圖表
 
 ## 資料流程圖
 

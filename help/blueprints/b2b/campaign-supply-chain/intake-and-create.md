@@ -1,21 +1,21 @@
 ---
+title: 擷取並建立Blueprint
 description: 吸收和建立 — 使用Marketo和Workfront最佳化Campaign供應鏈
-title: Intang and Create
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: c33790d001c98628fcaa57f0ef8ebf449adb8af2
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
 
-# Intang and Create {#intake-and-create}
+# 擷取並建立Blueprint {#intake-and-create}
 
 進入營銷運營團隊發起新活動的營銷請求數量，可以將一個高效運轉的團隊轉變為重複性任務的循環門，導致倦怠和創新停滯。
 
 建立提交行銷活動請求的程式並自動建立經常請求的行銷活動，您可以：提高行銷活動的速度、減少錯誤、將請求路由至行銷作業的適當成員、平衡並改善資源利用率，以及將更多行銷作業集中於更具策略性的任務。
 
-透過Workfront和Marketo Engage，系統對系統連線可讓 [Workfront申請表](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target=&quot;_blank&quot;}建立Marketo Engage程式，然後填入關鍵變數，例如：主旨行、電子郵件副本、影像、日期、時間、事件資訊等。
+透過Workfront和Marketo Engage，系統對系統連線可讓 [Workfront申請表](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/customize/custom-forms/create-or-edit-a-custom-form.html){target="_blank"} 若要建立Marketo Engage程式，請填入關鍵變數，例如：主旨行、電子郵件副本、影像、日期、時間、事件資訊等。
 
 要實現此整合，您將使用Workfront Fusion ，這是一個工作自動化層，可讓您自動化Workfront與其他系統之間的工作流程。
 
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要進一步了解Workfront中用於組織行銷活動工作的不同類型物件，以及其如何對應至Marketo Engage方案，請查看 [Marketo和Workfront概述](/help/blueprints/b2b/campaign-supply-chain/overview.md){target=&quot;_blank&quot;}。
+>若要進一步了解Workfront中用於組織行銷活動工作的不同類型物件，以及其如何對應至Marketo Engage方案，請查看 [Marketo和Workfront概述](/help/blueprints/b2b/campaign-supply-chain/overview.md){target="_blank"}.
 
-## 為自動化準備您的Campaign開發流程 {#prepare-your-campaign-development-process-for-automation}
+## 為自動化準備您的行銷活動開發流程 {#prepare-your-campaign-development-process-for-automation}
 
 每一個偉大的工作流程自動化背後都是一個定義的流程，可確保團隊和利害關係人從自動化中獲得最大價值。
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 >
 >目前，由於智慧清單不支援代號，因此Marketo Engage受限於以程式設計方式透過自動化建立對象。 這表示閱聽眾需要由使用者以Marketo Engage建立，或如果您有預定的閱聽眾需持續通訊，您可以在程式範本中加入已設定的智慧清單，此範本會在自動化程式期間複製。
 
-### 建立卓越中心 {#establish-your-center-of-excellence}
+### 建立您的卓越中心 {#establish-your-center-of-excellence}
 
 如果您想要自動建立方案，則需要Marketo Engage的卓越中心。 英才中心包括模板化方案和資產，以幫助加快和標準化宣傳發展進程。 例如，您可能有符合不同行銷活動需求的方案範本：電子郵件、培養、面對面活動和網路研討會。 此外，您可能有多個電子郵件方案範本，可用於不同地區或不同類型的電子郵件公告。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 一旦您擁有一組可重複使用的方案範本，您就可以使用此藍圖中概述的自動化功能，進一步擴展您的工作量，以提升行銷活動開發的速度。
 
-若要進一步了解如何建立自己的卓越中心，請查看 [Marketo社群](https://nation.marketo.com/t5/product-blogs/marketo-master-class-center-of-excellence-with-chelsea-kiko/ba-p/243221){target=&quot;_blank&quot;}以取得最佳實務。
+若要進一步了解如何建立自己的卓越中心，請查看 [Marketo社群](https://nation.marketo.com/t5/product-blogs/marketo-master-class-center-of-excellence-with-chelsea-kiko/ba-p/243221){target="_blank"} 最佳實務。
 
 ### 使用代號來填入內容 {#use-tokens-to-populate-content}
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 >
 >AEM Assets不需要支援此工作流程，但可讓管理整個行銷活動開發供應鏈中行銷活動資產的流程更簡化。
 
-### 為所有程式請求類型組合查找庫 {#assemble-a-lookup-library-for-all-program-request-types}
+### 為所有程式請求類型組合查詢庫 {#assemble-a-lookup-library-for-all-program-request-types}
 
 從Workfront要求自動建立新Marketo Engage程式時，請務必在Workfront Fusion自動化中加入一個步驟，從Workfront要求中取得資訊，並查閱應在Marketo Engage中複製的正確程式範本。
 
@@ -147,14 +147,14 @@ ht-degree: 0%
 
 ## 進氣和建立自動化流 {#intake-and-create-automation-flow}
 
-以下範例說明如何透過預先建置，在Fusion中組合工作流程邏輯 [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target=&quot;_blank&quot;}和 [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target=&quot;_blank&quot;}模組，讓您更快地提供自動化。
+以下範例說明如何透過預先建置，在Fusion中組合工作流程邏輯 [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"} 模組，讓您更快實現自動化。
 
 ![](assets/intake-and-create-3.png)
 
 ## 資源 {#resources}
 
-* [Adobe Marketo Engage模組](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target=&quot;_blank&quot;}
+* [Adobe Marketo Engage模組](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}
 
-* [Adobe Workfront模組](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target=&quot;_blank&quot;}
+* [Adobe Workfront模組](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"}
 
-* [Marketo和Workfront概述](/help/blueprints/b2b/campaign-supply-chain/overview.md){target=&quot;_blank&quot;}
+* [Marketo和Workfront概述](/help/blueprints/b2b/campaign-supply-chain/overview.md){target="_blank"}

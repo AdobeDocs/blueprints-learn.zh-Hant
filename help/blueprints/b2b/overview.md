@@ -1,17 +1,17 @@
 ---
-title: B2B分析與啟用
+title: B2B分析和啟用藍圖
 description: 透過Real-time Customer Data Platform提供以帳戶為基礎的受眾和以設定檔為中心的客戶體驗。
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: bd0a93ef2efa702b4d4f3eb20d126ee22fb113af
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# B2B分析與啟用
+# B2B分析和啟用藍圖
 
 B2B受眾和設定檔啟動是資料導向行銷領域成功的關鍵。 但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
 

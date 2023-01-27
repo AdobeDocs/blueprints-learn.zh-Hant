@@ -1,16 +1,16 @@
 ---
-title: 中心的決策管理
+title: 中心藍圖上的決策管理
 description: 在各管道（包括資訊站、代理程式協助的體驗，以及電子郵件和其他傳出傳遞）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: a76295eeb8bb83ebaf5254c790514735b4eeec9f
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Journey Optimizer — 中心的決策管理
+# 中心藍圖上的決策管理
 
 若要深入了解決策管理，請參閱產品檔案 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html) 和決策管理概述 [此處](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=en)
 
@@ -73,7 +73,7 @@ Adobe Experience Platform
 
 <br>
 
-## 實施模式
+## 實作模式
 
 * 透過與直接整合，在電子郵件、簡訊和傳出通道中實作 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/offers-e2e.html).
 * 針對以伺服器API為基礎的決策管理實作，請運用 [決策API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html).
@@ -81,30 +81,30 @@ Adobe Experience Platform
 * 若為Edge型即時體驗，請依照 [邊緣藍圖上的決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=en).
 <br>
 
-## 實施步驟
+## 實作步驟
 
 ### Adobe Experience Platform
 
-#### 方案 / 資料集
+#### 結構/資料集
 
 1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)
 1. 在 Experience Platform 中為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [在 Experience Platform 中新增使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
 1. [建立政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=zh-Hant)以在目標上執行治理。
 
-#### 個人資料 / 身份
+#### 設定檔/身分
 
 1. [建立任何客戶特定的命名空間。](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)
-1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html)。
+1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 1. 為[!UICONTROL 即時客戶個人資料]的不同檢視[設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant) (可選)。
 1. 建立歷程使用情形的區段。
 
-#### 來源 / 目標
+#### 來源/目的地
 
 1. 使用串流 API 和來源連接器[將資料擷取到 Experience Platform。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)
 
-## 相關文件
+## 相關檔案
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html)
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html)

@@ -1,18 +1,18 @@
 ---
-title: Customer Journey AnalyticsReal-time Customer Data Platform
+title: Customer Journey AnalyticsReal-time Customer Data Platform Blueprint
 description: 在Customer Journey Analytics中統一和分析客戶歷程中的資料和客戶行為，從CJA發佈受眾到RTCDP
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
-source-git-commit: 985f7320db7c77b8541ec4ef76b1eb7ad0caae56
+source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '394'
 ht-degree: 9%
 
 ---
 
-# Customer Journey AnalyticsReal-time Customer Data Platform
+# Customer Journey AnalyticsReal-time Customer Data Platform Blueprint
 
 建立Customer Journey Analytics(CJA)中識別的對象，並將其發佈至Adobe Experience Platform中的「即時客戶設定檔」，以便鎖定客戶並個人化。 非常適合使用歷史資料建立對象，或透過精細篩選和運算欄位建立更完善的對象(Customer Journey Analytics)。
 
@@ -24,7 +24,7 @@ ht-degree: 9%
 
 ![架構圖](assets/CJA_RTCDP.svg)
 
-## Customer Journey Analytics藍圖護欄圖
+## Customer Journey Analytics藍圖的護欄圖
 
 * 有關詳細的護欄和端到端延遲，請參閱 [部署護欄文檔](../experience-platform/deployment/guardrails.md)
 
@@ -48,5 +48,5 @@ ht-degree: 9%
 * [[!DNL Leveraging External Data Platforms in Adobe Experience Platform Journey Orchestration]](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
 * [[!DNL Event-Based Triggering on Adobe Experience Platform Orchestration Service using Apache Airflow]](https://medium.com/adobetech/event-based-triggering-on-adobe-experience-platform-orchestration-service-using-apache-airflow-8607b28251f1)
 * [[!DNL Adobe Campaign Classic Integration with Journey Orchestration]](https://medium.com/adobetech/adobe-campaign-classic-integration-with-journey-orchestration-ae577653281)
-* [[!DNL Demonstrating the Power of Adobe’s New Journey Orchestration Service to Build Personalized Omnichannel Experiences in Real-Time]](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
+* [[!DNL Demonstrating the Power of Adobe's New Journey Orchestration Service to Build Personalized Omnichannel Experiences in Real-Time]](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
 * [[!DNL Journey Orchestration in an Omnichannel World]](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
