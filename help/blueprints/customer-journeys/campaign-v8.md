@@ -3,10 +3,10 @@ title: Campaign v8 Blueprint、Campaign與平台
 description: Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如電子郵件和直接郵件）而建置。 它提供強大的ETL和資料管理功能，以幫助策劃和組織完美的促銷活動。 其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。  此外，它還隨附可擴充的即時訊息伺服器，讓行銷團隊能根據來自任何IT系統的包含所有內容的裝載，傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
 solution: Campaign,Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1147'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign v8是新一代的宣傳工具，專為傳統行銷管道（例如
 
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| [具有Adobe Campaign的即時客戶資料平台](rtcdp-and-campaign-v8.md) | 展示Adobe Experience Platform及其即時客戶個人檔案和集中化細分工具如何與Adobe Campaign搭配使用，以提供個人化的對話 | <ul><li>使用雲端儲存檔案交換和Adobe Campaign擷取工作流程，共用從Real-Time CDP到Adobe Campaign的設定檔和閱聽眾 </li><li>輕鬆將客戶對話的傳遞和互動資料分享回Adobe Campaign的即時CDP，以增強即時客戶個人檔案，並提供訊息行銷活動的跨管道報表</li></ul> |
+| [具有Adobe Campaign的即時客戶資料平台](rtcdp-and-campaign-v8.md) | 展示Adobe Experience Platform及其即時客戶個人檔案和集中化細分工具如何與Adobe Campaign搭配使用，以提供個人化的對話 | <ul><li>使用雲端儲存檔案交換和Adobe Campaign擷取工作流程，共用從Real-Time CDP到Adobe Campaign的設定檔和閱聽眾 </li><li>輕鬆將客戶對話的傳遞和互動資料分享回Adobe Campaign的Real-Time CDP，以增強即時客戶個人檔案，並提供傳訊行銷活動的跨管道報表</li></ul> |
 | [Journey Optimizer搭配Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用Adobe Journey Optimizer利用即時客戶設定檔來協調1:1體驗，並運用原生Adobe Campaign交易訊息系統來傳送訊息 | 運用Journey Optimizer的即時客戶個人檔案和強大功能，協調即時體驗，同時運用Adobe Campaign的原生即時訊息傳送功能進行最後一英里的通訊<br><br>考量事項：<br><ul><li>可通過即時消息伺服器每小時發送最多100萬條消息<li>不會從Journey Optimizer執行限制，以確保售前企業架構師的技術審查</li><li>Campaign v8裝載不支援決策管理</li></ul> |
 
 <br>

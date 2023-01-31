@@ -2,9 +2,9 @@
 title: 具有Marketo和Workfront藍圖的促銷活動供應鏈
 description: 概覽 — 使用Marketo和Workfront藍圖最佳化促銷活動供應鏈
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1743'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 有了Workfront Fusion，行銷營運團隊基本上可以消除將行銷簡報轉譯為行銷活動時容易出現錯誤的手動步驟。 Workfront Fusion提供Workfront與Marketo Engage之間的立即可用整合層，在系統之間開發工作流程時可提供彈性和效率。 您可以進一步了解如何設定整合，以及可以採取哪些動作來自動化工作流程 [此處](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"}.
 
-## 行銷活動規劃至執行 — 自動化使用案例 {#campaign-planning-to-execution-automation-use-cases}
+## 執行行銷活動計畫 — 自動化使用案例 {#campaign-planning-to-execution-automation-use-cases}
 
 * 透過Workfront中的接受請求，自動建立Marketo Engage中的促銷活動，以支援行銷營運團隊
 * 將以Marketo Engage建立的電子郵件和登錄頁面草稿分享至Workfront，以取得跨職能部門的利害關係人的最終審核和核准

@@ -2,12 +2,12 @@
 title: 資料存取與匯出藍圖
 description: 此Blueprint提供並概述可從Adobe Experience Platform和應用程式存取和匯出資料的所有方法。
 product: adobe experience platform
-solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Tags
+solution: Experience Platform, Journey Optimizer, Real-Time Customer Data Platform, Tags
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1513'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Blueprint分為兩個類別，以從Experience Platform和應用程式存取資�
 
 ## 資料存取與匯出概觀架構
 
-<img src="../experience-platform/assets/aep_data_flow.svg" alt="資料準備與擷取 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../experience-platform/assets/aep_data_flow.svg" alt="資料準備與擷取 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" />
 
 ## 資料存取方法
 

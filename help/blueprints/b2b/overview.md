@@ -1,13 +1,13 @@
 ---
 title: B2B分析和啟用藍圖
 description: 透過Real-time Customer Data Platform提供以帳戶為基礎的受眾和以設定檔為中心的客戶體驗。
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '231'
+ht-degree: 20%
 
 ---
 

@@ -1,28 +1,28 @@
 ---
 title: Adobe Experience Platform和應用程式架構圖
 description: 此架構圖顯示 Adobe Experience Platform 如何與其他 Adobe Experience Cloud 應用程式及應用程式服務連結。
-solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
+solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '989'
+ht-degree: 37%
 
 ---
 
-# Adobe Experience Platform與應用程式架構圖
+# Adobe Experience Platform 與應用程式 架構圖
 
-## Adobe Experience Platform與應用程式架構圖
+## Adobe Experience Platform 與應用程式架構圖
 
 此架構圖顯示 Adobe Experience Platform 如何與 Adobe Experience Cloud 應用程式及應用程式服務連結。
 
-<img src="assets/aep+apps_vertical.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%;" />
+<img src="assets/aep+apps_vertical.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" />
 
-## Adobe Experience Platform與應用程式詳細架構圖
+## Adobe Experience Platform 與應用程式詳細架構圖
 
-<img src="assets/aep-app-architecture.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%;" />
+<img src="assets/aep-app-architecture.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" />
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 <td colspan="1">Ad Cloud</td>
 <td colspan="1">
 <ul>
-<li>在即時客戶資料平台中定義的對象可透過 Audience Manager 共用至 Ad Cloud，以進行目標定位。</li>
+<li>Real-time Customer Data Platform中定義的對象可以共用至Ad Cloud，以透過Audience Manager鎖定目標。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -84,7 +84,7 @@ ht-degree: 0%
 <td>Audience Manager</td>
 <td>
 <ul>
-<li>可以與 Audience Manager 共用在即時客戶資料平台中定義的對象，以啟用至第三方 Cookie 目的地。</li>
+<li>可在Real-time Customer Data Platform中定義的對象可共用至Audience Manager，以啟用至第三方Cookie目的地。</li>
 </ul>
 </td>
 <td>
@@ -104,7 +104,7 @@ ht-degree: 0%
 <td colspan="1">Campaign Classic</td>
 <td colspan="1">
 <ul>
-<li>在即時客戶資料平台中定義的對象可以共用至 Campaign Classic，作為啟動行銷活動的對象。</li>
+<li>可在Real-time Customer Data Platform中定義的對象共用給Campaign Classic，作為啟動行銷活動的對象。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -122,7 +122,7 @@ ht-degree: 0%
 <td colspan="1">Campaign Standard</td>
 <td colspan="1">
 <ul>
-<li>在即時客戶資料平台中定義的對象可以共用至 Campaign Standard，作為啟動行銷活動的對象。</li>
+<li>可在Real-time Customer Data Platform中定義的對象共用給Campaign Standard，作為啟動行銷活動的對象。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -211,7 +211,7 @@ ht-degree: 0%
 <td colspan="1">Marketo</td>
 <td colspan="1">
 <ul>
-<li>在即時客戶資料平台中定義的對象可以共用至 Marketo，作為啟動 Marketo 行銷活動和更新 Marketo 物件的對象。</li>
+<li>可在Real-time Customer Data Platform中定義的對象可以共用給Marketo，作為對象，以起始Marketo促銷活動和更新Marketo物件。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -226,10 +226,10 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td colspan="1">即時 CDP</td>
+<td colspan="1">Real-Time CDP</td>
 <td colspan="1">
 <ul>
-<li>擷取和收集至 Experience Platform 的資料是匯整即時客戶個人資料的資料來源，這些個人資料為即時客戶資料平台提供支援。</li>
+<li>匯入和收集至Experience Platform的資料是匯整即時客戶設定檔的資料來源，為Real-time Customer Data Platform提供強大動力。</li>
 </ul>
 </td>
 <td colspan="1">

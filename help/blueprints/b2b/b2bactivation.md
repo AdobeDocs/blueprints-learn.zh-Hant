@@ -1,13 +1,13 @@
 ---
 title: B2B受眾和設定檔啟用藍圖
 description: 透過Real-time Customer Data Platform提供以帳戶為基礎的受眾和以設定檔為中心的客戶體​驗。
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## 應用程式
 
-* 即時客戶資料平台 B2B版
+* Real-time Customer Data Platform B2B版
 
 ## 整合模式
 

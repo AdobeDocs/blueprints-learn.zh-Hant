@@ -2,13 +2,13 @@
 title: Web/Mobile個人化概述 — Adobe Target與RTCDP
 description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
 landing-page-description: 同步網路個人化與電子郵件及其他已知和匿名的通道個人化。
-solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
+solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
 kt: 7194thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1630'
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 應用程式
 
-* [!UICONTROL 即時客戶資料平台]
+* [!UICONTROL Real-time Customer Data Platform]
 * Adobe Target
 * Adobe Audience Manager（可選）:新增第三方受眾資料
 * Adobe Analytics或Customer Journey Analytics（可選）:新增根據歷史客戶和行為資料建立區段並執行微調細分的功能
@@ -37,7 +37,7 @@ ht-degree: 0%
 | 透過Edge方法將受眾從Real-time Customer Data Platform串流和批次共用至Target | <ul><li>透過邊緣網路將串流和批次對象從Real-time Customer Data Platform共用至Target。 即時評估的對象需要Web SDK和邊緣網路實作。</li></ul> | <ul><li>將串流和批次RTCDP對象共用至Target時，不需要Target的Web/Mobile SDK或Edge API實作，不過需要進行上述的即時邊緣區段評估。</li><li>如果使用AT.js，則僅支援針對ECID身分命名空間的設定檔整合。</li><li>在Edge上進行自訂身分命名空間查閱時，需要部署Web SDK/Edge API，且每個身分都必須在身分對應中設定為身分。</li><li>Target目的地必須在Real-time Customer Data Platform目的地中設定，僅支援RTCDP中的預設生產沙箱。</li><li>與Target整合需要與Experience Platform例項相同的IMS組織。</li></ul> |
 | 透過受眾共用服務方法，從Real-time Customer Data Platform串流和批次共用受眾至Target和Audience Manager | <ul><li>當需要從第三方資料和Audience Manager中的對象進行額外擴充時，可運用此整合模式。</li></ul> | <ul><li>將串流和批次對象共用至Target並不需要Web/Mobile SDK，不過需要Web/Mobile SDK才能進行即時邊緣區段評估。</li><li>如果使用AT.js，則僅支援針對ECID身分命名空間的設定檔整合。</li><li>在Edge上進行自訂身分命名空間查閱時，需要部署Web SDK/Edge API，且每個身分都必須在身分對應中設定為身分。</li><li>必須透過受眾共用服務布建受眾投影。</li><li>與Target整合需要與Experience Platform例項相同的IMS組織。</li><li>只有來自預設生產沙箱的對象才支援對象共用核心服務。</li></ul> |
 
-## 即時、串流和批次受眾共用至Adobe Target
+## 將即時、串流和批次受眾分享至Adobe Target
 
 架構
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 * [邊緣資料流配置](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)
 * [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant)
 
-### 區段檔案
+### 細分文件
 
 * [Experience Platform 細分概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant)
 * [即時細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html)
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 ### 教學課程
 
-* [使用即時CDP和Adobe Target進行下一次點擊的個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=en)
+* [使用Real-Time CDP和Adobe Target進行下次點擊個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=en)
 
 ### 相關部落格貼文
 
