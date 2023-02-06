@@ -1,14 +1,14 @@
 ---
 title: 網路與行動個人化  藍圖
 description: 提供包含[!UICONTROL 即時客戶個人資料]的個人化網路和行動內容。
-solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
 thumbnail: null
 exl-id: 8ad028fd-3190-42da-9f46-7e927e8878f8
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

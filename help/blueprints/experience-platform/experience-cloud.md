@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Cloud架構圖
 description: 此架構圖顯示 Adobe Experience Cloud 應用程式、應用程式服務及 Adobe Experience Platform 如何適應企業行銷架構。
-solution: Experience Cloud, Campaign, Analytics, Target, Audience Manager, Commerce, Marketo Engage, Advertising Cloud, Experience Manager, Data Collection, Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
+solution: Experience Cloud, Campaign, Analytics, Target, Audience Manager, Commerce, Marketo Engage, Advertising Cloud, Experience Manager, Data Collection, Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 kt: 7200
 thumbnail: null
 exl-id: 67f7e236-4fa2-434d-af22-953e94a079c1
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 96f0e4793884b4f77b22fe42a2671d1eda830e15
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

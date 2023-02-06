@@ -1,13 +1,13 @@
 ---
 title: 已知客戶啟用Blueprint
 description: 線上/離線對象啟用。
-solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
+solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection
 kt: 7086
 exl-id: 011f4909-b208-46db-ac1c-55b3671ee48c
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 54%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,12 +34,12 @@ ht-degree: 54%
 
 ### 透過Real-time Customer Data Platform啟用已知客戶
 
-<img src="assets/known_activation.svg" alt="已知客戶啟用藍圖的參考架構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/known_activation.svg" alt="已知客戶啟用藍圖的參考架構" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
 <br>
 
 ### 透過Audience Manager以人物為基礎的目的地啟動已知客戶
 
-<img src="assets/AAM_PBD.svg" alt="已知客戶啟用藍圖的參考架構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/AAM_PBD.svg" alt="已知客戶啟用藍圖的參考架構" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
 <br>
 
 ## 護欄

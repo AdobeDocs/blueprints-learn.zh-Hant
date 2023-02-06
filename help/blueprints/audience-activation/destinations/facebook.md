@@ -1,13 +1,13 @@
 ---
 title: 啟動Facebook自訂對象
 description: 啟動Facebook自訂對象。
-solution: Real-Time Customer Data Platform, Data Collection
+solution: Real-time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ## 架構
 
-<img src="../assets/facebook.svg" alt="facebook自訂Audience Activation的參考架構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="../assets/facebook.svg" alt="facebook自訂Audience Activation的參考架構" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 ## 實作步驟
 

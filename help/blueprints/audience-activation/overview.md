@@ -1,14 +1,14 @@
 ---
 title: 受眾和設定檔啟用藍圖
 description: 使用Real-time Customer Data Platform提供受眾啟動且以客戶為中心的體​驗。
-solution: Real-Time Customer Data Platform
+solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 77%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 77%
 
 下圖概述了 Experience Platform 的即時客戶個人資料的核心元件。
 
-<img src="assets/profile_architecture.jpg" alt="即時客戶個人資料的參考架構" style="border:1px solid #4a4a4a" width="90%"/>
+<img src="assets/profile_architecture.jpg" alt="即時客戶個人資料的參考架構" style="border:1px solid #4a4a4a" width="90%" zoomable="yes"/>
 
 先將資料來源擷取到 Experience Platform。如果資料來源已設定為進行個人資料處理，則會饋入至即時客戶個人資料。為每個資料來源以及設定用於每個資料來源的每個主要 ID 記錄建立單一個人資料片段或文件。此外，資料被擷取至個人資料時，亦會受到身分服務的處理。若資料來源中有多個標示於架構中的身分，且來自資料來源的任何記錄中填入了對應值，則記錄會處理為身分服務中的身分關係。
 
@@ -42,7 +42,7 @@ ht-degree: 77%
 
 下圖概述了各種分段方法，以及各種個人資料和對象啟用模式。
 
-<img src="assets/segmentation_destination_overview.png" alt="即時客戶個人資料的參考架構" style="border:1px solid #4a4a4a" width="90%"/>
+<img src="assets/segmentation_destination_overview.png" alt="即時客戶個人資料的參考架構" style="border:1px solid #4a4a4a" width="90%" zoomable="yes"/>
 
 ## 受眾和設定檔啟用藍圖的護欄
 
