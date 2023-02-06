@@ -3,9 +3,9 @@ title: 區段比對Blueprint
 description: 了解 [!UICONTROL 區段符合] Adobe Experience Platform(AEP)。 [!UICONTROL 區段符合] 是資料協作服務，可讓您以安全、受管且有利於隱私權的方式，根據通用的產業識別碼來交換區段資料。
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 架構
 
-![區段比對架構](assets/architecture-segment-match.png)
+![區段比對架構](assets/architecture-segment-match.png){zoomable=&quot;yes&quot;}
 
 [!UICONTROL 區段符合] 不是可購買資料的資料市集。 這是AEP功能，可搭配特定合作夥伴使用第一方資料，透過隱私權和同意控制協助進行協作。 [!UICONTROL 區段符合] 有助於專注於改善客戶關係和提升品牌。 如果存在預先存在的品牌或合作夥伴關係，則這是有益的。 [!UICONTROL 區段符合] 體驗易於管理、可擴充，且可讓管理員以選擇加入、可控的方式共用區段。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 此 [!UICONTROL 區段符合] 管理合作夥伴的流量由RBAC保護。 只有具有適當權限的個人才能啟動、接受或管理合作夥伴。 這可在產品設定檔的資料擷取區段中完成。 需要下列權限：
 
-![對象共用連線](assets/data-ingestion.png)
+![對象共用連線](assets/data-ingestion.png){zoomable=&quot;yes&quot;}
 
 | 權限 | 說明 |
 |---|---|
@@ -140,13 +140,13 @@ ht-degree: 0%
 
 整體流程為：
 
-![區段共用](assets/segment-sharing.png)
+![區段共用](assets/segment-sharing.png){zoomable=&quot;yes&quot;}
 
 這些重疊估計提供關鍵的深入分析、合作夥伴發現和資料，以推動資料協作協定。 不會跨沙箱移動任何客戶或區段資料，以取得這些重疊的估計量度。 任何指定沙箱中，由Adobe選取且經過預先雜湊處理的適用身分會新增至可能性資料結構，讓客戶能執行兩者之間的聯合和交集作業。 這些操作有助於 [!UICONTROL 區段符合] 從兩個不同的沙箱中獲取由身份組成的兩個資料結構的估計交集，而無需比較實際值
 
 身分重疊程式取決於 **每日完整設定檔匯出** 來自傳送者和接收者沙箱的資料集，以識別屬於共用區段的常見設定檔。 重疊流程的詳細流程如下所示：
 
-![身分重疊程式](assets/overlap-process.png)
+![身分重疊程式](assets/overlap-process.png){zoomable=&quot;yes&quot;}
 
 從傳送合作夥伴完成區段共用後，接收者會收到共用區段摘要的相關通知。 必須啟用此區段摘要，接收者的設定檔才能起始區段成員資格資料流。 只有區段成員資格會擷取至接收者IMS組織的重疊設定檔片段，且不會從傳送者傳送其他身分給接收者。
 

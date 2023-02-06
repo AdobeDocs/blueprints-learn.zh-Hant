@@ -4,9 +4,9 @@ description: 提供客戶量身打造的即時交易，同時讓客戶有效率�
 solution: Journey Optimizer
 kt: 9486
 exl-id: fa4a6569-3972-4b97-91f1-7ca8ffd3c5b3
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '333'
 ht-degree: 9%
 
 ---
@@ -41,4 +41,4 @@ ht-degree: 9%
 
 ### Blueprint架構
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en"><img alt="電信業務的縮圖影像提供即時量身打造的交易，同時有效率的客戶加入，以保持長期忠誠度。" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/journey-optimizer.png?lang=en"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en"><img alt="電信業務的映像提供即時定製的交易，同時高效地為長期忠誠客戶提供入門服務。" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/journey-optimizer.png?lang=en"/></a>

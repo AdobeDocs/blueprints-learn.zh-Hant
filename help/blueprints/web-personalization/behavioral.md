@@ -3,9 +3,10 @@ title: 行為網站個人化Blueprint
 description: 了解如何根據線上行為和受眾資料進行個人化內容。
 landing-page-description: 了解如何根據線上行為和受眾資料進行個人化。
 solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data Collection, Experience Platform
-kt: 7085thumb-web-personalization-scenario1.jpg
+kt: 7085
+thumbnail: thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 85%

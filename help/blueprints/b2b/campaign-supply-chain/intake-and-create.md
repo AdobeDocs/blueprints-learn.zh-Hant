@@ -2,9 +2,9 @@
 title: 擷取並建立Blueprint
 description: 吸收和建立 — 使用Marketo和Workfront最佳化Campaign供應鏈
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 透過Marketo Engage，代號可用來將內容填入您的促銷活動資產中。 例如，從您的卓越中心複製電子郵件範本後，Workfront Fusion可從Workfront中的促銷活動請求取得詳細資訊，並傳遞至Marketo Engage方案中的我的代號。 接著，代號值可直接繼承至電子郵件中，以建置電子郵件。
 
-![](assets/intake-and-create-2.png)
+![使用代號來填入內容圖表](assets/intake-and-create-2.png){zoomable=&quot;yes&quot;}
 
 ### 從AEM Assets填入影像 {#populate-images-from-aem-assets}
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 
 以下範例說明如何透過預先建置，在Fusion中組合工作流程邏輯 [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html){target="_blank"} 模組，讓您更快實現自動化。
 
-![](assets/intake-and-create-3.png)
+![進氣和建立自動化流](assets/intake-and-create-3.png)使用代號來填入內容
 
 ## 資源 {#resources}
 

@@ -2,9 +2,9 @@
 title: 具有Marketo和Workfront藍圖的促銷活動供應鏈
 description: 概覽 — 使用Marketo和Workfront藍圖最佳化促銷活動供應鏈
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1778'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 在下方，若是電子郵件爆炸請求，您可以看到促銷活動開發程式的工作流程圖表。 此外，您還可以了解Workfront Fusion如何在Workfront和Marketo Engage之間發揮作用，推動整個行銷活動開發週期的工作流程和流程自動化。
 
-![](assets/overview-1.png)
+![執行行銷活動計畫 — 自動化使用案例](assets/overview-1.png){zoomable=&quot;yes&quot;}
 
 請注意促銷活動開發程式中的不同階段。
 
@@ -60,7 +60,7 @@ Adobe Workfront可讓組織管理工作，以促進更有效率的執行。 Work
 
 了解如何將業務流程對應到這些物件，對於了解Workfront與Marketo Engage之間的關係非常重要。
 
-![](assets/overview-2.png)
+![了解行銷活動在Workfront中的呈現方式](assets/overview-2.png){zoomable=&quot;yes&quot;}
 
 ### Portfolio層次定義 {#portfolio-hierarchy-defined}
 
@@ -115,7 +115,7 @@ Zeplin公司正在發佈一種更新版本的Z11小型實用拖拉機附件，�
 
 以下階層顯示策略、策略、任務和資產如何對應至此行銷活動的Workfront。
 
-![](assets/overview-3.png)
+![市場營銷計畫工作管理示例](assets/overview-3.png){zoomable=&quot;yes&quot;}
 
 ## 將Workfront對應至Marketo {#mapping-workfront-to-marketo}
 
@@ -129,7 +129,7 @@ Zeplin公司正在發佈一種更新版本的Z11小型實用拖拉機附件，�
 
 以下範例說明方案如何包含多個專案，以及這些Workfront專案如何對應至Marketo Engage中的方案。
 
-![](assets/overview-4.png)
+![將Workfront專案對應至Marketo Engage方案](assets/overview-4.png){zoomable=&quot;yes&quot;}
 
 您可能想要啟動大型行銷計畫，該計畫需要將多個Workfront專案存放在Workfront計畫中，或是只需要建立單一Workfront專案，即可一次性要求網路研討會或電子郵件。 無論您有何需求，透過Workfront、Workfront Fusion和Marketo Engage，您的團隊都能靈活地將您的行銷活動開發流程從規劃到執行無縫整合。
 
