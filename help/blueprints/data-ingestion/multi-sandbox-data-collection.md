@@ -4,10 +4,10 @@ description: 使用事件轉送將Experience PlatformSDK收集的資料串流至
 solution: Data Collection
 kt: 7202
 exl-id: c24a47fe-b3da-4170-9416-74d2b6a18f32
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '609'
+ht-degree: 11%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 架構
 
-<img src="assets/multi-Sandbox-Data-Collection.svg" alt="多沙箱事件轉送的參考架構" style="width:90%; border:1px solid #4a4a4a" />
+<img src="assets/multi-Sandbox-Data-Collection.svg" alt="多沙箱事件轉送的參考架構" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 1. 標籤作者會定義標籤屬性和事件轉送屬性。 作者將在此定義管理資料收集的資料元素、規則和動作。 請記住，標籤屬性程式碼會在用戶端上執行，並由CDN主機分發。 事件轉送屬性程式碼會在Adobe Edge伺服器上執行。
 

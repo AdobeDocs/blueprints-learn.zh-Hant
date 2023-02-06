@@ -3,7 +3,7 @@ title: Campaign v7 Blueprint
 description: Adobe Campaign v7是專為傳統行銷管道（例如電子郵件和直接郵件）所建置的宣傳工具。 它提供強大的ETL和資料管理功能，以幫助策劃和組織完美的促銷活動。 其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。  此外，它還隨附即時訊息伺服器，讓行銷團隊能根據來自任何IT系統的包含所有內容的裝載，針對密碼重設、訂單確認、電子收據等項目傳送預先定義的訊息。
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 2%
@@ -27,7 +27,7 @@ Adobe Campaign v7是專為傳統行銷管道（例如電子郵件和直接郵件
 
 ## 架構
 
-<img src="assets/campaign-v7-architecture.svg" alt="Campaign v7 Blueprint的參考架構" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/campaign-v7-architecture.svg" alt="Campaign v7 Blueprint的參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 

@@ -4,10 +4,10 @@ description: 在 Experience Platform 中管理個人資料和對象，以及與 
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '896'
+ht-degree: 31%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ### 透過Experience Cloud應用程式啟動受眾和設定檔
 
-<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="透過Experience Cloud應用程式啟動受眾和設定檔的參考架構" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
+<img src="../experience-platform/assets/aep+apps_horizontal.svg" alt="透過Experience Cloud應用程式啟動受眾和設定檔的參考架構" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
 <br>
 
 ## 護欄

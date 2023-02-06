@@ -4,10 +4,10 @@ description: '"[!UICONTROL 即時客戶個人檔案] 為代理輔助支援和銷
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 4b09d5e43dba53df2f066917f95eae0f74191de8
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '382'
+ht-degree: 87%
 
 ---
 
@@ -29,7 +29,7 @@ Customer Activity Hub Blueprint顯示外部應用程式如何存取Adobe Experie
 
 ## 架構
 
-<img src="assets/customer_activity_hub.svg" alt="客戶活動中心 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
+<img src="assets/customer_activity_hub.svg" alt="客戶活動中心 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
 
 ## 護欄
 

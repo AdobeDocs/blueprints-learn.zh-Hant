@@ -3,7 +3,7 @@ title: Journey Optimizer搭配Adobe Campaign v7blueprint
 description: 示範Adobe Journey Optimizer如何與Adobe Campaign搭配使用，以利用Campaign中的即時訊息伺服器原生傳送訊息
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: 6d9bc65c-cca0-453f-8106-d2895d005ada
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 23%
@@ -18,7 +18,7 @@ ht-degree: 23%
 
 ## 架構
 
-<img src="assets/ajo-campaign-architecture.svg" alt="參考架構Journey Optimizer Blueprint" style="width:100%; border:1px solid #4a4a4a" />
+<img src="assets/ajo-campaign-architecture.svg" alt="參考架構Journey Optimizer Blueprint" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 >[!IMPORTANT]
 >可以同時使用Journey Optimizer和Campaign來彼此獨立傳送訊息，但有一些技術考量需加以考慮。 如果您想沿用此路線，請與售前企業架構師合作，以確保您了解支援實施所需的內容。

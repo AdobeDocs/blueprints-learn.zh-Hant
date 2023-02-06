@@ -6,10 +6,10 @@ solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 4b09d5e43dba53df2f066917f95eae0f74191de8
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '380'
+ht-degree: 28%
 
 ---
 
@@ -35,7 +35,7 @@ Microsoft Bing、Google DV360和TradeDesk是主要支援的Real-time Customer Da
 
 ## 架構
 
-<img src="assets/anonymous_activation.svg" alt="匿名對象啟用 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a" zoomable="yes" />
+<img src="assets/anonymous_activation.svg" alt="匿名對象啟用 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
 
 <br>
 

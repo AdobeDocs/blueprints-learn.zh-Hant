@@ -3,10 +3,10 @@ title: 邊緣藍圖上的決策管理
 description: 跨管道（包括即時網路和行動體驗）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '856'
+ht-degree: 17%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe決策管理是Adobe Journey Optimizer中提供的服務。 此藍圖概述
 
 ## 架構
 
-<img src="../assets/offers_edge.svg" alt="邊緣藍圖上的參考體系結構決策管理" style="width:100%; border:1px solid #4a4a4a" />
+<img src="../assets/offers_edge.svg" alt="邊緣藍圖上的參考體系結構決策管理" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -64,13 +64,13 @@ Adobe Experience Platform
 
 ### 資料擷取護欄
 
-<img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
 
 <br>
 
 ### 激活護欄
 
-<img src="../../experience-platform/assets/AJO_guardrails.svg" alt="參考架構Journey Optimizer Blueprint" style="width:85%; border:1px solid #4a4a4a" />
+<img src="../../experience-platform/assets/AJO_guardrails.svg" alt="參考架構Journey Optimizer Blueprint" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 

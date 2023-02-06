@@ -4,10 +4,10 @@ description: 跨數位媒體、電子郵件、推播和網頁通道提供即時�
 solution: Real-time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
 exl-id: a675bc81-e76c-491a-8718-359867d63351
-source-git-commit: 05666e35eebe81fa5a061250528b1c2f4a7376a6
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '350'
+ht-degree: 14%
 
 ---
 
@@ -38,4 +38,4 @@ ht-degree: 0%
 
 ### Blueprint架構
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant"><img alt="零售業的縮圖影像，可跨數位媒體、電子郵件、推播和網路頻道提供即時的客戶體驗" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant"><img alt="零售業的縮圖影像，可跨數位媒體、電子郵件、推播和網路頻道提供即時的客戶體驗" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/aep+apps_vertical.svg?lang=en" class="modal-image" /></a>

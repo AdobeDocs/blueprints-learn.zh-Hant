@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 54%
+source-wordcount: '406'
+ht-degree: 53%
 
 ---
 
@@ -32,7 +32,7 @@ Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源�
 
 ## Customer Journey Analytics架構
 
-![架構圖](assets/CJA.svg)
+![架構圖](assets/CJA.svg){zoomable=&quot;yes&quot;}
 
 主要使用案例範例包括下列。
 | Blueprint |說明 |Experience Cloud應用程式 | |—|—|—| | **[跨管道歷程分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html)**  | <ul><li>統一來自不同網路、行動裝置及線上內容的資料，為各個通道建立單一整合的客戶行為視圖。</li></ul> | <ul><li>Adobe Experience Platform</li><li>Customer Journey Analytics</li><li>Adobe Analytics (可選)</li></ul>| | **[將對象發佈至Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)** | <ul><li>建立Customer Journey Analytics(CJA)中識別的對象，並將其發佈至Adobe Experience Platform中的「即時客戶設定檔」，以便鎖定客戶並個人化。 非常適合使用歷史資料建立對象，或透過精細篩選和運算欄位建立更完善的對象(Customer Journey Analytics)。</li></ul> | <ul><li>Real-time Customer Data Platform</li><li>Customer Journey Analytics</li> |
@@ -42,7 +42,7 @@ Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源�
 
 * 有關詳細的護欄和端到端延遲，請參閱 [部署護欄文檔](../experience-platform/deployment/guardrails.md)
 
-![護欄圖](../experience-platform/assets/CJA_guardrails.svg)
+![護欄圖](../experience-platform/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
 
 ## 相關部落格貼文
 

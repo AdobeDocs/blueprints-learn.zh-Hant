@@ -2,10 +2,10 @@
 title: 數位體驗藍圖行業成功案例
 description: 數位體驗藍圖成功案例展示各行業如何運用由Adobe Experience Platform提供技術支援的Adobe Experience Cloud應用程式實現商業價值。
 exl-id: 9e73bae3-ba34-4819-a54e-710965fe74d9
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '255'
+ht-degree: 1%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 0%
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><img alt="使用受眾啟用、客戶歷程分析和客戶歷程Blueprint的服裝業縮圖影像" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><img alt="使用受眾啟用、客戶歷程分析和客戶歷程Blueprint的服裝業縮圖影像" src="../experience-platform/assets/aep+apps_vertical.svg" class="modal-image" /></a>
     </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html"><img alt="使用「透過線上/離線資料啟動」和「Journey Optimizer藍圖」的零售業縮圖影像" src="../experience-platform/assets/aep+apps_vertical.svg"/></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html"><img alt="使用「透過線上/離線資料啟動」和「Journey Optimizer藍圖」的零售業縮圖影像" src="../experience-platform/assets/aep+apps_vertical.svg" class="modal-image" /></a>
 
 </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html"><img alt="Journey Optimizer Blueprint的縮圖影像" src="../customer-journeys/assets/ajo-architecture.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/telecommunications.html"><img alt="Journey Optimizer Blueprint的縮圖影像" src="../customer-journeys/assets/ajo-architecture.svg" class="modal-image" /></a>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html"><img alt="啟用線上/離線資料Blueprint的縮圖影像" src="../audience-activation/assets/known_activation.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/travel-hospitality.html"><img alt="啟用線上/離線資料Blueprint的縮圖影像" src="../audience-activation/assets/known_activation.svg" class="modal-image" /></a>
   </td>
 </tr>
 <tr>

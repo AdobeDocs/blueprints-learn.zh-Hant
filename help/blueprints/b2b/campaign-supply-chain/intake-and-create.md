@@ -2,9 +2,9 @@
 title: 擷取並建立Blueprint
 description: 吸收和建立 — 使用Marketo和Workfront最佳化Campaign供應鏈
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: b18d491fdefc57762932d1570401b5437bf97c76
+source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 以下工作流程顯示行銷活動管理員使用Workfront請求表單進行網路研討會的請求。 請求中提交的詳細資訊會觸發要在網路研討會中以Marketo Engage建立的方案和電子郵件。 此外，請求表單會提供詳細資訊，以填入電子郵件的內容。
 
-![](assets/intake-and-create-1.png)
+![擷取並建立Blueprint](assets/intake-and-create-1.png){zoomable=&quot;yes&quot;}
 
 >[!TIP]
 >
