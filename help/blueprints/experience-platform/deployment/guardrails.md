@@ -4,10 +4,10 @@ description: 護欄定義了對Adobe Experience Platform和應用程式中的元
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 96f0e4793884b4f77b22fe42a2671d1eda830e15
+source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '305'
+ht-degree: 18%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 [Experience Platform收集Enterprise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
 
-[Real-time Customer Data Platform](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
+[即時客戶資料平台](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
 
 [B2B客戶資料平台](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-b2b.html)
 

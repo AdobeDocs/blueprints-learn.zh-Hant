@@ -1,19 +1,19 @@
 ---
 title: 受眾和設定檔啟用藍圖
-description: 使用Real-time Customer Data Platform提供受眾啟動且以客戶為中心的體​驗。
+description: 透過即時客戶資料平台，提供受眾已啟用和以個人資料為中心的客戶體驗。
 solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 77%
+ht-degree: 83%
 
 ---
 
 
-# 受眾和設定檔啟用藍圖
+# 對象與個人資料啟用 藍圖
 
 受眾和設定檔啟動是資料導向行銷領域成功的關鍵。 但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
 
@@ -22,8 +22,8 @@ ht-degree: 77%
 | Blueprint | 說明 | Experience Cloud應用程式 |
 |---|---|---|
 | **[匿名對象啟用](anonymous.md)** | <ul><li>為匿名和行為客戶資料定位網路及廣告通道上的對象。</li><li>整合協力廠商對象資料以增強個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
-| **[已知客戶啟用](known.md)** | <ul><li>啟用至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager (可選)</li></ul> |
-| **[透過Experience Cloud應用程式啟動受眾和設定檔](platform-and-applications.md)** | <ul><li>在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們</li><li>在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
+| **[已知客戶啟用](known.md)** | <ul><li>啟用至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager (可選)</li></ul> |
+| **[透過Experience Cloud應用程式啟動受眾和設定檔](platform-and-applications.md)** | <ul><li>在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們</li><li>在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
 | **[區段符合](segment-match.md)** | <ul><li>透過更佳的控管、權限和偏好管理系統，行銷人員可進一步增強其與主要合作夥伴的第一方驗證受眾。</li></ul> | <ul><li>Adobe Experience Platform </li></ul> |
 
 ## 即時客戶個人檔案架構
@@ -50,7 +50,7 @@ ht-degree: 77%
 
 ### 啟用屬性和身分
 
-* [!UICONTROL Real-time Customer Data Platform] 可啟用對象會籍，以及針對選取要啟用之區段成員之設定檔所發生的屬性和身分變更。 如果您的目標是啟用屬性或身分識別，您必須定義全域區段，其中包含所有要向其傳送屬性和身分更新的個人資料。此時，您可以選取要作為目標設定一部分啟用的區段和所需屬性。
+* [!UICONTROL 即時客戶資料平台]可啟用對象會籍，以及針對選取要啟用之區段成員的個人資料所發生的屬性和身分變更。如果您的目標是啟用屬性或身分識別，您必須定義全域區段，其中包含所有要向其傳送屬性和身分更新的個人資料。此時，您可以選取要作為目標設定一部分啟用的區段和所需屬性。
 * 請注意，批次目標不支援啟用僅限屬性的變更事件。完整或增量受眾成員資格可與選取的屬性一起傳送以進行啟用。
 
 ### 啟用批次區段至串流目標

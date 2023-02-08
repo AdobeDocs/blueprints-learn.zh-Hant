@@ -6,10 +6,10 @@ solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 28%
+ht-degree: 30%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 28%
 ## 應用程式
 
 * Audience Manager
-* Real-time Customer Data Platform
+* 即時客戶資料平台
 
 可運用Audience Manager和Real-time Customer Data Platform來支援站上和廣告目的地的匿名Audience Activation。 請注意，Real-time Customer Data Platform僅支援包含匿名裝置識別碼的廣告目的地子集，如 [目的地檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=en).
 
@@ -54,4 +54,4 @@ Microsoft Bing、Google DV360和TradeDesk是主要支援的Real-time Customer Da
 * [整合 Audience Manager 與 Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=zh-Hant)
 * [透過 Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
 * [已知客戶啟用Blueprint](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html).
-* [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html)
+* [即時客戶資料平台](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html)

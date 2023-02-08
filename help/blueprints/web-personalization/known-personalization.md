@@ -6,7 +6,7 @@ solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 14%
@@ -25,7 +25,7 @@ ht-degree: 14%
 
 ## 應用程式
 
-* [!UICONTROL Real-time Customer Data Platform]
+* [!UICONTROL 即時客戶資料平台]
 * Adobe Target
 * Adobe Audience Manager（可選）:新增第三方受眾資料
 * Adobe Analytics或Customer Journey Analytics（可選）:新增根據歷史客戶和行為資料建立區段並執行微調細分的功能

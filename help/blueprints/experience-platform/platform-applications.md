@@ -5,10 +5,10 @@ solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Ana
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 37%
+ht-degree: 50%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 37%
 <td colspan="1">Ad Cloud</td>
 <td colspan="1">
 <ul>
-<li>Real-time Customer Data Platform中定義的對象可以共用至Ad Cloud，以透過Audience Manager鎖定目標。</li>
+<li>在即時客戶資料平台中定義的對象可透過 Audience Manager 共用至 Ad Cloud，以進行目標定位。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -84,7 +84,7 @@ ht-degree: 37%
 <td>Audience Manager</td>
 <td>
 <ul>
-<li>可在Real-time Customer Data Platform中定義的對象可共用至Audience Manager，以啟用至第三方Cookie目的地。</li>
+<li>可以與 Audience Manager 共用在即時客戶資料平台中定義的對象，以啟用至第三方 Cookie 目的地。</li>
 </ul>
 </td>
 <td>
@@ -104,7 +104,7 @@ ht-degree: 37%
 <td colspan="1">Campaign Classic</td>
 <td colspan="1">
 <ul>
-<li>可在Real-time Customer Data Platform中定義的對象共用給Campaign Classic，作為啟動行銷活動的對象。</li>
+<li>在即時客戶資料平台中定義的對象可以共用至 Campaign Classic，作為啟動行銷活動的對象。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -122,7 +122,7 @@ ht-degree: 37%
 <td colspan="1">Campaign Standard</td>
 <td colspan="1">
 <ul>
-<li>可在Real-time Customer Data Platform中定義的對象共用給Campaign Standard，作為啟動行銷活動的對象。</li>
+<li>在即時客戶資料平台中定義的對象可以共用至 Campaign Standard，作為啟動行銷活動的對象。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -211,7 +211,7 @@ ht-degree: 37%
 <td colspan="1">Marketo</td>
 <td colspan="1">
 <ul>
-<li>可在Real-time Customer Data Platform中定義的對象可以共用給Marketo，作為對象，以起始Marketo促銷活動和更新Marketo物件。</li>
+<li>在即時客戶資料平台中定義的對象可以共用至 Marketo，作為啟動 Marketo 行銷活動和更新 Marketo 物件的對象。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -229,7 +229,7 @@ ht-degree: 37%
 <td colspan="1">Real-Time CDP</td>
 <td colspan="1">
 <ul>
-<li>匯入和收集至Experience Platform的資料是匯整即時客戶設定檔的資料來源，為Real-time Customer Data Platform提供強大動力。</li>
+<li>擷取和收集至 Experience Platform 的資料是匯整即時客戶個人資料的資料來源，這些個人資料為即時客戶資料平台提供支援。</li>
 </ul>
 </td>
 <td colspan="1">

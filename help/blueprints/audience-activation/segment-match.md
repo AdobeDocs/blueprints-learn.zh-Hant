@@ -3,7 +3,7 @@ title: 區段比對Blueprint
 description: 了解 [!UICONTROL 區段符合] Adobe Experience Platform(AEP)。 [!UICONTROL 區段符合] 是資料協作服務，可讓您以安全、受管且有利於隱私權的方式，根據通用的產業識別碼來交換區段資料。
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
+source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 0%
