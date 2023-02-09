@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 8355a36a235d847a6faf2398f3fadbed28ccac37
+source-git-commit: 374f3afa12611b21121e9bfe2fd906342ba1ea4f
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 42%
+source-wordcount: '250'
+ht-degree: 44%
 
 ---
 
@@ -35,9 +35,7 @@ ht-degree: 42%
    + [匿名對象啟用 (AAM)](/help/blueprints/audience-activation/anonymous.md)
    + 已知客戶激活(RTCDP) {#known-customer-audience-activation}
       + [概覽](/help/blueprints/audience-activation/known.md)
-      + 啟動社交和廣告管道{#audience-activation}
-         + [啟動Facebook自訂對象](/help/blueprints/audience-activation/destinations/facebook.md)
-         + [啟動Google Customer Match](/help/blueprints/audience-activation/destinations/gcm.md)
+      + [啟動社交和廣告管道](/help/blueprints/audience-activation/advertising-activation.md)
       + [啟動至檔案和企業串流目的地](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [客戶活動中樞](/help/blueprints/audience-activation/customer-activity.md)
       + [區段符合](/help/blueprints/audience-activation/segment-match.md)
