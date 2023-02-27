@@ -2,7 +2,7 @@
 title: 數位體驗藍圖行業成功案例
 description: 數位體驗藍圖成功案例展示各行業如何運用由Adobe Experience Platform提供技術支援的Adobe Experience Cloud應用程式實現商業價值。
 exl-id: 9e73bae3-ba34-4819-a54e-710965fe74d9
-source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
+source-git-commit: 5bf1f0c01e1c7d2ebb2ae7228cc04c149a789664
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 1%
@@ -18,10 +18,10 @@ ht-degree: 1%
 <table style="table-layout:fixed">
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><img alt="使用受眾啟用、客戶歷程分析和客戶歷程Blueprint的服裝業縮圖影像" src="../experience-platform/assets/aep+apps_vertical.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/apparel.html"><img alt="使用受眾啟用、客戶歷程分析和客戶歷程Blueprint的服裝業縮圖影像" src="../experience-platform/assets/aep+apps.svg" /></a>
     </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html"><img alt="使用「透過線上/離線資料啟動」和「Journey Optimizer藍圖」的零售業縮圖影像" src="../experience-platform/assets/aep+apps_vertical.svg" /></a>
+    <a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/retail.html"><img alt="使用「透過線上/離線資料啟動」和「Journey Optimizer藍圖」的零售業縮圖影像" src="../experience-platform/assets/aep+apps.svg" /></a>
 
 </td>
   <td>
