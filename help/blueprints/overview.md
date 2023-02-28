@@ -1,12 +1,12 @@
 ---
 title: 數位體驗藍圖
-description: 數位體驗藍圖是可重複的實作，可解決策略並解決已建立的業務問題。 可加速創造價值，提供快速的成功路徑。
+description: 數位體驗藍圖是可重複的實施，用於處理策略和解決既定的業務問題。可加速創造價值，提供快速的成功路徑。
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: bf99ef23bb07c845a396767a65114874f3a18180
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 58%
+ht-degree: 63%
 
 ---
 
