@@ -3,10 +3,10 @@ title: Real-Time CDP與Adobe Campaign v8整合模式
 description: 展示Adobe Experience Platform及其即時客戶個人檔案和集中化細分工具如何與Adobe Campaign v8搭配使用，以提供個人化的對話。
 solution: Real-time Customer Data Platform, Campaign
 exl-id: d0291088-02ed-4e7e-b538-018ea40e38c6
-source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
+source-git-commit: 711d781e4b0cf967786808233badbc5eac8a5815
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 21%
+source-wordcount: '356'
+ht-degree: 15%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 21%
 
 * 請參閱Campaign來源連接器檔案 —  [促銷活動來源連接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/campaign.html?lang=en)
 * 僅支援Adobe Campaign單一組織單位部署
-* Adobe Campaign 是所有啟用的個人資料之真相來源，代表著個人資料必須存在於 Adobe Campaign 中，且不應基於 Experience Platform 區段建立新的個人資料。
 
 
 ### Experience PlatformReal-time Customer Data Platform區段共用
