@@ -1,8 +1,8 @@
 ---
-source-git-commit: b8709e01d7771ac9002fbc286c2d9709ef3d0ca2
+source-git-commit: 139702439c38e3bafe1aa74a129934504aa95352
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
 # 貢獻
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 貢獻者指南文件
 
-請參閱[貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+請參閱[貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
 ## 有疑問嗎？
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 程式碼審核
 
-所有提交應以提取請求的形式生效，且須由專案提交者審核。如需傳送提取請求的詳細資訊，請參閱 [GitHub 的提取請求文件](https://help.github.com/articles/about-pull-requests/)。
+所有提交應以提取請求的形式生效，且須由專案提交者審核。如需傳送提取請求的詳細資訊，請參閱 [GitHub 的提取請求文件](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)。
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -43,3 +43,4 @@ submitting a pull request!
 ## 安全性問題
 
 您不應在此問題追蹤上回報安全性問題。請改為[向我們的安全性專家提出問題](https://helpx.adobe.com/tw/security/alertus.html)
+
