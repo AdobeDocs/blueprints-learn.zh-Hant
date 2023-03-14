@@ -5,10 +5,10 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: f22ff4ac15b21592226f6645ab28f30473996776
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 86%
+source-wordcount: '1095'
+ht-degree: 56%
 
 ---
 
@@ -29,6 +29,242 @@ ht-degree: 86%
 <img src="../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a; margin-bottom: 15px;" width="90%" class="modal-image" />
 
 ## 資料擷取方法
+
+<table cellspacing="0" class="Table" style="border-collapse:collapse; width:1123px">
+<tbody>
+<tr>
+<td colspan="4" style="background-color:#308fff; border-bottom:4px solid white; border-left:1px solid white; border-right:1px solid white; border-top:1px solid white; height:31px; vertical-align:top; width:1123px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><strong><span style="color:black">串流來源</span></strong></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:20px; vertical-align:top; width:222px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">方法</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:20px; vertical-align:top; width:401px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">常見使用案例</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:20px; vertical-align:top; width:218px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">通訊協定</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:20px; vertical-align:top; width:282px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">考量事項</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant" style="color:#0563c1; text-decoration:underline">AdobeWeb/Mobile SDK</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">從網站和行動應用程式收集資料。</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">用戶端收集的偏好方法。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播、HTTP、JSON</span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">運用單一SDK實作多個Adobe應用程式。</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=en" style="color:#0563c1; text-decoration:underline">HTTP API連接器</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">從串流來源、交易、相關客戶事件和訊號收集</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播、重設API、JSON</span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">資料會直接串流至中樞，因此無法即時執行Edge細分或事件轉送。</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=en" style="color:#0563c1; text-decoration:underline">邊緣網路API</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">來自流源、交易、相關客戶事件和來自全球分佈式邊緣網路的信號的收集</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播、重設API、JSON</span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">資料通過邊緣網路流。 支援Edge上的即時分段。 </span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant" style="color:#0563c1; text-decoration:underline">Adobe應用程式</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">先前實作Adobe Analytics、Marketo、促銷活動、Target、AAM</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推送、來源連接器和API</span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">建議的方法是移轉至Web/Mobile SDK，而非傳統應用程式SDK。</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hant" style="color:#0563c1; text-decoration:underline">串流來源連接器</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">擷取企業事件資料流，通常用於將企業資料共用至多個下游應用程式。 </span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播、重設API、JSON</span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">必須以XDM格式串流。</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:222px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">串流來源SDK</span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:401px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">與HTTP API Connector類似，它允許外部資料流的自助設定卡。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:218px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播、HTTP API、JSON</span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">邊緣網路</span></span></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table cellspacing="0" class="Table" style="border-collapse:collapse; width:1105px">
+<tbody>
+<tr>
+<td colspan="4" style="background-color:#308fff; border-bottom:4px solid white; border-left:1px solid white; border-right:1px solid white; border-top:1px solid white; height:37px; vertical-align:top; width:1105px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><strong><span style="color:black">批次來源</span></strong></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:34px; vertical-align:top; width:217px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">方法</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:34px; vertical-align:top; width:397px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">常見使用案例</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:34px; vertical-align:top; width:215px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">通訊協定</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:34px; vertical-align:top; width:277px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">考量事項</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:217px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/getting-started.html?lang=en" style="color:#0563c1; text-decoration:underline">批次內嵌API</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:397px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">從企業管理的Que擷取。 擷取前的資料清理和轉換。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:215px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播、JSON或Parquet</span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">必須管理批次和檔案以進行擷取</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:217px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob-s3.html?lang=en" style="color:#0563c1; text-decoration:underline">批次來源連接器</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:397px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">從雲儲存位置擷取檔案的常見方法。</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">常見CRM和行銷應用程式的連接器。</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">非常適合擷取大量歷史資料。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:215px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">拉， CSV, JSON，鑲木</span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">不總是開啟，即時擷取。 </span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">循環頻率檢查，至少每15分鐘擷取增量檔案一次。</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:217px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone.html?lang=en" style="color:#0563c1; text-decoration:underline">資料登陸區</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:397px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Adobe已布建的檔案儲存位置，以推送檔案至以供擷取。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:215px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播， CSV, JSON，鑲木</span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"> — 提供7天TTL的檔案</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:217px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/sdk/overview.html?lang=en" style="color:#0563c1; text-decoration:underline">批次來源SDK</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:397px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">允許外部資料源的自助配置卡。</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">最適合合作夥伴連接器，或適合設定企業連接器的量身打造的工作流程體驗。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:215px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">提取、重設API、CSV或JSON檔案</span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:62px; vertical-align:top; width:277px">
+<ul>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">最小頻率為15分鐘</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">範例：MailChimp, One Trust, Zendesk</span></span></span></li>
+</ul>
+
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 | 擷取方法 | 說明 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

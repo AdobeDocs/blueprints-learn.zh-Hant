@@ -4,9 +4,9 @@ description: 此Blueprint提供並概述可從Adobe Experience Platform和應用
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-time Customer Data Platform, Data Collection
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: 730b73e56391b8f5ec49a7f570ca32c5cbc65aec
+source-git-commit: f22ff4ac15b21592226f6645ab28f30473996776
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '2052'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,307 @@ Blueprint分為兩個類別，以從Experience Platform和應用程式存取資�
 ## 資料存取與匯出概觀架構
 
 <img src="../experience-platform/assets/aep_data_flow.svg" alt="資料準備與擷取 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
+
+## 資料存取和匯出方法
+
+<table cellspacing="0" class="Table" style="border-collapse:collapse; width:1133px">
+<tbody>
+<tr>
+<td colspan="4" style="background-color:#308fff; border-bottom:4px solid white; border-left:1px solid white; border-right:1px solid white; border-top:1px solid white; height:39px; vertical-align:top; width:1133px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><strong><span style="color:black">串流目的地</span></strong></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">方法</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">常見使用案例</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">通訊協定</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">考量事項</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en" style="color:#0563c1; text-decoration:underline">事件轉送</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">將從AdobeSDK收集的原始資料轉送至企業系統，以便進行分析和收集</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">輕量標籤3<sup>rd</sup> 透過擴充功能收集交易方資料</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">JSON</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">REST API</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">低階原始事件</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">未添加聚合或以前的記錄上下文</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en#:~:text=containing%20profile%20exports.-，流%20segment%20export%20destinations,-Segment%20export%20destinations" style="color:#0563c1; text-decoration:underline">RTCDP — 串流區段匯出</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">從RTCDP到行銷和廣告、系統的受眾。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">JSON</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">REST API</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">代表受眾成員資格的匯總資料</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">未啟動原始體驗事件資料</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en#:~:text=file%2Dbased)%20destinations-,Streaming%20profile%20export%20destinations%20(enterprise%20destinations),-IMPORTANT" style="color:#0563c1; text-decoration:underline">RTCDP — 設定檔匯出目的地</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">運用RTCDP豐富的行為設定檔和對象，增強消費者體驗和行銷。</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">從RTCDP啟動受眾和設定檔屬性，到針對受眾和設定檔屬性運作的系統行銷和廣告。 </span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">向電子郵件服務提供者、銷售機會培養和CRM系統啟用AEP設定檔。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">JSON</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">REST API</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">代表受眾成員資格和設定檔記錄屬性的匯總資料</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">未啟動原始體驗事件資料</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/custom-personalization.html?lang=en" style="color:#0563c1; text-decoration:underline">RTCDP — 個人化目的地</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">在瀏覽器和用戶端體驗中存取即時客戶設定檔，以豐富用戶端個人化內容。 </span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">JSON</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">需要部署WebSDK</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-sdk/overview.html?lang=en" style="color:#0563c1; text-decoration:underline">RTCDP -Destination SDK</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">在RTCDP目的地中設定自訂的目的地卡。</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">支援檔案和串流類型目的地</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">JSON</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">CSV</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">允許合作夥伴和品牌設定自訂目的地卡</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=en" style="color:#0563c1; text-decoration:underline">RTCDP — 設定檔查詢中心API</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">存取設定檔，為代理輔助體驗（例如支援或銷售代理互動）豐富消費者體驗。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">提取</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">JSON</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">REST API</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">集線器查找僅適用於500毫秒以上的使用案例</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:27px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">RTCDP — 設定檔查詢Edge API*測試版</span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:27px; vertical-align:top; width:467px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">在邊緣存取設定檔，以豐富即時&lt;200毫秒體驗（例如網頁和行動裝置上的個人化或選件決策）的消費者體驗。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:27px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">提取</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">JSON</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">REST API</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:27px; vertical-align:top; width:282px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">提供即時體驗和伺服器對伺服器的整合</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:240px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/using-custom-actions.html?lang=en" style="color:#0563c1; text-decoration:underline">Journey Optimizer自訂動作</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:467px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">啟動1:1歷程事件和觸發器，以通知外部系統。 放棄購物車、放棄應用程式、註冊。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">JSON</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">REST API</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:282px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">指定設定檔的單一事件啟動。 不用於聚合或批量操作</span></span></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p> </p>
+
+<table cellspacing="0" class="Table" style="border-collapse:collapse; width:1132px">
+<tbody>
+<tr>
+<td colspan="4" style="background-color:#308fff; border-bottom:4px solid white; border-left:1px solid white; border-right:1px solid white; border-top:1px solid white; height:39px; vertical-align:top; width:1132px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><strong><span style="color:black">批次目的地</span></strong></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:245px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">方法</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:462px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">常見使用案例</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">通訊協定</span></span></span></p>
+</td>
+<td style="background-color:#969696; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:281px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">考量事項</span></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:245px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en" style="color:#0563c1; text-decoration:underline">資料存取API</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:462px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">存取資料科學的原始資料，以及Experience Platform外的ML工作流程。</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">提取</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">REST API</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">鑲木檔案</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:281px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">需要開發程式才能存取並處理可用資料集中的鑲木地板檔案</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:245px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant" style="color:#0563c1; text-decoration:underline">查詢服務</a></span></span></span></p>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:462px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">保留資料集的查詢結果，以匯總分析和製作報表。 </span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">提取</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">PostgreSQL </span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">SQL客戶端</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#cddbff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:281px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">僅匯總資料。 10分鐘查詢限制。</span></span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:1px solid white; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:245px">
+<p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en" style="color:#0563c1; text-decoration:underline">資料集匯出*測試版</a></span></span></span></p>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:462px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">匯出Experience Platform事件資料，以便在外部報告、分析和資料科學工具中存取。 </span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">匯出外部報告、分析和資料科學工具的匯總設定檔分析和受眾成員資格。 </span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:144px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">推播</span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">REST API </span></span></span></li>
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">CSV</span></span></span></li>
+</ul>
+</td>
+<td style="background-color:#e8eeff; border-bottom:1px solid white; border-left:none; border-right:1px solid white; border-top:none; height:39px; vertical-align:top; width:281px">
+<ul style="list-style-type:square">
+<li><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">目前為測試版，從資料集類型的子集開始</span></span></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 ## 資料存取方法
 
