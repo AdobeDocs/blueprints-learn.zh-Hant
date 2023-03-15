@@ -2,11 +2,12 @@
 title: 匿名Audience Activation藍圖
 description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。 此功能可在各裝置中實現個人化的統一即時客戶體驗。
 landing-page-description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。
+short-description: Learn to target audiences across web and advertising channels based on anonymous and behavioral customer data.
 solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
+source-git-commit: 3a6a98eded28baee2cbb44de2262bbd580fa0c94
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 30%
