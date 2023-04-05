@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Platform和應用程式架構圖
+title: Adobe Experience Platform 與應用程式架構圖
 description: 此架構圖顯示 Adobe Experience Platform 如何與其他 Adobe Experience Cloud 應用程式及應用程式服務連結。
 solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
 source-git-commit: 545cfee625e4baff679f6ccc9ae49e3c35fcc559
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Platform 與應用程式 架構圖
+# Adobe Experience Platform 與應用程式架構圖
 
 ## Adobe Experience Platform 與應用程式架構圖
 
@@ -26,7 +26,7 @@ ht-degree: 50%
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
-## Adobe Experience Platform與Experience Cloud應用程式整合
+## Adobe Experience Platform 與 Experience Cloud 應用程式整合
 
 <table class="relative-table wrapped" style="width: 100%;">
 <colgroup>
@@ -46,7 +46,7 @@ ht-degree: 50%
 <td colspan="1">Ad Cloud</td>
 <td colspan="1">
 <ul>
-<li>在即時客戶資料平台中定義的對象可透過 Audience Manager 共用至 Ad Cloud，以進行目標定位。</li>
+<li>在 Real-time Customer Data Platform 中定義的對象可透過 Audience Manager 共用至 Ad Cloud，以進行目標定位。</li>
 </ul>
 </td>
 <td colspan="1">
@@ -57,7 +57,7 @@ ht-degree: 50%
 <td colspan="1">
 <ul>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=zh-Hant">匿名對象啟用</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html">已知客戶啟用</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant">已知客戶啟用</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/platform-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a></li>
 </ul>
 </td>
@@ -66,7 +66,7 @@ ht-degree: 50%
 <td>Analytics</td>
 <td>
 <ul>
-<li>透過Web/Mobile SDK收集的資料可轉送至Adobe Analytics。</li>
+<li>透過 Web/Mobile SDK 收集的資料可轉送至 Adobe Analytics。</li>
 </ul>
 </td>
 <td>
@@ -84,18 +84,18 @@ ht-degree: 50%
 <td>Audience Manager</td>
 <td>
 <ul>
-<li>可以與 Audience Manager 共用在即時客戶資料平台中定義的對象，以啟用至第三方 Cookie 目的地。</li>
+<li>可以與 Audience Manager 共用在 Real-time Customer Data Platform 中定義的對象，以啟用至第三方 Cookie 目的地。</li>
 </ul>
 </td>
 <td>
 <ul>
-<li>從Audience Manager收集和評估的資料，以及對象成員資格，可以與Experience Platform資料湖和設定檔存放區共用。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a></li>
+<li>從 Audience Manager 收集和評估的資料以及對象會籍可以共用至 Experience Platform 資料湖和個人資料儲存區。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a></li>
 </ul>
 </td>
 <td>
 <ul>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/anonymous.html?lang=zh-Hant">匿名對象啟用</a></li>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html">已知客戶啟用</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant">已知客戶啟用</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a></li>
 </ul>
 </td>
@@ -104,17 +104,17 @@ ht-degree: 50%
 <td colspan="1">Campaign Classic</td>
 <td colspan="1">
 <ul>
-<li>在即時客戶資料平台中定義的對象可以共用至 Campaign Classic，作為啟動行銷活動的對象。</li>
+<li>在 Real-time Customer Data Platform 中定義的對象可以共用至 Campaign Classic，作為啟動行銷活動的對象。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>Campaign收集的互動和促銷活動資料可擷取至Experience Platform，作為資料來源，以便透過Real-time Customer Data Platform建立受眾，以及透過Customer Journey Analytics和Experience Platform查詢服務進行分析時進一步使用。</li>
+<li>Campaign 所收集的互動和行銷活動資料可作為資料來源擷取至 Experience Platform，以便透過 Real-time Customer Data Platform 進一步用於對象建立，以及透過 Customer Journey Analytics 和 Experience Platform 查詢服務進一步用於分析。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html?lang=en">客戶歷程</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html?lang=zh-Hant">客戶歷程</a></li>
 </ul>
 </td>
 </tr>
@@ -122,17 +122,17 @@ ht-degree: 50%
 <td colspan="1">Campaign Standard</td>
 <td colspan="1">
 <ul>
-<li>在即時客戶資料平台中定義的對象可以共用至 Campaign Standard，作為啟動行銷活動的對象。</li>
+<li>在 Real-time Customer Data Platform 中定義的對象可以共用至 Campaign Standard，作為啟動行銷活動的對象。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>Campaign收集的互動和促銷活動資料可擷取至Experience Platform，作為資料來源，以便透過Real-time Customer Data Platform建立受眾，以及透過Customer Journey Analytics和Experience Platform查詢服務進行分析時進一步使用。</li>
+<li>Campaign 所收集的互動和行銷活動資料可作為資料來源擷取至 Experience Platform，以便透過 Real-time Customer Data Platform 進一步用於對象建立，以及透過 Customer Journey Analytics 和 Experience Platform 查詢服務進一步用於分析。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html">客戶歷程</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/overview.html?lang=zh-Hant">客戶歷程</a></li>
 </ul>
 </td>
 </tr>
@@ -141,14 +141,14 @@ ht-degree: 50%
 <td colspan="1">
 <ul>
 <li>收集並擷取至 Experience Platform 資料湖的資料可供處理 Customer Journey Analytics。 </li>
-<li>可將Real-time Customer Data Platform的設定檔和對象資料擷取至CJA。 <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ingest-aep-segments.html?lang=en">RTCDP與CJA整合</a>.
+<li>可將 Real-time Customer Data Platform 的個人資料和對象資料擷取至 CJA。<a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-ingestion/ingest-aep-segments.html?lang=zh-Hant">RTCDP 與 CJA 整合</a>
 </li>
 </ul>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>在Customer Journey Analytics中建立受眾，並將受眾結果共用至Real-time Customer Data Platform。 <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en">CJA對象發佈</a></li>
+<li>在 Customer Journey Analytics 中建立對象，並將對象結果共用至 Real-time Customer Data Platform。<a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hant">CJA 對象發佈</a></li>
 </ul>
 </td>
 <td colspan="1">
@@ -171,7 +171,7 @@ ht-degree: 50%
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">已知客戶啟用</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant">已知客戶啟用</a></li>
 </ul>
 </td>
 </tr>
@@ -184,12 +184,12 @@ ht-degree: 50%
 </td>
 <td colspan="1">
 <ul>
-<li>Journey Optimizer產生的互動和促銷活動資料會收集到Experience Platform中，以供透過Real-time Customer Data Platform建立受眾、透過Customer Journey Analytics分析，以及Experience Platform查詢服務進一步使用。</li>
+<li>Journey Optimizer 所生成的互動和行銷活動資料被收集至 Experience Platform，以便透過 Real-time Customer Data Platform 進一步用於對象建立，以及透過 Customer Journey Analytics、Experience Platform 查詢服務進一步用於分析。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=en">Journey Optimizer</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=zh-Hant">Journey Optimizer</a></li>
 </ul>
 </td>
 </tr>
@@ -197,12 +197,12 @@ ht-degree: 50%
 <td colspan="1">Adobe Commerce</td>
 <td colspan="1">
 <ul>
-<li>Real-time Customer Data Platform中建置的設定檔和對象可在Adobe Commerce中供個人化使用。 </li>
+<li>Real-time Customer Data Platform 中建置的個人資料和對象可在 Adobe Commerce 中供個人化使用。 </li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>Adobe Commerce原生的資料可透過Adobe Commerce來源連接器傳送至Experience Platform。 </li>
+<li>Adobe Commerce 原生的資料可透過 Adobe Commerce 來源連接器傳送至 Experience Platform。 </li>
 </ul>
 </td>
 <td colspan="1">目前無整合</td>
@@ -211,17 +211,17 @@ ht-degree: 50%
 <td colspan="1">Marketo</td>
 <td colspan="1">
 <ul>
-<li>在即時客戶資料平台中定義的對象可以共用至 Marketo，作為啟動 Marketo 行銷活動和更新 Marketo 物件的對象。</li>
+<li>在 Real-time Customer Data Platform 中定義的對象可以共用至 Marketo，作為啟動 Marketo 行銷活動和更新 Marketo 物件的對象。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>Marketo帳戶、連絡人和商機資料，以及Marketo產生的互動和行銷活動資料會擷取至Experience Platform中，以便透過B2B-CDP建立受眾，以及透過Customer Journey Analytics和Experience Platform查詢服務進行分析時進一步使用。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant">Marketo Engage 連接器</a></li>
+<li>Marketo 帳戶、連絡人和商機資料以及 Marketo 所產生的互動和行銷活動資料，會擷取至 Experience Platform 中，以便透過 B2B-CDP 進一步用於對象構建，以及透過 Customer Journey Analytics、Experience Platform 查詢服務進一步用於分析。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant">Marketo Engage 連接器</a></li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=en">B2B啟動Blueprint</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/b2bactivation.html?lang=zh-Hant">B2B 啟用藍圖</a></li>
 </ul>
 </td>
 </tr>
@@ -229,18 +229,18 @@ ht-degree: 50%
 <td colspan="1">Real-Time CDP</td>
 <td colspan="1">
 <ul>
-<li>擷取和收集至 Experience Platform 的資料是匯整即時客戶個人資料的資料來源，這些個人資料為即時客戶資料平台提供支援。</li>
+<li>擷取和收集至 Experience Platform 的資料是匯整即時客戶個人資料的資料來源，這些個人資料為 Real-time Customer Data Platform 提供支援。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
 <li>「對象」和「個人資料」量度指標會傳送至 Experience Platform 資料湖，以支援個人資料深入分析報告控制面板。</li>
-<li>資料湖中的「對象」和「設定檔」資料可透過「查詢服務」和「Customer Journey Analytics」來進一步深入分析。</li>
+<li>資料湖中的「對象」和「個人資料」資料可用於透過查詢服務和 Customer Journey Analytics 進一步進行深入分析。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">已知客戶啟用</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant">已知客戶啟用</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a></li>
 </ul>
 </td>
@@ -249,17 +249,17 @@ ht-degree: 50%
 <td colspan="1">Target</td>
 <td colspan="1">
 <ul>
-<li>Real-time Customer Data Platform中定義的對象和設定檔屬性可以共用至Target，並用於Target傳送的個人化和鎖定體驗。</li>
+<li>在 Real-time Customer Data Platform 中定義的對象和個人資料屬性可共用至 Target，並用於 Target 提供的個人化和目標定位體驗。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li>針對Target體驗和互動收集的資料可透過Experience PlatformWeb/Mobile SDK收集以Experience Platform。 此資料可用於透過Real-time Customer Data Platform建立受眾、透過Customer Journey Analytics分析，以及Experience Platform查詢服務。</li>
+<li>為 Target 體驗和互動收集的資料可透過 Experience Platform Web/Mobile SDK 收集至 Experience Platform。這些資料可用於透過 Real-time Customer Data Platform 進行對象構建，以及用於透過 Customer Journey Analytics、Experience Platform 查詢服務進行分析。</li>
 </ul>
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=en">已知客戶啟用</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant">已知客戶啟用</a></li>
 <li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant">使用 Experience Platform 和應用程式啟用</a></li>
 </ul>
 </td>
