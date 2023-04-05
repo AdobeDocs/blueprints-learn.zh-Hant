@@ -1,32 +1,32 @@
 ---
-title: 受眾和設定檔啟用藍圖
-description: 透過即時客戶資料平台，提供受眾已啟用和以個人資料為中心的客戶體驗。
+title: 對象和個人資料啟用藍圖
+description: 透過 Real-time Customer Data Platform，提供受眾已啟用和以個人資料為中心的客戶體驗。
 solution: Real-time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
 source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '872'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
-# 對象與個人資料啟用 藍圖
+# 對象與個人資料啟用藍圖
 
-受眾和設定檔啟動是資料導向行銷領域成功的關鍵。 但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
+以對象與個人資料啟用是資料驅動行銷領域成功的關鍵。但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
 
-採用以通道為優先的方法時，每個通道皆是孤島，個人化工作僅強調在該通道上與品牌互動的客戶。此方法無法反映客戶在許多不同接觸點與品牌互動的事實。 對象與個人資料啟用允許品牌連接多個通道中的客戶互動，以提供可向所有通道啟用的集中化個人資料與對象。
+採用以通道為優先的方法時，每個通道皆是孤島，個人化工作僅強調在該通道上與品牌互動的客戶。此方法無法反映客戶透過很多不同的接觸點與品牌互動的現實情況。對象與個人資料啟用允許品牌連接多個通道中的客戶互動，以提供可向所有通道啟用的集中化個人資料與對象。
 
-| Blueprint | 說明 | Experience Cloud應用程式 |
+| Blueprint | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
 | **[匿名對象啟用](anonymous.md)** | <ul><li>為匿名和行為客戶資料定位網路及廣告通道上的對象。</li><li>整合協力廠商對象資料以增強個人化。</li></ul> | <ul><li>Adobe Audience Manager</li></ul> |
-| **[已知客戶啟用](known.md)** | <ul><li>啟用至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL 即時客戶資料平台]</li><li>Adobe Audience Manager (可選)</li></ul> |
-| **[透過Experience Cloud應用程式啟動受眾和設定檔](platform-and-applications.md)** | <ul><li>在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們</li><li>在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL 即時客戶資料平台]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
-| **[區段符合](segment-match.md)** | <ul><li>透過更佳的控管、權限和偏好管理系統，行銷人員可進一步增強其與主要合作夥伴的第一方驗證受眾。</li></ul> | <ul><li>Adobe Experience Platform </li></ul> |
+| **[已知客戶啟用](known.md)** | <ul><li>啟用至基於已知個人資料的目標，例如電子郵件供應商、社交網路及廣告目標。 </li><li>使用離線屬性和事件，例如離線訂單、事務、CRM 或忠誠度資料，與線上行為一起進行線上目標定位和個人化。</li></ul> | <ul><li>Adobe Experience Platform</li><li> [!UICONTROL Real-time Customer Data Platform]</li><li>Adobe Audience Manager (可選)</li></ul> |
+| **[使用 Experience Cloud 應用程式的對象與個人資料啟用](platform-and-applications.md)** | <ul><li>在 Experience Platform 中管理個人資料和對象，以及與 Experience Cloud 應用程式分享它們</li><li>在 Experience Platform 中建立並分享豐富的客戶區段和客戶分析，並且在 Experience Cloud 應用程式中分享它們</li></ul> | <ul><li>Adobe Experience Platform</li><li>[!UICONTROL Real-time Customer Data Platform]</li><li>Experience Platform 啟用</li><li>Experience Cloud 應用程式</li></ul> |
+| **[區段比對](segment-match.md)** | <ul><li>透過更佳的控管、權限和偏好管理系統，行銷人員可進一步增強其與主要合作夥伴的第一方驗證對象。</li></ul> | <ul><li>Adobe Experience Platform </li></ul> |
 
-## 即時客戶個人檔案架構
+## Real-time Customer Profile 架構
 
 下圖概述了 Experience Platform 的即時客戶個人資料的核心元件。
 
@@ -38,24 +38,24 @@ ht-degree: 83%
 
 在身分圖提供已關聯之各種來源個人資料片段間的關係時，會發生個人資料片段合併。合併策略確定要合併哪些來源片段以及將哪些身分圖用作這些片段。任何時候只要存取個人資料，就會合併個人資料片段，以確保個人資料的最新組合檢視。管理和原則規則可確保只有已授權的區段和屬性才能啟動至指定的目的地。
 
-## 區段與目的地概觀
+## 分段與目標概覽
 
 下圖概述了各種分段方法，以及各種個人資料和對象啟用模式。
 
 <img src="assets/segmentation_destination_overview.png" alt="即時客戶個人資料的參考架構" style="border:1px solid #4a4a4a" width="90%"  class="modal-image"/>
 
-## 受眾和設定檔啟用藍圖的護欄
+## 對象與個人資料啟用護欄藍圖
 
-* 有關詳細的護欄和端到端延遲，請參閱 [部署護欄文檔](../experience-platform/deployment/guardrails.md) 和 [設定檔和分段護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+* 有關詳細的護欄和端對端延遲，請參閱[部署護欄文檔](../experience-platform/deployment/guardrails.md)和[個人資料和分段護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 ### 啟用屬性和身分
 
-* [!UICONTROL 即時客戶資料平台]可啟用對象會籍，以及針對選取要啟用之區段成員的個人資料所發生的屬性和身分變更。如果您的目標是啟用屬性或身分識別，您必須定義全域區段，其中包含所有要向其傳送屬性和身分更新的個人資料。此時，您可以選取要作為目標設定一部分啟用的區段和所需屬性。
-* 請注意，批次目標不支援啟用僅限屬性的變更事件。完整或增量受眾成員資格可與選取的屬性一起傳送以進行啟用。
+* [!UICONTROL Real-time Customer Data Platform]可啟用對象會籍，以及針對選取要啟用之區段成員的個人資料所發生的屬性和身分變更。如果您的目標是啟用屬性或身分識別，您必須定義全域區段，其中包含所有要向其傳送屬性和身分更新的個人資料。此時，您可以選取要作為目標設定一部分啟用的區段和所需屬性。
+* 請注意，批次目標不支援啟用僅限屬性的變更事件。完整或增量對象成員資格可與選取的屬性一起傳送以進行啟用。
 
 ### 啟用批次區段至串流目標
 
-* 支援批次區段啟用至串流目標。由於設定檔符合批次區段工作的對象成員資格，因此這些實現可透過串流啟動來啟動。
+* 支援批次區段啟用至串流目標。由於個人資料符合批次區段工作的對象成員資格，因此這些實現可透過串流啟動來啟動。
 
 ### 啟用串流區段至批次目標
 
