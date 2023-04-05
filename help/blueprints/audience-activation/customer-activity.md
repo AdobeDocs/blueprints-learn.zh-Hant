@@ -1,19 +1,19 @@
 ---
 title: 客戶活動中心藍圖
-description: '"[!UICONTROL 即時客戶個人檔案] 為代理輔助支援和銷售提供上下文的查閱。」'
+description: '[!UICONTROL Real-time Customer Profile] 查詢，提供代理協助的支援及銷售之情境。'
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
 source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # 客戶活動中心藍圖
 
-Customer Activity Hub Blueprint顯示外部應用程式如何存取Adobe Experience Platform [!UICONTROL 即時客戶個人檔案].
+客戶活動中心藍圖顯示外部應用程式如何存取 Adobe Experience Platform 的[!UICONTROL  Real-time Customer Profile]。
 
 外部應用程式可以透過 API GET 請求存取個人資料。儲存在個人資料中的屬性、事件、區段會籍及模型驅動的功能然後可用於這些外部非 Adobe 應用程式。
 
@@ -35,7 +35,7 @@ Customer Activity Hub Blueprint顯示外部應用程式如何存取Adobe Experie
 
 * [[!UICONTROL 即時客戶個人資料]的護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
-## 實作步驟
+## 實施步驟
 
 1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
@@ -45,7 +45,7 @@ Customer Activity Hub Blueprint顯示外部應用程式如何存取Adobe Experie
 1. [設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant)。
 1. 使用[實體 API 從記錄實體或體驗事件實體查詢個人資料屬性](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=zh-Hant)。
 
-## 相關檔案
+## 相關文件
 
 * [Adobe Experience Platform Activation 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform0.html)
 * [[!UICONTROL 即時客戶個人資料]文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
