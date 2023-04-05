@@ -1,36 +1,36 @@
 ---
-title: Experience Platform和應用程式護欄
-description: 護欄定義了對Adobe Experience Platform和應用程式中的元件和服務的效能期望和影響
+title: Experience Platform 和應用程式護欄
+description: 護欄定義了對 Adobe Experience Platform 和應用程式中的元件和服務的效能期望和影響
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
 source-git-commit: 802507291f54dc3f253d469e7a64d78e34b75c6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '305'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
 # 護欄
 
-護欄是建議的閾值，可為資料和系統使用提供指導、優化效能，以及避免在Adobe Experience Platform和應用程式中出現錯誤或意外結果。 護欄旨在反映系統約束和效能期望，以促進客戶架構和使用案例效能優化。 護欄不是服務級別協定，有關特定產品服務級別協定的資訊，請參閱以下連結的產品說明文檔。
+護欄是建議的閾值，可為資料和系統使用提供指導、優化效能，以及避免在 Adobe Experience Platform 和應用程式中出現錯誤或意外結果。護欄旨在反映系統約束和效能期望，以促進客戶架構和使用案例效能優化。護欄不是服務級別協定，有關特定產品服務級別協定的資訊，請參閱以下連結的產品說明文件。
 
 
-## Adobe Experience Platform和應用程式的護欄
+## Adobe Experience Platform 和應用程式的護欄
 
-[資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en)
+[資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hant)
 
-[邊緣網路API護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=en)
+[Edge Network API 護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=zh-Hant)
 
-[即時客戶設定檔護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+[Real-time Customer Profile 護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
-[身分護欄](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=en)
+[身分護欄](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=zh-Hant)
 
-[查詢服務護欄](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=en)
+[Query Service 護欄](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=zh-Hant)
 
-[目標激活護欄](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html)
+[目標啟用護欄](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=zh-Hant)
 
-[Journey Optimizer護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=en)
+[Journey Optimizer 護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=zh-Hant)
 
 <br>
 
@@ -44,48 +44,48 @@ ht-degree: 18%
 
 ### 區段
 
-<img src="../assets/segmentation_guardrails.svg" alt="Experience Platform分段護欄" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../assets/segmentation_guardrails.svg" alt="Experience Platform 區段護欄" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
-### Real-time Customer Data Platform與Adobe Target
+### Real-time Customer Data Platform 與 Adobe Target
 
-<img src="../assets/RTCDP_Target_guardrails.svg" alt="RTCDP和目標護欄" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../assets/RTCDP_Target_guardrails.svg" alt="RTCDP 和 Target 護欄" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Customer Journey Analytics
 
-<img src="../assets/CJA_guardrails.svg" alt="CJA護欄" style="border:1px solid #4a4a4a" width="85%" />
+<img src="../assets/CJA_guardrails.svg" alt="CJA 護欄" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Journey Optimizer
 
-<img src="../assets/AJO_guardrails.svg" alt="參考架構Journey Optimizer Blueprint" style="width:85%; border:1px solid #4a4a4a" />
+<img src="../assets/AJO_guardrails.svg" alt="Journey Optimizer 參考架構藍圖" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
 ## 產品說明
 
-[Experience Platform收集Enterprise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
+[Experience Platform Collection Enterprise](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
 
-[即時客戶資料平台](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
+[Real-time Customer Data Platform](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
 
-[B2B客戶資料平台](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-platform-b2b.html)
+[B2B Customer Data Platform](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-b2b.html)
 
 [Experience Platform 啟用](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform0.html)
 
 [Experience Platform 情報](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
 
-[Intelligent Services](https://helpx.adobe.com/legal/product-descriptions/intelligent-services.html)
+[Intelligent Services](https://helpx.adobe.com/tw/legal/product-descriptions/intelligent-services.html)
 
-[資料Distiller](https://helpx.adobe.com/legal/product-descriptions/data-distiller.html)
+[Data Distiller](https://helpx.adobe.com/tw/legal/product-descriptions/data-distiller.html)
 
 [Customer Journey Analytics](https://helpx.adobe.com/tw/legal/product-descriptions/customer-journey-analytics.html)
 
-[Journey Optimizer](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html)
+[Journey Optimizer](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
 
-[Journey Orchestration](https://helpx.adobe.com/legal/product-descriptions/journey-orchestration.html)
+[Journey Orchestration](https://helpx.adobe.com/tw/legal/product-descriptions/journey-orchestration.html)
 
-[offer decisioning](https://helpx.adobe.com/legal/product-descriptions/offer-decisioning-app-service.html)
+[Offer Decisioning](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)
