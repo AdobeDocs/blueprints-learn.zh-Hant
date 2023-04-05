@@ -1,46 +1,46 @@
 ---
-title: Customer Journey AnalyticsReal-time Customer Data Platform Blueprint
-description: 在Customer Journey Analytics中統一和分析客戶歷程中的資料和客戶行為，從CJA發佈受眾到RTCDP
+title: Customer Journey Analytics 搭配 Real-time Customer Data Platform 藍圖
+description: 在 Customer Journey Analytics 中統一和分析客戶歷程中的資料和客戶行為，從 CJA 向 RTCDP 發佈對象
 solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
 source-git-commit: 2d7d2fff6c430b66e4a2935d4c68b5a8b9ecfae2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
-# Customer Journey AnalyticsReal-time Customer Data Platform Blueprint
+# Customer Journey Analytics 搭配 Real-time Customer Data Platform 藍圖
 
-建立Customer Journey Analytics(CJA)中識別的對象，並將其發佈至Adobe Experience Platform中的「即時客戶設定檔」，以便鎖定客戶並個人化。 非常適合使用歷史資料建立對象，或透過精細篩選和運算欄位建立更完善的對象(Customer Journey Analytics)。
+在 Customer Journey Analytics(CJA) 中建立識別的對象，並將其發佈至 Adobe Experience Platform 中的 Real-time Customer Profile，以便鎖定客戶並個人化。非常適合使用歷史資料建立對象，或透過精細篩選和運算欄位建立更完善的對象(Customer Journey Analytics)。
 
-## Customer Journey Analytics對象發佈指南
+## Customer Journey Analytics 對象發佈指南
 
-請參閱下列檔案，以取得從Customer Journey Analytics發佈至Real-time Customer Data Platform之對象的實作與設定指引。 [文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html)
+請參閱下列檔案，以取得從 Customer Journey Analytics 向 Real-time Customer Data Platform 發佈對象的實作與設定指南。[文件](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hant)
 
-## Customer Journey Analytics藍圖體系結構
+## Customer Journey Analytics 藍圖架構
 
 ![架構圖](assets/CJA.svg){zoomable=&quot;yes&quot;}
 
-## Customer Journey Analytics藍圖的護欄圖
+## Customer Journey Analytics 藍圖的護欄圖
 
-* 有關詳細的護欄和端到端延遲，請參閱 [部署護欄文檔](../experience-platform/deployment/guardrails.md)
+* 有關詳細的護欄和端對端延遲，請參閱[部署護欄文件](../experience-platform/deployment/guardrails.md)
 
 ![護欄圖](../experience-platform/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
 
-## 常見問題
+## 常見問題集
 
-* 如果CJA傳送的RTCDP中不存在對應的設定檔，會建立新的設定檔，還是只有已存在設定檔的對象會從CJA記錄？ 是，將會建立新的設定檔。 因此，如果您的RTCDP實作僅針對已知客戶，則應編寫CJA對象規則，以僅篩選具有已知身分的設定檔。 如果不需要，這將確保RTCDP設定檔計數不會從匿名設定檔中增加。
+* 如果 CJA 傳送的 RTCDP 中不存在對應的個人資料，會建立新的個人資料，還是只會從 CJA 記錄已存在個人資料的對象？將會建立新的個人資料。因此，如果您的 RTCDP 實作僅針對已知客戶，則應編寫 CJA 對象規則，以僅篩選具有已知身分的個人資料。如果不需要，這將確保 RTCDP 個人資料計數不會將匿名個人資料算入其中。
 
-* CJA會以管道事件或也會前往資料湖的一般檔案形式傳送對象資料嗎？ CJA受眾會透過管道串流至RTCDP設定檔服務，但資料也會以資料集的形式儲存在Data Lake中。
+* CJA 會以管道事件或也會前往資料湖的一般檔案形式傳送對象資料嗎？CJA 對象會透過管道串流至 RTCDP 個人資料服務，但資料也會以資料集的形式儲存在資料湖中。
 
-* CJA會傳送哪些身分識別？ CJA會在CJA設定期間傳送任何已設為「人員ID」的身分識別。
+* CJA 會傳送哪些身分識別？CJA 會在 CJA 設定期間傳送任何已設為「人員 ID」的身分識別。
 
-* 主要身分設定為什麼？ 將CJA設為主要「人員」ID時，使用者所選取的任何身分。
+* 什麼將設定為主要身分？無論使用者選取何種身分，他們都會將 CJA 設為主要「人員」ID。
 
-* Identity Service是否也會處理CJA訊息？ 亦即CJA可以透過受眾共用，將身分新增至設定檔身分圖表嗎？ 否，身分識別服務不會處理CJA訊息。
+* 身分服務是否也會處理 CJA 訊息？也就是說 CJA 可以透過對象共用，將身分新增至個人資料身分圖表嗎？否，身分服務不會處理 CJA 訊息。
 
 ## 相關部落格貼文
 
