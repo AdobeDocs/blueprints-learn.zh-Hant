@@ -1,103 +1,105 @@
 ---
-title: B2B受眾和設定檔啟用藍圖
-description: 透過Real-time Customer Data Platform提供以帳戶為基礎的受眾和以設定檔為中心的客戶體​驗。
+title: B2B 對象和個人資料啟用藍圖
+description: 透過 Real-Time Customer Data Platform​，提供以公司客戶對象和個人資料為中心的客戶體驗。
 solution: Real-time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
 source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '842'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# B2B受眾和設定檔啟用藍圖
+# B2B 對象和個人資料啟用藍圖
 
-使用與個別客戶系結的帳戶、機會和銷售機會資訊，建立可操作的b2b設定檔，以改進跨管道的個人化和鎖定目標。
+使用與個別客戶系結的公司帳戶、機會和銷售機會資訊，建立可操作的 b2b 個人資料，以改進跨通道的個人化和鎖定目標。
 
 ## 使用案例
 
-* 針對B2B資料（包括帳戶、機會和銷售機會），建立人員對象，以針對各管道鎖定目標和個人化。
-* 對任何Experience Platform目的地啟用對象，以用於鎖定目標和個人化。
+* 針對 B2B 資料（包括公司帳戶、機會和銷售機會），建立人員對象，以針對各通道鎖定目標和個人化。
+* 對任何 Experience Platform 目標啟用對象，以用於鎖定目標和個人化。
 
 ## 應用程式
 
-* 即時客戶資料平台 B2B版
+* Real-time Customer Data PlatformB2B 版
 
 ## 整合模式
 
-* B2B資料來源(Marketo、Salesforce等) -> Real-time Customer Data Platform B2B版 — >目的地各種B2B資料來源可用來將帳戶、銷售機會、機會和人員資料對應至Real-time Customer Data Platform的B2B版。
+* B2B 資料來源（Marketo、Salesforce 等）-> Real-time Customer Data Platform B2B 版 -> 目標
+各種 B2B 資料來源可用於將公司客戶、銷售機會、機遇以及人員資料對應至 B2B 版本的 Real-time Customer Data Platform。
 
 ## 架構
 
-<img src="assets/b2b-activation.svg" alt="B2B啟動Blueprint的參考架構" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="assets/b2b-activation.svg" alt="B2B 啟用藍圖參考架構" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 <br>
 
 ## 護欄
 
-* 請注意，Marketo Engage相關護欄和實作步驟僅在將Marketo Engage用作源和/或目標時才相關。
+* 請注意，Marketo Engage 相關護欄和實作步驟僅在將 Marketo Engage 用作源和/或目標時才相關。
 
-* 有關端到端延遲的其他詳細資訊和護欄，請參閱 [部署護欄文檔](../experience-platform/deployment/guardrails.md)
+* 有關端對端延遲的其他詳細資訊和護欄，請參閱[部署護欄文件](../experience-platform/deployment/guardrails.md)
 
 
-### 多個執行個體和IMS組織支援：
+### 多個執行個體和 IMS 組織支援：
 
-以下概述支援的映射Experience Platform和Marketo Engage實例模式。
+以下概述了對應 Experience Platform 和 Marketo Engage 執行個體的支援模式。
 
-#### Marketo作為Experience Platform的資料來源：
+#### Marketo 作為 Experience Platform 的資料來源：
 
-* 支援將多個Marketo Engage例項轉換為一個Experience Platform例項。
-* 不支援多個Marketo Engage例項至多個Experience Platform例項。
-* 不支援一個Marketo Engage例項至多個Experience Platform例項。
-* 支援一個Marketo Engage例項至一個Experience Platform例項和多個沙箱。
+* 支援將多個 Marketo Engage 執行個體對應到一個 Experience Platform 執行個體。
+* 支援將多個 Marketo Engage 執行個體對應到許多 Experience Platform 執行個體。
+* 不支援將一個 Marketo Engage 執行個體對應到許多 Experience Platform 執行個體。
+* 支援將一個 Marketo Engage 執行個體對應到一個 Experience Platform 執行個體和多個沙箱。
 
-#### Marketo作為Experience Platform的目的地：
+#### Marketo 作為 Experience Platform 的目的地：
 
-* 支援Experience Platform至許多Marketo Engage例項
-* 支援多個Experience Platform例項至一個Marketo Engage例項
+* 支援 Experience Platform 對應到許多 Marketo Engage 執行個體
+* 支援將許多 Experience Platform 執行個體對應到一個 Marketo Engage 執行個體
 
-#### Experience Platform設定檔和分段護欄：
+#### Experience Platform 個人資料和細分護欄：
 
-* 請參閱設定檔和分段護欄，以取得Experience Platform- [設定檔和分段護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
-* B2B區段（包括帳戶、銷售機會、銷售機會）使用多實體關係，導致區段評估成為批。 僅限於人員和事件的區段支援串流細分。
+* 請參閱 Experience Platform-[個人資料和細分護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)的個人資料和細分護欄
+* B2B 區段（包括帳戶、銷售機會、機遇）使用多實體關係，導致區段評估成為批。僅限人員和事件的區段支援串流細分。
 
-#### Experience Platform-Marketo Engage源連接器：
+#### Experience Platform-Marketo Engage 來源連接器：
 
-* 根據資料量，歷史回填最多可能需要7天才能完成。
-* 持續的Marketo資料更新和變更會透過串流API傳送至Experience Platform，最多可將資料延遲5分鐘至設定檔，並將延遲約15分鐘至資料湖（視數量而定）。
+* 歷史回填最多可能需要 7 天才能完成，具體取決於資料量。
+* 持續的 Marketo 資料更新和變更會透過串流 API 傳送至 Experience Platform，最多可將資料延遲 5 分鐘至個人資料，並將延遲約 15 分鐘至資料湖（視數量而定）。
 
-#### Experience Platform- Marketo目的地連接器：
+#### Experience Platform- Marketo 目標連接器：
 
-* 從Real-time Customer Data Platform到Marketo Engage的串流區段共用最多需要5分鐘。
-* 根據Experience Platform分段排程，每日共用一次批次分段。 B2B區段（包括帳戶、銷售機會、銷售機會）使用多實體關係，導致區段成為批。
+* 從 Real-time Customer Data Platform 到 Marketo Engage 的串流區段共用最多需要 5 分鐘。
+* 根據 Experience Platform 分段排程，每日共用一次批次分段。B2B 區段（包括帳戶、銷售機會、機遇）使用多實體關係，導致區段成為批。
 
-#### Marketo Engage護欄：
+#### Marketo Engage 護欄：
 
-* 聯絡人和銷售機會必須直接在Marketo Engage中擷取和定義，Real-time Customer Data Platform對象才能與Marketo Engage連絡人和銷售機會相符。
+* 聯絡人和銷售機會必須直接在 Marketo Engage 中擷取和定義，Real-time Customer Data Platform 對象才能與 Marketo Engage 連絡人和銷售機會相匹配。
 
 #### 目標護欄
 
-* 請參閱目的地檔案，以取得有關目的地的特定指引。 [目標護欄](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=en)
+* 請參閱目標文件，以取得有關目標的特定指南。[目標護欄](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=zh-Hant)
 
 
-## 實作步驟
+## 實施步驟
 
-如需如何實作和設定Real-time Customer Data Platform B2B版的指引，請參閱Real-time Customer Data Platform檔案的B2B版。 [B2B版Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
+如需如何實作和設定 Real-time Customer Data Platform B2B 版的指南，請參閱 Real-time Customer Data Platform B2B 版文件。[B2B 版 Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=zh-Hant)
 
-有兩種可能的實施模式。 從Marketo Engage內嵌B2B資料和設定檔，或從其他CRM資料來源內嵌B2B資料。
+有兩種可能的實施模式。從 Marketo Engage 擷取 B2B 資料和個人資料，或從其他 CRM 資料來源擷取 B2B 資料的能力。
 
-## 實作考量事項
+## 實施考量
 
-藍圖主要考量事項和設定的指引。
+主要考量事項和設定指南藍圖
 
-* CRM與Marketo的整合與不整合：如果實作將使用Marketo Engage作為來源，且Marketo Engage已連線至CRM，請使用Experience Platform中的Marketo來源連接器，將CRM資料內嵌至Experience Platform。 如果需要擷取其他表格，請使用Experience Platform來源連接器。 如果實作不會使用Marketo Engage作為來源，請使用CRM來源Experience Platform連接器，將CRM來源直接連結至AEP。
-* 僅Real-time Customer Data PlatformB2B版不建議鉛啟動和培養。 對於此使用案例，建議使用銷售機會培養工具(例如Marketo Engage)。
-* AEP的Marketo Engage目的地連接器可將對象推送至Marketo Engage以進行啟用，只會推送電子郵件地址和ECID。 如果該聯繫人尚未存在，則不會建立新的銷售機會，因此需要將配置檔案和銷售機會資料內嵌到Marketo Engage中。
+* CRM 整合與不整合 Marketo：
+如果實作將使用 Marketo Engage 作為來源，且 Marketo Engage 已連線至 CRM，請使用 Experience Platform 中的 Marketo 來源連接器，將 CRM 資料擷取至 Experience Platform。如果需要擷取其他表格，請使用 Experience Platform 來源連接器。如果實作不會使用 Marketo Engage 作為來源，請使用 CRM 來源 Experience Platform 連接器，將 CRM 來源直接連接至 AEP。
+* 不建議單獨使用 Real-time Customer Data Platform B2B 版進行銷售機會啟動和培養。對於此使用案例，建議使用銷售機會培養工具（例如 Marketo Engage）。
+* AEP 的 Marketo Engage 目標連接器可將對象推送至 Marketo Engage 以進行啟用，只會推送電子郵件地址和 ECID。如果該聯繫人尚未存在，則不會建立新的銷售機會，因此需要將個人資料和銷售機會資料擷取到 Marketo Engage 中。
 
-## 相關檔案
+## 相關文件
 
-* [B2B版Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=en)
+* [B2B 版 Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=zh-Hant)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=en)
+* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=zh-Hant)
 * [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant)
-* [Adobe Experience Platform - Marketo目的地連接器](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html?lang=en)
+* [Adobe Experience Platform – Marketo Destination Connector](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-platform-segment-to-a-marketo-static-list.html?lang=zh-Hant)
