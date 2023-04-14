@@ -20,7 +20,7 @@ ht-degree: 100%
 
 <ul><li>Adobe Campaign Managed Cloud Services</li><li>Adobe Journey Optimizer</li></ul>
 
-| Blueprint | 說明 | 架構 |
+| 藍圖 | 說明 | 架構 |
 |---|---|---|
 | **[Journey Optimizer](journey-optimizer.md)** | 建立在 Experience Platform Real-Time Customer Profile 之上的原生功能，讓行銷團隊能對客戶行為的變化做出即時反應，並隨時符合客戶在任何通道的所在位置 | <img src="assets/ajo-architecture.svg" alt="Journey Optimizer 藍圖的參考架構" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
 | **[Adobe Campaign v8](campaign-v8.md)** | 新一代宣傳工具，針對高度複雜的資料管理和行銷流程而優化。可讓客戶將發現和建立豐富的行銷活動通訊相結合 | <img src="assets/campaign-v8-architecture.svg" alt="Campaign v8 藍圖的參考架構" style="width:75%; border:1px solid #4a4a4a" class="modal-image" /> |
