@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 實施步驟
 
-1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
+1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=zh-Hant)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 ## 實施考量
 
 * 在大多數情況下，模型結果應擷取為個人資料屬性，而非體驗事件。模型結果可以是簡單的屬性字串。如果要擷取多個模型結果，建議使用陣列或對應類型欄位。
-* 每日個人資料快照資料集是統一個人資料屬性資料的每日匯出，可用來訓練個人資料屬性資料的模型。可存取[此處](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html?lang=zh-Hant)的個人資料快照資料集文檔。
+* 每日個人資料快照資料集是統一個人資料屬性資料的每日匯出，可用來訓練個人資料屬性資料的模型。可存取[此處](https://experienceleague.adobe.com/docs/experience-platform/dashboards/query.html?lang=zh-Hant#profile-attribute-datasets)的個人資料快照資料集文檔。
 * 若要從 Experience Platform 中擷取資料，可使用下列方法
    * 資料存取 SDK
       * 資料為原始檔案形式
