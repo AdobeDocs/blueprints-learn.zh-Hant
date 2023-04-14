@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 應用程式
 
-* Real-time Customer Data PlatformB2B 版
+* Real-time Customer Data Platform B2B版
 
 ## 整合模式
 
