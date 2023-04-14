@@ -41,4 +41,4 @@ ht-degree: 100%
 
 ### 藍圖架構
 
-<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=zh-Hant"><img alt="圖片：電信企業提供即時定製交易，同時高效地客戶登入，實現了長期忠誠度。" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/ajo-architecture.svg"/></a>
+<a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=zh-Hant"><img alt="圖片：電信企業提供即時定製交易，同時高效地客戶登入，實現了長期忠誠度。" src="https://experienceleague.adobe.com/docs/blueprints-learn/assets/ajo-architecture.svg"/></a>
