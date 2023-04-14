@@ -25,7 +25,7 @@ Journey Optimizer 可用來在適當的時間，跨所有接觸點為客戶提�
 
 <img src="../assets/offers_overview.png" alt="決策管理" style="width:100%; border:1px solid #4a4a4a" />
 
-「決策管理」可以透過兩種方式之一部署在邊緣或中心上。每種方法都有一組特定的介面和協定，用於運行服務，如下面參考的各自藍圖中所述。其他詳細資訊也可包含在[「決策管理」文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/start-offer-delivery-apis.html?lang=zh-Hant)中。
+「決策管理」可以透過兩種方式之一部署在邊緣或中心上。每種方法都有一組特定的介面和協定，用於運行服務，如下面參考的各自藍圖中所述。其他詳細資訊也可包含在[「決策管理」文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery-api/decisioning-vs-edge-apis.html?lang=zh-Hant)中。
 
 ## 中心的決策管理
 
