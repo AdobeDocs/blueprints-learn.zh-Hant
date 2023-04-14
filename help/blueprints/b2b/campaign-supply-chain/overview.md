@@ -155,7 +155,7 @@ Workfront 專案可經過範本化，以便在每次執行特定行銷策略時�
 
 ### 管理 Marketo Engage 行銷活動名稱及其相關聯的 URL {#managing-marketo-engage-campaign-names}
 
-標準化行銷活動和 URL 的命名慣例，是在 Marketo Engage 中準確管理方案的關鍵基礎，有助於在整個促銷活動供應鏈中推動更一致的流程。若您想尋找相關工具，建議您查看一些免費開放原始碼工具（來自 [Adobe 成功服務](https://main—marketo-campaign-tools—dr-adobe.hlx.live/){target="_blank"}），可讓您建立一致的方法來建立和管理 Marketo Engage 促銷活動及其相關的 URL。
+標準化行銷活動和 URL 的命名慣例，是在 Marketo Engage 中準確管理方案的關鍵基礎，有助於在整個促銷活動供應鏈中推動更一致的流程。若您想尋找相關工具，建議您查看一些免費開放原始碼工具（來自 [Adobe 成功服務](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"}），可讓您建立一致的方法來建立和管理 Marketo Engage 促銷活動及其相關的 URL。
 
 ### 資源 {#resources}
 
