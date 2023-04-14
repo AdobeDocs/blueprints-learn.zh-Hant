@@ -26,7 +26,7 @@ ht-degree: 100%
 
 ## Customer Journey Analytics 藍圖的護欄圖
 
-* 有關詳細的護欄和端對端延遲，請參閱[部署護欄文件](../experience-platform/deployment/guardrails.md)
+* 有關詳細的護欄和端到端延遲，請參閱[部署護欄文件](../experience-platform/deployment/guardrails.md)
 
 ![護欄圖](../experience-platform/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
 
