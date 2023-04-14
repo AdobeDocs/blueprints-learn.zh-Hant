@@ -6,9 +6,9 @@ kt: 7198
 thumbnail: null
 exl-id: 5016f657-dd55-4ab7-859d-c97bc5edff76
 source-git-commit: 21b688109ee8c3d209f2cac5267eb95258851dae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '118'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 64%
 
 <img src="assets/aep_data_flow.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
-## 資料入口和輸出模式
+## 資料輸入和輸出模式
 
-如需所有資料擷取、收集和入口模式的詳細清單，請參閱 [資料準備和擷取Blueprint](../data-ingestion/ingestion.md).
+如需所有資料擷取、收集和輸入模式的詳細清單，請參閱[資料準備和擷取藍圖](../data-ingestion/ingestion.md)。
 
-如需所有資料輸出和存取方的詳細清單，請參閱 [資料存取與匯出藍圖](../data-ingestion/egress.md).
+如需所有資料輸出和存取模式的詳細清單，請參閱[資料存取與匯出藍圖](../data-ingestion/egress.md)。
 
 ## 資料擷取護欄
 
