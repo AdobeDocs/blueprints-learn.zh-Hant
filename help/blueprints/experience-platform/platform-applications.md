@@ -71,7 +71,7 @@ ht-degree: 100%
 </td>
 <td>
 <ul>
-<li>Analytics 收集的資料可傳送至 Experience Platform 資料湖和個人資料儲存區。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant">Analytics 資料連接器</a></li>
+<li>Analytics 收集的資料可傳送至 Experience Platform 資料湖和個人資料儲存區。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant">Analytics 資料連接器</a></li>
 </ul>
 </td>
 <td>
@@ -89,7 +89,7 @@ ht-degree: 100%
 </td>
 <td>
 <ul>
-<li>從 Audience Manager 收集和評估的資料以及對象會籍可以共用至 Experience Platform 資料湖和個人資料儲存區。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a></li>
+<li>從 Audience Manager 收集和評估的資料以及對象會籍可以共用至 Experience Platform 資料湖和個人資料儲存區。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant">Audience Manager 來源連接器</a></li>
 </ul>
 </td>
 <td>
@@ -189,7 +189,7 @@ ht-degree: 100%
 </td>
 <td colspan="1">
 <ul>
-<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=zh-Hant">Journey Optimizer</a></li>
+<li><a href="https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer.html?lang=zh-Hant">Journey Optimizer</a></li>
 </ul>
 </td>
 </tr>
@@ -216,7 +216,7 @@ ht-degree: 100%
 </td>
 <td colspan="1">
 <ul>
-<li>Marketo 帳戶、連絡人和商機資料以及 Marketo 所產生的互動和行銷活動資料，會擷取至 Experience Platform 中，以便透過 B2B-CDP 進一步用於對象構建，以及透過 Customer Journey Analytics、Experience Platform 查詢服務進一步用於分析。<a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant">Marketo Engage 連接器</a></li>
+<li>Marketo 帳戶、連絡人和商機資料以及 Marketo 所產生的互動和行銷活動資料，會擷取至 Experience Platform 中，以便透過 B2B-CDP 進一步用於對象構建，以及透過 Customer Journey Analytics、Experience Platform 查詢服務進一步用於分析。 <a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant">Marketo Engage 連接器</a></li>
 </ul>
 </td>
 <td colspan="1">
