@@ -1,5 +1,5 @@
 ---
-title: 網路與行動個人化  藍圖
+title: 網路與行動個人化   藍圖
 description: 提供包含[!UICONTROL 即時客戶個人資料]的個人化網路和行動內容。
 solution: Real-time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
