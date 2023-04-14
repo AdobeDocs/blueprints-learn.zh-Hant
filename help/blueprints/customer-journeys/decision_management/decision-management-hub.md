@@ -54,7 +54,7 @@ Adobe Experience Platform
 
 ## 護欄
 
-* 有關 Journey Optimizer 護欄，請參閱下列 [Journey Optimizer 護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=zh-Hant)。
+* 有關 Journey Optimizer 護欄，請參閱下列 [Journey Optimizer 護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html?lang=zh-Hant)。
 * 有關決策管理護欄，請參閱下面的[ Decision Management 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)。
 * 每秒請求數= 2000。
 * 回應延遲&lt; 500毫秒。
@@ -76,8 +76,8 @@ Adobe Experience Platform
 ## 實作模式
 
 * 透過與 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/offers-e2e.html?lang=zh-Hant) 直接整合，在電子郵件、簡訊和傳出通道中實作。
-* 針對以伺服器 API 為基礎的決策管理實作，請運用 [決策 API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/start-offer-delivery-apis.html?lang=zh-Hant)。
-* 若要實作批次決策以大量傳送優惠方案給訊息傳送應用程式，請使用[批次決策 API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/offer-delivery-api/batch-decisioning-api.html?lang=zh-Hant)。
+* 針對以伺服器 API 為基礎的決策管理實作，請運用 [決策 API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/decisioning-vs-edge-apis.html?lang=zh-Hant)。
+* 若要實作批次決策以大量傳送優惠方案給訊息傳送應用程式，請使用[批次決策 API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/api-reference/offer-delivery/batch-decisioning-api.html?lang=zh-Hant)。
 * 對於邊緣型即時體驗，請依照[邊緣上的決策管理藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=zh-Hant)中所述使用 Web/Mobile SDK 或 Edge Decisioning API。
 <br>
 
@@ -87,7 +87,7 @@ Adobe Experience Platform
 
 #### 方案/資料集
 
-1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)
+1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=zh-Hant)
 1. 在 Experience Platform 中為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. 在 Experience Platform 中[新增資料使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
 1. [建立政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=zh-Hant)以在目標上執行治理。
