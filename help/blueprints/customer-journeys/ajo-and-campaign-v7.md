@@ -54,12 +54,12 @@ ht-degree: 100%
 * 由區段會籍發起的歷程可以兩種模式操作：
    * 批次區段 (每 24 小時重新整理一次)
    * 串流區段 (&lt;5 分鐘限定條件)
-* 批次區段 — 需要確保您瞭解符合資格使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
-* 串流區段 — 需要確保個人資料資格的初始高載可隨每個歷程及所有歷程中符合資格的每日串流流量一起處理
+* 批次區段 — 需要確保您瞭解符合限定條件使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
+* 串流區段 — 需要確保個人資料限定條件的初始高載可隨每個歷程及所有歷程中符合限定條件的每日串流流量一起處理
 * 不支援決策管理
 * 不支援業務事件
 * 傳出整合至第三方系統
-   * 不支援單個靜態 Ip，因為我們的基礎架構是多租戶（必須允許列出所有資料中心 IP）
+   * 不支援單個靜態 IP，因為我們的基礎架構是多租戶（必須允許列出所有資料中心 IP）
    * 自訂動作僅支援 POST 和 PUT 方法
    * 驗證支援：權杖 |密碼 | OAuth2
 * 無法在各種沙箱之間封裝及移動 Adobe Experience Platform 或 Journey Optimizer 的個別元件。必須在新環境中重新實作
@@ -86,10 +86,10 @@ ht-degree: 100%
 
 #### 方案/資料集
 
-1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)
+1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=zh-Hant)
 1. 為 Adobe Campaign broadLog、trackingLog 和無法傳送的位址表建立以體驗事件類別為基礎的方案（選用）。
 1. 在 Experience Platform 中為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
-1. [在 Experience Platform 中新增使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
+1. 在 Experience Platform 中[新增資料使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
 1. [建立政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=zh-Hant)以在目標上執行治理。
 
 #### 個人資料/身份
