@@ -48,8 +48,8 @@ ht-degree: 100%
     <p><em>傳遞由受眾啟用的跨通道廣告。</em></p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel.html?lang=zh-Hant"><img alt="數位行為資料整合 Blueprint 的縮圖影像" src="customer-journey-analytics/assets/CJA.svg" /></a>
-    <div><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel.html?lang=zh-Hant"><strong>跨通道歷程分析</strong></a></div>
+    <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=zh-Hant"><img alt="數位行為資料整合 Blueprint 的縮圖影像" src="customer-journey-analytics/assets/CJA.svg" /></a>
+    <div><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cross-channel.html?lang=zh-Hant"><strong>跨通道歷程分析</strong></a></div>
     <p><em>為不同通道的客戶行為提供單一的整合視圖。</em></p>
   </td>
 </tr>
