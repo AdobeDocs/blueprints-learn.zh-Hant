@@ -17,7 +17,7 @@ B2B 對象與個人資料啟用是資料驅動行銷領域成功的關鍵。但�
 
 採用以通道為優先的方法時，每個通道皆是孤島，個人化工作僅強調在該通道上與品牌互動的客戶。此方法無法反映客戶透過很多不同的接觸點與品牌互動的現實情況。B2B 對象與個人資料啟用允許品牌連接多個通道中的客戶互動，將其與相對公司客戶和機遇的資訊相對應，以提供可向所有通道啟用的集中化個人資料與對象。
 
-| Blueprint | 說明 | Experience Cloud 應用程式 |
+| 藍圖 | 說明 | Experience Cloud 應用程式 |
 |---|---|---|
 | **[B2B 分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=zh-Hant)** | <ul><li>在客戶歷程分析中加入 B2B 公司客戶資訊</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
 | **[B2B 對象啟用](b2bactivation.md)** | <ul><li>跨網路、電子郵件和廣告通道鎖定 B2B 對象</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B版</li></ul> |
