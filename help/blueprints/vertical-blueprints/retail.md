@@ -32,29 +32,29 @@ ht-degree: 39%
 | 類別 | 目標 | 使用案例 | 說明 |
 |:----|:----|:----|:----|
 | 客戶歷程 | 贏取 | 歡迎系列 | 歡迎新訂閱者，瞭解業務、產品和服務簡介 |
-|  |  | 第1個購買計畫 |  |
-|  | 提升銷售 | 捨棄的購物車/瀏覽 | 回覆潛在購買者，提高銷售額 |
-|  |  | 產品審查/交叉銷售 | 透過產品評論交叉銷售更多專案。 |
-|  |  | 產品促銷活動 |  |
-|  |  | 重新排序時間 | 循環產品/服務的週期性提醒 |
-|  | 品牌忠誠度 | 贏回 | 復原已停用的客戶。 |
-|  |  | 生日提醒 | 參與客戶生日慶典，與客戶建立更個人化的關係！ |
+| | | 第1個購買計畫 | |
+| | 提升銷售 | 捨棄的購物車/瀏覽 | 回覆潛在購買者，提高銷售額 |
+| | | 產品審查/交叉銷售 | 透過產品評論交叉銷售更多專案。 |
+| | | 產品促銷活動 |  |
+| | | 重新排序時間 | 循環產品/服務的週期性提醒 |
+| | 品牌忠誠度 | 贏回 | 復原已停用的客戶。 |
+| | | 生日提醒 | 參與客戶生日慶典，與客戶建立更個人化的關係！ |
 | 銷售 | 管理詳細目錄 | 重新補充庫存 | 顯示客戶想買的產品有庫存，藉此改善庫存狀況 |
-|  |  | 下一個最佳類別 | 識別使用者的最佳類別/銷售 |
-|  |  | 最暢銷商品 |  |
-|  |  | 降價提醒 | 向使用者顯示他們喜歡的專案的價格已降低 |
-|  |  | 類似產品 |  |
+| | | 下一個最佳類別 | 識別使用者的最佳類別/銷售 |
+| | | 最暢銷商品 | |
+| | | 降價提醒 | 向使用者顯示他們喜歡的專案的價格已降低 |
+| | | 類似產品 |  |
 | 個人化 | 增加轉換 | 優惠券/優惠 | 向客戶顯示最佳優惠方案/優惠券 |
-|  |  | 個人化產品搜尋 | 改善搜尋體驗 |
-|  |  | 產品Recommendations | 改善產品瀏覽體驗 |
-|  |  | 全頻道體驗 | 跨所有管道觸及客戶 |
+| | | 個人化產品搜尋 | 改善搜尋體驗 |
+| | | 產品Recommendations | 改善產品瀏覽體驗 |
+| | | 全頻道體驗 | 跨所有管道觸及客戶 |
 | 測量 | 瞭解客戶歷程 | 跨頻道行銷活動 | 衡量跨頻道行銷活動 |
-|  |  | 區段績效 | 瞭解區段效能和貢獻 |
-|  |  | 流失報表 | 視覺化每個階段的轉換 |
-|  |  | 同類群組分析 | 測量區段群組之間的參與 |
-|  |  | 點按到磚塊報表 | 瞭解客戶轉換如何帶來店內體驗 |
-|  |  | 出處 | 檢視哪個接觸點/體驗對購買轉換的影響最大 |
-|  |  | 預測性分析 | 進一步瞭解客戶傾向 |
+| | | 區段績效 | 瞭解區段效能和貢獻 |
+| | | 流失報表 | 視覺化每個階段的轉換 |
+| | | 同類群組分析 | 測量區段群組之間的參與 |
+| | | 點按到磚塊報表 | 瞭解客戶轉換如何帶來店內體驗 |
+| | | 出處 | 檢視哪個接觸點/體驗對購買轉換的影響最大 |
+| | | 預測性分析 | 進一步瞭解客戶傾向 |
 
 ## 架構
 
@@ -67,10 +67,10 @@ ht-degree: 39%
 | 使用案例/整合  | 連結 |
 |:----|:----|
 | CJA + AEP | [Customer Journey Analytics藍圖概觀](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=zh-Hant) |
-|  | [Customer Journey Analytics — 使用案例](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=zh-Hant) |
+| | [Customer Journey Analytics — 使用案例](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=zh-Hant) |
 | AJO + AEP | [Adobe Journey Optimizer — 使用案例](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
-|  | [決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant) |
+| | [決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant) |
 | RTCDP + AEP | [線上/離線對象啟用](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant) |
-|  | [Experience Platform+應用程式啟動](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant) |
-| MARKETO + AEP | [B2B 啟用與行銷 ](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) |  |
-| Target + AEP | [Adobe Target使用案例 — 行為網頁/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=en) | [使用已知客戶資料進行 Web/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) |  |
+| | [Experience Platform+應用程式啟動](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant) |
+| MARKETO + AEP | [B2B 啟用與行銷 ](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) | |
+| Target + AEP | [Adobe Target使用案例 — 行為網頁/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=en) | [使用已知客戶資料進行 Web/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) | |

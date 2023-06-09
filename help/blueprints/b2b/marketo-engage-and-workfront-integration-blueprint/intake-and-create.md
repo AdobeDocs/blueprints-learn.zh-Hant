@@ -4,8 +4,8 @@ description: 引入和建立 — Marketo Engage和Workfront整合藍圖
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
 source-git-commit: c4ab702cafa0dcacc4b3919bf70af0c50fa6bea8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1329'
+ht-degree: 99%
 
 ---
 
