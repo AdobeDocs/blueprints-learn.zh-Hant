@@ -4,10 +4,10 @@ description: 護欄定義了對 Adobe Experience Platform 和應用程式中的�
 solution: Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: b3eddbfe943f45e1acbbb108652824df45c6c0e8
+source-git-commit: 73815906905fbefa1402a78351076a7da7d4930c
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 89%
+source-wordcount: '342'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 護欄是建議的閾值，可為資料和系統使用提供指導、優化效能，以及避免在 Adobe Experience Platform 和應用程式中出現錯誤或意外結果。護欄旨在反映系統約束和效能期望，以促進客戶架構和使用案例效能優化。護欄不是服務級別協定，有關特定產品服務級別協定的資訊，請參閱以下連結的產品說明文件。
 
 
-## Adobe Experience Platform 和應用程式的護欄
+## Adobe Experience Platform和應用程式的護欄參考檔案
 
 [資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hant)
 
@@ -42,31 +42,31 @@ ht-degree: 89%
 
 ### 資料擷取
 
-<img src="../assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" />
+<img src="assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### 區段
 
-<img src="../assets/segmentation_guardrails.svg" alt="Experience Platform 區段護欄" style="border:1px solid #4a4a4a" width="85%" />
+<img src="assets/segmentation_guardrails.svg" alt="Experience Platform 區段護欄" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Real-time Customer Data Platform 與 Adobe Target
 
-<img src="../assets/RTCDP_Target_guardrails.svg" alt="RTCDP 和 Target 護欄" style="border:1px solid #4a4a4a" width="85%" />
+<img src="assets/RTCDP_Target_guardrails.svg" alt="RTCDP 和 Target 護欄" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Customer Journey Analytics
 
-<img src="../assets/CJA_guardrails.svg" alt="CJA 護欄" style="border:1px solid #4a4a4a" width="85%" />
+<img src="assets/CJA_guardrails.svg" alt="CJA 護欄" style="border:1px solid #4a4a4a" width="85%" />
 
 <br>
 
 ### Journey Optimizer
 
-<img src="../assets/AJO_guardrails.svg" alt="Journey Optimizer 參考架構藍圖" style="width:85%; border:1px solid #4a4a4a" />
+<img src="assets/AJO_guardrails.svg" alt="Journey Optimizer 參考架構藍圖" style="width:85%; border:1px solid #4a4a4a" />
 
 <br>
 
