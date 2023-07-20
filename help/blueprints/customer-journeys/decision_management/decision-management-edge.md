@@ -3,8 +3,8 @@ title: 邊緣上 Decision Management 藍圖
 description: 跨通道（包括即時網路和行動體驗）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: ht
+source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
+workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 100%
 
@@ -64,13 +64,13 @@ Adobe Experience Platform
 
 ### 資料擷取護欄
 
-<img src="../../experience-platform/assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
+<img src="../../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
 
 <br>
 
 ### 啟用護欄
 
-<img src="../../experience-platform/assets/AJO_guardrails.svg" alt="Journey Optimizer 參考架構藍圖" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="../../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Journey Optimizer 參考架構藍圖" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
