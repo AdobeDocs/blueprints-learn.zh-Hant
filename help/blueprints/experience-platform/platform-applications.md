@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Platform 與應用程式架構圖
 description: 此架構圖顯示 Adobe Experience Platform 如何與其他 Adobe Experience Cloud 應用程式及應用程式服務連結。
-solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-time Customer Data Platform
+solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 478a9bf0449e7953d527b5a54580f8eec7a7c30f
+source-git-commit: 89dcbc4d71a9edff3095a6707cecc823281a9385
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 99%
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 <img src="assets/aep+apps.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
-## Adobe Experience Platform和應用程式概述圖
+## Adobe Experience Platform和應用程式概觀圖表
 
 <img src="assets/aep+apps_overview.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
