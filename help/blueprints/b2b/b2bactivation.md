@@ -1,10 +1,10 @@
 ---
 title: B2B 對象和個人資料啟用藍圖
 description: 透過 Real-Time Customer Data Platform​，提供以公司客戶對象和個人資料為中心的客戶體驗。
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
+source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 98%

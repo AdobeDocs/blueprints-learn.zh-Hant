@@ -1,11 +1,11 @@
 ---
 title: 檔案和企業串流目標的對象和設定檔啟用藍圖
 description: 對象與個人資料啟用至企業目標
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
-source-git-commit: 0d1bb41eb6b70be7c3c8a3196c9974a0d7807404
-workflow-type: ht
+source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 100%
 
