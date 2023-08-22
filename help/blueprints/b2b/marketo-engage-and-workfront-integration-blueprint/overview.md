@@ -1,15 +1,15 @@
 ---
-title: Marketo Engage和Workfront整合Blueprint概觀
-description: 概觀 — Marketo Engage和Workfront整合Blueprint概觀
+title: Marketo Engage和Workfront整合藍圖概觀
+description: 概覽 — Marketo Engage與Workfront整合Blueprint概覽
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: d5220e5550aa8c7e3b13996dd3d4279ba8403435
+source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 96%
+source-wordcount: '1767'
+ht-degree: 94%
 
 ---
 
-# Marketo Engage和Workfront整合Blueprint概觀 {#overview}
+# Marketo Engage和Workfront整合藍圖概觀 {#overview}
 
 ## 使用Marketo Engage和Workfront加快上市時間 {#achieve-faster-time-to-market-with-marketo-engage-and-workfront}
 
@@ -46,7 +46,7 @@ ht-degree: 96%
 
 1. 擷取與建立：會提出行銷活動請求，並以程式設計方式組合行銷活動資產。
 
-1. 證明並核准：行銷活動一經組建，利害相關者就可以審核並簽核行銷活動資產，例如電子郵件和登陸頁面。
+1. 檢閱和核准：行銷活動完成組裝後，利害關係人就可以檢閱和簽核電子郵件和登陸頁面等行銷活動資產。
 
 1. 報告和審計：將行銷活動結果分享至 Workfront，讓跨職能部門的利害關係人更能看見。
 
@@ -149,11 +149,11 @@ Workfront 專案可經過範本化，以便在每次執行特定行銷策略時�
 
 * [擷取與建立](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md){target="_blank"} — 透過 Marketo Engage 和 Workfront 實現行銷活動開發自動化
 
-* 證明並核准（即將推出）
+* [檢閱和核准](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md){target="_blank"}
 
 ### 管理 Marketo Engage 行銷活動名稱及其相關聯的 URL {#managing-marketo-engage-campaign-names}
 
-將行銷活動和URL的命名慣例標準化，是精確管理Marketo Engage方案的關鍵基礎，並有助於在整個行銷活動開發生命週期中推動程式更加一致。 若您想尋找相關工具，建議您查看一些免費開放原始碼工具（來自 [Adobe 成功服務](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"}），可讓您建立一致的方法來建立和管理 Marketo Engage 促銷活動及其相關的 URL。
+將行銷活動和URL的命名慣例標準化，是Marketo Engage中準確方案管理的關鍵基礎，並有助於在整個行銷活動開發生命週期中推動更一致的程式。 若您想尋找相關工具，建議您查看一些免費開放原始碼工具（來自 [Adobe 成功服務](https://main--marketo-campaign-tools--dr-adobe.hlx.live/){target="_blank"}），可讓您建立一致的方法來建立和管理 Marketo Engage 促銷活動及其相關的 URL。
 
 ### 資源 {#resources}
 

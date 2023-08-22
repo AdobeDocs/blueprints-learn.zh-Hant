@@ -1,10 +1,10 @@
 ---
 title: 擷取並建立藍圖
-description: 引入和建立 — Marketo Engage和Workfront整合藍圖
+description: 擷取和建立 — Marketo Engage和Workfront整合藍圖
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
-source-git-commit: c4ab702cafa0dcacc4b3919bf70af0c50fa6bea8
+source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1324'
 ht-degree: 99%
 
 ---
@@ -149,7 +149,7 @@ ht-degree: 99%
 
 以下範例說明如何透過預先建置 [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=zh-Hant){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=zh-Hant){target="_blank"} 模組，在 Fusion 中組合工作流程邏輯，讓您更快實現自動化。
 
-![擷取與建立自動化流程](assets/intake-and-create-3.png)使用語彙基元來填入內容
+![擷取與建立自動化流程](assets/intake-and-create-3.png)
 
 ## 資源 {#resources}
 
