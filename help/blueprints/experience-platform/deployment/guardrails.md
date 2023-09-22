@@ -4,19 +4,23 @@ description: 護欄定義了對 Adobe Experience Platform 和應用程式中的�
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 89dcbc4d71a9edff3095a6707cecc823281a9385
+source-git-commit: df10f49b618804982dd5b72ab4061de619beb72f
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 87%
+source-wordcount: '373'
+ht-degree: 60%
 
 ---
 
 # 護欄
 
-護欄是建議的閾值，可為資料和系統使用提供指導、優化效能，以及避免在 Adobe Experience Platform 和應用程式中出現錯誤或意外結果。護欄旨在反映系統約束和效能期望，以促進客戶架構和使用案例效能優化。護欄不是服務級別協定，有關特定產品服務級別協定的資訊，請參閱以下連結的產品說明文件。
+護欄是建議的臨界值，可為Adobe Experience Platform和應用程式中的資料和系統使用提供指引。 護欄可反映系統限制和效能期望，以最佳化客戶架構和使用案例效能，並有助於避免錯誤或意外結果。 護欄並非服務等級協定。
+
+如需應用程式與功能之特定服務等級協定的詳細資訊，請參閱本頁底部的「應用程式與功能說明」。
 
 
 ## Adobe Experience Platform和應用程式的護欄參考檔案
+
+下列頁面提供Adobe Experience Platform功能、服務和應用程式護欄的相關資訊：
 
 [資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hant)
 
@@ -70,7 +74,9 @@ ht-degree: 87%
 
 <br>
 
-## 產品說明
+## 應用程式和功能說明
+
+如需功能特定服務等級協定的資訊，請參閱下列說明：
 
 [Experience Platform Collection Enterprise](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
 
