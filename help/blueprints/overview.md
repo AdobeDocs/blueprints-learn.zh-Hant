@@ -24,14 +24,11 @@ ht-degree: 100%
 ## 新增功能
 
 * **[企業目標的對象與個人資料啟用藍圖](/help/blueprints/audience-activation/enterprise-destinations.md)**
-
-   *讓所有系統的客戶個人資料保持最新狀態，支援銷售和支援團隊。*
+  *讓所有系統的客戶個人資料保持最新狀態，支援銷售和支援團隊。*
 * **[客戶活動中心藍圖](/help/blueprints/audience-activation/customer-activity.md)**
-
-   *提供代理協助的支援及銷售之內容。*
+  *提供代理協助的支援及銷售之內容。*
 * **[資料分析與情報藍圖](/help/blueprints/data-insights/analysis.md)**
-
-   *提供資料湖中資料的說明性查詢與分析。*
+  *提供資料湖中資料的說明性查詢與分析。*
 
 ## 重要藍圖
 
