@@ -5,10 +5,10 @@ solution: Data Collection
 kt: 7204
 thumbnail: null
 exl-id: 21f8a73e-6be7-448e-8cd3-ebee9fc848e1
-source-git-commit: 70e7bfb3a6d7bad858bd72b6329602bdfb822505
+source-git-commit: 886cae3895f3adc85f516ab8b4241bfe1fa9a541
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 100%
+source-wordcount: '1099'
+ht-degree: 99%
 
 ---
 
@@ -268,7 +268,7 @@ ht-degree: 100%
 
 | 擷取方法 | 說明 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Web/Mobile SDK | 延遲：<ul><li>即時 - 同頁集合到 Edge 網路</li><li>大約 1 分鐘串流擷取到個人資料</li><li>串流擷取到資料湖 (微批次約 15 分鐘)</ul>文件： <ul><li>[Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hant)</li><li>[使用 Web SDK 教學課程實作 Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)</li><li>[Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)</li><li>[在行動應用程式教學課程中實作 Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hant)</li></ul> |
+| Web/Mobile SDK | 延遲：<ul><li>即時 - 同頁集合到 Edge 網路</li><li>將內嵌串流到設定檔&lt; 15分鐘於第95個百分位數</li><li>串流擷取到資料湖 (微批次約 15 分鐘)</ul>文件： <ul><li>[Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hant)</li><li>[使用 Web SDK 教學課程實作 Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)</li><li>[Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)</li><li>[在行動應用程式教學課程中實作 Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hant)</li></ul> |
 | 串流來源 | [串流來源](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant#connectors)<br>延遲：<ul><li>即時 - 同頁集合到 Edge 網路</li><li>大約 1 分鐘串流擷取到個人資料</li><li>串流擷取到資料湖 (微批次約 15 分鐘)</li></ul> |
 | 串流 API | [Edge Network Server API（首選）](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=zh-Hant)— 支援邊緣服務，包括邊緣細分和<br>[ Data Collection Core Service API](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/streaming/http.html?lang=zh-Hant) — 不支援邊緣服務，直接路由到集線器。<br>延遲：<ul><li>即時 - 同頁集合到 Edge 網路</li><li>大約 1 分鐘串流擷取到個人資料</li><li>串流擷取到資料湖 (微批次約 15 分鐘)</li><li>7 GB/時</li></ul>[文件](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hant#what-can-you-do-with-streaming-ingestion%3F) |
 | ETL 工具 | 在擷取到 Experience Platform 之前，使用 ETL 工具修改和轉換企業資料。<br><br>延遲：<ul><li>時間取決於外部 ETL 工具排程，然後基於擷取所用方法套用標準擷取護欄。</li></ul> |
