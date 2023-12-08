@@ -7,8 +7,8 @@ mini-toc-levels: 3
 role: Architect, Developer, User
 source-git-commit: f98f1b6ca56ed1249e9c18ea04935808f4498ed5
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 92%
+source-wordcount: '250'
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 92%
       + [護欄](/help/blueprints/experience-platform/deployment/guardrails.md)
 + 對象與個人資料啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
-   + [匿名對象啟用(AAM)](/help/blueprints/audience-activation/anonymous.md)
+   + [匿名Audience Activation(AAM)](/help/blueprints/audience-activation/anonymous.md)
    + 已知客戶啟用 (RTCDP) {#known-customer-audience-activation}
       + [概覽](/help/blueprints/audience-activation/known.md)
       + [啟用社交和廣告通道](/help/blueprints/audience-activation/advertising-activation.md)
@@ -87,6 +87,6 @@ ht-degree: 92%
    + [自訂資料科學以豐富個人資料](/help/blueprints/data-insights/data-science.md)
 + 網路與行動個人化 {#web-personalization}
    + [概覽](/help/blueprints/web-personalization/overview.md)
-   + [行為個人化- Target](/help/blueprints/web-personalization/behavioral.md)
+   + [行為個人化 — 目標](/help/blueprints/web-personalization/behavioral.md)
    + [已知客戶個人化 — Target 和 RTCDP](/help/blueprints/web-personalization/known-personalization.md)
    + [決策管理](/help/blueprints/web-personalization/decision-management-edge.md)

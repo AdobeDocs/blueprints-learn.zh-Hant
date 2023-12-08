@@ -1,13 +1,13 @@
 ---
-title: Experience Platform 和應用程式護欄
+title: Experience Platform和應用程式護欄和端對端延遲
 description: 護欄定義了對 Adobe Experience Platform 和應用程式中的元件和服務的效能期望和影響
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 76ad3dceda37c5f991a43df5828a926f6dfc42a5
+source-git-commit: 94197d1b450694f96eb1ef17245c0353494859b1
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 36%
+source-wordcount: '464'
+ht-degree: 23%
 
 ---
 
