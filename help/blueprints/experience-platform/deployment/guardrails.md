@@ -4,16 +4,16 @@ description: 護欄定義了對 Adobe Experience Platform 和應用程式中的�
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 94197d1b450694f96eb1ef17245c0353494859b1
+source-git-commit: a16d7e925b7f5e9a379214d01280e4fef56344af
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 23%
+source-wordcount: '473'
+ht-degree: 20%
 
 ---
 
-# 護欄
+# 護欄與端對端延遲
 
-護欄是建議的臨界值，可為Adobe Experience Platform和應用程式中的資料和系統使用提供指引。 護欄可反映系統限制和效能期望，以最佳化客戶架構和使用案例效能，並有助於避免錯誤或意外結果。 護欄並非服務等級協定。
+護欄是建議的臨界值，可針對Adobe Experience Platform和應用程式中的資料、觀察到的延遲和系統使用情況提供指引。 護欄可反映系統限制和效能期望，以最佳化客戶架構和使用案例效能，並有助於避免錯誤或意外結果。 護欄並非服務等級協定。
 
 如需應用程式與功能之特定服務等級協定的相關資訊，請參閱 [應用程式和功能說明](#application-feature-descriptions) 區段。
 
@@ -25,15 +25,15 @@ ht-degree: 23%
 **Experience Platform應用程式**
 
 * [Real-Time CDP護欄概觀](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html)
-* [Customer Journey Analytics受眾共用護欄](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
-* [Customer Journey Analytics資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
-* [Journey Optimizer護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=zh-Hant)
+* [Customer Journey Analytics受眾共用護欄](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
+* [Customer Journey Analytics資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
+* [Journey Optimizer護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html)
 
 **Experience Platform服務**
 
-* [資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hant)
-* [Edge Network API 護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=zh-Hant)
-* [Real-time Customer Profile 護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+* [資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
+* [Edge Network API 護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [即時客戶個人檔案和分段護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 * [身分護欄](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=zh-Hant)
 * [Query Service 護欄](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=zh-Hant)
 * [目標啟用護欄](https://experienceleague.adobe.com/docs/experience-platform/destinations/guardrails.html?lang=zh-Hant)
