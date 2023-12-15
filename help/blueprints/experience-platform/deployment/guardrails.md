@@ -1,17 +1,17 @@
 ---
-title: Experience Platform和應用程式護欄和端對端延遲
+title: Experience Platform 和應用程式護欄
 description: 護欄定義了對 Adobe Experience Platform 和應用程式中的元件和服務的效能期望和影響
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: a16d7e925b7f5e9a379214d01280e4fef56344af
+source-git-commit: 4cc0eafda6e2670ac5b72b0a0ca59b84e1c0dba1
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 20%
+source-wordcount: '463'
+ht-degree: 22%
 
 ---
 
-# 護欄與端對端延遲
+# 護欄
 
 護欄是建議的臨界值，可針對Adobe Experience Platform和應用程式中的資料、觀察到的延遲和系統使用情況提供指引。 護欄可反映系統限制和效能期望，以最佳化客戶架構和使用案例效能，並有助於避免錯誤或意外結果。 護欄並非服務等級協定。
 
