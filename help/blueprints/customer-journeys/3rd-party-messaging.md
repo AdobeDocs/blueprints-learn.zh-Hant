@@ -3,10 +3,10 @@ title: Journey Optimizer — 第三方傳訊藍圖
 description: 示範如何搭配第三方傳訊系統來使用 Adobe Journey Optimizer，以協調和傳送個人化通訊。
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: a1421a47da2c84635ef904096a6036cfe488d763
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 99%
+source-wordcount: '421'
+ht-degree: 96%
 
 ---
 
@@ -40,39 +40,8 @@ Adobe Experience Platform
 
 [Journey Optimizer 護欄產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=zh-Hant)
 
-其他 Journey Optimizer 護欄：
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
-* 現今，限定可透過 API 設定，以確保目標系統不會飽和至故障點。限定意味著超出上限的訊息將徹底予以丟棄，不再傳送。不支援節流。
-   * 最大連接數：目標可以處理的最大 http/s 連接數
-   * 最大呼叫數：要在 periodInMs 參數中設定的最大呼叫數
-   * periodInMs：時間 (毫秒)
-* 由區段會籍發起的歷程可以兩種模式操作：
-   * 批次區段 (每 24 小時重新整理一次)
-   * 串流區段 (&lt;5 分鐘限定條件)
-* 批次區段 — 需要確保您瞭解符合限定條件使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
-* 串流區段 — 需要確保個人資料限定條件的初始高載可隨每個歷程及所有歷程中符合限定條件的每日串流流量一起處理
-* 不支援決策管理
-* 傳出整合至第三方系統
-   * 不支援單個靜態 IP，因為我們的基礎架構是多租戶（必須允許列出所有資料中心 IP）
-   * 自訂動作僅支援 POST 和 PUT 方法
-   * 驗證支援：權杖 |密碼 | OAuth2
-* 無法在各種沙箱之間封裝及移動 Adobe Experience Platform 或 Journey Optimizer 的個別元件。必須在新環境中重新實作
-
-<br>
-
-第三方傳訊系統
-
-* 需要了解系統對交易 API 呼叫可支援的負載
-   * 每秒允許的呼叫數
-   * 連線數
-* 需要了解進行 API 呼叫所需的驗證
-   * 驗證類型：權杖 |密碼 | OAuth2（透過 Journey Optimizer 支援）
-   * 驗證快取持續時間：權杖有效期多久？ 
-* 如果僅支援批次擷取，則需求將串流至雲端儲存引擎，例如 Amazon Kinesis 或 Azure Event Grid 1st
-   * 這些雲端儲存引擎可以批量處理資料，並流入第三方
-   * 任何所需的中間件均由客戶或第三方負責提供
-
-<br>
 
 ## 實施步驟
 
@@ -109,7 +78,7 @@ Adobe Experience Platform
 1. 運用 Adobe 標籤，並使用下列擴充功能建立行動屬性：
    * Adobe Journey Optimizer
    * Adobe Experience Platform Edge Network
-   * 身分邊緣網路
+   * 邊緣網路的身分識別
    * 行動裝置核心
 1. 針對行動應用程式部署與網頁部署，確保您擁有專屬的資料流
 1. 如需更多詳細資訊，請參閱 [Adobe Journey Optimizer 行動指南](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/)

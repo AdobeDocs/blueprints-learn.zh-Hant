@@ -3,10 +3,10 @@ title: 邊緣上 Decision Management 藍圖
 description: 跨通道（包括即時網路和行動體驗）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: d7901280f1bc23e6d37bcb285f20343c5ed8b46e
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 100%
+source-wordcount: '634'
+ht-degree: 98%
 
 ---
 
@@ -56,23 +56,11 @@ Adobe Experience Platform
 ## 護欄
 
 * 有關 Journey Optimizer 護欄，請參閱下列 [Journey Optimizer 護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html?lang=zh-Hant)。
+
 * 有關決策管理護欄，請參閱下面的[ Decision Management 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)。
-* 每秒請求數= 5000。
-* 回應延遲&lt; 250毫秒。
-* 存取邊緣即時個人資料。個人資料中將僅提供邊緣預計對象和個人資料屬性。
-* 如果首次體驗中需要個人化，則中心會是理想的選擇，因為有完整的個人資料可用。邊緣個人資料必須從中心同步，才能第一次出現邊緣體驗。因此，來自邊緣的第一個體驗將不包含先前上傳至中心的個人資料。
 
-### 資料擷取護欄
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
-<img src="../../experience-platform/deployment/assets/aep_data_flow_guardrails.svg" alt="Experience Platform 資料流程" style="border:1px solid #4a4a4a" width="85%" class="modal-image" />
-
-<br>
-
-### 啟用護欄
-
-<img src="../../experience-platform/deployment/assets/AJO_guardrails.svg" alt="Journey Optimizer 參考架構藍圖" style="width:85%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
 
 ## 實作模式
 

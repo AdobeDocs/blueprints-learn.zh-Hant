@@ -3,10 +3,10 @@ title: Journey Optimizer 搭配 Adobe Campaign v7 藍圖
 description: 示範 Adobe Journey Optimizer 如何與 Adobe Campaign 搭配使用，以利用 Campaign 中的即時傳訊伺服器原生傳送訊息。
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign Classic v7, Campaign Standard
 exl-id: 6d9bc65c-cca0-453f-8106-d2895d005ada
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: ht
-source-wordcount: '975'
-ht-degree: 100%
+source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 98%
 
 ---
 
@@ -45,40 +45,7 @@ ht-degree: 100%
 
 [Journey Optimizer 護欄產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=zh-Hant)
 
-### 其他 Journey Optimizer 護欄
-
-* 現今，限定可透過 API 設定，以確保目標系統不會飽和至故障點。限定意味著超出上限的訊息將徹底予以丟棄，不再傳送。不支援節流。
-   * 最大連接數：目標可以處理的最大 http/s 連接數
-   * 最大呼叫數：要在 periodInMs 參數中設定的最大呼叫數
-   * periodInMs：時間 (毫秒)
-* 由區段會籍發起的歷程可以兩種模式操作：
-   * 批次區段 (每 24 小時重新整理一次)
-   * 串流區段 (&lt;5 分鐘限定條件)
-* 批次區段 — 需要確保您瞭解符合限定條件使用者的每日流量，並確保目標系統可以處理每個歷程以及所有歷程的高載輸送量
-* 串流區段 — 需要確保個人資料限定條件的初始高載可隨每個歷程及所有歷程中符合限定條件的每日串流流量一起處理
-* 不支援決策管理
-* 不支援業務事件
-* 傳出整合至第三方系統
-   * 不支援單個靜態 IP，因為我們的基礎架構是多租戶（必須允許列出所有資料中心 IP）
-   * 自訂動作僅支援 POST 和 PUT 方法
-   * 驗證支援：權杖 |密碼 | OAuth2
-* 無法在各種沙箱之間封裝及移動 Adobe Experience Platform 或 Journey Optimizer 的個別元件。必須在新環境中重新實作
-
-<br>
-
-### Campaign (v7)
-
-* 消息中心的執行實例必須由 Adobe Managed Cloud Services 托管
-* 必須位於任何 v7 版本編號 21.1 以上版本
-* 傳送訊息輸送量
-   * AC (v7)每小時 5 萬
-* AC (v7)僅支援事件起始歷程的
-   * 無區段或區段資格起始歷程
-   * 考慮到可傳送至執行實例的量，不支援閱讀對象和業務事件型歷程
-* AC (v7) 不支援訊息中的「決策管理」
-* 未對 Campaign 傳出 API 呼叫節流
-
-<br>
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## 實施步驟
 
@@ -121,7 +88,7 @@ ht-degree: 100%
 1. 運用 Adobe 標籤，並使用下列擴充功能建立行動屬性：
    * Adobe Journey Optimizer | Adobe Campaign Classic | Adobe Campaign Standard
    * Adobe Experience Platform Edge Network
-   * 身分邊緣網路
+   * 邊緣網路的身分識別
    * 行動裝置核心
 1. 針對行動應用程式部署與網頁部署，確保您擁有專屬的資料流
 1. 如需更多詳細資訊，請參閱 [Adobe Journey Optimizer 行動指南](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
