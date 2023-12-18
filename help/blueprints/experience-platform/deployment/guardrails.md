@@ -4,18 +4,20 @@ description: 護欄定義了對 Adobe Experience Platform 和應用程式中的�
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 4cc0eafda6e2670ac5b72b0a0ca59b84e1c0dba1
+source-git-commit: 5a4827244b7d8414b1f1a0bf9b3cd8308bde8c60
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 22%
+source-wordcount: '630'
+ht-degree: 16%
 
 ---
 
 # 護欄
 
-護欄是建議的臨界值，可針對Adobe Experience Platform和應用程式中的資料、觀察到的延遲和系統使用情況提供指引。 護欄可反映系統限制和效能期望，以最佳化客戶架構和使用案例效能，並有助於避免錯誤或意外結果。 護欄並非服務等級協定。
+護欄是建議的臨界值，可針對Adobe Experience Platform和應用程式中的資料、觀察到的延遲和系統使用情況提供指引。 護欄可反映系統限制和效能期望，以最佳化客戶架構和使用案例效能，並有助於避免錯誤或意外結果。 護欄並非服務等級協定，服務等級協定會記錄在下方連結的「產品說明」以及客戶授權協定中。 護欄旨在針對特定客戶使用案例提供架構解決方案的指引，以確保穩定性和執行力。
 
 如需應用程式與功能之特定服務等級協定的相關資訊，請參閱 [應用程式和功能說明](#application-feature-descriptions) 區段。
+
+請注意，對於具有嚴格延遲或數量需求的任何客戶使用案例，Adobe建議與您的Adobe客戶團隊和實作合作夥伴詳細審視您的使用案例。 在某些情況下，建議在發行使用案例前測試及觀察特定使用案例實施，以觀察及瞭解預期行為 — 因為每個客戶實施有不同的因素，包括資料擷取的性質和步調、正在建置的區段規則細節，以及各種啟用挑戰和承載 — 每個使用案例實施的觀察效能會有所不同。 因此，最好預先建立並測試預期的效能，以確保根據使用案例的延遲和效能需求提供適當的架構和實作。
 
 
 ## Adobe Experience Platform和應用程式的護欄參考檔案
