@@ -3,10 +3,10 @@ title: 中心上的決策管理藍圖
 description: 在各通道（包括資訊站、代理程式協助的體驗，以及電子郵件和其他傳出傳遞）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: 2960cc95b9b83a3efea7fa247e1adabf310f3ee1
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 98%
+source-wordcount: '832'
+ht-degree: 87%
 
 ---
 
@@ -28,11 +28,16 @@ Journey Optimizer 可用來在適當的時間，跨所有接觸點為客戶提�
 
 ## 中心上決策管理的使用案例
 
+* 個人資料內容延遲不嚴格的串流使用案例 — 15分鐘或更長延遲。
 * 資訊站和商店體驗上的個人化優惠方案。
 * 透過代理輔助體驗（如呼叫中心或銷售互動）提供個性化優惠方案。
 * 包含在電子郵件、簡訊、行動推播通知或其他傳出互動中的優惠方案。
 * 向外部 ESP 和郵件傳送系統提供優惠方案以進行傳送。
 * 跨通道歷程執行 — 透過 Adobe Journey Optimizer，提供網頁、行動裝置、電子郵件和其他互動通道的一致性。
+
+>[!IMPORTANT]
+>
+>適用於需要存取設定檔以取得其他資訊和內容的優惠和歷程使用案例。 請務必考量在集線器上將資料擷取至設定檔的相關延遲，以確保可在決策時使用這些資料。 若情境是串流或內嵌至設定檔，且優惠或歷程必須在優惠決定後的數秒或數分鐘內提供該情境，則邊緣上的決定管理可提供最佳情境。
 
 <br>
 

@@ -3,10 +3,10 @@ title: 邊緣上 Decision Management 藍圖
 description: 跨通道（包括即時網路和行動體驗）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: 2960cc95b9b83a3efea7fa247e1adabf310f3ee1
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 98%
+source-wordcount: '653'
+ht-degree: 95%
 
 ---
 
@@ -26,6 +26,7 @@ Adobe Decision Management 是 Adobe Journey Optimizer 中提供的服務。此�
 
 ## 邊緣決策管理的使用案例
 
+* 個人資料內容延遲嚴格低於15分鐘延遲且決策管理執行為次秒的串流使用案例。
 * 透過網頁或行動傳入體驗進行線上個人化。
 * 跨通道歷程執行 — 透過 Adobe Journey Optimizer，提供網頁、行動裝置、電子郵件和其他互動通道的一致性。
 
