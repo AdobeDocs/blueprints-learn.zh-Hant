@@ -3,10 +3,10 @@ title: Campaign v8 藍圖、Campaign & Platform
 description: Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例如電子郵件和直接郵件）而建置。它提供強大的 ETL 和資料管理功能，以幫助策劃和組織完美的行銷活動。其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。  此外，它還隨附可擴充的即時傳訊伺服器，讓行銷團隊能根據來自任何 IT 系統的包含所有內容的承載傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
 solution: Campaign,Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: dabb5ae0bf2fc186f67d4aa93a2e9e8c5bb04498
-workflow-type: ht
-source-wordcount: '1147'
-ht-degree: 100%
+source-git-commit: ac6e27e88854f5a05a7ff7428cd4375b3532f632
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 95%
 
 ---
 
@@ -27,9 +27,18 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
 
 <br>
 
-## 架構
+## 架構圖
 
-<img src="assets/campaign-v8-architecture.svg" alt="Campaign v8 藍圖的參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+進一步瞭解Campaign v8部署模型，請參閱 [此頁面](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html#ac-deployment){target="_blank"}.
+
+### Campaign Enterprise (FFDA)部署
+
+<img src="assets/P4-architecture.png" alt="Campaign v8藍圖(P4)的參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+
+
+### Campaign v8 FDA部署
+
+<img src="assets/P1-P3-architecture.png" alt="Campaign v8藍圖的參考架構(P1-P3)" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -84,7 +93,7 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
    * API 資料載入支援主要用於管理資料庫內的個人資料或簡單物件（即建立和更新）。它不用於載入大量資料或批處理作業。
    * 不支援使用 API 來讀取用於自訂應用程式的資料
    * 透過 API 載入的資料會儲存在應用程式資料庫中，然後每小時複製到雲端資料庫
-* API 呼叫以每秒 15 次或每天 15 萬次為上限
+* API呼叫數上限。 進一步瞭解 [Adobe Campaign產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
 ### 批次傳訊伺服器大小調整
 
@@ -104,16 +113,6 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
    * SMS Mo（行動產生）:行動裝置透過 SMPP 提供者傳送至 Adobe Campaign 的簡訊。
    * SMS SR（狀態報表）、DR 或 DLR（傳送回執）:行動裝置透過 SMPP 提供者傳送至 Adobe Campaign 的回執，指出 SMS 已成功接收。Adobe Campaign 也可能會收到 SR，指出無法傳送訊息，且通常包含錯誤的說明。
 
-### 行動推播設定
-
-* Campaign v8 僅支援 Campaign SDK。聯絡 Adobe 客戶服務以取得存取權
-* 請遵循 [Campaign SDK 文件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=zh-Hant)了解如何安裝和設定 SDK
-
-   >[!IMPORTANT]
-   >其他 Experience Cloud 應用程式則需使用 Experience Platform Mobile SDK 進行資料收集。這是不同的 SDK，需要與 Campaign SDK 一起安裝
-
-<br>
-
 ## 實施步驟
 
 請參閱快速入門手冊， [實作 Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/implement/implement.html?lang=zh-Hant)
@@ -121,7 +120,7 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
 
 ## 相關文件
 
-* [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=zh-Hant)
+* [Campaign v8 文件](https://experienceleague.adobe.com/docs/campaign-v8.html)
 * [Campaign v8 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-* [Experience Platform Tags 文件](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
-* [Experience Platform Mobile SDK 文件](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+* [Experience Platform Tags 文件](https://experienceleague.adobe.com/docs/launch.html)
+* [Experience Platform Mobile SDK 文件](https://experienceleague.adobe.com/docs/mobile.html)
