@@ -7,7 +7,7 @@ solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: b0f106c4dce59137086c8806def34e98b554bb61
+source-git-commit: 7d043f3245c131ee4dd6085dd4d15e38188a1884
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 100%
@@ -60,7 +60,7 @@ ht-degree: 100%
 ### 實作模式 1 — 使用 Web/Mobile SDK 或 Edge Network API 的邊緣網路（建議方法）
 
 * 搭配 Web/Mobile SDK 使用邊緣網路。即時邊緣分段需要 Web/Mobile SDK 或 Edge API 實作方法。
-* [請參閱 Experience Platform Web 與 Mobile SDK 藍圖](..//experience-platform/deployment/websdk.md)進行以 SDK 為基礎的實作。
+* [請參閱 Experience Platform Web 與 Mobile SDK 藍圖](../../experience-platform/deployment/websdk.md)進行以 SDK 為基礎的實作。
 * 若要用於 Mobile SDK，[Adobe Journey Optimizer — 決策擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning)必須安裝在 Mobile SDK 中。
 * [請參閱 Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant) 藉助 Edge 個人資料進行 Adobe Target 的 API 型實作。
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 
 使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。此實作方法不支援即時邊緣區段評估。不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
 
-[請參閱應用程式專屬的 SDK 藍圖](..//experience-platform/deployment/appsdk.md)
+[請參閱應用程式專屬的 SDK 藍圖](../../experience-platform/deployment/appsdk.md)
 
 ### 實施步驟
 
