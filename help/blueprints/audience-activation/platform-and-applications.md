@@ -4,10 +4,10 @@ description: 在 Experience Platform 中管理個人資料和對象，以及與 
 solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: 7722
 exl-id: f36014e8-170d-47e1-b4ec-10c0ea70612d
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: 2dab717d638bdbc0a903861ec743a81f2aed986d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '799'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Experience Cloud 應用程式啟用與[已知客戶啟用藍圖](known.md)相一
 
 ## 護欄
 
-請參閱[「對象與個人資料啟用」概觀頁面所述的護欄](overview.md)和[部署護欄](../experience-platform/deployment/guardrails.md) 頁面。
+請參閱 [Audience and Profile Activation概觀頁面上的護欄](overview.md) 和 [部署護欄](../experience-platform/deployment/guardrails.md) 頁面。
 
 ## 實施考量
 
@@ -67,7 +67,7 @@ Experience Cloud 應用程式啟用與[已知客戶啟用藍圖](known.md)相一
 
 ### 從 Real-time Customer Data Platform 到 Target 的對象共用
 
-* 如需從 Real-time Customer Data Platform 共用個人資料和對象的其他詳細資訊，請參閱[已知客戶個人化 — Target 和 RTCDP 藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=zh-Hant)。
+* 如需從 Real-time Customer Data Platform 共用個人資料和對象的其他詳細資訊，請參閱[已知客戶個人化 — Target 和 RTCDP 藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/known-personalization.html)。
 
 ### 從 Real-time Customer Data Platform 到 Campaign 和 Journey Optimizer 的對象共用
 

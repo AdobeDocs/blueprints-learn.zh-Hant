@@ -4,10 +4,10 @@ description: 跨數位媒體、電子郵件、推播和網頁通道提供即時�
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
 exl-id: a675bc81-e76c-491a-8718-359867d63351
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: 2dab717d638bdbc0a903861ec743a81f2aed986d
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 39%
+source-wordcount: '553'
+ht-degree: 35%
 
 ---
 
@@ -69,8 +69,8 @@ ht-degree: 39%
 | CJA + AEP | [Customer Journey Analytics藍圖概觀](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journey-analytics/overview.html?lang=zh-Hant) |
 | | [Customer Journey Analytics — 使用案例](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/cja-usecases.html?lang=zh-Hant) |
 | AJO + AEP | [Adobe Journey Optimizer — 使用案例](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
-| | [決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant) |
+| | [決定管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant) |
 | RTCDP + AEP | [線上/離線對象啟用](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant) |
 | | [Experience Platform+應用程式啟動](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant) |
-| MARKETO + AEP | [B2B 啟用與行銷 ](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) | |
-| Target + AEP | [Adobe Target使用案例 — 行為網頁/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/behavioral.html?lang=en) | [使用已知客戶資料進行 Web/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/web-personalization/known-personalization.html?lang=en) | |
+| MARKETO + AEP | [B2B啟用與行銷](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) | |
+| Target + AEP | [Adobe Target使用案例 — 行為網頁/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/behavioral.html?lang=en) | [使用已知客戶資料進行 Web/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/known-personalization.html?lang=en) | |
