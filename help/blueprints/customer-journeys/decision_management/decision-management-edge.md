@@ -3,22 +3,24 @@ title: 邊緣上 Decision Management 藍圖
 description: 跨通道（包括即時網路和行動體驗）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: 2960cc95b9b83a3efea7fa247e1adabf310f3ee1
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 95%
+source-wordcount: '632'
+ht-degree: 80%
 
 ---
 
-# Journey Optimizer - 邊緣上的決策管理藍圖
+# JOURNEY OPTIMIZER - [!DNL Decision Management] 在邊緣Blueprint上
 
-若要深入了解決策管理，請參閱[此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant)的產品文件和[此處](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant)的決策管理概述
+[!DNL Decision Management] 是提供的服務，屬於 [!DNL Journey Optimizer]. 此藍圖概述了應用程式的使用案例和技術功能，並深入介紹構成「決策管理」的各種體系結構元件和注意事項。
 
-Adobe Decision Management 是 Adobe Journey Optimizer 中提供的服務。此藍圖概述了應用程式的使用案例和技術功能，並深入介紹構成「決策管理」的各種體系結構元件和注意事項。
+>[!MORELIKETHIS]
+>
+>若要深入瞭解 [!DNL Decision Management]，請參閱 [Blueprint概觀](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant) 或造訪 [產品檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant).
 
-決策管理可以透過以下兩種方式之一進行部署。第一個是透過 Adobe Experience Platform 中心，這是單一資料中心架構。在「中心」方法中，會執行和個人化優惠活動，並在第二次延遲時傳送。因此，中心架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或人員互動中）提供的有貨決策。
+[!DNL Decision Management] 可透過下列兩種方式之一部署。 第一個是透過 [!DNL Experience Platform] Hub，單一資料中心架構。 在「中心」方法中，會執行和個人化優惠活動，並在第二次延遲時傳送。因此，中心架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或人員互動中）提供的有貨決策。
 
-第二種方法是透過 Experience Edge Network，這是分散於全球各地的基礎架構，可提供亞秒及毫秒的快速體驗。由最接近消費者地理位置的邊緣基礎架構執行的最終消費者體驗，以將延遲降至最低。邊緣的 Decision Management 旨在提供即時消費者體驗。這些包括網頁或行動傳入個人化請求之類的體驗。
+第二種方式是透過Experience Platform [!DNL Edge Network]，此基礎架構是分散於全球各地的基礎建設，可提供快速的次秒和毫秒體驗。 最接近消費者地理位置的Edge基礎架構所執行的最終消費者體驗，可將延遲降至最低。 [!DNL Decision Management] on the Edge的設計用途是提供即時消費者體驗。 這些包括網頁或行動傳入個人化請求之類的體驗。
 
 此藍圖將涵蓋邊緣上 Decision Management 的詳細資訊。
 

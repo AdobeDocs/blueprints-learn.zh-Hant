@@ -1,13 +1,13 @@
 ---
-title: 旅行和酒店業 — 利用線上和離線資料啟用
-description: 跨各種通道以客戶行為的單一整合檢視，制定即時決策
+title: 旅遊業及旅館業 — 透過線上及離線資料啟用
+description: 瞭解如何透過單一整合檢視來跨各種管道制定即時決策。
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Analytics, Audience Manager, Experience Manager, Target
 kt: 9485
 exl-id: 8b96cc5f-bcdd-4bd3-81e4-084f697ac1d3
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '406'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 |---|---|---|
 | **讓所有體驗都與該訪客相關&#x200B;**<br></br>**透過儀錶板實現業務就緒型分析和資料民主化&#x200B;**<br></br>**組織和運作效能**</ul> | <ul><li>使用線上和線下資料進行啟用和測量，建立統一獎勵計畫來賓配置檔案</li><li>以速度和規模跨通道即時啟用</li><li>透過 Customer Journey Analysis 釋放客戶層級分析功能</li><li>開發智慧，借由從歷史點按資料流互動資料中學習來改善啟用。</li><li>使用線上和離線資料統一客戶檢視，跨客戶歷程和通道獲取見解。</li></ul> | <ul><li><strong>跨通道啟用： </strong>推動 3X 電子郵件參與、可定址的受眾成長和曝光增長，以及高度個人化的網路體驗 </li><li><strong>情報： </strong>訪客獎勵計畫會執行啟動促銷活動，以降低成員流失率</li><li><strong>報表： </strong>將線上/線下資料與 AI/ML 學習整合至商業友好的歷程和歸因儀錶板，同時減少延遲（按天）</li><li><strong>經得起未來考驗的技術堆疊： </strong>跨 7 個通道的數千萬個個人資料，可在交叉銷售、追加銷售和支出最佳化案例中執行</li></ul> |
 
-## 主要藍圖：使用線上和離線資料啟用
+## 主要藍圖：使用線上和離線資料啟動
 
 ### 說明
 

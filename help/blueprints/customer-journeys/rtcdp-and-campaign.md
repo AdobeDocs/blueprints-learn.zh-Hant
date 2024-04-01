@@ -1,63 +1,59 @@
 ---
-title: Real-Time CDP 與 Adobe Campaign v7 及 Campaign Standard 整合模式
-description: 展示 Adobe Experience Platform 及其即時客戶設定檔和集中式細分工具如何與 Adobe Campaign 一起使用，以提供個人化的對話體驗。
-solution: Real-Time Customer Data Platform, Campaign
+title: Real-Time CDP與 [!DNL Campaign] v7和Campaign Standard整合模式
+description: 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe搭配使用 [!DNL Campaign] 提供個人化的交談。
+solution: Real-Time Customer Data Platform, [!DNL Campaign]
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: 258aea64f6ff2f620b1adaa0c9ba4b02b47acce9
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 42%
 
 ---
 
-# Real-Time CDP 與 Adobe Campaign 整合模式
+# [!DNL Real-Time Customer Data Platform] 替換為 [!DNL Campaign] 整合模式
 
-展示 Adobe Experience Platform 及其即時客戶設定檔和集中式細分工具如何與 Adobe Campaign 一起使用，以提供個人化的對話體驗。
-
-<br>
+展示Adobe [!DNL Experience Platform] 及其即時客戶個人檔案和集中式細分工具可與Adobe一起使用 [!DNL Campaign] 提供個人化的交談。
 
 ## 應用程式
 
-* Adobe Experience Platform Real-Time CDP
-* Adobe Campaign v7 或 Campaign Standard
-
-<br>
+* Adobe [!DNL Experience Platform Real-Time Customer Data Platform]
+* Adobe [!DNL Campaign] v7或 [!DNL Campaign Standard]
 
 ## 架構
 
 <img src="assets/rtcdp-campaign-architecture.svg" alt="批次訊息傳送與 Adobe Experience Platform 整合模式之參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
-<br>
-
 ## 先決條件
 
-* 建議在相同的 IMS 組織中布建 Experience Platform 和 Campaign，並使用 Adobe Admin Console 來存取使用者。這也可確保客戶可以從行銷 UI 中使用解決方案切換器
-
-<br>
+* Experience Platform和 [!DNL Campaign] 建議布建於相同的IMS組織，並利用Adobe Admin Console進行使用者存取。 這也可確保客戶可以從行銷 UI 中使用解決方案切換器
 
 ## 護欄
 
-### Adobe Campaign
+以下各節將說明這項整合的護欄。
 
-* 僅支援 Adobe Campaign 單一組織單位部署
-* Adobe Campaign 是所有啟用的個人資料之真相來源，代表著個人資料必須存在於 Adobe Campaign 中，且不應基於 Experience Platform 區段建立新的個人資料。
-* Campaign 匯出工作流程最多每隔 4 小時執行一次
-* Adobe Campaign broadLog、trackingLogs 和無法傳送的位址的 XDM 結構和資料集不會立即提供，且必須進行設計和建置
+### Adobe [!DNL Campaign]
 
-### Experience Platform CDP 區段共用
+* 僅支援Adobe [!DNL Campaign] 單一組織單位部署
+* Adobe [!DNL Campaign] 是所有作用中設定檔的真實來源，表示設定檔必須存在於Adobe中 [!DNL Campaign] 而且不應根據Experience Platform區段建立新設定檔。
+* [!DNL Campaign] 匯出工作流程以至最多每4小時執行
+* 適用於Adobe的XDM結構描述和資料集 [!DNL Campaign] broadLog、trackingLogs和無法傳遞的位址並非現成可用，必須設計和建置
 
-* 請參閱 RTCDP Campaign Destination 連接器 — [RTCDP Campaign 連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html?lang=zh-Hant)
+### Real-time Customer Data Platform區段共用
 
-* 請參閱 AEP 的設定檔和資料擷取護欄 — [連結](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+* 請參閱RTCDP [!DNL Campaign] 目的地聯結器 —  [RTCDP促銷活動連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html?lang=zh-Hant)
+
+* 另請參閱 [預設護欄 [!DNL Real-Time Customer Profile Data] 和細分](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 ## 實施步驟
+
+以下各節將說明每個應用程式的實施步驟。
 
 ### Adobe Experience Platform
 
 #### 方案/資料集
 
 1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=zh-Hant)
-1. 建立 broadLog、trackingLog、無法送達的地址及個人資料偏好設定 (可選)　的 Adobe Campaign 方案。
+1. 建立Adobe [!DNL Campaign] broadLog、trackingLog、無法傳遞的地址和設定檔偏好設定的結構描述（選用）。
 1. 在 Experience Platform 中為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. 在 Experience Platform 中[新增資料使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
 1. [建立政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=zh-Hant)以在目標上執行治理。
@@ -68,55 +64,54 @@ ht-degree: 100%
 1. [新增身份至方案](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 1. 為[!UICONTROL 即時客戶個人資料]的不同檢視[設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant) (可選)。
-1. 建立 Adobe Campaign 使用的區段。
+1. 建立Adobe的區段 [!DNL Campaign] 使用狀況。
 
 #### 來源/目標
 
-1. [Experience Platform 和 Campaign Standard 來源和目標](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=zh-Hant)
-1. [Experience Platform 和 Campaign v7 來源和目標](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=zh-Hant)
+1. [Experience Platform和 [!DNL Campaign] 標準來源和設計](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=zh-Hant)
+1. [Experience Platform和 [!DNL Campaign] v7來源和設計](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/aep-sources-destinations/get-started-sources-destinations.html?lang=zh-Hant)
 1. 使用串流 API 和來源連接器[將資料擷取到 Experience Platform。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)
-1. 設定要與 Adobe Campaign 一起使用的 [!DNL Azure]Blob 儲存目標。
+1. 設定 [!DNL Azure] 用於Adobe的blob儲存體目的地 [!DNL Campaign].
 
-#### Adobe Campaign
+#### Adobe [!DNL Campaign]
 
 1. 為個人資料、查詢資料及相關的傳送個人化資料設定方案。
 
 >[!IMPORTANT]
 >
->此時瞭解 Experience Platform 中什麼資料模型用於個人資料和事件資料很關鍵，因此您要知道 Adobe Campaign 中需要什麼資料。
+>此時瞭解設定檔和事件資料的Experience Platform中資料模型非常重要，這樣您才能知道Adobe中需要哪些資料 [!DNL Campaign].
 
 #### 匯入工作流程
 
-1. 將簡化的個人資料資料加入並擷取到 Adobe Campaign sFTP。
-1. 將協調與訊息傳送個人化資料載入並擷取到 Adobe Campaign sFTP。
+1. 將簡化的設定檔資料載入並擷取到Adobe [!DNL Campaign] sFTP。
+1. 將協調流程和訊息個人化資料載入並擷取到Adobe [!DNL Campaign] sFTP。
 1. 透過工作流程從 [!DNL Azure]blob 擷取 Experience Platform 區段。
 
 #### 匯出工作流程
 
-1. 每隔四小時透過工作流程將 Adobe Campaign 記錄傳送回 Experience Platform (broadLog、trackingLog、無法傳遞的地址)。
+1. 傳送Adobe [!DNL Campaign] 每四小時透過工作流程記錄回Experience Platform （broadLog、trackingLog、無法傳遞的地址）。
 1. 每隔四小時透過咨詢建置的工作流程，將個人資料偏好設定傳送回 Experience Platform (可選)。
-
 
 ### 行動推播設定
 
 * 兩種支援的推播通知與行動裝置整合方法：
    * Experience Platform Mobile SDK
-   * Campaign 行動 SDK
+   * [!DNL Campaign] 行動SDK
 * Experience Platform Mobile SDK 路由：
-   * 運用 Adobe 標籤和 Campaign Classic 擴充功能，設定您與 Experience Platform Mobile SDK 的整合
+   * 利用Adobe標籤和 [!DNL Campaign Classic] 用來設定與Experience Platform Mobile SDK整合的擴充功能
    * 需要 Adobe 標籤和資料收集的實用知識
    * 在 Android 和 iOS 中均需推播通知的行動開發體驗，才能部署 SDK、與 FCM (Android) 和 APNS (iOS) 整合以取得推播代號、設定應用程式以接收推播通知並處理推播互動
-* Campaign 行動 SDK
-   * 請遵循 [Campaign SDK 文件]（Campaign Mobile SDK
-請遵循此處概述的部署檔案）
+* [!DNL Campaign] 行動SDK
+   * 請參閱 [Campaign Classic SDK檔案](https://developer.adobe.com/client-sdks/solution/adobe-campaign-classic/)
 
-  >[!IMPORTANT]
-  >如果您部署 Campaign SDK，且正與其他 Experience Cloud 應用程式合作，則需要使用 Experience Platform Mobile SDK 來收集資料。這會在裝置上建立重複的用戶端呼叫。
+>[!IMPORTANT]
+>
+>如果您部署 [!DNL Campaign] SDK和正在與其他Experience Cloud應用程式合作，他們將需要使用Experience Platform行動SDK來收集資料。 這會在裝置上建立重複的用戶端呼叫。
 
 ## 相關文件
 
-* [Adobe Experience Platform 文件](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-* [Campaign Classic 文件](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
-* [Campaign Standard 文件](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant)
-* [Experience Platform Launch 文件](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
-* [Experience Platform Mobile SDK 文件](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+* [Adobe [!DNL Experience Platform] 檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
+* [[!DNL Campaign Classic] 檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
+* [[!DNL Campaign Standard] 檔案](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant)
+* [[!DNL Experience Platform] Launch檔案](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
+* [[!DNL Experience Platform] 行動SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)

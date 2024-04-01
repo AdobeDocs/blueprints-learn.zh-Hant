@@ -1,36 +1,43 @@
 ---
-title: Adobe Experience Platform 與應用程式架構圖
-description: 此架構圖顯示 Adobe Experience Platform 如何與其他 Adobe Experience Cloud 應用程式及應用程式服務連結。
+title: Experience Platform(AEP)和應用程式架構圖
+description: 檢視顯示Adobe Experience Platform (AEP)與其他Experience Cloud應用程式和應用程式服務之關係的架構圖。
 solution: Experience Platform, Campaign, Analytics, Target, Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 kt: 7199
 thumbnail: null
 exl-id: 9b12cd7a-5e5f-443a-91a1-44273cdabc2d
-source-git-commit: 89dcbc4d71a9edff3095a6707cecc823281a9385
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 99%
+source-wordcount: '831'
+ht-degree: 91%
 
 ---
 
-# Adobe Experience Platform 與應用程式架構圖
+# Adobe Experience Platform和應用程式架構圖
 
-## Adobe Experience Platform 與應用程式架構圖
+這些架構圖表顯示Experience Platform(AEP)與其他Experience Cloud應用程式和應用程式服務的關聯性。
+
+>[!MORELIKETHIS]
+>
+>[Experience Cloud應用程式整合的整合設定](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/overview.html?lang=en).
+
+
+## 架構圖
 
 此架構圖顯示 Adobe Experience Platform 如何與 Adobe Experience Cloud 應用程式及應用程式服務連結。
 
 <img src="assets/aep+apps.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
-## Adobe Experience Platform和應用程式概觀圖表
+## 概觀圖表
 
 <img src="assets/aep+apps_overview.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
-## Adobe Experience Platform 與應用程式詳細架構圖
+## 詳細的架構圖
 
 <img src="assets/aep+apps_detailed.svg" alt="Experience Platform 與應用程式" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
 
 >[!VIDEO](https://video.tv.adobe.com/v/32456/?quality=12&learn=on)
 
-## Adobe Experience Platform 與 Experience Cloud 應用程式整合
+## AEP和Experience Cloud應用程式整合
 
 <table class="relative-table wrapped" style="width: 100%;">
 <colgroup>

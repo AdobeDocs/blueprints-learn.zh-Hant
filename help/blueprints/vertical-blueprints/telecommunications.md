@@ -1,19 +1,19 @@
 ---
-title: 電信產業 — 用於觸發式訊息傳送的 Journey Optimizer
+title: 電信產業 — 適用於觸發式傳訊的Journey Optimizer
 description: 提供客戶量身打造的即時交易，同時讓客戶高效登入，帶來長期忠誠度。
 solution: Journey Optimizer
 kt: 9486
 exl-id: fa4a6569-3972-4b97-91f1-7ca8ffd3c5b3
-source-git-commit: 1a0ce987fc615080bb78fb8ecf60c96e362a95c0
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 85%
 
 ---
 
 # 電信行業面臨的業務挑戰
 
-在實作此藍圖之前，電信公司的「新增線路」電子郵件促銷活動取決於使用者是否已轉換，且只會在等候 7 天後檢查。一旦滿足這些標準，就會啟動任何其他接觸點。
+在實施此藍圖之前，電信公司的「新增線路」電子郵件行銷活動取決於使用者是否轉換並且僅在七天等待期後檢查這點。 一旦滿足這些標準，就會啟動任何其他接觸點。
 
 必須解決這一限制，以便對希望在當前 7 天等待期之前新增線路的使用者啟動更及時的後續行動。
 
@@ -22,14 +22,13 @@ ht-degree: 100%
 * Adobe Analytics 資料可識別無法轉換以新增線路的使用者，會作為資料來源納入，供 Adobe Journey Optimizer 使用。
 * Adobe Journey Optimizer 會不時使用規則，讓客戶收到自訂的「放棄」訊息，以鼓勵客戶在帳戶中新增線路以進行轉換。
 
-
 ## 提供的業務價值
 
 | 目標 | 策略 | 值已解除鎖定 |
 |---|---|---|
 | **推動更高的促銷活動轉換率&#x200B;**<br></br>**增加年度客戶收入**</ul> | <ul><li>對於對新增線路有興趣但尚未轉換的使用者，幾乎即時建立新區段。</li><li>利用面向感情趣的非轉換客戶的第二個接觸點，對為未轉換客戶進行追蹤。 </li><li>使用測試策略來測量歷程效能，並透過電子郵件最佳化轉化。</li></ul> | <ul><li><strong>高品質的相關體驗：</strong>隨著歷程協調就位，客戶將體驗更相關的訊息，以降低電子郵件清單流失率。</li><li><strong>大規模的歷程策劃：</strong>您可以建立個人化且更及時的歷程，以促進轉換率和總收入的增加。</li></ul> |
 
-## 主要藍圖：透過 Experience Cloud 應用程式的對象與啟用
+## 主要藍圖：使用Experience Cloud應用程式進行對象和啟動
 
 ### 說明
 

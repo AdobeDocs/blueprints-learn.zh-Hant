@@ -4,9 +4,9 @@ description: 瞭解如何將使用Experience PlatformWeb和Mobile SDK收集的�
 solution: Data Collection
 kt: 7202
 exl-id: ecc94fc8-9fad-4b88-a153-3d0fc00d8d58
-source-git-commit: 3d6a2416cdb9956e59be4b2918ba19f88cd2150b
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ### 不同的資料串流和串流端點
 
-當資料流經資料流時，從 [!UICONTROL Platform Edge Network]，使用時 [!UICONTROL 事件轉送] 對於另一個AEP沙箱，永遠必須使用與製作原始集合的資料流相同的資料流或串流端點。 這可能會對AEP執行個體造成傷害，並可能觸發DoS情況。
+當資料流經資料流時，從 [!DNL Platform Edge Network]，使用時 [!UICONTROL 事件轉送] 對於另一個AEP沙箱，永遠必須使用與製作原始集合的資料流相同的資料流或串流端點。 這可能會對AEP執行個體造成傷害，並可能觸發DoS情況。
 
 ### 預估流量
 
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ![多沙箱 [!UICONTROL 事件轉送]](assets/multi-sandbox-data-collection.png)
 
-1. 收集事件資料並傳送至 [!UICONTROL Platform Edge Network] 需要，才能使用 [!UICONTROL 事件轉送]. 客戶可以使用使用者端的Adobe標籤或 [!UICONTROL Platform Edge Network伺服器API] 用於伺服器對伺服器資料收集。 此 [!UICONTROL Platform Edge Network API] 可提供伺服器對伺服器的收集功能。 但是，這確實需要不同的程式設計模型才能實作。 請參閱 [Edge Network伺服器API總覽](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
+1. 收集事件資料並傳送至 [!DNL Platform Edge Network] 需要，才能使用 [!UICONTROL 事件轉送]. 客戶可以使用使用者端的Adobe標籤或 [!DNL Platform Edge Network Server API] 用於伺服器對伺服器資料收集。 此 [!DNL Platform Edge Network API] 可提供伺服器對伺服器的收集功能。 但是，這確實需要不同的程式設計模型才能實作。 請參閱 [Edge Network伺服器API總覽](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
 
-1. 收集到的裝載會從標籤實作傳送至 [!UICONTROL Platform Edge Network] 至 [!UICONTROL 事件轉送] 服務並由其本身處理 [!UICONTROL 資料元素]， [!UICONTROL 規則] 和 [!UICONTROL 動作]. 您可深入瞭解以下專案的差異： [標籤和 [!UICONTROL 事件轉送]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
+1. 收集到的裝載會從標籤實作傳送至 [!DNL Platform Edge Network] 至 [!UICONTROL 事件轉送] 服務並由其本身處理 [!UICONTROL 資料元素]， [!UICONTROL 規則] 和 [!UICONTROL 動作]. 您可深入瞭解以下專案的差異： [標籤和 [!UICONTROL 事件轉送]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
 
-1. 一個 [!UICONTROL 事件轉送] 屬性也需要用來接收從收集到的事件資料 [!UICONTROL Platform Edge Network]. 該事件資料是由部署的標籤實作還是伺服器對伺服器集合傳送至Platform Edge Network。 作者會定義資料元素、規則和動作，以在轉送至第二個沙箱之前擴充事件資料。 考慮使用自訂程式碼 [!DNL JavaScript] 資料元素來協助您建構資料以供沙箱擷取。 結合Platform資料準備功能，您有幾個選項可管理您的資料結構。
+1. 一個 [!UICONTROL 事件轉送] 屬性也需要用來接收從收集到的事件資料 [!DNL Platform Edge Network]. 該事件資料是否已傳送至 [!DNL Platform Edge Network] 透過已部署的標籤實作或伺服器對伺服器集合。 作者會定義資料元素、規則和動作，以在轉送至第二個沙箱之前擴充事件資料。 考慮使用自訂程式碼 [!DNL JavaScript] 資料元素來協助您建構資料以供沙箱擷取。 結合Platform資料準備功能，您有幾個選項可管理您的資料結構。
 
 1. 目前，Adobe的使用 [!UICONTROL Cloud Connector擴充功能] 內需要 [!UICONTROL 事件轉送] 屬性。 一旦規則處理或擴充了事件資料，便會在為將裝載傳送至第二個沙箱的POST設定的擷取呼叫中使用Cloud Connector
 

@@ -1,20 +1,20 @@
 ---
 title: Campaign v7 藍圖
-description: Adobe Campaign v7 是專為傳統行銷通道（例如電子郵件和直接郵件）所建置的宣傳工具。它提供強大的 ETL 和資料管理功能，以幫助策劃和組織完美的行銷活動。其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。此外，它還隨附即時傳訊伺服器，讓行銷團隊能根據來自任何 IT 系統的包含所有內容的承載，傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
+description: 瞭解Campaign v7的批次式訊息計畫、上線和再行銷活動、直接郵件廣告和簡單交易式訊息的藍圖。
 solution: Campaign,Campaign Classic v7
 exl-id: 71c808f5-59e6-4f49-a6ba-581ed508bc04
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
-workflow-type: ht
-source-wordcount: '1195'
-ht-degree: 100%
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+workflow-type: tm+mt
+source-wordcount: '1103'
+ht-degree: 94%
 
 ---
 
 # Campaign v7 藍圖
 
-Adobe Campaign v7 是專為傳統行銷通道（例如電子郵件和直接郵件）所建置的宣傳工具。它提供強大的 ETL 和資料管理功能，以幫助策劃和組織完美的行銷活動。其協調引擎提供豐富的多點接觸行銷計畫，核心著重於批次導向歷程。此外，它還隨附即時傳訊伺服器，讓行銷團隊能根據來自任何 IT 系統的包含所有內容的承載，傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
+Adobe Campaign v7 是專為傳統行銷通道（例如電子郵件和直接郵件）所建置的宣傳工具。它提供強大的 ETL 和資料管理功能，以幫助策劃和組織完美的行銷活動。其編排引擎為豐富的多點觸控行銷方案提供支援，其核心是批次型驅動歷程。
 
-<br>
+此外，它還隨附即時傳訊伺服器，讓行銷團隊能根據來自任何 IT 系統的包含所有內容的承載，傳送預先定義的訊息，以處理密碼重設、訂單確認、電子回執等更多事項。
 
 ## 使用案例
 
@@ -23,13 +23,9 @@ Adobe Campaign v7 是專為傳統行銷通道（例如電子郵件和直接郵�
 * 直接郵件廣告、手冊和雜誌宣傳
 * 低流量的簡單交易式傳訊（例如密碼重設、電子郵件接收、訂單確認等）
 
-<br>
-
 ## 架構
 
 <img src="assets/campaign-v7-architecture.svg" alt="Campaign v7 藍圖的參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
 
 ## 整合模式
 
@@ -38,9 +34,9 @@ Adobe Campaign v7 是專為傳統行銷通道（例如電子郵件和直接郵�
 | [Real-Time CDP 搭配 Adobe Campaign](rtcdp-and-campaign.md) | 展示 Adobe Experience Platform 的 Real-Time CDP 和集中式細分工具如何與 Adobe Campaign 一起使用，以提供個人化的對話體驗。 | <ul><li>使用雲端儲存檔案交換和 Adobe Campaign 擷取工作流程，共用從 Real-Time CDP 到 Adobe Campaign 的個人資料和對象 </li><li>輕鬆將客戶對話的傳遞和互動資料從 Adobe Campaign 分享回 Real-Time CDP，以增強 Real-Time Customer Profile，並提供傳訊行銷活動的跨通道報表</li></ul> |
 | [Journey Optimizer 搭配 Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用 Adobe Journey Optimizer 藉助 Real-Time Customer Profile 來協調 1:1 體驗，並運用原生 Adobe Campaign 交易訊息系統來傳送訊息 | 運用 Real-Time Customer Profile 和 Journey Optimizer 的強大功能，協調即時體驗，同時運用 Adobe Campaign 的原生即時訊息傳送功能進行最後一英里的通訊<br><br>考量事項：<br><ul><li>可透過即時消息伺服器每小時發送最多 50k 訊息<li>不會從 Journey Optimizer 執行節流，以確保售前企業架構師的技術審查</li><li>Campaign v7 即時傳訊伺服器承載不支援決策管理</li></ul> |
 
-<br>
-
 ## 先決條件
+
+檢閱下列必要條件。
 
 ### 應用程式伺服器和即時傳訊伺服器
 
@@ -72,6 +68,8 @@ Adobe Campaign v7 是專為傳統行銷通道（例如電子郵件和直接郵�
 <br>
 
 ## 護欄
+
+檢閱下列護欄。
 
 ### 應用程式伺服器大小調整
 
@@ -113,14 +111,12 @@ Adobe Campaign v7 是專為傳統行銷通道（例如電子郵件和直接郵�
    * 聯絡 Adobe 客戶服務以取得存取權
    * 請遵循 [Campaign SDK 文件](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/sending-push-notifications/integrating-campaign-sdk-into-the-mobile-application.html?lang=zh-Hant)了解如何安裝和設定 SDK
 
-   >[!IMPORTANT]
-   >如果您部署 Campaign SDK，且正與其他 Experience Cloud 應用程式合作，則需要使用 Experience Platform Mobile SDK 來收集資料。這是不同的 SDK，需要與 Campaign SDK 一起安裝
-
-<br>
+  >[!IMPORTANT]
+  >如果您部署 Campaign SDK，且正與其他 Experience Cloud 應用程式合作，則需要使用 Experience Platform Mobile SDK 來收集資料。這是不同的 SDK，需要與 Campaign SDK 一起安裝
 
 ## 實施步驟
 
-請參閱實作 Adobe Campaign v7 的[快速入門手冊](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=zh-Hant)
+請參閱 [快速入門手冊](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=zh-Hant) 實作Adobe Campaign v7的相關資訊。
 
 
 ## 相關文件

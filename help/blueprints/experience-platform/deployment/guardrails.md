@@ -4,10 +4,10 @@ description: 護欄定義了對 Adobe Experience Platform 和應用程式中的�
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 2ff576ccb4ac3f9e2bdb690b6e9242d674214c33
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 14%
+source-wordcount: '680'
+ht-degree: 13%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 14%
 **Experience Platform服務**
 
 * [資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
-* [Edge Network API 護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [[!DNL Edge Network] API護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
 * [即時客戶個人檔案和分段護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 * [身分護欄](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=zh-Hant)
 * [Query Service 護欄](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=zh-Hant)
@@ -46,7 +46,7 @@ ht-degree: 14%
 
 下圖說明在Experience Platform和應用程式上建構使用案例時要注意的主要邊緣和集線器觀察延遲。
 
-![Experience Platform邊緣網路和集線器主要觀察到的延遲。](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Experience Platform邊緣網路和集線器主要觀察延遲"){width="1000" zoomable="yes"}
+![Experience Platform [!DNL Edge Network] 和集線器主要觀察延遲。](/help/blueprints/experience-platform/deployment/assets/aep_edge_hub_latency.svg "Experience Platform邊緣網路和集線器主要觀察延遲"){width="1000" zoomable="yes"}
 
 ### 資料擷取 {#data-ingestion}
 
@@ -60,9 +60,9 @@ ht-degree: 14%
 
 ![區段高階視覺化概觀。](/help/blueprints/experience-platform/deployment/assets/segmentation_guardrails.svg "區段高階視覺效果概觀和延遲值"){width="1000" zoomable="yes"}
 
-### Real-time Customer Data Platform與Edge Network {#adobe-edge-latency}
+### REAL-TIME CUSTOMER DATA PLATFORM &amp; [!DNL Edge Network] {#adobe-edge-latency}
 
-下圖顯示運用Edge Network時的預期延遲值，例如運用RTCDP對象於 [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant). 按一下影像即可檢視高解析度版本。
+下圖顯示運用時的預期延遲值 [!DNL Edge Network]  — 例如將RTCDP對象用於 [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant). 按一下影像即可檢視高解析度版本。
 
 ![Adobe Edge網路和Experience Platform高階視覺化概觀。](/help/blueprints/experience-platform/deployment/assets/RTCDP_Edge_guardrails.svg "將對象匯出至Adobe Target高階視覺化概觀和延遲"){width="1000" zoomable="yes"}
 

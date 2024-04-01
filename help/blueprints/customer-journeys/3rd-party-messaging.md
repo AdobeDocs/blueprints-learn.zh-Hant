@@ -3,10 +3,10 @@ title: Journey Optimizer — 第三方傳訊藍圖
 description: 示範如何搭配第三方傳訊系統來使用 Adobe Journey Optimizer，以協調和傳送個人化通訊。
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 96%
+source-wordcount: '419'
+ht-degree: 97%
 
 ---
 
@@ -78,7 +78,7 @@ Adobe Experience Platform
 1. 運用 Adobe 標籤，並使用下列擴充功能建立行動屬性：
    * Adobe Journey Optimizer
    * Adobe Experience Platform Edge Network
-   * 邊緣網路的身分識別
+   * 以下專案的身分 [!DNL Edge Network]
    * 行動裝置核心
 1. 針對行動應用程式部署與網頁部署，確保您擁有專屬的資料流
 1. 如需更多詳細資訊，請參閱 [Adobe Journey Optimizer 行動指南](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/)

@@ -1,17 +1,17 @@
 ---
-title: 數位體驗藍圖行業成功案例
-description: 數位體驗藍圖成功案例展示各行業如何運用由 Adobe Experience Platform 提供技術支援的 Adobe Experience Cloud 應用程式實現商業價值。
+title: 數位體驗藍圖 — 產業成功案例
+description: 瞭解成功案例顯示各行各業如何透過由Adobe Experience Platform支援的Experience Cloud應用程式來實現商業價值。
 exl-id: 9e73bae3-ba34-4819-a54e-710965fe74d9
-source-git-commit: 5bf1f0c01e1c7d2ebb2ae7228cc04c149a789664
-workflow-type: ht
-source-wordcount: '255'
-ht-degree: 100%
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 78%
 
 ---
 
 # 利用數位體驗藍圖實現行業成功
 
-了解客戶如何運用數位體驗藍圖打造絕佳體驗並取得成功。這些經驗證的可重複實施使您能夠解決策略問題並快速解決既定的業務問題。
+瞭解客戶如何透過數位體驗藍圖打造絕佳體驗並取得成功。 這些經驗證的可重複實施使您能夠解決策略問題並快速解決既定的業務問題。
 
 ## 精選成功案例
 

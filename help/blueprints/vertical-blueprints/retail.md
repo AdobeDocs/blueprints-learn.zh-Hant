@@ -1,13 +1,13 @@
 ---
-title: 零售業 — 使用 Experience Cloud 應用程式啟用
-description: 跨數位媒體、電子郵件、推播和網頁通道提供即時的客戶體驗。
+title: 零售業界 — 透過Experience Cloud應用程式啟動
+description: 瞭解如何跨數位媒體、電子郵件、推播和Web頻道提供即時客戶體驗。
 solution: Real-Time Customer Data Platform, Customer Journey Analytics, Journey Orchestration, Campaign, Analytics, Target
 kt: 9474
 exl-id: a675bc81-e76c-491a-8718-359867d63351
-source-git-commit: 2dab717d638bdbc0a903861ec743a81f2aed986d
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 35%
+source-wordcount: '556'
+ht-degree: 31%
 
 ---
 
@@ -61,8 +61,7 @@ ht-degree: 35%
 <img src="../vertical-blueprints/assets/retail-architecture.png" alt="零售參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 
-## 相關 Blueprints
-
+## 相關藍圖
 
 | 使用案例/整合  | 連結 |
 |:----|:----|

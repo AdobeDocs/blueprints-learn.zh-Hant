@@ -1,21 +1,25 @@
 ---
 title: 資料存取與匯出藍圖
-description: 此藍圖提供並概述可從 Adobe Experience Platform 和應用程式存取和匯出資料的所有方法。
+description: 瞭解從Adobe Experience Platform和應用程式存取及匯出資料的方法。
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-Time Customer Data Platform, Data Collection
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: 89dcbc4d71a9edff3095a6707cecc823281a9385
+source-git-commit: 2b555728ddf570e236c0c54a8c17f85a6942618f
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 100%
+source-wordcount: '1838'
+ht-degree: 91%
 
 ---
 
 # 資料存取與匯出藍圖
 
-資料存取和匯出藍圖概述了從 Adobe Experience Platform 和應用程式存取或匯出資料的所有可能方法。
+資料存取和匯出藍圖會概述所有存取或匯出資料的可能方法 [!DNL Experience Platform] 和應用程式。
 
-藍圖分為兩個類別，從 Experience Platform 和應用程式存取資料。首先，從 Experience Platform 和應用程式中輸出資料的方法；這可視為資料輸出的推送類型方法。其次，從 Experience Platform 和應用程式存取資料的方法；這可視為資料存取的提取類型方法。
+Blueprint分為兩個類別，供您從存取資料 [!DNL Experience Platform] 和應用程式。
+
+第一部分包括從Experience Platform和應用程式中移除資料的方法。 這將視為 _推播_ 資料匯出的型別方法。
+
+第二個範本包括從Experience Platform和應用程式存取資料的方法。 這將視為 _提取_ 資料存取的型別方法。
 
 資料存取方法：
 
@@ -30,11 +34,11 @@ ht-degree: 100%
 * [Real-time Customer Data Platform 目標](#RTCDP-destinations)
 * [Journey Optimizer 自訂動作](#jo-custom-actions)
 
-## 資料存取與匯出概觀架構
+## 資料存取和匯出總覽架構
 
 <img src="../experience-platform/assets/aep_data_flow.svg" alt="資料準備與擷取 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
 
-## 資料存取與匯出方法
+## 資料存取和匯出方法
 
 <table cellspacing="0" class="Table" style="border-collapse:collapse; width:1133px">
 <tbody>
@@ -408,7 +412,7 @@ ht-degree: 100%
 
 ### 事件轉送 {#event-forwarding}
 
-資料收集請求會直接收集至 Adobe 的邊緣網路。從邊緣網路請求到外部 RESTful 端點可以配置為將這些請求轉發到外部目標。
+資料收集請求會直接收集給Adobe的 [!DNL Edge Network]. 從 [!DNL Edge Network] 外部RESTful端點的要求可設定為將這些要求轉送至外部目的地。
 
 請參閱下列的[事件轉送](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)文件以取得其他資訊。
 
@@ -418,7 +422,7 @@ ht-degree: 100%
 
 #### 考量事項
 
-* 若要使用事件轉送，必須使用 Web SDK或 MobileSDK 將資料傳送至邊緣網路。
+* 若要使用事件轉送，資料必須傳送至 [!DNL Edge Network] 使用Web SDK或MobileSDK。
 * 事件轉送方法會因為頁面上新增其他標籤，而縮短頁面載入時間並減輕重量。
 * 目前不支援從邊緣設定檔或其他資料來源進行擴充。
 * 支援有限的資料篩選和簡單的映射轉換。

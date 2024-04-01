@@ -1,20 +1,20 @@
 ---
-title: Journey Optimizer — 觸發的訊息傳送與 Adobe Experience Platform 藍圖
+title: '"[!DNL Journey Optimizer]  — 觸發式傳訊和Adobe Experience Platform Blueprint」'
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 5f9384abe7f29ec764428af33c6dd1f0a43f5a89
+source-git-commit: a1f3aef5b508575019bd651b9706efc7d6db5306
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 97%
+source-wordcount: '522'
+ht-degree: 53%
 
 ---
 
-# Journey Optimizer藍圖
+# [!DNL Journey Optimizer] 藍圖
 
-Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時回應客戶行為，並滿足客戶需求。資料管理功能已移至 Adobe Experience Platform，有助於行銷團隊專注於其最佳作法：建立一流的客戶歷程和個人化對話。此 Blueprint 概述了應用程式的技術功能，並深入探討了組成 Adobe Journey Optimizer 的各種架構元件。
+Adobe [!DNL Journey Optimizer] 是專門建置的系統，行銷團隊可即時回應客戶行為，並隨時與客戶見面。 資料管理功能已移至Adobe [!DNL Experience Platform] 讓行銷團隊專注於他們最擅長的工作：打造世界級的客戶歷程和個人化對話。
 
-<br>
+此藍圖概述應用程式的技術功能，並深入分析組成各架構元件 [!DNL Journey Optimizer].
 
 ## 使用案例
 
@@ -25,19 +25,15 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 * 體育場內體驗
 * 旅行和酒店業抵達前和住宿期間的體驗
 
-<br>
-
 ## 架構
 
 <img src="assets/ajo-architecture.svg" alt="Journey Optimizer 參考架構藍圖" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
-
-<br>
 
 ## 藍圖方案
 
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| [第三方傳訊](3rd-party-messaging.md) | 展示如何搭配第三方訊息系統使用 Adobe Journey Optimizer 來協調和傳送個人化通訊 | 在客戶與您的品牌或公司互動時，立即提供 1:1 的個人化通訊<br><br>考量事項：<br><ul><li>第三方系統必須支援用於驗證的承載令牌</li><li>由於多租用戶架構，不支援靜態 IP</li><li>每秒的 API 呼叫次數，請注意協力廠商系統的架構限制。  客戶可能需要向第三方供應商購買額外的量，以支援來自 Journey Optimizer 的量</li><li>在消息或承載中不支援決策管理</li></ul> |
+| [第三方傳訊](3rd-party-messaging.md) | 示範Adobe方式 [!DNL Journey Optimizer] 可與第三方傳訊系統搭配使用，以協調並傳送個人化通訊 | 在客戶與您的品牌或公司互動時，立即提供 1:1 的個人化通訊<br><br>考量事項：<br><ul><li>第三方系統必須支援用於驗證的承載令牌</li><li>由於多租用戶架構，不支援靜態 IP</li><li>每秒的 API 呼叫次數，請注意協力廠商系統的架構限制。  客戶可能需要向協力廠商購買額外的磁碟區，以支援來自的磁碟區 [!DNL Journey Optimizer]</li><li>在消息或承載中不支援決策管理</li></ul> |
 
 <br>
 
@@ -45,41 +41,39 @@ Adobe Journey Optimizer 是行銷團隊專門建立的一款系統，可即時�
 
 | 整合 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| [Journey Optimizer 搭配 Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用 Adobe Journey Optimizer 藉助 Real-Time Customer Profile 來協調 1:1 體驗，並運用原生 Adobe Campaign 交易訊息系統來傳送訊息 | 運用 Real-Time Customer Profile 和 Journey Optimizer 的強大功能，協調即時體驗，同時運用 Adobe Campaign 的原生即時訊息傳送功能進行最後一英里的通訊<br><br>考量事項：<br><ul><li>Campaign 應用程式必須位於 v7 版本編號 21.1 以上或 v8 上</li><li>傳送訊息輸送量</li><ul><li>Campaign v7 — 每小時最多 50k</li><li>Campaign v8 — 每小時最多 1M</li><li>Campaign Standard — 每小時最多 50k</li></ul><li>不執行限制，因此使用案例需要企業架構師的技術審查</li><li>不支援在 Campaign 傳送的訊息中使用決策管理</li></ul> |
+| [[!DNL Journey Optimizer] 使用Adobe Campaign](ajo-and-campaign.md) | 顯示如何使用Adobe [!DNL Journey Optimizer] 利用即時客戶設定檔來協調1:1體驗，並利用原生Adobe Campaign交易式訊息系統來傳送訊息 | 利用的即時客戶個人檔案和功能 [!DNL Journey Optimizer] 在利用Adobe Campaign的原生即時傳訊功能進行最後一哩通訊的同時，協調當下的體驗<br><br>考量事項：<br><ul><li>Campaign 應用程式必須位於 v7 版本編號 21.1 以上或 v8 上</li><li>傳送訊息輸送量</li><ul><li>Campaign v7 — 每小時最多 50k</li><li>Campaign v8 — 每小時最多 1M</li><li>Campaign Standard — 每小時最多 50k</li></ul><li>不執行限制，因此使用案例需要企業架構師的技術審查</li><li>不支援在 Campaign 傳送的訊息中使用決策管理</li></ul> |
 
 <br>
 
 ## 先決條件
 
-Adobe Experience Platform
+Adobe [!DNL Experience Platform]：
 
-* 必須先在系統中設定方案和資料集，才能設定 Journey Optimizer 資料來源
+* 必須先在系統中設定方案和資料集，然後才能進行設定 [!DNL Journey Optimizer] 資料來源
 * 如果您想要觸發非規則型的事件，則針對體驗事件類別型方案，新增「Orchestration eventID」欄位群組
-* 針對個別個人資料類別型方案，新增「個人資料測試詳細資料」欄位群組，以便載入測試個人資料以與 Journey Optimizer 搭配使用
+* 對於以個別設定檔類別為基礎的結構描述，請新增「設定檔測試詳細資訊」欄位群組，以便載入測試設定檔以供搭配使用 [!DNL Journey Optimizer]
 
-電子郵件
+電子郵件：
 
 * 必須準備好要用於訊息傳送的子網域
 * 子網域可以完全委派給 Adobe（建議），或 CNAME 可用來指向 Adobe 專用的 DNS 伺服器（自訂）
 * 每個子網域都需要 Google TXT 記錄，以確保良好的傳遞能力
 
-行動裝置推送
+行動推播：
 
 * 客戶必須有可建立應用程式的行動裝置開發人員
 * Adobe Experience Platform Mobile SDK
 
-<br>
-
 ## 護欄
 
-[Journey Optimizer 護欄產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
+[[!DNL Journey Optimizer] 護欄產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
 
 [護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## 相關文件
 
-* [Experience Platform 文件](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-* [Experience Platform Tags 文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-* [Experience Platform Mobile SDK 文件](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-* [Journey Optimizer 文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
-* [Journey Optimizer 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
+* [[!DNL Experience Platform] 檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
+* [[!DNL Experience Platform] 標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
+* [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+* [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+* [[!DNL Journey Optimizer] 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

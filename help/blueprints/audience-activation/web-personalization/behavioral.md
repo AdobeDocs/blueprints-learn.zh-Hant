@@ -1,5 +1,5 @@
 ---
-title: 行為網路個人化藍圖
+title: 行為網頁個人化藍圖
 description: 了解如何根據線上行為和對象資料進行個人化內容。
 landing-page-description: 了解如何根據線上行為和對象資料進行個人化。
 short-description: 了解如何根據線上行為和對象資料進行個人化。
@@ -7,14 +7,14 @@ solution: Target, Audience Manager, Analytics, Experience Cloud Services, Data C
 kt: 7085
 thumbnail: thumb-web-personalization-scenario1.jpg
 exl-id: b9882c2c-cb45-4efa-a85c-8fe48f641a12
-source-git-commit: 7d043f3245c131ee4dd6085dd4d15e38188a1884
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '443'
+ht-degree: 97%
 
 ---
 
-# 行為網路/行動個人化藍圖
+# 行為網頁和行動個人化藍圖
 
 基於線上行為及對象資料進行個人化。
 

@@ -7,10 +7,10 @@ solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 7d043f3245c131ee4dd6085dd4d15e38188a1884
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 100%
+source-wordcount: '1457'
+ht-degree: 91%
 
 ---
 
@@ -35,8 +35,8 @@ ht-degree: 100%
 
 | 整合模式 | 功能 | 先決條件 |
 |---|---|---|
-| 對從 Real-time Customer Data Platform 共用至 Target 的 Edge 進行即時區段評估 | <ul><li>在 Edge 上即時評估同一或下一頁面的個人化的對象。</li><li>此外，以串流或批次方式評估的任何區段也會投影至邊緣網路，以納入邊緣區段評估和個人化中。</li></ul> | <ul><li>必須實作 Web/Mobile SDK，或使用 Edge Network Server API</li><li>必須在 Experience Edge 中設定資料流，並啟用 Target 和 Experience Platform 擴充功能</li><li>Target 目標必須在 Real-time Customer Data Platform 目標中設定。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li></ul> |
-| 透過 Edge 方法將受眾從 Real-time Customer Data Platform 串流和批次共用至 Target | <ul><li>透過 Edge Network 將串流和批次對象從 Real-time Customer Data Platform 共用至 Target。即時評估的對象需要 Web SDK 和 Edge Network 實作。</li></ul> | <ul><li>將串流和批次 RTCDP 對象共用至 Target 時，不需要 Target 的 Web/Mobile SDK 或 Edge API 實作，不過需要進行上述的即時邊緣區段評估。</li><li>如果使用 At.js，則僅支援針對 ECID 身分命名空間的個人資料整合。</li><li>在 Edge 上進行自訂身分命名空間查閱時，需要部署 Web SDK/Edge API，且每個身分都必須在身分對應中設定為身分。</li><li>Target 目標必須在 Real-time Customer Data Platform 目標中設定，僅支援 RTCDP 中的預設生產沙箱。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li></ul> |
+| 對從 Real-time Customer Data Platform 共用至 Target 的 Edge 進行即時區段評估 | <ul><li>在 Edge 上即時評估同一或下一頁面的個人化的對象。</li><li>此外，任何以串流或批次方式評估的區段也會投影至 [!DNL Edge Network] 將包含在邊緣區段評估與個人化中。</li></ul> | <ul><li>Web/Mobile SDK必須實作或 [!DNL Edge Network] 伺服器API</li><li>必須在 Experience Edge 中設定資料流，並啟用 Target 和 Experience Platform 擴充功能</li><li>Target 目標必須在 Real-time Customer Data Platform 目標中設定。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li></ul> |
+| 透過 Edge 方法將受眾從 Real-time Customer Data Platform 串流和批次共用至 Target | <ul><li>透過將串流和批次對象從Real-time Customer Data Platform分享到Target [!DNL Edge Network]. 即時評估的對象需要Web SDK和 [!DNL Edge Network] 實作。</li></ul> | <ul><li>將串流和批次 RTCDP 對象共用至 Target 時，不需要 Target 的 Web/Mobile SDK 或 Edge API 實作，不過需要進行上述的即時邊緣區段評估。</li><li>如果使用 At.js，則僅支援針對 ECID 身分命名空間的個人資料整合。</li><li>在 Edge 上進行自訂身分命名空間查閱時，需要部署 Web SDK/Edge API，且每個身分都必須在身分對應中設定為身分。</li><li>Target 目標必須在 Real-time Customer Data Platform 目標中設定，僅支援 RTCDP 中的預設生產沙箱。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li></ul> |
 | 透過對象共用服務方法，從 Real-time Customer Data Platform 串流和批次共用受眾至 Target 和 Audience Manager | <ul><li>當需要從第三方資料和 Audience Manager 中的對象進行額外擴充時，可運用此整合模式。</li></ul> | <ul><li>將串流和批次對象共用至 Target 並不需要 Web/Mobile SDK，不過需要 Web/Mobile SDK 才能進行即時邊緣區段評估。</li><li>如果使用 At.js，則僅支援針對 ECID 身分命名空間的個人資料整合。</li><li>在 Edge 上進行自訂身分命名空間查閱時，需要部署 Web SDK/Edge API，且每個身分都必須在身分對應中設定為身分。</li><li>必須透過對象共用服務布建對象投影。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li><li>只有來自預設生產沙箱的對象才支援對象共用核心服務。</li></ul> |
 
 ## 將即時、串流和批次對象分享至 Adobe Target
@@ -57,12 +57,12 @@ ht-degree: 100%
 
 已知客戶個人化透過數種實作方法受支援。
 
-### 實作模式 1 — 使用 Web/Mobile SDK 或 Edge Network API 的邊緣網路（建議方法）
+### 實作模式1 - [!DNL Edge Network] 使用Web/Mobile SDK或 [!DNL Edge Network] API （建議方法）
 
-* 搭配 Web/Mobile SDK 使用邊緣網路。即時邊緣分段需要 Web/Mobile SDK 或 Edge API 實作方法。
+* 使用 [!DNL Edge Network] 與Web/Mobile SDK搭配使用。 即時邊緣分段需要 Web/Mobile SDK 或 Edge API 實作方法。
 * [請參閱 Experience Platform Web 與 Mobile SDK 藍圖](../../experience-platform/deployment/websdk.md)進行以 SDK 為基礎的實作。
 * 若要用於 Mobile SDK，[Adobe Journey Optimizer — 決策擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning)必須安裝在 Mobile SDK 中。
-* [請參閱 Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant) 藉助 Edge 個人資料進行 Adobe Target 的 API 型實作。
+* [請參閱 [!DNL Edge Network] 伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant) 適用於使用Edge Profile的Adobe Target的API型實作。
 
 ### 實作模式 2 — 應用程式專用 SDK
 
@@ -75,7 +75,7 @@ ht-degree: 100%
 1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)
 1. [實作 Experience Platform 和 [!UICONTROL Real-time Customer Profil]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)，透過將[合併原則](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=zh-Hant#create-a-merge-policy)設定為邊緣上的活動狀態，確保建立的對象啟用邊緣。
 1. 實作 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant) 或 [Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/) 並安裝正確的擴充功能（Target 或 Adobe Journey Optimizer - Decisioning）。Experience Platform Web/Mobile SDK 或 EDGE API 是即時 Edge 細分的必要項目，但從 Real-time Customer Data Platform 到 Target 共用串流和批次對象時並非必要項目。
-1. [使用邊緣資料流配置邊緣網路](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
+1. [設定 [!DNL Edge Network] 與Edge資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
 1. [啟用 Adobe Target 作為 Real-time Customer Data Platform 的目標](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant)
 1. （可選）[實作 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)。
 1. （可選） [請求布建以在 Experience Platform 和 Adobe Target 之間共用對象](https://www.adobe.com/go/audiences) 以從 Experience Platform 共用對象至 Target。
@@ -92,7 +92,7 @@ ht-degree: 100%
 
 身分先決條件
 
-* 透過邊緣網路和 Web SDK 使用上述實作模式 1 時，可運用任何主要身分。首次登入個人化需要個人化請求設定的主要身分，與 Real-time Customer Data Platform 中個人資料的主要身分相符。匿名裝置與已知客戶之間的身分識別拼接會在中心進行處理，然後投影至邊緣。
+* 使用上述實施模式1時，可利用任何主要身分，搭配 [!DNL Edge Network] 和Web SDK。 首次登入個人化需要個人化請求設定的主要身分，與 Real-time Customer Data Platform 中個人資料的主要身分相符。匿名裝置與已知客戶之間的身分識別拼接會在中心進行處理，然後投影至邊緣。
 * 請注意，消費者造訪或登入網站之前上傳至中心的資料，將無法立即供個人化使用。作用中的邊緣個人資料必須先存在，中心資料才能同步。建立後，邊緣個人資料會以非同步方式與中心個人資料同步，進而產生下一頁個人化。
 * 從 Adobe Experience Platform 共用受眾至 Adobe Target 時，若要使用上述整合模式 2 和 3 所述的受眾共用服務，必須以 ECID 作為身分。
 * 替代身分也可用來透過 Audience Manager 與 Adobe Target 共用 Experience Platform 對象。Experience Platform 會透過下列支援的命名空間啟用對象至 Audience Manager：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。請注意，Audience Manager 和 Target 會透過 ECID 身分識別解析受眾成員資格，因此消費者在身分圖中仍需要有 ECID，才能最終分享至 Adobe Target。

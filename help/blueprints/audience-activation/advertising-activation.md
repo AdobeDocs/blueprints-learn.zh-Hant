@@ -1,19 +1,19 @@
 ---
-title: 從 Real-time Customer data Platform 啟用社交和廣告目標
-description: 從 Real-time Customer data Platform 啟用社交和廣告目標
+title: 從RTCDP啟用社交和廣告目的地
+description: 瞭解如何從多個來源擷取客戶資料，以建立客戶的單一設定檔檢視。
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: ae7347be5095ca4a7f99f9371dd94d87097112b0
+source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 100%
+source-wordcount: '1130'
+ht-degree: 92%
 
 ---
 
-# 從 Real-time Customer data Platform 啟用社交和廣告目標
+# 從RTCDP啟用社交和廣告目的地
 
-從多個來源擷取客戶資料，以建立客戶的單一個人資料檢視，將這些個人資料細分以建立行銷和個人化的對象，將這些對象共用至廣告網路(例如 Facebook 和 Google)，以針對這些對象鎖定及個人化行銷活動。
+從多個來源擷取客戶資料，以建立客戶的單一設定檔檢視。 您可以將這些設定檔細分為用於行銷和個人化的建立對象，並將這些對象分享到Facebook和Google等廣告網路，以針對這些對象定位和個人化行銷活動。
 
 ## 使用案例
 

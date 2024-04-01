@@ -3,10 +3,10 @@ title: 中心上的決策管理藍圖
 description: 在各通道（包括資訊站、代理程式協助的體驗，以及電子郵件和其他傳出傳遞）為消費者提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 5a386e18-bbac-4216-a35f-0a5016785e4a
-source-git-commit: 2960cc95b9b83a3efea7fa247e1adabf310f3ee1
+source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 87%
+source-wordcount: '831'
+ht-degree: 84%
 
 ---
 
@@ -20,7 +20,7 @@ Journey Optimizer 可用來在適當的時間，跨所有接觸點為客戶提�
 
 決策管理可以透過以下兩種方式之一進行部署。第一個是透過 Adobe Experience Platform 中心，這是中央資料中心基礎架構。在「中心」方法中，會執行並個人化優惠方案，並在超過 500 毫秒的延遲內傳送。因此，中心基礎架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或個人互動中）提供的優惠方案決策。插入電子郵件和傳出行銷活動的優惠方案，也由中心方法提供支援。
 
-第二種方法是透過 Experience Edge Network，這是分散於全球各地的基礎架構，可提供亞秒及毫秒的快速體驗。由最接近消費者地理位置的邊緣基礎架構執行的最終消費者體驗，以將延遲降至最低。邊緣決策管理可提供即時消費者體驗，例如網路或行動傳入個人化請求。
+第二種方式是透過Experience [！DNL [!DNL Edge Network]]，此基礎架構是分散於全球各地的基礎建設，可提供快速且亞秒和毫秒的體驗。 由最接近消費者地理位置的邊緣基礎架構執行的最終消費者體驗，以將延遲降至最低。邊緣決策管理可提供即時消費者體驗，例如網路或行動傳入個人化請求。
 
 此藍圖將涵蓋中心上「決策管理」的詳細資訊。
 
