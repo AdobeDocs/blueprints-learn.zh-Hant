@@ -4,22 +4,22 @@ description: 瞭解從Adobe Experience Platform和應用程式存取及匯出資
 product: adobe experience platform
 solution: Experience Platform, Journey Optimizer, Real-Time Customer Data Platform, Data Collection
 exl-id: 2ca51a29-2db2-468f-8688-fc8bc061b47b
-source-git-commit: 2b555728ddf570e236c0c54a8c17f85a6942618f
+source-git-commit: 72eb4e2ff276279a2fc88ead0b17d77cc8e99b97
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1834'
 ht-degree: 91%
 
 ---
 
-# 資料存取與匯出藍圖
+# 資料存取和匯出Blueprint
 
-資料存取和匯出藍圖會概述所有存取或匯出資料的可能方法 [!DNL Experience Platform] 和應用程式。
+資料存取和匯出Blueprint概述所有存取或匯出資料的可能方法 [!DNL Experience Platform] 和應用程式。
 
 Blueprint分為兩個類別，供您從存取資料 [!DNL Experience Platform] 和應用程式。
 
-第一部分包括從Experience Platform和應用程式中移除資料的方法。 這將視為 _推播_ 資料匯出的型別方法。
+第一項包括從匯出資料的方法 [!DNL Experience Platform] 和應用程式。 這將視為 _推播_ 資料匯出的型別方法。
 
-第二個範本包括從Experience Platform和應用程式存取資料的方法。 這將視為 _提取_ 資料存取的型別方法。
+第二個範本包括存取資料的方法，來自 [!DNL Experience Platform] 和應用程式。 這將視為 _提取_ 資料存取的型別方法。
 
 資料存取方法：
 

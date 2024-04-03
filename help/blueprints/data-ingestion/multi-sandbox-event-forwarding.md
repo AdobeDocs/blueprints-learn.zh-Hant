@@ -4,16 +4,16 @@ description: 瞭解如何將使用Experience PlatformWeb和Mobile SDK收集的�
 solution: Data Collection
 kt: 7202
 exl-id: ecc94fc8-9fad-4b88-a153-3d0fc00d8d58
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 72eb4e2ff276279a2fc88ead0b17d77cc8e99b97
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
 # 多沙箱事件轉送資料收集
 
-此藍圖顯示如何將使用Experience Platform Web和Mobile SDK收集的資料設定為收集單一事件並轉送至多個AEP沙箱。 此Blueprint專用於以下用途的多沙箱資料收集： [!UICONTROL 事件轉送] 以達成此目標。
+此藍圖顯示資料收集方式 [!DNL Experience Platform] Web和Mobile SDK可設定為收集單一事件並轉送至多個AEP沙箱。 此Blueprint專用於以下用途的多沙箱資料收集： [!UICONTROL 事件轉送] 以達成此目標。
 
 除了透過複製事件之外 [!UICONTROL 事件轉送] 功能，您可以新增、篩選或操控原始收集資料，以符合其他沙箱的需求。
 
@@ -40,7 +40,9 @@ ht-degree: 0%
 
 ### 無HIPAA資料
 
-[!UICONTROL 事件轉送] 系統不會將HIPAA視為「就緒」，且不應在收集HIPAA資料的任何HIPAA使用案例中使用。 然而，用於下列專案的基礎架構： [!UICONTROL 事件轉送] 被視為HIPAA就緒，完全由客戶自行決定。 當您的 [!UICONTROL 事件轉送] Tag屬性位於 [!UICONTROL 事件轉送] 系統時，收集到的整個資料裝載都會傳送至 [!UICONTROL 事件轉送] 處理系統。 正是這個程式使得 [!UICONTROL 事件轉送] 關於HIPAA使用案例。 整個裝載已傳送至 [!UICONTROL 事件轉送] 系統，這會包含任何HIPAA值。 即使 [!UICONTROL 事件轉送] 規則會在傳送資料至目的地之前篩選該資料，如此一來HIPAA資料仍會傳送至不符合HIPAA要求的基礎結構。 不過，裝載資料絕不會儲存，僅是直接通過。
+[!UICONTROL 事件轉送] 系統不會將HIPAA視為「就緒」，且不應在收集HIPAA資料的任何HIPAA使用案例中使用。
+
+然而，用於下列專案的基礎架構： [!UICONTROL 事件轉送] 被視為HIPAA就緒，完全由客戶自行決定。 當您的 [!UICONTROL 事件轉送] Tag屬性位於 [!UICONTROL 事件轉送] 系統時，收集到的整個資料裝載都會傳送至 [!UICONTROL 事件轉送] 處理系統。 此程式會讓 [!UICONTROL 事件轉送] 關於HIPAA使用案例。 整個裝載已傳送至 [!UICONTROL 事件轉送] 系統，此程式會包含任何HIPAA值。 即使 [!UICONTROL 事件轉送] 規則會在傳送資料到目的地之前篩選資料，如此一來HIPAA資料仍會傳送至不符合HIPAA要求的基礎結構。 不過，裝載資料絕不會儲存，且只是傳遞。
 
 ### 不同的資料串流和串流端點
 
@@ -54,12 +56,16 @@ ht-degree: 0%
 
 ![多沙箱 [!UICONTROL 事件轉送]](assets/multi-sandbox-data-collection.png)
 
-1. 收集事件資料並傳送至 [!DNL Platform Edge Network] 需要，才能使用 [!UICONTROL 事件轉送]. 客戶可以使用使用者端的Adobe標籤或 [!DNL Platform Edge Network Server API] 用於伺服器對伺服器資料收集。 此 [!DNL Platform Edge Network API] 可提供伺服器對伺服器的收集功能。 但是，這確實需要不同的程式設計模型才能實作。 請參閱 [Edge Network伺服器API總覽](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
+1. 收集事件資料並傳送至 [!DNL Platform Edge Network] 需要，才能使用 [!UICONTROL 事件轉送]. Adobe您可以為使用者端或 [!DNL Platform Edge Network Server API] 用於伺服器對伺服器資料收集。
 
-1. 收集到的裝載會從標籤實作傳送至 [!DNL Platform Edge Network] 至 [!UICONTROL 事件轉送] 服務並由其本身處理 [!UICONTROL 資料元素]， [!UICONTROL 規則] 和 [!UICONTROL 動作]. 您可深入瞭解以下專案的差異： [標籤和 [!UICONTROL 事件轉送]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
+   此 [!DNL Platform Edge Network API] 可提供伺服器對伺服器的收集功能。 但是，這需要不同的程式設計模型才能實作。 請參閱 [Edge Network伺服器API總覽](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=en).
 
-1. 一個 [!UICONTROL 事件轉送] 屬性也需要用來接收從收集到的事件資料 [!DNL Platform Edge Network]. 該事件資料是否已傳送至 [!DNL Platform Edge Network] 透過已部署的標籤實作或伺服器對伺服器集合。 作者會定義資料元素、規則和動作，以在轉送至第二個沙箱之前擴充事件資料。 考慮使用自訂程式碼 [!DNL JavaScript] 資料元素來協助您建構資料以供沙箱擷取。 結合Platform資料準備功能，您有幾個選項可管理您的資料結構。
+1. 收集到的裝載會從標籤實作傳送至 [!DNL Platform Edge Network] 至 [!UICONTROL 事件轉送] 服務並由其本身處理 [!UICONTROL 資料元素]， [!UICONTROL 規則]、和 [!UICONTROL 動作]. 若要深入瞭解差異，請參閱 [標籤和 [!UICONTROL 事件轉送]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#differences-from-tags).
 
-1. 目前，Adobe的使用 [!UICONTROL Cloud Connector擴充功能] 內需要 [!UICONTROL 事件轉送] 屬性。 一旦規則處理或擴充了事件資料，便會在為將裝載傳送至第二個沙箱的POST設定的擷取呼叫中使用Cloud Connector
+1. 一個 [!UICONTROL 事件轉送] 屬性也需要用來接收收集到的事件資料 [!DNL Platform Edge Network]，瞭解該事件資料是否已傳送至 [!DNL Platform Edge Network] 透過已部署的標籤實作或伺服器對伺服器集合。
 
-1. 第二個沙箱需要資料擷取的串流端點。 您也可以考慮AEP中的資料準備功能，以協助擷取和對應 [!UICONTROL 事件轉送] 裝載至XDM。 請參閱AEP檔案建立 [使用UI的HTTP API串流連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=zh-Hant)
+   作者會定義資料元素、規則和動作，以在轉送至第二個沙箱之前擴充事件資料。 考慮使用自訂程式碼 [!DNL JavaScript] 資料元素來協助您建構資料以供沙箱擷取。 結合Platform資料準備功能，您有幾個選項可管理您的資料結構。
+
+1. 目前，Adobe的使用 [!UICONTROL Cloud Connector擴充功能] 內需要 [!UICONTROL 事件轉送] 屬性。 在規則處理或擴充事件資料後， [!UICONTROL 雲端聯結器] 用於為POST設定的擷取呼叫中，將裝載傳送至第二個沙箱。
+
+1. 第二個沙箱需要資料擷取的串流端點。 您也可以考慮 [!UICONTROL 資料準備] AEP中可協助擷取和對映的功能 [!UICONTROL 事件轉送] 裝載至XDM。 請參閱AEP檔案建立 [使用UI的HTTP API串流連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=zh-Hant)
