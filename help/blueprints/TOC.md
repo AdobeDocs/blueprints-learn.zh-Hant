@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 51%
+source-wordcount: '240'
+ht-degree: 52%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 51%
       + [護欄](/help/blueprints/experience-platform/deployment/guardrails.md)
 + 對象與個人資料啟用 {#audience-activation}
    + [概覽](/help/blueprints/audience-activation/overview.md)
-   + [匿名Audience Activation(AAM)](/help/blueprints/audience-activation/anonymous.md)
+   + [匿名對象啟用](/help/blueprints/audience-activation/anonymous.md)
    + 已知客戶啟用 (RTCDP) {#known-customer-audience-activation}
       + [概覽](/help/blueprints/audience-activation/known.md)
       + [啟用社交和廣告頻道](/help/blueprints/audience-activation/advertising-activation.md)
@@ -53,7 +53,7 @@ ht-degree: 51%
       + [攝入與建立](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [檢閱和核准](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
       + [客戶成功案例](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
-+ 內容與商務{#content-commerce}
++ 內容與Commerce{#content-commerce}
    + [Adobe Commerce與RTCDP](/help/blueprints/content-commerce/commerce/commerce-rtcdp.md)
 + Customer Journey Analytics {#customer-journey-analytics}
    + [概覽](/help/blueprints/customer-journey-analytics/overview.md)
