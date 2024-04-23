@@ -5,7 +5,7 @@ solution: Real-Time Customer Data Platform
 kt: null
 thumbnail: null
 exl-id: eeeb4325-d0e8-4fd8-86ab-0b8afdd0b69f
-source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
+source-git-commit: f22376004f0e6feab1872b16ee2993ed22cc145e
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 76%
@@ -41,4 +41,4 @@ Audience和Profile Activation中的藍圖
 
 ## 對象與個人資料啟用護欄藍圖
 
-* 有關詳細的護欄和端對端延遲，請參閱[部署護欄文檔](../experience-platform/deployment/guardrails.md)和[個人資料和分段護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+有關詳細的護欄和端對端延遲，請參閱[部署護欄文檔](../experience-platform/deployment/guardrails.md)和[個人資料和分段護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
