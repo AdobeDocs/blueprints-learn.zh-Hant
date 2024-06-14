@@ -7,10 +7,10 @@ solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics,
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 845655a275cdb6d4a9cd397ec7c3515cbf02d321
 workflow-type: tm+mt
-source-wordcount: '1457'
-ht-degree: 91%
+source-wordcount: '891'
+ht-degree: 83%
 
 ---
 
@@ -30,6 +30,13 @@ ht-degree: 91%
 * Adobe Target
 * Adobe Audience Manager（可選）:新增第三方對象資料
 * Adobe Analytics 或 Customer Journey Analytics（可選）:新增根據歷史客戶和行為資料建立區段並執行微調細分的功能
+
+### 參考文件
+
+* [Adobe Target Connection for Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
+* [邊緣資料流配置](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
+* [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant)
+
 
 ## 整合模式
 
@@ -68,34 +75,14 @@ ht-degree: 91%
 
 使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。此實作方法不支援即時邊緣區段評估。不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
 
-[請參閱應用程式專屬的 SDK 藍圖](../../experience-platform/deployment/appsdk.md)
-
-### 實施步驟
-
-1. 對您的網路或行動應用程式[實施 Adobe Target](https://experienceleague.adobe.com/docs/target/using/implement-target/implementing-target.html?lang=zh-Hant)
-1. [實作 Experience Platform 和 [!UICONTROL Real-time Customer Profil]](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)，透過將[合併原則](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/ui-guide.html?lang=zh-Hant#create-a-merge-policy)設定為邊緣上的活動狀態，確保建立的對象啟用邊緣。
-1. 實作 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant) 或 [Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/) 並安裝正確的擴充功能（Target 或 Adobe Journey Optimizer - Decisioning）。Experience Platform Web/Mobile SDK 或 EDGE API 是即時 Edge 細分的必要項目，但從 Real-time Customer Data Platform 到 Target 共用串流和批次對象時並非必要項目。
-1. [設定 [!DNL Edge Network] 與Edge資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
-1. [啟用 Adobe Target 作為 Real-time Customer Data Platform 的目標](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant)
-1. （可選）[實作 Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/implement-audience-manager.html?lang=zh-Hant)。
-1. （可選） [請求布建以在 Experience Platform 和 Adobe Target 之間共用對象](https://www.adobe.com/go/audiences) 以從 Experience Platform 共用對象至 Target。
-
-## 護欄
-
-[請參閱「網路與行動個人化 Blueprints」概觀頁面所述的護欄。](overview.md)
-
-* 邊緣個人資料僅會在使用者於邊緣處於作用中狀態時建立，亦即其設定檔會透過 Web/Mobile SDK 或 Edge Server API 將串流事件提交至邊緣。這通常對應於在網站或行動應用程式上處於作用中狀態的使用者。
-* 邊緣個人資料的預設存留時間為 14 天。如果使用者尚未收集作用中的邊緣事件，則個人資料閒置 14 天後會在邊緣過期。個人資料在中心將保持有效，並且當使用者再次在邊緣上變為作用中狀態時，會與邊緣同步。
-* 在邊緣上建立新的個人資料時，會非同步呼叫中心，以擷取已透過目標為邊緣投影設定的任何對象和屬性。由於這是非同步流程，中心配置檔案可能需要 1 秒到數分鐘的時間才能同步到邊緣。因此，無法保證新個人資料具有來自第一頁體驗中心的個人資料情境。這同樣適用於中心新收集的資料。此資料會以非同步方式投影至邊緣，因此資料到達適當邊緣的時間會與邊緣活動分開。只有邊緣上作用中的個人資料才會保留從中心投影的屬性和對象。
+[請參閱Adobe Target聯結器檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[請參閱應用程式特定的SDK藍圖](../../experience-platform/deployment/appsdk.md)
 
 ## 實施考量
 
 身分先決條件
 
-* 使用上述實施模式1時，可利用任何主要身分，搭配 [!DNL Edge Network] 和Web SDK。 首次登入個人化需要個人化請求設定的主要身分，與 Real-time Customer Data Platform 中個人資料的主要身分相符。匿名裝置與已知客戶之間的身分識別拼接會在中心進行處理，然後投影至邊緣。
-* 請注意，消費者造訪或登入網站之前上傳至中心的資料，將無法立即供個人化使用。作用中的邊緣個人資料必須先存在，中心資料才能同步。建立後，邊緣個人資料會以非同步方式與中心個人資料同步，進而產生下一頁個人化。
-* 從 Adobe Experience Platform 共用受眾至 Adobe Target 時，若要使用上述整合模式 2 和 3 所述的受眾共用服務，必須以 ECID 作為身分。
-* 替代身分也可用來透過 Audience Manager 與 Adobe Target 共用 Experience Platform 對象。Experience Platform 會透過下列支援的命名空間啟用對象至 Audience Manager：IDFA、GAID、AdCloud、Google、ECID、EMAIL_LC_SHA256。請注意，Audience Manager 和 Target 會透過 ECID 身分識別解析受眾成員資格，因此消費者在身分圖中仍需要有 ECID，才能最終分享至 Adobe Target。
+* 使用上述實施模式1時，可利用任何主要身分，搭配 [!DNL Edge Network] 和Web SDK。 首次登入個人化需要個人化請求設定與Real-time Customer Data Platform中設定檔的主要身分相符的主要身分。
 
 ## 相關文件
 
@@ -104,12 +91,6 @@ ht-degree: 91%
 * [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
 * [Experience Platform Tags 文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
 * [Experience Cloud ID Service 文件](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)
-
-### 連線檔案
-
-* [Adobe Target Connection for Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant)
-* [邊緣資料流配置](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
-* [使用 Audience Manager 及其他 Experience Cloud 解決方案的 Experience Platform 區段分享](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing.html?lang=zh-Hant)
 
 ### 細分文件
 
