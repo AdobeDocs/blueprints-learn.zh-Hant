@@ -1,5 +1,5 @@
 ---
-title: 網頁與行動個人化藍圖
+title: 網頁與行動Personalization藍圖
 description: 提供包含[!UICONTROL 即時客戶個人資料]的個人化網路和行動內容。
 solution: Real-Time Customer Data Platform, Target, Audience Manager, Analytics, Experience Cloud Services
 kt: null
@@ -12,7 +12,7 @@ ht-degree: 95%
 
 ---
 
-# 網頁和行動個人化藍圖
+# 網頁和行動Personalization藍圖
 
 網路與行動個人化允許在多個應用程式中使用個人資料和對象細分，以個人化和最佳化客戶體驗。您可以運用客戶行為、人口統計、忠誠度和先前的交易，以個人化佈局、行動口號和內容。
 

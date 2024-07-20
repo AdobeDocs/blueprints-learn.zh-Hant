@@ -48,7 +48,7 @@ Experience Cloud 應用程式啟用與[已知客戶啟用藍圖](known.md)相一
 
 ## 護欄
 
-請參閱 [Audience and Profile Activation概觀頁面上的護欄](overview.md) 和 [部署護欄](../experience-platform/deployment/guardrails.md) 頁面。
+請參閱對象和設定檔啟動總覽頁面](overview.md)上的[護欄，以及[部署護欄](../experience-platform/deployment/guardrails.md)頁面。
 
 ## 實施考量
 

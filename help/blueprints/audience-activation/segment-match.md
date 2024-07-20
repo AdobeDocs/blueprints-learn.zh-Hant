@@ -5,7 +5,7 @@ solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
 source-git-commit: 9648235f5b626a8cbf2d8c9a619cf0f3ef1641ca
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2118'
 ht-degree: 80%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 80%
 
 ## 架構
 
-![區段比對架構](assets/architecture-segment-match.png){zoomable=&quot;yes&quot;}
+![區段比對架構](assets/architecture-segment-match.png){zoomable="yes"}
 
 [!UICONTROL 區段比對]不是可購買資料的資料市集。而是 AEP 功能，可搭配特定合作夥伴使用第一方資料，透過隱私權和同意控制協助進行協作。[!UICONTROL 區段比對]有助於專注於改善客戶關係和提升品牌。如果存在預先存在的品牌或合作夥伴關係，則這是有益的。[!UICONTROL 區段比對]體驗易於管理、可擴充，且可讓管理員以選擇加入、可控的方式共用區段。
 
@@ -77,7 +77,7 @@ ht-degree: 80%
 
 管理合作夥伴的[!UICONTROL 區段比對]流量由 RBAC 保護。只有具有適當權限的個人才能啟動、接受或管理合作夥伴。這可在產品設定檔的資料擷取區段中完成。需要下列權限：
 
-![對象共用連線](assets/data-ingestion.png){zoomable=&quot;yes&quot;}
+![對象共用連線](assets/data-ingestion.png){zoomable="yes"}
 
 | 權限 | 說明 |
 |---|---|
@@ -140,13 +140,13 @@ ht-degree: 80%
 
 整體流程為：
 
-![區段共用](assets/segment-sharing.png){zoomable=&quot;yes&quot;}
+![區段共用](assets/segment-sharing.png){zoomable="yes"}
 
 這些重疊估計提供關鍵的深入分析、合作夥伴發現和資料，以推動資料協作協定。不會跨沙箱移動任何客戶或區段資料，以取得這些重疊的估計量度。任何指定沙箱中，由 Adobe 選取且經過預先雜湊處理的適用身分會新增至可能性資料結構，讓客戶能執行兩者之間的聯合和交集作業。這些操作有助於[!UICONTROL 區段比對]從兩個不同的沙箱中獲取由身份組成的兩個資料結構的估計交集，而無需比較實際值
 
 身分重疊流程取決於來自傳送者和接收者沙箱的&#x200B;**每日完整個人資料匯出**&#x200B;資料集，以識別屬於共用區段的常見個人資料。重疊流程的詳細流程如下所示：
 
-![身分重疊流程](assets/overlap-process.png){zoomable=&quot;yes&quot;}
+![身分重疊處理序](assets/overlap-process.png){zoomable="yes"}
 
 從傳送合作夥伴完成區段共用後，接收者會收到共用區段摘要的相關通知。必須啟用此區段摘要，接收者的個人資料才能起始區段成員資格資料流。只有區段成員資格會擷取至接收者 IMS 組織的重疊個人資料片段，且不會從傳送者傳送其他身分給接收者。
 
@@ -170,7 +170,7 @@ ht-degree: 80%
 
 您可以在以隱私權為中心的受眾共同作業中使用Adobe Experience Platform Segment Match，並增強廣告商與發佈商之間的程式化私人交易。 透過區段比對，您可以：
 
-* Split **廣告非法交易** 和 **對象** 工作流程。
+* 分割&#x200B;**廣告非法交易**&#x200B;和&#x200B;**對象**&#x200B;工作流程。
 * 允許合作夥伴品牌在同意強制的流程中，使用雜湊電子郵件和雜湊電話號碼等永續性識別碼，針對相互共用和同意的身分識別共用對象中繼資料。
 
 ### 使用案例
@@ -181,7 +181,7 @@ ht-degree: 80%
 
 >[!BEGINSHADEBOX]
 
-**請考量下列品牌(Luma)和媒體網路(ACME)之間的範例工作流程：**
+**請考量下列在品牌(Luma)和媒體網路(ACME)之間的範例工作流程：**
 
 1. 品牌(Luma)透過區段比對與媒體網路(ACME)進行受眾比對。
 2. ACME透過Adobe Real-Time CDP目的地將受眾推送至廣告伺服器或程式設計SSP。
@@ -194,7 +194,7 @@ ht-degree: 80%
 
 >[!ENDSHADEBOX]
 
-![品牌與發佈商之間的工作流程圖表。](./assets/segment-match-blueprints.png)
+![品牌和發佈者之間的工作流程圖表。](./assets/segment-match-blueprints.png)
 
 >[!IMPORTANT]
 >

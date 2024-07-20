@@ -4,8 +4,8 @@ description: 客戶成功案例 — Marketo Engage和Workfront整合藍圖
 exl-id: fabe67b4-8ad6-49fc-a38f-cd4b5319d09a
 source-git-commit: 85e3c9060ebbffcab73ee9621f610df1c8ff5bcb
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 94%
+source-wordcount: '146'
+ht-degree: 93%
 
 ---
 

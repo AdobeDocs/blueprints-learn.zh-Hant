@@ -4,8 +4,8 @@ description: 概覽 — Marketo Engage與Workfront整合Blueprint概覽
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
 source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 94%
+source-wordcount: '1737'
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 94%
 
 在下方，若是電子郵件爆炸請求，您可以看到行銷活動開發程式的工作流程圖表。此外，您還可以了解 Workfront Fusion 如何在 Workfront 和 Marketo Engage 之間發揮作用，推動整個行銷活動開發週期的工作流程和流程自動化。
 
-![行銷活動計劃到執行 — 自動化使用案例](assets/overview-1.png){zoomable=&quot;yes&quot;}
+![行銷活動規劃至執行 — 自動化使用案例](assets/overview-1.png){zoomable="yes"}
 
 請注意促銷活動開發程式中的不同階段。
 
@@ -60,7 +60,7 @@ Adobe Workfront 可讓組織管理工作，以促進更有效率的執行。Work
 
 了解如何將業務流程對應到這些物件，對於了解 Workfront 與 Marketo Engage 之間的關係非常重要。
 
-![了解行銷活動在 Workfront 中的呈現方式](assets/overview-2.png){zoomable=&quot;yes&quot;}
+![瞭解行銷活動在Workfront中的呈現方式](assets/overview-2.png){zoomable="yes"}
 
 ### 定義的組合層次 {#portfolio-hierarchy-defined}
 
@@ -115,7 +115,7 @@ Zeplin 公司正在發佈一種更新版本的 Z11 小型實用拖拉機附件�
 
 以下階層顯示策略、技巧、任務和資產如何對應至此行銷活動的 Workfront。
 
-![市場行銷方案工作管理示例](assets/overview-3.png){zoomable=&quot;yes&quot;}
+![行銷方案工作管理範例](assets/overview-3.png){zoomable="yes"}
 
 ## 將 Workfront 對應至 Marketo {#mapping-workfront-to-marketo}
 
@@ -129,7 +129,7 @@ Zeplin 公司正在發佈一種更新版本的 Z11 小型實用拖拉機附件�
 
 以下範例說明方案如何包含多個專案，以及這些 Workfront 專案如何對應至 Marketo Engage 中的方案。
 
-![將 Workfront 專案對應至 Marketo Engage 方案](assets/overview-4.png){zoomable=&quot;yes&quot;}
+![將Workfront專案對應至Marketo Engage計畫](assets/overview-4.png){zoomable="yes"}
 
 您可能想要啟動大型行銷計畫，該計畫需要將多個 Workfront 專案存放在 Workfront 方案中，或是只需要建立單一 Workfront 專案，即可一次性請求網路研討會或電子郵件。無論您有何需求，透過 Workfront、Workfront Fusion 和 Marketo Engage，您的團隊都能靈活地將您的行銷活動開發流程無縫整合，從規劃到執行。
 
@@ -149,7 +149,7 @@ Workfront 專案可經過範本化，以便在每次執行特定行銷策略時�
 
 * [擷取與建立](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md){target="_blank"} — 透過 Marketo Engage 和 Workfront 實現行銷活動開發自動化
 
-* [檢閱和核准](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md){target="_blank"}
+* [檢閱與核准](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md){target="_blank"}
 
 ### 管理 Marketo Engage 行銷活動名稱及其相關聯的 URL {#managing-marketo-engage-campaign-names}
 

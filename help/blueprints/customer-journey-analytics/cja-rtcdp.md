@@ -7,8 +7,8 @@ thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
 source-git-commit: 70e7bfb3a6d7bad858bd72b6329602bdfb822505
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '358'
+ht-degree: 98%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 100%
 
 ## Customer Journey Analytics 藍圖架構
 
-![架構圖](assets/CJA.svg){zoomable=&quot;yes&quot;}
+![架構圖](assets/CJA.svg){zoomable="yes"}
 
 ## Customer Journey Analytics 藍圖的護欄圖
 
 * 有關詳細的護欄和端到端延遲，請參閱[部署護欄文件](../experience-platform/deployment/guardrails.md)
 
-![護欄圖](../experience-platform/deployment/assets/CJA_guardrails.svg){zoomable=&quot;yes&quot;}
+![護欄圖表](../experience-platform/deployment/assets/CJA_guardrails.svg){zoomable="yes"}
 
 ## 常見問題集
 

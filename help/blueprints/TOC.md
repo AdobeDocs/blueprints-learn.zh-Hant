@@ -48,7 +48,7 @@ ht-degree: 52%
 + B2B 啟用與行銷 {#b2b-activation}
    + [概覽](/help/blueprints/b2b/overview.md)
    + [B2B啟用](/help/blueprints/b2b/b2bactivation.md)
-   + Marketo Engage與Workfront整合藍圖{#marketo-engage-and-workfront-integration-blueprint}
+   + Marketo Engage與Workfront整合Blueprint{#marketo-engage-and-workfront-integration-blueprint}
       + [概覽](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [攝入與建立](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
       + [檢閱和核准](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
@@ -71,15 +71,15 @@ ht-degree: 52%
       + [協力廠商訊息](/help/blueprints/customer-journeys/3rd-party-messaging.md)
    + Campaign Standard {#campaign-standard}
       + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant){target="_blank"}
-      + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=zh-Hant){target="_blank"}
+      + [Adobe為 [!DNL Campaign Standard]的Real-Time CDP](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=zh-Hant){target="_blank"}
    + Campaign v8 {#campaign-v8}
       + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
-      + [Real-Time CDP與Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/rtcdp-and-campaign-v8.md)
+      + [具有Adobe [!DNL Campaign] v8的Real-Time CDP](/help/blueprints/customer-journeys/rtcdp-and-campaign-v8.md)
       + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/ajo-and-campaign-v8.md)
    + Campaign v7 {#campaign-v7}
       + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
-      + [Real-Time CDP與Adobe [!DNL Campaign] v7](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
-      + [Journey Optimizer與Adobe [!DNL Campaign] v7](/help/blueprints/customer-journeys/ajo-and-campaign-v7.md)
+      + [具有Adobe [!DNL Campaign] v7的Real-Time CDP](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
+      + [具有Adobe [!DNL Campaign] v7的Journey Optimizer](/help/blueprints/customer-journeys/ajo-and-campaign-v7.md)
 + 資料收集、存取和匯出 {#data-ingestion}
    + [概覽](/help/blueprints/data-ingestion/overview.md)
    + [多沙箱事件轉送資料收集](/help/blueprints/data-ingestion/multi-sandbox-event-forwarding.md)

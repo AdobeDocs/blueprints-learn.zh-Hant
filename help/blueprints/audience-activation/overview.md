@@ -35,7 +35,7 @@ Audience和Profile Activation中的藍圖
 
 下圖概述了 Experience Platform 的即時客戶個人資料的核心元件。
 
-如需設定檔、細分和啟動的相關附加檔案，請參閱 [RTCDP概觀檔案](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home) 和 [即時客戶個人檔案總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) 頁面。
+如需與設定檔、細分和啟用相關的額外檔案，請參閱[RTCDP概述檔案](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home)和[即時客戶設定檔概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)頁面。
 
 <img src="assets/profile_architecture.jpg" alt="即時客戶個人資料的參考架構" style="border:1px solid #4a4a4a" width="90%"  class="modal-image"/>
 

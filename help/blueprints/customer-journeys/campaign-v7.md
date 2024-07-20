@@ -116,7 +116,7 @@ Adobe Campaign v7 是專為傳統行銷通道（例如電子郵件和直接郵�
 
 ## 實施步驟
 
-請參閱 [快速入門手冊](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=zh-Hant) 實作Adobe Campaign v7的相關資訊。
+如需實作Adobe Campaign v7的相關資訊，請參閱[快速入門手冊](https://experienceleague.adobe.com/docs/campaign-classic/using/getting-started/starting-with-adobe-campaign/about-adobe-campaign-classic.html?lang=zh-Hant)。
 
 
 ## 相關文件

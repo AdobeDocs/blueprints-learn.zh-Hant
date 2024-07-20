@@ -12,7 +12,7 @@ ht-degree: 64%
 
 # Journey Optimizer 搭配 Adobe Campaign v8 藍圖
 
-示範Adobe方式 [!DNL Journey Optimizer] 可與Adobe搭配使用 [!DNL Campaign] 利用中的即時傳訊伺服器以原生方式傳送訊息 [!DNL Campaign].
+示範Adobe[!DNL Journey Optimizer]如何與Adobe[!DNL Campaign]搭配使用，以利用[!DNL Campaign]中的即時傳訊伺服器以原生方式傳送訊息。
 
 ## 架構
 
@@ -39,9 +39,9 @@ ht-degree: 64%
 
 ## 護欄
 
-* [Journey Optimizer Guardrails產品限制](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=zh-Hant)
+* [Journey Optimizer護欄產品限制](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=zh-Hant)
 
-* [護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+* [護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## 實施步驟
 
@@ -67,30 +67,30 @@ ht-degree: 64%
 
 #### 來源/目標
 
-1. [將資料內嵌至 [!DNL Experience Platform]](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant) 使用串流API和來源聯結器。
+1. 使用串流API和來源聯結器[將資料擷取到 [!DNL Experience Platform]](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)。
 
 ### Journey Optimizer
 
-1. 設定您的 [!DNL Experience Platform] 資料來源及判斷哪些欄位應快取為設定檔的一部分用來起始客戶歷程的串流資料，必須先在Journey Optimizer中設定才能取得協調流程ID。 此協調 ID 然後提供給開發者與擷取一起使用。
+1. 設定您的[!DNL Experience Platform]資料來源，並決定應該快取哪些欄位做為啟動客戶歷程的設定檔資料的一部分。必須先在Journey Optimizer中設定以取得協調流程ID。 此協調 ID 然後提供給開發者與擷取一起使用。
 1. 設定外部資料來源。
 1. 設定Campaign執行個體的自訂動作。
 
 ### Campaign v8
 
 * 訊息範本需要設定適當的個人化內容。
-* 的 [!DNL Campaign] standard：匯出工作流程需要設定為將交易式訊息記錄匯回至Experience Platform。 建議最多每四小時執行一次。
-* 的 [!DNL Campaign] v8.4可充分運用Adobe [!DNL Campaign] Experience Platform中的Managed Services來源聯結器，可將來自Campaign的傳遞和追蹤事件同步至Experience Platform。 請參閱 [來源聯結器](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant) 檔案以取得詳細資料。
+* 對於[!DNL Campaign]標準：匯出工作流程需要設定為將交易式訊息記錄匯出回Experience Platform。 建議最多每四小時執行一次。
+* 對於[!DNL Campaign] v8.4，可利用Experience Platform中的Adobe[!DNL Campaign] Managed Services Source Connector將來自Campaign的傳遞和追蹤事件同步至Experience Platform。 如需詳細資訊，請參閱[Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant)檔案。
 
 ### 行動推播設定（選用）
 
-1. 實作 [!DNL Experience Platform] Mobile SDK可收集推播權杖和登入資訊，以便連結回已知的客戶設定檔。
+1. 實作[!DNL Experience Platform] Mobile SDK以收集推播權杖和登入資訊，以連結回已知的客戶設定檔。
 1. 運用 Adobe 標籤，並使用下列擴充功能建立行動屬性：
-   * Adobe [!DNL Journey Optimizer] | Adobe [!DNL Campaign Classic] | Adobe [!DNL Campaign Standard]
-   * Adobe [!DNL Experience Platform] [!DNL Edge Network]
-   * 以下專案的身分 [!DNL Edge Network]
+   * Adobe[!DNL Journey Optimizer] | Adobe[!DNL Campaign Classic] | Adobe[!DNL Campaign Standard]
+   * Adobe[!DNL Experience Platform] [!DNL Edge Network]
+   * [!DNL Edge Network]的身分
    * 行動裝置核心
 1. 確保您擁有適用於行動應用程式部署與Web部署的專用資料流。
-1. 如需詳細資訊，請參閱 [Adobe Journey Optimizer Mobile指南](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer).
+1. 如需詳細資訊，請參閱[Adobe Journey Optimizer行動指南](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)。
 
    >[!IMPORTANT]
    >如果需要透過 Journey Optimizer 傳送即時通訊，或需透過 Campaign 批次推播通知，行動權杖可能需要在 Journey Optimizer 和 Campaign 中收集。Campaign v8 需要專用 Campaign SDK 來擷取推播權杖。

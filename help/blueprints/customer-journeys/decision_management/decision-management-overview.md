@@ -48,7 +48,7 @@ Journey Optimizer 可用來在適當的時間，跨所有接觸點為客戶提�
 
 ## 邊緣決策管理
 
-第二種方式是透過Experience [!DNL Edge Network]，此基礎架構是分散於全球各地的基礎建設，可提供快速的次秒和毫秒體驗。 由最接近消費者地理位置的邊緣基礎架構執行的最終消費者體驗，以將延遲降至最低。邊緣決策管理可提供即時消費者體驗，例如網路或行動傳入個人化請求。若要進一步了解邊緣上的「決策管理」，請參閱邊緣[上的「決策管理」](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=zh-Hant)藍圖。
+第二種方式是透過Experience [!DNL Edge Network]，這是一種分散於全球各地的基礎架構，可提供快速次秒和毫秒的體驗。 由最接近消費者地理位置的邊緣基礎架構執行的最終消費者體驗，以將延遲降至最低。邊緣決策管理可提供即時消費者體驗，例如網路或行動傳入個人化請求。若要進一步了解邊緣上的「決策管理」，請參閱邊緣[上的「決策管理」](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-edge.html?lang=zh-Hant)藍圖。
 
 ### 邊緣決策管理的使用案例
 

@@ -13,13 +13,13 @@ ht-degree: 91%
 
 # 資料存取和匯出Blueprint
 
-資料存取和匯出Blueprint概述所有存取或匯出資料的可能方法 [!DNL Experience Platform] 和應用程式。
+資料存取和匯出Blueprint概述可從[!DNL Experience Platform]和應用程式存取或匯出資料的所有可能方法。
 
-Blueprint分為兩個類別，供您從存取資料 [!DNL Experience Platform] 和應用程式。
+Blueprint分為兩個類別，分別用於從[!DNL Experience Platform]和應用程式存取資料。
 
-第一項包括從匯出資料的方法 [!DNL Experience Platform] 和應用程式。 這將視為 _推播_ 資料匯出的型別方法。
+第一項包括從[!DNL Experience Platform]和應用程式匯出資料的方法。 這將視為資料輸出的&#x200B;_推送_&#x200B;型別方法。
 
-第二個範本包括存取資料的方法，來自 [!DNL Experience Platform] 和應用程式。 這將視為 _提取_ 資料存取的型別方法。
+第二個包括從[!DNL Experience Platform]和應用程式存取資料的方法。 這將視為資料存取的&#x200B;_提取_&#x200B;型別方法。
 
 資料存取方法：
 
@@ -412,7 +412,7 @@ Blueprint分為兩個類別，供您從存取資料 [!DNL Experience Platform] �
 
 ### 事件轉送 {#event-forwarding}
 
-資料收集請求會直接收集給Adobe的 [!DNL Edge Network]. 從 [!DNL Edge Network] 外部RESTful端點的要求可設定為將這些要求轉送至外部目的地。
+資料收集要求會直接收集給Adobe的[!DNL Edge Network]。 可以設定從[!DNL Edge Network]請求到外部RESTful端點，將這些請求轉送到外部目的地。
 
 請參閱下列的[事件轉送](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)文件以取得其他資訊。
 
@@ -422,7 +422,7 @@ Blueprint分為兩個類別，供您從存取資料 [!DNL Experience Platform] �
 
 #### 考量事項
 
-* 若要使用事件轉送，資料必須傳送至 [!DNL Edge Network] 使用Web SDK或MobileSDK。
+* 若要使用事件轉送，必須使用Web SDK或MobileSDK將資料傳送至[!DNL Edge Network]。
 * 事件轉送方法會因為頁面上新增其他標籤，而縮短頁面載入時間並減輕重量。
 * 目前不支援從邊緣設定檔或其他資料來源進行擴充。
 * 支援有限的資料篩選和簡單的映射轉換。

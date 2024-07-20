@@ -4,8 +4,8 @@ description: 擷取和建立 — Marketo Engage和Workfront整合藍圖
 exl-id: 09679521-727c-4676-8e91-23d0b7fd54a2
 source-git-commit: 8b077428fb8bb183545bd1d63fc300ff2c28f9da
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 99%
+source-wordcount: '1282'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 以下工作流程顯示行銷活動管理員使用 Workfront 請求表單發出的網路研討會請求。然後請求中提交的詳細資訊會觸發在 Marketo Engage 中為網路研討會建立的方案和電子郵件。此外，請求表單會提供詳細資訊，以作為內容填入電子郵件。
 
-![擷取與建立藍圖](assets/intake-and-create-1.png){zoomable=&quot;yes&quot;}
+![錄取和建立Blueprint](assets/intake-and-create-1.png){zoomable="yes"}
 
 >[!TIP]
 >
@@ -101,7 +101,7 @@ ht-degree: 99%
 
 透過 Marketo Engage，語彙基元可用來將內容填入您的行銷活動資產中。例如，從您的卓越中心複製電子郵件範本後，Workfront Fusion 可從 Workfront 中的行銷活動請求取得詳細資訊，並傳遞至 Marketo Engage 方案中的「我的語彙基元」。接著，語彙基元值可直接繼承至電子郵件中，以建置電子郵件。
 
-![使用語彙基元來填入內容圖表](assets/intake-and-create-2.png){zoomable=&quot;yes&quot;}
+![使用Token填入內容圖表](assets/intake-and-create-2.png){zoomable="yes"}
 
 ### 從 AEM Assets 填入影像 {#populate-images-from-aem-assets}
 
@@ -147,9 +147,9 @@ ht-degree: 99%
 
 ## 擷取與建立自動化流程 {#intake-and-create-automation-flow}
 
-以下範例說明如何透過預先建置 [Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=zh-Hant){target="_blank"} and [Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=zh-Hant){target="_blank"} 模組，在 Fusion 中組合工作流程邏輯，讓您更快實現自動化。
+以下範例說明如何使用預先建置的[Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=zh-Hant){target="_blank"}和[Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=zh-Hant){target="_blank"}模組在Fusion中組合工作流程邏輯，讓您更快地傳遞自動化。
 
-![擷取與建立自動化流程](assets/intake-and-create-3.png)
+![接收及建立自動化流程](assets/intake-and-create-3.png)
 
 ## 資源 {#resources}
 

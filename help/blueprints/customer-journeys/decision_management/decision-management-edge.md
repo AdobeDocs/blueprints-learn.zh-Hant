@@ -10,17 +10,17 @@ ht-degree: 80%
 
 ---
 
-# JOURNEY OPTIMIZER - [!DNL Decision Management] 在邊緣Blueprint上
+# Journey Optimizer - Edge Blueprint上的[!DNL Decision Management]
 
-[!DNL Decision Management] 是提供的服務，屬於 [!DNL Journey Optimizer]. 此藍圖概述了應用程式的使用案例和技術功能，並深入介紹構成「決策管理」的各種體系結構元件和注意事項。
+[!DNL Decision Management]是作為[!DNL Journey Optimizer]的一部分提供的服務。 此藍圖概述了應用程式的使用案例和技術功能，並深入介紹構成「決策管理」的各種體系結構元件和注意事項。
 
 >[!MORELIKETHIS]
 >
->若要深入瞭解 [!DNL Decision Management]，請參閱 [Blueprint概觀](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant) 或造訪 [產品檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant).
+>若要深入瞭解[!DNL Decision Management]，請參閱[藍圖概觀](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant)或造訪[產品檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant)。
 
-[!DNL Decision Management] 可透過下列兩種方式之一部署。 第一個是透過 [!DNL Experience Platform] Hub，單一資料中心架構。 在「中心」方法中，會執行和個人化優惠活動，並在第二次延遲時傳送。因此，中心架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或人員互動中）提供的有貨決策。
+[!DNL Decision Management]有兩種部署方式。 第一個是透過[!DNL Experience Platform]中心，這是單一資料中心架構。 在「中心」方法中，會執行和個人化優惠活動，並在第二次延遲時傳送。因此，中心架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或人員互動中）提供的有貨決策。
 
-第二種方式是透過Experience Platform [!DNL Edge Network]，此基礎架構是分散於全球各地的基礎建設，可提供快速的次秒和毫秒體驗。 最接近消費者地理位置的Edge基礎架構所執行的最終消費者體驗，可將延遲降至最低。 [!DNL Decision Management] on the Edge的設計用途是提供即時消費者體驗。 這些包括網頁或行動傳入個人化請求之類的體驗。
+第二種方式是透過Experience Platform[!DNL Edge Network]，這是全球分散的地理位置基礎架構，可提供快速次秒和毫秒的體驗。 Edge基礎結構所執行的最終消費者體驗，其位置最接近消費者地理位置，可將延遲降至最低。 Edge上的[!DNL Decision Management]旨在提供即時消費者體驗。 這些包括網頁或行動傳入個人化請求之類的體驗。
 
 此藍圖將涵蓋邊緣上 Decision Management 的詳細資訊。
 
@@ -62,7 +62,7 @@ Adobe Experience Platform
 
 * 有關決策管理護欄，請參閱下面的[ Decision Management 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)。
 
-[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 
 ## 實作模式

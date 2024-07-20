@@ -12,6 +12,6 @@ ht-degree: 64%
 
 # Journey Optimizer - 邊緣上的決策管理藍圖
 
-Adobe Journey Optimizer [!UICONTROL 決定管理] 可用於在傳入頻道（例如網站、行動應用程式、資訊站和其他客戶接觸點）上個人化和提供優惠方案。
+Adobe Journey Optimizer [!UICONTROL 決定管理]可用於在傳入頻道（例如網站、行動應用程式、資訊站和其他客戶接觸點）上個人化和提供優惠。
 
 使用「決策管理」的網頁和行動個人化藍圖位於[此處](../../customer-journeys/decision_management/decision-management-edge.md)的「客戶歷程決策管理」藍圖部分。

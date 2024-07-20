@@ -7,7 +7,7 @@ exl-id: a675bc81-e76c-491a-8718-359867d63351
 source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 31%
 
 | 目標 | 策略 | 值已解除鎖定 |
 |---|---|---|
-| **策劃即時客戶歷程&#x200B;**<br></br>**推動新客戶重複購買&#x200B;**<br></br>**改進行銷效率並降低媒體成本**</ul> | <ul><li>強大的資料和身分策略可提升整個即時個人資料。</li><li>客戶和異動資料串流即時處理，包括90天的歷史負載</li><li>將細分串流至Advertising Networks和Adobe Target，以強化媒體支出和個人化工作。</li><li>透過Adobe Campaign的即時客戶歷程，包括測量績效的策略</li></ul> | <ul><li><strong>Real-time Customer Data Platform</strong>： 跨媒體、電子郵件、推播和網路提供即時的客戶體驗</li><li><strong>資料來源：</strong> 串流資料涵蓋此零售商的個人資料存儲、訂單系統、產品目錄和零售門市。</li><li><strong>Real-time Media啟用：</strong>將區段串流至Advertising Networks以進行歸因和廣告抑制</li><li><strong>即時網頁個人化：</strong>串流區段已啟用至Adobe Target，以便在零售商的網頁體驗上啟用。</li><li><strong>大規模的Journey Orchestration：</strong>觸發即時傳訊，並透過可用客戶資料進行擴充，且即時啟用至電子郵件和推播頻道</li></ul> |
+| **策劃即時客戶歷程&#x200B;**<br></br>**推動新客戶重複購買&#x200B;**<br></br>**改進行銷效率並降低媒體成本**</ul> | <ul><li>強大的資料和身分策略可提升整個即時個人資料。</li><li>客戶和異動資料串流即時處理，包括90天的歷史負載</li><li>將細分串流至Advertising Networks和Adobe Target，以強化媒體支出和個人化工作。</li><li>透過Adobe Campaign的即時客戶歷程，包括測量績效的策略</li></ul> | <ul><li><strong>Real-time Customer Data Platform</strong>： 跨媒體、電子郵件、推播和網路提供即時的客戶體驗</li><li><strong>資料來源：</strong> 串流資料涵蓋此零售商的個人資料存儲、訂單系統、產品目錄和零售門市。</li><li><strong>即時媒體啟用：</strong>將區段串流至Advertising網路以進行歸因和廣告抑制</li><li><strong>即時網路Personalization：</strong>已啟動至Adobe Target的串流區段，以便在零售商的網頁體驗上啟動。</li><li><strong>大規模Journey Orchestration：</strong>即時觸發的傳訊功能，以可用的客戶資料加以擴充，並即時啟用至電子郵件和推播頻道</li></ul> |
 
 
 ## 使用案例
@@ -51,7 +51,7 @@ ht-degree: 31%
 | 測量 | 瞭解客戶歷程 | 跨頻道行銷活動 | 衡量跨頻道行銷活動 |
 | | | 區段績效 | 瞭解區段績效和貢獻 |
 | | | 流失報表 | 以視覺效果呈現每個階段的轉換 |
-| | | 同類群組分析 | 測量區段群組之間的參與 |
+| | | 世代分析 | 測量區段群組之間的參與 |
 | | | 點按到基礎構件報表 | 瞭解客戶轉換如何帶來店內體驗 |
 | | | 出處 | 檢視哪個接觸點/體驗對購買轉換的影響最大 |
 | | | 預測性分析 | 進一步瞭解客戶傾向 |
@@ -70,6 +70,6 @@ ht-degree: 31%
 | AJO + AEP | [Adobe Journey Optimizer — 使用案例](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer.html?lang=en) |
 | | [決定管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-overview.html?lang=zh-Hant) |
 | RTCDP + AEP | [線上/離線對象啟用](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant) |
-| | [Experience Platform+應用程式啟動](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant) |
+| | [Experience Platform+應用程式啟用](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/platform-and-applications.html?lang=zh-Hant) |
 | MARKETO + AEP | [B2B啟用與行銷](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/b2b-activation/overview.html?lang=en) | |
-| Target + AEP | [Adobe Target使用案例 — 行為網頁/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/behavioral.html?lang=en) | [使用已知客戶資料進行 Web/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/known-personalization.html?lang=en) | |
+| Target + AEP | [Adobe Target使用案例 — 行為網頁/行動Personalization](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/behavioral.html?lang=en) | [使用已知客戶資料進行 Web/行動個人化](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/web-personalization/known-personalization.html?lang=en) | |

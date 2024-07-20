@@ -42,8 +42,8 @@ ht-degree: 83%
 
 | 整合模式 | 功能 | 先決條件 |
 |---|---|---|
-| 對從 Real-time Customer Data Platform 共用至 Target 的 Edge 進行即時區段評估 | <ul><li>在 Edge 上即時評估同一或下一頁面的個人化的對象。</li><li>此外，任何以串流或批次方式評估的區段也會投影至 [!DNL Edge Network] 將包含在邊緣區段評估與個人化中。</li></ul> | <ul><li>Web/Mobile SDK必須實作或 [!DNL Edge Network] 伺服器API</li><li>必須在 Experience Edge 中設定資料流，並啟用 Target 和 Experience Platform 擴充功能</li><li>Target 目標必須在 Real-time Customer Data Platform 目標中設定。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li></ul> |
-| 透過 Edge 方法將受眾從 Real-time Customer Data Platform 串流和批次共用至 Target | <ul><li>透過將串流和批次對象從Real-time Customer Data Platform分享到Target [!DNL Edge Network]. 即時評估的對象需要Web SDK和 [!DNL Edge Network] 實作。</li></ul> | <ul><li>將串流和批次 RTCDP 對象共用至 Target 時，不需要 Target 的 Web/Mobile SDK 或 Edge API 實作，不過需要進行上述的即時邊緣區段評估。</li><li>如果使用 At.js，則僅支援針對 ECID 身分命名空間的個人資料整合。</li><li>在 Edge 上進行自訂身分命名空間查閱時，需要部署 Web SDK/Edge API，且每個身分都必須在身分對應中設定為身分。</li><li>Target 目標必須在 Real-time Customer Data Platform 目標中設定，僅支援 RTCDP 中的預設生產沙箱。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li></ul> |
+| 對從 Real-time Customer Data Platform 共用至 Target 的 Edge 進行即時區段評估 | <ul><li>在 Edge 上即時評估同一或下一頁面的個人化的對象。</li><li>此外，任何以串流或批次方式評估的區段也將投影到[!DNL Edge Network]，以包含在邊緣區段評估和個人化中。</li></ul> | <ul><li>必須實作Web/Mobile SDK或[!DNL Edge Network]伺服器API</li><li>必須在 Experience Edge 中設定資料流，並啟用 Target 和 Experience Platform 擴充功能</li><li>Target 目標必須在 Real-time Customer Data Platform 目標中設定。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li></ul> |
+| 透過 Edge 方法將受眾從 Real-time Customer Data Platform 串流和批次共用至 Target | <ul><li>透過[!DNL Edge Network]從Real-time Customer Data Platform共用串流和批次對象至Target。 即時評估的對象需要Web SDK和[!DNL Edge Network]實作。</li></ul> | <ul><li>將串流和批次 RTCDP 對象共用至 Target 時，不需要 Target 的 Web/Mobile SDK 或 Edge API 實作，不過需要進行上述的即時邊緣區段評估。</li><li>如果使用 At.js，則僅支援針對 ECID 身分命名空間的個人資料整合。</li><li>在 Edge 上進行自訂身分命名空間查閱時，需要部署 Web SDK/Edge API，且每個身分都必須在身分對應中設定為身分。</li><li>Target 目標必須在 Real-time Customer Data Platform 目標中設定，僅支援 RTCDP 中的預設生產沙箱。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li></ul> |
 | 透過對象共用服務方法，從 Real-time Customer Data Platform 串流和批次共用受眾至 Target 和 Audience Manager | <ul><li>當需要從第三方資料和 Audience Manager 中的對象進行額外擴充時，可運用此整合模式。</li></ul> | <ul><li>將串流和批次對象共用至 Target 並不需要 Web/Mobile SDK，不過需要 Web/Mobile SDK 才能進行即時邊緣區段評估。</li><li>如果使用 At.js，則僅支援針對 ECID 身分命名空間的個人資料整合。</li><li>在 Edge 上進行自訂身分命名空間查閱時，需要部署 Web SDK/Edge API，且每個身分都必須在身分對應中設定為身分。</li><li>必須透過對象共用服務布建對象投影。</li><li>與 Target 整合需要與 Experience Platform 實例相同的 IMS 組織。</li><li>只有來自預設生產沙箱的對象才支援對象共用核心服務。</li></ul> |
 
 ## 將即時、串流和批次對象分享至 Adobe Target
@@ -64,25 +64,25 @@ ht-degree: 83%
 
 已知客戶個人化透過數種實作方法受支援。
 
-### 實作模式1 - [!DNL Edge Network] 使用Web/Mobile SDK或 [!DNL Edge Network] API （建議方法）
+### 具有Web/Mobile SDK或[!DNL Edge Network] API的實作模式1 - [!DNL Edge Network] （建議方法）
 
-* 使用 [!DNL Edge Network] 與Web/Mobile SDK搭配使用。 即時邊緣分段需要 Web/Mobile SDK 或 Edge API 實作方法。
+* 搭配Web/Mobile SDK使用[!DNL Edge Network]。 即時邊緣分段需要 Web/Mobile SDK 或 Edge API 實作方法。
 * [請參閱 Experience Platform Web 與 Mobile SDK 藍圖](../../experience-platform/deployment/websdk.md)進行以 SDK 為基礎的實作。
 * 若要用於 Mobile SDK，[Adobe Journey Optimizer — 決策擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer-decisioning)必須安裝在 Mobile SDK 中。
-* [請參閱 [!DNL Edge Network] 伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant) 適用於使用Edge Profile的Adobe Target的API型實作。
+* [請參閱 [!DNL Edge Network] 伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)，以取得具有Edge設定檔的Adobe Target之API實作。
 
 ### 實作模式 2 — 應用程式專用 SDK
 
 使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。此實作方法不支援即時邊緣區段評估。不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
 
-[請參閱Adobe Target聯結器檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[請參閱Adobe Target Connector檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
 [請參閱應用程式特定的SDK藍圖](../../experience-platform/deployment/appsdk.md)
 
 ## 實施考量
 
 身分先決條件
 
-* 使用上述實施模式1時，可利用任何主要身分，搭配 [!DNL Edge Network] 和Web SDK。 首次登入個人化需要個人化請求設定與Real-time Customer Data Platform中設定檔的主要身分相符的主要身分。
+* 透過[!DNL Edge Network]和Web SDK使用上述實作模式1時，可以利用任何主要身分。 首次登入個人化需要個人化請求設定與Real-time Customer Data Platform中設定檔的主要身分相符的主要身分。
 
 ## 相關文件
 
