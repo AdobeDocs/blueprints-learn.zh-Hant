@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 62dc3dff69bbf88b025373b4fdc893cc77b73594
+source-git-commit: 5095a3aed75c727f0e28aaa07587994a23020448
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 52%
+source-wordcount: '243'
+ht-degree: 51%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 52%
 + B2B 啟用與行銷 {#b2b-activation}
    + [概覽](/help/blueprints/b2b/overview.md)
    + [B2B啟用](/help/blueprints/b2b/b2bactivation.md)
+   + [B2B帳戶啟用](/help/blueprints/b2b/b2b-account-activation.md)
    + Marketo Engage與Workfront整合Blueprint{#marketo-engage-and-workfront-integration-blueprint}
       + [概覽](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
       + [攝入與建立](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
