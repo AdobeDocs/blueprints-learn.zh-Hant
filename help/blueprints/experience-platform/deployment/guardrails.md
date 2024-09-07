@@ -4,7 +4,7 @@ description: 護欄定義了對 Adobe Experience Platform 和應用程式中的�
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 64d5e2514d54b3879b09a1dc49d37a2867e21deb
+source-git-commit: 7e37677280c27302e650a96786035169573d9709
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 8%
@@ -13,6 +13,7 @@ ht-degree: 8%
 
 
 # 護欄
+
 護欄可反映系統限制、預期延遲和效能期望，以最佳化客戶架構和使用案例效能，並有助於確保穩定性、避免錯誤或意外結果。
 
 ## 護欄型別
