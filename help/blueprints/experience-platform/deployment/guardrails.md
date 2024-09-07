@@ -4,21 +4,30 @@ description: 護欄定義了對 Adobe Experience Platform 和應用程式中的�
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 164793e15315d64cf38cb14928eac10cf6ae5c35
+source-git-commit: 7ccabe2d11467b02d7fb5a2f920ebc5af8a17983
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 13%
+source-wordcount: '603'
+ht-degree: 8%
 
 ---
 
 # 護欄
+護欄可反映系統限制、預期延遲和效能期望，以最佳化客戶架構和使用案例效能，並有助於確保穩定性、避免錯誤或意外結果。
 
-護欄是建議的臨界值，可針對Adobe Experience Platform和應用程式中的資料、觀察到的延遲和系統使用情況提供指引。 護欄可反映系統限制和效能期望，以最佳化客戶架構和使用案例效能，並有助於避免錯誤或意外結果。 護欄並非服務等級協定，服務等級協定會記錄在下方連結的「產品說明」以及客戶授權協定中。 護欄旨在針對特定客戶使用案例提供架構解決方案的指引，以確保穩定性和執行力。
+## 護欄型別
 
-如需應用程式和功能的特定服務等級協定資訊，請參閱本頁底部的[應用程式和功能說明](#application-feature-descriptions)區段。
+| 護欄型別 | 說明 |
+|---|---|
+| 效能護欄（軟性限制） | 效能護欄是與使用案例範圍相關的使用限制，並概述正常條件下的預期效能。 超過上限時，您可能會遇到效能降低和延遲的狀況。 效能護欄記錄在Experience League檔案中，每個解決方案的護欄區段下，如下所述。 |
+| 靜態限制（硬限制） | 這些是系統強制的限制，不能超過。 靜態限制通常以合約方式繫結，並在客戶合約和[產品說明](https://helpx.adobe.com/legal/product-descriptions.html)中概述。 |
 
-請注意，對於具有嚴格延遲或數量需求的任何客戶使用案例，Adobe建議與您的Adobe客戶團隊和實作合作夥伴詳細審視您的使用案例。 在某些情況下，建議在使用案例的生產推出前測試並觀察特定使用案例實施，以觀察和瞭解預期行為 — 因為每個客戶實施有不同的因素，包括資料擷取的性質和步調、正在建立的區段規則的細節，以及各種啟用管道和承載 — 每個使用案例實施的觀察效能將會不同。 因此，最好預先建立並測試預期的效能，以確保根據使用案例的延遲和效能需求提供適當的架構和實作。
+>[!NOTE]
+>
+> 護欄並非服務等級協定，而是最佳設定與預期系統行為的指引。 任何屬於系統或合約限制或服務等級合約的護欄，都會在客戶合約及產品說明中詳細記錄。 如果您有興趣瞭解自訂限制，請聯絡客戶服務代表。
 
+>[!NOTE]
+>
+> 若使用案例具有嚴格的延遲或效能需求，Adobe會建議與您的Adobe客戶團隊和實作合作夥伴討論詳細資訊。 每個客戶設定可能會因資料擷取模式、區段規則和啟用管道而異。 在啟動之前，請務必測試和檢閱您的使用案例，以瞭解其行為。
 
 ## Adobe Experience Platform和應用程式的護欄參考檔案
 
@@ -77,19 +86,3 @@ ht-degree: 13%
 下圖顯示使用[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=en)時的預期延遲值。 按一下影像即可檢視高解析度版本。
 
 ![使用Adobe Journey Optimizer高階視覺化概觀。](/help/blueprints/experience-platform/deployment/assets/AJO_guardrails.svg "使用Adobe Journey Optimizer高階視覺概觀和延遲值"){width="1000" zoomable="yes"}
-
-## 應用程式和功能說明 {#application-feature-descriptions}
-
-如需功能特定服務等級協定的資訊，請參閱下列產品說明：
-
-* [Experience Platform Collection Enterprise](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-collection-enterprise.html)
-* [Real-time Customer Data Platform](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform.html)
-* [B2B Customer Data Platform](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-b2b.html)
-* [Experience Platform 啟用](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform0.html)
-* [Experience Platform 情報](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-platform-intelligence---product-description.html)
-* [Intelligent Services](https://helpx.adobe.com/tw/legal/product-descriptions/intelligent-services.html)
-* [Data Distiller](https://helpx.adobe.com/tw/legal/product-descriptions/data-distiller.html)
-* [Customer Journey Analytics](https://helpx.adobe.com/tw/legal/product-descriptions/customer-journey-analytics.html)
-* [Journey Optimizer](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Journey Orchestration](https://helpx.adobe.com/tw/legal/product-descriptions/journey-orchestration.html)
-* [Offer Decisioning](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)
