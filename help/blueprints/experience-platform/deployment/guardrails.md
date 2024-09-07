@@ -4,9 +4,9 @@ description: 護欄定義了對 Adobe Experience Platform 和應用程式中的�
 solution: Customer Journey Analytics, Journey Orchestration, Real-Time Customer Data Platform
 thumbnail: null
 exl-id: b64cf3e4-cc5d-4984-8a0f-4736d432b8e1
-source-git-commit: 7e37677280c27302e650a96786035169573d9709
+source-git-commit: 8ab82995ad7762f8ed6f706aa4c4fe59d47abb20
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '612'
 ht-degree: 8%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
-> 若使用案例具有嚴格的延遲或效能需求，Adobe會建議與您的Adobe客戶團隊和實作合作夥伴討論詳細資訊。 每個客戶設定可能會因資料擷取模式、區段規則和啟用管道而異。 在啟動之前，請務必測試和檢閱您的使用案例，以瞭解其行為。
+> 若使用案例具有嚴格的延遲或效能需求，Adobe會建議與您的Adobe客戶團隊和實作合作夥伴討論詳細資訊。 每個客戶設定可能會因資料擷取模式、設定檔計數和豐富度、區段規則和啟用管道而異。 因此，架構及測試您的使用案例以最佳化其效能並完全瞭解預期的效能特性非常重要。
 
 ## Adobe Experience Platform和應用程式的護欄參考檔案
 
