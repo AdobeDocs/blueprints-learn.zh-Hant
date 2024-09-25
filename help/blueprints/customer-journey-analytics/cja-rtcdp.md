@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 9e1ba723-63f2-4622-ba67-f2a315c3ba0c
-source-git-commit: 70e7bfb3a6d7bad858bd72b6329602bdfb822505
+source-git-commit: 9fe44d93dcc05711c77ce1325b6549bb6c27a860
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '305'
 ht-degree: 98%
 
 ---
@@ -34,19 +34,8 @@ ht-degree: 98%
 
 * 如果 CJA 傳送的 RTCDP 中不存在對應的個人資料，會建立新的個人資料，還是只會從 CJA 記錄已存在個人資料的對象？將會建立新的個人資料。因此，如果您的 RTCDP 實作僅針對已知客戶，則應編寫 CJA 對象規則，以僅篩選具有已知身分的個人資料。如果不需要，這將確保 RTCDP 個人資料計數不會將匿名個人資料算入其中。
 
-* CJA 會以管道事件或也會前往資料湖的一般檔案形式傳送對象資料嗎？CJA 對象會透過管道串流至 RTCDP 個人資料服務，但資料也會以資料集的形式儲存在資料湖中。
-
 * CJA 會傳送哪些身分識別？CJA 會在 CJA 設定期間傳送任何已設為「人員 ID」的身分識別。
 
 * 什麼將設定為主要身分？無論使用者選取何種身分，他們都會將 CJA 設為主要「人員」ID。
 
 * 身分服務是否也會處理 CJA 訊息？也就是說 CJA 可以透過對象共用，將身分新增至個人資料身分圖表嗎？否，身分服務不會處理 CJA 訊息。
-
-## 相關部落格貼文
-
-* [[!DNL Blueprint for Multi-Channel Orchestration in Adobe Experience Platform]](https://medium.com/adobetech/blueprint-for-multi-channel-orchestration-in-adobe-experience-platform-c68317e94184)
-* [[!DNL Leveraging External Data Platforms in Adobe Experience Platform Journey Orchestration]](https://medium.com/adobetech/leveraging-external-data-platforms-in-adobe-experience-platform-journey-orchestration-54fc6134fe17)
-* [[!DNL Event-Based Triggering on Adobe Experience Platform Orchestration Service using Apache Airflow]](https://medium.com/adobetech/event-based-triggering-on-adobe-experience-platform-orchestration-service-using-apache-airflow-8607b28251f1)
-* [[!DNL Adobe Campaign Classic Integration with Journey Orchestration]](https://medium.com/adobetech/adobe-campaign-classic-integration-with-journey-orchestration-ae577653281)
-* [[!DNL Demonstrating the Power of Adobe's New Journey Orchestration Service to Build Personalized Omnichannel Experiences in Real-Time]](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
-* [[!DNL Journey Orchestration in an Omnichannel World]](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
