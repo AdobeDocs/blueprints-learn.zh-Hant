@@ -2,7 +2,8 @@
 title: 購買群組式行銷和歷程管理Blueprint
 description: 瞭解如何在Adobe Journey Optimizer B2B edition中構思、設計和建置符合潛在客戶購買群組的歷程。
 solution: Journey Optimizer B2B Edition
-source-git-commit: b514d7a639d4d624875552c892ae266fdfe089f3
+exl-id: 0a9da49c-f13a-4f2a-8407-277def2db591
+source-git-commit: b777ea5c301fb1fac39bc243b09a02a2f411f40e
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 0%
@@ -26,7 +27,7 @@ ht-degree: 0%
 Journey Optimizer B2B edition提供的B2B功能增強後，您現在可以解決這些挑戰：
 
 * 缺少&#x200B;_客戶優先_&#x200B;行銷活動。
-* Marketing Qualified lead (MQL)轉換為Sales Qualified lead (SQL)不一致，需要讓方案與銷售保持一致，以培養MQL
+* Marketing Qualified Lead (MQL)轉換為Sales Qualified Lead (SQL)不一致，需要讓方案與銷售保持一致，以培養MQL
 * 缺少可銷售機制來識別並鎖定&#x200B;_競爭_&#x200B;帳戶。
 * 收入與管道中的集中風險。
 
