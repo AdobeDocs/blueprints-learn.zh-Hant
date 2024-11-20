@@ -3,10 +3,10 @@ title: 決策管理藍圖
 description: 在客戶歷程中提供個人化優惠方案。
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: f6c4a0f39acdc177ac23c4314d2f50f793cbf270
+source-git-commit: e6ac3607ea3909acf921125cc5f8fd44c0b3e0f6
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 94%
+source-wordcount: '650'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ Journey Optimizer 可用來在適當的時間，跨所有接觸點為客戶提�
 
 ## 中心的決策管理
 
-第一個是透過 Adobe Experience Platform 中心，這是中央資料中心基礎架構。在「中心」方法中，會執行並個人化優惠方案，並在超過 500 毫秒的延遲內傳送。因此，中心基礎架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或個人互動中）提供的優惠方案決策。插入電子郵件、簡訊或推播通知以及其他傳出行銷活動的優惠方案，也採用中心方法提供技術支援。若要進一步了解中心上的決策管理，請參閱[中心的決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=zh-Hant)藍圖。
+第一個是透過 Adobe Experience Platform 中心，這是中央資料中心基礎架構。中樞架構最適合不要求低延遲和高輸送量，但需要更全面檢視客戶設定檔的客戶體驗，範例包括針對資訊站或代理程式協助體驗（例如客服中心或個人互動）提供的優惠決定。 插入電子郵件、簡訊或推播通知以及其他傳出行銷活動的優惠方案，也採用中心方法提供技術支援。若要進一步了解中心上的決策管理，請參閱[中心的決策管理](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/decision-management/decision-management-hub.html?lang=zh-Hant)藍圖。
 
 * 優惠方案資格可針對完整的即時客戶個人資料（包括所有屬性和體驗事件）運作
 
