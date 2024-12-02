@@ -1,6 +1,6 @@
 ---
 title: 客戶活動中心藍圖
-description: '[!UICONTROL Real-time Customer Profile] 查詢，提供代理協助的支援及銷售之情境。'
+description: '[!UICONTROL 即時客戶個人資料]查詢，提供代理協助的支援及銷售之內容。'
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
