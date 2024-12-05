@@ -3,7 +3,7 @@ title: Journey Optimizer 搭配 Adobe Campaign v8 藍圖
 description: 示範 Adobe Journey Optimizer 如何與 Adobe Campaign 搭配使用，以利用 Campaign 中的即時傳訊伺服器原生傳送訊息。
 solution: Journey Optimizer, Campaign, Campaign v8 Client Console
 exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 64%
@@ -39,7 +39,7 @@ ht-degree: 64%
 
 ## 護欄
 
-* [Journey Optimizer護欄產品限制](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=zh-Hant)
+* [Journey Optimizer護欄產品限制](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
 * [護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 

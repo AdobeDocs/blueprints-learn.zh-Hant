@@ -3,7 +3,7 @@ title: '[!DNL Journey Optimizer] — 觸發式傳訊和Adobe Experience Platform
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: a1f3aef5b508575019bd651b9706efc7d6db5306
+source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 53%
@@ -66,7 +66,7 @@ Adobe[!DNL Experience Platform]：
 
 ## 護欄
 
-[[!DNL Journey Optimizer] 護欄產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
+[[!DNL Journey Optimizer] 護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
 [護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
