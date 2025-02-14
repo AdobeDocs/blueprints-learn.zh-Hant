@@ -1,6 +1,6 @@
 ---
 title: 數位體驗 Blueprint
-description: 數位體驗藍圖是可重複的實施，用於處理策略和解決既定的業務問題。可加速創造價值，提供快速的成功路徑。
+description: 數位體驗藍圖是可重複的實作，用於處理策略和解決既定的業務問題。可加速創造價值，提供快速的成功路徑。
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 source-git-commit: 48991029a990bbbc7d9be52d15fe19d3825341cb
