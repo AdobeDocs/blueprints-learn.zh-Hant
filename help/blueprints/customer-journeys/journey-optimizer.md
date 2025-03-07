@@ -12,7 +12,7 @@ ht-degree: 53%
 
 # [!DNL Journey Optimizer]個藍圖
 
-Adobe[!DNL Journey Optimizer]是專門建置的系統，供行銷團隊即時回應客戶行為並在他們所在的位置與他們見面。 資料管理功能已移至Adobe[!DNL Experience Platform]，讓行銷團隊專注於他們最擅長的工作：建立世界級的客戶歷程和個人化對話。
+Adobe [!DNL Journey Optimizer]是專門建置的系統，行銷團隊可即時回應客戶行為，並在他們所在的位置與他們見面。 資料管理功能已移至Adobe [!DNL Experience Platform]，讓行銷團隊專注於他們擅長的工作：建立世界級的客戶歷程和個人化對話。
 
 此藍圖概述應用程式的技術功能，並深入探討構成[!DNL Journey Optimizer]的各種架構元件。
 
@@ -33,7 +33,7 @@ Adobe[!DNL Journey Optimizer]是專門建置的系統，供行銷團隊即時回
 
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| [第三方傳訊](3rd-party-messaging.md) | 示範如何將Adobe[!DNL Journey Optimizer]與協力廠商傳訊系統搭配使用，以協調並傳送個人化通訊 | 在客戶與您的品牌或公司互動時，立即提供 1:1 的個人化通訊<br><br>考量事項：<br><ul><li>第三方系統必須支援用於驗證的承載令牌</li><li>由於多租用戶架構，不支援靜態 IP</li><li>每秒的 API 呼叫次數，請注意協力廠商系統的架構限制。  客戶可能需要向協力廠商購買額外的磁碟區，以支援來自[!DNL Journey Optimizer]的磁碟區</li><li>在消息或承載中不支援決策管理</li></ul> |
+| [第三方傳訊](3rd-party-messaging.md) | 示範Adobe [!DNL Journey Optimizer]如何與協力廠商傳訊系統搭配使用，以協調並傳送個人化通訊 | 在客戶與您的品牌或公司互動時，立即提供 1:1 的個人化通訊<br><br>考量事項：<br><ul><li>第三方系統必須支援用於驗證的承載令牌</li><li>由於多租用戶架構，不支援靜態 IP</li><li>每秒的 API 呼叫次數，請注意協力廠商系統的架構限制。  客戶可能需要向協力廠商購買額外的磁碟區，以支援來自[!DNL Journey Optimizer]的磁碟區</li><li>在消息或承載中不支援決策管理</li></ul> |
 
 <br>
 
@@ -41,13 +41,13 @@ Adobe[!DNL Journey Optimizer]是專門建置的系統，供行銷團隊即時回
 
 | 整合 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| 使用Adobe Campaign](ajo-and-campaign.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe[!DNL Journey Optimizer]來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe Campaign異動訊息系統來傳送訊息 | 利用[!DNL Journey Optimizer]的即時客戶個人檔案和功能來協調即時體驗，同時利用Adobe Campaign的原生即時傳訊功能進行最後一哩通訊<br><br>考量事項：<br><ul><li>Campaign 應用程式必須位於 v7 版本編號 21.1 以上或 v8 上</li><li>傳送訊息輸送量</li><ul><li>Campaign v7 — 每小時最多 50k</li><li>Campaign v8 — 每小時最多 1M</li><li>Campaign Standard — 每小時最多 50k</li></ul><li>不執行限制，因此使用案例需要企業架構師的技術審查</li><li>不支援在 Campaign 傳送的訊息中使用決策管理</li></ul> |
+| 使用Adobe Campaign](ajo-and-campaign.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe [!DNL Journey Optimizer]來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe Campaign交易式訊息系統來傳送訊息 | 利用[!DNL Journey Optimizer]的即時客戶個人檔案和功能來協調即時體驗，同時利用Adobe Campaign的原生即時傳訊功能進行最後一哩通訊<br><br>考量事項：<br><ul><li>Campaign 應用程式必須位於 v7 版本編號 21.1 以上或 v8 上</li><li>傳送訊息輸送量</li><ul><li>Campaign v7 — 每小時最多 50k</li><li>Campaign v8 — 每小時最多 1M</li><li>Campaign Standard — 每小時最多 50k</li></ul><li>不執行限制，因此使用案例需要企業架構師的技術審查</li><li>不支援在 Campaign 傳送的訊息中使用決策管理</li></ul> |
 
 <br>
 
 ## 先決條件
 
-Adobe[!DNL Experience Platform]：
+Adobe [!DNL Experience Platform]：
 
 * 必須先在系統中設定結構描述和資料集，然後才能設定[!DNL Journey Optimizer]資料來源
 * 如果您想要觸發非規則型的事件，則針對體驗事件類別型方案，新增「Orchestration eventID」欄位群組
