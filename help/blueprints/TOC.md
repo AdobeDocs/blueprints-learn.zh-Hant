@@ -5,7 +5,7 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: ec6778d0b3cd37442be2731cafba26388e4355ea
+source-git-commit: bb3d3ec11809dceb9ecf46561b608e22bff855b9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 50%
@@ -25,13 +25,13 @@ ht-degree: 50%
       + [應用程式 SDK](/help/blueprints/experience-platform/deployment/appsdk.md)
       + [護欄](/help/blueprints/experience-platform/deployment/guardrails.md)
 + 對象與個人資料啟用 {#audience-activation}
-   + [Audience Manager](/help/blueprints/audience-activation/audience_manager.md)
+   + [Audience Manager](/help/blueprints/audience-activation/audience-manager.md)
    + 即時客戶資料平台(RTCDP) {#known-customer-audience-activation}
       + [啟用社交和廣告頻道](/help/blueprints/audience-activation/advertising-activation.md)
       + [啟用檔案和企業串流目的地](/help/blueprints/audience-activation/enterprise-destinations.md)
       + [客戶活動中心](/help/blueprints/audience-activation/customer-activity.md)
-      + [Target與RTCDP](/help/blueprints/audience-activation/rtcdp-target.md)
       + [區段比對](/help/blueprints/audience-activation/segment-match.md)
+      + [Target與RTCDP](/help/blueprints/audience-activation/rtcdp-target.md)
 + B2B 啟用與行銷 {#b2b-activation}
    + [概覽](/help/blueprints/b2b/overview.md)
    + [B2B啟用](/help/blueprints/b2b/b2bactivation.md)
