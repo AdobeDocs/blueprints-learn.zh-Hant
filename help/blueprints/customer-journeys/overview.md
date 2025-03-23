@@ -1,11 +1,9 @@
 ---
 title: 客戶歷程藍圖
 description: 在各畫面中提供個別、即時的客戶體驗。
-solution: Journey Optimizer, Campaign, Campaign v8 Client Console, Campaign v8 Web User Interface, Campaign Classic v7, Campaign Standard, Experience Platform
-kt: null
-thumbnail: null
+solution: Journey Optimizer, Campaign, Experience Platform
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: a1f3aef5b508575019bd651b9706efc7d6db5306
+source-git-commit: 1d10727899aaae6b8cd339ce10d2a520c73bdaa2
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 67%
@@ -18,9 +16,9 @@ ht-degree: 67%
 
 協調工具還可透過與其他通道特定的決策引擎分享對象狀態來整合傳入通道等其他互動通道，以進行網頁/行動個人化。有很多元素決定了客戶歷程應使用哪些應用程式和部署選項，但可歸納為兩種不同的方法：在客戶參與 (觸發) 時對其做出反應，或在客戶參與 (排程) 時對一組客戶做出反應。
 
-現在，客戶在需要Customer Journey解決方案時，有兩個可供選擇的Adobe選項：
+現在，客戶在需要Customer Journey解決方案時，可以選擇Adobe的兩種選項：
 
-<ul><li>Adobe[!DNL Campaign]個受管理的Cloud Service</li><li>Adobe Journey Optimizer</li></ul>
+<ul><li>Adobe [!DNL Campaign]受管理的雲端服務</li><li>Adobe Journey Optimizer</li></ul>
 
 | 藍圖 | 說明 | 架構 |
 |---|---|---|

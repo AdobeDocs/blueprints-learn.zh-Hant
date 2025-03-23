@@ -2,8 +2,9 @@
 title: Campaign v8 藍圖、Campaign & Platform
 description: 瞭解Campaign v8的藍圖。
 solution: Campaign,Campaign v8
+version: Campaign v8
 exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-source-git-commit: 16b233c7ea9077566ebf12238f0a87beec1c61ce
+source-git-commit: 1d10727899aaae6b8cd339ce10d2a520c73bdaa2
 workflow-type: tm+mt
 source-wordcount: '966'
 ht-degree: 41%
@@ -41,8 +42,8 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
 
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| Adobe為 [!DNL Campaign]](rtcdp-and-campaign-v8.md)的[[!DNL Real-time Customer Data Platform]  | 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe[!DNL Campaign]搭配使用，以提供個人化的對話 | <ul><li>透過使用雲端儲存空間檔案交換和Adobe[!DNL Campaign]擷取工作流程，從[!DNL Real-Time CDP]共用設定檔和Adobe[!DNL Campaign] </li><li>從Adobe[!DNL Campaign]輕鬆將客戶對話中的傳遞和互動資料分享回[!DNL Real-Time CDP]，以強化即時客戶設定檔並提供訊息行銷活動的跨管道報告</li></ul> |
-| Adobe為 [!DNL Campaign]](ajo-and-campaign.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe Journey Optimizer來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe[!DNL Campaign]異動訊息系統來傳送訊息 | 利用[!DNL Journey Optimizer]的即時客戶設定檔和功能來協調即時體驗，同時利用Adobe[!DNL Campaign]的原生即時傳訊功能進行最後一哩通訊<br><br>考量事項：<br><ul><li>可透過即時消息伺服器每小時發送最多 1M 訊息<li>不會從[!DNL Journey Optimizer]執行任何節流，因此請確定售前企業架構師的技術審查</li><li>Campaign v8 承載不支援決策管理</li></ul> |
+| 使用Adobe [!DNL Campaign]](rtcdp-and-campaign-v8.md)的[[!DNL Real-time Customer Data Platform]  | 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign]搭配使用，以提供個人化的對話 | <ul><li>透過使用雲端儲存空間檔案交換和Adobe [!DNL Campaign]擷取工作流程，從[!DNL Real-Time CDP]到Adobe [!DNL Campaign]共用設定檔和對象 </li><li>從Adobe [!DNL Campaign]輕鬆將客戶對話中的傳遞和互動資料分享回[!DNL Real-Time CDP]，以強化即時客戶設定檔並提供訊息行銷活動的跨管道報告</li></ul> |
+| 使用Adobe [!DNL Campaign]](ajo-and-campaign.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe Journey Optimizer來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe [!DNL Campaign]異動訊息系統來傳送訊息 | 利用[!DNL Journey Optimizer]的即時客戶設定檔和功能來協調即時體驗，同時利用Adobe [!DNL Campaign]的原生即時傳訊功能進行最後一哩通訊<br><br>考量事項：<br><ul><li>可透過即時消息伺服器每小時發送最多 1M 訊息<li>不會從[!DNL Journey Optimizer]執行任何節流，因此請確定售前企業架構師的技術審查</li><li>Campaign v8 承載不支援決策管理</li></ul> |
 
 ## 先決條件
 
@@ -50,7 +51,7 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
 
 ### 應用程式伺服器和即時傳訊伺服器
 
-* 需要Adobe[!DNL Campaign]使用者端主控台，才能互動和使用[!DNL Campaign] v8軟體。 它是基於 Windows 的客戶端，使用標準 Internet 協定（SOAP、HTTP 等）。請確定您的組織已啟用必要權限，以分發、安裝及執行軟體
+* 需要Adobe [!DNL Campaign]使用者端主控台才能互動和使用[!DNL Campaign] v8軟體。 它是基於 Windows 的客戶端，使用標準 Internet 協定（SOAP、HTTP 等）。請確定您的組織已啟用必要權限，以分發、安裝及執行軟體
 
 * IP位址允許清單：
    * 識別所有使用者在存取使用者端主控台期間使用的IP範圍。
@@ -62,7 +63,7 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
 ### 電子郵件
 
 * 讓子網域準備好用來傳送訊息。
-* 子網域可以完全委派給Adobe（建議），或可以使用CNAME指向Adobe特定的DNS伺服器（自訂）。
+* 子網域可以完全委派給Adobe （建議），或可以使用CNAME指向Adobe特定的DNS伺服器（自訂）。
 * 每個子網域都需要Google TXT記錄以確保良好的傳遞能力。
 
 ### 行動裝置推送
@@ -82,7 +83,7 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
 ### 應用程式伺服器大小調整
 
 * 儲存空間可擴充至2億個設定檔，並有可能擴充至1B個設定檔。
-* 透過Adobe[!DNL Admin Console]設定及控制使用者存取。
+* 透過Adobe [!DNL Admin Console]設定及控制使用者存取。
 * 資料載入至[!DNL Campaign]應透過批次檔案完成：
    * API 資料載入支援主要用於管理資料庫內的個人資料或簡單物件（即建立和更新）。它不用於載入大量資料或批處理作業。
    * 不支援使用 API 來讀取用於自訂應用程式的資料
@@ -103,9 +104,9 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
 * Campaign 提供與簡訊提供者整合的功能。提供者由客戶採購，並與Campaign整合，用於傳送SMS訊息。
 * 透過SMPP通訊協定提供支援。
 * 簡訊有三(3)種，Adobe 皆可支援：
-   * SMS MT （已終止行動裝置）：Adobe[!DNL Campaign]透過SMPP提供者向行動電話發出的SMS。
-   * SMS MO （行動原始）：行動透過SMPP提供者傳送給Adobe[!DNL Campaign]的SMS。
-   * SMS SR （狀態報告）或DR或DLR （傳遞回條）：行動裝置透過SMPP提供者傳送給Adobe[!DNL Campaign]的回條，指出已成功接收SMS。 Adobe[!DNL Campaign]也可能收到指出訊息無法傳遞的SR，通常包含錯誤說明。
+   * SMS MT （已終止行動裝置）： Adobe [!DNL Campaign]透過SMPP提供者向行動電話發出的SMS。
+   * SMS MO （行動原始）：行動透過SMPP提供者傳送給Adobe [!DNL Campaign]的SMS。
+   * SMS SR （狀態報告）或DR或DLR （傳遞回條）：行動裝置透過SMPP提供者傳送給Adobe [!DNL Campaign]的回條，指出已成功接收SMS。 Adobe [!DNL Campaign]也可能收到指出訊息無法傳遞的SR，通常包含錯誤說明。
 
 ## 實施步驟
 

@@ -1,9 +1,10 @@
 ---
 title: Journey Optimizer 搭配 Adobe Campaign v8 藍圖
 description: 示範 Adobe Journey Optimizer 如何與 Adobe Campaign 搭配使用，以利用 Campaign 中的即時傳訊伺服器原生傳送訊息。
-solution: Journey Optimizer, Campaign, Campaign v8 Client Console
+solution: Journey Optimizer, Campaign, Campaign v8, Campaign v8 Client Console
+version: Campaign v8, Campaign v8 Client Console
 exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
-source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
+source-git-commit: 1d10727899aaae6b8cd339ce10d2a520c73bdaa2
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 64%
@@ -12,7 +13,7 @@ ht-degree: 64%
 
 # Journey Optimizer 搭配 Adobe Campaign v8 藍圖
 
-示範Adobe[!DNL Journey Optimizer]如何與Adobe[!DNL Campaign]搭配使用，以利用[!DNL Campaign]中的即時傳訊伺服器以原生方式傳送訊息。
+示範Adobe [!DNL Journey Optimizer]如何與Adobe [!DNL Campaign]搭配使用，以利用[!DNL Campaign]中的即時傳訊伺服器以原生方式傳送訊息。
 
 ## 架構
 
@@ -79,14 +80,14 @@ ht-degree: 64%
 
 * 訊息範本需要設定適當的個人化內容。
 * 對於[!DNL Campaign]標準：匯出工作流程需要設定為將交易式訊息記錄匯出回Experience Platform。 建議最多每四小時執行一次。
-* 對於[!DNL Campaign] v8.4，可利用Experience Platform中的Adobe[!DNL Campaign] Managed Services Source Connector將來自Campaign的傳遞和追蹤事件同步至Experience Platform。 如需詳細資訊，請參閱[Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant)檔案。
+* 對於[!DNL Campaign] v8.4，可利用Experience Platform中的Adobe [!DNL Campaign] Managed Services Source Connector，將傳遞和追蹤事件從Campaign同步至Experience Platform。 如需詳細資訊，請參閱[Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant)檔案。
 
 ### 行動推播設定（選用）
 
 1. 實作[!DNL Experience Platform] Mobile SDK以收集推播權杖和登入資訊，以連結回已知的客戶設定檔。
 1. 運用 Adobe 標籤，並使用下列擴充功能建立行動屬性：
-   * Adobe[!DNL Journey Optimizer] | Adobe[!DNL Campaign Classic] | Adobe[!DNL Campaign Standard]
-   * Adobe[!DNL Experience Platform] [!DNL Edge Network]
+   * Adobe [!DNL Journey Optimizer] | Adobe [!DNL Campaign Classic] | Adobe [!DNL Campaign Standard]
+   * Adobe [!DNL Experience Platform] [!DNL Edge Network]
    * [!DNL Edge Network]的身分
    * 行動裝置核心
 1. 確保您擁有適用於行動應用程式部署與Web部署的專用資料流。
