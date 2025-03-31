@@ -7,10 +7,10 @@ solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 7cdafaa39e5f46a2d777219be519efca31d3830b
+source-git-commit: 495a2480828e2c6b4caa41226f4fe67437b081c1
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 95%
+source-wordcount: '236'
+ht-degree: 93%
 
 ---
 
@@ -32,8 +32,6 @@ ht-degree: 95%
 
 可運用 Audience Manager 和 Real-time Customer Data Platform 來支援現場和廣告目標的匿名對象啟用。請注意，Real-time Customer Data Platform 僅支援包含[目標文件](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=zh-Hant)中歸類的匿名裝置識別碼的廣告目標子集。
 
-Microsoft Bing、Google DV360 和 TradeDesk 是主要支援的 Real-time Customer Data Platform 廣告目標，用於匿名裝置型鎖定目標。除此之外，Real-time Customer Data Platform 還支援許多已知客戶型目標，如 [目標文件](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/overview.html?lang=zh-Hant)所歸類和[已知客戶啟用藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant)中所描述的目標。
-
 ## 架構
 
 匿名Audience Activation Blueprint的![參考架構](assets/anonymous_activation.svg)
@@ -46,13 +44,4 @@ Microsoft Bing、Google DV360 和 TradeDesk 是主要支援的 Real-time Custome
 
 ## Real-time Customer Data Platform 的實作步驟
 
-* 如需 Real-time Customer Data Platform 的實作步驟，請參閱下列[文件](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant)。
-
-## 相關文件
-
-* [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=zh-Hant)
-* [Experience Cloud [!UICONTROL 受眾]](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=zh-Hant)
-* [整合 Audience Manager 與 Target](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/aam-target-integration.html?lang=zh-Hant)
-* [透過 Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
-* [已知客戶啟用藍圖](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/audience-activation/known-customer-audience-activation/known.html?lang=zh-Hant)
-* [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hant)
+* 如需 Real-time Customer Data Platform 的實作步驟，請參閱下列[文件](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home)。
