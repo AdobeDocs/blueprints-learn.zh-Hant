@@ -3,7 +3,7 @@ title: Journey Optimizer 搭配 Adobe Campaign v7 藍圖
 description: 示範 Adobe Journey Optimizer 如何與 Adobe Campaign 搭配使用，以利用 Campaign 中的即時傳訊伺服器原生傳送訊息。
 solution: Journey Optimizer, Campaign, Campaign Classic v7, Campaign Standard
 exl-id: 6d9bc65c-cca0-453f-8106-d2895d005ada
-source-git-commit: f8b9cc115739b53bba71d06b228dcce57df9dd7b
+source-git-commit: 7547cdc57e50d63f4a7949c00a77b82c86da831e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 97%
@@ -91,7 +91,7 @@ ht-degree: 97%
    * [!DNL Edge Network]的身分
    * 行動裝置核心
 1. 針對行動應用程式部署與網頁部署，確保您擁有專屬的資料流
-1. 如需更多詳細資訊，請參閱 [Adobe Journey Optimizer 行動指南](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-journey-optimizer)
+1. 如需更多詳細資訊，請參閱 [Adobe Journey Optimizer 行動指南](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/)
 
    >[!IMPORTANT]
    >如果需要透過 Journey Optimizer 傳送即時通訊，或需透過 Campaign 批次推播通知，行動權杖可能需要在 Journey Optimizer 和 Campaign 中收集。Campaign v8 需要專用 Campaign SDK 來擷取推播權杖。
