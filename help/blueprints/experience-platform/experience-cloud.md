@@ -5,7 +5,7 @@ solution: Experience Cloud, Campaign, Analytics, Target, Audience Manager, Comme
 kt: 7200
 thumbnail: null
 exl-id: 67f7e236-4fa2-434d-af22-953e94a079c1
-source-git-commit: 48b34b05b83f693395b71bcabb16dffa548a1b00
+source-git-commit: c967d4945774ca4580b60656bc051c479ce56389
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 73%
@@ -20,7 +20,7 @@ ht-degree: 73%
 
 下圖說明 Adobe Experience Cloud 在 Adobe Experience Platform 基礎上所建置及整合之資料見解與對象、內容與商務、客戶歷程、行銷工作流程中各種元件的分佈情況。
 
-<img src="assets/AEC.jpg" alt="Experience Cloud 概述" style="width:95%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
+<img src="assets/AEC.png" alt="Experience Cloud 概述" style="width:95%; border:1px solid #4a4a4a; margin-bottom: 15px;" class="modal-image" />
 
 
 ## 資料與見解、內容與商務以及體驗傳送的整合架構
