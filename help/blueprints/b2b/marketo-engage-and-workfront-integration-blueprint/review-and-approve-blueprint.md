@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ### 使用準備好檢閱任務設定Workfront專案 {#configure-a-workfront-project-with-a-ready-for-review-task}
 
-使用[專案範本](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/create-and-manage-project-templates/project-template-overview.html){target="_blank"}來擷取與貴組織中專案相關的大部分可重複程式、資訊和設定。 您可以在範本中定義任務、佇列主題、建立自訂表格及附加檔案。
+使用[專案範本](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/create-and-manage-project-templates/project-template-overview.html?lang=zh-Hant){target="_blank"}來擷取與貴組織中專案相關的大部分可重複程式、資訊和設定。 您可以在範本中定義任務、佇列主題、建立自訂表格及附加檔案。
 
 在Workfront的專案範本中，納入檢閱行銷活動所含資產的任務。 此外，您可以新增核准流程以處理單一核准，或更複雜的多層級核准。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ### 觸發您的Marketo Engage電子郵件，以隨著任務狀態變更同步至Workfront {#trigger-your-marketo-engage-email-to-sync-to-workfront}
 
-在您的稽核流程中，當電子郵件準備好供行銷團隊稽核時，您會想要將電子郵件同步至您的Workfront專案。 若要這麼做，我們建議設定一個準備好檢閱的工作，其狀態為[工作狀態](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/update-work-on-a-project/update-task-status.html){target="_blank"}，表示電子郵件準備好檢閱時。 在我們的範例中，我們將「檢閱Marketo電子郵件」狀態新增至任務，可在電子郵件草稿準備好供利害關係人檢閱時選取。
+在您的稽核流程中，當電子郵件準備好供行銷團隊稽核時，您會想要將電子郵件同步至您的Workfront專案。 若要這麼做，我們建議設定一個準備好檢閱的工作，其狀態為[工作狀態](https://experienceleague.adobe.com/docs/workfront/using/manage-work/projects/update-work-on-a-project/update-task-status.html?lang=zh-Hant){target="_blank"}，表示電子郵件準備好檢閱時。 在我們的範例中，我們將「檢閱Marketo電子郵件」狀態新增至任務，可在電子郵件草稿準備好供利害關係人檢閱時選取。
 
 在Workfront專案中設定此狀態後，您就可以設定Workfront Fusion情境，監聽準備好檢閱任務以更新為「檢閱Marketo電子郵件」。 更新後，您的情境可以將Marketo Engage電子郵件擷取為HTML檔案、壓縮它，並將其副本儲存在Workfront專案檔案中以供檢閱。
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ### 使用Workfront校訂透過評論和註解進行共同作業 {#use-workfront-proofing-to-collaborate}
 
-[Workfront的校樣](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html){target="_blank"}功能可讓您的行銷團隊取得新資產（例如影像或電子郵件），並透過評論和註解進行共同作業。 一旦校訂準備好上線，決策者就可以從校訂工具核准資產。
+[Workfront的校樣](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html?lang=zh-Hant){target="_blank"}功能可讓您的行銷團隊取得新資產（例如影像或電子郵件），並透過評論和註解進行共同作業。 一旦校訂準備好上線，決策者就可以從校訂工具核准資產。
 
 ![轉換電子郵件熒幕](assets/review-and-approve-blueprint-3.png){zoomable="yes"}
 

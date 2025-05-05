@@ -55,14 +55,14 @@ ht-degree: 5%
    * 事件回顧最多30天，事件述詞不排序。
    * AND / OR受到支援（因此您可以說「A和B必須發生」）  但您無法說「A必須在B之前3天發生」)。
 * 針對雲端儲存目標，匯出排程支援「區段評估後」選項。
-* [B2B設定檔與分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)。
+* [B2B設定檔與分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)。
 
 ## Real-time Customer Data Platform B2B Edition、帳戶對象建立和啟用的實作步驟
 
-* 如需Real-time Customer Data Platform B2B版本的實作步驟，請參閱[Real-time Customer Data Platform B2B版本快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)檔案。
-* 如需帳戶對象建立步驟，請參閱[帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences)檔案。
-* 如需帳戶Audience Activation步驟，請參閱[啟用帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences)檔案。
-   * [ （公司） LinkedIn的必要對應符合對象目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences#required-mappings)。
+* 如需Real-time Customer Data Platform B2B版本的實作步驟，請參閱[Real-time Customer Data Platform B2B版本快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)檔案。
+* 如需帳戶對象建立步驟，請參閱[帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/account-audiences)檔案。
+* 如需帳戶Audience Activation步驟，請參閱[啟用帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences)檔案。
+   * [ （公司） LinkedIn的必要對應符合對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences#required-mappings)。
 
 ## 實施考量
 
@@ -70,8 +70,8 @@ linkedIn相符對象有一些要求，包括相符成員300人的最小對象規
 
 ## 相關文件
 
-* [B2B 版 Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
+* [B2B 版 Real-time Customer Data Platform](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
 * [建立並啟用帳戶對象教學課程影片](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/audiences/create-audiences-with-b2b-data)
-* [建立帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences)
-* [啟用帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences)
-* [Adobe Experience Platform - LinkedIn目的地聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+* [建立帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/account-audiences)
+* [啟用帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences)
+* [Adobe Experience Platform - LinkedIn目的地聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/social/linkedin)

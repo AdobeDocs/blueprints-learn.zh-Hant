@@ -22,4 +22,4 @@ ht-degree: 60%
 
 ## 資料輸入和輸出模式
 
-如需所有資料擷取、收集、輸入與輸出模式的詳細清單，請參閱[資料擷取檔案](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home)。
+如需所有資料擷取、收集、輸入與輸出模式的詳細清單，請參閱[資料擷取檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/home)。
