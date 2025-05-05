@@ -42,8 +42,8 @@ Adobe Campaign v8 是新一代的行銷工具，專為傳統行銷通道（例�
 
 | 狀況 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| 使用Adobe [!DNL Campaign]](rtcdp-and-campaign-v8.md)的[[!DNL Real-time Customer Data Platform]  | 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign]搭配使用，以提供個人化的對話 | <ul><li>透過使用雲端儲存空間檔案交換和Adobe [!DNL Campaign]擷取工作流程，從[!DNL Real-Time CDP]到Adobe [!DNL Campaign]共用設定檔和對象 </li><li>從Adobe [!DNL Campaign]輕鬆將客戶對話中的傳遞和互動資料分享回[!DNL Real-Time CDP]，以強化即時客戶設定檔並提供訊息行銷活動的跨管道報告</li></ul> |
-| 使用Adobe [!DNL Campaign]](ajo-and-campaign.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe Journey Optimizer來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe [!DNL Campaign]異動訊息系統來傳送訊息 | 利用[!DNL Journey Optimizer]的即時客戶設定檔和功能來協調即時體驗，同時利用Adobe [!DNL Campaign]的原生即時傳訊功能進行最後一哩通訊<br><br>考量事項：<br><ul><li>可透過即時消息伺服器每小時發送最多 1M 訊息<li>不會從[!DNL Journey Optimizer]執行任何節流，因此請確定售前企業架構師的技術審查</li><li>Campaign v8 承載不支援決策管理</li></ul> |
+| 使用Adobe [!DNL Campaign][&#128279;](rtcdp-and-campaign-v8.md)的[!DNL Real-time Customer Data Platform]  | 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign]搭配使用，以提供個人化的對話 | <ul><li>透過使用雲端儲存空間檔案交換和Adobe [!DNL Campaign]擷取工作流程，從[!DNL Real-Time CDP]到Adobe [!DNL Campaign]共用設定檔和對象 </li><li>從Adobe [!DNL Campaign]輕鬆將客戶對話中的傳遞和互動資料分享回[!DNL Real-Time CDP]，以強化即時客戶設定檔並提供訊息行銷活動的跨管道報告</li></ul> |
+| 使用Adobe [!DNL Campaign][&#128279;](ajo-and-campaign.md)的[!DNL Journey Optimizer]  | 顯示如何使用Adobe Journey Optimizer來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe [!DNL Campaign]異動訊息系統來傳送訊息 | 利用[!DNL Journey Optimizer]的即時客戶設定檔和功能來協調即時體驗，同時利用Adobe [!DNL Campaign]的原生即時傳訊功能進行最後一哩通訊<br><br>考量事項：<br><ul><li>可透過即時消息伺服器每小時發送最多 1M 訊息<li>不會從[!DNL Journey Optimizer]執行任何節流，因此請確定售前企業架構師的技術審查</li><li>Campaign v8 承載不支援決策管理</li></ul> |
 
 ## 先決條件
 

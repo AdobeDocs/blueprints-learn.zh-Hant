@@ -41,7 +41,7 @@ Adobe [!DNL Journey Optimizer]是專門建置的系統，行銷團隊可即時�
 
 | 整合 | 說明 | 功能 |
 | :-- | :--- | :--- |
-| 使用Adobe Campaign](ajo-and-campaign.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe [!DNL Journey Optimizer]來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe Campaign交易式訊息系統來傳送訊息 | 利用[!DNL Journey Optimizer]的即時客戶個人檔案和功能來協調即時體驗，同時利用Adobe Campaign的原生即時傳訊功能進行最後一哩通訊<br><br>考量事項：<br><ul><li>Campaign 應用程式必須位於 v7 版本編號 21.1 以上或 v8 上</li><li>傳送訊息輸送量</li><ul><li>Campaign v7 — 每小時最多 50k</li><li>Campaign v8 — 每小時最多 1M</li><li>Campaign Standard — 每小時最多 50k</li></ul><li>不執行限制，因此使用案例需要企業架構師的技術審查</li><li>不支援在 Campaign 傳送的訊息中使用決策管理</li></ul> |
+| 使用Adobe Campaign[&#128279;](ajo-and-campaign.md)的[!DNL Journey Optimizer]  | 顯示如何使用Adobe [!DNL Journey Optimizer]來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe Campaign交易式訊息系統來傳送訊息 | 利用[!DNL Journey Optimizer]的即時客戶個人檔案和功能來協調即時體驗，同時利用Adobe Campaign的原生即時傳訊功能進行最後一哩通訊<br><br>考量事項：<br><ul><li>Campaign 應用程式必須位於 v7 版本編號 21.1 以上或 v8 上</li><li>傳送訊息輸送量</li><ul><li>Campaign v7 — 每小時最多 50k</li><li>Campaign v8 — 每小時最多 1M</li><li>Campaign Standard — 每小時最多 50k</li></ul><li>不執行限制，因此使用案例需要企業架構師的技術審查</li><li>不支援在 Campaign 傳送的訊息中使用決策管理</li></ul> |
 
 <br>
 

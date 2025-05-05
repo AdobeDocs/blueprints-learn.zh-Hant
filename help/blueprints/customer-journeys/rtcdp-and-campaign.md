@@ -42,7 +42,7 @@ ht-degree: 42%
 
 * 請參閱RTCDP [!DNL Campaign]目的地聯結器 — [RTCDP促銷活動連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html?lang=zh-Hant)
 
-* 檢視 [!DNL Real-Time Customer Profile Data] 和區段](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)的[預設護欄
+* 檢視 [!DNL Real-Time Customer Profile Data] 和區段[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)的預設護欄
 
 ## 實施步驟
 
