@@ -1,24 +1,24 @@
 ---
 title: Web/行動SDK， [!DNL Edge Network] 部署架構圖
-description: 此藍圖顯示Experience PlatformWeb和Mobile SDK及 [!DNL Edge Network]的架構和內嵌
+description: 此藍圖顯示Experience Platform Web和Mobile SDK的架構和內嵌和 [!DNL Edge Network]
 solution: Experience Platform,Data Collection
 kt: null
 thumbnail: null
 exl-id: 3cc9e849-a75d-40ad-a604-6acf4c2c9f89
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: adddd4105afc68379116d8d7208160689ee52c1d
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
 
-# Experience PlatformWeb SDK與[!DNL Edge Network]架構圖
+# Experience Platform Web SDK與[!DNL Edge Network]架構圖
 
 如需Web和Mobile SDK以及[!DNL Edge Network] Server API的概觀和詳細資訊，請參閱下列內容。
 
-* [Web SDK 概述](https://experienceleague.adobe.com/docs/web-sdk.html?lang=zh-Hant)
-* [Mobile SDK 概述](https://developer.adobe.com/client-sdks/documentation/)
+* [Web SDK 概觀](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-overview/deployment/websdk)
+* [Mobile SDK 概觀](https://developer.adobe.com/client-sdks/documentation/)
 * [[!DNL Edge Network] 伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)
 
 如需 Web SDK 支援哪些應用程式功能的詳細概述，請參閱下列檔案。
@@ -32,7 +32,7 @@ ht-degree: 69%
 * [Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=zh-Hant)
 * [Analytics for Target](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/a4t/overview.html?lang=zh-Hant)
 
-## Experience PlatformWeb/Mobile SDK或[!DNL Edge Network]伺服器API部署
+## Experience Platform Web/Mobile SDK或[!DNL Edge Network]伺服器API部署
 
 以下架構圖說明了運用 Experience Platform Web SDK 的部署和資料彙集。
 
