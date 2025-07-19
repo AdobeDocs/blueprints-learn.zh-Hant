@@ -35,9 +35,9 @@ ht-degree: 2%
 
 | 整合 | 說明 |
 | :-- | :--- |
-| [Marketo Engage聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) | Adobe Experience Platform可協助從Marketo擷取資料，並提供使用服務來建構、加標籤及增強資料的功能。 |
-| [Journey Optimizer B2B edition - Marketo Engage動作](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes/action-nodes#marketo-engage-actions) | 同步Journey Optimizer B2B edition中的Account-Based Marketing與Marketo Engage中的銷售機會型工作，使用以人物為基礎的動作來管理清單成員資格、人物分割和請求行銷活動。 |
-| [Journey Optimizer B2B edition - Marketo Engage資產](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content-management/assets/marketo-engage-dam/marketo-engage-design-studio) | Marketo Engage Design Studio是Journey Optimizer B2B edition的預設資產來源，可讓帳戶歷程輕鬆進行資產管理。 |
+| [Marketo Engage聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) | Adobe Experience Platform可協助從Marketo擷取資料，並提供使用服務來建構、加標籤及增強資料的功能。 |
+| [Journey Optimizer B2B edition - Marketo Engage動作](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes/action-nodes#marketo-engage-actions) | 同步Journey Optimizer B2B edition中的Account-Based Marketing與Marketo Engage中的銷售機會型工作，使用以人物為基礎的動作來管理清單成員資格、人物分割和請求行銷活動。 |
+| [Journey Optimizer B2B edition - Marketo Engage資產](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/content-management/assets/marketo-engage-dam/marketo-engage-design-studio) | Marketo Engage Design Studio是Journey Optimizer B2B edition的預設資產來源，可讓帳戶歷程輕鬆進行資產管理。 |
 
 ## 架構
 
@@ -47,25 +47,25 @@ ht-degree: 2%
 
 * 使用以下任一選項安裝B2B結構描述和名稱空間
    * 使用[Postman集合](https://github.com/adobe/experience-platform-postman-samples/tree/master/Postman%20Collections/CDP%20Namespaces%20and%20Schemas%20Utility)
-   * 在Platform UI中使用[範本](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/templates)
+   * 在Platform UI中使用[範本](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/ui-tutorials/templates)
 * 建立資料字典，定義Marketo欄位和Experience Platform XDM結構描述之間的對應
-   * 使用[Marketo物件中繼資料](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/field-management/export-all-object-metadata)作為起點
-   * [自訂XDM結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview)以包含您的自訂欄位
-   * 檢閱Journey Optimizer B2B edition支援的標準[XDM欄位](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/accounts/field-mapping)。 如果您需要其他欄位，請開啟支援票證進行設定
+   * 使用[Marketo物件中繼資料](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/field-management/export-all-object-metadata)作為起點
+   * [自訂XDM結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/fields/overview)以包含您的自訂欄位
+   * 檢閱Journey Optimizer B2B edition支援的標準[XDM欄位](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/accounts/field-mapping)。 如果您需要其他欄位，請開啟支援票證進行設定
       * 人員資料集需要&#x200B;**workEmail.address**
       * 帳戶資料集需要&#x200B;**accountName**
    * 將新的XDM欄位欄新增到匯出的Marketo中繼資料試算表，以記錄預期的對應
-* 設定[Marketo Engage來源聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-   * 使用上面定義的資料字典來定義來源聯結器的[匯入對應](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/ui/mapping#import-mapping)
+* 設定[Marketo Engage來源聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+   * 使用上面定義的資料字典來定義來源聯結器的[匯入對應](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-prep/ui/mapping#import-mapping)
    * 在考慮[實作考量事項](#implementation-considerations)之前，建議不要啟用設定檔
    * 建議至少擷取人員、公司、商機和活動，因為這些物件在建立您的帳戶對象時最有用
-* 實作人員的[身分圖表連結規則](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)：
+* 實作人員的[身分圖表連結規則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)：
    * 定義如何使用身分名稱空間來連結Person記錄。
    * 在AEP中設定身分名稱空間和身分拼接規則。
    * 使用範例人員資料和預覽工具驗證連結。
-* 為[設定檔](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile)啟用人員、公司、商機和活動資料集
-* 定義您的前[個帳戶對象](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/accounts/account-audience-overview)
-* [可使用帳戶對象來定義購買群組](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/accounts/buying-groups/buying-groups-overview)或[帳戶歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
+* 為[設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/user-guide#enable-profile)啟用人員、公司、商機和活動資料集
+* 定義您的前[個帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/accounts/account-audience-overview)
+* [可使用帳戶對象來定義購買群組](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/accounts/buying-groups/buying-groups-overview)或[帳戶歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
    * 當帳戶符合「帳戶對象」的資格時，購買群組工作每天都會執行，以建立購買群組，並在對象更新後立即將角色指派給相關人員。
    * 此外，購買團體維護作業會在每星期五的CT午夜執行。 此每週程式會處理更新，例如移除不再符合資格的成員，或新增在初始對象更新期間未擷取的新符合資格的成員。
 
@@ -78,11 +78,11 @@ ht-degree: 2%
 * **對Marketo Source Connector使用預設的對應：**
    * 運用Adobe提供的現成欄位對應，簡化資料擷取並減少設定額外負荷。
 * **對AJO B2B使用預設對應：**
-   * 針對Journey Optimizer B2B edition採用[標準欄位對應](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/accounts/field-mapping)，以確保與購買群組邏輯和歷程協調相容。
+   * 針對Journey Optimizer B2B edition採用[標準欄位對應](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/accounts/field-mapping)，以確保與購買群組邏輯和歷程協調相容。
 * **封鎖電子郵件以外所有欄位的欄位更新：**
-   * 在Marketo Engage中，針對[電子郵件](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field)以外的所有欄位，設定欄位管理以&#x200B;_封鎖來自Adobe Experience Platform的更新_。 這有助於維持資料完整性，同時仍可啟用身分解析。
+   * 在Marketo Engage中，針對[電子郵件](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field)以外的所有欄位，設定欄位管理以&#x200B;_封鎖來自Adobe Experience Platform的更新_。 這有助於維持資料完整性，同時仍可啟用身分解析。
 * **使用電子郵件做為唯一的身分名稱空間，實作身分連結規則**
-   * 在Adobe Experience Platform中設定[身分圖表連結規則](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)，明確將&#x200B;_電子郵件_&#x200B;用作唯一的身分名稱空間。 這些規則可確保設定檔在存在&#x200B;_電子郵件_的資料來源間準確拼接，以啟用強大的身分解析。 依照Adobe的最佳做法，定義連結規則，將電子郵件優先視為穩定且全域唯一的識別碼，以維護一致且符合隱私權要求的識別圖。
+   * 在Adobe Experience Platform中設定[身分圖表連結規則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)，明確將&#x200B;_電子郵件_&#x200B;用作唯一的身分名稱空間。 這些規則可確保設定檔在存在&#x200B;_電子郵件_的資料來源間準確拼接，以啟用強大的身分解析。 依照Adobe的最佳做法，定義連結規則，將電子郵件優先視為穩定且全域唯一的識別碼，以維護一致且符合隱私權要求的識別圖。
 此設定在輕鬆部署與資料控管之間取得平衡，確保為協調B2B歷程奠定可靠的基礎。
 
 ## 實施考量
@@ -121,7 +121,7 @@ from
 >[!NOTE]
 >
 >資料集表格marketo_person_ajo_b2b是用來提供如何使用Marketo人員資料集的完整範例。
->&#x200B;>您可以在[資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide)工作區中找到您的沙箱資料集。
+>&#x200B;>您可以在[資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/user-guide)工作區中找到您的沙箱資料集。
 
 ```sql
 select
@@ -151,7 +151,7 @@ from
 
 #### 包含重複記錄的電子郵件地址
 
-此查詢會傳回資料集中重複記錄最多的電子郵件。  此清單可用來檢查其中一些記錄，以更加瞭解連結身分可能會對Marketo和CRM造成哪些影響。  如需有關身分連結運作方式的詳細資訊，請參閱[身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)。
+此查詢會傳回資料集中重複記錄最多的電子郵件。  此清單可用來檢查其中一些記錄，以更加瞭解連結身分可能會對Marketo和CRM造成哪些影響。  如需有關身分連結運作方式的詳細資訊，請參閱[身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)。
 
 ```sql
 select
@@ -188,32 +188,32 @@ order by
 
 #### 移除電子郵件作為身分
 
-分析之後，如果您判斷電子郵件不是有效的欄位，無法當作身分欄位使用，則可修改人員結構描述，以[移除電子郵件做為身分欄位](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity)
+分析之後，如果您判斷電子郵件不是有效的欄位，無法當作身分欄位使用，則可修改人員結構描述，以[移除電子郵件做為身分欄位](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/fields/identity)
 
 #### 封鎖來自Adobe Experience Platform的更新
 
-如果以身分欄位形式保留電子郵件最適合您的使用案例，則可選擇封鎖來自AJO B2B的欄位更新[，並允許AJO B2B主要在Marketo資料上執行。](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field)
+如果以身分欄位形式保留電子郵件最適合您的使用案例，則可選擇封鎖來自AJO B2B的欄位更新[，並允許AJO B2B主要在Marketo資料上執行。](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/field-management/block-updates-to-a-field)
 
 ## 護欄
 
 如需使用Marketo Engage時適用於B2B歷程的護欄的全面瞭解，請參閱下列正式檔案：
 
-* [Adobe Journey Optimizer B2B edition — 產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
+* [Adobe Journey Optimizer B2B edition — 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer-b2b.html)
 包含Journey Optimizer B2B edition的特定護欄和使用引數。
-* [Adobe Experience Platform部署護欄](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails?lang=en)
+* [Adobe Experience Platform部署護欄](https://experienceleague.adobe.com/zh-hant/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails?lang=en)
 涵蓋Adobe Experience Platform解決方案的一般架構和部署護欄。
-* [Adobe Marketo Engage — 產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-marketo-engage---product-description.html#performance-guardrails)
+* [Adobe Marketo Engage — 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-marketo-engage---product-description.html#performance-guardrails)
 詳細說明Marketo Engage的效能和使用狀況護欄，包括啟用和CRM同步考量事項。
-* [Real-Time CDP護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview?lang=en)
+* [Real-Time CDP護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/guardrails/overview?lang=en)
 在Real-Time Customer Data Platform內提供資料擷取、細分和啟用限制的指引。
 
 ## 相關文件
 
-* [B2B 版 Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
-* [開始使用Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
-* Real-time Customer Data Platform B2B edition的[護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
-* [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform)
-* [Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
-* [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)
-* [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-* [Adobe Journey Optimizer B2B edition檔案](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
+* [B2B 版 Real-time Customer Data Platform](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
+* [開始使用Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
+* Real-time Customer Data Platform B2B edition的[護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
+* [Adobe Experience Platform](https://experienceleague.adobe.com/zh-hant/docs/experience-platform)
+* [Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
+* [Marketo Engage](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/home)
+* [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+* [Adobe Journey Optimizer B2B edition檔案](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/guide-overview)
