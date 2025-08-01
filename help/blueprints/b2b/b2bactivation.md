@@ -4,7 +4,7 @@ description: 透過 Real-Time Customer Data Platform​，提供以公司客戶�
 solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
-source-git-commit: 70816df06ec2dff5c3a4a94a8be701cb25e6f783
+source-git-commit: 0509c5a8ce92c25040262130a5f583cdd7f08e59
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 51%
@@ -38,7 +38,7 @@ ht-degree: 51%
 
 * 請注意，Marketo Engage 相關護欄和實作步驟僅在將 Marketo Engage 用作源和/或目標時才相關。
 
-* 如需資料模型、大小和區段的詳細資訊和護欄，請參閱[部署護欄檔案](../experience-platform/deployment/guardrails.md)
+* 如需資料模型、大小和區段的詳細資訊和護欄，請參閱[部署護欄檔案](../experience-platform/guardrails.md)
 
 
 ### 多個執行個體和 IMS 組織支援：
@@ -99,9 +99,9 @@ ht-degree: 51%
 ## 相關文件
 
 * [B2B 版 Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=zh-Hant)
-* [開始使用Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
-* Real-time Customer Data Platform B2B edition的[護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
+* [開始使用Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
+* Real-time Customer Data Platform B2B edition的[護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=zh-Hant)
+* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html)
 * [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant)
-* [Adobe Experience Platform – Marketo Destination Connector](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html?lang=zh-Hant)
+* [Adobe Experience Platform – Marketo Destination Connector](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html)

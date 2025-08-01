@@ -4,7 +4,7 @@ description: 示範 Adobe Journey Optimizer 如何與 Adobe Campaign 搭配使�
 solution: Journey Optimizer, Campaign, Campaign v8, Campaign v8 Client Console
 version: Campaign v8, Campaign v8 Client Console
 exl-id: 447a1b60-f217-4295-a0df-32292c4742b0
-source-git-commit: 7547cdc57e50d63f4a7949c00a77b82c86da831e
+source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 63%
@@ -40,9 +40,9 @@ ht-degree: 63%
 
 ## 護欄
 
-* [Journey Optimizer護欄產品限制](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
+* [Journey Optimizer護欄產品限制](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
-* [護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
+* [護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## 實施步驟
 
@@ -52,7 +52,7 @@ ht-degree: 63%
 
 #### 方案/資料集
 
-1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?lang=zh-hant&recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=zh-Hant)
+1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&lang=zh-Hant)
 1. （可選）為Adobe Campaign broadLog、trackingLog和無法傳遞的地址表格建立體驗事件類別型結構描述。
 1. 在 Experience Platform 中為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. 在 Experience Platform 中[新增資料使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
@@ -68,7 +68,7 @@ ht-degree: 63%
 
 #### 來源/目標
 
-1. 使用串流API和來源聯結器[將資料擷取到 [!DNL Experience Platform]](https://experienceleague.adobe.com/?lang=zh-hant&recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)。
+1. 使用串流API和來源聯結器[將資料擷取到 [!DNL Experience Platform]](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=zh-Hant)。
 
 ### Journey Optimizer
 

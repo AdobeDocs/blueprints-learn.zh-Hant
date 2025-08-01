@@ -3,7 +3,7 @@ title: Journey Optimizer — 第三方傳訊藍圖
 description: 示範如何搭配第三方傳訊系統來使用 Adobe Journey Optimizer，以協調和傳送個人化通訊。
 solution: Journey Optimizer
 exl-id: 3a14fc06-6d9c-4cd8-bc5c-f38e253d53ce
-source-git-commit: 60a7785ea0ec4ee83fd9a1e843f0b84fc4cb1150
+source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 97%
@@ -40,7 +40,7 @@ Adobe Experience Platform
 
 [Journey Optimizer 護欄產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=zh-Hant)
 
-[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
+[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 
 ## 實施步驟
@@ -49,7 +49,7 @@ Adobe Experience Platform
 
 #### 方案/資料集
 
-1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?lang=zh-hant&recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=zh-Hant)
+1. 在 Experience Platform 中基於客戶提供的資料[設定個別個人資料、體驗事件及多實體方案。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&lang=zh-Hant)
 1. 在 Experience Platform 中為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. 在 Experience Platform 中[新增資料使用標籤](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/classify-data-using-governance-labels.html?lang=zh-Hant)至資料集以便於治理。
 1. [建立政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/create-data-usage-policies.html?lang=zh-Hant)以在目標上執行治理。
@@ -64,7 +64,7 @@ Adobe Experience Platform
 
 #### 來源/目標
 
-1. 使用串流 API 和來源連接器[將資料擷取到 Experience Platform。](https://experienceleague.adobe.com/?lang=zh-hant&recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)
+1. 使用串流 API 和來源連接器[將資料擷取到 Experience Platform。](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=zh-Hant)
 
 ### Journey Optimizer
 

@@ -4,7 +4,7 @@ description: 對象與個人資料啟用至企業目標
 solution: Real-Time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
-source-git-commit: 495a2480828e2c6b4caa41226f4fe67437b081c1
+source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 80%
@@ -29,8 +29,8 @@ ht-degree: 80%
 
 ## 相關文件
 
-在[目的地檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/overview)中可找到雲端儲存空間與企業目的地的設定其他詳細資料。
+在[目的地檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/overview)中可找到雲端儲存空間與企業目的地的設定其他詳細資料。
 
 ## 護欄
 
-[請參閱護欄頁面上概述的護欄。](../experience-platform/deployment/guardrails.md)
+[請參閱護欄頁面上概述的護欄。](../experience-platform/guardrails.md)
