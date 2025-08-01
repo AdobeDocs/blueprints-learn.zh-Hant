@@ -18,7 +18,7 @@ ht-degree: 26%
 
 >[!MORELIKETHIS]
 >
->Experience Cloud應用程式整合的[整合設定](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/overview.html?lang=en)。
+>Experience Cloud應用程式整合的[整合設定](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/overview.html?lang=zh-Hant)。
 
 
 ## 架構圖

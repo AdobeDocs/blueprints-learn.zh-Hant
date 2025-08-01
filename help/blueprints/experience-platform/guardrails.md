@@ -21,7 +21,7 @@ ht-degree: 11%
 | 護欄型別 | 說明 |
 |---|---|
 | 效能護欄（軟性限制） | 效能護欄是與使用案例範圍相關的使用限制，並概述正常條件下的預期效能。 超過上限時，您可能會遇到效能降低和延遲的狀況。 效能護欄記錄在Experience League檔案中，每個解決方案的護欄區段下，如下所述。 |
-| 靜態限制（硬限制） | 這些是系統強制的限制，不能超過。 靜態限制通常以合約方式繫結，並在客戶合約和[產品說明](https://helpx.adobe.com/legal/product-descriptions.html)中概述。 |
+| 靜態限制（硬限制） | 這些是系統強制的限制，不能超過。 靜態限制通常以合約方式繫結，並在客戶合約和[產品說明](https://helpx.adobe.com/tw/legal/product-descriptions.html)中概述。 |
 
 >[!NOTE]
 >
@@ -37,15 +37,15 @@ ht-degree: 11%
 
 **Experience Platform應用程式**
 
-* [Real-Time CDP護欄總覽](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html)
-* [Customer Journey Analytics對象共用護欄](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
-* [Customer Journey Analytics資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
-* [Journey Optimizer護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html)
+* [Real-Time CDP護欄總覽](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/guardrails/overview.html?lang=zh-Hant)
+* [Customer Journey Analytics對象共用護欄](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hant#latency)
+* [Customer Journey Analytics資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant#what-is-the-expected-latency-for-analytics-data-on-platform%3F)
+* [Journey Optimizer護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/guardrails.html?lang=zh-Hant)
 
 **Experience Platform服務**
 
-* [資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html)
-* [[!DNL Edge Network] API護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=zh-Hant)
+* [[!DNL Edge Network] API護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=zh-Hant)
 * [即時客戶設定檔和細分護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 * [身分護欄](https://experienceleague.adobe.com/docs/experience-platform/identity/guardrails.html?lang=zh-Hant)
 * [Query Service 護欄](https://experienceleague.adobe.com/docs/experience-platform/query/guardrails.html?lang=zh-Hant)
