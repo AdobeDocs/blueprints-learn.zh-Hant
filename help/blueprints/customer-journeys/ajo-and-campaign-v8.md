@@ -42,7 +42,7 @@ ht-degree: 63%
 
 * [Journey Optimizer護欄產品限制](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
 
-* [護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
+* [護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=zh-Hant)
 
 ## 實施步驟
 
