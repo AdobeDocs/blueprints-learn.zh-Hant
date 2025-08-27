@@ -3,9 +3,9 @@ title: '[!DNL Journey Optimizer] — 歷程Blueprint'
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 0a3ebcbc6029df46bd988cb8f15ecf838f80c3c9
+source-git-commit: e96b48e55c0fe2f48dc83f48ad41f5b686ec8dc1
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '640'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 ## 使用案例
 
 >[!BEGINTABS]
->[!TAB 歷程使用案例（事件導向，即時）]
+>[!TAB 歷程（事件導向，即時）]
 
 - **放棄復原：**&#x200B;當使用者透過電子郵件、推播或應用程式內放棄購物車、表單或工作階段時，觸發個人化訊息。
 - **新使用者註冊：**&#x200B;新使用者註冊新帳戶偏好設定、相關促銷活動或權益後，請立即與他們互動
@@ -29,7 +29,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 - **內容鎖定目標：**&#x200B;根據使用者的訊號與位置即時與使用者通訊，以協助引導和引導其體驗
 - **關聯式向上銷售/交叉銷售：**&#x200B;根據即時設定檔屬性和最近的互動，提供個人化優惠。
 
->[!TAB 行銷活動協調使用案例（已排程，品牌已啟動）]
+>[!TAB 行銷活動協調流程（已排程，品牌已啟動）]
 
 - **促銷活動**：針對產品啟動、季節性優惠或銷售活動，啟動多步驟、多管道行銷活動。
 - **生命週期行銷**：自動循環行銷活動，例如生日訊息、續約提醒或忠誠度里程碑。
@@ -94,12 +94,12 @@ Adobe [!DNL Experience Platform]：
 
 [[!DNL Journey Optimizer] 護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
+[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## 相關文件
 
 - [[!DNL Experience Platform] 檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 - [[!DNL Experience Platform] 標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer] 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
