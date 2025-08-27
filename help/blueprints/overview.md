@@ -3,7 +3,7 @@ title: 數位體驗 Blueprint
 description: 數位體驗藍圖是可重複的實作，用於處理策略和解決既定的業務問題。可加速創造價值，提供快速的成功路徑。
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 5b1df5d6fb0da7de2054366cead10e549e650633
+source-git-commit: 003e8ebf32150cf6527ed588ff05f22ea8cfb209
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 24%
@@ -39,11 +39,11 @@ ht-degree: 24%
     </div>
   </td>
   <td>
-    <a href="customer-journeys/journey-optimizer.md">
-      <img alt="Journey Optimizer概觀圖表" src="customer-journeys/assets/ajo-architecture.svg" />
+    <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
+      <img alt="Journey Optimizer概觀圖表" src="customer-journeys/journey-optimizer/images/ajo-architecture.svg" />
     </a>
     <div>
-      <a href="customer-journeys/journey-optimizer.md">
+      <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
     <strong>Adobe Journey Optimizer概觀圖表</strong>
     </a>
     </div>

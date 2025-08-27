@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Architect, Developer, User
-source-git-commit: 0509c5a8ce92c25040262130a5f583cdd7f08e59
+source-git-commit: 003e8ebf32150cf6527ed588ff05f22ea8cfb209
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 46%
+source-wordcount: '201'
+ht-degree: 39%
 
 ---
 
@@ -52,24 +52,24 @@ ht-degree: 46%
 + 客戶歷程{#customer-journeys}
    + [概觀](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer{#journey-optimizer}
-      + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer.md)
-      + 決策管理{#decision-management}
-         + [概觀](/help/blueprints/customer-journeys/decision_management/decision-management-overview.md)
-         + [邊緣決策管理](/help/blueprints/customer-journeys/decision_management/decision-management-edge.md)
-         + [中心的決策管理](/help/blueprints/customer-journeys/decision_management/decision-management-hub.md)
-      + [Journey Optimizer 搭配 Adobe Campaign](/help/blueprints/customer-journeys/ajo-and-campaign.md)
-      + [協力廠商訊息](/help/blueprints/customer-journeys/3rd-party-messaging.md)
-   + Campaign Standard{#campaign-standard}
-      + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant){target="_blank"}
-      + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/aep-sources-destinations/get-started-sources-destinations.html?lang=zh-Hant){target="_blank"}
+      + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md)
+      + [AJO歷程](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
+      + [AJO行銷活動](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
+      + [協力廠商訊息](/help/blueprints/customer-journeys/journey-optimizer/3rd-party-messaging.md)
+   + 決策管理{#decision-management}
+      + [概觀](/help/blueprints/customer-journeys/decision-management/decision-management-overview.md)
+      + [Edge上的決定管理](/help/blueprints/customer-journeys/decision-management/decision-management-edge.md)
+      + [中樞的決策管理](/help/blueprints/customer-journeys/decision-management/decision-management-hub.md)
    + Campaign v8{#campaign-v8}
-      + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8.md)
-      + [Real-Time CDP與Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/rtcdp-and-campaign-v8.md)
-      + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/ajo-and-campaign-v8.md)
-   + Campaign v7{#campaign-v7}
-      + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7.md)
-      + [Real-Time CDP與Adobe [!DNL Campaign] v7](/help/blueprints/customer-journeys/rtcdp-and-campaign.md)
-      + [Journey Optimizer與Adobe [!DNL Campaign] v7](/help/blueprints/customer-journeys/ajo-and-campaign-v7.md)
+      + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8/campaign-v8-overview.md)
+      + [Real-Time CDP與Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)
+      + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
+   + 已棄用的Blueprint{#deprecated-blueprints}
+      + Campaign Standard{#campaign-standard}
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+      + Campaign v7{#campaign-v7}
+         + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + 資料分析、情報與 AI/ML{#data-exploration}
    + [資料分析與情報](/help/blueprints/data-insights/analysis.md)
    + [個人檔案擴充的自訂資料科學](/help/blueprints/data-insights/data-science.md)
