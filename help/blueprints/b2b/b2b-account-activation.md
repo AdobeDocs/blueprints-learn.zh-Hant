@@ -62,7 +62,7 @@ ht-degree: 5%
 * 如需Real-time Customer Data Platform B2B版本的實作步驟，請參閱[Real-time Customer Data Platform B2B版本快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)檔案。
 * 如需帳戶對象建立步驟，請參閱[帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/account-audiences)檔案。
 * 如需帳戶Audience Activation步驟，請參閱[啟用帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences)檔案。
-   * [ （公司） LinkedIn的必要對應符合對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences#required-mappings)。
+   * [&#x200B; （公司） LinkedIn的必要對應符合對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences#required-mappings)。
 
 ## 實施考量
 
