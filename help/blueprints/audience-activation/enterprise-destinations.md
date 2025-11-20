@@ -17,7 +17,7 @@ ht-degree: 80%
 
 ## 使用案例
 
-* 針對雲端儲存目標或串流目標的個人資料和對象啟用，以進行客戶資料和分析的企業追蹤、儲存、分析和啟用。
+* 針對雲端儲存目標或串流目標的輪廓和客群啟用，以進行客戶資料和洞察的企業追蹤、儲存、分析和啟用。
 
 ## 應用程式
 
@@ -29,7 +29,7 @@ ht-degree: 80%
 
 ## 相關文件
 
-在[目的地檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/overview)中可找到雲端儲存空間與企業目的地的設定其他詳細資料。
+在[目的地檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/overview)中可找到雲端儲存空間與企業目的地的設定其他詳細資料。
 
 ## 護欄
 

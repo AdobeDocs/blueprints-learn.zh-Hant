@@ -31,7 +31,7 @@ ht-degree: 26%
 
 ### 參考文件
 
-* [Adobe Target Connection for Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant)
+* [Adobe Target Connection for Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
 * [邊緣資料流配置](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
 
 ## 整合模式
@@ -71,13 +71,13 @@ ht-degree: 26%
 
 使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。此實作方法不支援即時邊緣區段評估。不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
 
-[請參閱Adobe Target Connector檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[請參閱Adobe Target Connector檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
 [請參閱應用程式特定的SDK Blueprint](../experience-platform/deployment/appsdk.md)
 
 ## 實施考量
 
 * 透過[!DNL Edge Network]和網頁SDK使用上述實作模式1時，可以利用任何主要身分。
-* 使用先前擷取到RTCDP中的已知客戶資料首次登入個人化時，個人化請求必須具備主要身分，且符合即時客戶資料平台中的已知客戶身分圖表。 如果主要ID設為ECID或尚未與已知客戶設定檔彙整的身分，則在Edge上實現身分彙整將需要幾分鐘的時間，以及Edge個人化需要幾分鐘的時間才能納入先前擷取的已知客戶資料。
+* 使用先前擷取至RTCDP的已知客戶資料首次登入個人化時，個人化請求必須具備主要身分識別，且該識別符合Real-time Customer Data Platform中的已知客戶身分圖表。 如果主要ID設為ECID或尚未與已知客戶設定檔彙整的身分，則在Edge上實現身分彙整將需要幾分鐘的時間，以及Edge個人化需要幾分鐘的時間才能納入先前擷取的已知客戶資料。
 * Edge設定檔目前有14天的TTL。 因此，如果使用者未登入或在邊緣上已活動14天，邊緣上的設定檔可能會過期，因此邊緣必須從中心擷取設定檔，才能使用歷史設定檔檢視來強化個人化，其中包含先前擷取的設定檔屬性和區段，如此一來，個人化便能以後續頁面檢視與首次登入時發生的設定檔歷史檢視來進行個人化。
 
 ## 相關文件
@@ -90,7 +90,7 @@ ht-degree: 26%
 
 ### 細分文件
 
-* [Experience Platform 細分概覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant)
+* [Experience Platform 細分概觀](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=zh-Hant)
 * [即時細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html?lang=zh-Hant)
 * [串流細分](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/streaming-segmentation.html?lang=zh-Hant)
 * [透過 Adobe Audience Manager 分享 Adobe Analytics 區段](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hant)
