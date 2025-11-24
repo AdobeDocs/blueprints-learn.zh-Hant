@@ -4,8 +4,8 @@ breadcrumb-title: Blueprint
 user-guide-description: Blueprint 是可重複的實作，用於解決既有的業務問題，含有架構圖、技術考量及相關的文件連結。
 product: adobe experience platform
 mini-toc-levels: 3
-role: Architect, Developer, User
-source-git-commit: 003e8ebf32150cf6527ed588ff05f22ea8cfb209
+role: Developer, User
+source-git-commit: 3a3988e93dd9e92f4f564bfedfa314e8e2b5d9ba
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 39%
@@ -66,8 +66,8 @@ ht-degree: 39%
       + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + 已棄用的Blueprint{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + 資料分析、情報與 AI/ML{#data-exploration}

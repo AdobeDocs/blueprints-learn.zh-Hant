@@ -3,7 +3,7 @@ title: '[!DNL Journey Optimizer] — 歷程Blueprint'
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: e96b48e55c0fe2f48dc83f48ad41f5b686ec8dc1
+source-git-commit: 3a3988e93dd9e92f4f564bfedfa314e8e2b5d9ba
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 15%
@@ -52,7 +52,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 | 狀況 | 說明 |
 | :-- | :-- |
 | [個歷程](journey-optimizer-journeys.md) | Adobe Journey Optimizer中的AJO歷程是由即時事件或受眾區段觸發的自動個人化客戶體驗，可讓行銷人員跨電子郵件、簡訊和推播通知等通道傳送相關訊息。 |
-| [行銷活動協調流程](journey-optimizer-campaigns.md) | AJO Campaign Orchestration可讓行銷人員使用即時資料和對象深入分析，設計和執行個人化的跨頻道行銷活動。 它支援動態目標定位、訊息傳送和歷程邏輯，以最佳化跨電子郵件、簡訊、推播和自訂通道的客戶參與。 | |
+| [行銷活動協調流程](journey-optimizer-campaigns.md) | AJO Campaign Orchestration可讓行銷人員使用即時資料和對象深入分析，設計和執行個人化的跨頻道行銷活動。 它支援動態目標定位、訊息傳送和歷程邏輯，以最佳化跨電子郵件、簡訊、推播和自訂通道的客戶參與。 |
 
 <br>
 
@@ -94,12 +94,12 @@ Adobe [!DNL Experience Platform]：
 
 [[!DNL Journey Optimizer] 護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
+[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## 相關文件
 
 - [[!DNL Experience Platform] 檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 - [[!DNL Experience Platform] 標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer] 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
