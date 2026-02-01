@@ -44,4 +44,4 @@ ht-degree: 89%
 
 ## Real-time Customer Data Platform 的實作步驟
 
-* 如需 Real-time Customer Data Platform 的實作步驟，請參閱下列[文件](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home)。
+* 如需 Real-time Customer Data Platform 的實作步驟，請參閱下列[文件](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/home)。

@@ -21,7 +21,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->中樞上的設定檔查詢不適用於高輸送量、低延遲的使用案例，例如網頁/行動傳入個人化。 中樞上的設定檔查詢是針對低延遲情境，例如代理程式輔助支援或銷售互動。 若是低延遲、高輸送量的案例，例如網頁/行動個人化或即時優惠方案決策，則應運用Edge設定檔。 Edge設定檔可讓您透過Real-time Customer Data Platform的[自訂Personalization連線](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization)進行即時存取。
+>中樞上的設定檔查詢不適用於高輸送量、低延遲的使用案例，例如網頁/行動傳入個人化。 中樞上的設定檔查詢是針對低延遲情境，例如代理程式輔助支援或銷售互動。 若是低延遲、高輸送量的案例，例如網頁/行動個人化或即時優惠方案決策，則應運用Edge設定檔。 Edge設定檔可讓您透過Real-time Customer Data Platform的[自訂Personalization連線](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/custom-personalization)進行即時存取。
 
 ## 使用案例
 
