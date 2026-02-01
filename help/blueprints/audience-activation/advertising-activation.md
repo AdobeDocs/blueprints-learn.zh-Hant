@@ -1,17 +1,17 @@
 ---
-title: 從RTCDP啟用社交和廣告目的地
+title: Audience Activation至Social和Advertising目的地
 description: 瞭解如何從多個來源擷取客戶資料，以建立客戶的單一設定檔檢視。
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 7086
 exl-id: b75a7a01-04ba-4617-960d-f73f7a9cc6c7
-source-git-commit: cf7721ea01579182fdb200aad448be6fc94b34cf
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 92%
+source-wordcount: '1128'
+ht-degree: 93%
 
 ---
 
-# 從RTCDP啟用社交和廣告目的地
+# Audience Activation至Social和Advertising目的地
 
 從多個來源擷取客戶資料，以建立客戶的單一設定檔檢視。 您可以將這些設定檔細分為用於行銷和個人化的建立對象，並將這些對象分享到Facebook和Google等廣告網路，以針對這些對象定位和個人化行銷活動。
 

@@ -1,5 +1,5 @@
 ---
-title: Real-time Customer Data Platform 與 Adobe Target
+title: 已知客戶Personalization與Target
 description: 將 RTCDP 設定檔和客群與 Adobe Target 整合。
 landing-page-description: 將 RTCDP 設定檔和客群與 Adobe Target 整合。
 short-description: 將 RTCDP 設定檔和客群與 Adobe Target 整合。
@@ -7,15 +7,15 @@ solution: Real-Time Customer Data Platform, Target, Experience Platform
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
 exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-source-git-commit: b634e14af3ea60e0f4cc9e84a0ef896df293a8c7
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '943'
 ht-degree: 26%
 
 ---
 
 
-# 即時客戶資料平台與Adobe Target整合
+# 已知客戶Personalization與Target
 
 ## 使用案例
 
@@ -31,7 +31,7 @@ ht-degree: 26%
 
 ### 參考文件
 
-* [Adobe Target Connection for Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant)
+* [Adobe Target Connection for Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
 * [邊緣資料流配置](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
 
 ## 整合模式
@@ -71,7 +71,7 @@ ht-degree: 26%
 
 使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。此實作方法不支援即時邊緣區段評估。不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
 
-[請參閱Adobe Target Connector檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[請參閱Adobe Target Connector檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
 [請參閱應用程式特定的SDK Blueprint](../experience-platform/deployment/appsdk.md)
 
 ## 實施考量

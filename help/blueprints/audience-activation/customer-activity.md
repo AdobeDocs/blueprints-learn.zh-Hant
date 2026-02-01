@@ -1,19 +1,19 @@
 ---
-title: 客戶活動中心藍圖
+title: 支援與銷售案例的即時設定檔存取
 description: '[!UICONTROL 即時客戶個人資料]查詢，提供代理協助的支援及銷售之內容。'
 solution: Data Collection
 kt: 7195
 exl-id: 3616cbf1-2e59-4e68-a1ff-1d2e3b344a1c
-source-git-commit: 5110ee2a7a079945475055cbcfdabf7cdcaa0ab5
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 100%
+source-wordcount: '366'
+ht-degree: 65%
 
 ---
 
-# 客戶活動中心藍圖
+# 支援與銷售案例的即時設定檔存取
 
-客戶活動中心藍圖顯示外部應用程式如何存取 Adobe Experience Platform 的[!UICONTROL  Real-time Customer Profile]。
+支援和銷售案例藍圖的即時設定檔存取顯示外部應用程式如何存取Adobe Experience Platform的[!UICONTROL 即時客戶設定檔]。
 
 外部應用程式可以透過 API GET 請求存取個人資料。儲存在個人資料中的屬性、事件、區段會籍及模型驅動的功能然後可用於這些外部非 Adobe 應用程式。
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->個人資料查詢 API 目前支援的延時約為 500 毫秒，所以此方法不適用於個人資料與即時決策引擎 (如同頁網路或行動裝置個人化) 的整合。
+>中樞上的設定檔查詢不適用於高輸送量、低延遲的使用案例，例如網頁/行動傳入個人化。 中樞上的設定檔查詢是針對低延遲情境，例如代理程式輔助支援或銷售互動。 若是低延遲、高輸送量的案例，例如網頁/行動個人化或即時優惠方案決策，則應運用Edge設定檔。 Edge設定檔可讓您透過Real-time Customer Data Platform的[自訂Personalization連線](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization)進行即時存取。
 
 ## 使用案例
 
-* 為代理支援的互動提供更深入的消費者背景，例如支援和銷售經驗。使用對 Experience Platform 的個人資料查詢，代理可以獲得關於消費者的更多背景，例如最近的購買、行銷活動互動、傾向性、對象會籍，以及即時客戶個人資料中儲存的其他屬性和深入見解。
+* 為代理支援的互動提供更深入的消費者背景，例如支援和銷售經驗。使用對 Experience Platform 的個人資料查詢，代理可以獲得關於消費者的更多背景，例如最近的購買、行銷活動互動、傾向性、對象會籍，以及即時客戶輪廓中儲存的其他屬性和洞察。
 
 ## 架構
 
@@ -37,13 +37,13 @@ ht-degree: 100%
 
 ## 實施步驟
 
-1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?lang=zh-hant&recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=zh-Hant)。
+1. 為要擷取的資料[建立資料方案](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&lang=zh-Hant)。
 1. 為要擷取的資料[建立資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=zh-Hant)。
 1. [在方案上設定正確的身份和身份命名空間](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/label-ingest-and-verify-identity-data.html?lang=zh-Hant)，以確保擷取的資料可以嵌入統一的個人資料。
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
-1. [擷取資料](https://experienceleague.adobe.com/?lang=zh-hant&recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=zh-Hant)到 Experience Platform。
+1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=zh-Hant)到 Experience Platform。
 1. [設定合併政策](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant)。
-1. 使用[實體 API 從記錄實體或體驗事件實體查詢個人資料屬性](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=zh-Hant)。
+1. 使用[Entities API來查詢設定檔屬性](https://experienceleague.adobe.com/docs/experience-platform/profile/api/entities.html?lang=zh-Hant)。
 
 ## 相關文件
 

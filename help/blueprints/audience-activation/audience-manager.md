@@ -1,5 +1,5 @@
 ---
-title: Audience Manager Blueprint
+title: 以裝置為基礎 — 使用Audience Manager鎖定匿名受眾
 description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。此功能可在各裝置中實現個人化的統一即時客戶體驗。
 landing-page-description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。
 short-description: 了解如何根據匿名和行為客戶資料，鎖定網路和廣告通路上的受眾。
@@ -7,14 +7,14 @@ solution: Audience Manager
 kt: 7211
 thumbnail: null
 exl-id: f17599f1-2e75-4cbe-841a-9fd1dae71ada
-source-git-commit: 495a2480828e2c6b4caa41226f4fe67437b081c1
+source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 93%
+source-wordcount: '246'
+ht-degree: 89%
 
 ---
 
-# Audience Manager Blueprint
+# 以裝置為基礎 — 使用Audience Manager鎖定匿名受眾
 
 「匿名對象啟動」是指根據匿名裝置和行為資料，在網路、行動裝置和廣告通道上鎖定並個人化對象的功能。
 
@@ -44,4 +44,4 @@ ht-degree: 93%
 
 ## Real-time Customer Data Platform 的實作步驟
 
-* 如需 Real-time Customer Data Platform 的實作步驟，請參閱下列[文件](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/home)。
+* 如需 Real-time Customer Data Platform 的實作步驟，請參閱下列[文件](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/home)。
