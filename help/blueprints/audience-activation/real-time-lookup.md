@@ -40,13 +40,13 @@ ht-degree: 6%
 
 如果您想要使用串流資料即時更新設定檔，此Blueprint需要使用下列其中一個資料收集方法。 您可以即時存取Edge設定檔，而不需要直接將資料收集到Edge設定檔；資料可以收集到集線器並投影到Edge設定檔。 請注意，收集到集線器然後預計到Edge的資料會增加延遲。
 
-* 如果您想要從網站收集資料，請使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)。
+* 如果您想要從網站收集資料，請使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=zh-Hant)。
 * 如果您想要從行動應用程式收集資料，請使用[Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)。
 * 如果您未使用Web SDK或Mobile SDK，或正在實作更直接的伺服器對伺服器連線，請使用[Edge Network伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)。
 
 >[!IMPORTANT]
 >
->在實作Edge個人化之前，請閱讀如何[啟用邊緣個人化目的地的對象資料](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)的指南。 本指南會針對跨多個Experience Platform元件的相同頁面和下一頁個人化使用案例，引導您進行所需設定步驟。
+>在實作Edge個人化之前，請閱讀如何[啟用邊緣個人化目的地的對象資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)的指南。 本指南會針對跨多個Experience Platform元件的相同頁面和下一頁個人化使用案例，引導您進行所需設定步驟。
 
 ## 架構圖
 
@@ -61,7 +61,7 @@ ht-degree: 6%
 
 ## 實作模式
 
-Edge個人化可使用Real-time Customer Data Platform中的[自訂Personalization連線](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization)目的地實作。 根據您的使用案例，此目的地支援多種資料收集方法。
+Edge個人化可使用Real-time Customer Data Platform中的[自訂Personalization連線](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/custom-personalization)目的地實作。 根據您的使用案例，此目的地支援多種資料收集方法。
 
 ### 模式1：使用Web SDK / Mobile SDK以對象成員資格為基礎的個人化
 
@@ -93,15 +93,15 @@ Edge個人化可使用Real-time Customer Data Platform中的[自訂Personalizati
 1. [為個人資料啟用方案和資料集](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/bring-data-into-the-real-time-customer-profile.html?lang=zh-Hant)。
 1. [擷取資料](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&lang=zh-Hant)到 Experience Platform。
 1. [設定合併原則](https://experienceleague.adobe.com/docs/platform-learn/tutorials/profiles/create-merge-policies.html?lang=zh-Hant)以確保正確的身分拼接和設定檔合併。
-1. [在Experience Platform資料收集中設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html)，並啟用目的地設定。 資料串流會決定要將對象包含在頁面的回應中的資料收集資料串流。
-1. 在Web和行動屬性上實作[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)或[Mobile SDK](https://developer.adobe.com/client-sdks/home/)以進行資料收集。
+1. [在Experience Platform資料收集中設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant)，並啟用目的地設定。 資料串流會決定要將對象包含在頁面的回應中的資料收集資料串流。
+1. 在Web和行動屬性上實作[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=zh-Hant)或[Mobile SDK](https://developer.adobe.com/client-sdks/home/)以進行資料收集。
 1. 為需要即時評估的對象設定邊緣細分。 [Edge細分檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/edge-segmentation.html?lang=zh-Hant)。
-1. 在目的地目錄中，設定[自訂Personalization連線](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization)目的地：
-1. [啟用邊緣個人化目的地的對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)。 選取您要對目的地啟用的對象。
+1. 在目的地目錄中，設定[自訂Personalization連線](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/custom-personalization)目的地：
+1. [啟用邊緣個人化目的地的對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)。 選取您要對目的地啟用的對象。
 1. （基於屬性的個人化選用專案）如果您除了受眾成員資格之外，還需要根據設定檔屬性進行個人化，請使用相同資料流實作[Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)與已驗證的伺服器端整合。 這是&#x200B;**存取設定檔屬性的必要**。
 1. 在網頁/行動應用程式中實作個人化邏輯，以使用匯出的受眾資料和設定檔屬性：
    * 如果使用Adobe Experience Platform中的標籤，請使用[傳送事件完成功能](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)來存取具有匯出資料的`event.destinations`變數。
-   * 如果未使用標籤，請使用[命令回應](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html)來剖析來自Adobe Experience Platform的JSON回應，並擷取對象ID和設定檔屬性。
+   * 如果未使用標籤，請使用[命令回應](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html?lang=zh-Hant)來剖析來自Adobe Experience Platform的JSON回應，並擷取對象ID和設定檔屬性。
 
 ## 實施考量
 
@@ -133,25 +133,25 @@ Edge個人化可使用Real-time Customer Data Platform中的[自訂Personalizati
 
 ### 目的地設定
 
-* [自訂Personalization連線](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) — 主要實作指南
-* [Personalization目的地概觀](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview)
-* [啟用對象以邊緣個人化目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
-* [即時查詢邊緣上的設定檔屬性](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
+* [自訂Personalization連線](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/custom-personalization) — 主要實作指南
+* [Personalization目的地概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/overview)
+* [啟用對象以邊緣個人化目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
+* [即時查詢邊緣上的設定檔屬性](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
 
 ### SDK 檔案
 
-* [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)
+* [Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=zh-Hant)
 * [Experience Platform Mobile SDK 文件](https://developer.adobe.com/client-sdks/home/)
 * [Edge Network伺服器API檔案](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)
 * [Experience Platform Tags 文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-* 網頁SDK中的[命令回應](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html)
+* 網頁SDK中的[命令回應](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html?lang=zh-Hant)
 
 ### 設定檔和分段檔案
 
-* [[!UICONTROL 即時客戶個人資料]文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [[!UICONTROL 即時客戶個人資料]文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
 * [個人資料護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 ### 教學課程
 
-* [使用 Real-Time CDP 和 Adobe Target 進行下次點擊個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-* [資料流組態](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html)
+* [使用 Real-Time CDP 和 Adobe Target 進行下次點擊個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)
+* [資料流組態](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant)
