@@ -1,17 +1,17 @@
 ---
-title: Enterprise Destinations的Audience和Profile Activation藍圖
+title: 對象與個人資料啟用至企業目標
 description: 對象與個人資料啟用至企業目標
 solution: Real-Time Customer Data Platform
 kt: 7475
 exl-id: 32133174-eb28-44ce-ab2a-63fcb5b51cb5
-source-git-commit: 88a15765c0a998d49c19d9853ad0c44d6e3bfaa1
+source-git-commit: d5f3618fd811131e9d9c1fae16d7aab16aecc9e9
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 72%
+source-wordcount: '159'
+ht-degree: 82%
 
 ---
 
-# Enterprise Destinations的Audience和Profile Activation藍圖
+# 對象與個人資料啟用至企業目標
 
 以串流或批次方式從[!UICONTROL Real-time Customer Data Platform]分享個人資料及對象變更與事件至企業資料儲存空間和應用程式。這些個人資料和對象事件可用於啟動對客戶的銷售或支援行動，例如跟進放棄的應用程式程序或網路研討會註冊，或者用[!UICONTROL Real-time Customer Data Platform]中的最新客戶屬性和情報更新企業應用程式。
 
@@ -29,7 +29,7 @@ ht-degree: 72%
 
 ## 相關文件
 
-在[目的地檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/overview)中可找到雲端儲存空間與企業目的地的設定其他詳細資料。
+在[目的地檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/overview)中可找到雲端儲存空間與企業目的地的設定其他詳細資料。
 
 ## 護欄
 
