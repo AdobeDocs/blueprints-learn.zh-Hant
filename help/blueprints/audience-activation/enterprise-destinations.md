@@ -29,7 +29,7 @@ ht-degree: 82%
 
 ## 相關文件
 
-在[目的地檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/overview)中可找到雲端儲存空間與企業目的地的設定其他詳細資料。
+在[目的地檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/overview)中可找到雲端儲存空間與企業目的地的設定其他詳細資料。
 
 ## 護欄
 
