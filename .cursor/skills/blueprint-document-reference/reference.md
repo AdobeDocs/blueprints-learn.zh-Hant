@@ -15,7 +15,7 @@ ht-degree: 1%
 | **情境藍圖** | 單一使用案例：架構、步驟、護欄 | 例如`real-time-lookup.md`， `journey-optimizer-journeys.md` |
 | **目錄** | 導覽；請勿作為內容範本使用 | `help/blueprints/TOC.md` |
 
----
+&#x200B;---
 
 ## 完整章節參考資料
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 - **藍圖藍圖**&#x200B;或&#x200B;**整合模式**：包含藍圖藍圖的藍圖名稱、簡短說明和連結的表格。
 - **必要條件**，**護欄**，**相關檔案**：與上述內容相同；請保持簡潔。
 
----
+&#x200B;---
 
 ## Adobe Experience League — 代理程式指引
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 * [Profile Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 ```
 
----
+&#x200B;---
 
 ## 存放庫與目錄
 
@@ -118,7 +118,7 @@ ht-degree: 1%
 - **Assets**：與Blueprint共同找到（例如`assets/`、`images/`）或在共用資料夾中（例如`experience-platform/assets/`）。
 - **目錄**：新增、重新命名或移動Blueprint頁面時編輯`help/blueprints/TOC.md`。 保留frontmatter (`user-guide-title`， `breadcrumb-title`， `user-guide-description`， `product`， `mini-toc-levels`， `role`)和`+`階層。
 
----
+&#x200B;---
 
 ## 此存放庫中的參考範例
 
