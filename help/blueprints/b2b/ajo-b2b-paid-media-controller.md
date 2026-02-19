@@ -1,10 +1,14 @@
 ---
-source-git-commit: 9d0eebd5d84671db1c86d73e7e0de50cb926235d
+title: AJO B2B付費媒體控制者
+description: 行銷活動的優先順序及啟用付費媒體目的地的帳戶
+solution: Journey Optimizer B2B Edition
+source-git-commit: dff5608af92fa1140419d6834d8374df75de98d3
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
+
 # 概觀
 
 大規模執行B2B付費媒體的行銷團隊面臨循環的問題：**帳戶一次結束多個行銷活動** （角色、類別意識、解決方案導向、追蹤），這會稀釋訊息、造成對象疲勞，並強制手動清單工作 — 上傳、排除和抑制 — 跨LinkedIn帳戶相符（帳戶目的地）。 如果沒有&#x200B;**瀑布式優先順序**&#x200B;和&#x200B;**自動行銷活動指派**，就沒有單一位置可決定哪個帳戶取得哪個訊息，且操作不會縮放。
@@ -67,8 +71,8 @@ ht-degree: 0%
 
 ### 護欄
 
-- **Journey Optimizer B2B edition** — 如需歷程限制、節點限制和目的地支援，請參閱[產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer-b2b.html)。
-- **Real-Time CDP** — 如需細分與啟用限制，請參閱[RTCDP護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/guardrails/overview)。
+- **Journey Optimizer B2B edition** — 如需歷程限制、節點限制和目的地支援，請參閱[產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html)。
+- **Real-Time CDP** — 如需細分與啟用限制，請參閱[RTCDP護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 ## 實作
 
@@ -121,6 +125,6 @@ ht-degree: 0%
 
 ## 相關文件
 
-- [購買群組式行銷和歷程管理Blueprint](https://experienceleague.adobe.com/zh-hant/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys) — 在AJO B2B中帳戶和購買群組歷程。
-- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b) — 產品檔案。
+- [購買群組式行銷和歷程管理Blueprint](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys) — 在AJO B2B中帳戶和購買群組歷程。
+- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b) — 產品檔案。
 - [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) — 帳戶對象與啟用。
