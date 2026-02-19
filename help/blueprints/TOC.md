@@ -5,9 +5,9 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: d5f3618fd811131e9d9c1fae16d7aab16aecc9e9
+source-git-commit: 747e685bb897dd15774748c20940e49e9c234b31
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '234'
 ht-degree: 36%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 36%
    + [概觀](/help/blueprints/b2b/overview.md)
    + [B2B啟用](/help/blueprints/b2b/b2bactivation.md)
    + [B2B帳戶啟用](/help/blueprints/b2b/b2b-account-activation.md)
+   + [B2B付費媒體控制器](/help/blueprints/b2b/ajo-b2b-paid-media-controller.md)
    + [購買群組式行銷和歷程管理](/help/blueprints/b2b/b2b-buying-group-journeys.md)
    + [使用Marketo資料的B2B歷程](/help/blueprints/b2b/b2b-journeys-with-marketo.md)
    + Marketo Engage與Workfront整合藍圖{#marketo-engage-and-workfront-integration-blueprint}
@@ -67,8 +68,8 @@ ht-degree: 36%
       + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + 已棄用的Blueprint{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + 資料分析、情報與 AI/ML{#data-exploration}
