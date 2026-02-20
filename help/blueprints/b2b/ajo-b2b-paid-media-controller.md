@@ -2,14 +2,17 @@
 title: AJO B2B付費媒體控制者
 description: 行銷活動的優先順序及啟用付費媒體目的地的帳戶
 solution: Journey Optimizer B2B Edition
-source-git-commit: dff5608af92fa1140419d6834d8374df75de98d3
+exl-id: a4f4982f-2b56-4ce2-9c16-abdf627f97de
+source-git-commit: 388beb1609384f266f0d80a7dd5a14b03ced3110
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
 
-# 概觀
+# AJO B2B — 帳戶Journey Orchestration — 付費媒體控制者
+
+## 概觀
 
 大規模執行B2B付費媒體的行銷團隊面臨循環的問題：**帳戶一次結束多個行銷活動** （角色、類別意識、解決方案導向、追蹤），這會稀釋訊息、造成對象疲勞，並強制手動清單工作 — 上傳、排除和抑制 — 跨LinkedIn帳戶相符（帳戶目的地）。 如果沒有&#x200B;**瀑布式優先順序**&#x200B;和&#x200B;**自動行銷活動指派**，就沒有單一位置可決定哪個帳戶取得哪個訊息，且操作不會縮放。
 
@@ -71,8 +74,8 @@ ht-degree: 0%
 
 ### 護欄
 
-- **Journey Optimizer B2B edition** — 如需歷程限制、節點限制和目的地支援，請參閱[產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer-b2b.html)。
-- **Real-Time CDP** — 如需細分與啟用限制，請參閱[RTCDP護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/guardrails/overview)。
+- **Journey Optimizer B2B edition** — 如需歷程限制、節點限制和目的地支援，請參閱[產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer-b2b.html)。
+- **Real-Time CDP** — 如需細分與啟用限制，請參閱[RTCDP護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)。
 
 ## 實作
 
@@ -97,7 +100,7 @@ ht-degree: 0%
 1. **在AJO B2B中建立控制器歷程。**
 
    - **讀取對象：**&#x200B;從Real-Time CDP中選取合格的帳戶對象。
-   - **分割路徑：**&#x200B;以瀑布圖順序新增節點。 每個節點都會評估條件（例如「在追求的對象中」、「解決方案興趣= X」、「角色= Y」、「意圖類別= Z」）。 符合退出的帳戶與對應的啟用相符；其他帳戶會繼續下一個拆分。
+   - **分割路徑：**&#x200B;為每個付費媒體對象建立一個路徑，從路徑1開始為您的首要優先順序，然後依優先順序繼續進行。 對於每個路徑，新增屬性以設定資格條件（例如「在追蹤對象中」、「解決方案興趣= X」、「角色= Y」、「意圖類別= Z」）。 帳戶會以瀑布式方式透過分割路徑節點a進行評估，符合其符合條件的第一個路徑。
    - **啟用至目的地：**&#x200B;針對每個路徑，將「啟用至目的地」節點新增至正確的LinkedIn （或其他）行銷活動/目的地。
 
 2. **驗證相互排他性。**
@@ -109,7 +112,7 @@ ht-degree: 0%
 
 <img src="assets/ajo-b2b-paid-media-controller-canvas.svg" alt="AJO B2B付費媒體控制器畫布" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
-### 4.2.3.對象啟用
+### Audience Activation
 
 1. **啟用至LinkedIn （和其他目的地）。**
 
@@ -125,6 +128,6 @@ ht-degree: 0%
 
 ## 相關文件
 
-- [購買群組式行銷和歷程管理Blueprint](https://experienceleague.adobe.com/zh-hant/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys) — 在AJO B2B中帳戶和購買群組歷程。
-- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b) — 產品檔案。
+- [購買群組式行銷和歷程管理Blueprint](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys) — 在AJO B2B中帳戶和購買群組歷程。
+- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b) — 產品檔案。
 - [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) — 帳戶對象與啟用。
