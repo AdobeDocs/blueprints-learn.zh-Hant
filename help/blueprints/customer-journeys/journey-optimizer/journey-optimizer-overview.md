@@ -3,14 +3,14 @@ title: '[!DNL Journey Optimizer] — 歷程Blueprint'
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 3a3988e93dd9e92f4f564bfedfa314e8e2b5d9ba
+source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 15%
 
 ---
 
-# [!DNL Journey Optimizer]藍圖
+# [!DNL Journey Optimizer]個藍圖
 
 Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原生應用程式，可跨多個管道即時和排程協調客戶歷程。 它支援事件導向觸發器、受眾細分和決策服務，透過電子郵件、簡訊、推播、網頁和應用程式內傳訊提供個人化體驗。 它可整合傳入和傳出系統，允許跨客戶生命週期進行統一的受眾狀態管理和情境式參與。
 
@@ -94,12 +94,12 @@ Adobe [!DNL Experience Platform]：
 
 [[!DNL Journey Optimizer] 護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
+[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## 相關文件
 
 - [[!DNL Experience Platform] 檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 - [[!DNL Experience Platform] 標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer] 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

@@ -3,18 +3,18 @@ title: 決策管理藍圖
 description: 在客戶歷程中提供個人化產品建議。
 solution: Experience Platform, Journey Optimizer
 exl-id: 1bc9335c-5321-4d0c-939e-4f402e2e8f51
-source-git-commit: 0a3ebcbc6029df46bd988cb8f15ecf838f80c3c9
+source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
-# Journey Optimizer — 決定管理藍圖
+# Journey Optimizer — 決策管理藍圖
 
 請參閱下列[決定管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant)檔案
 
-有關與決定管理相關的護欄，請參閱以下檔案。 [決定管理護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails#decision-management.html)
+有關與決定管理相關的護欄，請參閱以下檔案。 [決定管理護欄](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails#decision-management.html)
 
 Adobe Decision Management 是 Adobe Journey Optimizer 中提供的服務。此藍圖概述了應用程式的使用案例和技術功能，並深入介紹構成「決策管理」的各種體系結構元件和注意事項。
 

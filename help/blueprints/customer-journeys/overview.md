@@ -3,10 +3,10 @@ title: 客戶歷程藍圖
 description: 跨熒幕提供個別、即時和協調的客戶體驗。
 solution: Journey Optimizer, Campaign, Experience Platform
 exl-id: 273d024f-a220-4336-89f2-e3bffafcdc37
-source-git-commit: 8ee7fe8d38343a669f5ad57e69367fbe6a3e1024
+source-git-commit: 49251caac58cd8f62dff977f94ea6a716aa94250
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
