@@ -94,12 +94,12 @@ Adobe [!DNL Experience Platform]：
 
 [[!DNL Journey Optimizer] 護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
 
 ## 相關文件
 
 - [[!DNL Experience Platform] 檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 - [[!DNL Experience Platform] 標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html)
-- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
 - [[!DNL Journey Optimizer] 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
