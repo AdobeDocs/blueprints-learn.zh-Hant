@@ -68,11 +68,11 @@ B2B銷售機會管理的重點在於客戶及其銷售機會。 技術層的設�
 >
 >Journey Optimizer B2B edition的授權應包括下列專案：
 ><ul><li>連線至Journey Optimizer B2B的Experience Platform B2B edition執行個體</li><li>同步至RTCDP的Marketo Engage執行個體</li></ul>
-&gt;<br/>
-&gt;若是現有Marketo Engage客戶，建議連線至現有執行個體。
-&gt;<br/><br/>
-&gt;解決方案有其他擴充功能可用，可增強設定檔豐富度：
-&gt;<ul><li>RTCDP的其他來源可豐富設定檔</li><li>到Marketo Engage的RTCDP目的地</li></ul>
+>&gt;<br/>
+>&gt;若是現有Marketo Engage客戶，建議連線至現有執行個體。
+>&gt;<br/><br/>
+>&gt;解決方案有其他擴充功能可用，可增強設定檔豐富度：
+>&gt;<ul><li>RTCDP的其他來源可豐富設定檔</li><li>到Marketo Engage的RTCDP目的地</li></ul>
 
 此解決方案的實作也需要您清楚瞭解&#x200B;_帳戶_&#x200B;和&#x200B;_購買群組_&#x200B;的概念，以及它們如何擴大並加速銷售機會資格。 有了這項瞭解，您也必須識別所需的購買群組完整度分數。
 
