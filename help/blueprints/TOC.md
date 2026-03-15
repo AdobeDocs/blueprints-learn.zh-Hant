@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: fb814fe6f5e4e774a96cbe75fea2499d849716b4
+source-git-commit: ffef3a39ae84b85167a3b8b8a3622c76fb6cb251
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 30%
+source-wordcount: '276'
+ht-degree: 25%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 30%
    + [B2B帳戶啟用](/help/blueprints/b2b/b2b-account-activation.md)
    + [購買群組式行銷和歷程管理](/help/blueprints/b2b/b2b-buying-group-journeys.md)
    + [使用Marketo資料的B2B歷程](/help/blueprints/b2b/b2b-journeys-with-marketo.md)
+   + [B2B Customer Journey Analytics](/help/blueprints/customer-journey-analytics/b2b-cja.md)
    + [B2B付費媒體控制器](/help/blueprints/b2b/ajo-b2b-paid-media-controller.md)
    + Marketo Engage與Workfront整合Blueprint{#marketo-engage-and-workfront-integration-blueprint}
       + [概觀](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
@@ -49,14 +50,15 @@ ht-degree: 30%
    + [Adobe Commerce與Real-Time CDP](/help/blueprints/content-commerce/commerce/commerce-rtcdp.md)
 + Customer Journey Analytics{#customer-journey-analytics}
    + [概觀](/help/blueprints/customer-journey-analytics/overview.md)
+   + [B2B Customer Journey Analytics](/help/blueprints/customer-journey-analytics/b2b-cja.md)
    + [將CJA對象共用至RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
    + [CJA 與 Journey Optimizer](/help/blueprints/customer-journey-analytics/cja-ajo.md)
 + 客戶歷程{#customer-journeys}
    + [概觀](/help/blueprints/customer-journeys/overview.md)
    + Journey Optimizer{#journey-optimizer}
       + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md)
-      + [AJO 歷程](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
-      + [AJO 行銷活動](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
+      + [AJO歷程](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
+      + [AJO行銷活動](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
       + [協力廠商訊息](/help/blueprints/customer-journeys/journey-optimizer/3rd-party-messaging.md)
    + 決策管理{#decision-management}
       + [概觀](/help/blueprints/customer-journeys/decision-management/decision-management-overview.md)
@@ -68,8 +70,8 @@ ht-degree: 30%
       + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + 已棄用的Blueprint{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + 資料分析、情報與 AI/ML{#data-exploration}
