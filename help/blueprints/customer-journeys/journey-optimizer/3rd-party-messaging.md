@@ -38,9 +38,9 @@ ht-degree: 61%
 
 ## 護欄
 
-[Journey Optimizer Guardrails產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
+[Journey Optimizer Guardrails產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=zh-Hant)
 
-[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=zh-Hant)
 
 <br>
 
@@ -91,6 +91,6 @@ ht-degree: 61%
 
 * [Experience Platform檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 * [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-* [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html)
-* [Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+* [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+* [Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
 * [Journey Optimizer產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

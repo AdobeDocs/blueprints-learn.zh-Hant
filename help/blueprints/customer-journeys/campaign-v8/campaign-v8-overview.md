@@ -137,11 +137,11 @@ Adobe Campaign v8是新一代的行銷活動管理平台，專為電子郵件和
 
 ## 實施步驟
 
-請參閱快速入門手冊， [實作 Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html)
+請參閱快速入門手冊， [實作 Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=zh-Hant)
 
 ## 相關文件
 
-- [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign-v8.html)
+- [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=zh-Hant)
 - [Campaign v8產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-- [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/launch.html)
-- [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
+- [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)

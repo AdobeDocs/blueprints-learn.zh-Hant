@@ -29,7 +29,7 @@ Customer Journey Analytics B2B edition可為B2B組織啟用帳戶型報表和分
 ## 先決條件
 
 * [!DNL Customer Journey Analytics] B2B edition權益。
-* Adobe Experience Platform中的B2B和行為資料： B2B資料集（帳戶、機會、人員、行銷活動、行銷清單、B2B活動）和事件資料（網頁、行動或其他管道）可在[CJA連線](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html)中使用。
+* Adobe Experience Platform中的B2B和行為資料： B2B資料集（帳戶、機會、人員、行銷活動、行銷清單、B2B活動）和事件資料（網頁、行動或其他管道）可在[CJA連線](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hant)中使用。
 * CJA的[B2B命名](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/b2b.html)：為連線設定的B2B專屬資料檢視設定（帳戶ID、機會ID和相關維度）。
 
 ## 架構
@@ -40,16 +40,16 @@ Customer Journey Analytics B2B edition可為B2B組織啟用帳戶型報表和分
 
 ## 護欄
 
-* 如需B2B edition產品限制與權益的相關資訊，請參閱[Customer Journey Analytics B2B產品說明](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html)。
-* 如需Analytics Platform和CJA技術限制的相關資訊，請參閱[Analytics Platform護欄](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails)。
-* 如需CJA資料擷取與連線限制的相關資訊，請參閱[Customer Journey Analytics資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html#what-is-the-expected-latency-for-analytics-data-on-platform%3F)。
-* 如果將CJA對象發佈到Real-time Customer Data Platform，請參閱[Customer Journey Analytics對象共用護欄](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)。
+* 如需B2B edition產品限制與權益的相關資訊，請參閱[Customer Journey Analytics B2B產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/customer-journey-analytics-b2b.html)。
+* 如需Analytics Platform和CJA技術限制的相關資訊，請參閱[Analytics Platform護欄](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/technotes/guardrails)。
+* 如需CJA資料擷取與連線限制的相關資訊，請參閱[Customer Journey Analytics資料擷取護欄](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=zh-Hant#what-is-the-expected-latency-for-analytics-data-on-platform%3F)。
+* 如果將CJA對象發佈到Real-time Customer Data Platform，請參閱[Customer Journey Analytics對象共用護欄](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hant#latency)。
 * 如需端對端延遲和平台護欄，請參閱[部署護欄檔案](../experience-platform/guardrails.md)。
 
 ## 實施步驟
 
 1. **將B2B和事件資料擷取至Experience Platform** — 使用[來源](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant) （例如[!DNL Marketo Engage]、CRM或其他B2B聯結器）匯入帳戶、商機、人員、行銷活動和活動資料，以及行為事件。
-2. **建立CJA連線** — [將相關的Experience Platform資料集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) （B2B和事件）新增至Customer Journey Analytics連線。
+2. **建立CJA連線** — [將相關的Experience Platform資料集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hant) （B2B和事件）新增至Customer Journey Analytics連線。
 3. **在資料檢視中設定B2B** — 啟用[B2B命名和金鑰維度](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/b2b.html) （帳戶ID、機會ID等） 在連線的資料檢視中。
 4. **建置以帳戶為基礎的分析和對象** — 使用[CJA B2B使用案例和報告](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=zh-Hant)在帳戶和機會層級建立報告、劃分和對象；可選擇地[將對象發佈到Real-time CDP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=zh-Hant)以進行啟用。
 
@@ -57,14 +57,14 @@ Customer Journey Analytics B2B edition可為B2B組織啟用帳戶型報表和分
 
 ### Customer Journey Analytics B2B edition
 
-* [Customer Journey Analytics B2B edition](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition.html)
+* [Customer Journey Analytics B2B edition](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition.html?lang=zh-Hant)
 * [B2B使用案例](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=zh-Hant)
-* [B2B edition使用案例概觀](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b/b2b-edition/use-cases-overview.html)
-* [以人為本的B2B專案範例](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b/example.html)
+* [B2B edition使用案例概觀](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b/b2b-edition/use-cases-overview.html?lang=zh-Hant)
+* [以人為本的B2B專案範例](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b/example.html?lang=zh-Hant)
 
 ### 連線和資料檢視
 
-* [建立連線](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html)
+* [建立連線](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hant)
 * [B2B資料檢視設定](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/b2b.html)
 
 ### 對象和護欄
