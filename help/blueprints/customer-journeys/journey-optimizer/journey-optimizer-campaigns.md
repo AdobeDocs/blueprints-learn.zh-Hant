@@ -2,10 +2,11 @@
 title: '[!DNL Journey Optimizer] — 行銷活動協調流程'
 description: 可讓行銷人員協調跨傳出訊息通道的已排程、以對象為基礎的多步驟行銷通訊。
 solution: Journey Optimizer
-source-git-commit: 0a3ebcbc6029df46bd988cb8f15ecf838f80c3c9
+exl-id: a8ff16f8-146d-4e1f-9bd0-9eda6af0c69b
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 2%
+source-wordcount: '344'
+ht-degree: 6%
 
 ---
 
@@ -46,17 +47,17 @@ AJO Campaign Orchestration可讓行銷人員跨對外頻道（例如電子郵件
 
 ## 護欄
 
-[協調的行銷活動產品連結](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
+[協調的行銷活動產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
 
-[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails)
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails)
 
 <br>
 
 ## 相關文件
 
-- [[!DNL Journey Optimizer] 協調的行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/orchestrated-campaigns-landing-page.html)
-- [[!DNL Experience Platform] 檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-- [[!DNL Experience Platform] 標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-- [[!DNL Experience Platform Mobile SDK] 檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-- [[!DNL Journey Optimizer] 檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
-- [[!DNL Journey Optimizer] 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
+- [[!DNL Journey Optimizer]個協調的行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/orchestrated-campaigns-landing-page.html)
+- [[!DNL Experience Platform]檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
+- [[!DNL Experience Platform]標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+- [[!DNL Journey Optimizer]產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

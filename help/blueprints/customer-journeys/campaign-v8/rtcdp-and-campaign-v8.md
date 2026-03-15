@@ -3,14 +3,14 @@ title: Real-Time CDP 與 Adobe Campaign v8 整合模式
 description: 展示 Adobe Experience Platform 及其 Real-Time Customer Profile 和集中式細分工具如何與 Adobe Campaign v8 一起使用，以提供個人化的對話體驗。
 solution: Real-Time Customer Data Platform, Campaign
 exl-id: d0291088-02ed-4e7e-b538-018ea40e38c6
-source-git-commit: 10d49e3b712fc9d4ecdf41defe6e62dde2a86b72
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 72%
+source-wordcount: '264'
+ht-degree: 64%
 
 ---
 
-# 具有Adobe [!DNL Real-Time CDP] v8整合模式的[!DNL Campaign]
+# 具有Adobe [!DNL Campaign] v8整合模式的[!DNL Real-Time CDP]
 
 展示Adobe [!DNL Experience Platform]及其即時客戶設定檔和集中式細分工具如何與Adobe Campaign搭配使用，以提供個人化的對話。
 
@@ -37,8 +37,8 @@ ht-degree: 72%
 
 ## 實施步驟
 
-請參閱下列文件，了解如何將 Campaign v8 來源連接器設定為 Adobe Experience Platform，以及將 Real-time Customer Data Platform 目標連接器設定為 Campaign v8。
-[Campaign 與 AEP 連接器](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-aep.html?lang=zh-Hant)
+請參閱以下檔案，瞭解如何將Campaign v8來源聯結器設定為Adobe Experience Platform，並將Real-time Customer Data Platform目的地聯結器設定為Campaign v8。
+[Campaign與AEP聯結器](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-aep.html?lang=zh-Hant)
 
 ## 護欄
 

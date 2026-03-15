@@ -3,10 +3,10 @@ title: 邊緣上 Decision Management 藍圖
 description: 跨通道（包括即時網路和行動體驗）為消費者提供個人化產品建議。
 solution: Experience Platform, Journey Optimizer
 exl-id: 31e5f624-5578-49e1-ab92-5cabd596a632
-source-git-commit: b24b1200e605914c501c0f98562ca40beee1138e
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 68%
+source-wordcount: '480'
+ht-degree: 69%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 68%
 >
 >若要深入瞭解[!DNL Decision Management]，請參閱[藍圖概觀](decision-management-overview.md)或造訪[產品檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant)。
 
-[!DNL Decision Management]有兩種部署方式。 第一個是透過[!DNL Experience Platform]中心，這是單一資料中心架構。 在「中心」方法中，會執行和個人化產品建議活動，並在第二次延遲時傳送。因此，中心架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或人員互動中）提供的有貨決策。
+[!DNL Decision Management]有兩種部署方式。 第一個是透過[!DNL Experience Platform]中心，這是單一資料中心架構。 在「中心」方法中，會執行和個人化產品建議活動，並在第二次延遲時傳送。 因此，中心架構最適合不需要次秒延遲的客戶體驗，例如，為資訊站或代理輔助體驗（例如在呼叫中心或人員互動中）提供的有貨決策。
 
-第二種方式是透過Experience Platform [!DNL Edge Network]，這是全球分散的地理位置基礎架構，可提供快速次秒和毫秒的體驗。 Edge基礎結構所執行的最終消費者體驗，其位置最接近消費者地理位置，可將延遲降至最低。 Edge上的[!DNL Decision Management]旨在提供即時消費者體驗。 這些包括網頁或行動傳入個人化請求之類的體驗。
+第二種方式是透過Experience Platform [!DNL Edge Network]，這是全球分散的地理位置基礎架構，可提供快速次秒和毫秒的體驗。 Edge基礎結構所執行的最終消費者體驗，其位置最接近消費者地理位置，可將延遲降至最低。[!DNL Decision Management] Edge上的目標是提供即時消費者體驗。 這些包括網頁或行動傳入個人化請求之類的體驗。
 
 此藍圖將涵蓋邊緣上 Decision Management 的詳細資訊。
 
@@ -46,14 +46,14 @@ ht-degree: 68%
 
 * 有關 Journey Optimizer 護欄，請參閱下列 [Journey Optimizer 護欄](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/limitations.html?lang=zh-Hant)。
 
-* 有關決策管理護欄，請參閱下面的[&#x200B; Decision Management 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)。
+* 有關決策管理護欄，請參閱下面的[ Decision Management 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)。
 
-[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=zh-Hant)
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## 相關文件
 
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)
 * [Adobe Journey Optimizer 決策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant)
-* [Adobe Journey Optimizer 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Adobe Decision Management 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)
+* [Adobe Journey Optimizer產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
+* [Adobe決定管理產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/offer-decisioning-app-service.html)

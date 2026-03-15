@@ -3,14 +3,14 @@ title: 具有 [!DNL Campaign] v7和Campaign Standard整合模式的Real-Time CDP
 description: 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign] 搭配使用，以提供個人化的對話。
 solution: Real-Time Customer Data Platform, Campaign
 exl-id: a15e8304-2763-42fc-9978-11f2482ea8b8
-source-git-commit: fa1f8799e774713a48fdd437a9325731aef1b6ab
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 42%
+source-wordcount: '811'
+ht-degree: 55%
 
 ---
 
-# 具有[!DNL Real-Time Customer Data Platform]整合模式的[!DNL Campaign]
+# 具有[!DNL Campaign]整合模式的[!DNL Real-Time Customer Data Platform]
 
 展示Adobe [!DNL Experience Platform]及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign]搭配使用，以提供個人化的對話。
 
@@ -42,7 +42,7 @@ ht-degree: 42%
 
 * 請參閱RTCDP [!DNL Campaign]目的地聯結器 — [RTCDP促銷活動連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign-managed-services.html?lang=zh-Hant)
 
-* 檢視[和區段 [!DNL Real-Time Customer Profile Data] 的](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)預設護欄
+* 檢視 [!DNL Real-Time Customer Profile Data] 和區段](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)的[預設護欄
 
 ## 實施步驟
 
@@ -111,7 +111,7 @@ ht-degree: 42%
 ## 相關文件
 
 * [Adobe [!DNL Experience Platform] 檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-* [[!DNL Campaign Classic] 檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
-* [[!DNL Campaign Standard] 檔案](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant)
-* [[!DNL Experience Platform] 啟動檔案](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
-* [[!DNL Experience Platform] 行動SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+* [[!DNL Campaign Classic]檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
+* [[!DNL Campaign Standard]檔案](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant)
+* [[!DNL Experience Platform] Launch檔案](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
+* [[!DNL Experience Platform]行動SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)

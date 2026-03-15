@@ -3,10 +3,10 @@ title: Journey Optimizer 搭配 Adobe Campaign v7 藍圖
 description: 示範 Adobe Journey Optimizer 如何與 Adobe Campaign 搭配使用，以利用 Campaign 中的即時傳訊伺服器原生傳送訊息。
 solution: Journey Optimizer, Campaign, Campaign Classic v7, Campaign Standard
 exl-id: 6d9bc65c-cca0-453f-8106-d2895d005ada
-source-git-commit: b24b1200e605914c501c0f98562ca40beee1138e
+source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 97%
+source-wordcount: '760'
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 <img src="assets/ajo-campaign-architecture.svg" alt="Journey Optimizer 參考架構藍圖" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 >[!IMPORTANT]
->可以同時使用 Journey Optimizer 和 Campaign 來彼此獨立傳送訊息，但有一些技術考量需加以考慮。如果您想沿用此路線，請與售前企業架構師合作，以確保您了解支援實施所需的內容。
+>可以同時使用 Journey Optimizer 和 Campaign 來彼此獨立傳送訊息，但有一些技術考量需加以考慮。 如果您想沿用此路線，請與售前企業架構師合作，以確保您了解支援實施所需的內容。
 
 <br>
 
@@ -43,9 +43,9 @@ ht-degree: 97%
 
 ## 護欄
 
-[Journey Optimizer 護欄產品連結](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
+[Journey Optimizer Guardrails產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
-[護欄與端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=zh-Hant)
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 ## 實施步驟
 
@@ -73,14 +73,14 @@ ht-degree: 97%
 
 ### Journey Optimizer
 
-1. 設定 Experience Platform 資料來源，並確定應快取哪些欄位作為個人資料的一部分。用來起始客戶歷程的串流資料必須先在 Journey Optimizer 中設定，才能取得協調 ID。然後將此協調 ID 提供給開發人員在擷取時使用。
+1. 設定 Experience Platform 資料來源，並確定應快取哪些欄位作為個人資料的一部分。用來起始客戶歷程的串流資料必須先在 Journey Optimizer 中設定，才能取得協調 ID。 然後將此協調 ID 提供給開發人員在擷取時使用。
 1. 設定外部資料來源
 1. 設定 Campaign 實例的自訂動作
 
 ### Campaign v7
 
 * 傳訊範本必須以適當的個人化內容來設定
-* 適用於 Campaign v7 — 匯出工作流程需要設定，以將交易式訊息記錄檔匯出回 Experience Platform。建議最多每 4 小時執行一次。
+* 適用於 Campaign v7 — 匯出工作流程需要設定，以將交易式訊息記錄檔匯出回 Experience Platform。 建議最多每 4 小時執行一次。
 
 ### 行動推播設定（選用）
 
@@ -94,12 +94,12 @@ ht-degree: 97%
 1. 如需更多詳細資訊，請參閱 [Adobe Journey Optimizer 行動指南](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/)
 
    >[!IMPORTANT]
-   >如果需要透過 Journey Optimizer 傳送即時通訊，或需透過 Campaign 批次推播通知，行動權杖可能需要在 Journey Optimizer 和 Campaign 中收集。Campaign v8 需要專用 Campaign SDK 來擷取推播權杖。
+   >如果需要透過 Journey Optimizer 傳送即時通訊，或需透過 Campaign 批次推播通知，行動權杖可能需要在 Journey Optimizer 和 Campaign 中收集。 Campaign v8 需要專用 Campaign SDK 來擷取推播權杖。
 
 <br>
 
 ## 相關文件
 
-* [Journey Optimizer 文件](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
-* [Journey Optimizer 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
-* [Campaign v7 文件](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
+* [Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+* [Journey Optimizer產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
+* [Campaign v7檔案](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant)
