@@ -5,10 +5,10 @@ user-guide-description: Blueprint 是可重複的實作，用於解決既有的�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: 1b722db275b3360fc443a67e07c7162909c32d72
+source-git-commit: cf76bfcb0a6d3f2a23f42494f3944934954cac89
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 26%
+source-wordcount: '449'
+ht-degree: 18%
 
 ---
 
@@ -16,6 +16,68 @@ ht-degree: 26%
 # 客戶體驗協調藍圖 {#architecture}
 
 + [客戶體驗協調藍圖](/help/blueprints/overview.md)
++ AEP和應用程式的主要業務目標範例{#business-objectives}
+   + [概觀](/help/blueprints/business-objectives/overview.md)
+   + 收購與成長{#acquisition-growth}
+      + [贏取新客戶](/help/blueprints/business-objectives/acquisition-growth/acquire-new-customers.md)
+      + [增加銷售機會開發](/help/blueprints/business-objectives/acquisition-growth/increase-lead-generation.md)
+      + [增加網站參與度](/help/blueprints/business-objectives/acquisition-growth/increase-website-engagement.md)
+   + 收入與營收{#revenue-monetization}
+      + [提高轉換率](/help/blueprints/business-objectives/revenue-monetization/increase-conversion-rates.md)
+      + [增加收入與銷售](/help/blueprints/business-objectives/revenue-monetization/increase-revenue-sales.md)
+      + [提高交叉銷售和追加銷售收入](/help/blueprints/business-objectives/revenue-monetization/drive-cross-sell-upsell-revenue.md)
+      + [提高客戶忠誠度和期限值](/help/blueprints/business-objectives/revenue-monetization/increase-customer-loyalty-lifetime-value.md)
+   + 成本與效率{#cost-efficiency}
+      + [降低客戶贏取成本](/help/blueprints/business-objectives/cost-efficiency/reduce-customer-acquisition-cost.md)
+      + [最佳化行銷支出和ROI](/help/blueprints/business-objectives/cost-efficiency/optimize-marketing-spend-roi.md)
+      + [改善資料品質和控管](/help/blueprints/business-objectives/cost-efficiency/improve-data-quality-governance.md)
+      + [整合及更新行銷技術](/help/blueprints/business-objectives/cost-efficiency/consolidate-modernize-marketing-technology.md)
+   + 客戶體驗{#customer-experience-objectives}
+      + [提供個人化的客戶體驗](/help/blueprints/business-objectives/customer-experience/deliver-personalized-customer-experiences.md)
+      + [提升客戶保留率](/help/blueprints/business-objectives/customer-experience/improve-customer-retention.md)
+      + [改善客戶入門](/help/blueprints/business-objectives/customer-experience/improve-customer-onboarding.md)
+      + [復原放棄的購物車與歷程](/help/blueprints/business-objectives/customer-experience/recover-abandoned-carts-journeys.md)
+   + Analytics &amp; Insights{#analytics-insights}
+      + [改善分析和報告](/help/blueprints/business-objectives/analytics-insights/improve-analytics-reporting.md)
+      + [啟用資料導向式決策](/help/blueprints/business-objectives/analytics-insights/enable-data-driven-decision-making.md)
+      + [改善行銷歸因](/help/blueprints/business-objectives/analytics-insights/improve-marketing-attribution.md)
+   + 資格與銷售(B2B){#qualification-sales-b2b}
+      + [改善銷售機會資格和轉換](/help/blueprints/business-objectives/qualification-sales-b2b/improve-lead-qualification-conversion.md)
+      + [改善客戶參與度](/help/blueprints/business-objectives/qualification-sales-b2b/improve-customer-engagement.md)
++ 使用案例模式{#use-case-patterns}
+   + [概觀](/help/blueprints/use-case-patterns/overview.md)
+   + Audience Builder &amp; Activation{#audience-building-activation}
+      + [Audience Activation至目的地](/help/blueprints/use-case-patterns/audience-building-activation/audience-activation-to-destinations.md)
+      + [有區段比對的對象Collaboration](/help/blueprints/use-case-patterns/audience-building-activation/audience-collaboration-segment-match.md)
+      + [事件轉送](/help/blueprints/use-case-patterns/audience-building-activation/event-forwarding.md)
+      + [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md)
+   + 個人化{#personalization-patterns}
+      + [匿名訪客網頁Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md)
+      + [已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)
+      + [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md)
+      + [行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)
+   + 行銷活動管理與協調{#campaign-orchestration-patterns}
+      + [批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md)
+      + [事件觸發式傳訊](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)
+      + [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)
+      + [具有決策的跨頻道歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md)
+      + [購買群組式行銷與歷程管理](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md)
+   + 分析{#analysis-patterns}
+      + [Customer Analytics與Insight開發](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md)
+      + [B2B分析](/help/blueprints/use-case-patterns/analysis/b2b-analytics.md)
+   + 對話體驗{#conversational-experience-patterns}
+      + [Brand Concierge對話體驗](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md)
++ 產業使用案例範例{#industry-use-cases}
+   + [概觀](/help/blueprints/industry-use-cases/overview.md)
+   + [汽車](/help/blueprints/industry-use-cases/automotive/automotive-overview.md)
+   + [B2B](/help/blueprints/industry-use-cases/b2b/b2b-overview.md)
+   + [金融服務](/help/blueprints/industry-use-cases/financial-services/financial-services-overview.md)
+   + [保健](/help/blueprints/industry-use-cases/healthcare/healthcare-overview.md)
+   + [保險業](/help/blueprints/industry-use-cases/insurance/insurance-overview.md)
+   + [媒體與娛樂](/help/blueprints/industry-use-cases/media-entertainment/media-entertainment-overview.md)
+   + [零售](/help/blueprints/industry-use-cases/retail/retail-overview.md)
+   + [電信](/help/blueprints/industry-use-cases/telecommunications/telecommunications-overview.md)
+   + [旅遊業及旅館業](/help/blueprints/industry-use-cases/travel-hospitality/travel-hospitality-overview.md)
 + 架構概述{#architecture-overview}
    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
    + [Experience Platform與應用程式](/help/blueprints/experience-platform/platform-applications.md)
@@ -67,8 +129,8 @@ ht-degree: 26%
       + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
    + 已棄用的Blueprint{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard){target="_blank"}
-         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+         + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+         + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
          + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 + 資料分析、情報與 AI/ML{#data-exploration}
