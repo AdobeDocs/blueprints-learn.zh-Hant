@@ -179,7 +179,7 @@ ht-degree: 0%
 - [Meta Conversions API擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
 - [Google Cloud Platform擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
 - [AWS擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/aws/overview)
-- [Snowflake擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/snowflake/overview)
+- [Snowflake擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/snowflake/overview)
 
 ### 選項B：自訂webhook （擷取API）事件轉送
 
@@ -254,7 +254,7 @@ ht-degree: 0%
 **Experience League：**
 
 - [事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
-- [事件轉送快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
+- [事件轉送快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/getting-started)
 
 ### 選項比較
 
@@ -372,7 +372,7 @@ ht-degree: 0%
 
 **Experience League檔案：**
 
-- [事件轉送快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
+- [事件轉送快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/getting-started)
 - [事件轉送擴充功能目錄](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
 - [事件轉送密碼](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
 - [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
@@ -606,7 +606,7 @@ ht-degree: 0%
 **事件轉送**
 
 - [事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
-- [事件轉送快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
+- [事件轉送快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/getting-started)
 - [事件轉送監控](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring)
 - [事件轉送密碼](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
 
@@ -617,7 +617,7 @@ ht-degree: 0%
 - [Meta Conversions API擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
 - [Google Cloud Platform擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
 - [AWS擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/aws/overview)
-- [Snowflake擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/snowflake/overview)
+- [Snowflake擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/snowflake/overview)
 - [Google Ads增強型轉換延伸功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-ads-enhanced-conversions/overview)
 - [Mailchimp擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/mailchimp/overview)
 

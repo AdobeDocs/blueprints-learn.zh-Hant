@@ -106,10 +106,10 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 | 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 必填 | 沙箱已設定為[!DNL CJA]個B2B edition和[!DNL RT-CDP]個B2B edition使用許可權。 為可存取[!DNL CJA]和B2B資料模型的資料工程師、分析師和行銷作業使用者布建的角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home) |
-| 資料模型與準備 | 必填 | 使用B2B類別設定的B2B XDM結構描述：XDM商業帳戶、XDM商業機會、XDM商業帳戶個人關係、XDM商業機會個人關係和XDM商業行銷清單成員。 必須定義帳戶屬性、商機階段和購買群組角色的欄位群組。 為設定檔建立和啟用的資料集。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)，[B2B edition結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) |
-| 資料來源與收集 | 必填 | B2B資料來源已連線，通常透過[!DNL Marketo Engage]來源聯結器或[!DNL Salesforce] CRM來源聯結器。 帳戶記錄、機會記錄、人員 — 帳戶關係和行為參與事件必須流入AEP資料集。[!DNL Web SDK] 或[!DNL Marketo]整合必須透過帳戶關聯擷取行為事件。 | [來源總覽](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)，[Marketo Engage聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
-| 身分和設定檔設定 | 必填 | 已設定用來解析個人與帳戶關係的B2B身分解析。 必須連結帳戶ID、人員ID （[!DNL Marketo]銷售機會ID或CRM聯絡人ID）和跨裝置身分識別（ECID、電子郵件）。 身分圖表必須支援B2B資料模型固有的多對多人個人對帳戶對應。 | [身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)，[B2B身分識別解析](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) |
-| 對象定義與細分 | 已假設就位 | 如果要從[!DNL CJA]將B2B區段發佈回AEP以進行啟用，則應該可以使用帳戶層級的對象定義。 若是僅限分析的使用案例，並非最嚴格的先決條件，但建議您針對區段型分析採取此做法。 | [分段服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home) |
+| 資料模型與準備 | 必填 | 使用B2B類別設定的B2B XDM結構描述：XDM商業帳戶、XDM商業機會、XDM商業帳戶個人關係、XDM商業機會個人關係和XDM商業行銷清單成員。 必須定義帳戶屬性、商機階段和購買群組角色的欄位群組。 為設定檔建立和啟用的資料集。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[B2B edition結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b) |
+| 資料來源與收集 | 必填 | B2B資料來源已連線，通常透過[!DNL Marketo Engage]來源聯結器或[!DNL Salesforce] CRM來源聯結器。 帳戶記錄、機會記錄、人員 — 帳戶關係和行為參與事件必須流入AEP資料集。[!DNL Web SDK] 或[!DNL Marketo]整合必須透過帳戶關聯擷取行為事件。 | [來源總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)，[Marketo Engage聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
+| 身分和設定檔設定 | 必填 | 已設定用來解析個人與帳戶關係的B2B身分解析。 必須連結帳戶ID、人員ID （[!DNL Marketo]銷售機會ID或CRM聯絡人ID）和跨裝置身分識別（ECID、電子郵件）。 身分圖表必須支援B2B資料模型固有的多對多人個人對帳戶對應。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[B2B身分識別解析](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b) |
+| 對象定義與細分 | 已假設就位 | 如果要從[!DNL CJA]將B2B區段發佈回AEP以進行啟用，則應該可以使用帳戶層級的對象定義。 若是僅限分析的使用案例，並非最嚴格的先決條件，但建議您針對區段型分析採取此做法。 | [分段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home) |
 
 ## 支援功能
 
@@ -117,11 +117,11 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 推薦 | 帳戶設定檔上的計算屬性（例如，總參與分數、上次活動後間隔天數、機會計數）豐富了[!DNL CJA]中可用於帳戶層級分析的分析維度。 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
-| 資料生命週期管理 | 推薦 | B2B資料集，尤其是來自[!DNL Marketo Engage]的行為事件資料，可能會快速增長。 資料集到期原則有助於管理儲存空間，並確保符合資料保留要求。 | [進階資料生命週期管理](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| 資料使用標籤和實作 | 推薦 | B2B資料通常包含敏感的業務資訊（合約價值、競爭情報）。 資料使用標籤和治理原則可確保這些資料在分析和啟用工作流程中得到適當使用。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
-| 監控與可觀察性 | 推薦 | B2B來源聯結器([!DNL Marketo]， [!DNL Salesforce])需要監視擷取健康狀態。 [!DNL CJA]中的連線狀況監視可確保分析資料的時效性。 擷取失敗的警報規則可防止陳舊儀表板。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
-| 報告與分析 | 已包含 | 此模式本身即為分析模式。 此函式原本就包含在核心函式鏈中，可提供報表與分析功能。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| 計算/衍生屬性建立 | 推薦 | 帳戶設定檔上的計算屬性（例如，總參與分數、上次活動後間隔天數、機會計數）豐富了[!DNL CJA]中可用於帳戶層級分析的分析維度。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview) |
+| 資料生命週期管理 | 推薦 | B2B資料集，尤其是來自[!DNL Marketo Engage]的行為事件資料，可能會快速增長。 資料集到期原則有助於管理儲存空間，並確保符合資料保留要求。 | [進階資料生命週期管理](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
+| 資料使用標籤和實作 | 推薦 | B2B資料通常包含敏感的業務資訊（合約價值、競爭情報）。 資料使用標籤和治理原則可確保這些資料在分析和啟用工作流程中得到適當使用。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home) |
+| 監控與可觀察性 | 推薦 | B2B來源聯結器([!DNL Marketo]， [!DNL Salesforce])需要監視擷取健康狀態。 [!DNL CJA]中的連線狀況監視可確保分析資料的時效性。 擷取失敗的警報規則可防止陳舊儀表板。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
+| 報告與分析 | 已包含 | 此模式本身即為分析模式。 此函式原本就包含在核心函式鏈中，可提供報表與分析功能。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## 應用程式函式
 
@@ -210,7 +210,7 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 **Experience League：**
 
 - [CJA B2B edition概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
-- [B2B edition結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [B2B edition結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b)
 
 ### 選項B：以全球帳戶為中心的分析
 
@@ -276,8 +276,8 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 
 **Experience League：**
 
-- [建立或編輯資料檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
-- [資料檢視總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [建立或編輯資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [資料檢視總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)
 
 ### 選項比較
 
@@ -365,9 +365,9 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 
 **Experience League檔案：**
 
-- [連線總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
-- [建立或編輯連線](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
-- [管理連線](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections)
+- [連線總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/overview)
+- [建立或編輯連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/create-connection)
+- [管理連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/manage-connections)
 - [CJA B2B edition概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
 
 ### 階段2：帳戶資料檢視設定
@@ -436,13 +436,13 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 
 **Experience League檔案：**
 
-- [資料檢視總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
-- [建立或編輯資料檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
-- [元件設定概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
-- [持續性設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
-- [歸因設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
-- [衍生欄位](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields)
-- [工作階段設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/session-settings)
+- [資料檢視總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)
+- [建立或編輯資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [元件設定概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
+- [持續性設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
+- [歸因設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
+- [衍生欄位](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/derived-fields)
+- [工作階段設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/session-settings)
 
 ### 階段3：Workspace分析
 
@@ -502,18 +502,18 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 
 **Experience League檔案：**
 
-- [Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
-- [建立專案](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
-- [自由格式表格](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
-- [歸因面板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/attribution)
-- [流量視覺效果](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
-- [流失視覺效果](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
-- [同類群組表格](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
-- [篩選器概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/filters-overview)
-- [計算量度概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
-- [建立計算量度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics)
-- [註解概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/annotations/overview)
-- [引導式分析概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview)
+- [Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
+- [建立專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
+- [自由格式表格](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
+- [歸因面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/attribution)
+- [流量視覺效果](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
+- [流失視覺效果](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
+- [同類群組表格](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
+- [篩選器概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-filters/filters-overview)
+- [計算量度概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
+- [建立計算量度](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics)
+- [註解概述](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/annotations/overview)
+- [引導式分析概述](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/guided-analysis/overview)
 - [劃分維度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/components/dimensions/t-breakdown-fa)
 
 ### 第4階段：控制面板發佈
@@ -557,13 +557,13 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 
 **Experience League檔案：**
 
-- [建立行動計分卡](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/create-scorecard)
-- [共用專案](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
-- [排程專案](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
+- [建立行動計分卡](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dashboards/create-scorecard)
+- [共用專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
+- [排程專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
 - [設定及組織計分卡](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/curate)
-- [Adobe Analytics控制面板 — 執行指南](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/set-up-execs)
-- [受眾概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
-- [建立及發佈對象](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)
+- [Adobe Analytics控制面板 — 執行指南](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dashboards/set-up-execs)
+- [受眾概述](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
+- [建立及發佈對象](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/publish)
 
 ## 實施考量
 
@@ -571,7 +571,7 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 
 ### 護欄和限制
 
-- [!DNL CJA]連線只能包含來自一個AEP沙箱的資料集 — [CJA護欄](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-admin/guardrails)
+- [!DNL CJA]連線只能包含來自一個AEP沙箱的資料集 — [CJA護欄](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-admin/guardrails)
 - 每個資料檢視最多5,000個維度和5,000個量度
 - 每個資料檢視最多100個衍生欄位
 - B2B歸因支援帳戶層級分析最多13個月的回顧期間
@@ -638,88 +638,88 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 **[!DNL CJA]B2B edition**
 
 - [CJA B2B edition概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
-- [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
-- [CJA護欄](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-admin/guardrails)
+- [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
+- [CJA護欄](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-admin/guardrails)
 
 **連線**
 
-- [連線總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
-- [建立或編輯連線](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
-- [管理連線](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections)
+- [連線總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/overview)
+- [建立或編輯連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/create-connection)
+- [管理連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/manage-connections)
 
 **資料檢視**
 
-- [資料檢視總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
-- [建立或編輯資料檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
-- [元件設定概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
-- [持續性設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
-- [歸因設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
-- [格式設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/format)
-- [衍生欄位](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields)
-- [工作階段設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/session-settings)
+- [資料檢視總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)
+- [建立或編輯資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [元件設定概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
+- [持續性設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
+- [歸因設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
+- [格式設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/format)
+- [衍生欄位](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/derived-fields)
+- [工作階段設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/session-settings)
 
 **Workspace和分析**
 
-- [Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
-- [建立專案](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
-- [自由格式表格](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
-- [流量視覺效果](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
-- [流失視覺效果](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
-- [同類群組表格](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
-- [歸因面板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/attribution)
-- [共用專案](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
-- [排程專案](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
+- [Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
+- [建立專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
+- [自由格式表格](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
+- [流量視覺效果](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
+- [流失視覺效果](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
+- [同類群組表格](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
+- [歸因面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/attribution)
+- [共用專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)
+- [排程專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/curate-share/send-schedule-files)
 - [劃分維度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/components/dimensions/t-breakdown-fa)
 
 **元件**
 
-- [篩選器概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/filters-overview)
-- [建立篩選器](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/create-filters)
-- [計算量度概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
-- [建立計算量度](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics)
-- [註解概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/annotations/overview)
+- [篩選器概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-filters/filters-overview)
+- [建立篩選器](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-filters/create-filters)
+- [計算量度概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
+- [建立計算量度](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-build-metrics)
+- [註解概述](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/annotations/overview)
 - [日期範圍](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/date-ranges/overview)
 
 **對象**
 
-- [受眾概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
-- [建立及發佈對象](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)
-- [管理對象](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/manage)
+- [受眾概述](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
+- [建立及發佈對象](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/publish)
+- [管理對象](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/manage)
 
 **儀表板和計分卡**
 
-- [建立行動計分卡](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/create-scorecard)
+- [建立行動計分卡](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dashboards/create-scorecard)
 - [設定及組織計分卡](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/curate)
-- [Adobe Analytics控制面板 — 執行指南](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/set-up-execs)
+- [Adobe Analytics控制面板 — 執行指南](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dashboards/set-up-execs)
 
 **引導式分析**
 
-- [引導式分析概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/overview)
+- [引導式分析概述](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/guided-analysis/overview)
 - [funnel檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/funnel/funnel)
-- [趨勢檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/trends/usage)
-- [保留檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/guided-analysis/retention/retention-rates)
+- [趨勢檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/guided-analysis/trends/usage)
+- [保留檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/guided-analysis/retention/retention-rates)
 
 **[!DNL RT-CDP]B2B edition**
 
 - [RT-CDP B2B edition概述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#702702)
-- [B2B edition結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [B2B來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/sources/b2b)
+- [B2B edition結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b)
+- [B2B來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/sources/b2b)
 
 **AEP資料基礎**
 
-- [XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [Marketo Engage聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Identity Service總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [XDM系統概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)
+- [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)
+- [Marketo Engage聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
 - [沙箱概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)
 
 **資料控管和生命週期**
 
-- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
-- [進階資料生命週期管理](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
+- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
+- [進階資料生命週期管理](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)
 
 **教學課程與指南**
 
-- [結構描述組合基本面](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
-- [計算屬性概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
-- [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
+- [結構描述組合基本面](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition)
+- [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
+- [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)

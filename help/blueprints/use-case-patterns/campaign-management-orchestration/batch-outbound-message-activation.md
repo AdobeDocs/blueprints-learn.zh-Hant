@@ -104,7 +104,7 @@ ht-degree: 1%
 | 資料模型與準備 | 必填 | XDM個人設定檔結構描述具有用於細分和個人化的屬性（例如名稱、電子郵件、偏好設定、層級）。 擷取促銷活動後轉換追蹤之目標轉換動作（例如`commerce.purchases`、`web.webInteraction`）的XDM ExperienceEvent結構描述。 兩個結構描述已啟用設定檔的資料集。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
 | 資料來源與收集 | 已假設就位 | CTA目的地上的Web SDK或Analytics標籤必須作用中才能擷取轉換事件。 設定檔屬性的串流或批次擷取管道必須可運作。 | [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)，[來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
 | 身分和設定檔設定 | 已假設就位 | 已設定的電子郵件（以及任何跨裝置識別碼）身分名稱空間。 個人化所需的設定檔屬性，在傳送時會對應、擷取且可解析。 已設定合併原則。 | [身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
-| 對象定義與細分 | 必填 | 使用區段產生器或受眾構成來鎖定在RT-CDP中定義的受眾。 對象已發佈，並使用非零母體進行評估。 透過RT-CDP對象評估在實施階段1中涵蓋。 | [區段服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
+| 對象定義與細分 | 必填 | 使用區段產生器或受眾構成來鎖定在RT-CDP中定義的受眾。 對象已發佈，並使用非零母體進行評估。 透過RT-CDP對象評估在實施階段1中涵蓋。 | [區段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
 
 ## 支援功能
 
@@ -116,7 +116,7 @@ ht-degree: 1%
 | 資料生命週期管理 | 推薦 | 應針對推動轉換追蹤的事件資料集制定資料保留原則（有效期）。 必須為頻道層級的選擇加入/選擇退出強制執行設定同意結構描述欄位。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)，[同意和偏好設定欄位群組](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents) |
 | 資料使用標籤和實作 | 推薦 | 用於個人化的PII欄位上的治理標籤可確保啟用期間的合規性。 防止在訊息內容或受眾匯出未經授權即使用敏感設定檔資料。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
 | 監控與可觀察性 | 已包含 | 即時傳送監視屬於報告階段的一部分。 平台層級的擷取失敗警示或授權使用狀況，可提供行銷活動層級量度以外的運作可見度。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)，[警示概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview) |
-| 報告與分析 | 已包含 | 行銷活動和歷程報告包含在報告階段。 為了進行更深入的跨管道分析，CJA整合提供了funnel分析、歸因模型和同類群組分析，超出AJO內建的報表。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
+| 報告與分析 | 已包含 | 行銷活動和歷程報告包含在報告階段。 為了進行更深入的跨管道分析，CJA整合提供了funnel分析、歸因模型和同類群組分析，超出AJO內建的報表。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
 ## 應用程式函式
 
@@ -233,7 +233,7 @@ ht-degree: 1%
 **Experience League：**
 
 - [開始使用歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey)
-- [讀取對象歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [讀取對象歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
 
 ### 選項C：API觸發的行銷活動
 
@@ -373,9 +373,9 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 
 #### Experience League檔案
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
 - [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
 - [對象構成](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
 - [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
@@ -590,7 +590,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 - [開始使用行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
 - [API觸發的行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-campaigns)
 - [開始使用歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey)
-- [讀取對象歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [讀取對象歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
 - [開始使用內容實驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
 - [建立內容實驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/create-content-experiment)
 - [頻率規則](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
@@ -646,7 +646,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 - [歷程全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [內容實驗報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment-report)
 - [使用Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 
 ## 實施考量
 
@@ -746,7 +746,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 ### 歷程
 
 - [開始使用歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey)
-- [讀取對象歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [讀取對象歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
 
 ### 管道設定
 
@@ -796,9 +796,9 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 
 ### 對象和細分
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
 - [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
 - [邊緣分段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
 - [對象構成](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
 - [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
@@ -810,7 +810,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 - [歷程即時報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [歷程全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [使用Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 
 ### 資料控管和同意
 
