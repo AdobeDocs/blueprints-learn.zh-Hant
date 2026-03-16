@@ -100,9 +100,9 @@ ht-degree: 1%
 
 在此使用案例模式中使用以下應用程式。
 
-- **[!DNL Adobe Journey Optimizer](AJO)** — Web頻道介面設定、內容製作（網頁和程式碼型體驗）、行銷活動執行、內容實驗（A/B測試）、決策（動態內容選擇）和報告
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — 根據工作階段中行為訊號進行即時對象評估的Edge細分；匿名邊緣設定檔管理
-- **[!DNL Adobe Experience Platform](AEP)** — [!DNL Web SDK]用於行為訊號收集，[!DNL Edge Network]用於即時資料路由和個人化傳遞，資料流設定
+- **[!DNL Adobe Journey Optimizer] (AJO)** — Web頻道介面設定、內容製作（網頁和程式碼型體驗）、行銷活動執行、內容實驗（A/B測試）、決策（動態內容選擇）和報告
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 根據工作階段中行為訊號進行即時對象評估的Edge細分；匿名邊緣設定檔管理
+- **[!DNL Adobe Experience Platform] (AEP)** — [!DNL Web SDK]用於行為訊號收集，[!DNL Edge Network]用於即時資料路由和個人化傳遞，資料流設定
 
 ## 基礎函式
 

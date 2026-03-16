@@ -84,9 +84,9 @@ Offer Decisioning可透過在AJO的決策管理引擎中集中所有優惠方案
 
 在此使用案例模式中使用以下Adobe應用程式。
 
-- **[!DNL Adobe Journey Optimizer](AJO)** — 優惠方案建立、適用性規則、排名策略、位置和決定政策的決定管理引擎；優惠方案傳遞的頻道設定和訊息編寫；行銷活動和歷程執行
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — 優惠方案適用性區段的對象評估；適用性和排名中使用的設定檔資料和計算屬性
-- **[!DNL Adobe Experience Platform](AEP)** — 支援AJO和RT-CDP的統一設定檔存放區、身分解析和資料基礎
+- **[!DNL Adobe Journey Optimizer] (AJO)** — 優惠方案建立、適用性規則、排名策略、位置和決定政策的決定管理引擎；優惠方案傳遞的頻道設定和訊息編寫；行銷活動和歷程執行
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 優惠方案適用性區段的對象評估；適用性和排名中使用的設定檔資料和計算屬性
+- **[!DNL Adobe Experience Platform] (AEP)** — 支援AJO和RT-CDP的統一設定檔存放區、身分解析和資料基礎
 
 ## 基礎函式
 

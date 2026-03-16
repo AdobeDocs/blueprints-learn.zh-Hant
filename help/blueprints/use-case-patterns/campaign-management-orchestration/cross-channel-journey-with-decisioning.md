@@ -91,10 +91,10 @@ ht-degree: 2%
 
 以下應用程式可用來實作此使用案例模式。
 
-- **[!DNL Adobe Journey Optimizer]([!DNL AJO])** — 歷程協調（多步驟畫布設計、進入條件、等待、條件、退出條件）、跨管道的訊息編寫、管道表面設定、衝突和優先順序管理
+- **[!DNL Adobe Journey Optimizer] ([!DNL AJO])** — 歷程協調（多步驟畫布設計、進入條件、等待、條件、退出條件）、跨管道的訊息編寫、管道表面設定、衝突和優先順序管理
 - **[!DNL Adobe Journey Optimizer]決策** — 優惠和內容專案管理、適用性規則、排名策略（優先順序、公式、AI）、決定原則、位置、遞補優惠
-- **[!DNL Adobe Real-Time Customer Data Platform]([!DNL RT-CDP])** — 歷程專案與優惠方案適用性區段的對象評估、使用運算屬性和傾向分數擴充設定檔、同意和治理強制執行
-- **[!DNL Adobe Experience Platform]([!DNL AEP])** — 即時客戶設定檔存放區、跨管道解析的身分服務、資料模型及擷取基礎結構
+- **[!DNL Adobe Real-Time Customer Data Platform] ([!DNL RT-CDP])** — 歷程專案與優惠方案適用性區段的對象評估、使用運算屬性和傾向分數擴充設定檔、同意和治理強制執行
+- **[!DNL Adobe Experience Platform] ([!DNL AEP])** — 即時客戶設定檔存放區、跨管道解析的身分服務、資料模型及擷取基礎結構
 
 ## 基礎函式
 

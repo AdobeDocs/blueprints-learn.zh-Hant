@@ -80,7 +80,7 @@ ht-degree: 0%
 
 在此使用案例模式中使用以下應用程式。
 
-- **[!DNL Adobe Experience Platform](Edge Network)** — 透過已設定的資料串流，從Web SDK、Mobile SDK或伺服器API接收及路由即時事件資料
+- **[!DNL Adobe Experience Platform] (Edge Network)** — 透過已設定的資料串流，從Web SDK、Mobile SDK或伺服器API接收及路由即時事件資料
 - **[!DNL Adobe Experience Platform]（事件轉送）** — 提供伺服器端規則引擎，用於評估、篩選、轉換事件資料並將資料轉送至外部目的地
 - **[!DNL Adobe Experience Platform]（標籤/資料集合）** — 管理事件轉送屬性生命週期、擴充功能、規則和發佈工作流程
 

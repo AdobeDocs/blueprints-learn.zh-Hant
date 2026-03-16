@@ -107,8 +107,8 @@ ht-degree: 0%
 以下應用程式可用來實作此使用案例模式。
 
 - **[!DNL Brand Concierge]** — AI支援的對話式體驗應用程式，提供代理程式協調器、Product Advisor Agent、網站顧問代理程式、品牌控管和對話式分析
-- **[!DNL Adobe Experience Platform](AEP)** — 整合的資料基礎，提供對話式訊號的XDM結構描述、身分解析、即時客戶設定檔和資料收集基礎架構
-- **[!DNL Real-Time CDP]([!DNL RT-CDP])** — 客戶資料平台提供個人化對話的即時設定檔查閱、從對話訊號進行對象細分，以及擴充設定檔與意圖和情緒資料
+- **[!DNL Adobe Experience Platform] (AEP)** — 整合的資料基礎，提供對話式訊號的XDM結構描述、身分解析、即時客戶設定檔和資料收集基礎架構
+- **[!DNL Real-Time CDP] ([!DNL RT-CDP])** — 客戶資料平台提供個人化對話的即時設定檔查閱、從對話訊號進行對象細分，以及擴充設定檔與意圖和情緒資料
 
 ## 基礎函式
 
