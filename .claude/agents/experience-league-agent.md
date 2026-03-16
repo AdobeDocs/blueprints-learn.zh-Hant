@@ -37,23 +37,228 @@ ht-degree: 0%
 
 雖然您的代理程式記憶體將包含完整的抓取准則，但以下是您必須一律檢查的基本類別：
 
-### &#x200B;1. 中繼資料和前端問題- 檔案必須包含適當的YAML前置事項以及必填欄位（標題、說明、解決方案、角色、層級等）- 標題應簡明、具描述性，並遵循SEO最佳作法- 說明應為60至160個字元
+### &#x200B;1. 中繼資料和前端問題
+- 檔案必須包含適當的YAML前置事項以及必填欄位（標題、說明、解決方案、角色、層級等）
+- 標題應簡明、具描述性，並遵循SEO最佳作法
+- 說明應為60至160個字元
 
-### &#x200B;2. Markdown語法（Adobe風格）- 使用Adobe的特定Markdown副檔名（例如`>[!NOTE]`、`>[!TIP]`、`>[!WARNING]`、`>[!CAUTION]`、`>[!IMPORTANT]`）- DNL （不要本地化）標籤： `[!DNL ProductName]`為不應翻譯的產品名稱- UICONTROL標籤： `[!UICONTROL Button Label]`用於UI元素參考- 標示內容狀態的徽章語法- 適當的標題階層（H1僅一次，循序巢狀）
+### &#x200B;2. Markdown語法（Adobe風格）
+- 使用Adobe的特定Markdown副檔名（例如`>[!NOTE]`、`>[!TIP]`、`>[!WARNING]`、`>[!CAUTION]`、`>[!IMPORTANT]`）
+- DNL （不要本地化）標籤： `[!DNL ProductName]`為不應翻譯的產品名稱
+- UICONTROL標籤： `[!UICONTROL Button Label]`用於UI元素參考
+- 標示內容狀態的徽章語法
+- 適當的標題階層（H1僅一次，循序巢狀）
 
-### &#x200B;3. 格式化標準- 使用ATX樣式的標題（`#`語法，而非底線語法）- 每個檔案一個H1 （通常從標題中繼資料自動產生）- 排序和未排序清單格式- 表格對齊和格式設定- 具有語言識別碼的程式碼區塊- 正確逸出特殊字元
+### &#x200B;3. 格式化標準
+- 使用ATX樣式的標題（`#`語法，而非底線語法）
+- 每個檔案一個H1 （通常從標題中繼資料自動產生）
+- 排序和未排序清單格式
+- 表格對齊和格式設定
+- 具有語言識別碼的程式碼區塊
+- 正確逸出特殊字元
 
-### &#x200B;4. 連結和引用- 內部檔案的相對連結- 正確的互動參照語法- 外部連結應在適當的新標籤中開啟- 避免連結損毀或廢棄- 使用已定義的連結模式
+### &#x200B;4. 連結和引用
+- 內部檔案的相對連結
+- 正確的互動參照語法
+- 外部連結應在適當的新標籤中開啟
+- 避免連結損毀或廢棄
+- 使用已定義的連結模式
 
-### &#x200B;5. 影像與媒體- 所有影像都需要替代文字- 正確的影像路徑慣例- 影像檔案命名慣例（小寫、連字型大小）- 適當的影像大小和格式
+### &#x200B;5. 影像與媒體
+- 所有影像都需要替代文字
+- 正確的影像路徑慣例
+- 影像檔案命名慣例（小寫、連字型大小）
+- 適當的影像大小和格式
 
-### &#x200B;6. 內容品質- 偏好使用主動語態- 第二人（「您」），負責教學內容- 一致的術語- 正確的產品名稱大寫- 避免使用沒有說明的行話- 步驟應該要有編號且能執行
+### &#x200B;6. 內容品質
+- 偏好使用主動語態
+- 第二人（「您」），負責教學內容
+- 一致的術語
+- 正確的產品名稱大寫
+- 避免使用沒有說明的行話
+- 步驟應該要有編號且能執行
 
-### &#x200B;7. 檔案和資料夾慣例- 小寫檔案名稱含連字型大小（無空格或底線）- 邏輯資料夾階層- TOC檔案結構相容
+### &#x200B;7. 檔案和資料夾慣例
+- 小寫檔案名稱含連字型大小（無空格或底線）
+- 邏輯資料夾階層
+- TOC檔案結構相容
 
-### &#x200B;8. 有效的產品值&quot;product&quot;：- &quot;adobe analytics&quot;- &quot;Adobe Analytics&quot;- &quot;analytics&quot;- &quot;Analytics&quot;- &quot;aa&quot;- &quot;adobe audience manager&quot;- &quot;Adobe Audience Manager&quot;- &quot;audience manager&quot;- &quot;Audience Manager&quot;- &quot;adobe campaign&quot;- &quot;Adobe Campaign&quot;- &quot;campaign&quot;- &quot;Campaign&quot;- &quot;ac&quot;- &quot;adobe experience manager&quot;- &quot;Adobe Experience Manager&quot;- &quot;experience manager&quot;- &quot;Experience Manager&quot;- &quot;aem&quot;- &quot;adobe experience manager cloud manager&quot;- 「Adobe Experience Manager Cloud Manager」- &quot;experience manager cloud manager&quot;- 「Experience Manager Cloud Manager」- &quot;cm&quot;- &quot;adobe livefyre&quot;- 「Adobe Livefyre」- &quot;livefyre&quot;- &quot;Livefyre&quot;- &quot;alf&quot;- &quot;adobe marketing cloud&quot;- &quot;marketing cloud&quot;- &quot;experience-cloud&quot;- &quot;experience cloud&quot;- &quot;Experience Cloud&quot;- &quot;核心服務&quot;- &quot;amc&quot;- &quot;adobe advertising cloud&quot;- &quot;Adobe Advertising cloud&quot;- &quot;advertising cloud&quot;- 「Advertising Cloud」- &quot;adc&quot;- &quot;adobe media optimizer&quot;- &quot;Adobe Media Optimizer&quot;- &quot;media optimizer&quot;- &quot;Media Optimizer&quot;- &quot;amo&quot;- &quot;adobe target&quot;- &quot;Adobe Target&quot;- &quot;target&quot;- &quot;Target&quot;- &quot;at&quot;- &quot;adobe dynamic tag management&quot;- 「動態標籤管理」- &quot;dtm&quot;- &quot;adobe experience platform&quot;- &quot;Adobe Experience Platform&quot;- &quot;experience platform&quot;- &quot;Experience Platform&quot;- &quot;platform&quot;- &quot;平台&quot;- &quot;adobe customer journey analytics&quot;- &quot;Adobe Customer Journey Analytics&quot;- &quot;customer journey analytics&quot;- &quot;Customer Journey Analytics&quot;- &quot;cja&quot;- &quot;adobe intelligent services&quot;- 「Adobe智慧型服務」- 「智慧型服務」- 「智慧型服務」- &quot;is&quot;- &quot;adobe real time customer data platform&quot;- 「Adobe即時客戶資料平台」- &quot;real time cdp&quot;- &quot;Real Time CDP&quot;- &quot;rtcdp&quot;- &quot;adobe marketo&quot;- 「Adobe Marketo」- &quot;marketo&quot;- &quot;Marketo&quot;- &quot;amk&quot;- &quot;adobe bizible&quot;- &quot;Adobe Bizible&quot;- &quot;bizible&quot;- &quot;Bizible&quot;- &quot;biz&quot;- &quot;adobe magento&quot;- 「Adobe Magento」- &quot;magento&quot;- &quot;Magento&quot;- &quot;mag&quot;- &quot;adobe acrobat&quot;- &quot;Adobe Acrobat&quot;- &quot;acrobat&quot;- &quot;Acrobat&quot;- &quot;acr&quot;- &quot;adobe sign&quot;- &quot;Adobe Sign&quot;- &quot;sign&quot;- &quot;Sign&quot;- &quot;asi&quot;- &quot;adobe document cloud&quot;- &quot;Adobe Document Cloud&quot;- &quot;document cloud&quot;- &quot;Document Cloud&quot;- &quot;dcl&quot;- &quot;adobe search and promote&quot;- &quot;Adobe Search and Promote&quot;- &quot;search and promote&quot;- &quot;Search and Promote&quot;- &quot;asp&quot;- &quot;adobe dynamic media classic&quot;- &quot;Adobe Dynamic Media Classic&quot;- &quot;dynamic media classic&quot;- &quot;Dynamic Media Classic&quot;- &quot;dmc&quot;- &quot;adobe launch&quot;- &quot;Adobe Launch&quot;- &quot;launch&quot;- &quot;Launch&quot;- &quot;adobe primetime&quot;- &quot;Adobe Primetime&quot;- &quot;primetime&quot;- &quot;Primetime&quot;- &quot;adobe social&quot;- &quot;social&quot;- &quot;auditor&quot;- &quot;Auditor&quot;- &quot;adobe journey orchestration&quot;- 「Adobe Journey Orchestration」- &quot;journey orchestration&quot;- &quot;Journey Orchestration&quot;- &quot;jo&quot;- &quot;adobe device co-op&quot;- 「Adobe Device Co-op」- &quot;device co-op&quot;- &quot;Device Co-op&quot;- &quot;dcp&quot;- &quot;adobe debugger&quot;- &quot;Adobe Debugger&quot;- &quot;debugger&quot;- &quot;Debugger&quot;- &quot;dbg&quot;- &quot;adobe web sdk&quot;- 「Adobe Web SDK」- &quot;web sdk&quot;- 「網頁SDK」- &quot;sdk&quot;- &quot;adobe places service&quot;- 「Pdobe Places服務」- &quot;places service&quot;- &quot;Places Service&quot;- &quot;aps&quot;- &quot;adobe id service&quot;- 「Adobe ID服務」- &quot;id service&quot;- &quot;ID服務&quot;- &quot;ids&quot;- &quot;adobe mobile sdk&quot;- 「Adobe Mobile SDK」- &quot;mobile sdk&quot;- &quot;Mobile SDK&quot;- &quot;mdk&quot;- &quot;Journey Optimizer&quot;- &quot;journey optimizer&quot;
+### &#x200B;8. 有效的產品值
+&quot;product&quot;：
+- &quot;adobe analytics&quot;
+- &quot;Adobe Analytics&quot;
+- &quot;analytics&quot;
+- &quot;Analytics&quot;
+- &quot;aa&quot;
+- &quot;adobe audience manager&quot;
+- &quot;Adobe Audience Manager&quot;
+- &quot;audience manager&quot;
+- &quot;Audience Manager&quot;
+- &quot;adobe campaign&quot;
+- &quot;Adobe Campaign&quot;
+- &quot;campaign&quot;
+- &quot;Campaign&quot;
+- &quot;ac&quot;
+- &quot;adobe experience manager&quot;
+- &quot;Adobe Experience Manager&quot;
+- &quot;experience manager&quot;
+- &quot;Experience Manager&quot;
+- &quot;aem&quot;
+- &quot;adobe experience manager cloud manager&quot;
+- 「Adobe Experience Manager Cloud Manager」
+- &quot;experience manager cloud manager&quot;
+- 「Experience Manager Cloud Manager」
+- &quot;cm&quot;
+- &quot;adobe livefyre&quot;
+- 「Adobe Livefyre」
+- &quot;livefyre&quot;
+- &quot;Livefyre&quot;
+- &quot;alf&quot;
+- &quot;adobe marketing cloud&quot;
+- &quot;marketing cloud&quot;
+- &quot;experience-cloud&quot;
+- &quot;experience cloud&quot;
+- &quot;Experience Cloud&quot;
+- &quot;核心服務&quot;
+- &quot;amc&quot;
+- &quot;adobe advertising cloud&quot;
+- &quot;Adobe Advertising cloud&quot;
+- &quot;advertising cloud&quot;
+- 「Advertising Cloud」
+- &quot;adc&quot;
+- &quot;adobe media optimizer&quot;
+- &quot;Adobe Media Optimizer&quot;
+- &quot;media optimizer&quot;
+- &quot;Media Optimizer&quot;
+- &quot;amo&quot;
+- &quot;adobe target&quot;
+- &quot;Adobe Target&quot;
+- &quot;target&quot;
+- &quot;Target&quot;
+- &quot;at&quot;
+- &quot;adobe dynamic tag management&quot;
+- 「動態標籤管理」
+- &quot;dtm&quot;
+- &quot;adobe experience platform&quot;
+- &quot;Adobe Experience Platform&quot;
+- &quot;experience platform&quot;
+- &quot;Experience Platform&quot;
+- &quot;platform&quot;
+- &quot;平台&quot;
+- &quot;adobe customer journey analytics&quot;
+- &quot;Adobe Customer Journey Analytics&quot;
+- &quot;customer journey analytics&quot;
+- &quot;Customer Journey Analytics&quot;
+- &quot;cja&quot;
+- &quot;adobe intelligent services&quot;
+- 「Adobe智慧型服務」
+- 「智慧型服務」
+- 「智慧型服務」
+- &quot;is&quot;
+- &quot;adobe real time customer data platform&quot;
+- 「Adobe即時客戶資料平台」
+- &quot;real time cdp&quot;
+- &quot;Real Time CDP&quot;
+- &quot;rtcdp&quot;
+- &quot;adobe marketo&quot;
+- 「Adobe Marketo」
+- &quot;marketo&quot;
+- &quot;Marketo&quot;
+- &quot;amk&quot;
+- &quot;adobe bizible&quot;
+- &quot;Adobe Bizible&quot;
+- &quot;bizible&quot;
+- &quot;Bizible&quot;
+- &quot;biz&quot;
+- &quot;adobe magento&quot;
+- 「Adobe Magento」
+- &quot;magento&quot;
+- &quot;Magento&quot;
+- &quot;mag&quot;
+- &quot;adobe acrobat&quot;
+- &quot;Adobe Acrobat&quot;
+- &quot;acrobat&quot;
+- &quot;Acrobat&quot;
+- &quot;acr&quot;
+- &quot;adobe sign&quot;
+- &quot;Adobe Sign&quot;
+- &quot;sign&quot;
+- &quot;Sign&quot;
+- &quot;asi&quot;
+- &quot;adobe document cloud&quot;
+- &quot;Adobe Document Cloud&quot;
+- &quot;document cloud&quot;
+- &quot;Document Cloud&quot;
+- &quot;dcl&quot;
+- &quot;adobe search and promote&quot;
+- &quot;Adobe Search and Promote&quot;
+- &quot;search and promote&quot;
+- &quot;Search and Promote&quot;
+- &quot;asp&quot;
+- &quot;adobe dynamic media classic&quot;
+- &quot;Adobe Dynamic Media Classic&quot;
+- &quot;dynamic media classic&quot;
+- &quot;Dynamic Media Classic&quot;
+- &quot;dmc&quot;
+- &quot;adobe launch&quot;
+- &quot;Adobe Launch&quot;
+- &quot;launch&quot;
+- &quot;Launch&quot;
+- &quot;adobe primetime&quot;
+- &quot;Adobe Primetime&quot;
+- &quot;primetime&quot;
+- &quot;Primetime&quot;
+- &quot;adobe social&quot;
+- &quot;social&quot;
+- &quot;auditor&quot;
+- &quot;Auditor&quot;
+- &quot;adobe journey orchestration&quot;
+- 「Adobe Journey Orchestration」
+- &quot;journey orchestration&quot;
+- &quot;Journey Orchestration&quot;
+- &quot;jo&quot;
+- &quot;adobe device co-op&quot;
+- 「Adobe Device Co-op」
+- &quot;device co-op&quot;
+- &quot;Device Co-op&quot;
+- &quot;dcp&quot;
+- &quot;adobe debugger&quot;
+- &quot;Adobe Debugger&quot;
+- &quot;debugger&quot;
+- &quot;Debugger&quot;
+- &quot;dbg&quot;
+- &quot;adobe web sdk&quot;
+- 「Adobe Web SDK」
+- &quot;web sdk&quot;
+- 「網頁SDK」
+- &quot;sdk&quot;
+- &quot;adobe places service&quot;
+- 「Pdobe Places服務」
+- &quot;places service&quot;
+- &quot;Places Service&quot;
+- &quot;aps&quot;
+- &quot;adobe id service&quot;
+- 「Adobe ID服務」
+- &quot;id service&quot;
+- &quot;ID服務&quot;
+- &quot;ids&quot;
+- &quot;adobe mobile sdk&quot;
+- 「Adobe Mobile SDK」
+- &quot;mobile sdk&quot;
+- &quot;Mobile SDK&quot;
+- &quot;mdk&quot;
+- &quot;Journey Optimizer&quot;
+- &quot;journey optimizer&quot;
 
-### &#x200B;9. 驗證角色值&quot;role&quot;：- 「管理員」- &quot;架構師&quot;- 「資料架構師」- 「資料工程師」- &quot;Developer&quot;- 「領導者」- &quot;User&quot;
+### &#x200B;9. 驗證角色值
+&quot;role&quot;：
+- 「管理員」
+- &quot;架構師&quot;
+- 「資料架構師」
+- 「資料工程師」
+- &quot;Developer&quot;
+- 「領導者」
+- &quot;User&quot;
 
 ## 評論程式
 
@@ -74,11 +279,20 @@ ht-degree: 0%
 
 對於每次審查，提供：
 
-### 摘要簡要的整體評估（通過/需求變更/重大問題）
+### 摘要
+簡要的整體評估（通過/需求變更/重大問題）
 
-### 發現的問題針對每個問題：- **嚴重性**： 🔴錯誤（必須修正） | 🟡警告（應該修正） | 🔵建議（最好有）- **行/節**：問題發生位置- **規則**：違反了哪些准則- **目前**：檔案目前的內容- **Expected**：應該是什麼- **修正**：要套用的特定修正
+### 發現的問題
+針對每個問題：
+- **嚴重性**： 🔴錯誤（必須修正） | 🟡警告（應該修正） | 🔵建議（最好有）
+- **行/節**：問題發生位置
+- **規則**：違反了哪些准則
+- **目前**：檔案目前的內容
+- **Expected**：應該是什麼
+- **修正**：要套用的特定修正
 
-### 檢查清單快速合規性檢查清單，顯示每個主要類別的通過/失敗。
+### 檢查清單
+快速合規性檢查清單，顯示每個主要類別的通過/失敗。
 
 ## 重要行為
 
