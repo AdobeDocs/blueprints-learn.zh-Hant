@@ -102,9 +102,9 @@ ht-degree: 2%
 
 | 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 已假設就位 | [!DNL AJO]沙箱，已設定歷程、行銷活動和決策許可權。 所有可能傳遞頻道的頻道介面。 歷程設計者、決策管理員和內容作者的使用者角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 必填 | 設定檔結構描述必須包括用於決策的屬性（例如，忠誠度等級、購買歷史記錄、管道偏好設定、參與分數）。 必須設定優惠目錄和決定專案結構描述。 ExperienceEvent結構描述必須擷取適用性規則和排名公式所使用的行為訊號。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
-| 資料來源與收集 | 已假設就位 | 決策所使用的設定檔屬性和行為訊號必須是最新的。 如果歷程使用事件觸發的進入或退出條件，則需要即時事件串流。 網頁SDK、行動SDK或伺服器端集合必須適用於提供決策內容的管道。 | [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)，[來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
+| 管理與治理 | 已假設就位 | [!DNL AJO]沙箱，已設定歷程、行銷活動和決策許可權。 所有可能傳遞頻道的頻道介面。 歷程設計者、決策管理員和內容作者的使用者角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
+| 資料模型與準備 | 必填 | 設定檔結構描述必須包括用於決策的屬性（例如，忠誠度等級、購買歷史記錄、管道偏好設定、參與分數）。 必須設定優惠目錄和決定專案結構描述。 ExperienceEvent結構描述必須擷取適用性規則和排名公式所使用的行為訊號。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
+| 資料來源與收集 | 已假設就位 | 決策所使用的設定檔屬性和行為訊號必須是最新的。 如果歷程使用事件觸發的進入或退出條件，則需要即時事件串流。 網頁SDK、行動SDK或伺服器端集合必須適用於提供決策內容的管道。 | [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)，[來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home) |
 | 身分和設定檔設定 | 必填 | 跨頻道身分解析至關重要 — 歷程必須跨電子郵件、推播、簡訊和網頁解析設定檔。 合併原則必須產生用於決策的統一設定檔。 必須設定所有客戶識別碼（CRM ID、電子郵件、ECID、電話）的識別名稱空間。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview) |
 | 對象定義與細分 | 必填 | 歷程的進入對象定義。 歷程中用於優惠方案適用性規則和條件分支的其他區段。 評估方法必須符合延遲要求（即時輸入的串流，排程的批次）。 | [區段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder) |
 
@@ -115,9 +115,9 @@ ht-degree: 2%
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
 | 計算/衍生屬性建立 | 推薦 | Customer AI傾向分數、參與分數、管道偏好分數和期限值計算等計算屬性可大幅改善決策品質。 這些豐富的設定檔屬性可啟用更複雜的適用性規則和排名公式。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)，[Customer AI總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/intelligent-services/customer-ai/overview) |
-| 資料生命週期管理 | 推薦 | 優惠歷史記錄和決定事件資料會隨著時間累積，應該有保留原則。 跨多個管道的同意實作是很重要的 — 未經該管道有效同意的設定檔必須從該管道的傳送路徑中排除。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)，[Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
-| 資料使用標籤和實作 | 推薦 | 當決策可能將設定檔路由到具有不同資料使用限制的不同管道時，跨多個管道和選件型別的治理實作很重要。 確保跨所有管道提供符合規定的優惠方案。 | [資料治理總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[原則執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) |
-| 監控與可觀察性 | 已包含 | 歷程與決策監視對於生產作業至關重要。 歷程進入失敗、決策後援尖峰和傳送錯誤的警報可讓您快速解決問題。 | [警示概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)，[可觀察性深入分析概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| 資料生命週期管理 | 推薦 | 優惠歷史記錄和決定事件資料會隨著時間累積，應該有保留原則。 跨多個管道的同意實作是很重要的 — 未經該管道有效同意的設定檔必須從該管道的傳送路徑中排除。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)，[Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
+| 資料使用標籤和實作 | 推薦 | 當決策可能將設定檔路由到具有不同資料使用限制的不同管道時，跨多個管道和選件型別的治理實作很重要。 確保跨所有管道提供符合規定的優惠方案。 | [資料治理總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/overview) |
+| 監控與可觀察性 | 已包含 | 歷程與決策監視對於生產作業至關重要。 歷程進入失敗、決策後援尖峰和傳送錯誤的警報可讓您快速解決問題。 | [警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)，[可觀察性深入分析概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
 | 報告與分析 | 已包含 | 報告階段涵蓋歷程和決定報告。 CJA針對決策成效、管道組合最佳化、優惠效能和歷程ROI的分析，提供完善排名策略及最佳化一段時間之歷程所需的深入分析。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
 ## 應用程式函式
@@ -528,8 +528,8 @@ ht-degree: 2%
 - [在訊息中傳遞優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
 - [使用內容範本](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [使用內容片段](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
-- [建立簡訊訊息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/create-sms)
-- [設計推播通知](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/design-push)
+- [建立簡訊訊息](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/sms/create-sms)
+- [設計推播通知](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/push/design-push)
 
 ### 階段5：歷程設計與啟動
 
