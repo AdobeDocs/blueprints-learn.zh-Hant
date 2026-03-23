@@ -157,7 +157,7 @@ ht-degree: 100%
 
 5. **Frontmatter完整性** — 模式檔的YAML frontmatter中包含標題、說明、解決方案和exl-id。
 
-6. **Experience League連結** — 抽查任何Experience League URL是否可行（從`https://experienceleague.adobe.com/`開始）。
+6. **Experience League連結** — 抽查任何Experience League URL是否可行（從`https://experienceleague.adobe.com/zh-hant`開始）。
 
 向使用者報告任何驗證失敗，並在考慮任務完成之前修正它們。
 
