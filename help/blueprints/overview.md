@@ -3,7 +3,7 @@ title: 客戶體驗協調使用案例、架構圖表和藍圖
 description: 探索Adobe Experience Platform和應用程式的主要業務目標、使用案例模式及產業使用案例。 視覺化架構圖表和藍圖提供系統整合、資料流程和解決方案設計的技術參考，將業務價值連結至實作。
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 62c69ab5ba773172b5b3b55a6c3766c58331135c
+source-git-commit: 63154ca158b773287f0d1a7f88a81ac3181c43a0
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 2%
@@ -74,7 +74,7 @@ ht-degree: 2%
 </tr>
 </table>
 
-[檢視所有產業使用案例](industry-use-cases/overview.md)
+[檢視所有產業使用案例](industry-use-cases/use-case-catalog.md)
 
 ## 架構圖表和藍圖
 
