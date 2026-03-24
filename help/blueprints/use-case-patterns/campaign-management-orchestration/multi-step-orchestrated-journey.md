@@ -126,8 +126,8 @@ ht-degree: 1%
 | 計算/衍生屬性建立 | 推薦 | 參與分數、上次活動後間隔天數或期限購買值等運算屬性可改善條件分支邏輯，進而實現更智慧型的歷程路徑決策。 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
 | 資料生命週期管理 | 推薦 | 歷程事件資料保留應設定資料集到期原則，以管理儲存並遵守資料保留法規。 同意實作可確保只有選擇加入的設定檔會在每個頻道接觸點接收訊息。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)，[資料集有效期](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/ui/dataset-expiration) |
 | 資料使用標籤和實作 | 推薦 | 治理標籤可確保跨多個訊息接觸點實現合規的個人化，尤其是當歷程使用PII或敏感資料跨頻道進行個人化時，這點尤為重要。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
-| 監控與可觀察性 | 已包含 | 歷程執行監控有關處理失敗、設定檔專案瓶頸和傳送問題的警報。 對於延遲或失敗會影響客戶體驗的生產歷程至關重要。 | [警示概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)，[可觀察性深入分析概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
-| 報告與分析 | 已包含 | CJA funnel和整個歷程的流失分析提供比單獨的AJO原生報表更深入的insight。 啟用逐步轉換分析、同類群組比較和歷程最佳化。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)，[Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home) |
+| 監控與可觀察性 | 已包含 | 歷程執行監控有關處理失敗、設定檔專案瓶頸和傳送問題的警報。 對於延遲或失敗會影響客戶體驗的生產歷程至關重要。 | [警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)，[可觀察性深入分析概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| 報告與分析 | 已包含 | CJA funnel和整個歷程的流失分析提供比單獨的AJO原生報表更深入的insight。 啟用逐步轉換分析、同類群組比較和歷程最佳化。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home) |
 
 ## 應用程式函式
 
@@ -241,7 +241,7 @@ ht-degree: 1%
 **Experience League：**
 
 - [一般事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
-- [對象資格鑑定事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
+- [對象資格鑑定事件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
 
 ### 選項C：多通道協調歷程
 
@@ -562,7 +562,7 @@ ht-degree: 1%
 - [歷程屬性](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
 - [讀取對象活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
 - [一般事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
-- [對象資格鑑定事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
+- [對象資格鑑定事件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
 - [在歷程中新增訊息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [條件活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
 - [等待活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
@@ -685,7 +685,7 @@ ht-degree: 1%
 - [歷程即時報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [歷程全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [使用Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [警報概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
 - [Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
 - [AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 
@@ -783,7 +783,7 @@ ht-degree: 1%
 
 - [讀取對象活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
 - [一般事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
-- [對象資格鑑定事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
+- [對象資格鑑定事件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
 - [條件活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
 - [等待活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
 - [在歷程中新增訊息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
@@ -849,7 +849,7 @@ ht-degree: 1%
 - [使用Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
 - [AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 - [Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
-- [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
 
 ### 同意與治理
 

@@ -90,9 +90,9 @@ ht-degree: 0%
 
 | 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 必填 | 沙箱必須在作用中並設定適當的使用者角色和許可權。 管理事件轉送的使用者需要[!DNL Adobe Admin Console]中的資料收集許可權，包括管理事件轉送屬性、擴充功能和規則的許可權。 | [存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 必填 | 必須為流經Edge Network的事件資料定義XDM結構描述。 資料流必須參考有效的XDM ExperienceEvent結構描述，才能讓事件轉送規則存取結構化欄位，以進行篩選、轉換和對應。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) |
-| 資料來源與收集 | 必填 | 資料收集機制必須是作用中的 — Web SDK、Mobile SDK或Edge Network Server API — 透過已設定的資料流傳送事件。 資料串流是連線使用者端集合與伺服器端事件轉送的基本路由層。 | [設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) |
+| 管理與治理 | 必填 | 沙箱必須在作用中並設定適當的使用者角色和許可權。 管理事件轉送的使用者需要[!DNL Adobe Admin Console]中的資料收集許可權，包括管理事件轉送屬性、擴充功能和規則的許可權。 | [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
+| 資料模型與準備 | 必填 | 必須為流經Edge Network的事件資料定義XDM結構描述。 資料流必須參考有效的XDM ExperienceEvent結構描述，才能讓事件轉送規則存取結構化欄位，以進行篩選、轉換和對應。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home) |
+| 資料來源與收集 | 必填 | 資料收集機制必須是作用中的 — Web SDK、Mobile SDK或Edge Network Server API — 透過已設定的資料流傳送事件。 資料串流是連線使用者端集合與伺服器端事件轉送的基本路由層。 | [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure) |
 | 身分和設定檔設定 | 不適用 | 事件轉送會在身分解析或設定檔統一發生之前，對Edge Network層的原始事件資料進行操作。 除非轉送的事件也需要協助至Real-Time Customer Profile （這是獨立的資料流服務設定，而不是事件轉送問題），否則不需要身分名稱空間和合併原則。 | |
 | 對象定義與細分 | 不適用 | 事件轉送會即時處理個別事件，不會評估對象成員資格。 對象型篩選不屬於事件轉送功能鏈。 如需以對象為基礎的啟用，請參閱Audience Activation至目的地參考計畫。 | |
 
@@ -103,10 +103,10 @@ ht-degree: 0%
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
 | 計算/衍生屬性建立 | 不適用 | 事件轉送會操作原始事件資料，而非設定檔層級的運算屬性。 運算屬性在事件轉送內容中無法使用。 | |
-| 資料生命週期管理 | 推薦 | 如果事件資料也正在被擷取到AEP資料集（透過相同的資料流），則應為這些資料集設定資料保留原則（有效期），以管理儲存成本和法規遵循。 事件轉送本身不會儲存資料，但平行的AEP擷取路徑會儲存。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| 資料使用標籤和實作 | 推薦 | 雖然事件轉送規則提供欄位層級篩選（可讓您從轉送的有效負載中排除敏感資料），將資料使用標籤套用至基礎結構和資料集可確保當相同的資料用於對象啟用或個人化時，會強制執行治理原則。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
-| 監控與可觀察性 | 已包含 | 監視是事件轉送的必要條件。 「事件轉送監控」控制面板提供轉送成功率、錯誤率和目的地回應代碼的可見度。 應該針對目的地失敗設定警示。 | [事件轉送監視](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring) |
-| 報告與分析 | 推薦 | 如果轉送的事件摘要給協力廠商分析平台，請考慮將相同的AEP事件資料集連線至CJA，以取得統一的跨管道檢視。 如此可讓您比較Adobe端與協力廠商的分析。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| 資料生命週期管理 | 推薦 | 如果事件資料也正在被擷取到AEP資料集（透過相同的資料流），則應為這些資料集設定資料保留原則（有效期），以管理儲存成本和法規遵循。 事件轉送本身不會儲存資料，但平行的AEP擷取路徑會儲存。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
+| 資料使用標籤和實作 | 推薦 | 雖然事件轉送規則提供欄位層級篩選（可讓您從轉送的有效負載中排除敏感資料），將資料使用標籤套用至基礎結構和資料集可確保當相同的資料用於對象啟用或個人化時，會強制執行治理原則。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home) |
+| 監控與可觀察性 | 已包含 | 監視是事件轉送的必要條件。 「事件轉送監控」控制面板提供轉送成功率、錯誤率和目的地回應代碼的可見度。 應該針對目的地失敗設定警示。 | [事件轉送監視](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/monitoring) |
+| 報告與分析 | 推薦 | 如果轉送的事件摘要給協力廠商分析平台，請考慮將相同的AEP事件資料集連線至CJA，以取得統一的跨管道檢視。 如此可讓您比較Adobe端與協力廠商的分析。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## 應用程式函式
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 **主要考量事項：**
 
-- 擴充功能可用性不盡相同 — 在規劃前先檢查[資料收集擴充功能目錄](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
+- 擴充功能可用性不盡相同 — 在規劃前先檢查[資料收集擴充功能目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/overview)
 - 擴充功能由Adobe或合作夥伴進行維護；更新可能會帶來重大變更，需要調整規則
 - 有些擴充功能僅支援特定事件型別或需要特定XDM欄位對應
 - 擴充功能在其設定UI中處理驗證和認證管理
@@ -175,11 +175,11 @@ ht-degree: 0%
 
 **Experience League：**
 
-- [事件轉送擴充功能目錄](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
-- [Meta Conversions API擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
-- [Google Cloud Platform擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
-- [AWS擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/aws/overview)
-- [Snowflake擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/snowflake/overview)
+- [事件轉送擴充功能目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/overview)
+- [Meta Conversions API擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/meta/overview)
+- [Google Cloud Platform擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
+- [AWS擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/aws/overview)
+- [Snowflake擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/snowflake/overview)
 
 ### 選項B：自訂webhook （擷取API）事件轉送
 
@@ -218,8 +218,8 @@ ht-degree: 0%
 
 **Experience League：**
 
-- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
-- [事件轉送密碼](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
+- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [事件轉送密碼](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/secrets)
 
 ### 選項C：混合式（擴充功能+自訂Webhook）
 
@@ -253,8 +253,8 @@ ht-degree: 0%
 
 **Experience League：**
 
-- [事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
-- [事件轉送快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
+- [事件轉送概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview)
+- [事件轉送快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/getting-started)
 
 ### 選項比較
 
@@ -325,9 +325,9 @@ ht-degree: 0%
 
 **Experience League檔案：**
 
-- [設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
-- [資料串流概觀](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
+- [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
+- [資料串流概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)
+- [事件轉送概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview)
 
 ### 階段2：事件轉送屬性和擴充功能
 
@@ -372,10 +372,10 @@ ht-degree: 0%
 
 **Experience League檔案：**
 
-- [事件轉送快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
-- [事件轉送擴充功能目錄](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
-- [事件轉送密碼](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
-- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [事件轉送快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/getting-started)
+- [事件轉送擴充功能目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/overview)
+- [事件轉送密碼](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/secrets)
+- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
 
 ### 階段3：事件規則定義
 
@@ -448,10 +448,10 @@ ht-degree: 0%
 
 **Experience League檔案：**
 
-- [事件轉送規則](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
-- [事件轉送中的資料元素](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements)
-- [資料彙集中的規則](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules)
-- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [事件轉送規則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview)
+- [事件轉送中的資料元素](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/ui/data-elements)
+- [資料彙集中的規則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/ui/rules)
+- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
 
 ### 第4階段：發佈與啟用
 
@@ -484,10 +484,10 @@ ht-degree: 0%
 
 **Experience League檔案：**
 
-- [發佈概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
-- [資料庫](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/libraries)
+- [發佈概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/publish/overview)
+- [資料庫](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/publish/libraries)
 - [環境](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments)
-- [組建](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/builds)
+- [組建](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/publish/builds)
 
 ### 階段5：監控與驗證
 
@@ -521,9 +521,9 @@ ht-degree: 0%
 
 **Experience League檔案：**
 
-- [事件轉送監控](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring)
-- [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
-- [警報概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [事件轉送監控](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/monitoring)
+- [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/debugger/home)
+- [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
 
 ## 實施考量
 
@@ -605,26 +605,26 @@ ht-degree: 0%
 
 **事件轉送**
 
-- [事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
-- [事件轉送快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
-- [事件轉送監控](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring)
-- [事件轉送密碼](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
+- [事件轉送概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview)
+- [事件轉送快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/getting-started)
+- [事件轉送監控](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/monitoring)
+- [事件轉送密碼](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/secrets)
 
 **事件轉送延伸模組**
 
-- [伺服器端擴充功能目錄](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
-- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
-- [Meta Conversions API擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
-- [Google Cloud Platform擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
-- [AWS擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/aws/overview)
-- [Snowflake擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/snowflake/overview)
-- [Google Ads增強型轉換延伸功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-ads-enhanced-conversions/overview)
-- [Mailchimp擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/mailchimp/overview)
+- [伺服器端擴充功能目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/overview)
+- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [Meta Conversions API擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/meta/overview)
+- [Google Cloud Platform擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
+- [AWS擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/aws/overview)
+- [Snowflake擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/snowflake/overview)
+- [Google Ads增強型轉換延伸功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/google-ads-enhanced-conversions/overview)
+- [Mailchimp擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/mailchimp/overview)
 
 **資料收集和Edge Network**
 
-- [設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
-- [資料串流概觀](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
-- [標籤總覽](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+- [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
+- [資料串流概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)
+- [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
+- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge-network-server-api/overview)
+- [標籤總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)

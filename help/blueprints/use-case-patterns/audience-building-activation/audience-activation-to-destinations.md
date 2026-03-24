@@ -96,11 +96,11 @@ ht-degree: 1%
 
 | 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 已假設就位 | RT-CDP沙箱已布建並啟用。 指派給實作角色的目的地管理和啟用許可權。 目標平台可用的目的地帳戶認證。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 必填 | 設定檔結構描述必須包含將對應至目的地欄位的屬性（例如電子郵件、電話、雜湊識別碼、人口統計屬性）。 結構描述必須已啟用設定檔，且資料集正在接收資料。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
-| 資料來源與收集 | 已假設就位 | 支援對象評估的設定檔資料必須擷取且為最新狀態。 批次和/或串流擷取管道可正常運作。 網頁SDK、來源聯結器或批次擷取，將資料傳送到已啟用設定檔的資料集。 | [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)，[網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) |
-| 身分和設定檔設定 | 必填 | 必須設定目的地比對的身分名稱空間（例如Facebook自訂對象、Google Ads客戶比對的雜湊電子郵件）。 合併原則必須產生具有啟動所需所有屬性的統一設定檔。 | [身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
-| 對象定義與細分 | 必填 | 使用區段產生器、對象構成或同盟對象構成所定義的目標對象。 根據啟動延遲需求選取的評估方法（批次、串流或邊緣）。 此函式在此計畫的階段1中執行。 | [區段服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
+| 管理與治理 | 已假設就位 | RT-CDP沙箱已布建並啟用。 指派給實作角色的目的地管理和啟用許可權。 目標平台可用的目的地帳戶認證。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
+| 資料模型與準備 | 必填 | 設定檔結構描述必須包含將對應至目的地欄位的屬性（例如電子郵件、電話、雜湊識別碼、人口統計屬性）。 結構描述必須已啟用設定檔，且資料集正在接收資料。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
+| 資料來源與收集 | 已假設就位 | 支援對象評估的設定檔資料必須擷取且為最新狀態。 批次和/或串流擷取管道可正常運作。 網頁SDK、來源聯結器或批次擷取，將資料傳送到已啟用設定檔的資料集。 | [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)，[網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home) |
+| 身分和設定檔設定 | 必填 | 必須設定目的地比對的身分名稱空間（例如Facebook自訂對象、Google Ads客戶比對的雜湊電子郵件）。 合併原則必須產生具有啟動所需所有屬性的統一設定檔。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview) |
+| 對象定義與細分 | 必填 | 使用區段產生器、對象構成或同盟對象構成所定義的目標對象。 根據啟動延遲需求選取的評估方法（批次、串流或邊緣）。 此函式在此計畫的階段1中執行。 | [區段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder) |
 
 ## 支援功能
 
@@ -108,11 +108,11 @@ ht-degree: 1%
 
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 推薦 | 期限值、參與分數或傾向分數等計算屬性可改善對象精確度，並提供擴充屬性以對應至目的地。 當目的地受益於值型或分數型對象細分時，特別有用。 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
-| 資料生命週期管理 | 推薦 | 資料集和設定檔到期原則可確保資料的時效性和合規性。 同意結構描述設定可確保僅啟用同意的設定檔。 將資料匯出至外部系統時，對於法規合規性而言至關重要。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
-| 資料使用標籤和實作 | 推薦 | 控管標籤和原則會防止將受限制的資料啟用至未經授權的目的地（例如，廣告平台的PII、資料合作夥伴的敏感區段）。 對於外部協力廠商系統的對象啟用尤其重要。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
-| 監控與可觀察性 | 已包含 | 啟動監視是功能鏈（階段5）的一部分。 涵蓋資料流執行監控、傳送狀態警示、對象母體追蹤和授權使用可見度。 | [監視目的地資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)，[警示概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview) |
-| 報告與分析 | 推薦 | CJA對對象啟用效能的分析，可測量啟用對象的效能（例如，來自隱藏的轉換提升度，來自相似對象的ROAS）。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| 計算/衍生屬性建立 | 推薦 | 期限值、參與分數或傾向分數等計算屬性可改善對象精確度，並提供擴充屬性以對應至目的地。 當目的地受益於值型或分數型對象細分時，特別有用。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview) |
+| 資料生命週期管理 | 推薦 | 資料集和設定檔到期原則可確保資料的時效性和合規性。 同意結構描述設定可確保僅啟用同意的設定檔。 將資料匯出至外部系統時，對於法規合規性而言至關重要。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
+| 資料使用標籤和實作 | 推薦 | 控管標籤和原則會防止將受限制的資料啟用至未經授權的目的地（例如，廣告平台的PII、資料合作夥伴的敏感區段）。 對於外部協力廠商系統的對象啟用尤其重要。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
+| 監控與可觀察性 | 已包含 | 啟動監視是功能鏈（階段5）的一部分。 涵蓋資料流執行監控、傳送狀態警示、對象母體追蹤和授權使用可見度。 | [監視目的地資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)，[警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview) |
+| 報告與分析 | 推薦 | CJA對對象啟用效能的分析，可測量啟用對象的效能（例如，來自隱藏的轉換提升度，來自相似對象的ROAS）。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## 應用程式函式
 
@@ -179,8 +179,8 @@ ht-degree: 1%
 
 **Experience League：**
 
-- [啟用串流目的地的對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [串流目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [啟用串流目的地的對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [串流目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
 
 ### 選項B：批次目的地啟用（檔案匯出）
 
@@ -218,7 +218,7 @@ ht-degree: 1%
 
 **Experience League：**
 
-- [啟用對象以批次設定檔匯出目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [啟用對象以批次設定檔匯出目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
 - [以檔案為基礎的目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage)
 
 ### 選項C：多目的地啟用
@@ -256,8 +256,8 @@ ht-degree: 1%
 
 **Experience League：**
 
-- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
+- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
 
 ### 選項比較
 
@@ -352,13 +352,13 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
-- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
-- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [邊緣分段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [對象構成概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [評估方式](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home#evaluation-methods)
+- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
+- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
+- [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
+- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [對象構成概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-composition)
+- [評估方式](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home#evaluation-methods)
 
 
 ### 階段2：目的地設定
@@ -430,12 +430,12 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [啟用對象以批次設定檔匯出目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [啟用串流目的地的對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [Destination SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/destination-sdk/overview)
-- [Destination SDK設定選項](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/destination-sdk/functionality/configuration-options)
+- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
+- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
+- [啟用對象以批次設定檔匯出目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [啟用串流目的地的對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [Destination SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/destination-sdk/overview)
+- [Destination SDK設定選項](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/destination-sdk/functionality/configuration-options)
 
 
 ### 階段3：對象啟用
@@ -493,10 +493,10 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [啟用串流目的地的對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [啟用對象以批次設定檔匯出目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [對批次目的地啟用隨選對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/ad-hoc-activation-api)
-- [監視目的地的資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [啟用串流目的地的對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [啟用對象以批次設定檔匯出目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [對批次目的地啟用隨選對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/api/ad-hoc-activation-api)
+- [監視目的地的資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
 
 
 ### 第4階段：治理驗證
@@ -540,11 +540,11 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
-- [原則執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)
+- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
+- [原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/overview)
 - [資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview)
 - [同意與偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
-- [同意原則執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide)
+- [同意原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/policies/user-guide)
 
 
 ### 階段5：監控與驗證
@@ -565,9 +565,9 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [監視目的地的資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [警報概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
-- [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
+- [監視目的地的資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
+- [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)
 - [授權使用量儀表板](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 ## 實施考量
@@ -576,15 +576,15 @@ ht-degree: 1%
 
 ### 護欄和限制
 
-- **區段定義限制：**&#x200B;每個沙箱最多4,000個區段定義 — [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
-- 每個目的地的&#x200B;**資料流：**&#x200B;每個目的地連線最多100個資料流 — [目的地護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- **區段定義限制：**&#x200B;每個沙箱最多4,000個區段定義 — [分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- 每個目的地的&#x200B;**資料流：**&#x200B;每個目的地連線最多100個資料流 — [目的地護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
 - **批次匯出檔案大小：**&#x200B;以檔案為基礎的目的地有匯出檔案大小上限；大型對象會自動分割到多個檔案
 - **串流目的地輸送量：**&#x200B;每個目的地合作夥伴都設定了每秒輸送量限制；可能會限制大量對象變更
 - **批次評估容量：**&#x200B;依預設，每個區段評估工作最多2,400萬個設定檔
 - **對象構成：**&#x200B;每個畫布最多10個構成區塊；構成的對象僅供批次評估
-- **身分圖表：**&#x200B;每個圖表最多50個身分 — [身分服務護欄](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)
-- **計算屬性：**&#x200B;每個沙箱最多25個計算屬性 — [計算屬性護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview#guardrails)
-- **啟動護欄概述：** [啟動護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- **身分圖表：**&#x200B;每個圖表最多50個身分 — [身分服務護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/guardrails)
+- **計算屬性：**&#x200B;每個沙箱最多25個計算屬性 — [計算屬性護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview#guardrails)
+- **啟動護欄概述：** [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
 
 ### 常見陷阱
 
@@ -654,72 +654,72 @@ ht-degree: 1%
 
 **目的地**
 
-- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
-- [啟用串流目的地的對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [啟用對象以批次設定檔匯出目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [對批次目的地啟用隨選對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/ad-hoc-activation-api)
-- [目的地護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
-- [Destination SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/destination-sdk/overview)
+- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
+- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
+- [啟用串流目的地的對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [啟用對象以批次設定檔匯出目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [對批次目的地啟用隨選對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/api/ad-hoc-activation-api)
+- [目的地護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
+- [Destination SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/destination-sdk/overview)
 
 **對象和細分**
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
-- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
-- [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
-- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [邊緣分段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [對象構成概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
-- [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
+- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
+- [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
+- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [對象構成概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-composition)
+- [分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
 
 **身分和設定檔**
 
-- [Identity Service總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
 - [身分名稱空間概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)
-- [身分識別圖連結規則](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic)
-- [設定檔概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
-- [合併原則概觀](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [身分識別圖連結規則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-linking-logic)
+- [設定檔概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
+- [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
 
 **資料模型與結構描述**
 
-- [XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
-- [結構描述組合基本面](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
+- [XDM系統概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)
+- [結構描述組合基本面](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition)
 
 **資料控管**
 
-- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
 - [資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview)
-- [資料治理原則](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/overview)
-- [原則執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)
+- [資料治理原則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/policies/overview)
+- [原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/overview)
 - [同意與偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
 **監視和可觀察性**
 
-- [監視目的地的資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [警報概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
-- [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
+- [監視目的地的資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
+- [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)
 - [授權使用量儀表板](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 **計算屬性**
 
-- [計算屬性概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
-- [計算屬性UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
+- [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
+- [計算屬性UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/ui)
 
 **資料收集和來源**
 
-- [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-- [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)
+- [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
+- [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
 
 **管理**
 
 - [沙箱概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)
-- [存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
-- [以屬性為基礎的存取控制](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/overview)
+- [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home)
+- [以屬性為基礎的存取控制](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/abac/overview)
 
 **護欄**
 
-- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
-- [Identity Service護欄](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)
-- [啟動護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
-- [擷取護欄](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
+- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- [Identity Service護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/guardrails)
+- [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
+- [擷取護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/guardrails)
