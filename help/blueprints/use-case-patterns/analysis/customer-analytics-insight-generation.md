@@ -101,8 +101,8 @@ ht-degree: 1%
 
 在此使用案例模式中使用以下應用程式。
 
-- **[!DNL Customer Journey Analytics](CJA)** — 連線、資料檢視、工作區分析、引導式分析、計算量度、控制面板、對象發佈和內容分析
-- **[!DNL Adobe Experience Platform](AEP)** — 資料湖、資料集、XDM結構描述、設定檔和事件資料（用於提供CJA連線）
+- **[!DNL Customer Journey Analytics] (CJA)** — 連線、資料檢視、工作區分析、引導式分析、計算量度、控制面板、對象發佈和內容分析
+- **[!DNL Adobe Experience Platform] (AEP)** — 資料湖、資料集、XDM結構描述、設定檔和事件資料（用於提供CJA連線）
 
 ## 基礎函式
 

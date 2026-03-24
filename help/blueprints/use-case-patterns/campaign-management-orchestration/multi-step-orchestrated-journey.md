@@ -101,9 +101,9 @@ ht-degree: 1%
 
 以下應用程式可用來實作此使用案例模式。
 
-- **[!DNL Adobe Journey Optimizer](AJO)** — Journey Orchestration引擎、訊息製作、頻道設定、內容實驗、頻率和衝突管理，以及報告
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — 歷程專案對象的對象評估和定義、個人化的設定檔資料和條件分支
-- **[!DNL Adobe Experience Platform](AEP)** — 設定檔存放區、身分服務、事件資料擷取和基礎資料基礎架構
+- **[!DNL Adobe Journey Optimizer] (AJO)** — Journey Orchestration引擎、訊息製作、頻道設定、內容實驗、頻率和衝突管理，以及報告
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 歷程專案對象的對象評估和定義、個人化的設定檔資料和條件分支
+- **[!DNL Adobe Experience Platform] (AEP)** — 設定檔存放區、身分服務、事件資料擷取和基礎資料基礎架構
 
 ## 基礎函式
 

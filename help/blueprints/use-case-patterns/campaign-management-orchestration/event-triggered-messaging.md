@@ -106,9 +106,9 @@ ht-degree: 1%
 
 在此使用案例模式中使用以下Adobe應用程式。
 
-- **[!DNL Adobe Journey Optimizer](AJO)** — 具有單一事件專案、條件評估、等待步驟、訊息編寫、頻道設定、頻率控管和傳遞報告的歷程協調
-- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — 歷程中條件式篩選的對象評估、同意和治理實施、設定檔擴充
-- **[!DNL Adobe Experience Platform](AEP)** — 透過Web SDK、Mobile SDK或伺服器端API的即時事件擷取；資料模式；身分解析；Edge Network
+- **[!DNL Adobe Journey Optimizer] (AJO)** — 具有單一事件專案、條件評估、等待步驟、訊息編寫、頻道設定、頻率控管和傳遞報告的歷程協調
+- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 歷程中條件式篩選的對象評估、同意和治理實施、設定檔擴充
+- **[!DNL Adobe Experience Platform] (AEP)** — 透過Web SDK、Mobile SDK或伺服器端API的即時事件擷取；資料模式；身分解析；Edge Network
 
 ## 基礎函式
 
