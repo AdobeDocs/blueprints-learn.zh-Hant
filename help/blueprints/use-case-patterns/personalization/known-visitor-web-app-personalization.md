@@ -2,13 +2,13 @@
 title: 已知訪客網頁/應用程式Personalization
 description: 瞭解如何根據即時設定檔和區段會籍，將個人化內容、優惠或促銷活動傳遞給已識別的訪客。
 solution: Journey Optimizer, Real-Time Customer Data Platform
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 585adc0e-f528-4a09-b931-ef6b45fa8ec8
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '7957'
+source-wordcount: '7968'
 ht-degree: 2%
 
 ---
-
 
 # 已知訪客的網頁/應用程式個人化
 
@@ -28,37 +28,25 @@ ht-degree: 2%
 
 ## 主要業務目標
 
-此使用案例模式致力於達成下列業務目標。
+此使用案例模式支援下列業務目標。
 
 ### 提供個人化的客戶體驗
 
 根據個別偏好設定、行為和生命週期階段量身打造內容、選件和訊息。 如需詳細資訊，請參閱[提供個人化客戶體驗](../../business-objectives/customer-experience/deliver-personalized-customer-experiences.md)。
 
-| KPI | 說明 |
-| --- | --- |
-| 參與度 | 跨數位介面的個人化內容互動頻率和深度 |
-| 轉換率 | 收到個人化內容後完成所需動作的訪客百分比 |
-| 客戶滿意度(CSAT) | 透過相關的個人化數位體驗，實現整體滿意度提升 |
+**KPI：**&#x200B;參與度、轉換率、客戶滿意度(CSAT)
 
 ### 增加網站參與度
 
 透過相關體驗，改善網站逗留時間、每個工作階段頁面數以及與網頁內容的互動。 如需詳細資訊，請參閱[增加網站參與度](../../business-objectives/acquisition-growth/increase-website-engagement.md)。
 
-| KPI | 說明 |
-| --- | --- |
-| Time On （網頁）頁面 | 增加個人化內容區域的暫留時間 |
-| 參與度 | 個人化元素（點選、捲動、互動）的互動率 |
-| 轉換率 | 改善個人化內容與預設內容的轉換 |
+**KPI：**&#x200B;網頁逗留時間、參與度、轉換率
 
 ### 提高行動應用程式的參與度
 
 透過個人化的應用程式內體驗，推動每日主動使用、功能採用和應用程式內轉換。
 
-| KPI | 說明 |
-| --- | --- |
-| 參與度 | 個人化訊息和內容卡的應用程式內互動率 |
-| 保留 | 改善由個人化體驗驅動的應用程式保留率 |
-| 轉換率 | 個人化優惠和推薦的應用程式內轉換改善 |
+**KPI：**&#x200B;參與度、保留率、轉換率
 
 ## 戰術使用案例範例
 
@@ -77,7 +65,7 @@ ht-degree: 2%
 
 下列KPI有助於評估此使用案例模式的成效。
 
-| KPI | 測量方式 | 基準指引 |
+| KPI | 測量方法 | 基準指引 |
 | --- | --- | --- |
 | Personalization參與率 | 個人化內容元素的點選次數和互動除以曝光數 | 個人化內容的效能應比預設內容高20-50% |
 | 轉換率提升 | 個人化體驗與控制/預設體驗的轉換率 | 目標比非個人化體驗提升10-30% |
@@ -102,9 +90,9 @@ ht-degree: 2%
 
 在此使用案例模式中使用以下應用程式。
 
-- **[!DNL Adobe Journey Optimizer] (AJO)** — Web頻道設定、應用程式內頻道設定、內容卡片頻道設定、決策（優惠方案選擇和排名）、訊息製作（個人化內容建立）、行銷活動執行、內容實驗和報告
-- **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 對象評估（邊緣、串流和批次）、透過Edge Network的即時設定檔查詢、使用運算屬性和傾向分數擴充設定檔
-- **[!DNL Adobe Experience Platform] (AEP)** — 設定檔存放區、身分服務、Web SDK、行動SDK、資料流設定、邊緣網路傳遞
+- **[!DNL Adobe Journey Optimizer](AJO)** — Web頻道設定、應用程式內頻道設定、內容卡片頻道設定、決策（優惠方案選擇和排名）、訊息製作（個人化內容建立）、行銷活動執行、內容實驗和報告
+- **[!DNL Adobe Real-Time Customer Data Platform](RT-CDP)** — 對象評估（邊緣、串流和批次）、透過Edge Network的即時設定檔查詢、使用運算屬性和傾向分數擴充設定檔
+- **[!DNL Adobe Experience Platform](AEP)** — 設定檔存放區、身分服務、Web SDK、行動SDK、資料流設定、邊緣網路傳遞
 
 ## 基礎函式
 
@@ -112,11 +100,11 @@ ht-degree: 2%
 
 | 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 已假設就位 | 已設定Web管道、應用程式內管道和決策許可權的AJO沙箱。 布建了行銷人員和內容作者角色的使用者。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 必填 | 設定檔結構描述必須包括用於個人化和分段的屬性（例如，忠誠度等級、購買記錄、產品興趣、生命週期階段）。 用於網頁/應用程式互動追蹤和轉換事件的體驗事件結構。 資料集已啟用[!DNL Real-Time Customer Profile]。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
-| 資料來源與收集 | 必填 | 在Web屬性上實作的Web SDK，用於體驗傳送和曝光追蹤。 在行動應用程式上實施行動SDK，以進行應用程式內和內容卡傳送。 資料流已設定AJO服務並啟用Edge個人化。 邊緣可用於次秒個人化的即時設定檔資料。 | [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)，[行動SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)，[設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure) |
-| 身分和設定檔設定 | 必填 | 已設定的已知身分名稱空間（CRM ID、電子郵件、已驗證的使用者ID）。 匿名與已驗證工作階段之間的身分拼接可運作，以順暢地從匿名轉換為已知訪客個人化。 使用`isActiveOnEdge: true`設定的Edge合併原則可在邊緣解析已驗證的設定檔。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview) |
-| 對象定義與細分 | 必填 | 使用設定檔屬性、行為資料和計算屬性定義的對象。 Edge或串流評估已啟用即時個人化資格。 用於區段型個人化的對象必須符合邊緣評估的資格。 | [細分服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[Edge細分](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation) |
+| 管理與治理 | 已假設就位 | 已設定Web管道、應用程式內管道和決策許可權的AJO沙箱。 布建了行銷人員和內容作者角色的使用者。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| 資料模型與準備 | 必填 | 設定檔結構描述必須包括用於個人化和分段的屬性（例如，忠誠度等級、購買記錄、產品興趣、生命週期階段）。 用於網頁/應用程式互動追蹤和轉換事件的體驗事件結構。 資料集已啟用[!DNL Real-Time Customer Profile]。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
+| 資料來源與收集 | 必填 | 在Web屬性上實作的Web SDK，用於體驗傳送和曝光追蹤。 在行動應用程式上實施行動SDK，以進行應用程式內和內容卡傳送。 資料流已設定AJO服務並啟用Edge個人化。 邊緣可用於次秒個人化的即時設定檔資料。 | [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)，[行動SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)，[設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) |
+| 身分和設定檔設定 | 必填 | 已設定的已知身分名稱空間（CRM ID、電子郵件、已驗證的使用者ID）。 匿名與已驗證工作階段之間的身分拼接可運作，以順暢地從匿名轉換為已知訪客個人化。 使用`isActiveOnEdge: true`設定的Edge合併原則可在邊緣解析已驗證的設定檔。 | [身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
+| 對象定義與細分 | 必填 | 使用設定檔屬性、行為資料和計算屬性定義的對象。 Edge或串流評估已啟用即時個人化資格。 用於區段型個人化的對象必須符合邊緣評估的資格。 | [細分服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)，[Edge細分](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation) |
 
 ## 支援功能
 
@@ -124,11 +112,11 @@ ht-degree: 2%
 
 | 支援功能 | 狀態 | 為什麼重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 推薦 | 運算屬性（例如[!DNL Customer AI]傾向分數、期限值、參與分數、產品相關性、上次購買間隔天數）可提供更豐富的對象定義和內容選擇訊號，大幅改善個人化品質。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)，[Customer AI總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/intelligent-services/customer-ai/overview) |
-| 資料生命週期管理 | 推薦 | 設定檔和事件資料保留原則可確保全新、相關的資料為個人化決策提供支援。 同意執行可確保個人化遵循使用者偏好設定。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)，[Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
-| 資料使用標籤和實作 | 推薦 | 用於個人化的設定檔屬性上的治理標籤（尤其是PII相鄰屬性，例如購買歷史記錄、位置、財務資料）可確保符合資料使用原則。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
-| 監控與可觀察性 | 推薦 | Edge傳遞與個人化效能監視有助於偵測延遲問題、傳遞失敗，或降低個人化體驗的資料時效性問題。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)，[警示概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview) |
-| 報告與分析 | 已包含 | Personalization效能報告是函式鏈步驟6的一部分。[!DNL Customer Journey Analytics] 分析可讓您深入調查個人化對各個訪客區段的轉換、參與和收入的影響。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
+| 計算/衍生屬性建立 | 推薦 | 運算屬性（例如[!DNL Customer AI]傾向分數、期限值、參與分數、產品相關性、上次購買間隔天數）可提供更豐富的對象定義和內容選擇訊號，大幅改善個人化品質。 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)，[Customer AI總覽](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview) |
+| 資料生命週期管理 | 推薦 | 設定檔和事件資料保留原則可確保全新、相關的資料為個人化決策提供支援。 同意執行可確保個人化遵循使用者偏好設定。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)，[Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
+| 資料使用標籤和實作 | 推薦 | 用於個人化的設定檔屬性上的治理標籤（尤其是PII相鄰屬性，例如購買歷史記錄、位置、財務資料）可確保符合資料使用原則。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
+| 監控與可觀察性 | 推薦 | Edge傳遞與個人化效能監視有助於偵測延遲問題、傳遞失敗，或降低個人化體驗的資料時效性問題。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)，[警示概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview) |
+| 報告與分析 | 已包含 | Personalization效能報告是函式鏈步驟6的一部分。[!DNL Customer Journey Analytics] 分析可讓您深入調查個人化對各個訪客區段的轉換、參與和收入的影響。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
 ## 應用程式函式
 
@@ -208,8 +196,8 @@ ht-degree: 2%
 
 **Experience League：**
 
-- [開始使用網路頻道](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/web/get-started-web)
-- [建立網站體驗](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/web/create-web)
+- [開始使用網路頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/get-started-web)
+- [建立網站體驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/create-web)
 - [動態內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
 
 ### 選項B：決策式個人化
@@ -254,6 +242,10 @@ ht-degree: 2%
 - [建立決定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 - [排名策略](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/ranking/ranking-strategies)
 
+**這與Offer Decisioning選項B有何不同：**
+
+基礎架構相同 — 兩者都會使用邊緣的AJO Decisioning搭配網頁SDK，以及邊緣主動合併原則。 差異在於選取的內容。 此選項可管理選擇標準適合個人化的內容專案（區段會籍、行為排名）。[Offer Decisioning](offer-decisioning.md)選項B會管理規範的優惠方案目錄，其中適用性規則、上限和有效性視窗是業務需求。 如果您的專案集需要每個設定檔曝光次數上限、法規適用性限制或優惠方案生命週期管理，請改用Offer Decisioning選項B。
+
 ### 選項C：多表面個人化（網頁+應用程式內+內容卡）
 
 **最適合：**&#x200B;跨多個數位介面的一致個人化 — 在網頁、行動應用程式內訊息和內容卡上提供協調的個人化體驗。 適用於組織同時擁有網頁和行動應用程式屬性，且想要跨所有數位接觸點統一個人化邏輯的情況。
@@ -290,9 +282,9 @@ ht-degree: 2%
 
 **Experience League：**
 
-- [應用程式內頻道概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
+- [應用程式內頻道概觀](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
 - [內容卡頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/content-card/get-started-content-card)
-- [開始使用網路頻道](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/web/get-started-web)
+- [開始使用網路頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/get-started-web)
 
 ### 選項比較
 
@@ -369,10 +361,10 @@ ht-degree: 2%
 
 **Experience League檔案：**
 
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [邊緣分段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### 階段2：設定決策（僅限選項B和C）
 
@@ -417,8 +409,8 @@ ht-degree: 2%
 
 **Experience League檔案：**
 
-- [建立產品建議放置環境](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [建立決定規則](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [建立產品建議放置環境](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [建立決定規則](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [建立個人化優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [建立後備產品建議](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [建立集合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
@@ -466,9 +458,9 @@ ht-degree: 2%
 
 **Experience League檔案：**
 
-- [開始使用網路頻道](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/web/get-started-web)
+- [開始使用網路頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/get-started-web)
 - [Web頻道設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/web-configuration)
-- [應用程式內頻道必要條件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/inapp-configuration)
+- [應用程式內頻道必要條件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/inapp-configuration)
 - [內容卡設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/content-card/content-card-configuration)
 
 ### 階段4：作者內容
@@ -527,14 +519,14 @@ ht-degree: 2%
 
 **Experience League檔案：**
 
-- [建立網站體驗](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/web/create-web)
+- [建立網站體驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/create-web)
 - [新增個人化](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Personalization語法](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalization-syntax)
 - [動態內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
 - [輔助函式](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/functions/functions)
 - [在訊息中傳遞優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
-- [建立應用程式內訊息](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/create-in-app)
-- [建立內容卡片](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/content-card/create-content-card)
+- [建立應用程式內訊息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/create-in-app)
+- [建立內容卡片](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/content-card/create-content-card)
 
 ### 階段5：設定並啟用行銷活動
 
@@ -579,9 +571,9 @@ ht-degree: 2%
 **Experience League檔案：**
 
 - [建立行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/create-campaign)
-- [開始使用行銷活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
+- [開始使用行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
 - [頻率規則](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
-- [開始使用內容實驗](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
+- [開始使用內容實驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
 - [建立內容實驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/create-content-experiment)
 
 ### 階段6：追蹤曝光數並收集資料
@@ -600,8 +592,8 @@ ht-degree: 2%
 
 **Experience League檔案：**
 
-- [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
-- [使用Web SDK追蹤事件](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/sendevent/overview)
+- [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [使用Web SDK追蹤事件](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview)
 - [行動SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)
 
 ### 第7階段：報告並最佳化
@@ -641,8 +633,8 @@ ht-degree: 2%
 - [行銷活動即時報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-live-report)
 - [行銷活動全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-global-report-cja)
 - [內容實驗報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment-report)
-- [Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
-- [AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 
 ## 實施考量
 
@@ -650,16 +642,16 @@ ht-degree: 2%
 
 ### 護欄和限制
 
-- 對於邊緣評估的區段，Edge Network查詢的回應時間SLA小於200毫秒 — [即時客戶設定檔護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
-- 每個沙箱最多4,000個區段定義 — [分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
-- Edge區段僅限於簡單屬性檢查和區段成員資格查詢 — 無時間序列查詢 — [Edge區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
-- 每個沙箱在Edge上只能有一個作用中的合併原則 — [合併原則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
-- 每個沙箱最多10,000個核准的個人化優惠 — [決定管理護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
-- 每個決定最多30個位置 — [Journey Optimizer護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
+- 對於邊緣評估的區段，Edge Network查詢的回應時間SLA小於200毫秒 — [即時客戶設定檔護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- 每個沙箱最多4,000個區段定義 — [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- Edge區段僅限於簡單屬性檢查和區段成員資格查詢 — 無時間序列查詢 — [Edge區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- 每個沙箱在Edge上只能有一個作用中的合併原則 — [合併原則](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- 每個沙箱最多10,000個核准的個人化優惠 — [決定管理護欄](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- 每個決定最多30個位置 — [Journey Optimizer護欄](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 - AI排名模型需要至少1,000個轉換事件才能訓練
 - 單範圍要求的選件傳送回應時間SLA在P95小於500毫秒
-- 每個沙箱最多500個作用中即時行銷活動 — [Journey Optimizer護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
-- 每個沙箱最多25個使用中的計算屬性 — [計算屬性護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
+- 每個沙箱最多500個作用中即時行銷活動 — [Journey Optimizer護欄](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- 每個沙箱最多25個使用中的計算屬性 — [計算屬性護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
 
 ### 常見陷阱
 
@@ -715,24 +707,24 @@ ht-degree: 2%
 
 ### Web頻道個人化
 
-- [開始使用網路頻道](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/web/get-started-web)
-- [建立網站體驗](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/web/create-web)
+- [開始使用網路頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/get-started-web)
+- [建立網站體驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/create-web)
 - [Web頻道設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/web/web-configuration)
 
 ### 應用程式內和內容卡頻道
 
-- [應用程式內頻道概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
-- [應用程式內頻道必要條件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/inapp-configuration)
-- [建立應用程式內訊息](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/create-in-app)
+- [應用程式內頻道概觀](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
+- [應用程式內頻道必要條件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/inapp-configuration)
+- [建立應用程式內訊息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/create-in-app)
 - [內容卡頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/content-card/get-started-content-card)
 - [內容卡設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/content-card/content-card-configuration)
-- [建立內容卡片](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/content-card/create-content-card)
+- [建立內容卡片](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/content-card/create-content-card)
 
 ### 決定管理
 
 - [決策管理概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [建立產品建議放置環境](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [建立決定規則](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [建立產品建議放置環境](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [建立決定規則](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [建立個人化優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [建立後備產品建議](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [建立集合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
@@ -746,63 +738,63 @@ ht-degree: 2%
 - [Personalization語法](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalization-syntax)
 - [輔助函式](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/functions/functions)
 - [動態內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
-- [使用內容範本](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [使用內容範本](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [使用內容片段](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
 
 ### 對象和細分
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
+- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [邊緣分段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### 身分和設定檔
 
-- [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
+- [Identity Service總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
 - [身分名稱空間概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)
-- [身分識別圖連結規則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-linking-logic)
-- [設定檔概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
-- [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
+- [身分識別圖連結規則](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic)
+- [設定檔概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [合併原則概觀](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
 
 ### 資料收集和SDK
 
-- [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
-- [安裝Web SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/install/overview)
+- [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [安裝Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)
 - [行動SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)
-- [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
-- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge-network-server-api/overview)
+- [設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
 
 ### 行銷活動和實驗
 
-- [開始使用行銷活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
+- [開始使用行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
 - [建立行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/create-campaign)
-- [開始使用內容實驗](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
+- [開始使用內容實驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/content-experiment)
 - [建立內容實驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/create-content-experiment)
 - [內容實驗報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment-report)
 
 ### 計算的屬性和擴充
 
-- [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
-- [計算屬性UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/ui)
-- [Customer AI概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/intelligent-services/customer-ai/overview)
+- [計算屬性概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- [計算屬性UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
+- [Customer AI概述](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview)
 
 ### 報告與分析
 
 - [行銷活動即時報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-live-report)
 - [行銷活動全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-global-report-cja)
-- [AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
-- [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
+- [AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
 
 ### 治理和隱私權
 
-- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
+- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
 - [Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted)
-- [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)
+- [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
 
 ### 護欄
 
-- [Journey Optimizer護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
-- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
-- [Identity Service護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/guardrails)
+- [Journey Optimizer護欄](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Identity Service護欄](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)

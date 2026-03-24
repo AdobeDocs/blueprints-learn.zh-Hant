@@ -2,13 +2,13 @@
 title: 汽車使用案例
 description: 瞭解汽車組織如何使用Adobe Experience Platform來個人化車輛購買歷程、改善服務保留率，並建立擁有者忠誠度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: ee83c739-0907-481d-ba3f-358af4e03c67
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 0%
+source-wordcount: '1941'
+ht-degree: 4%
 
 ---
-
 
 # 汽車使用案例
 
@@ -18,18 +18,18 @@ ht-degree: 0%
 
 | 使用案例 | 說明 | 業務影響 | 實作模式 |
 | --- | --- | --- | --- |
-| [車輛購買歷程Personalization](#vehicle-purchase-journey-personalization) | 使用相關的車輛建議、融資選項和經銷商資訊，個人化從研究到購買的車輛購買歷程。 當潛在買家在每個階段都收到量身打造的指引時，他們會更快更自信地在銷售funnel中移動。 | 從銷售線索到購買的轉換率提高20%至30%，改善銷售管道 | [具有決策的跨頻道歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
-| [服務約會提醒](#service-appointment-reminders) | 根據車輛里程數、服務歷史記錄和客戶偏好設定傳送個人化服務提醒。 主動式的外聯保持車輛持續保養，並確保客戶回到經銷商，而不是尋求第三方供應商。 | 服務預約費率提高40-50%，服務收入增加 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
-| [折價促銷活動](#trade-in-value-campaigns) | 主動為準備升級的客戶提供以舊換新價值評估。 在擁有者擁有週期的適當時間接觸擁有者，可加快購買新車輛的速度。 | 交易參與增加25-35%，新車銷售增加 | [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
-| [零件與配件建議](#parts-and-accessories-recommendations) | 根據車輛型號、擁有時間及客戶喜好設定，建議相關零件、配件及升級。 個人化的售後推薦可帶來遞增收入，同時協助擁有者從車輛中獲得更多利益。 | 零件/配件採購增加30-40%，售後收入增加 | [行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md) |
-| [車輛召回通知](#vehicle-recall-notifications) | 傳送包含服務排程選項和安全資訊的個人化召回通知。 及時、清楚的召回通訊可保護客戶安全，並展現品牌對負責任所有權支援的承諾。 | 召回回應率提高60-70%，安全性法規遵循改善 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
-| [新模型啟動促銷活動](#new-model-launch-campaigns) | 根據目前的車輛、偏好和購買記錄，鎖定可能對新模型啟動感興趣的客戶。 焦點受眾目標定位可最大化啟動影響力，並建立早期訂單動量。 | 發行促銷活動參與增加35-45%，提高新機型興趣 | [批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) |
-| [財務與保險優惠方案](#financing-and-insurance-offers) | 根據信用設定檔、車輛選擇和購買時間表，展示個人化的融資和保險優惠方案。 量身打造的金融產品消除了購買障礙，並幫助客戶對自己的條款充滿信心。 | 融資接受率增加25-35%，增加每次銷售收入 | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
-| [測試磁碟機排程](#test-drive-scheduling) | 透過經銷商推薦和車輛可用性，啟用個人化的測試驅動程式排程。 讓感興趣的買家輕鬆掌握最新消息，加速購買過程。 | 測試磁碟機完成率提高50-60%，提升銷售轉換率 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
-| [所有者忠誠度方案](#owner-loyalty-programs) | 根據擁有權記錄和忠誠度等級，個人化忠誠度方案通訊、獎勵和獨家優惠。 辨識長期擁有者可加強與品牌的情感聯絡。 | 忠誠度計畫參與度提高40-50%，重複購買次數增加 | [具有決策的跨頻道歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
-| [保固與延長服務計畫](#warranty-and-extended-service-plans) | 根據車輛使用年限、里程和購買模式，在最佳時間建議保固和延長服務計畫。 適時拓展功能可在工廠保固到期前擷取收入。 | 延長保固採用率增加20-30%，服務收入增加 | [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
-| [連線汽車功能啟用](#connected-car-feature-activation) | 根據車輛功能和技術偏好提供個人化的連線車輛功能建議。 協助擁有者發現未使用的功能，可提升滿意度並強化數位關係。 | 功能啟用率提高35-45%，改善客戶體驗 | [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
-| [經銷商網路協調](#dealer-network-coordination) | 根據客戶地點、偏好和經銷商詳細目錄啟用個人化經銷商推薦。 將客戶與正確的經銷商連線起來，可改善購買和服務體驗。 | 經銷商參與率提高30-40%，改善銷售協調工作 | [已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) |
+| [車輛購買歷程Personalization](#vehicle-purchase-journey-personalization) | 使用相關的車輛建議、融資選項和經銷商資訊，個人化從研究到購買的車輛購買歷程。 當潛在買家在每個階段都收到量身打造的指引時，他們會更快更自信地在銷售funnel中移動。 | 改善從銷售線索到購買的轉換率，並強化銷售管道 | [具有決策的跨頻道歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
+| [服務約會提醒](#service-appointment-reminders) | 根據車輛里程數、服務歷史記錄和客戶偏好設定傳送個人化服務提醒。 主動式的外聯保持車輛持續保養，並確保客戶回到經銷商，而不是尋求第三方供應商。 | 改善服務約會顯示率，並增加服務收入 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
+| [折價促銷活動](#trade-in-value-campaigns) | 主動為準備升級的客戶提供以舊換新價值評估。 在擁有者擁有週期的適當時間接觸擁有者，可加快購買新車輛的速度。 | 改善以舊換新的參與度，並增加新車的銷售量 | [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
+| [零件與配件建議](#parts-and-accessories-recommendations) | 根據車輛型號、擁有時間及客戶喜好設定，建議相關零件、配件及升級。 個人化的售後推薦可帶來遞增收入，同時協助擁有者從車輛中獲得更多利益。 | 改善零件與配件的購買率，並增加售後收入 | [行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md) |
+| [車輛召回通知](#vehicle-recall-notifications) | 傳送包含服務排程選項和安全資訊的個人化召回通知。 及時、清楚的召回通訊可保護客戶安全，並展現品牌對負責任所有權支援的承諾。 | 改善召回率回應率，並強化安全性法規遵循 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
+| [新模型啟動促銷活動](#new-model-launch-campaigns) | 根據目前的車輛、偏好和購買記錄，鎖定可能對新模型啟動感興趣的客戶。 焦點受眾目標定位可最大化啟動影響力，並建立早期訂單動量。 | 改善發行促銷活動的參與度，並增加新模型的興趣 | [批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) |
+| [財務與保險優惠方案](#financing-and-insurance-offers) | 根據信用設定檔、車輛選擇和購買時間表，展示個人化的融資和保險優惠方案。 量身打造的金融產品消除了購買障礙，並幫助客戶對自己的條款充滿信心。 | 提高融資接受率，並增加每次銷售收入 | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
+| [測試磁碟機排程](#test-drive-scheduling) | 透過經銷商推薦和車輛可用性，啟用個人化的測試驅動程式排程。 讓感興趣的買家輕鬆掌握最新消息，加速購買過程。 | 改善測試驅動程式完成率，提高銷售轉換率 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
+| [所有者忠誠度方案](#owner-loyalty-programs) | 協調跨經銷商、OEM數位和連線汽車頻道的忠誠度通訊，套用層級型資格規則以控管哪些擁有者可取得專屬優惠、提早車輛存取權及合作夥伴獎勵。 優惠仲裁可防止經銷商和OEM通路的衝突促銷同時到達相同的擁有者。 | 改善熟客方案參與度，增加重複購買次數 | [具有決策的跨頻道歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
+| [保固與延長服務計畫](#warranty-and-extended-service-plans) | 根據車輛使用年限、里程和購買模式，在最佳時間建議保固和延長服務計畫。 適時拓展功能可在工廠保固到期前擷取收入。 | 改善延長保固採用率，並增加服務收入 | [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
+| [連線汽車功能啟用](#connected-car-feature-activation) | 根據車輛功能和技術偏好提供個人化的連線車輛功能建議。 協助擁有者發現未使用的功能，可提升滿意度並強化數位關係。 | 提高功能啟用率，並提供更佳的客戶體驗 | [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
+| [經銷商網路協調](#dealer-network-coordination) | 根據客戶地點、偏好和經銷商詳細目錄啟用個人化經銷商推薦。 將客戶與正確的經銷商連線起來，可改善購買和服務體驗。 | 提升經銷商參與率，加強銷售協調性 | [已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md) |
 
 ## 使用案例的技術考量
 
@@ -92,6 +92,9 @@ ht-degree: 0%
 ### 所有者熟客方案
 
 - 忠誠度等級計算必須結合參與度的多個維度，包括服務造訪、零件購買、轉介和事件出席率，而不僅僅是車輛購買記錄。
+- 必須在[!DNL Journey Optimizer]決策中設定層級型適用性規則，以控管哪些擁有者符合獨家優惠資格、搶先使用新車輛顯示以及合作夥伴獎勵贖回，以確保只有合格成員才能獲得每個類別的權益。
+- 優惠仲裁邏輯必須在傳送任何訊息之前，評估來自經銷商和OEM通道的待處理通訊，抑制低優先順序或衝突的促銷，以防止同一所有者同時接收矛盾的優惠。
+- 跨管道協調必須橫跨經銷商CRM系統、OEM數位財產、連線車輛通知管道和服務接觸點，以便無論擁有者參與何處，忠誠度互動都是一致的。
 - 經銷商和服務中心的獎勵履行系統必須整合，以便在服務點可順暢地兌現忠誠度福利。
 - 通訊應根據擁有權生命週期階段進行調整，在新擁有者的第一年向新擁有者提供不同的價值主張，而不是根據長期擁有者尋求潛在升級。
 - [!DNL Journey Optimizer]歷程邏輯應即時偵測層級變更，並在客戶在忠誠度等級之間移動時觸發恭喜或重新參與訊息。

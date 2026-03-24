@@ -2,13 +2,13 @@
 title: 旅遊業及旅館業使用案例
 description: 探索旅遊及旅館組織如何使用Adobe Experience Platform來個人化預訂體驗、復原放棄的預訂，並建立訪客忠誠度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: fbdcc015-96a4-4015-93e2-3fc7db375c13
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '3648'
 ht-degree: 0%
 
 ---
-
 
 # 旅遊業及旅館業使用案例
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-新訪客個人化首頁，通常提供符合訪客位置和興趣的旅行選項，而不是一般內容，讓轉換率增加15-20%。
+為新訪客個人化首頁，提供符合訪客位置和興趣的旅行選項（而非一般內容），有助於提高轉換率。
 
 ### 實施方式
 
-使用[匿名訪客網頁Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md)模式。 此方法會為尚未識別自己的訪客提供量身打造的內容，並使用地理位置、裝置型別和轉介來源等可用訊號，從第一個頁面將體驗個人化。
+使用[匿名訪客網頁Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md)模式。 此方法會為尚未識別自己的訪客提供量身打造的內容，並使用地理位置、裝置型別和轉介來源等可用訊號，從第一個頁面將體驗個人化。 當訪客尚未自我識別且個人化必須依賴地理位置、裝置型別和轉介來源等可用訊號時，就是這種正確的模式 — 已知訪客個人化需要尚未存在的已驗證設定檔。
 
 ### 技術考量
 
@@ -40,11 +40,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-有效的預約回收計畫可達成25-35%的購物車回收率，並可依據預訂量和平均旅行價值，產生額外$50,000到$200,000的月收入。
+有效的預訂回收程式可達成有意義的購物車回收率，並可依據預訂量和平均運送航程價值，產生可觀的遞增收入。
 
 ### 實施方式
 
-使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法可回應即時購物車放棄事件，當客戶的旅行意向仍然很高時，及時傳送提醒。
+使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法可回應即時購物車放棄事件，當客戶的旅行意向仍然很高時，及時傳送提醒。 當觸發程式是即時客戶行為事件，而所需的回應是單一、有時效性的訊息，而非根據客戶回應而變更的多步驟培養序列或動態優惠方案選擇時，即適用此模式。
 
 ### 技術考量
 
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-以具有個人化優惠的高意圖訪客為目標，為這些區段促使30-40%的轉換率，將行銷投資集中在可提供最大回報的地方。
+透過個人化優惠鎖定高意向訪客，可改善這些區段的轉換，將行銷投資集中於帶來最大回報的地方。
 
 ### 實施方式
 
-使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法使用即時設定檔資料和行為訊號，為已識別的訪客個人化網頁體驗，提供符合其購買整備程度的量身打造內容和優惠方案。
+使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法使用即時設定檔資料和行為訊號，為已識別的訪客個人化網頁體驗，提供符合其購買整備程度的量身打造內容和優惠方案。 當個人化是由已識別客戶的設定檔屬性和傾向分數所推動，而非行為相似性模型，以及當客戶已經通過驗證，使其區段會籍和意圖訊號可供使用時，這是正確的模式。
 
 ### 技術考量
 
@@ -80,11 +80,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-預約後追加銷售行銷活動通常會將平均訂單價值提高$200至$500，並將輔助收入提升15至25%，將單一預約變成更具價值的交易。
+預訂後追加銷售行銷活動會增加平均訂單價值及提升附屬收入，使單一預訂成為更具價值的交易。
 
 ### 實施方式
 
-使用[多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)模式。 這個多步驟歷程會透過一系列追加銷售機會的計時順序引導已預訂的客戶，根據訪客已購買的內容及其對先前訊息的參與度來調整優惠方案。
+使用[多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)模式。 這個多步驟歷程會透過一系列追加銷售機會的計時順序引導已預訂的客戶，根據訪客已購買的內容及其對先前訊息的參與度來調整優惠方案。 當使用案例需要根據參與事件和存貨可用性（單一觸發訊息無法容納追加銷售時刻之間的相依性邏輯，或根據旅行日期接近度進行時間調整）的循序、多訊息流程，且具備條件分支時，這就是正確的模式。
 
 ### 技術考量
 
@@ -100,11 +100,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-目標明確的回饋行銷活動可讓失效的客戶達到10-15%的重新啟用率，藉此從原本可能永遠不會回訪的訪客恢復收入。
+目標明確的回饋行銷活動可讓失效的客戶達到有意義的重新啟用率，從原本可能永遠不會回訪的訪客恢復收入。
 
 ### 實施方式
 
-使用[多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)模式。 這個多步驟歷程透過一系列漸進式訊息重新吸引失效客戶，這些訊息會根據客戶的回應從靈感演變為激勵。
+使用[多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)模式。 這個多步驟歷程透過一系列漸進式訊息重新吸引失效客戶，這些訊息會根據客戶的回應從靈感演變為激勵。 若沒有個別的觸發事件，且時間必須根據客戶生命週期模型與季節性預訂模式來計算，則這是正確的模式；事件觸發式傳訊功能無法處理漸進式提升邏輯，或典型差旅計畫視窗周圍的時間優惠需求。
 
 ### 技術考量
 
@@ -120,11 +120,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-個人化的行程建議可讓客戶對行程頁面的參與度提高20%至30%，協助客戶更快地找到正確的行程，並減少旅行者因太多選項而感到不知所措時的流失率。
+個人化的行程建議可改善與行程頁面的互動，協助客戶更快找到合適的行程，並減少旅行者為太多選項感到不知所措時的流失率。
 
 ### 實施方式
 
-使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法會使用訪客的設定檔資料和行為記錄，呈現最相關的行程和目的地，為已識別的訪客個人化網站內容。
+使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法會使用訪客的設定檔資料和行為記錄，呈現最相關的行程和目的地，為已識別的訪客個人化網站內容。 當個人化是由設定檔屬性和預訂歷史記錄（而不是行為相似性模型）驅動時，這是正確的模式 — 允許規則型邏輯將出發港口和日期等旅行物流與客戶偏好設定一起考慮。
 
 ### 技術考量
 
@@ -140,11 +140,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-在首頁上顯示最近瀏覽的旅遊產品，可增加15-20%的回訪參與度，協助客戶從中斷的地方重新開始，並縮短預訂的路徑。
+在首頁上顯示最近瀏覽的旅遊產品可增加回訪參與度，協助客戶從中斷的地方重新開始，並縮短預訂的路徑。
 
 ### 實施方式
 
-使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法使用訪客的儲存設定檔資料來轉譯首頁上先前檢視的專案，進而建立瀏覽工作階段的連續性。
+使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法使用訪客的儲存設定檔資料來轉譯首頁上先前檢視的專案，進而建立瀏覽工作階段的連續性。 當個人化需仰賴跨工作階段和裝置的持續設定檔資料（而非即時行為相似性），且相關性規則是以時間為基礎（造訪間隔）而非演演算法排名，這就是正確的模式。
 
 ### 技術考量
 
@@ -160,11 +160,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-包含個人化旅遊選件的退出意圖模式，可在原本離開而不進行預訂的訪客中復原5-10%的轉換率，擷取將完全喪失的收入。
+具有個人化旅遊的退出意圖模式可復原原本離開而不進行預訂的訪客之間的有意義轉換，擷取將完全遺失的收入。
 
 ### 實施方式
 
-使用[Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md)模式。 此方法會使用集中式決策邏輯，評估所有可用的優惠，並根據訪客的工作階段行為和設定檔資料為其選取最相關的優惠。
+使用[Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md)模式。 此方法會使用集中式決策邏輯，評估所有可用的優惠，並根據訪客的工作階段行為和設定檔資料為其選取最相關的優惠。 這是當優惠選擇必須考慮忠誠度層級適用性和有關頻率上限的業務限制時的正確模式，這些限制需要管理的決策邏輯，而不是簡單的行為建議或單一觸發訊息。
 
 ### 技術考量
 
@@ -180,11 +180,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-階層式個人化促使忠誠會員的參與度提高25-35%，加深關係，並加速維持長期收入的盈利和贖回行為。
+層級式個人化可促進忠誠會員的參與度提高，深化關係，並加速維持長期收入的盈利和贖回行為。
 
 ### 實施方式
 
-使用[跨管道歷程與決策](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md)模式。 此方法結合歷程協調與即時決策，透過正確管道為每個忠誠會員提供正確的優惠，並適應其層級、偏好設定和最近的活動。
+使用[跨管道歷程與決策](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md)模式。 此方法結合歷程協調與即時決策，透過正確管道為每個忠誠會員提供正確的優惠，並適應其層級、偏好設定和最近的活動。 當歷程必須協調跨管道的傳送以防止重複優惠方案，以及當優惠方案選擇需要層級式適用性規則和贖回限制時，這是正確的模式 — 光是歷程協調並不提供所需的多管道決策層。
 
 ### 技術考量
 
@@ -200,11 +200,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-多頻道預約提醒功能可將預約完成率提升20%至30%，若客戶打算預定但於預約完成前被列入追蹤名單，則可收回可觀的收入。
+多頻道預約提醒功能可改善預約完成率，若客戶打算預約但於預約完成前被追蹤，則可收回鉅額收入。
 
 ### 實施方式
 
-使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 在偵測到不完整的預訂事件時，此方法會自動觸發提醒，並透過客戶偏好的管道即時傳送訊息。
+使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 在偵測到不完整的預訂事件時，此方法會自動觸發提醒，並透過客戶偏好的管道即時傳送訊息。 若觸發因素是分散式客戶動作（開始預訂），且所需回應是偏好管道中區分時間的傳遞，而非多步驟順序（其中每則訊息取決於先前的參與或可用性變更），則此選項即為正確模式。
 
 ### 技術考量
 
@@ -220,11 +220,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-季節性個人化行銷活動可將季節性預訂轉換提升15-25%，確保行銷投資聚焦於最有可能引起每位客戶共鳴的目的地和旅遊產品。
+季節性個人化行銷活動可提升季節性預訂轉換，確保行銷投資聚焦於最有可能引起每位客戶共鳴的目的地和旅遊產品。
 
 ### 實施方式
 
-使用[批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md)模式。 此方法會依排程為大型受眾提供個人化的季節性行銷活動訊息，並依季節性旅行模式和偏好將客戶細分。
+使用[批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md)模式。 此方法會依排程為大型受眾提供個人化的季節性行銷活動訊息，並依季節性旅行模式和偏好將客戶細分。 如果對象人數眾多且已依季節性預訂歷史記錄預先定義、根據季節性計畫期間而非事件導向來排程傳送時間，且不需要即時分支或決策，則這個模式相當正確。
 
 ### 技術考量
 
@@ -240,11 +240,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-主動式群組預訂建議會將每個預訂的平均訂單值增加$1,000 -$3,000，擷取群組旅行交易的完整值，否則這些交易可能會分割為多個個別預訂。
+主動式群組預訂建議會增加每個預訂的平均訂單值，擷取群組差旅交易的完整值，否則這些交易可能會分割到多個個別預訂。
 
 ### 實施方式
 
-使用[行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)模式。 此方法使用AI驅動模型，透過客戶預訂模式和行為向使用者學習，針對每位客戶建議最相關的群組旅行選項。
+使用[行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)模式。 此方法使用AI驅動模型，透過客戶預訂模式和行為向使用者學習，針對每位客戶建議最相關的群組旅行選項。 當料號集很大且持續變更（群組套件隨著訂價和可用性而改變）且選擇受群組預訂歷史記錄的行為模式驅動，而不是受適用性規則管理的限定優惠集時，這是正確的模式。
 
 ### 技術考量
 
@@ -252,3 +252,23 @@ ht-degree: 0%
 - 群組套裝訂價必須從訂房系統動態提取，因為群組費率通常與個別費率不同，而且可能需要最小當事人規模或預先預訂視窗。
 - 建議內容應符合群組召集人的獨特需求，包括群組就餐選項、會議空間、區塊預訂折扣和群組遠足可用性等相關資訊。
 - [!DNL Real-Time Customer Data Platform]個人資料擴充應根據客戶的預訂模式，將客戶標示為群組旅遊召集人，以在尖峰群組規劃期間（例如家庭團聚季節或公司靜修期間）啟用目標式行銷活動。
+
+
+## AI預訂禮賓
+
+旅行和酒店組織提供複雜且高考量的購買歷程，訪客在承諾預訂之前必須瀏覽航班、房間、房間類別、輔助服務和忠誠度福利。 靜態瀏覽和篩選介面可建立決定疲勞度，並增加流失率。 AI預訂禮賓服務人員會與來賓進行自然對話，以瞭解他們的旅行意圖、派對大小、偏好和預算，然後逐步引導他們完成行程規劃、住宿選擇和附加選項，同時提供與來賓層級相關的忠誠度福利。
+
+### 企業影響
+
+對話式預約指導可改善行程完成率和附加附件，同時減少因不同原因致電闡明選項的來賓的客服中心數量。
+
+### 實施方式
+
+使用[Brand Concierge對話體驗](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md)模式。 此方法會針對屬性和行程目錄部署Product Advisor Agent，使用AEP Agent Orchestrator和即時客戶設定檔資料，透過引導式多圈對話呈現個人化選項和忠誠度相關建議。 當目標為互動式、多圈對話探索，且建立為複雜預訂決策時，這是正確的模式，有別於事件觸發式傳訊（會以單向外展對分散的旅行者動作做出反應），以及個人化Web體驗（會被動顯示建議，而不需讓訪客參與對話）。 它需要AEP Agent Orchestrator和品牌控管設定。
+
+### 技術考量
+
+- 可用性與費率資料必須透過訂房系統與Brand Concierge內容層之間的近乎即時整合保持最新狀態，因為建議不適用的房間型別或對話中的錯誤定價會立即削弱信任。
+- 即時客戶個人檔案查詢必須顯示忠誠度等級、停留歷史記錄和所述的偏好設定，這樣代理商就可以主動確認訪客的狀態並量身打造建議，而不需要訪客在每次造訪時重新說明其偏好設定。
+- 品牌控管必須定義代理程式如何處理費率比對查詢、競爭者參考資料，以及無法取得賓客的偏好日期或房間型別等情況，以確保代理程式會以品牌語調優雅回應，而非呈現死胡同。
+- 對話意圖訊號（包括對話期間所表達的目的地興趣、旅遊對象構成和附屬偏好設定）必須以ExperienceEvent資料的形式傳回AEP，並豐富訪客設定檔以告知下游電子郵件、忠誠度和重新參與行銷活動。

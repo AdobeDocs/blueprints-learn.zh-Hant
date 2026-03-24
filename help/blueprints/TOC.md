@@ -5,9 +5,9 @@ user-guide-description: 探索Adobe Experience Platform和應用程式的主要�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: 63154ca158b773287f0d1a7f88a81ac3181c43a0
+source-git-commit: abed39b6b6f63f2eef6cb36b400319910f8cf472
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 24%
 
 ---
@@ -77,6 +77,7 @@ ht-degree: 24%
    + [媒體與娛樂](/help/blueprints/industry-use-cases/media-entertainment/media-entertainment-overview.md)
    + [零售](/help/blueprints/industry-use-cases/retail/retail-overview.md)
    + [電信](/help/blueprints/industry-use-cases/telecommunications/telecommunications-overview.md)
+   + [技術](/help/blueprints/industry-use-cases/technology/technology-overview.md)
    + [旅遊業及旅館業](/help/blueprints/industry-use-cases/travel-hospitality/travel-hospitality-overview.md)
 + 架構圖與藍圖{#architecture-diagrams}
    + 架構概述{#architecture-overview}
@@ -132,7 +133,7 @@ ht-degree: 24%
          + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
       + 已棄用的Blueprint{#deprecated-blueprints}
          + Campaign Standard{#campaign-standard}
-            + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard){target="_blank"}
-            + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+            + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+            + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
          + Campaign v7{#campaign-v7}
             + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)

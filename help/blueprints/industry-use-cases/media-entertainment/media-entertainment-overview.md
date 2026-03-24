@@ -2,13 +2,13 @@
 title: 媒體與娛樂使用案例
 description: 探索媒體和娛樂組織如何使用Adobe Experience Platform來個人化內容探索、減少訂閱者流失並增加受眾參與度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: cfcf689f-9579-447f-9ef9-72e0c80c1f27
+source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
 workflow-type: tm+mt
-source-wordcount: '2644'
+source-wordcount: '3363'
 ht-degree: 0%
 
 ---
-
 
 # 媒體與娛樂使用案例
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-部署個人化內容推薦引擎的組織通常會在內容參與度中增加30-40%，並且每位使用者的總觀看或收聽時間中大幅提升。
+部署個人化內容推薦引擎的組織可看到內容參與度改善，以及每位使用者的總觀看或聆聽時間有意義提升。
 
 ### 實施方式
 
-使用[行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)模式。 此方法使用AI驅動建議模型，持續從對象互動中學習，為每個人呈現最相關的內容。
+使用[行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)模式。 此方法使用AI驅動建議模型，持續從對象互動中學習，為每個人呈現最相關的內容。 當專案集很大且持續變更（內容目錄）時，這是正確的模式，而且選擇是由從檢視歷史記錄中學習的行為相似性所驅動，而不是由適用性規則管理的限定優惠方案集。
 
 ### 技術考量
 
@@ -40,11 +40,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-有效的流失預防計畫可將訂閱者流失減少20-30%，保護經常性收入並改善長期受眾期限價值。
+有效的流失預防方案可大幅減少訂閱者流失、保護經常性收入，並提升長期對象期限價值。
 
 ### 實施方式
 
-使用[跨管道歷程與決策](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md)模式。 這種方法結合了Journey Orchestration與即時決策，以便針對每個管道中的每個風險訂閱者，選擇最佳保留優惠或內容推薦。
+使用[跨管道歷程與決策](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md)模式。 這種方法結合了Journey Orchestration與即時決策，以便針對每個管道中的每個風險訂閱者，選擇最佳保留優惠或內容推薦。 當歷程必須協調跨管道的傳遞以防止重複的保留優惠方案，以及當優惠方案選擇需要根據訂閱者值和風險等級的適用性規則時，這是正確的模式 — 單是多步驟協調不會提供所需的即時決策層。
 
 ### 技術考量
 
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-個人化的發行通知通常會在發行後第一週內推動新內容參與度增加40-50%，加速收視率並提升內容效能量度。
+個人化的發行通知可在發行後第一週內推動改善新內容的參與度，從而加快收視率並提升內容效能量度。
 
 ### 實施方式
 
-使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法會回應內容發行事件、比對新標題與訂閱者偏好設定檔，以及時傳遞相關通知。
+使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法會回應內容發行事件、比對新標題與訂閱者偏好設定檔，以及時傳遞相關通知。 當觸發因素是系統事件（內容版本）而不是客戶行為，且所需的通訊是立即和反應而不是持續的培養序列時，就是正確的模式。
 
 ### 技術考量
 
@@ -80,11 +80,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-個人化的首頁體驗推動首頁參與度增加25-35%，並有效改善內容探索，尤其是針對具有大型且不斷成長的內容庫的平台。
+個人化的首頁體驗推動改善首頁參與度，並有意義地改善內容探索，尤其是針對具有大型且不斷增長的內容庫的平台。
 
 ### 實施方式
 
-使用[行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)模式。 此方法會使用選擇策略和排名模型，根據每位訪客的設定檔和即時行為，重新排序內容列並在首頁上提供標題。
+使用[行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)模式。 此方法會使用選擇策略和排名模型，根據每位訪客的設定檔和即時行為，重新排序內容列並在首頁上提供標題。 當專案集很大且持續變更時，這是正確的模式，而且選擇是由行為相似性驅動的，以動態排名內容列，而不是靜態的組織集或簡單的屬性型個人化。
 
 ### 技術考量
 
@@ -100,11 +100,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-監看清單提醒計畫通常可將監看清單完成率提高30-40%，將儲存的意圖轉化為主動參與，並提升整體平台使用率。
+監看清單提醒程式可提升監看清單完成率，將儲存的意圖轉換為主動參與，並提升整體平台使用率。
 
 ### 實施方式
 
-使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法會根據監看清單活動和閒置訊號觸發提醒，在內容已儲存但尚未啟動時傳送即時提示。
+使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法會根據監看清單活動和閒置訊號觸發提醒，在內容已儲存但尚未啟動時傳送即時提示。 當獨立行為訊號（監看清單非使用中）為觸發器，且所需回應為單一、時效性高的訊息（而非多步驟序列或連續建議資料流）時，此為正確模式。
 
 ### 技術考量
 
@@ -120,11 +120,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-設計良好的試用轉換行銷活動，將試用至付費轉換率提升了25%至35%，直接提升訂閱者贏取效率並降低每次贏取成本。
+設計良好的試用轉換行銷活動，大幅改善試用至付費轉換率，直接提升訂閱者贏取效率，並降低每次贏取成本。
 
 ### 實施方式
 
-使用[多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)模式。 此多點觸控培養歷程會引導試用版使用者完成一系列的內容探索、價值展示和轉換訊息，並根據他們在整個試用期的參與程度進行調整。
+使用[多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)模式。 此多點觸控培養歷程會引導試用版使用者完成一系列的內容探索、價值展示和轉換訊息，並根據他們在整個試用期的參與程度進行調整。 當使用案例需要根據參與事件和剩餘試用時間的條件式分支的已序列化、多訊息流程數天（單一觸發的訊息無法容納步驟之間的相依性邏輯或調整步調的需求）時，這是正確的模式。
 
 ### 技術考量
 
@@ -140,11 +140,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-個人化的即時事件提醒通常會使即時事件檢視率增加50-60%，最大化高價值即時節目的受眾。
+個人化的即時事件提醒可促進改善即時事件觀看率，最大化高價值即時程式設計的受眾。
 
 ### 實施方式
 
-使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法會根據事件排程資料觸發通知，將即將發生的事件與訂閱者興趣設定檔進行比對，以及時傳送提醒。
+使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法會根據事件排程資料觸發通知，將即將發生的事件與訂閱者興趣設定檔進行比對，以及時傳送提醒。 當觸發程式是系統事件（事件排程）而不是客戶行為，且必要的通訊是立即且有時限的，而不是持續的Nurture序列時，就是正確的模式。
 
 ### 技術考量
 
@@ -160,11 +160,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-個人化的播放清單產生使播放清單參與度增加40-50%，並有意義地延長平均聆聽工作階段持續時間，強化每日平台使用習慣。
+個人化播放清單產生可推動改善播放清單參與度，並有意義地延長平均聆聽工作階段持續時間，強化每日平台使用習慣。
 
 ### 實施方式
 
-使用[行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)模式。 此方法使用AI驅動模型，分析聆聽模式、略過行為和情境式訊號，以產生和重新整理為每個使用者量身打造的播放清單。
+使用[行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)模式。 此方法使用AI驅動模型，分析聆聽模式、略過行為和情境式訊號，以產生和重新整理為每個使用者量身打造的播放清單。 當專案集很大且持續變更時，這是正確的模式，而且選擇是由聆聽歷史記錄和情緒訊號的行為相似性所驅動，而不是由編輯規則所控制的有界播放清單集。
 
 ### 技術考量
 
@@ -180,11 +180,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-跨平台內容同步可促進跨裝置參與增加30-40%，並大幅減少使用者在裝置之間切換時可能導致工作階段放棄的摩擦。
+跨平台內容同步可改善跨裝置參與度，並大幅減少使用者在裝置之間切換時可能導致工作階段放棄的摩擦情形。
 
 ### 實施方式
 
-使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法可個人化跨Web和應用程式平台之已識別使用者的體驗，確保內容狀態與建議一致，無論裝置為何。
+使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法可個人化跨Web和應用程式平台之已識別使用者的體驗，確保內容狀態與建議一致，無論裝置為何。 當個人化是由設定檔屬性（跨裝置身分、觀看進度狀態）和區段會籍所推動，而不是行為相似性模型或歷程協調序列時，這是正確的模式。
 
 ### 技術考量
 
@@ -200,11 +200,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-個人化的社交分享提示通常能實現社交分享率20%到30%的增長，擴大有機觸及並降低付費贏取成本。
+個人化的社交分享提示可提升社交分享率、擴大有機觸及並降低付費贏取成本。
 
 ### 實施方式
 
-使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法可個人化已識別使用者的應用程式內共用體驗，根據使用者的偏好和參與模式呈現內容相關的共用提示。
+使用[已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)模式。 此方法可個人化已識別使用者的應用程式內共用體驗，根據使用者的偏好和參與模式呈現內容相關的共用提示。 當個人化是由設定檔屬性和已知參與內容而不是行為相似性模型驅動時，這是正確的模式，目標是增強即時體驗，而不是協調歷程順序。
 
 ### 技術考量
 
@@ -220,11 +220,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-個人化的進階追加銷售行銷活動推動進階功能採用率增加15-25%，增加每位使用者的平均收入，同時提供真正符合訂閱者需求的功能。
+個人化的進階追加銷售行銷活動推動改善進階功能採用，提高每位使用者的平均收入，同時提供完全符合訂閱者需求的功能。
 
 ### 實施方式
 
-使用[Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md)模式。 此方法使用集中式決定邏輯來評估每位訂閱者的使用模式，並在適當時機選取最相關的付費選件。
+使用[Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md)模式。 此方法使用集中式決定邏輯來評估每位訂閱者的使用模式，並在適當時機選取最相關的付費選件。 這是當優惠選擇必須考慮使用模式限制和進階層適用性規則（需要控管的決定邏輯而不是單獨的行為相關性排名的限制）時的正確模式。
 
 ### 技術考量
 
@@ -240,11 +240,11 @@ ht-degree: 0%
 
 ### 企業影響
 
-內容完成行銷活動通常可提高內容完成率35-45%、增加總參與時間，並增強訂閱者對平台價值的認知。
+內容完成行銷活動推動改善內容完成率、增加總參與時間並強化訂閱者對平台價值的感知。
 
 ### 實施方式
 
-使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法會根據內容放棄事件觸發提醒，當使用者在標題中途暫停且未在定義的視窗內返回時，及時傳送訊息。
+使用[事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式。 此方法會根據內容放棄事件觸發提醒，當使用者在標題中途暫停且未在定義的視窗內返回時，及時傳送訊息。 當獨立行為訊號（內容放棄）為觸發器，且所需回應是包含內容的單一、時效性高的訊息時，即適用此模式，而非多步驟歷程或動態優惠選擇。
 
 ### 技術考量
 
@@ -252,3 +252,23 @@ ht-degree: 0%
 - 提醒訊息應包含特定內容標題、視覺化縮圖以及直接深層連結，可在使用者中斷播放的確切時間點繼續播放。
 - 頻率上限必須防止使用者在定期取樣內容而不完成時收到過多提醒；使用者選擇放棄的內容若反複推移，可能會讓人覺得有干擾性。
 - 內容可用性必須在傳送時驗證，因為標題可能會離開平台，或變更放棄事件與提醒傳送之間的可用性區域。
+
+
+## 訂閱者流失驅動程式與內容參與分析
+
+識別訂閱者取消前的內容消費模式、參與頻率變更和目錄互動行為，並測量內容相關性在訂閱者區段和贏取同類群組之間的變化。 無法將內容行為與流失結果連結起來的串流和發佈企業，會根據彙總檢視計數（而非保留影響）來做出內容投資決策。
+
+### 企業影響
+
+將內容參與模式與訂閱者保留結果建立關聯，可為產品、內容策略及行銷團隊提供事實基礎，以便根據實際維持訂閱的行為，排定目錄投資的優先順序，並設計重新參與行銷活動。
+
+### 實施方式
+
+使用[Customer Analytics與Insight Generation](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md)模式。 此方法會將串流事件資料、內容中繼資料、訂閱生命週期記錄及行銷活動互動歷史記錄連線至Customer Journey Analytics，而同類群組保留分析會衡量內容相關性如何與訂閱者使用期限關聯，而流失分析會識別取消前的參與流失模式。 當目標為瞭解流失和內容績效的行為驅動因素，而不是觸發回傳訊息或啟動抑制的流失風險對象時，這是正確的模式。
+
+### 技術考量
+
+- 內容使用量事件必須包含內容識別碼和工作階段層級中繼資料（開始、暫停、完成和略過事件），以便在CJA中測量參與深度，並超越原始播放計數。
+- 訂閱生命週期事件（包括試用開始、轉換、付款失敗、降級和取消）都必須擷取為具有精確時間戳記的分散事件，以便在CJA篩選器中精確定義取消前行為視窗。
+- 型別、格式、系列關聯和發行造訪間隔等內容目錄屬性必須可在CJA連線中作為查詢資料集使用，以便內容參與分析可以依目錄維度劃分，而不要求在個別標題層級進行分析。
+- 同類群組分析會根據贏取管道和已檢視的原始內容比較保留曲線，擷取來源和首次檢視內容都必須擷取為設定檔或首次事件維度，可用於CJA中的同類群組定義。

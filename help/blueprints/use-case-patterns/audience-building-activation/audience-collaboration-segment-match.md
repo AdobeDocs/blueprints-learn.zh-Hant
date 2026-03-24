@@ -1,16 +1,16 @@
 ---
-title: 有區段比對的對象Collaboration
+title: 對象Collaboration
 description: 瞭解如何使用「區段比對」，跨沙箱或組織共用及比對受眾區段。
 solution: Real-Time Customer Data Platform, Experience Platform
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 7014849c-5e32-4ec3-a531-c0e8ce896f44
+source-git-commit: 27f7e230982807ec70ca96af7f737944a6588f27
 workflow-type: tm+mt
-source-wordcount: '6238'
+source-wordcount: '6232'
 ht-degree: 1%
 
 ---
 
-
-# 透過區段比對進行對象共同作業
+# 對象Collaboration
 
 本指南提供在[!DNL Real-Time CDP]和[!DNL Adobe Experience Platform]中使用[!DNL Segment Match]的對象共同作業的完整實作參考。 它專為需要以隱私安全方式跨沙箱或組織共用及比對受眾區段的解決方案架構師、行銷技術人員和實施工程師所設計。
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 以下KPI有助於評估對象共同作業實施是否成功。
 
-| KPI | 說明 | 度量方法 |
+| KPI | 說明 | 測量方法 |
 | --- | --- | --- |
 | 對象重疊率 | 共用區段中符合傳送者與接收者的設定檔百分比 | [!DNL Segment Match]重疊預估報告 |
 | 相符的受眾規模 | 已成功比對且可供啟用的設定檔數 | [!DNL Segment Match]個共用狀態和受眾母體計數 |
@@ -97,11 +97,11 @@ ht-degree: 1%
 
 | 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 必填 | 傳送者與接收者組織都必須布建沙箱，並提供適當的角色與許可權。 管理[!DNL Segment Match]的使用者必須擁有檢視和共用區段、設定連線以及管理合作夥伴摘要的許可權。 ABAC原則應設定為控制哪些使用者可以起始和接受區段共用。 | [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 已假設就位 | 設定檔和事件的XDM結構描述必須與必要的欄位群組同時存在。 必須建立並啟用[!DNL Real-Time Customer Profile]的設定檔和事件資料集。 資料模型必須支援用於區段比對的身分名稱空間（通常是雜湊電子郵件或雜湊電話）。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home) |
-| 資料來源與收集 | 已假設就位 | 客戶資料必須透過已設定的資料來源（SDK、來源聯結器、批次擷取），主動流入[!DNL Experience Platform]。 設定檔必須填入用於[!DNL Segment Match]的身分型別（例如雜湊電子郵件）。 | [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home) |
-| 身分和設定檔設定 | 必填 | 必須為用於區段比對的識別碼設定身分名稱空間。 傳送者與接收者都必須使用相容的身分名稱空間。 必須設定合併原則以正確統一設定檔。 應建立身分連結規則，以確保正確的設定檔解析度。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home) |
-| 對象定義與細分 | 必填 | 必須定義並評估Source對象，才能透過[!DNL Segment Match]共用。 應使用[!DNL Segment Builder]或[!DNL Audience Composition]建立對象，並完成批次評估。 只有批次評估的對象符合[!DNL Segment Match]共用的條件。 | [分段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home) |
+| 管理與治理 | 必填 | 傳送者與接收者組織都必須布建沙箱，並提供適當的角色與許可權。 管理[!DNL Segment Match]的使用者必須擁有檢視和共用區段、設定連線以及管理合作夥伴摘要的許可權。 ABAC原則應設定為控制哪些使用者可以起始和接受區段共用。 | [存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| 資料模型與準備 | 已假設就位 | 設定檔和事件的XDM結構描述必須與必要的欄位群組同時存在。 必須建立並啟用[!DNL Real-Time Customer Profile]的設定檔和事件資料集。 資料模型必須支援用於區段比對的身分名稱空間（通常是雜湊電子郵件或雜湊電話）。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) |
+| 資料來源與收集 | 已假設就位 | 客戶資料必須透過已設定的資料來源（SDK、來源聯結器、批次擷取），主動流入[!DNL Experience Platform]。 設定檔必須填入用於[!DNL Segment Match]的身分型別（例如雜湊電子郵件）。 | [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
+| 身分和設定檔設定 | 必填 | 必須為用於區段比對的識別碼設定身分名稱空間。 傳送者與接收者都必須使用相容的身分名稱空間。 必須設定合併原則以正確統一設定檔。 應建立身分連結規則，以確保正確的設定檔解析度。 | [身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) |
+| 對象定義與細分 | 必填 | 必須定義並評估Source對象，才能透過[!DNL Segment Match]共用。 應使用[!DNL Segment Builder]或[!DNL Audience Composition]建立對象，並完成批次評估。 只有批次評估的對象符合[!DNL Segment Match]共用的條件。 | [分段服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home) |
 
 ## 支援功能
 
@@ -109,11 +109,11 @@ ht-degree: 1%
 
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 推薦 | 計算出的屬性（例如期限購買值、參與分數或產品相似性）可建立更精確的區段以進行共用。 品質較高的輸入區段可帶來更有價值的受眾共同作業。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview) |
-| 資料生命週期管理 | 推薦 | 同意和資料保留政策可確保共用區段遵守隱私權法規。 資料集到期原則有助於管理接收對象資料的生命週期。 同意執行可防止共用已選擇退出的設定檔。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
-| 資料使用標籤和實作 | 已包含 | 共用區段之前，必須先評估資料治理原則，以確保法規遵循。 身分欄位和設定檔屬性上的標籤決定了可以共用的內容。 執行治理可防止將未授權的資料納入區段共用中。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home) |
-| 監控與可觀察性 | 推薦 | 監視[!DNL Segment Match]共用程式、重疊預估工作及啟動資料流程，有助於及早偵測失敗。 可針對共用失敗或意外地低匹配率來設定警報。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
-| 報告與分析 | 推薦 | 測量使用相符對象之行銷活動的績效可驗證共同作業的價值。[!DNL Customer Journey Analytics] 分析可比較相符的對象行銷活動與控制組的效能。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
+| 計算/衍生屬性建立 | 推薦 | 計算出的屬性（例如期限購買值、參與分數或產品相似性）可建立更精確的區段以進行共用。 品質較高的輸入區段可帶來更有價值的受眾共同作業。 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
+| 資料生命週期管理 | 推薦 | 同意和資料保留政策可確保共用區段遵守隱私權法規。 資料集到期原則有助於管理接收對象資料的生命週期。 同意執行可防止共用已選擇退出的設定檔。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
+| 資料使用標籤和實作 | 已包含 | 共用區段之前，必須先評估資料治理原則，以確保法規遵循。 身分欄位和設定檔屬性上的標籤決定了可以共用的內容。 執行治理可防止將未授權的資料納入區段共用中。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
+| 監控與可觀察性 | 推薦 | 監視[!DNL Segment Match]共用程式、重疊預估工作及啟動資料流程，有助於及早偵測失敗。 可針對共用失敗或意外地低匹配率來設定警報。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| 報告與分析 | 推薦 | 測量使用相符對象之行銷活動的績效可驗證共同作業的價值。[!DNL Customer Journey Analytics] 分析可比較相符的對象行銷活動與控制組的效能。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## 應用程式函式
 
@@ -179,8 +179,8 @@ ht-degree: 1%
 
 **Experience League：**
 
-- [區段比對概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [區段比對疑難排解](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
+- [區段比對概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [區段比對疑難排解](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
 
 ### 選項B：多合作夥伴區段分佈（一對多）
 
@@ -217,7 +217,7 @@ ht-degree: 1%
 
 **Experience League：**
 
-- [區段比對概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [區段比對概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
 
 ### 選項C：跨沙箱對象同盟
 
@@ -254,7 +254,7 @@ ht-degree: 1%
 
 **Experience League：**
 
-- [區段比對概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [區段比對概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
 - [沙箱概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)
 
 ### 選項比較
@@ -344,10 +344,10 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [對象構成概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-composition)
-- [評估方式](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home#evaluation-methods)
-- [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [對象構成概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [評估方式](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home#evaluation-methods)
+- [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### 階段2：設定比對和治理
 
@@ -405,9 +405,9 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [區段比對概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
-- [原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/overview)
+- [區段比對概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [原則執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)
 - [同意與偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
 ### 階段3：預估重疊
@@ -443,7 +443,7 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [區段比對概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [區段比對概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
 
 ### 第4階段：共用對象
 
@@ -498,8 +498,8 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [區段比對概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [區段比對疑難排解](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
+- [區段比對概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [區段比對疑難排解](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
 
 ### 階段5：啟用相符的對象
 
@@ -557,10 +557,10 @@ ht-degree: 1%
 
 **Experience League檔案：**
 
-- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
-- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
-- [監視目的地的資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
+- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [監視目的地的資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [啟動護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 
 ## 實施考量
 
@@ -568,11 +568,11 @@ ht-degree: 1%
 
 ### 護欄和限制
 
-- [!DNL Segment Match]使用雜湊識別碼來比對 — 沒有PII跨越組織界限。 請參閱[區段比對總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/overview)。
+- [!DNL Segment Match]使用雜湊識別碼來比對 — 沒有PII跨越組織界限。 請參閱[區段比對總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)。
 - 只有批次評估的對象可以透過[!DNL Segment Match]共用。 串流和邊緣評估的區段必須先轉換為批次評估，才能共用。
-- 每個沙箱最多4,000個區段定義適用於來源和已接收的區段。 請參閱[分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)。
+- 每個沙箱最多4,000個區段定義適用於來源和已接收的區段。 請參閱[分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)。
 - 重疊預估準確度取決於相符識別碼的數量。 較小的對象可能會顯示較不精確的估計。
-- 啟用護欄會套用至相符的對象，就像任何其他對象一樣 — 每個目的地最多100個資料流。 請參閱[啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)。
+- 啟用護欄會套用至相符的對象，就像任何其他對象一樣 — 每個目的地最多100個資料流。 請參閱[啟動護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)。
 - 構成對象會根據批次排程進行評估，每個沙箱限製為10個構成畫布。 請參閱[對象構成護欄](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)。
 
 ### 常見陷阱
@@ -630,61 +630,61 @@ ht-degree: 1%
 
 ### [!DNL Segment Match]
 
-- [區段比對概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/overview)
-- [區段比對疑難排解](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
+- [區段比對概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/overview)
+- [區段比對疑難排解](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-match/troubleshooting)
 
 ### 細分與對象
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [對象構成概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-composition)
-- [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
-- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [對象構成概觀](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
+- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [邊緣分段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
 
 ### 身分和設定檔
 
-- [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
+- [Identity Service總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
 - [身分名稱空間概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)
-- [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
-- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
+- [合併原則概觀](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 ### 資料控管和同意
 
-- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
+- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
 - [資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview)
-- [原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/overview)
+- [原則執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)
 - [同意與偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
-- [同意和偏好設定欄位群組](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/consents)
+- [同意和偏好設定欄位群組](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents)
 
 ### 目的地和啟用
 
-- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
-- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
-- [監視目的地的資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [監視目的地的資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
 
 ### 資料模型與結構
 
-- [XDM系統概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)
-- [結構描述組合基本面](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition)
+- [XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [結構描述組合基本面](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
 
 ### 管理和存取控制
 
-- [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home)
+- [存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)
 - [沙箱概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)
 
 ### 監視和可觀察性
 
-- [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
-- [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)
+- [警報概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
 
 ### 護欄
 
-- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 - [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
-- [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
+- [啟動護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 
 ### 教學課程
 
 - [建立方案](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/union-schema)
-- [為設定檔啟用資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/enable-for-profile)
+- [為設定檔啟用資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile)
