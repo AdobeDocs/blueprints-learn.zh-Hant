@@ -283,7 +283,7 @@ ht-degree: 0%
 
 ### 實施方式
 
-使用事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式，在訪客生日到達時傳送個人化生日訊息和優惠。 [當根據設定檔屬性日期觸發器傳送單一事件導向訊息時，這是正確的模式。
+使用事件觸發訊息[&#128279;](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)模式，在訪客生日到達時傳送個人化生日訊息和優惠。 當根據設定檔屬性日期觸發器傳送單一事件導向訊息時，這是正確的模式。
 
 ### 技術考量
 
