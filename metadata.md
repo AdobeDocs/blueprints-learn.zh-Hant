@@ -2,21 +2,23 @@
 cloud: Experience Platform
 solution: Experience Platform
 product: experience platform
+landing-page-name: home-tutorials
+landing-page-breadcrumb-title: Tutorials
 type: Tutorial
 doc-type: blueprint
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/blueprints-learn.zh-Hant
+git-repo: https://github.com/AdobeDocs/blueprints-learn.en
 index: true
-source-git-commit: f673054b9e0c459daed08157b4e05d2bda100470
-workflow-type: ht
-source-wordcount: '65'
-ht-degree: 100%
+source-git-commit: 343911ea0a701ab9689b4939d508b54dca1ceecb
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 19%
 
 ---
 
 
-# 供內部使用的中繼資料
+# 內部使用的中繼資料
 
-metadata.md 檔案包含存放庫層級中繼資料，這些中繼資料會傳遞至存放庫中的使用手冊 TOC.md 檔案。如果您想變更任何使用手冊的 metadata.md 內容，可以在任何 TOC.md 檔案中進行更改。
+metadata.md檔案包含存放庫層級中繼資料，這些中繼資料會傳遞至存放庫中的使用手冊TOC.md檔案。 如果您想要變更任何使用手冊的metadata.md內容，請在任何TOC.md檔案中進行變更。
 
-請參閱[中繼資料](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=zh-Hant)以獲取&#x200B;**解決方案**、**產品**&#x200B;及&#x200B;**類型**&#x200B;的有效值清單。
+請參閱[中繼資料](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=zh-Hant)，以取得&#x200B;**解決方案**、**產品**&#x200B;和&#x200B;**型別**&#x200B;的有效值清單。
