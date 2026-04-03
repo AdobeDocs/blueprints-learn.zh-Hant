@@ -3,7 +3,7 @@ title: '[!DNL Journey Optimizer] — 歷程Blueprint'
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 1e1c30954a7f4b3eac0e63736ad804329d58f76b
+source-git-commit: 8ad1be5524ffd98f3728e4e65bc1b9d69efab2c2
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 16%
@@ -26,7 +26,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 - **放棄復原：**&#x200B;當使用者透過電子郵件、推播或應用程式內放棄購物車、表單或工作階段時，觸發個人化訊息。
 - **新使用者註冊：**&#x200B;新使用者註冊新帳戶偏好設定、相關促銷活動或權益後，請立即與他們互動
 - **異動訊息：**&#x200B;使用事件觸發器傳送即時確認、警示或更新（例如已送出訂單、重設密碼）。
-- **內容鎖定目標：**&#x200B;根據使用者的訊號與位置即時與使用者通訊，以協助引導和引導其體驗
+- **關聯式鎖定目標：**&#x200B;根據使用者的訊號與位置即時與使用者通訊，以協助引導和引導其體驗
 - **關聯式向上銷售/交叉銷售：**&#x200B;根據即時設定檔屬性和最近的互動，提供個人化優惠。
 
 >[!TAB 行銷活動協調流程（已排程，品牌已啟動）]
@@ -61,7 +61,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 | 整合 | 說明 | 技術考量 |
 | :-- | :-- | :-- |
 | [第三方傳訊](3rd-party-messaging.md) | 示範Adobe [!DNL Journey Optimizer]如何與協力廠商傳訊平台整合，以協調及提供個人化的客戶通訊。 | <ul><li>協力廠商系統必須支援&#x200B;**持有人權杖驗證**</li><li>**由於多租使用者架構，不支援**&#x200B;靜態IP。</li><li>請注意，第三方系統上的&#x200B;**API速率限制**；客戶可能需要購買額外的容量來處理源自&#x200B;**Adobe Journey Optimizer**&#x200B;的流量。</li><li>訊息裝載或傳遞邏輯中不支援&#x200B;**決定管理**。</li></ul> |
-| 使用Adobe Campaign v8[&#128279;](../campaign-v8/ajo-and-campaign-v8.md)的[!DNL Journey Optimizer]  | 示範Adobe [!DNL Journey Optimizer]如何整合Adobe Campaign v8的交易式傳訊功能，以執行最終訊息傳送。 | <ul><li>沒有訊息限制。 每5分鐘最多4,000則訊息。</li><li>僅支援事件起始歷程的</li><li>Campaign傳送的訊息不支援決定管理</li></ul> |
+| 使用Adobe Campaign v8](../campaign-v8/ajo-and-campaign-v8.md)的[[!DNL Journey Optimizer]  | 示範Adobe [!DNL Journey Optimizer]如何整合Adobe Campaign v8的交易式傳訊功能，以執行最終訊息傳送。 | <ul><li>沒有訊息限制。 每5分鐘最多4,000則訊息。</li><li>僅支援事件起始歷程的</li><li>Campaign傳送的訊息不支援決定管理</li></ul> |
 
 <br>
 
@@ -94,12 +94,12 @@ Adobe [!DNL Experience Platform]：
 
 [[!DNL Journey Optimizer]護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## 相關文件
 
 - [[!DNL Experience Platform]檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 - [[!DNL Experience Platform]標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer]產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)
