@@ -3,7 +3,7 @@ title: '[!DNL Journey Optimizer] — 歷程Blueprint'
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 1e1c30954a7f4b3eac0e63736ad804329d58f76b
+source-git-commit: 8ad1be5524ffd98f3728e4e65bc1b9d69efab2c2
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 16%
@@ -26,7 +26,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 - **放棄復原：**&#x200B;當使用者透過電子郵件、推播或應用程式內放棄購物車、表單或工作階段時，觸發個人化訊息。
 - **新使用者註冊：**&#x200B;新使用者註冊新帳戶偏好設定、相關促銷活動或權益後，請立即與他們互動
 - **異動訊息：**&#x200B;使用事件觸發器傳送即時確認、警示或更新（例如已送出訂單、重設密碼）。
-- **內容鎖定目標：**&#x200B;根據使用者的訊號與位置即時與使用者通訊，以協助引導和引導其體驗
+- **關聯式鎖定目標：**&#x200B;根據使用者的訊號與位置即時與使用者通訊，以協助引導和引導其體驗
 - **關聯式向上銷售/交叉銷售：**&#x200B;根據即時設定檔屬性和最近的互動，提供個人化優惠。
 
 >[!TAB 行銷活動協調流程（已排程，品牌已啟動）]
