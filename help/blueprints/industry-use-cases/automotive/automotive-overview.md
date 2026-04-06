@@ -3,9 +3,9 @@ title: 汽車使用案例
 description: 瞭解汽車組織如何使用Adobe Experience Platform來個人化車輛購買歷程、改善服務保留率，並建立擁有者忠誠度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: ee83c739-0907-481d-ba3f-358af4e03c67
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e5c88f240fe86bbc494402842a3d974f803aab03
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1802'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,6 @@ ht-degree: 4%
 | [零件與配件建議](#parts-and-accessories-recommendations) | 根據車輛型號、擁有時間及客戶喜好設定，建議相關零件、配件及升級。 個人化的售後推薦可帶來遞增收入，同時協助擁有者從車輛中獲得更多利益。 | 改善零件與配件的購買率，並增加售後收入 | [行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md) |
 | [車輛召回通知](#vehicle-recall-notifications) | 傳送包含服務排程選項和安全資訊的個人化召回通知。 及時、清楚的召回通訊可保護客戶安全，並展現品牌對負責任所有權支援的承諾。 | 改善召回率回應率，並強化安全性法規遵循 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
 | [新模型啟動促銷活動](#new-model-launch-campaigns) | 根據目前的車輛、偏好和購買記錄，鎖定可能對新模型啟動感興趣的客戶。 焦點受眾目標定位可最大化啟動影響力，並建立早期訂單動量。 | 改善發行促銷活動的參與度，並增加新模型的興趣 | [批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) |
-| [財務與保險優惠方案](#financing-and-insurance-offers) | 根據信用設定檔、車輛選擇和購買時間表，展示個人化的融資和保險優惠方案。 量身打造的金融產品消除了購買障礙，並幫助客戶對自己的條款充滿信心。 | 提高融資接受率，並增加每次銷售收入 | [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md) |
 | [測試磁碟機排程](#test-drive-scheduling) | 透過經銷商推薦和車輛可用性，啟用個人化的測試驅動程式排程。 讓感興趣的買家輕鬆掌握最新消息，加速購買過程。 | 改善測試驅動程式完成率，提高銷售轉換率 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) |
 | [所有者忠誠度方案](#owner-loyalty-programs) | 協調跨經銷商、OEM數位和連線汽車頻道的忠誠度通訊，套用層級型資格規則以控管哪些擁有者可取得專屬優惠、提早車輛存取權及合作夥伴獎勵。 優惠仲裁可防止經銷商和OEM通路的衝突促銷同時到達相同的擁有者。 | 改善熟客方案參與度，增加重複購買次數 | [具有決策的跨頻道歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md) |
 | [保固與延長服務計畫](#warranty-and-extended-service-plans) | 根據車輛使用年限、里程和購買模式，在最佳時間建議保固和延長服務計畫。 適時拓展功能可在工廠保固到期前擷取收入。 | 改善延長保固採用率，並增加服務收入 | [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md) |
@@ -75,13 +74,6 @@ ht-degree: 4%
 - 行銷活動時間必須與禁運日期和區域推出排程相協調，以確保客戶在市場適當時間收到資訊。
 - [!DNL Real-Time Customer Data Platform]對象啟用應將啟動區段同步至廣告平台，以取得協調的付費媒體支援及自有頻道外展活動。
 
-### 融資與保險優惠方案
-
-- 財務優惠方案適用性規則必須謹慎設定，以符合借貸法規，確保向客戶呈現的優惠方案是客戶實際可符合的資格。
-- 信用設定檔資料整合需要安全的處理和嚴格的存取控制，因為財務資訊受到加強的隱私權和法規要求的約束。
-- 優惠方案簡報必須明確披露條款、費率及條件，以符合各適用市場的消費者金融法規。
-- [!DNL Journey Optimizer]決策規則應將車輛價格、首期付款和貸款期限偏好設定納入考量，以依據關聯性而非單純依據費率來排名優惠。
-
 ### 測試磁碟機排程
 
 - 經銷商存貨系統必須整合，以確認客戶感興趣的特定車輛型號及配飾可在建議經銷商處試駕使用。
@@ -119,3 +111,4 @@ ht-degree: 4%
 - 客戶對經銷商的指派邏輯應考慮近似程度、經銷商專業化、語言偏好設定，以及任何現有的經銷商關係，以提供最佳比對。
 - 潛在客戶路由規則必須確保在客戶線上上表示購買興趣時，查詢會快速到達適當的經銷商，並包含有關客戶研究活動的完整內容。
 - [!DNL Experience Platform]身分解析必須處理客戶與多個經銷商互動的案例，維護統一的設定檔，同時尊重每個經銷商對自己客戶關係的看法。
+
