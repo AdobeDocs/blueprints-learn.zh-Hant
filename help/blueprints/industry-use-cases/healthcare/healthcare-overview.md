@@ -3,9 +3,9 @@ title: 醫療保健使用案例
 description: 瞭解醫療保健組織如何使用Adobe Experience Platform來改善患者參與、簡化護理協調，以及促進更好的健康結果。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 8da82711-a783-488d-a0ed-070b33ecbbc4
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
 workflow-type: tm+mt
-source-wordcount: '3818'
+source-wordcount: '3589'
 ht-degree: 0%
 
 ---
@@ -95,26 +95,6 @@ ht-degree: 0%
 - 將資料使用標籤套用至任何護理指示內容，以確保受保護的健康資訊僅透過安全、經患者授權的管道分享。
 - 設定考量造訪型別的計時規則 — 例如，手術後的後續追蹤可能需要與常規檢查調查不同的計時。
 - 納入到患者入口網站的安全連結，以進行調查完成和預約排程，而不是透過不安全的管道收集健康資訊。
-
-
-## 慢性疾病管理計畫
-
-根據每位患者的具體狀況和治療計畫，個人化慢性疾病管理通訊、教育內容和監控提醒。 持續、相關的參與可協助患者在一段時間內在管理健康方面扮演積極角色。
-
-### 企業影響
-
-個人化的慢性疾病管理計畫會提高計畫參與率，進而改善疾病管理結果，並降低緊急護理的使用率。
-
-### 實施方式
-
-使用[多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)模式。 慢性疾病管理本身就是一種長期的多接觸點體驗，需要根據患者的參與度和健康里程碑來調整訊息內容。 這是正確的模式，因為慢性疾病管理需要根據臨床指標和參與模式的條件分支，在較長時間內提供適應性訊息 — 事件觸發式訊息無法處理根據不斷演變的健康資料調整干預所需的持續動態重新評估。
-
-### 技術考量
-
-- 根據條件特定的量度（例如，糖尿病管理的血糖趨勢或高血壓計畫的血壓讀數）設計適應性變化的歷程分支邏輯。
-- 使用[!DNL Adobe Experience Platform]資料使用標籤實作嚴格的資料控管，以分類並保護整個歷程中特定於條件的健康情況資料。
-- 與遠端患者監控裝置和患者回報的結果系統整合，將即時健康資料饋送至歷程決策點。
-- 在歷程中建立護理團隊提升路徑，以便不參與或關注健康趨勢時觸發警示給適當的臨床員工。
 
 
 ## 新患者入門歷程
