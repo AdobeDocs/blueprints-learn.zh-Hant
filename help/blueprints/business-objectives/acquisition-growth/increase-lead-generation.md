@@ -2,13 +2,13 @@
 title: 增加銷售機會開發
 description: 瞭解如何透過表單、事件、內容和多管道參與，為銷售管道產生更多合格銷售機會。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 3f1226b6-b6dc-4276-9843-c0657a1b7b4d
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # 增加銷售機會開發
 
@@ -30,6 +30,6 @@ ht-degree: 3%
 
 | 圖樣 | 類別 | 如何支援此目標 |
 | --- | --- | --- |
-| [B2B 對象啟用](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) | Audience Builder &amp; Activation | 啟用以帳戶為基礎的對象，以從目標帳戶產生銷售機會 |
-| [購買群組行銷與歷程管理](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md) | 行銷活動管理與協調 | 協調多個利害關係人以購買群組為目標的行銷活動，以產生合格的B2B銷售機會 |
+| [B2B 對象啟用](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md) | Audience Builder &amp; Activation | 啟用以帳戶為基礎的對象，以從目標帳戶產生銷售機會 |
+| [購買群組行銷與歷程管理](/help/blueprints/use-case-patterns/b2b/buying-group-marketing.md) | 行銷活動管理與協調 | 協調多個利害關係人以購買群組為目標的行銷活動，以產生合格的B2B銷售機會 |
 | [批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) | 行銷活動管理與協調 | 將目標批次行銷活動提供給潛在客戶區段，以推動潛在客戶擷取 |

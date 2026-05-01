@@ -3,7 +3,7 @@ title: B2B分析
 description: 瞭解如何在跨管道客戶歷程分析中加入B2B帳戶層級資訊。
 solution: Customer Journey Analytics, Real-Time Customer Data Platform
 exl-id: 9d576e5c-cbd2-4c60-a6b0-88f8b8b963b4
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '7528'
 ht-degree: 1%
@@ -107,7 +107,7 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 | --- | --- | --- | --- |
 | 管理與治理 | 必填 | 沙箱已設定為[!DNL CJA]個B2B edition和[!DNL RT-CDP]個B2B edition使用許可權。 為可存取[!DNL CJA]和B2B資料模型的資料工程師、分析師和行銷作業使用者布建的角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home) |
 | 資料模型與準備 | 必填 | 使用B2B類別設定的B2B XDM結構描述：XDM商業帳戶、XDM商業機會、XDM商業帳戶個人關係、XDM商業機會個人關係和XDM商業行銷清單成員。 必須定義帳戶屬性、商機階段和購買群組角色的欄位群組。 為設定檔建立和啟用的資料集。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[B2B edition結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b) |
-| 資料來源與收集 | 必填 | B2B資料來源已連線，通常透過[!DNL Marketo Engage]來源聯結器或[!DNL Salesforce] CRM來源聯結器。 帳戶記錄、機會記錄、人員 — 帳戶關係和行為參與事件必須流入AEP資料集。[!DNL Web SDK] 或[!DNL Marketo]整合必須透過帳戶關聯擷取行為事件。 | [來源總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)，[Marketo Engage聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
+| 資料來源與收集 | 必填 | B2B資料來源已連線，通常透過[!DNL Marketo Engage]來源聯結器或[!DNL Salesforce] CRM來源聯結器。 帳戶記錄、機會記錄、人員 — 帳戶關係和行為參與事件必須流入AEP資料集。 [!DNL Web SDK]或[!DNL Marketo]整合必須透過帳戶關聯擷取行為事件。 | [來源總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)，[Marketo Engage聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
 | 身分和設定檔設定 | 必填 | 已設定用來解析個人與帳戶關係的B2B身分解析。 必須連結帳戶ID、人員ID （[!DNL Marketo]銷售機會ID或CRM聯絡人ID）和跨裝置身分識別（ECID、電子郵件）。 身分圖表必須支援B2B資料模型固有的多對多人個人對帳戶對應。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[B2B身分識別解析](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b) |
 | 對象定義與細分 | 已假設就位 | 如果要從[!DNL CJA]將B2B區段發佈回AEP以進行啟用，則應該可以使用帳戶層級的對象定義。 若是僅限分析的使用案例，並非最嚴格的先決條件，但建議您針對區段型分析採取此做法。 | [分段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home) |
 

@@ -5,10 +5,10 @@ user-guide-description: 探索Adobe Experience Platform和應用程式的主要�
 product: adobe experience platform
 mini-toc-levels: 3
 role: Developer, User
-source-git-commit: abed39b6b6f63f2eef6cb36b400319910f8cf472
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 24%
+source-wordcount: '539'
+ht-degree: 21%
 
 ---
 
@@ -50,21 +50,32 @@ ht-degree: 24%
       + [Audience Activation至目的地](/help/blueprints/use-case-patterns/audience-building-activation/audience-activation-to-destinations.md)
       + [有區段比對的對象Collaboration](/help/blueprints/use-case-patterns/audience-building-activation/audience-collaboration-segment-match.md)
       + [事件轉送](/help/blueprints/use-case-patterns/audience-building-activation/event-forwarding.md)
-      + [B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md)
+      + [支援與銷售人員的即時設定檔查詢](/help/blueprints/use-case-patterns/audience-building-activation/real-time-profile-lookup.md)
+      + [設定檔擴充的自訂資料科學](/help/blueprints/use-case-patterns/audience-building-activation/data-science-profile-enrichment.md)
    + 個人化{#personalization-patterns}
       + [匿名訪客網頁Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md)
       + [已知訪客網頁/應用程式Personalization](/help/blueprints/use-case-patterns/personalization/known-visitor-web-app-personalization.md)
       + [Offer Decisioning](/help/blueprints/use-case-patterns/personalization/offer-decisioning.md)
       + [行為建議](/help/blueprints/use-case-patterns/personalization/behavioral-recommendation.md)
+      + [適用於Web/行動Personalization的Edge設定檔存取](/help/blueprints/use-case-patterns/personalization/edge-profile-access.md)
+      + [使用Adobe Target共用對象](/help/blueprints/use-case-patterns/personalization/audience-sharing-with-target.md)
    + 行銷活動管理與協調{#campaign-orchestration-patterns}
       + [批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md)
       + [事件觸發式傳訊](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)
       + [多步驟協調歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/multi-step-orchestrated-journey.md)
       + [具有決策的跨頻道歷程](/help/blueprints/use-case-patterns/campaign-management-orchestration/cross-channel-journey-with-decisioning.md)
-      + [購買群組式行銷與歷程管理](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md)
+      + [Campaign v8批次協調與異動訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/campaign-v8-orchestration.md)
+      + [協力廠商傳訊與Journey Optimizer整合](/help/blueprints/use-case-patterns/campaign-management-orchestration/third-party-messaging.md)
    + 分析{#analysis-patterns}
       + [Customer Analytics與Insight開發](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md)
-      + [B2B分析](/help/blueprints/use-case-patterns/analysis/b2b-analytics.md)
+   + B2B啟用與行銷{#b2b-patterns}
+      + [B2B Audience Activation](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md)
+      + [購買群組式行銷與歷程管理](/help/blueprints/use-case-patterns/b2b/buying-group-marketing.md)
+      + [B2B分析](/help/blueprints/use-case-patterns/b2b/account-analytics.md)
+      + [使用Marketo資料的B2B歷程](/help/blueprints/use-case-patterns/b2b/marketo-data-journeys.md)
+      + [AJO B2B付費媒體控制者](/help/blueprints/use-case-patterns/b2b/paid-media-orchestration.md)
+      + [Marketo和Workfront攝入與建立](/help/blueprints/use-case-patterns/b2b/campaign-intake-and-creation.md)
+      + [Marketo和Workfront檢閱與核准](/help/blueprints/use-case-patterns/b2b/campaign-review-and-approval.md)
    + 對話體驗{#conversational-experience-patterns}
       + [Brand Concierge對話體驗](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md)
 + 產業使用案例範例{#industry-use-cases}

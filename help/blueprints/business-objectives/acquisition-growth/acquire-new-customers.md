@@ -2,13 +2,13 @@
 title: 贏取新客戶
 description: 瞭解如何透過鎖定目標的贏取行銷活動、相似對象和付費媒體最佳化，來擴大客戶基礎。
 solution: Experience Platform, Real-Time Customer Data Platform
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 57b2da92-f099-4c82-899b-9023f1ac81dc
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
-
 
 # 贏取新客戶
 
@@ -32,6 +32,6 @@ ht-degree: 3%
 | --- | --- | --- |
 | [Audience Activation到目的地](/help/blueprints/use-case-patterns/audience-building-activation/audience-activation-to-destinations.md) | Audience Builder &amp; Activation | 將高價值的種子對象發佈到廣告平台，以進行相似對象擴充和目標式贏取促銷活動 |
 | [區段相符的受眾Collaboration](/help/blueprints/use-case-patterns/audience-building-activation/audience-collaboration-segment-match.md) | Audience Builder &amp; Activation | 啟用跨組織的受眾共用，以擴大贏取計畫的觸及面 |
-| [B2B 對象啟用](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) | Audience Builder &amp; Activation | 啟用廣告和外展頻道的帳戶型受眾，以贏取B2B客戶 |
+| [B2B 對象啟用](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md) | Audience Builder &amp; Activation | 啟用廣告和外展頻道的帳戶型受眾，以贏取B2B客戶 |
 | [匿名訪客網頁Personalization](/help/blueprints/use-case-patterns/personalization/anonymous-visitor-web-personalization.md) | 個人化 | 為未知的訪客個人化Web體驗，以提高新潛在客戶的轉換 |
 | [Brand Concierge對話體驗](/help/blueprints/use-case-patterns/conversational-experience/brand-concierge-conversational-experience.md) | 對話體驗 | 引導新訪客透過AI支援的對話式探索，以加速首次購買 |

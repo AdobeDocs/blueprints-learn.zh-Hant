@@ -2,15 +2,18 @@
 title: B2B Customer Journey Analytics Blueprint
 description: 在Customer Journey Analytics中包含B2B帳戶、商機和購買群組資料，以進行帳戶型報告和歷程分析。
 solution: Customer Journey Analytics
-source-git-commit: 10e54d97082143b61e43bae56250a524d1759d45
+exl-id: d55ed43d-aabf-4722-9ae9-a2aef99f19e0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '743'
 ht-degree: 7%
 
 ---
 
-
 # B2B Customer Journey Analytics Blueprint
+
+>[!TIP]
+>此Blueprint也可作為B2B啟用與行銷下的[使用案例模式](/help/blueprints/use-case-patterns/b2b/account-analytics.md)。
 
 Customer Journey Analytics B2B edition可為B2B組織啟用帳戶型報表和分析。 與以人為中心的B2C分析不同，此藍圖將&#x200B;**帳戶**&#x200B;置於資料模型的中心，因此您可以跨多個利害關係人、購買群組和銷售週期分析複雜的B2B購買歷程。 使用[!DNL Customer Journey Analytics]將行為資料與B2B維度（帳戶、商機、行銷活動和行銷清單）整合，以進行歷程型深入分析和對象建立。
 

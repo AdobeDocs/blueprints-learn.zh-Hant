@@ -3,7 +3,7 @@ title: 購買群組式行銷與歷程管理
 description: 瞭解如何開發符合潛在客戶購買群組資格的帳戶層級歷程，以改善B2B行銷效率。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 2bf57f67-80c8-4368-98d2-05706427772d
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '7932'
 ht-degree: 0%
@@ -119,7 +119,7 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 | 資料生命週期管理 | 推薦 | 同意管理對於B2B電子郵件和簡訊通訊至關重要。 資料集到期原則有助於管理暫時性參與資料的生命週期，並確保符合資料保留要求。 | [進階資料生命週期管理](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
 | 資料使用標籤和實作 | 推薦 | B2B資料通常包含敏感的公司資訊和商務聯絡人的個人資料。 資料控管原則可確保跨目的地合規使用B2B資料，尤其是在啟用至廣告平台或協力廠商系統時。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home) |
 | 監控與可觀察性 | 推薦 | 監視可確保B2B資料管道（CRM/[!DNL Marketo]同步）狀況良好、帳戶設定檔正在更新，以及帳戶歷程執行正在順利進行且沒有失敗。 針對來源資料流失敗發出警報對維護資料貨幣至關重要。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
-| 報告與分析 | 已包含 | [!DNL AJO B2B Edition]內的B2B分析儀表板提供購買群組參與度、帳戶歷程績效和管道量度。[!DNL CJA B2B Edition] 透過帳戶層級工作區分析、購買群組分析和機會關聯來延伸分析。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
+| 報告與分析 | 已包含 | [!DNL AJO B2B Edition]內的B2B分析儀表板提供購買群組參與度、帳戶歷程績效和管道量度。 [!DNL CJA B2B Edition]透過帳戶層級工作區分析、購買群組分析和商機關聯來延伸分析。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
 ## 應用程式函式
 
@@ -391,7 +391,7 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 **選項差異的位置：**
 
-選項A的&#x200B;**（單一解決方案興趣）：**
+選項A （單一解決方案興趣）的&#x200B;**：**
 建立一個解決方案興趣和一個角色範本。 專注於清晰、瞭解的組織主要產品或服務的購買行動。
 
 選項B的&#x200B;**（多重解決方案興趣）：**
@@ -500,7 +500,7 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 **選項差異的位置：**
 
-選項A的&#x200B;**（單一解決方案興趣）：**
+選項A （單一解決方案興趣）的&#x200B;**：**
 設計具有循序階段的線性歷程。 輸入是以單一帳戶對象或購買群組建立事件為基礎。 一個電子郵件培養追蹤，內容愈來愈急迫和深入。
 
 選項B的&#x200B;**（多重解決方案興趣）：**
@@ -566,7 +566,7 @@ CRM中應該顯示購買群組資料的深度為何？
 
 **應用程式功能：** [!DNL AJO B2B]： B2B Analytics儀表板
 
-此階段建立報告和分析架構，以測量購買群組績效、帳戶歷程有效性和管道影響。[!DNL AJO B2B Edition] 提供內建的analytics儀表板；[!DNL CJA B2B Edition] （如果授權）以更深入的跨管道帳戶層級深入分析來延伸分析。
+此階段建立報告和分析架構，以測量購買群組績效、帳戶歷程有效性和管道影響。 [!DNL AJO B2B Edition]提供內建analytics儀表板；[!DNL CJA B2B Edition] （如果授權）以更深入的跨管道帳戶層級深入分析來延伸分析。
 
 #### 決定：報告方法
 

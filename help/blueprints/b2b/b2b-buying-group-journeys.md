@@ -3,14 +3,33 @@ title: 購買群組式行銷和歷程管理Blueprint
 description: 瞭解如何在Adobe Journey Optimizer B2B edition中構思、設計和建置符合潛在客戶購買群組的歷程。
 solution: Journey Optimizer B2B Edition
 exl-id: 0a9da49c-f13a-4f2a-8407-277def2db591
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+TQID: https://experienceleague.adobe.com/BTvNNRxxvsbjmuPyY0NjBrMJmiSJ3qkNnndd-y1VwVQ
+product_v2:
+  - id: aacce07f-424e-489e-8d02-a4fb2f4211bd
+feature_v2:
+  - id: a4b836d9-ffdd-4df3-a62a-f78b830cf059
+  - id: afadf741-c5fe-42cd-8013-23bb6ff2d1bc
+  - id: beb5f4be-cec3-471a-9db6-831a77dd3ac9
+subfeature_v2:
+  - id: ac532e39-bc90-4c8f-b14c-5730180e1f68
+  - id: d5e018de-9479-48a8-96a8-176c73166631
+  - id: e107d6b1-73fc-440f-ae3a-e96dccbaf602
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: 2349
 ht-degree: 0%
 
 ---
 
 # 購買群組式行銷和歷程管理藍圖
+
+>[!TIP]
+>此Blueprint也可作為B2B啟用與行銷下的[使用案例模式](/help/blueprints/use-case-patterns/b2b/buying-group-marketing.md)。
 
 行銷團隊目前在向銷售人員提供合格銷售機會方面面臨許多挑戰。 這些挑戰之一是與組織中的適當人員合作，且通常在努力和準確性方面較為明顯。 由於有&#x200B;_個銷售機會得分_，群組太窄，團隊可能會錯過合適的人員。 若使用&#x200B;_帳戶評分_，則需花費更多精力以如此廣泛的帳戶檢視來識別正確的人員。
 

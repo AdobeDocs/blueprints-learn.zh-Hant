@@ -2,13 +2,13 @@
 title: 匿名訪客網頁Personalization
 description: 瞭解如何根據工作階段中的行為訊號，將個人化網頁內容傳遞給無法識別的訪客。
 solution: Journey Optimizer, Real-Time Customer Data Platform
-source-git-commit: 126dd712603494513b71a8a6e1c4b99bdb7ff212
+exl-id: e2446801-ffce-40e6-bfe9-abec623c9201
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '8076'
+source-wordcount: '8109'
 ht-degree: 1%
 
 ---
-
 
 # 匿名訪客網頁個人化
 
@@ -104,13 +104,19 @@ ht-degree: 1%
 - **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 根據工作階段中行為訊號進行即時對象評估的Edge細分；匿名邊緣設定檔管理
 - **[!DNL Adobe Experience Platform] (AEP)** — [!DNL Web SDK]用於行為訊號收集，[!DNL Edge Network]用於即時資料路由和個人化傳遞，資料流設定
 
+## 架構
+
+下列參考架構說明如何在邊緣收集匿名訪客訊號、根據對象規則進行評估，並用來提供個人化內容。
+
+![匿名對象啟用和個人化的參考架構](/help/blueprints/audience-activation/assets/anonymous_activation.svg)
+
 ## 基礎函式
 
 下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
 
 | 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 已假設就位 | 已設定Web Channel許可權的AJO沙箱。[!DNL Web SDK] 授予實作團隊的實作許可權和資料流存取權。 為使用者布建了允許Web通路設定、受眾管理和行銷活動執行的角色。 | [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
+| 管理與治理 | 已假設就位 | 已設定Web Channel許可權的AJO沙箱。 [!DNL Web SDK]實作許可權和資料流存取權已授予實作團隊。 為使用者布建了允許Web通路設定、受眾管理和行銷活動執行的角色。 | [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
 | 資料模型與準備 | 必填 | 體驗事件結構描述擷取網頁行為訊號（頁面檢視、點選、捲動深度、轉介資料、UTM引數）。 結構描述必須包含標準Web互動欄位群組，並啟用邊緣設定檔以支援即時評估。 必須建立對應的資料集並啟用設定檔。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home) |
 | 資料來源與收集 | 必填 | 必須在所有目標Web屬性上實作[!DNL Web SDK]，且資料流設定為將資料路由至[!DNL AEP Edge Network]。 資料流必須啟用[!DNL Adobe Experience Platform]和[!DNL Adobe Journey Optimizer]服務。 這是關鍵相依性 — 如果沒有[!DNL Web SDK]，就無法進行行為訊號收集或體驗傳送。 | [Web SDK 概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home) |
 | 身分和設定檔設定 | 必填 | ECID ([!DNL Experience Cloud ID])已設定為匿名訪客的主要身分名稱空間。 必須使用`isActiveOnEdge: true`設定Edge合併原則，才能解析邊緣的匿名設定檔資料。 每個沙箱的Edge上只能有一個作用中的合併原則。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home) |

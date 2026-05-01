@@ -3,7 +3,7 @@ title: B2B Audience Activation
 description: 瞭解如何跨網路、電子郵件和廣告頻道啟用以帳戶為基礎的B2B受眾。
 solution: Real-Time Customer Data Platform
 exl-id: 2b979159-37aa-41d4-a6b4-1105538f6546
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '7611'
 ht-degree: 0%
@@ -25,7 +25,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 已啟用的帳戶對象在整個需求產生funnel中的主要使用案例：在[!DNL LinkedIn]上的funnel最上層認知行銷活動以及顯示廣告、[!DNL Marketo Engage]中的funnel中段培育計畫，以及透過CRM整合的底層funnel銷售啟用。 帳戶隱藏對象可藉由排除現有客戶、已關閉的遺失帳戶或已處於活躍銷售週期的帳戶，來防止浪費的支出。
 
 >[!NOTE]
->如果您的使用案例涉及在人員層級(B2C)而不是帳戶層級啟用對象，請參閱[對目的地的對象啟用](audience-activation-to-destinations.md)。 該模式使用標準RT-CDP資料模型，不需要B2B edition。
+>如果您的使用案例涉及在人員層級(B2C)而不是帳戶層級啟用對象，請參閱[對目的地的對象啟用](../audience-building-activation/audience-activation-to-destinations.md)。 該模式使用標準RT-CDP資料模型，不需要B2B edition。
 
 ## 主要業務目標
 
@@ -181,7 +181,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **運作方式：**
 
-此選項使用[!DNL RT-CDP]中的原生[!DNL Marketo Engage]目的地聯結器，將帳戶對象會籍變更直接串流到[!DNL Marketo Engage]。 當帳戶符合或退出對象區段時，[!DNL Marketo]中的關聯銷售機會和聯絡人會以區段成員資格屬性更新。[!DNL Marketo] 智慧型行銷活動就可以根據這些成員資格變更來觸發。
+此選項使用[!DNL RT-CDP]中的原生[!DNL Marketo Engage]目的地聯結器，將帳戶對象會籍變更直接串流到[!DNL Marketo Engage]。 當帳戶符合或退出對象區段時，[!DNL Marketo]中的關聯銷售機會和聯絡人會以區段成員資格屬性更新。 然後，可根據這些成員資格變更觸發[!DNL Marketo]智慧型行銷活動。
 
 [!DNL Marketo Engage]目的地是串流目的地，這表示對象會籍變更會在發生時以遞增方式傳送，而非以排程批次傳送。 對於需要回應帳戶資格變更的行銷活動，這可提供更快速的動作時間。 欄位對應會將[!DNL RT-CDP]設定檔屬性連線至[!DNL Marketo]銷售機會/聯絡人欄位，以從[!DNL RT-CDP]的帳戶層級資料擴充[!DNL Marketo]記錄。
 

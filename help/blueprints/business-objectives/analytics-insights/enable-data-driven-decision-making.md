@@ -2,13 +2,13 @@
 title: 啟用資料導向式決策
 description: 瞭解如何使用自助分析、即時客戶見解和AI支援的預測來強化團隊以指導策略。
 solution: Experience Platform, Customer Journey Analytics
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 0ff0e873-a95c-4286-9378-56db02d209a1
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # 啟用資料導向式決策
 
@@ -30,4 +30,4 @@ ht-degree: 2%
 | 圖樣 | 類別 | 如何支援此目標 |
 | --- | --- | --- |
 | [Customer Analytics與Insight世代](/help/blueprints/use-case-patterns/analysis/customer-analytics-insight-generation.md) | 分析 | 提供自助式分析工作區以及引導式分析工作流程，以進行資料導向式深入分析 |
-| [B2B分析](/help/blueprints/use-case-patterns/analysis/b2b-analytics.md) | 分析 | 透過帳戶層級的分析和購買群組深入分析，啟用資料導向式B2B決策 |
+| [B2B分析](/help/blueprints/use-case-patterns/b2b/account-analytics.md) | 分析 | 透過帳戶層級的分析和購買群組深入分析，啟用資料導向式B2B決策 |

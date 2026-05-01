@@ -3,9 +3,9 @@ title: 目的地的Audience啟用
 description: 瞭解如何使用Adobe Real-Time CDP評估對象區段並將其發佈到外部目的地以進行定位或抑制。
 solution: Real-Time Customer Data Platform, Experience Platform
 exl-id: b0b9d937-45d2-48f9-ac4c-3611c6e35f58
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '7043'
+source-wordcount: '7080'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 典型的利害關係人包括管理付費媒體的數位行銷團隊、豐富倉儲的資料團隊、為行銷活動準備聯絡名單的CRM團隊，以及確保傳出資料流程符合治理規範的隱私權團隊。
 
 >[!NOTE]
->如果您的組織使用[!DNL Real-Time CDP] B2B edition並啟用至以帳戶為基礎的目的地，請參閱[B2B對象啟用](b2b-audience-activation.md)。 該模式共用相同的啟動機制，但使用B2B帳戶和人員資料模型，並需要B2B edition授權。
+>如果您的組織使用[!DNL Real-Time CDP] B2B edition並啟用至以帳戶為基礎的目的地，請參閱[B2B對象啟用](../b2b/account-audience-activation.md)。 該模式共用相同的啟動機制，但使用B2B帳戶和人員資料模型，並需要B2B edition授權。
 
 ## 主要業務目標
 
@@ -89,6 +89,12 @@ ht-degree: 1%
 
 - **Adobe [!DNL Real-Time Customer Data Platform] (RT-CDP)** — 對象評估、目的地管理、對象啟用、同意和治理執行
 - **Adobe [!DNL Experience Platform] (AEP)** — 設定檔存放區、身分服務、細分引擎、資料控管
+
+## 架構
+
+下列參考架構說明對象和設定檔資料如何從Real-Time CDP流向企業目的地，包括雲端儲存空間、串流端點和SaaS應用程式。
+
+![企業目的地的對象和設定檔啟用的參考架構](/help/blueprints/audience-activation/assets/known_activation.svg)
 
 ## 基礎函式
 
