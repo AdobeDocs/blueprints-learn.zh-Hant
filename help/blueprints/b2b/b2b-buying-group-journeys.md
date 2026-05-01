@@ -4,11 +4,21 @@ description: 瞭解如何在Adobe Journey Optimizer B2B edition中構思、設�
 solution: Journey Optimizer B2B Edition
 exl-id: 0a9da49c-f13a-4f2a-8407-277def2db591
 TQID: https://experienceleague.adobe.com/BTvNNRxxvsbjmuPyY0NjBrMJmiSJ3qkNnndd-y1VwVQ
-product_v2: id: aacce07f-424e-489e-8d02-a4fb2f4211bd
-feature_v2: id: a4b836d9-ffdd-4df3-a62a-f78b830cf059id: afadf741-c5fe-42cd-8013-23bb6ff2d1bcid: beb5f4be-cec3-471a-9db6-831a77dd3ac9
-subfeature_v2: id: ac532e39-bc90-4c8f-b14c-5730180e1f68id: d5e018de-9479-48a8-96a8-176c73166631id: e107d6b1-73fc-440f-ae3a-e96dccbaf602
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: aacce07f-424e-489e-8d02-a4fb2f4211bd
+feature_v2:
+  - id: a4b836d9-ffdd-4df3-a62a-f78b830cf059
+  - id: afadf741-c5fe-42cd-8013-23bb6ff2d1bc
+  - id: beb5f4be-cec3-471a-9db6-831a77dd3ac9
+subfeature_v2:
+  - id: ac532e39-bc90-4c8f-b14c-5730180e1f68
+  - id: d5e018de-9479-48a8-96a8-176c73166631
+  - id: e107d6b1-73fc-440f-ae3a-e96dccbaf602
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
 workflow-type: tm+mt
 source-wordcount: 2349
@@ -77,11 +87,11 @@ B2B銷售機會管理的重點在於客戶及其銷售機會。 技術層的設�
 >
 >Journey Optimizer B2B edition的授權應包括下列專案：
 ><ul><li>連線至Journey Optimizer B2B的Experience Platform B2B edition執行個體</li><li>同步至RTCDP的Marketo Engage執行個體</li></ul>
-&gt;<br/>
-&gt;若是現有Marketo Engage客戶，建議連線至現有執行個體。
-&gt;<br/><br/>
-&gt;解決方案有其他擴充功能可用，可增強設定檔豐富度：
-&gt;<ul><li>RTCDP的其他來源可豐富設定檔</li><li>到Marketo Engage的RTCDP目的地</li></ul>
+>&gt;<br/>
+>&gt;若是現有Marketo Engage客戶，建議連線至現有執行個體。
+>&gt;<br/><br/>
+>&gt;解決方案有其他擴充功能可用，可增強設定檔豐富度：
+>&gt;<ul><li>RTCDP的其他來源可豐富設定檔</li><li>到Marketo Engage的RTCDP目的地</li></ul>
 
 此解決方案的實作也需要您清楚瞭解&#x200B;_帳戶_&#x200B;和&#x200B;_購買群組_&#x200B;的概念，以及它們如何擴大並加速銷售機會資格。 有了這項瞭解，您也必須識別所需的購買群組完整度分數。
 
