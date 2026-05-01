@@ -3,14 +3,22 @@ title: '[!DNL Journey Optimizer] — 行銷活動協調流程'
 description: 可讓行銷人員協調跨傳出訊息通道的已排程、以對象為基礎的多步驟行銷通訊。
 solution: Journey Optimizer
 exl-id: a8ff16f8-146d-4e1f-9bd0-9eda6af0c69b
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+TQID: https://experienceleague.adobe.com/aPDagEC1zZdi-Bz29fFf6g5Uy8v4qMPhDA47Cdwl-Sw
+product_v2: id: cb954087-f4fc-4456-afb9-e939cabcdc79
+feature_v2: id: a653cc2e-bc85-4353-a306-399e5b247978id: d998adac-2f81-400b-a669-d07bb196e4ebid: df64005d-8f9a-422e-ba4d-c6f6dc3454b4id: fe338112-e2ce-4876-8989-fc4d497613f1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: 358
 ht-degree: 6%
 
 ---
 
 # [!DNL Journey Optimizer] — 行銷活動協調藍圖
+
+>[!TIP]
+>此Blueprint也可作為「行銷活動管理與協調」下的[使用案例模式](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md)。
 
 AJO Campaign Orchestration可讓行銷人員跨對外頻道（例如電子郵件、簡訊、推播和直接郵件）設計和執行排程的、以對象為基礎的多步驟通訊。 AJO歷程會使用即時客戶個人檔案中的即時資料來回應個別客戶行為，而行銷活動則是協調行銷工作，按計畫間隔鎖定對象。 行銷活動和歷程結合起來提供互補的方法 — 行銷活動推動品牌參與策略，而歷程提供個人化、回應式體驗。
 
@@ -47,7 +55,7 @@ AJO Campaign Orchestration可讓行銷人員跨對外頻道（例如電子郵件
 
 ## 護欄
 
-[協調的行銷活動產品連結](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
+[協調的行銷活動產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/guardrails)
 
 [護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails)
 
@@ -58,6 +66,6 @@ AJO Campaign Orchestration可讓行銷人員跨對外頻道（例如電子郵件
 - [[!DNL Journey Optimizer]個協調的行銷活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/orchestrated-campaigns-landing-page.html)
 - [[!DNL Experience Platform]檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 - [[!DNL Experience Platform]標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer]產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

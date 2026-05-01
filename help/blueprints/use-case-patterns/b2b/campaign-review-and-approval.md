@@ -1,24 +1,14 @@
 ---
 title: 檢閱和核准Blueprint
 description: 檢閱和核准藍圖 — Marketo Engage和Workfront整合藍圖
-exl-id: a446faab-7db4-42a2-b4b9-395725c49c9f
-TQID: https://experienceleague.adobe.com/Tr0ZR0G6UFCb5KzWwzOkcFzsmmYa3fJTguTr8TUY-CE
-product_v2: id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2: id: daec7ead-f475-492a-a3b3-02ae08565d6f
-subfeature_v2: id: cdd3e38b-fec2-4f39-8b10-83ddaab1ac16
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: 1290
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
 
 # 檢閱和核准Blueprint {#review-and-approve-blueprint}
-
->[!TIP]
->此Blueprint也可作為B2B啟用與行銷下的[使用案例模式](/help/blueprints/use-case-patterns/b2b/campaign-review-and-approval.md)。
 
 確保行銷資產和行銷活動符合企業的期望和標準，不僅是為正確的受眾提供正確的內容和訊息。 在展開新的行銷計畫時，組織也應負責維護內部政策、產業法規，甚至法律上的先決條件。 行銷團隊可以在行銷活動開發程式中納入稽核和核准步驟，以確保內容和訊息準確無誤，並符合業界標準，尤其是金融、醫療和製藥等行業。
 
@@ -71,7 +61,7 @@ ht-degree: 0%
 
 如果您想要啟動新的電子郵件行銷活動，您應該有專案範本，其中包括審閱電子郵件的任務，以及確保電子郵件在可以寄出之前獲得正確利害關係人核准的核准流程。
 
-![工作畫面](assets/review-and-approve-blueprint-1.png){zoomable="yes"}
+![工作畫面](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/review-and-approve-blueprint-1.png){zoomable="yes"}
 
 ### 觸發您的Marketo Engage電子郵件，以隨著任務狀態變更同步至Workfront {#trigger-your-marketo-engage-email-to-sync-to-workfront}
 
@@ -79,7 +69,7 @@ ht-degree: 0%
 
 在Workfront專案中設定此狀態後，您就可以設定Workfront Fusion情境，監聽準備好檢閱任務以更新為「檢閱Marketo電子郵件」。 更新後，您的情境可以將Marketo Engage電子郵件擷取為HTML檔案、壓縮它，並將其副本儲存在Workfront專案檔案中以供檢閱。
 
-![已準備好檢閱畫面](assets/review-and-approve-blueprint-2.png){zoomable="yes"}
+![已準備好檢閱畫面](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/review-and-approve-blueprint-2.png){zoomable="yes"}
 
 ### 將您的Marketo Engage電子郵件轉換為Workfront中的可檢視校訂 {#convert-your-marketo-engage-email-to-reviewable-proof-in-workfront}
 
@@ -89,7 +79,7 @@ ht-degree: 0%
 
 [Workfront的校樣](https://experienceleague.adobe.com/docs/workfront/using/review-and-approve-work/proofing/proofing-overview/proofing-basics.html){target="_blank"}功能可讓您的行銷團隊取得新資產（例如影像或電子郵件），並透過評論和註解進行共同作業。 一旦校訂準備好上線，決策者就可以從校訂工具核准資產。
 
-![轉換電子郵件熒幕](assets/review-and-approve-blueprint-3.png){zoomable="yes"}
+![轉換電子郵件熒幕](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/review-and-approve-blueprint-3.png){zoomable="yes"}
 
 ### 核准Workfront Proof並在Marketo Engage中觸發資產核准，將任務標示為完成 {#approve-workfront-proof-and-trigger-asset-approval-in-marketo-engage}
 
@@ -105,12 +95,12 @@ Workfront Fusion可以偵測電子郵件何時獲得利害關係人的核准，�
 
 以下融合案例將帶您完成審閱和核准流程的上半部分，其中可以從Marketo Engage提取電子郵件草稿並儲存到Workfront作為校訂。 一旦將校訂儲存為Workfront專案檔案的校訂，就可以由行銷利害關係人稽核、加上註解作為稽核流程的一部分。
 
-![融合情境檢閱和核准流程](assets/review-and-approve-blueprint-4.png){zoomable="yes"}
+![融合情境檢閱和核准流程](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/review-and-approve-blueprint-4.png){zoomable="yes"}
 
 ### 在Workfront中核准觸發在Marketo Engage中核准資產的電子郵件 {#approve-an-email-in-workfront-that-triggers-approval}
 
 以下融合案例可用於偵測Workfront中的校訂何時已核准，並將該核准路由至Marketo Engage以更新電子郵件草稿，使其上線並準備用於Marketo Engage計畫。
 
-![fusion情境校訂核准](assets/review-and-approve-blueprint-5.png){zoomable="yes"}
+![fusion情境校訂核准](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/review-and-approve-blueprint-5.png){zoomable="yes"}
 
 這兩種情況加在一起，可用來建立雙向路徑，將行銷資產從Marketo Engage提取到Workfront強大的稽核和核准工作流程，並將核准從Workfront推送回Marketo Engage。

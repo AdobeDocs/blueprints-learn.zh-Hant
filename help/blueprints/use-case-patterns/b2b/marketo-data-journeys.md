@@ -2,24 +2,14 @@
 title: 使用Marketo資料藍圖的B2B歷程
 description: 使用Marketo Engage資料快速部署Journey Optimizer B2B edition的藍圖。
 solution: Journey Optimizer B2B Edition
-exl-id: d7bd0bd3-0f61-4e59-855f-27afc147c9aa
-TQID: https://experienceleague.adobe.com/C1YHOokFyO9UCtTyu0ynDUYg133kP2mHMLfPZHHffpU
-product_v2: id: aacce07f-424e-489e-8d02-a4fb2f4211bd
-feature_v2: id: a4b836d9-ffdd-4df3-a62a-f78b830cf059id: a65c8aea-b21a-41ce-9ed7-6b517a69fd0bid: afadf741-c5fe-42cd-8013-23bb6ff2d1bcid: beb5f4be-cec3-471a-9db6-831a77dd3ac9id: d6e625c1-468f-4d73-9f32-fd1edb87f96bid: e935834c-48b7-43d8-b754-a815196a1b05
-subfeature_v2: id: c3d6e661-d372-4e98-9fd9-eac771e7e4eeid: d5e018de-9479-48a8-96a8-176c73166631id: f09c7f30-c554-44cf-884c-7557ed69d0c6id: f6df9def-cdf7-4728-9ec8-3f65716828c7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: 2093
+source-wordcount: '2079'
 ht-degree: 2%
 
 ---
 
 # 使用Marketo資料藍圖的B2B歷程
-
->[!TIP]
->此Blueprint也可作為B2B啟用與行銷下的[使用案例模式](/help/blueprints/use-case-patterns/b2b/marketo-data-journeys.md)。
 
 本全方位指南概述Marketo Engage與Adobe Journey Optimizer B2B edition整合的程式。 它涵蓋自訂結構的設定、設定檔和帳戶的擷取，以及針對購買群組協調個人化歷程。 透過使用Marketo Engage資料，此藍圖可確保跨多個管道的精準目標定位和參與，從而推動更符合條件的需求並增強客戶體驗。
 
@@ -49,7 +39,7 @@ ht-degree: 2%
 
 ## 架構
 
-![包含Marketo資料的Journey Optimizer B2B edition解決方案架構](./assets/ajo-b2b-architecture-simplified.png){zoomable="yes"}
+![包含Marketo資料的Journey Optimizer B2B edition解決方案架構](/help/blueprints/b2b/assets/ajo-b2b-architecture-simplified.png){zoomable="yes"}
 
 ## 實施步驟
 
@@ -92,7 +82,7 @@ ht-degree: 2%
 若要簡化實作並確保與Adobe Journey Optimizer B2B edition的相容性，建議進行下列設定：
 
 * **使用預設的身分識別欄位：**
-   * _電子郵件_&#x200B;和&#x200B;_b2b_ person_應該保留為Person結構描述中的身分欄位，以支援身分拼接和受眾啟用。
+   * _電子郵件_&#x200B;和&#x200B;_b2b_ person_應保留為Person結構描述中的身分欄位，以支援身分拼接和受眾啟用。
 * **對Marketo Source Connector使用預設的對應：**
    * 運用Adobe提供的現成欄位對應，簡化資料擷取並減少設定額外負荷。
 * **對AJO B2B使用預設對應：**

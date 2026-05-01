@@ -6,24 +6,15 @@ short-description: 將 RTCDP 設定檔和客群與 Adobe Target 整合。
 solution: Real-Time Customer Data Platform, Target, Experience Platform
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
-exl-id: 29667c0e-bb79-432e-af3a-45bd0b3b43bb
-TQID: https://experienceleague.adobe.com/1ti2SqfAFOgnKbaJ70xwGI-xHDE1WXJ7-oTStcJJy1E
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: fdddec33-c9cb-4459-b8b6-2664395a6f10
-feature_v2: id: a37e4ecd-c740-426a-addf-cb1b483c5c5aid: adee20bd-51f4-461d-b9db-d215f8756eebid: ba929a52-9339-4154-9487-317dc875a3c7id: c132d929-fa62-4271-803e-b823be07b914id: c93393a4-e558-47e1-992e-c91ed4d480ceid: daec7ead-f475-492a-a3b3-02ae08565d6f
-subfeature_v2: id: cbd4a8d8-97a6-4ac9-b8d6-b6c1f28d3342id: cdd3e38b-fec2-4f39-8b10-83ddaab1ac16id: d1823595-9241-4128-8a33-e4ac3bf08773id: ee602049-8a18-43df-9299-a689a025a371id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: 735
+source-wordcount: '1086'
 ht-degree: 26%
 
 ---
 
-# 已知客戶Personalization與Target
 
->[!TIP]
->此Blueprint也可作為Personalization下的[使用案例模式](/help/blueprints/use-case-patterns/personalization/audience-sharing-with-target.md)。
+# 已知客戶Personalization與Target
 
 ## 使用案例
 
@@ -54,15 +45,39 @@ ht-degree: 26%
 
 架構
 
-![線上/離線Web Personalization Blueprint的參考架構](assets/RTCDP+Target.svg)
+![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP+Target.svg)
 
 序列詳細資訊
 
-![線上/離線Web Personalization Blueprint的參考架構](assets/RTCDP+Target_flow.svg)
+![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP+Target_flow.svg)
 
 概述架構
 
-![線上/離線Web Personalization Blueprint的參考架構](assets/personalization_with_apps.svg)
+![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/personalization_with_apps.svg)
+
+## 實作模式
+
+已知客戶個人化透過數種實作方法受支援。
+
+### 實作模式1 - [!DNL Edge Network]搭配網頁/行動SDK或[!DNL Edge Network] API （建議做法）
+
+* 搭配使用[!DNL Edge Network]與Web/行動SDK。 即時邊緣分段需要 Web/Mobile SDK 或 Edge API 實作方法。
+* [請參閱 Experience Platform Web 與 Mobile SDK 藍圖](/help/blueprints/experience-platform/deployment/websdk.md)進行以 SDK 為基礎的實作。
+* 若要在行動SDK中使用，必須安裝[Adobe Journey Optimizer - Decisioning擴充功能](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/)。
+* [請參閱 [!DNL Edge Network] 伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)，以取得具有Edge設定檔的Adobe Target之API實作。
+
+### 實作模式 2 — 應用程式專用 SDK
+
+使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。 此實作方法不支援即時邊緣區段評估。 不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
+
+[請參閱Adobe Target聯結器檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[請參閱應用程式特定的SDK Blueprint](/help/blueprints/experience-platform/deployment/appsdk.md)
+
+## 實施考量
+
+* 透過[!DNL Edge Network]和網頁SDK使用上述實作模式1時，可以利用任何主要身分。
+* 使用先前擷取至RTCDP的已知客戶資料首次登入個人化時，個人化請求必須具備主要身分識別，且該識別符合Real-time Customer Data Platform中的已知客戶身分圖表。 如果主要ID設為ECID或尚未與已知客戶設定檔彙整的身分，則在Edge上實現身分彙整將需要幾分鐘的時間，以及Edge個人化需要幾分鐘的時間才能納入先前擷取的已知客戶資料。
+* Edge設定檔目前有14天的TTL。 因此，如果使用者未登入或在邊緣上已活動14天，邊緣上的設定檔可能會過期，因此邊緣必須從中心擷取設定檔，才能使用歷史設定檔檢視來強化個人化，其中包含先前擷取的設定檔屬性和區段，如此一來，個人化便能以後續頁面檢視與首次登入時發生的設定檔歷史檢視來進行個人化。
 
 ## 相關文件
 

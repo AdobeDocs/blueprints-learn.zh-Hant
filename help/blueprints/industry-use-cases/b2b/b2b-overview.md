@@ -3,7 +3,7 @@ title: B2B使用案例
 description: 探索B2B組織如何使用Adobe Experience Platform來加速管道、改善銷售機會品質，並推動客戶擴展。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 6073bdc4-e148-455e-aa4e-3d5226d4b5a2
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '3479'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ### 實施方式
 
-使用[B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md)模式來建立帳戶層級的對象，並跨管道啟用個人化內容。 此模式是針對帳戶型策略而建置，可同時支援帳戶和人員層級的目標定位。 當目標定位必須在帳戶層級而不是個別層級操作時，這是正確的模式 — 標準RT-CDP對象啟用不支援ABM策略所需的帳戶型資料模型。
+使用[B2B Audience Activation](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md)模式來建立帳戶層級的對象，並跨管道啟用個人化內容。 此模式是針對帳戶型策略而建置，可同時支援帳戶和人員層級的目標定位。 當目標定位必須在帳戶層級而不是個別層級操作時，這是正確的模式 — 標準RT-CDP對象啟用不支援ABM策略所需的帳戶型資料模型。
 
 ### 技術考量
 
@@ -267,7 +267,7 @@ B2B組織進行目標性的競爭取代行銷活動，可提高競爭獲勝率�
 
 ### 實施方式
 
-使用[B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md)模式，以使用帳戶 — 人員關係來建立帳戶層級區段，並將它們啟用至支援B2B的付費媒體目的地。 當對象建構必須在帳戶層級運作（結合購買組織內多個聯絡人的訊號）而不是在個人層級時，這是正確的模式。
+使用[B2B Audience Activation](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md)模式，以使用帳戶 — 人員關係來建立帳戶層級區段，並將它們啟用至支援B2B的付費媒體目的地。 當對象建構必須在帳戶層級運作（結合購買組織內多個聯絡人的訊號）而不是在個人層級時，這是正確的模式。
 
 ### 技術考量
 
@@ -287,7 +287,7 @@ B2B組織進行目標性的競爭取代行銷活動，可提高競爭獲勝率�
 
 ### 實施方式
 
-使用[購買群組型行銷](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md)模式來建立符合帳戶資格的歷程，該歷程會依角色劃分購買群組成員、評估群組層級的參與訊號，以及根據帳戶狀態來協調具有條件分支的多人、多點接觸行銷活動。 當歷程邏輯必須在帳戶群組層級（而非個人層級）運作時，這是正確的模式 — 標準個人層級的歷程協調無法處理B2B購買群組管理的群組資格和跨人員協調需求。
+使用[購買群組型行銷](/help/blueprints/use-case-patterns/b2b/buying-group-marketing.md)模式來建立符合帳戶資格的歷程，該歷程會依角色劃分購買群組成員、評估群組層級的參與訊號，以及根據帳戶狀態來協調具有條件分支的多人、多點接觸行銷活動。 當歷程邏輯必須在帳戶群組層級（而非個人層級）運作時，這是正確的模式 — 標準個人層級的歷程協調無法處理B2B購買群組管理的群組資格和跨人員協調需求。
 
 ### 技術考量
 
@@ -307,7 +307,7 @@ B2B組織進行目標性的競爭取代行銷活動，可提高競爭獲勝率�
 
 ### 實施方式
 
-使用[B2B Audience Activation](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md)模式來啟用帳戶層級的設定檔，以便跨網路和傳出頻道進行個人化。 當主要需求是個人化的帳戶層級目標定位，而不是聯絡人層級的歷程協調，這是正確的模式；帳戶設定檔資料會驅動個人化決策，而不是個別行為訊號。
+使用[B2B Audience Activation](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md)模式來啟用帳戶層級的設定檔，以便跨網路和傳出頻道進行個人化。 當主要需求是個人化的帳戶層級目標定位，而不是聯絡人層級的歷程協調，這是正確的模式；帳戶設定檔資料會驅動個人化決策，而不是個別行為訊號。
 
 ### 技術考量
 

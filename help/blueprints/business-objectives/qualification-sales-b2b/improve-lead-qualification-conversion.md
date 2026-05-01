@@ -2,13 +2,13 @@
 title: 改善銷售機會資格和轉換
 description: 瞭解如何透過評分、培養和個人化的後續活動，提高銷售機會品質並加速管道進度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 4454b148-79f9-49f9-97ca-f305df00fe0b
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 4%
 
 ---
-
 
 # 改善銷售機會資格和轉換
 
@@ -30,5 +30,5 @@ ht-degree: 4%
 
 | 圖樣 | 類別 | 如何支援此目標 |
 | --- | --- | --- |
-| [B2B 對象啟用](/help/blueprints/use-case-patterns/audience-building-activation/b2b-audience-activation.md) | Audience Builder &amp; Activation | 針對鎖定潛在客戶資格行銷活動啟用以帳戶為基礎的對象 |
-| [購買群組行銷與歷程管理](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md) | 行銷活動管理與協調 | 讓潛在客戶有資格購買群組，並協調多個利害關係人的培育，以加速管道 |
+| [B2B 對象啟用](/help/blueprints/use-case-patterns/b2b/account-audience-activation.md) | Audience Builder &amp; Activation | 針對鎖定潛在客戶資格行銷活動啟用以帳戶為基礎的對象 |
+| [購買群組行銷與歷程管理](/help/blueprints/use-case-patterns/b2b/buying-group-marketing.md) | 行銷活動管理與協調 | 讓潛在客戶有資格購買群組，並協調多個利害關係人的培育，以加速管道 |

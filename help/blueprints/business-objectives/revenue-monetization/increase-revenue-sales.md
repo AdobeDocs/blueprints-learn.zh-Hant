@@ -2,13 +2,13 @@
 title: 增加收入與銷售
 description: 瞭解如何透過最佳化的數位頻道、行銷活動和客戶歷程推動營收增長。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 080e49a7-f4fb-4ffd-96d5-cce6d018c4f7
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
-
 
 # 增加收入與銷售
 
@@ -32,4 +32,4 @@ ht-degree: 2%
 | --- | --- | --- |
 | [批次傳出訊息啟用](/help/blueprints/use-case-patterns/campaign-management-orchestration/batch-outbound-message-activation.md) | 行銷活動管理與協調 | 提供目標批次行銷活動，透過電子郵件、簡訊和推播頻道推動銷售 |
 | [事件觸發訊息](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md) | 行銷活動管理與協調 | 透過即時行為回應訊息擷取收入機會 |
-| [購買群組行銷與歷程管理](/help/blueprints/use-case-patterns/campaign-management-orchestration/buying-group-based-marketing.md) | 行銷活動管理與協調 | 協調B2B購買群組歷程，以加快銷售管道進度 |
+| [購買群組行銷與歷程管理](/help/blueprints/use-case-patterns/b2b/buying-group-marketing.md) | 行銷活動管理與協調 | 協調B2B購買群組歷程，以加快銷售管道進度 |

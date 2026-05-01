@@ -2,18 +2,14 @@
 title: AJO B2B付費媒體控制者
 description: 行銷活動的優先順序及啟用付費媒體目的地的帳戶
 solution: Journey Optimizer B2B Edition
-exl-id: a4f4982f-2b56-4ce2-9c16-abdf627f97de
 source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1541'
 ht-degree: 0%
 
 ---
 
 # AJO B2B — 帳戶Journey Orchestration — 付費媒體控制者
-
->[!TIP]
->此Blueprint也可作為B2B啟用與行銷下的[使用案例模式](/help/blueprints/use-case-patterns/b2b/paid-media-orchestration.md)。
 
 ## 概觀
 
@@ -67,7 +63,7 @@ ht-degree: 0%
 
 ## 架構圖
 
-<img src="assets/ajo-b2b-paid-media-activation-architecture.svg" alt="AJO B2B付費媒體控制器架構" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/b2b/assets/ajo-b2b-paid-media-activation-architecture.svg" alt="AJO B2B付費媒體控制器架構" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 ## B2B AEP中的資料模型
 
@@ -113,7 +109,7 @@ ht-degree: 0%
 
 ## 實作圖
 
-<img src="assets/ajo-b2b-paid-media-controller-canvas.svg" alt="AJO B2B付費媒體控制器畫布" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/b2b/assets/ajo-b2b-paid-media-controller-canvas.svg" alt="AJO B2B付費媒體控制器畫布" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
 
 ### Audience Activation
 

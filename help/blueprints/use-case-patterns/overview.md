@@ -4,9 +4,9 @@ description: 瞭解實作Adobe Experience Platform和應用程式以實現關鍵
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 doc-type: overview-page
 exl-id: 58caa6ad-0d1c-4290-9614-c68c9c9028bb
-source-git-commit: 27f7e230982807ec70ca96af7f737944a6588f27
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,8 @@ ht-degree: 0%
 | [對目的地的對象啟用](audience-building-activation/audience-activation-to-destinations.md) | 評估對象區段並將其發佈到外部目的地以進行定位或抑制 | [!DNL Real-Time CDP] |
 | [對象Collaboration](audience-building-activation/audience-collaboration-segment-match.md) | 使用「區段比對」在沙箱或組織間共用和比對受眾區段 | [!DNL Real-Time CDP], [!DNL Experience Platform] |
 | [事件轉送](audience-building-activation/event-forwarding.md) | 將透過Edge Network收集的即時事件資料轉送至非Adobe目的地 | [!DNL Experience Platform] （Edge Network，事件轉送） |
-| [B2B對象啟用](audience-building-activation/b2b-audience-activation.md) | 在網頁、電子郵件和廣告頻道中啟用以帳戶為基礎的B2B對象 | [!DNL Real-Time CDP] B2B edition |
+| [支援與銷售人員的即時設定檔查詢](audience-building-activation/real-time-profile-lookup.md) | 即時客戶設定檔查詢，可提供代理程式輔助支援與銷售情境的內容 | [!DNL Real-Time CDP], [!DNL Experience Platform] |
+| [設定檔擴充的自訂資料科學](audience-building-activation/data-science-profile-enrichment.md) | 將資料科學的深入分析內嵌至Experience Platform，讓即時客戶個人檔案更為豐富 | [!DNL Experience Platform] |
 
 ## 個人化
 
@@ -38,6 +39,8 @@ ht-degree: 0%
 | [已知訪客的網頁/應用程式個人化](personalization/known-visitor-web-app-personalization.md) | 根據即時設定檔和區段會籍，將個人化內容、優惠或促銷活動提供給已識別的訪客 | [!DNL Journey Optimizer], [!DNL Real-Time CDP] |
 | [Offer Decisioning](personalization/offer-decisioning.md) | 使用集中式決定邏輯，跨頻道為設定檔選取次佳優惠或內容 | [!DNL Journey Optimizer] （決策），[!DNL Real-Time CDP] |
 | [行為建議](personalization/behavioral-recommendation.md) | 使用選擇策略和排名模型產生專案和內容推薦 | [!DNL Journey Optimizer] （決策），[!DNL Real-Time CDP] |
+| 網頁/行動Personalization的[Edge設定檔存取權](personalization/edge-profile-access.md) | 即時邊緣設定檔存取，適用於高輸送量、低延遲的網頁和行動個人化 | [!DNL Real-Time CDP]， [!DNL Experience Platform] (Edge Network) |
+| [與Adobe Target共用對象](personalization/audience-sharing-with-target.md) | 與Adobe Target共用Real-Time CDP設定檔和對象，以進行已知客戶的網頁和行動個人化 | [!DNL Real-Time CDP], [!DNL Target], [!DNL Experience Platform] |
 
 ## 行銷活動管理與協調
 
@@ -49,7 +52,8 @@ ht-degree: 0%
 | [事件觸發訊息](campaign-management-orchestration/event-triggered-messaging.md) | 接聽即時行為或系統事件，然後將內容相關訊息傳遞至觸發的設定檔 | [!DNL Journey Optimizer], [!DNL Real-Time CDP] |
 | [多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md) | 透過分支和多點觸控歷程，使用等待、條件和多個訊息動作來引導設定檔 | [!DNL Journey Optimizer], [!DNL Real-Time CDP] |
 | [具有決策的跨頻道歷程](campaign-management-orchestration/cross-channel-journey-with-decisioning.md) | 協調包含即時決策的多步驟歷程，以選取最佳頻道、內容或選件 | [!DNL Journey Optimizer], [!DNL Real-Time CDP] |
-| [購買群組行銷與歷程管理](campaign-management-orchestration/buying-group-based-marketing.md) | 開發符合潛在客戶購買群組資格的帳戶層級歷程，以改善B2B行銷效率 | [!DNL Journey Optimizer] B2B edition，[!DNL Real-Time CDP] B2B edition |
+| [Campaign v8批次協調與異動訊息](campaign-management-orchestration/campaign-v8-orchestration.md) | Campaign v8上的批次行銷活動執行、多點觸控協調、ETL導向的資料管理和異動訊息 | [!DNL Campaign] v8 |
+| [協力廠商傳訊與Journey Optimizer整合](campaign-management-orchestration/third-party-messaging.md) | 將Journey Optimizer與協力廠商傳訊系統整合，以透過REST API進行個人化通訊 | [!DNL Journey Optimizer] |
 
 ## 分析
 
@@ -58,7 +62,20 @@ ht-degree: 0%
 | 圖樣 | 主要功能 | 核心解決方案 |
 | --- | --- | --- |
 | [Customer Analytics與insight世代](analysis/customer-analytics-insight-generation.md) | 建立跨管道分析工作區、計算量度和儀表板，以進行行為和效能分析 | [!DNL Customer Journey Analytics], [!DNL Experience Platform] |
-| [B2B分析](analysis/b2b-analytics.md) | 在跨管道客戶歷程分析中加入B2B帳戶層級資訊 | [!DNL Customer Journey Analytics] B2B edition，[!DNL Real-Time CDP] B2B edition |
+
+## B2B啟用與行銷
+
+以下模式處理B2B專屬行銷情境 — 以帳戶為基礎的對象、購買群組協調和B2B分析。
+
+| 圖樣 | 主要功能 | 核心解決方案 |
+| --- | --- | --- |
+| [B2B對象啟用](b2b/account-audience-activation.md) | 在網頁、電子郵件和廣告頻道中啟用以帳戶為基礎的B2B對象 | [!DNL Real-Time CDP] B2B edition |
+| [購買群組行銷與歷程管理](b2b/buying-group-marketing.md) | 開發符合潛在客戶購買群組資格的帳戶層級歷程，以改善B2B行銷效率 | [!DNL Journey Optimizer] B2B edition，[!DNL Real-Time CDP] B2B edition |
+| [B2B分析](b2b/account-analytics.md) | 在跨管道客戶歷程分析中加入B2B帳戶層級資訊 | [!DNL Customer Journey Analytics] B2B edition，[!DNL Real-Time CDP] B2B edition |
+| 使用Marketo資料的[B2B歷程](b2b/marketo-data-journeys.md) | 使用Marketo資料部署Journey Optimizer B2B edition，以協調購買團體歷程和帳戶參與 | [!DNL Journey Optimizer] B2B edition，[!DNL Marketo Engage]，[!DNL Real-Time CDP] B2B edition |
+| [AJO B2B付費媒體控制站](b2b/paid-media-orchestration.md) | 使用Waterfall邏輯來協調B2B付費媒體行銷活動，將帳戶指派給行銷活動並啟用至目的地 | [!DNL Journey Optimizer] B2B edition，[!DNL Real-Time CDP] B2B edition |
+| [Marketo和Workfront錄取與建立](b2b/campaign-intake-and-creation.md) | 使用Workfront Forms和Fusion自動化行銷活動請求接收和Marketo Engage方案建立 | [!DNL Marketo Engage], [!DNL Workfront], [!DNL Workfront Fusion] |
+| [Marketo和Workfront檢閱及核准](b2b/campaign-review-and-approval.md) | 使用Fusion自動化整合Workfront校訂和核准工作流程與Marketo Engage電子郵件資產 | [!DNL Marketo Engage], [!DNL Workfront], [!DNL Workfront Fusion] |
 
 ## 對話體驗
 

@@ -3,24 +3,14 @@ title: Campaign v8藍圖、Campaign和平台
 description: 瞭解Campaign v8的藍圖。
 solution: Campaign,Campaign v8
 version: Campaign v8
-exl-id: 89b3a761-9cb3-4e01-8da0-043e634fa61f
-TQID: https://experienceleague.adobe.com/1FmOmeJcV9zxUt6bXHYVV9z6qcQSIBkTHOcu5tJ8yJ0
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a658c786-869b-4194-a780-2594d663addaid: afa4204e-6d08-4e29-bc35-26aafb656d48id: b12f6872-9271-4369-85e5-86969a0b99a2
-subfeature_v2: id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f529d0bd-1401-4c88-9833-43228cc1d40fid: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
 workflow-type: tm+mt
-source-wordcount: 1059
+source-wordcount: '1045'
 ht-degree: 29%
 
 ---
 
 # Campaign v8藍圖
-
->[!TIP]
->此Blueprint也可作為「行銷活動管理與協調」下的[使用案例模式](/help/blueprints/use-case-patterns/campaign-management-orchestration/campaign-v8-orchestration.md)。
 
 Adobe Campaign v8是新一代的行銷活動管理平台，專為電子郵件和直接郵件等傳統行銷管道而設計。 它提供強大的ETL和資料管理功能，以支援複雜的細分和受眾目標定位，加上強大的協調引擎，可用來建立多重觸控、批次導向的行銷方案。
 
@@ -60,13 +50,13 @@ Adobe Campaign v8是新一代的行銷活動管理平台，專為電子郵件和
 
 ### Campaign企業(FFDA)部署
 
-<img src="images/campaign-v8-ffda.svg" alt="Campaign v8 (FFDA)部署藍圖的參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/customer-journeys/campaign-v8/images/campaign-v8-ffda.svg" alt="Campaign v8 (FFDA)部署藍圖的參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
 ### Campaign v8 FDA部署
 
-<img src="images/campaign-v8-fda.svg" alt="Campaign v8 (FDA)藍圖的參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/customer-journeys/campaign-v8/images/campaign-v8-fda.svg" alt="Campaign v8 (FDA)藍圖的參考架構" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -74,8 +64,8 @@ Adobe Campaign v8是新一代的行銷活動管理平台，專為電子郵件和
 
 | 狀況 | 說明 | 技術考量 |
 | :-- | :--- | :--- |
-| 使用Adobe [!DNL Campaign]](rtcdp-and-campaign-v8.md)的[[!DNL Real-time Customer Data Platform]  | 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign]搭配使用，以提供個人化的對話 | <ul><li>透過使用雲端儲存空間檔案交換和Adobe [!DNL Campaign]擷取工作流程，從[!DNL Real-Time CDP]到Adobe [!DNL Campaign]共用設定檔和對象 </li><li>從Adobe [!DNL Campaign]輕鬆將客戶對話中的傳遞和互動資料分享回[!DNL Real-Time CDP]，以強化即時客戶設定檔並提供訊息行銷活動的跨管道報告</li></ul> |
-| 使用Adobe [!DNL Campaign]](ajo-and-campaign-v8.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe Journey Optimizer來利用即時客戶設定檔編排1:1個體驗，並運用原生Adobe [!DNL Campaign]異動訊息系統來傳送訊息 | <ul><li>可透過即時消息伺服器每小時發送最多 1M 訊息<li>不會從[!DNL Journey Optimizer]執行任何節流，因此請確定售前企業架構師的技術審查</li><li>Campaign v8 承載不支援決策管理</li></ul> |
+| 使用Adobe [!DNL Campaign]](/help/blueprints/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)的[[!DNL Real-time Customer Data Platform]  | 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign]搭配使用，以提供個人化的對話 | <ul><li>透過使用雲端儲存空間檔案交換和Adobe [!DNL Campaign]擷取工作流程，從[!DNL Real-Time CDP]到Adobe [!DNL Campaign]共用設定檔和對象 </li><li>從Adobe [!DNL Campaign]輕鬆將客戶對話中的傳遞和互動資料分享回[!DNL Real-Time CDP]，以強化即時客戶設定檔並提供訊息行銷活動的跨管道報告</li></ul> |
+| 使用Adobe [!DNL Campaign]](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe Journey Optimizer來利用即時客戶設定檔編排1:1個體驗，並運用原生Adobe [!DNL Campaign]異動訊息系統來傳送訊息 | <ul><li>可透過即時消息伺服器每小時發送最多 1M 訊息<li>不會從[!DNL Journey Optimizer]執行任何節流，因此請確定售前企業架構師的技術審查</li><li>Campaign v8 承載不支援決策管理</li></ul> |
 
 <br>
 

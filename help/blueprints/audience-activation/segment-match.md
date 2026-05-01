@@ -1,16 +1,24 @@
 ---
 title: 有區段比對的對象Collaboration
-description: 瞭解Adobe Experience Platform (AEP)的[!UICONTROL 區段比對]。[!UICONTROL 區段比對]是一種資料共同作業服務，可讓您以安全、受控且有利於隱私權的方式根據常見的產業識別碼交換區段資料。
+description: 了解 Adobe Experience Platform(AEP) 的[!UICONTROL 區段比對]。 [!UICONTROL 區段比對]是資料協作服務，可讓您以安全、受管且有利於隱私權的方式，根據通用的產業識別碼來交換區段資料。
 solution: Experience Platform
 exl-id: d7e6d555-56aa-4818-8218-b87f6286a75e
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+TQID: https://experienceleague.adobe.com/RnmmHdxJbt0Ljjovo0rYwGvYilcihcqeeI5KOkP4VmU
+product_v2: id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: daec7ead-f475-492a-a3b3-02ae08565d6f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: beb7a3c1-66ab-4786-b879-7621375b3c40id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
 workflow-type: tm+mt
-source-wordcount: '2235'
-ht-degree: 72%
+source-wordcount: 2249
+ht-degree: 79%
 
 ---
 
 # 有區段比對藍圖的對象Collaboration
+
+>[!TIP]
+>此Blueprint也可作為Audience Building &amp; Activation下的[使用案例模式](/help/blueprints/use-case-patterns/audience-building-activation/audience-collaboration-segment-match.md)。
 
 區段比對可讓合作夥伴品牌在其各自的 Experience Platform 環境中共用受眾。 品牌的關鍵是根據客戶與消費者直接關係中收集的資料與客戶建立聯繫。 透過更佳的控管、權限和偏好管理系統，行銷人員可進一步增強其與主要合作夥伴的第一方驗證對象。
 
@@ -30,7 +38,7 @@ ht-degree: 72%
 
 品牌對發佈商：
 
-第三方 Cookie 和行動廣告 ID 資料淘汰後，「發佈商使用案例」的影響最大。 此使用案例對專注於將廣告銷售為商業模式的媒體及娛樂業產生重大影響。[!UICONTROL 區段比對]為擁有大量第一方受眾的發佈者尋求直接與其廣告商共同作業的路徑。 廣告商可直接與發佈商合作，針對發佈商屬性上相符的對象進行廣告宣傳，以便精細鎖定目標或分析行銷活動。
+第三方 Cookie 和行動廣告 ID 資料淘汰後，「發佈商使用案例」的影響最大。 此使用案例對注重以銷售廣告作為商業模式的媒體和娛樂業有重大影響。 [!UICONTROL 區段比對]對於具有大型第一方對象、且想要與其廣告商直接合作的發佈商而言，是一條途徑。 廣告商可直接與發佈商合作，針對發佈商屬性上相符的對象進行廣告宣傳，以便精細鎖定目標或分析行銷活動。
 
 ### 品牌對品牌
 
@@ -46,7 +54,7 @@ ht-degree: 72%
 
 ![區段比對架構](assets/architecture-segment-match.png){zoomable="yes"}
 
-[!UICONTROL 區段比對]不是可購買資料的資料市集。 它是AEP的一項功能，可與特定合作夥伴搭配使用第一方資料，使用隱私權和同意控制項來協助共同作業。[!UICONTROL 區段比對]有助於專注於改善客戶關係及發展品牌。 如果既有品牌或合作夥伴關係存在，將很有幫助。[!UICONTROL 區段比對]體驗易於管理、可擴充，並可讓管理員以選擇加入且可控的方式共用區段。
+[!UICONTROL 區段比對]不是可購買資料的資料市集。 而是 AEP 功能，可搭配特定合作夥伴使用第一方資料，透過隱私權和同意控制協助進行協作。 [!UICONTROL 區段比對]有助於專注於改善客戶關係和提升品牌。 如果存在預先存在的品牌或合作夥伴關係，則這是有益的。 [!UICONTROL 區段比對]體驗易於管理、可擴充，且可讓管理員以選擇加入、可控的方式共用區段。
 
 [!UICONTROL 區段比對]可以：
 
@@ -104,7 +112,7 @@ ht-degree: 72%
 
 * 使用[同意和首選項欄位組](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html?lang=zh-Hant)設定身分專屬的共用屬性 (idSpecific)。
 
-  此欄位群組提供單一物件型別欄位「同意」，以擷取同意和偏好設定資訊。[!UICONTROL 區段比對]預設會包含所有尚未明確選取退出的身分，例如：
+  此欄位組提供單個對象類型欄位（同意），以捕獲同意和首選項資訊。 [!UICONTROL 區段比對]，依預設會包含所有未明確選擇退出的身分，例如：
 
   ```
   "share": {
