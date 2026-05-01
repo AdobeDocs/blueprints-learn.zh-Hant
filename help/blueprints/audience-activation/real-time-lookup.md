@@ -72,25 +72,25 @@ ht-degree: 8%
 
 ### 目的地設定
 
-* [自訂Personalization連線](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization) — 主要實作指南
-* [Personalization目的地概觀](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview)
-* [啟用對象以邊緣個人化目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
-* [即時查詢邊緣上的設定檔屬性](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
+* [自訂Personalization連線](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/custom-personalization) — 主要實作指南
+* [Personalization目的地概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/overview)
+* [啟用對象以邊緣個人化目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
+* [即時查詢邊緣上的設定檔屬性](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-profile-lookup)
 
 ### SDK 檔案
 
-* [Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)
+* [Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=zh-Hant)
 * [Experience Platform Mobile SDK檔案](https://developer.adobe.com/client-sdks/home/)
 * [Edge Network伺服器API檔案](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)
 * [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-* [Web SDK中的命令回應](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html)
+* [Web SDK中的命令回應](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/commands/command-responses.html?lang=zh-Hant)
 
 ### 設定檔和分段檔案
 
-* [[!UICONTROL 即時客戶個人檔案]檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [[!UICONTROL 即時客戶個人檔案]檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
 * [設定檔護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 ### 教學課程
 
-* [使用Real-Time CDP和Adobe Target進行下一次點選個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-* [資料流設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html)
+* [使用Real-Time CDP和Adobe Target進行下一次點選個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)
+* [資料流設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant)
