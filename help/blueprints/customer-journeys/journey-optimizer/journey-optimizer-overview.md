@@ -3,9 +3,15 @@ title: '[!DNL Journey Optimizer] — 歷程Blueprint'
 description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
 solution: Journey Optimizer
 exl-id: 97831309-f235-4418-bd52-28af815e1878
-source-git-commit: 8ad1be5524ffd98f3728e4e65bc1b9d69efab2c2
+TQID: https://experienceleague.adobe.com/Rfi-0QD8bQpD-Zp2CDpzqxrge0yVs2CFt5mDKibNogI
+product_v2: id: cb954087-f4fc-4456-afb9-e939cabcdc79
+feature_v2: id: a653cc2e-bc85-4353-a306-399e5b247978id: d998adac-2f81-400b-a669-d07bb196e4ebid: df64005d-8f9a-422e-ba4d-c6f6dc3454b4id: fe338112-e2ce-4876-8989-fc4d497613f1
+subfeature_v2: id: fa683eda-48de-4558-af32-2673edcd44fe
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: addf009e-030a-4310-8534-776a3e62ed48id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fd2e3797-f2ea-4b36-a9af-52acf5e90513id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: 718
 ht-degree: 16%
 
 ---
@@ -61,7 +67,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 | 整合 | 說明 | 技術考量 |
 | :-- | :-- | :-- |
 | [第三方傳訊](3rd-party-messaging.md) | 示範Adobe [!DNL Journey Optimizer]如何與協力廠商傳訊平台整合，以協調及提供個人化的客戶通訊。 | <ul><li>協力廠商系統必須支援&#x200B;**持有人權杖驗證**</li><li>**由於多租使用者架構，不支援**&#x200B;靜態IP。</li><li>請注意，第三方系統上的&#x200B;**API速率限制**；客戶可能需要購買額外的容量來處理源自&#x200B;**Adobe Journey Optimizer**&#x200B;的流量。</li><li>訊息裝載或傳遞邏輯中不支援&#x200B;**決定管理**。</li></ul> |
-| 使用Adobe Campaign v8[&#128279;](../campaign-v8/ajo-and-campaign-v8.md)的[!DNL Journey Optimizer]  | 示範Adobe [!DNL Journey Optimizer]如何整合Adobe Campaign v8的交易式傳訊功能，以執行最終訊息傳送。 | <ul><li>沒有訊息限制。 每5分鐘最多4,000則訊息。</li><li>僅支援事件起始歷程的</li><li>Campaign傳送的訊息不支援決定管理</li></ul> |
+| 使用Adobe Campaign v8](../campaign-v8/ajo-and-campaign-v8.md)的[[!DNL Journey Optimizer]  | 示範Adobe [!DNL Journey Optimizer]如何整合Adobe Campaign v8的交易式傳訊功能，以執行最終訊息傳送。 | <ul><li>沒有訊息限制。 每5分鐘最多4,000則訊息。</li><li>僅支援事件起始歷程的</li><li>Campaign傳送的訊息不支援決定管理</li></ul> |
 
 <br>
 
@@ -94,12 +100,12 @@ Adobe [!DNL Experience Platform]：
 
 [[!DNL Journey Optimizer]護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
 
-[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
 
 ## 相關文件
 
 - [[!DNL Experience Platform]檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 - [[!DNL Experience Platform]標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 - [[!DNL Journey Optimizer]產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

@@ -5,16 +5,20 @@ solution: Customer Journey Analytics
 kt: null
 thumbnail: null
 exl-id: 3bb2dada-f4cd-43f7-a0d0-f276510ad224
-source-git-commit: 75a0f2a77f39a4320dc4c4b0db918879be099dd3
+TQID: https://experienceleague.adobe.com/1fHWritWvwSu2zYqr0JGFx-w08tigf2uteEyreRzKbE
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 80%
+source-wordcount: 154
+ht-degree: 82%
 
 ---
 
 # Customer Journey Analytics藍圖
 
-Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源的客戶資料與行為，以為所有客戶互動建立基於歷程的視圖。可在 Customer Journey Analytics 應用程式服務中執行報告與分析，以評估和洞察客戶互動及行為模式。
+Customer Journey Analytics 顯示品牌如何統一各個互動通道及來源的客戶資料與行為，以為所有客戶互動建立基於歷程的視圖。 可在 Customer Journey Analytics 應用程式服務中執行報告與分析，以評估和洞察客戶互動及行為模式。
 
 ## Customer Journey Analytics 使用案例
 
