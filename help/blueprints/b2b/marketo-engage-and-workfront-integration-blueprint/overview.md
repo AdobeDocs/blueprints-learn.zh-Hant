@@ -2,10 +2,22 @@
 title: Marketo Engage與Workfront整合藍圖概觀
 description: 概覽 — Marketo Engage與Workfront整合藍圖概覽
 exl-id: c1da95d0-0649-4e69-aade-3ddcb89d2d31
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+TQID: https://experienceleague.adobe.com/EbAEhF-UwPQKQA16T6GtZoP0YlqsgQWHby-MLP-bYuc
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+subfeature_v2:
+  - id: cdd3e38b-fec2-4f39-8b10-83ddaab1ac16
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 76%
+source-wordcount: 1797
+ht-degree: 84%
 
 ---
 
@@ -71,37 +83,37 @@ Adobe Workfront 可讓組織管理工作，以促進更有效率的執行。 Wor
   </tr>
   <tr> 
    <td>組合</td>
-   <td>您可以使用 Workfront 中的組合和方案來組織專案。 透過組織專案，您可以比較類似的專案，並決定資源的最佳使用時機。<br /><br />
+   <td>您可以使用 Workfront 中的組合和方案來組織專案。 透過組織專案，您可以比較類似的專案，並決定最佳的資源利用方式。<br /><br />
    （例如，Portfolio是為公司內專注於銷售服務和/或產品的業務單位而建立。）</td>
   </tr>
   <tr>
    <td>方案</td>
-   <td>您可以使用 Workfront 方案來組織專案。 透過組織專案，您可以比較類似的專案，並決定資源的最佳使用時機。<br /><br />
+   <td>您可以使用 Workfront 方案來組織專案。 透過組織專案，您可以比較類似的專案，並決定最佳的資源利用方式。<br /><br />
    （例如，具有高層級目標的行銷策略，例如提高意識及推動新產品上市的需求）。</td>
   </tr>
   <tr>
    <td>專案</td>
-   <td>Workfront專案是工作專案的集合，需要完成這些工作專案才能完成特定目標、交付專案、產品等等。<br /><br />
-   (例如，行銷策略，例如電子郵件宣傳、培育活動、網路研討會或面對面活動。 單一專案也可能更複雜，包含多種策略，例如電子郵件、多媒體廣告、登陸頁面和可下載的白皮書，這些都是為了促成相同的結果。)</td>
+   <td>Workfront 專案是需要完成以達成特定目標、交付項目、產品等的工作項目集合。<br /><br />
+   (例如，行銷策略，例如電子郵件爆炸、培養行銷活動、網路研討會或面對面活動。 單一專案也可能更複雜，包含多種策略，例如電子郵件、多媒體廣告、登陸頁面和可下載的白皮書，這些都是為了促成相同的結果。)</td>
   </tr>
   <tr>
    <td>任務</td>
-   <td>Workfront 任務是可能屬於專案或計畫的計畫工作項目。 任務已指派給使用者或團隊以完成。<br /><br />
+   <td>Workfront 任務是可能屬於專案或計畫的計畫工作項目。 任務被分配給用戶或團隊以完成。<br /><br />
    （例如，建立受眾區段或建立電子郵件草稿的任務可能是與開發Marketo Engage電子郵件計畫的專案相關聯的任務。）</td>
   </tr>
   <tr>
    <td>問題</td>
-   <td>問題是 Workfront 中的計畫外工作項目。 可能是專案期間發生的問題，也可能是透過請求佇列提交的請求。<br /><br />
+   <td>問題是 Workfront 中的計畫外工作項目。 這些可能是專案期間發生的問題，也可能是透過請求佇列提交的請求。<br /><br />
    （例如，由於電子郵件橫幅影像的尺寸錯誤，因此提出問題。）</td>
   </tr>
   <tr>
    <td>文件</td>
-   <td>文件可以是傳統文檔，如 Word 文檔或演示文稿。 它們也可以是影像檔案。 Workfront允許透過檔案和影像上的註釋和註解進行資產校訂，以啟用團隊間的共同作業。<br /><br />
+   <td>文件可以是傳統文檔，如 Word 文檔或演示文稿。 它們也可以是影像檔案。 Workfront 可透過檔案和影像的評論和註解進行資產校對，以啟用團隊間的協作。<br /><br />
    （例如，需要檢閱的電子郵件標題影像）。</td>
   </tr>
   <tr>
    <td>更新</td>
-   <td>包含評論和稽核記錄，以追蹤工作並促進Workfront中的共同作業。<br /><br />
+   <td>包括註解和審核日誌，以追蹤工作並促進 Workfront 中的協作。<br /><br />
    （例如，新影像版本的稽核記錄。）</td>
   </tr>
   </tbody>

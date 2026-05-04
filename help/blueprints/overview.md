@@ -3,16 +3,26 @@ title: 客戶體驗協調使用案例、架構圖表和藍圖
 description: 探索Adobe Experience Platform和應用程式的主要業務目標、使用案例模式及產業使用案例。 視覺化架構圖表和藍圖提供系統整合、資料流程和解決方案設計的技術參考，將業務價值連結至實作。
 doc-type: overview-page
 exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
-source-git-commit: 63154ca158b773287f0d1a7f88a81ac3181c43a0
+TQID: https://experienceleague.adobe.com/hScp-97-JZqFMfBJdM6820M95dVE7YoagKJYfruEdao
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: 328
 ht-degree: 2%
 
 ---
 
 # 客戶體驗協調業務目標、使用案例和架構圖表
 
-此網站包含&#x200B;**主要業務目標**，其中概述可使用Adobe Experience Platform和應用程式達成的主要業務價值和目標的範例。**使用案例模式**&#x200B;以可重複的實作方法描述常見的平台和應用程式功能。**產業使用案例**&#x200B;套用模式至垂直特定業務案例。**架構圖表和藍圖**&#x200B;是視覺架構和資料流程參考圖表，說明系統整合點、資料和內容流程以及作業順序，為解決方案設計提供技術參考。 這些層級共同將業務價值與實作相依性和架構連線起來。
+此網站包含&#x200B;**主要業務目標**，其中概述可使用Adobe Experience Platform和應用程式達成的主要業務價值和目標的範例。 **使用案例模式**&#x200B;以可重複的實作方法描述常見的平台和應用程式功能。 **產業使用案例**&#x200B;套用模式至垂直特定的商業案例。 **架構圖表和藍圖**&#x200B;是視覺架構和資料流程參考圖表，說明系統整合點、資料和內容流程以及作業順序，為解決方案設計提供技術參考。 這些層級共同將業務價值與實作相依性和架構連線起來。
 
 ## 主要業務目標
 
