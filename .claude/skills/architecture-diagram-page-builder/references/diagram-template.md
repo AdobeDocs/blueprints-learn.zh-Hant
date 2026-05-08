@@ -9,7 +9,7 @@ ht-degree: 0%
 
 這是架構圖表頁面的完整Markdown範本。 以技能工作流程階段1期間收集的值取代每`{placeholder}`。 移除任何不適用的選用區段（例如`>[!MORELIKETHIS]`區塊） — 請勿在產生的檔案中保留空白的預留位置。
 
----
+&#x200B;---
 
 ```markdown
 ---
@@ -60,7 +60,7 @@ The architecture above supports the following use case patterns:
 - [{Article 3 title}]({Experience League URL 3})
 ```
 
----
+&#x200B;---
 
 ## Frontmatter規則
 
