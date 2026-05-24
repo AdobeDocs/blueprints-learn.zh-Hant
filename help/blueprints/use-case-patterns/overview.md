@@ -4,7 +4,7 @@ description: 瞭解實作Adobe Experience Platform和應用程式以實現關鍵
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 doc-type: overview-page
 exl-id: 58caa6ad-0d1c-4290-9614-c68c9c9028bb
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 使用案例模式
 
-使用案例模式會為Adobe Experience Platform和應用程式定義可重複的實作方法。 每個模式都描述特定功能、提供功能的功能鏈、相關的應用程式，以及所支援的[關鍵業務目標](/help/blueprints/business-objectives/overview.md)。
+使用案例模式會為Adobe Experience Platform和應用程式定義可重複的實作方法。 每個模式描述特定功能、提供該功能的執行計畫、相關的應用程式及其支援的[關鍵業務目標](/help/blueprints/business-objectives/overview.md)。
 
 使用下表來尋找符合您實作需求的模式，然後依照連結連結，前往完整的實作參考，包括選項、階段、決定指引和Experience League檔案。
 

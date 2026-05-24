@@ -3,7 +3,7 @@ title: 具有決策的跨頻道歷程
 description: 瞭解如何結合即時決策來協調多步驟歷程，以選取最佳頻道、內容或選件。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: eabdd91f-bb7d-4de3-adb5-5940d3ca4a78
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '9029'
 ht-degree: 2%
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 **[提高客戶忠誠度和期限值](../../business-objectives/revenue-monetization/increase-customer-loyalty-lifetime-value.md)**
 透過忠誠計畫、獎勵和個人化參與，深化客戶關係並最大化長期價值。
-**KPI：**&#x200B;客戶期限值、留存率、向上銷售/交叉銷售%
+**KPI：**&#x200B;客戶期限值、保留率、向上銷售/交叉銷售%
 
 **[改善客戶保留率](../../business-objectives/customer-experience/improve-customer-retention.md)**
 透過價值導向的體驗和持續培養的關係，讓現有客戶持續參與並更新。
@@ -88,28 +88,28 @@ ht-degree: 2%
 
 協調多步驟、多頻道歷程，其整合一或多個節點的即時決策，以選取最佳頻道、內容或選件。
 
-**函式鏈：**&#x200B;對象評估>歷程執行>決定節點>頻道選擇>訊息傳送>報告
+**執行計畫：**&#x200B;對象評估>歷程執行>決定節點>頻道選擇>訊息傳送>報告
 
 ## 應用程式
 
 以下應用程式可用來實作此使用案例模式。
 
-- **[!DNL Adobe Journey Optimizer] ([!DNL AJO])** — 歷程協調（多步驟畫布設計、進入條件、等待、條件、退出條件）、跨管道的訊息編寫、管道表面設定、衝突和優先順序管理
+- **[!DNL Adobe Journey Optimizer]([!DNL AJO])** — 歷程協調（多步驟畫布設計、進入條件、等待、條件、退出條件）、跨管道的訊息編寫、管道表面設定、衝突和優先順序管理
 - **[!DNL Adobe Journey Optimizer]決策** — 優惠和內容專案管理、適用性規則、排名策略（優先順序、公式、AI）、決定原則、位置、遞補優惠
-- **[!DNL Adobe Real-Time Customer Data Platform] ([!DNL RT-CDP])** — 歷程專案與優惠方案適用性區段的對象評估、使用運算屬性和傾向分數擴充設定檔、同意和治理強制執行
-- **[!DNL Adobe Experience Platform] ([!DNL AEP])** — 即時客戶設定檔存放區、跨管道解析的身分服務、資料模型及擷取基礎結構
+- **[!DNL Adobe Real-Time Customer Data Platform]([!DNL RT-CDP])** — 歷程專案與優惠方案適用性區段的對象評估、使用運算屬性和傾向分數擴充設定檔、同意和治理強制執行
+- **[!DNL Adobe Experience Platform]([!DNL AEP])** — 即時客戶設定檔存放區、跨管道解析的身分服務、資料模型及擷取基礎結構
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 已假設就位 | [!DNL AJO]沙箱，已設定歷程、行銷活動和決策許可權。 所有可能傳遞頻道的頻道介面。 歷程設計者、決策管理員和內容作者的使用者角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 必填 | 設定檔結構描述必須包括用於決策的屬性（例如，忠誠度等級、購買歷史記錄、管道偏好設定、參與分數）。 必須設定優惠目錄和決定專案結構描述。 ExperienceEvent結構描述必須擷取適用性規則和排名公式所使用的行為訊號。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
-| 資料來源與收集 | 已假設就位 | 決策所使用的設定檔屬性和行為訊號必須是最新的。 如果歷程使用事件觸發的進入或退出條件，則需要即時事件串流。 網頁SDK、行動SDK或伺服器端集合必須適用於提供決策內容的管道。 | [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)，[來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home) |
-| 身分和設定檔設定 | 必填 | 跨頻道身分解析至關重要 — 歷程必須跨電子郵件、推播、簡訊和網頁解析設定檔。 合併原則必須產生用於決策的統一設定檔。 必須設定所有客戶識別碼（CRM ID、電子郵件、ECID、電話）的識別名稱空間。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview) |
-| 對象定義與細分 | 必填 | 歷程的進入對象定義。 歷程中用於優惠方案適用性規則和條件分支的其他區段。 評估方法必須符合延遲要求（即時輸入的串流，排程的批次）。 | [區段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder) |
+| 管理與治理 | 已假設就位 | [!DNL AJO]沙箱，已設定歷程、行銷活動和決策許可權。 所有可能傳遞頻道的頻道介面。 歷程設計者、決策管理員和內容作者的使用者角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| 資料模型與準備 | 必填 | 設定檔結構描述必須包括用於決策的屬性（例如，忠誠度等級、購買歷史記錄、管道偏好設定、參與分數）。 必須設定優惠目錄和決定專案結構描述。 ExperienceEvent結構描述必須擷取適用性規則和排名公式所使用的行為訊號。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
+| 資料來源與收集 | 已假設就位 | 決策所使用的設定檔屬性和行為訊號必須是最新的。 如果歷程使用事件觸發的進入或退出條件，則需要即時事件串流。 網頁SDK、行動SDK或伺服器端集合必須適用於提供決策內容的管道。 | [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)，[來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) |
+| 身分和設定檔設定 | 必填 | 跨頻道身分解析至關重要 — 歷程必須跨電子郵件、推播、簡訊和網頁解析設定檔。 合併原則必須產生用於決策的統一設定檔。 必須設定所有客戶識別碼（CRM ID、電子郵件、ECID、電話）的識別名稱空間。 | [身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview) |
+| 對象定義與細分 | 必填 | 歷程的進入對象定義。 歷程中用於優惠方案適用性規則和條件分支的其他區段。 評估方法必須符合延遲要求（即時輸入的串流，排程的批次）。 | [區段服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) |
 
 ## 支援功能
 
@@ -117,19 +117,19 @@ ht-degree: 2%
 
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 推薦 | Customer AI傾向分數、參與分數、管道偏好分數和期限值計算等計算屬性可大幅改善決策品質。 這些豐富的設定檔屬性可啟用更複雜的適用性規則和排名公式。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)，[Customer AI總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/intelligent-services/customer-ai/overview) |
-| 資料生命週期管理 | 推薦 | 優惠歷史記錄和決定事件資料會隨著時間累積，應該有保留原則。 跨多個管道的同意實作是很重要的 — 未經該管道有效同意的設定檔必須從該管道的傳送路徑中排除。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)，[Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
-| 資料使用標籤和實作 | 推薦 | 當決策可能將設定檔路由到具有不同資料使用限制的不同管道時，跨多個管道和選件型別的治理實作很重要。 確保跨所有管道提供符合規定的優惠方案。 | [資料治理總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/overview) |
-| 監控與可觀察性 | 已包含 | 歷程與決策監視對於生產作業至關重要。 歷程進入失敗、決策後援尖峰和傳送錯誤的警報可讓您快速解決問題。 | [警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)，[可觀察性深入分析概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
-| 報告與分析 | 已包含 | 報告階段涵蓋歷程和決定報告。 CJA針對決策成效、管道組合最佳化、優惠效能和歷程ROI的分析，提供完善排名策略及最佳化一段時間之歷程所需的深入分析。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
+| 計算/衍生屬性建立 | 推薦 | Customer AI傾向分數、參與分數、管道偏好分數和期限值計算等計算屬性可大幅改善決策品質。 這些豐富的設定檔屬性可啟用更複雜的適用性規則和排名公式。 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)，[Customer AI總覽](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview) |
+| 資料生命週期管理 | 推薦 | 優惠歷史記錄和決定事件資料會隨著時間累積，應該有保留原則。 跨多個管道的同意實作是很重要的 — 未經該管道有效同意的設定檔必須從該管道的傳送路徑中排除。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)，[Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
+| 資料使用標籤和實作 | 推薦 | 當決策可能將設定檔路由到具有不同資料使用限制的不同管道時，跨多個管道和選件型別的治理實作很重要。 確保跨所有管道提供符合規定的優惠方案。 | [資料治理總覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)，[原則執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) |
+| 監控與可觀察性 | 已包含 | 歷程與決策監視對於生產作業至關重要。 歷程進入失敗、決策後援尖峰和傳送錯誤的警報可讓您快速解決問題。 | [警示概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)，[可觀察性深入分析概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| 報告與分析 | 已包含 | 報告階段涵蓋歷程和決定報告。 CJA針對決策成效、管道組合最佳化、優惠效能和歷程ROI的分析，提供完善排名策略及最佳化一段時間之歷程所需的深入分析。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從應用程式功能目錄中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Journey Optimizer] ([!DNL AJO])
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 通道設定 | 階段2：通道設定 | 為決策可選取或歷程使用（電子郵件、簡訊、推播、應用程式內）的所有頻道設定頻道介面 |
 | 訊息製作 | 階段4：訊息製作 | 為每個頻道製作訊息內容並整合決定輸出 — 優惠位置、動態內容區塊、來自選定優惠的個人化權杖 |
@@ -141,7 +141,7 @@ ht-degree: 2%
 
 ### [!DNL Real-Time CDP] ([!DNL RT-CDP])
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 對象評估 | 階段1：對象評估 | 定義並評估進入對象或合格進入事件；建立決策使用的資格區段 |
 | 輪廓富集 | 先決條件/支援 | 使用計算的屬性和傾向分數豐富設定檔，以改善決策品質 |
@@ -239,7 +239,7 @@ ht-degree: 2%
 
 #### Experience League參考資料
 
-- [條件活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [條件活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
 - [建立歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
 
 ### 選項C：完整的最適化歷程（動態頻道+動態內容）
@@ -316,7 +316,7 @@ ht-degree: 2%
 
 ### 階段1：對象評估
 
-**應用程式函式：** [!DNL RT-CDP]：對象評估
+**應用程式功能：** [!DNL RT-CDP]：對象評估
 
 此階段會設定進入對象，以判斷哪些設定檔進入歷程，以及用於歷程中優惠方案適用性規則或條件分支的任何其他區段。 對象定義是所有下游歷程和決定邏輯的基礎。
 
@@ -354,14 +354,14 @@ ht-degree: 2%
 
 #### Experience League檔案
 
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [邊緣分段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### 階段2：通道設定
 
-**應用程式函式：** [!DNL AJO]：頻道設定
+**應用程式功能：** [!DNL AJO]：頻道設定
 
 此階段會設定歷程可能用於訊息傳送之每個頻道的頻道介面。 在可以編寫訊息或發佈歷程之前，所有候選頻道都必須有已驗證的有效介面。 對於此模式，您通常會至少設定電子郵件、簡訊和推播的介面，如果決定可能選取這些管道，則可能會設定應用程式內或網頁。
 
@@ -397,15 +397,15 @@ ht-degree: 2%
 
 #### Experience League檔案
 
-- [開始使用電子郵件設定](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [開始使用電子郵件設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
 - [委派子網域](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/delegate-subdomain)
 - [建立 IP 池](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-pools)
-- [設定簡訊頻道](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [設定簡訊頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 - [設定推播通知頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/configure-push/push-configuration)
 
 ### 階段3：決策設定
 
-**應用程式函式：** [!DNL AJO]：決策
+**應用程式功能：** [!DNL AJO]：決策
 
 此階段會設定完整的決定架構，包括位置、適用性規則、個人化優惠、遞補優惠、集合限定詞、集合、排名策略和決定政策。 此階段會建立將在歷程決策點叫用的決策邏輯。
 
@@ -457,7 +457,7 @@ ht-degree: 2%
 選項A (Offer Decisioning)的&#x200B;**：**
 建立著重於每個頻道中內容個人化的版位和選件（例如電子郵件主圖橫幅選件、電子郵件頁尾選件、推播通知內文選件）。 決定原則會為訊息中的每個版位選取最佳內容。
 
-選項B的&#x200B;**（動態頻道選擇）：**
+選項B （動態頻道選擇）的&#x200B;**：**
 建立代表每個管道的決策專案。 適用性規則包括同意檢查（例如，設定檔必須有SMS同意才能符合SMS專案的資格）。 排名會使用管道參與分數或公式型運算式。
 
 選項C的&#x200B;**（完全最適化）：**
@@ -466,8 +466,8 @@ ht-degree: 2%
 #### Experience League檔案
 
 - [決策管理概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [建立產品建議放置環境](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [建立決定規則](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [建立產品建議放置環境](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [建立決定規則](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [建立個人化優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [建立後備產品建議](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [建立集合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
@@ -476,7 +476,7 @@ ht-degree: 2%
 
 ### 階段4：訊息製作
 
-**應用程式函式：** [!DNL AJO]：訊息製作
+**應用程式功能：** [!DNL AJO]：訊息製作
 
 此階段會為歷程中的每個管道和接觸點設定訊息內容，並將決策輸出（選取的選件內容）整合到訊息範本中。 歷程中的每個訊息動作節點都需要編寫內容與適當的管道表面、個人化權杖和選件位置整合。
 
@@ -517,7 +517,7 @@ ht-degree: 2%
 選項A (Offer Decisioning)的&#x200B;**：**
 每則訊息都包含優惠方案位置，決策選取的內容會在此處顯示。 訊息版面配置一致，但選件區域會動態顯示每個設定檔的最佳選件。
 
-選項B的&#x200B;**（動態頻道選擇）：**
+選項B （動態頻道選擇）的&#x200B;**：**
 每個頻道都有各自獨立撰寫的訊息內容。 各管道的內容類似，但因應管道限制（電子郵件HTML、簡訊與推播通知格式）而調整。
 
 選項C的&#x200B;**（完全最適化）：**
@@ -529,14 +529,14 @@ ht-degree: 2%
 - [新增個人化](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [動態內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
 - [在訊息中傳遞優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
-- [使用內容範本](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [使用內容範本](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [使用內容片段](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
-- [建立簡訊訊息](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/sms/create-sms)
-- [設計推播通知](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/push/design-push)
+- [建立簡訊訊息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/create-sms)
+- [設計推播通知](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/design-push)
 
 ### 階段5：歷程設計與啟動
 
-**應用程式函式：** [!DNL AJO]：Journey Orchestration，[!DNL AJO]：衝突與優先順序管理，[!DNL AJO]：頻率與商業規則
+**應用程式功能：** [!DNL AJO]：Journey Orchestration，[!DNL AJO]：衝突與優先順序管理，[!DNL AJO]：頻率與商業規則
 
 此階段會設定完整的歷程畫布，包括登入設定、連結至已設定決策原則的決策節點、管道路由的條件分割（選項B/C）、每個管道路徑的訊息動作節點、接觸點之間的等待節點、退出條件、衝突/優先順序設定和頻率上限規則。 此階段會將所有先前設定的元件組合成協調的歷程流程並加以啟用。
 
@@ -599,7 +599,7 @@ ht-degree: 2%
 選項A (Offer Decisioning)的&#x200B;**：**
 歷程畫布與內嵌於每個訊息動作節點中的決定原則是線性的。 管道選取範圍沒有分支。 優惠決定是在動作節點內的訊息轉譯時做出的。
 
-選項B的&#x200B;**（動態頻道選擇）：**
+選項B （動態頻道選擇）的&#x200B;**：**
 在每個等待步驟後，新增條件節點，以評估管道選擇標準（設定檔屬性、決策輸出或同意狀態）。 每個條件分支都會導向通道特定的訊息動作節點。 針對不符合任何條件的設定檔納入預設/其他路徑。
 
 選項C的&#x200B;**（完全最適化）：**
@@ -608,22 +608,22 @@ ht-degree: 2%
 #### Experience League檔案
 
 - [建立歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
-- [歷程屬性](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
-- [讀取對象活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
-- [條件活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
-- [等待活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [在歷程中新增訊息](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
+- [歷程屬性](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
+- [讀取對象活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [條件活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [等待活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
+- [在歷程中新增訊息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [退出條件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [歷程專案管理](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
-- [測試您的歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
+- [測試您的歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
 - [發佈歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/publishing-the-journey)
-- [優先順序分數](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
-- [衝突與優先順序管理概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
+- [優先順序分數](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
+- [衝突與優先順序管理概觀](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
 - [頻率規則](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
 
 ### 第6階段：報告與監控
 
-**應用程式函式：** [!DNL AJO]：報表與效能分析
+**應用程式功能：** [!DNL AJO]：報表與效能分析
 
 此階段會透過即時報告（在執行期間）和歷史報告（完成之後）來設定歷程和決策效能監控。 決策專用量度，包括優惠選擇分佈、遞補率和排名有效性。 可選擇使用CJA工作區分析，以進行深入的跨頻道歷程與決策ROI分析。
 
@@ -652,8 +652,8 @@ ht-degree: 2%
 - [歷程即時報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [歷程全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [使用Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
-- [AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
 
 ## 實施考量
 
@@ -661,7 +661,7 @@ ht-degree: 2%
 
 ### 護欄和限制
 
-- 每個沙箱最多500個即時歷程 — [Journey Optimizer護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
+- 每個沙箱最多500個即時歷程 — [Journey Optimizer護欄](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 - 歷程持續時間上限為91天（全域逾時）
 - 每個歷程畫布最多50個活動
 - 讀取對象歷程每秒最多可處理20,000個設定檔
@@ -673,7 +673,7 @@ ht-degree: 2%
 - 每個沙箱每個管道型別最多10個管道表面
 - 對於受眾讀取的歷程，等待步驟的最短持續時間為1小時
 - 歷程重新進入冷卻最短為5分鐘
-- 每個沙箱最多4,000個區段定義 — [平台護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- 每個沙箱最多4,000個區段定義 — [平台護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 
 ### 常見陷阱
 
@@ -751,96 +751,96 @@ ht-degree: 2%
 
 ### Journey orchestration
 
-- [開始使用歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/journey)
+- [開始使用歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey)
 - [建立歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs)
-- [歷程屬性](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
-- [讀取對象活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
-- [一般事件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
-- [對象資格鑑定事件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
-- [條件活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
-- [等待活動](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
-- [在歷程中新增訊息](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
+- [歷程屬性](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties)
+- [讀取對象活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/read-audience)
+- [一般事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/general-events)
+- [對象資格鑑定事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/audience-qualification-events)
+- [條件活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/condition-activity)
+- [等待活動](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity)
+- [在歷程中新增訊息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journeys-message)
 - [退出條件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/exit-criteria)
 - [歷程專案管理](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/entry-management)
-- [測試您的歷程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
+- [測試您的歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/testing-the-journey)
 - [發佈歷程](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/publishing-the-journey)
 
 ### 決定管理
 
 - [決策管理概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [建立產品建議放置環境](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
-- [建立決定規則](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
+- [建立產品建議放置環境](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [建立決定規則](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [建立個人化優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [建立後備產品建議](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [建立集合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
-- [建立集合限定詞](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
+- [建立集合限定詞](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
 - [建立決定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 - [排名策略](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/ranking/ranking-strategies)
 - [在訊息中傳遞優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
 
 ### 管道設定
 
-- [開始使用電子郵件設定](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [開始使用電子郵件設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
 - [委派子網域](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/delegate-subdomain)
 - [建立 IP 池](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-pools)
 - [IP熱身計畫](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/ip-warmup/ip-warmup-gs)
-- [電子郵件表面設定](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
-- [設定簡訊頻道](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [電子郵件表面設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/email-settings)
+- [設定簡訊頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 - [設定推播通知頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/configure-push/push-configuration)
 
 ### 訊息製作與個人化
 
-- [建立電子郵件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/email/create-email)
+- [建立電子郵件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/create-email)
 - [設計電子郵件內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/design-emails)
 - [新增個人化](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalize)
 - [Personalization語法](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/personalization-syntax)
 - [動態內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/personalization/dynamic-content)
-- [使用內容範本](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-templates/content-templates)
+- [使用內容範本](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates)
 - [使用內容片段](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/content-fragments)
-- [預覽和測試您的內容](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/preview-test/preview-test)
+- [預覽和測試您的內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/preview-test/preview-test)
 
 ### 衝突、優先順序和頻率管理
 
-- [衝突與優先順序管理概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
-- [優先順序分數](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
-- [識別潛在衝突](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/conflicts)
-- [歷程上限和仲裁](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/journey-capping)
+- [衝突與優先順序管理概觀](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
+- [優先順序分數](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
+- [識別潛在衝突](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/conflicts)
+- [歷程上限和仲裁](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/journey-capping)
 - [頻率規則](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/business-rules/frequency-rules)
 
 ### 對象和細分
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [對象構成](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-composition)
-- [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
+- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [邊緣分段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [對象構成](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [Profile Query Language參考](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/pql/overview)
 
 ### 報告與分析
 
 - [歷程即時報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-live-report)
 - [歷程全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [使用Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
-- [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
+- [AJO + CJA整合指南](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/cja-ajo)
+- [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
 
 ### 設定檔與身分
 
-- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
-- [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
-- [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
-- [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
-- [Customer AI概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/intelligent-services/customer-ai/overview)
+- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [Identity Service總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [合併原則概觀](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [計算屬性概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- [Customer AI概述](https://experienceleague.adobe.com/en/docs/experience-platform/intelligent-services/customer-ai/overview)
 
 ### 資料控管和同意
 
-- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
+- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
 - [Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted)
-- [管理隱藏清單](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list)
+- [管理隱藏清單](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list)
 
 ### 護欄
 
-- [Journey Optimizer護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
-- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
-- [Identity Service護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/guardrails)
+- [Journey Optimizer護欄](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
+- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [Identity Service護欄](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails)

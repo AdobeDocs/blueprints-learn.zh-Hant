@@ -3,7 +3,7 @@ title: Brand Concierge對話體驗
 description: 瞭解如何將數位屬性轉換為AI支援、品牌安全的對話體驗，以引導客戶探索。
 solution: Experience Platform, Real-Time Customer Data Platform
 exl-id: a9545328-316d-446a-9308-18af61c58d1c
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7239'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 使用案例概述
 
-組織日益尋求將靜態數位體驗轉換為動態的AI支援對話，以引導客戶進行探索、產品選擇和購買決策。[!DNL Adobe Brand Concierge] 提供協調的交談AI層，位於現有數位屬性上方，由AEP Agent Orchestrator提供技術支援，以解決此問題。
+組織日益尋求將靜態數位體驗轉換為動態的AI支援對話，以引導客戶進行探索、產品選擇和購買決策。 [!DNL Adobe Brand Concierge]提供位於現有數位內容上方的協調式交談AI層（由AEP Agent Orchestrator提供技術支援），以解決此問題。
 
 此模式與傳統聊天機器人實作不同，因為其原生與AEP的統一設定檔整合，使用品牌控管護欄來確保每個回應都符合品牌標準，並將對話訊號傳回客戶資料平台，以進行下游個人化和啟用。
 
@@ -100,27 +100,27 @@ ht-degree: 0%
 
 將數位屬性轉換為AI支援的品牌安全對話體驗，透過自然對話引導客戶探索，利用意圖和情緒訊號豐富設定檔，並提供個人化產品推薦。
 
-**功能鏈：**&#x200B;代理程式設定>品牌控管設定>內容整合>對話式體驗部署>設定檔擴充>分析和最佳化
+**執行計畫：**&#x200B;代理程式設定>品牌控管設定>內容整合>對話式體驗部署>設定檔擴充>分析和最佳化
 
 ## 應用程式
 
 以下應用程式可用來實作此使用案例模式。
 
 - **[!DNL Brand Concierge]** — AI支援的對話式體驗應用程式，提供代理程式協調器、Product Advisor Agent、網站顧問代理程式、品牌控管和對話式分析
-- **[!DNL Adobe Experience Platform] (AEP)** — 整合的資料基礎，提供對話式訊號的XDM結構描述、身分解析、即時客戶設定檔和資料收集基礎架構
-- **[!DNL Real-Time CDP] ([!DNL RT-CDP])** — 客戶資料平台提供個人化對話的即時設定檔查閱、從對話訊號進行對象細分，以及擴充設定檔與意圖和情緒資料
+- **[!DNL Adobe Experience Platform](AEP)** — 整合的資料基礎，提供對話式訊號的XDM結構描述、身分解析、即時客戶設定檔和資料收集基礎架構
+- **[!DNL Real-Time CDP]([!DNL RT-CDP])** — 客戶資料平台提供個人化對話的即時設定檔查閱、從對話訊號進行對象細分，以及擴充設定檔與意圖和情緒資料
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 必填 | 已布建[!DNL Brand Concierge]權益的沙箱；為對話式體驗管理員、內容管理員和分析使用者設定的角色；針對包含PII或敏感客戶訊號的對話式資料制定的ABAC原則 | [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 必填 | 對話事件的XDM結構描述（ExperienceEvent類別具有對話特定欄位群組，可擷取意圖、情緒、產品互動和切換事件）；使用對話偏好設定和意圖屬性擴充的設定檔結構描述；接地建議的產品目錄查詢結構描述 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home) |
-| 資料來源與收集 | 必填 | [!DNL Web SDK]或[!DNL Mobile SDK]已設定將對話事件資料路由到AEP資料集的資料串流；[!DNL Edge Network]整合用於在對話期間即時事件擷取；透過來源聯結器或批次擷取所擷取的產品目錄資料 | [Web SDK 概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home) |
-| 身分和設定檔設定 | 必填 | 設定用於訪客身分識別（匿名ECID、驗證的CRM ID或電子郵件）的身分名稱空間；設定用於對話期間即時設定檔查詢的邊緣啟用的合併原則；用於跨裝置對話持續性的身分連結規則 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home) |
-| 對象定義與細分 | 已假設就位 | 核心交談部署不需要受眾，但個人化交談策略需要受眾（例如，高價值客戶區段接收不同的交談流程）；即時交談個人化建議使用串流或邊緣評估 | [分段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home) |
+| 管理與治理 | 必填 | 已布建[!DNL Brand Concierge]權益的沙箱；為對話式體驗管理員、內容管理員和分析使用者設定的角色；針對包含PII或敏感客戶訊號的對話式資料制定的ABAC原則 | [存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| 資料模型與準備 | 必填 | 對話事件的XDM結構描述（ExperienceEvent類別具有對話特定欄位群組，可擷取意圖、情緒、產品互動和切換事件）；使用對話偏好設定和意圖屬性擴充的設定檔結構描述；接地建議的產品目錄查詢結構描述 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) |
+| 資料來源與收集 | 必填 | [!DNL Web SDK]或[!DNL Mobile SDK]已設定將對話事件資料路由到AEP資料集的資料串流；[!DNL Edge Network]整合用於在對話期間即時事件擷取；透過來源聯結器或批次擷取所擷取的產品目錄資料 | [Web SDK 概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) |
+| 身分和設定檔設定 | 必填 | 設定用於訪客身分識別（匿名ECID、驗證的CRM ID或電子郵件）的身分名稱空間；設定用於對話期間即時設定檔查詢的邊緣啟用的合併原則；用於跨裝置對話持續性的身分連結規則 | [身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) |
+| 對象定義與細分 | 已假設就位 | 核心交談部署不需要受眾，但個人化交談策略需要受眾（例如，高價值客戶區段接收不同的交談流程）；即時交談個人化建議使用串流或邊緣評估 | [分段服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home) |
 
 ## 支援功能
 
@@ -128,19 +128,19 @@ ht-degree: 0%
 
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 推薦 | 將對話訊號彙總至設定檔層級屬性（例如，對話總數、產品主要興趣、平均情緒分數），以用於下游細分和個人化 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview) |
-| 資料生命週期管理 | 推薦 | 設定交談事件資料的保留原則、管理交談記錄和設定檔的同意，以及支援交談記錄檔的隱私權刪除請求 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
-| 資料使用標籤和實作 | 推薦 | 標示包含PII、情緒或意圖訊號的交談資料欄位；強制執行治理政策，防止敏感交談資料到達未經授權的目的地 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home) |
-| 監控與可觀察性 | 推薦 | 監視交談事件擷取管道、追蹤設定檔擴充成功率，並警示可能影響交談個人化品質的資料流程失敗 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
-| 報告與分析 | 已包含 | 使用[!DNL Brand Concierge]內建分析和[!DNL CJA]進行跨管道交談影響分析，以分析交談績效、客戶意見回饋、轉換歸因和代理程式效率 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
+| 計算/衍生屬性建立 | 推薦 | 將對話訊號彙總至設定檔層級屬性（例如，對話總數、產品主要興趣、平均情緒分數），以用於下游細分和個人化 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
+| 資料生命週期管理 | 推薦 | 設定交談事件資料的保留原則、管理交談記錄和設定檔的同意，以及支援交談記錄檔的隱私權刪除請求 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
+| 資料使用標籤和實作 | 推薦 | 標示包含PII、情緒或意圖訊號的交談資料欄位；強制執行治理政策，防止敏感交談資料到達未經授權的目的地 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
+| 監控與可觀察性 | 推薦 | 監視交談事件擷取管道、追蹤設定檔擴充成功率，並警示可能影響交談個人化品質的資料流程失敗 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home) |
+| 報告與分析 | 已包含 | 使用[!DNL Brand Concierge]內建分析和[!DNL CJA]進行跨管道交談影響分析，以分析交談績效、客戶意見回饋、轉換歸因和代理程式效率 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從「應用程式功能目錄」中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Brand Concierge]
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 代理程式設定 | 階段1：代理程式組態 | 使用代理程式專業（產品顧問、網站諮詢）和基本行為設定來設定[!DNL Brand Concierge]代理程式協調器 |
 | 品牌控管設定 | 第2階段：品牌控管設定 | 定義品牌語調、語調、訊息護欄、核准的內容界限，以及可影響所有對話互動的禁止主題 |
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 ### [!DNL Real-Time CDP]
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 即時設定檔查閱 | 第4階段：對話式體驗部署 | 存取即時客戶設定檔屬性和區段成員資格，以根據已知的客戶資料個人化對話回應 |
 | 輪廓富集 | 階段5：設定檔擴充 | 使用衍生自對話式行為事件（意圖分數、情緒趨勢、產品相似性）的計算屬性豐富設定檔 |
@@ -312,7 +312,7 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 
 ### 階段1：代理程式設定
 
-**應用程式函式：** [!DNL Brand Concierge]：代理程式設定
+**應用程式功能：** [!DNL Brand Concierge]：代理程式設定
 
 設定核心[!DNL Brand Concierge]代理程式協調器，包括選取代理程式專業（產品顧問、網站諮詢或兩者）、設定基本代理程式行為，以及建立[!DNL Brand Concierge]與AEP之間的連線，以進行設定檔存取和事件擷取。
 
@@ -353,21 +353,21 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 選項A （產品顧問）的&#x200B;**：**
 啟用Product Advisor專業化並設定其與產品目錄資料來源的連線。 設定產品建議引數，包括每個回應的最大建議數、產品屬性顯示偏好設定和比較處理規則。
 
-選項B的&#x200B;**（網站建議）：**
+選項B （網站諮詢）的&#x200B;**：**
 啟用「網站建議」專業化，並設定其與網站內容索引的連線。 設定導覽引數，包括內容範圍邊界、頁面類別處理和深層連結產生偏好設定。
 
-選項C的&#x200B;**（組合）：**
+選項C （組合）的&#x200B;**：**
 啟用兩種專門化並設定Orchestrator的意圖路由邏輯。 定義路由規則，以決定何時應該由「產品顧問」與「網站建議」處理交談，以及如何在單一交談中管理專業之間的轉換。
 
 **Experience League檔案：**
 
 - [Brand Concierge概觀](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
-- [AI助理總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/home)
+- [AI助理總覽](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)
 - [AEP Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
 
 ### 第2階段：品牌控管設定
 
-**應用程式函式：** [!DNL Brand Concierge]：品牌治理設定
+**應用程式功能：** [!DNL Brand Concierge]：品牌治理設定
 
 設定塑造所有對話互動的品牌控管護欄。 這包括品牌語調和語調定義、核准的內容範圍、禁止的主題、回應風格指南和向上呈報規則。 品牌治理可確保每個AI產生的回應都符合品牌標準。
 
@@ -408,7 +408,7 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 **Experience League檔案：**
 
 - [Brand Concierge品牌控管](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
-- [AI助理操作深入分析](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/home)
+- [AI助理操作深入分析](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)
 
 ### 第3階段：內容整合
 
@@ -453,10 +453,10 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 選項A （產品顧問）的&#x200B;**：**
 著重於產品目錄與豐富產品屬性對應的整合。 設定Product Advisor Agent的建議邏輯，包括要建議多少產品、如何處理缺貨專案、如何呈現產品比較，以及如何將客戶設定檔資料（購買記錄、瀏覽行為）併入建議排名。
 
-選項B的&#x200B;**（網站建議）：**
+選項B （網站諮詢）的&#x200B;**：**
 著重於使用頁面階層對應建立網站內容索引。 設定Site Advisory代理程式的導覽邏輯，包括如何解譯訪客意圖、將哪些內容類別設定為優先順序、如何處理模稜兩可的導覽要求，以及如何根據訪客目前的頁面內容和工作階段行為調整建議。
 
-選項C的&#x200B;**（組合）：**
+選項C （組合）的&#x200B;**：**
 設定產品目錄和網站內容來源。 確保內容路由邏輯將內容正確指派給適當的專門化，且產品內容與網站導覽內容之間的互動參照正確對應。
 
 **Experience League檔案：**
@@ -464,7 +464,7 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 - [Brand Concierge內容設定](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
 - [Brand Concierge產品顧問](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/product-advisor)
 - [Brand Concierge網站顧問](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/site-advisor)
-- [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)
+- [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 
 ### 第4階段：對話式體驗部署
 
@@ -519,14 +519,14 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 **Experience League檔案：**
 
 - [Brand Concierge部署](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
-- [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
-- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge-network-server-api/overview)
-- [設定檔API實體端點](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/api/entities)
-- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
+- [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
+- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
+- [設定檔API實體端點](https://experienceleague.adobe.com/en/docs/experience-platform/profile/api/entities)
+- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 ### 階段5：設定檔擴充
 
-**應用程式函式：** [!DNL Brand Concierge]：對話式設定檔擴充；[!DNL RT-CDP]：設定檔擴充、對象評估
+**應用程式功能：** [!DNL Brand Concierge]：對話式設定檔擴充；[!DNL RT-CDP]：設定檔擴充、對象評估
 
 設定擷取和擴充管道，將對話訊號傳回至AEP統一的客戶設定檔。 包括將交談事件對應至XDM、擷取意圖和情緒訊號、從交談資料建立計算屬性，以及根據交談行為建立對象。
 
@@ -564,15 +564,15 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 
 **Experience League檔案：**
 
-- [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
-- [計算屬性UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/ui)
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
+- [計算屬性概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- [計算屬性UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 ### 階段6：分析和最佳化
 
-**應用程式函式：** [!DNL Brand Concierge]：對話式分析
+**應用程式功能：** [!DNL Brand Concierge]：對話式分析
 
 設定Analytics儀表板和報表，以測量對話式體驗效能、識別最佳化商機及追蹤KPI。 其中包括[!DNL Brand Concierge]內建分析、跨頻道交談影響分析的可選[!DNL CJA]整合，以及持續的最佳化工作流程。
 
@@ -601,9 +601,9 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 **Experience League檔案：**
 
 - [Brand Concierge分析](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
-- [CJA Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
-- [建立或編輯CJA連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/create-connection)
-- [建立或編輯CJA資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)
+- [CJA Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
+- [建立或編輯CJA連線](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
+- [建立或編輯CJA資料檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)
 
 ## 實施考量
 
@@ -612,11 +612,11 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 ### 護欄和限制
 
 - [!DNL Brand Concierge]個交談體驗受AI回應產生率限制的約束；同時交談容量取決於權益層級
-- 對話期間的即時設定檔查詢受每個沙箱的設定檔API速率限制約束 — [即時客戶設定檔護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
-- 對話事件資料擷取遵循標準AEP串流擷取限制 — [擷取護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/guardrails)
+- 對話期間的即時設定檔查詢受每個沙箱的設定檔API速率限制約束 — [即時客戶設定檔護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- 對話事件資料擷取遵循標準AEP串流擷取限制 — [擷取護欄](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
 - 產品目錄大小和內容索引數量受[!DNL Brand Concierge]個內容整合限制的約束
-- 每個沙箱最多可套用25個計算屬性至對話式訊號彙總 — [計算屬性護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
-- 每個沙箱最多4,000個區段定義適用於對話對象 — [分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- 每個沙箱最多可套用25個計算屬性至對話式訊號彙總 — [計算屬性護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
+- 每個沙箱最多4,000個區段定義適用於對話對象 — [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 
 ### 常見陷阱
 
@@ -684,57 +684,57 @@ Product Advisor Agent和網站建議代理程式都是在[!DNL Brand Concierge] 
 - [Brand Concierge概觀](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/overview)
 - [Brand Concierge產品顧問](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/product-advisor)
 - [Brand Concierge網站顧問](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/brand-concierge/site-advisor)
-- [AI助理總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/home)
+- [AI助理總覽](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)
 
 **[!DNL Adobe Experience Platform]**
 
-- [AEP概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/home)
-- [XDM系統概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)
-- [結構描述組合基本面](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition)
-- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
+- [AEP概觀](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home)
+- [XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [結構描述組合基本面](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
+- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 **資料收集與整合**
 
-- [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
+- [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
 - [行動SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)
-- [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
-- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge-network-server-api/overview)
-- [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)
+- [設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
+- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
+- [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 
 **身分和設定檔**
 
-- [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
+- [Identity Service總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
 - [身分名稱空間概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)
-- [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
-- [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
+- [合併原則概觀](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [計算屬性概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview)
 
 **對象和細分**
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
 
 **資料控管和隱私權**
 
-- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
-- [同意和偏好設定欄位群組](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/consents)
-- [Privacy Service概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/privacy/home)
-- [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)
+- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [同意和偏好設定欄位群組](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents)
+- [Privacy Service概觀](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
+- [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
 
 **監視和可觀察性**
 
-- [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)
-- [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
+- [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
+- [警報概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
 
 **分析和報告**
 
-- [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
-- [CJA連線總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/overview)
-- [CJA資料檢視總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)
-- [Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
+- [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [CJA連線總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
+- [CJA資料檢視總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
+- [Analysis Workspace概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home)
 
 **護欄**
 
-- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
-- [擷取護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/guardrails)
-- [分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
+- [擷取護欄](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
+- [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)

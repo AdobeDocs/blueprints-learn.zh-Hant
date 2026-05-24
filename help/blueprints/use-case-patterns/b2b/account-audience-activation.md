@@ -3,7 +3,7 @@ title: B2B Audience Activation
 description: 瞭解如何跨網路、電子郵件和廣告頻道啟用以帳戶為基礎的B2B受眾。
 solution: Real-Time Customer Data Platform
 exl-id: 2b979159-37aa-41d4-a6b4-1105538f6546
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7611'
 ht-degree: 0%
@@ -98,27 +98,27 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 在網頁、電子郵件和廣告頻道中啟用以帳戶為基礎的B2B對象。
 
-**功能鏈：**&#x200B;帳戶設定檔擴充>帳戶對象評估>目的地設定> Audience Activation >監視
+**執行計畫：**&#x200B;帳戶設定檔擴充>帳戶對象評估>目的地設定> Audience Activation >監視
 
 ## 應用程式
 
 以下應用程式可用來實作此使用案例模式。
 
 - **[!DNL Real-Time CDP]B2B edition** — 帳戶設定檔統一、B2B身分解析、帳戶對象評估、B2B專屬目的地設定和帳戶對象啟用的核心平台
-- **[!DNL Adobe Experience Platform] (AEP)** — B2B XDM資料模型化、從CRM和行銷自動化來源擷取資料、身分服務和控管的基礎基礎架構
+- **[!DNL Adobe Experience Platform](AEP)** — B2B XDM資料模型化、從CRM和行銷自動化來源擷取資料、身分服務和控管的基礎基礎架構
 - **[!DNL Marketo Engage]** — 由啟用的帳戶對象提供的潛在客戶培養方案、評分和行銷活動執行的主要B2B行銷自動化目的地
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
-| 管理與治理 | 必填 | 已布建[!DNL RT-CDP]個B2B edition的沙箱。 為B2B資料管理、對象建立和目的地啟用設定的角色。 如果帳戶資料包含受限制的欄位，則已實施ABAC原則。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 必填 | 使用XDM商業帳戶、XDM商業機會、XDM商業活動和XDM個人資料類別設定的B2B XDM方案。 套用至帳戶屬性、人員 — 帳戶關係和機會資料的B2B欄位群組。 為每個B2B實體建立和啟用設定檔的資料集。 在帳戶、人員、機會和行銷活動實體之間定義的結構描述關係。 | 在Real-Time CDP中[XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[B2B結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b) |
-| 資料來源與收集 | 必填 | Source聯結器已設定為CRM ([!DNL Salesforce]， [!DNL Microsoft Dynamics])和行銷自動化([!DNL Marketo Engage])以擷取帳戶、人員、商機和行銷活動資料。 批次或串流擷取管道作用中。 「資料準備」對應已設定為將來源資料轉換為B2B XDM結構描述。 | [來源總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)，[Marketo Engage聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
-| 身分和設定檔設定 | 必填 | 針對帳戶識別碼（帳戶ID、CRM帳戶ID）和人員識別碼（電子郵件、CRM聯絡人ID、Marketo銷售機會ID）設定的B2B身分名稱空間。 透過B2B身分解析解析的個人與帳戶關係。 為帳戶設定檔統一設定的合併原則。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[Real-Time CDP的B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b) |
-| 對象定義與細分 | 必填 | 使用帳戶屬性、人員屬性和活動資料建立的帳戶層級對象定義。 為帳戶對象設定的評估排程。 定義用來排除不符合資格的帳戶的隱藏對象。 | [細分服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/types/account-audiences) |
+| 管理與治理 | 必填 | 已布建[!DNL RT-CDP]個B2B edition的沙箱。 為B2B資料管理、對象建立和目的地啟用設定的角色。 如果帳戶資料包含受限制的欄位，則已實施ABAC原則。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) |
+| 資料模型與準備 | 必填 | 使用XDM商業帳戶、XDM商業機會、XDM商業活動和XDM個人資料類別設定的B2B XDM方案。 套用至帳戶屬性、人員 — 帳戶關係和機會資料的B2B欄位群組。 為每個B2B實體建立和啟用設定檔的資料集。 在帳戶、人員、機會和行銷活動實體之間定義的結構描述關係。 | 在Real-Time CDP中[XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)，[B2B結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) |
+| 資料來源與收集 | 必填 | Source聯結器已設定為CRM ([!DNL Salesforce]， [!DNL Microsoft Dynamics])和行銷自動化([!DNL Marketo Engage])以擷取帳戶、人員、商機和行銷活動資料。 批次或串流擷取管道作用中。 「資料準備」對應已設定為將來源資料轉換為B2B XDM結構描述。 | [來源總覽](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)，[Marketo Engage聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) |
+| 身分和設定檔設定 | 必填 | 針對帳戶識別碼（帳戶ID、CRM帳戶ID）和人員識別碼（電子郵件、CRM聯絡人ID、Marketo銷售機會ID）設定的B2B身分名稱空間。 透過B2B身分解析解析的個人與帳戶關係。 為帳戶設定檔統一設定的合併原則。 | [身分識別服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)，[Real-Time CDP的B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b) |
+| 對象定義與細分 | 必填 | 使用帳戶屬性、人員屬性和活動資料建立的帳戶層級對象定義。 為帳戶對象設定的評估排程。 定義用來排除不符合資格的帳戶的隱藏對象。 | [細分服務總覽](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)，[帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences) |
 
 ## 支援功能
 
@@ -126,19 +126,19 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 推薦 | 帳戶層級的彙總參與分數、期限值和活動量度可改善對象精確度。 計算屬性可將個人層級事件（電子郵件開啟、網頁造訪、內容下載）彙總至帳戶層級，以用於區段。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview) |
-| 資料生命週期管理 | 推薦 | B2B資料保留原則可確保清除過時的帳戶和機會資料。 B2B聯絡人的同意管理可確保遵守電子郵件行銷法規。 資料集到期原則會防止累積過期的CRM同步資料。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
-| 資料使用標籤和實作 | 已包含 | B2B帳戶資料通常包含合約限制（收入數字、來自第三方提供者的員工計數）。 資料使用標籤可防止將受限制的帳戶屬性啟用至未經授權的目的地。 治理原則可確保在啟用期間適當地處理連絡人記錄的PII欄位。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home) |
-| 監控與可觀察性 | 已包含 | 監視CRM和[!DNL Marketo Engage]來源聯結器資料流可確保帳戶資料保持最新。 目的地啟用監視確認對象已成功傳遞至[!DNL LinkedIn]、[!DNL Marketo]和CRM目標。 警報規則會攔截會導致過時帳戶資料的內嵌失敗。 | [警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)，[監視目的地資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations) |
-| 報告與分析 | 推薦 | [!DNL CJA] B2B edition提供帳戶層級的分析，包括對象觸及率、參與和管道影響。 帳戶型歸因有助於評估啟用行銷活動對機會進展和收入的影響。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
+| 計算/衍生屬性建立 | 推薦 | 帳戶層級的彙總參與分數、期限值和活動量度可改善對象精確度。 計算屬性可將個人層級事件（電子郵件開啟、網頁造訪、內容下載）彙總至帳戶層級，以用於區段。 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
+| 資料生命週期管理 | 推薦 | B2B資料保留原則可確保清除過時的帳戶和機會資料。 B2B聯絡人的同意管理可確保遵守電子郵件行銷法規。 資料集到期原則會防止累積過期的CRM同步資料。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home) |
+| 資料使用標籤和實作 | 已包含 | B2B帳戶資料通常包含合約限制（收入數字、來自第三方提供者的員工計數）。 資料使用標籤可防止將受限制的帳戶屬性啟用至未經授權的目的地。 治理原則可確保在啟用期間適當地處理連絡人記錄的PII欄位。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
+| 監控與可觀察性 | 已包含 | 監視CRM和[!DNL Marketo Engage]來源聯結器資料流可確保帳戶資料保持最新。 目的地啟用監視確認對象已成功傳遞至[!DNL LinkedIn]、[!DNL Marketo]和CRM目標。 警報規則會攔截會導致過時帳戶資料的內嵌失敗。 | [警示概述](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)，[監視目的地資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations) |
+| 報告與分析 | 推薦 | [!DNL CJA] B2B edition提供帳戶層級的分析，包括對象觸及率、參與和管道影響。 帳戶型歸因有助於評估啟用行銷活動對機會進展和收入的影響。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從「應用程式功能目錄」中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Real-Time CDP] B2B edition ([!DNL RT-CDP] B2B)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 帳戶設定檔統一 | 階段1：帳戶設定檔擴充 | 使用B2B XDM結構描述類別將CRM、行銷自動化和第三方來源的帳戶資料整合到統一的帳戶設定檔中 |
 | B2B身分解析 | 階段1：帳戶設定檔擴充 | 使用主要識別碼解決人員與帳戶的關係，將聯絡人和銷售機會對應至其關聯帳戶 |
@@ -150,7 +150,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 ### [!DNL Real-Time CDP] ([!DNL RT-CDP]) — 標準函式
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 對象評估 | 第2階段：帳戶對象評估 | 帳戶對象的基礎評估引擎，支援帳戶層級區段定義的批次評估 |
 | 目的地設定 | 階段3：目的地組態 | B2B特定目的地設定所使用的核心目的地連線基礎架構 |
@@ -208,8 +208,8 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **Experience League：**
 
-- [Marketo Engage目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [對Marketo Engage目的地啟用對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/adobe/marketo-engage#activate)
+- [Marketo Engage目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [對Marketo Engage目的地啟用對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage#activate)
 
 ### 選項B：批次啟用廣告平台的對象
 
@@ -246,9 +246,9 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **Experience League：**
 
-- [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/social/linkedin)
-- [Google Customer Match目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/advertising/google-customer-match)
-- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
+- [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Google Customer Match目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/advertising/google-customer-match)
+- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
 
 ### 選項C：以檔案為基礎的雲端儲存啟用
 
@@ -284,9 +284,9 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **Experience League：**
 
-- [Amazon S3目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [Azure Blob儲存體目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
-- [對批次目的地啟用對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/api/connect-activate-batch-destinations)
+- [Amazon S3目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [Azure Blob儲存體目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
+- [對批次目的地啟用對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/connect-activate-batch-destinations)
 
 ### 選項D：串流啟用CRM系統
 
@@ -321,8 +321,8 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **Experience League：**
 
-- [Salesforce CRM目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Microsoft Dynamics 365目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
+- [Salesforce CRM目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/salesforce)
+- [Microsoft Dynamics 365目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
 
 ### 選項比較
 
@@ -360,9 +360,9 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 此階段透過合併CRM、行銷自動化和第三方來源的資料，建立統一的帳戶設定檔。
 
-**應用程式函式：** [!DNL RT-CDP] B2B：帳戶設定檔統一，[!DNL RT-CDP] B2B： B2B身分解析
+**應用程式功能：** [!DNL RT-CDP] B2B：帳戶設定檔統一，[!DNL RT-CDP] B2B： B2B身分解析
 
-**您要設定的專案：**&#x200B;此階段會合併CRM、行銷自動化和協力廠商來源的資料，以建立統一的帳戶設定檔。 B2B身分解析會對應個人與帳戶的關係，以便個人層級的參與資料（電子郵件開啟、網頁造訪、內容下載）可以彙總，並用於帳戶層級的對象評估。 此階段的基礎函式F2、F3和F4必須已經到位。
+**您要設定的專案：**&#x200B;此階段會合併CRM、行銷自動化和協力廠商來源的資料，以建立統一的帳戶設定檔。 B2B身分解析會對應個人與帳戶的關係，以便個人層級的參與資料（電子郵件開啟、網頁造訪、內容下載）可以彙總，並用於帳戶層級的對象評估。 此階段的基礎功能F2、F3和F4必須已經到位。
 
 此階段中的&#x200B;**決定點：**
 
@@ -399,15 +399,15 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 **Experience League檔案：**
 
 - [Real-Time CDP B2B edition概觀](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b)
-- [Real-Time CDP中的B2B結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b)
-- [Marketo Engage聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Salesforce聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/crm/salesforce)
+- [Real-Time CDP中的B2B結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [Marketo Engage聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Salesforce聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/crm/salesforce)
 
 ### 第2階段：帳戶對象評估
 
 此階段會結合使用帳戶屬性、人員屬性和人員活動資料，以定義及評估帳戶層級的對象。
 
-**應用程式函式：** [!DNL RT-CDP] B2B：帳戶對象評估，[!DNL RT-CDP]：對象評估
+**應用程式功能：** [!DNL RT-CDP] B2B：帳戶對象評估，[!DNL RT-CDP]：對象評估
 
 **您將要設定的專案：**&#x200B;此階段會使用帳戶屬性、人員屬性和人員活動資料的組合，定義並評估帳戶層級的對象。 [!DNL RT-CDP] B2B edition中的帳戶對象可讓您根據實體特徵（產業、收入、員工人數）以及與這些帳戶相關聯之人員的參與行為來劃分帳戶。
 
@@ -459,16 +459,16 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **Experience League檔案：**
 
-- [帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/types/account-audiences)
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [對象構成](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-composition)
-- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
+- [帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [對象構成](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
 
 ### 階段3：目的地設定
 
 此階段會建立已驗證的連線，以連線至將傳送帳戶對象的目標目的地。
 
-**應用程式函式：** [!DNL RT-CDP] B2B：帳戶目的地組態，[!DNL RT-CDP] B2B： [!DNL Marketo Engage]整合，[!DNL RT-CDP]：目的地組態
+**應用程式功能：** [!DNL RT-CDP] B2B：帳戶目的地組態，[!DNL RT-CDP] B2B： [!DNL Marketo Engage]整合，[!DNL RT-CDP]：目的地組態
 
 **您的設定內容：**&#x200B;此階段會建立已驗證的連線，以連線至將傳送帳戶對象的目標目的地。 設定包括從目錄選取目的地、提供驗證認證、設定帳戶層級和人員層級的欄位對應，以及設定匯出排程。 每種目的地型別都有獨特的需求和功能。
 
@@ -532,18 +532,18 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **Experience League檔案：**
 
-- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
-- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
-- [Marketo Engage目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/social/linkedin)
-- [Salesforce CRM目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Amazon S3目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [Marketo Engage目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Salesforce CRM目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/salesforce)
+- [Amazon S3目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
 
 ### 階段4：對象啟用
 
 此階段會將評估的帳戶對象發佈至設定的目的地。
 
-**應用程式函式：** [!DNL RT-CDP] B2B：帳戶Audience Activation，[!DNL RT-CDP]： Audience Activation
+**應用程式功能：** [!DNL RT-CDP] B2B：帳戶Audience Activation，[!DNL RT-CDP]： Audience Activation
 
 **您的設定內容：**&#x200B;此階段會將評估的帳戶對象發佈到設定的目的地。 啟用會建立資料流，將帳戶對象（來源）連線至外部目的地（目標）、套用屬性對應，並根據設定的排程或串流行為起始匯出。 您也會設定隱藏對象，將不符合資格的帳戶排除在啟用之外。
 
@@ -600,16 +600,16 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **Experience League檔案：**
 
-- [啟用串流目的地的對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [對批次目的地啟用對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
-- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
+- [啟用串流目的地的對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [對批次目的地啟用對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [啟動護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
 
 ### 第5階段：控管與監控
 
 此階段會確保帳戶對象啟用符合資料治理原則和同意偏好設定，並監控持續啟用的資料流程的健康狀況。
 
-**應用程式函式：** [!DNL RT-CDP] B2B： B2B資料控管，[!DNL RT-CDP]：同意與控管強制執行
+**應用程式功能：** [!DNL RT-CDP] B2B： B2B資料控管，[!DNL RT-CDP]：同意與控管強制執行
 
 **您將要設定的專案：**&#x200B;此階段會確保帳戶對象啟用符合資料治理原則和同意偏好設定，並且持續監視啟用資料流程的健康狀況。 B2B資料控管會強制對敏感帳戶屬性（收入、來自協力廠商提供者的員工人數）加以限制，而同意執行會確保人員層級的通訊符合選擇退出偏好設定。 監視功能會確認啟用資料流是否成功完成。
 
@@ -648,11 +648,11 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 **Experience League檔案：**
 
-- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
+- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
 - [同意與偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
-- [監視目的地資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
-- [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
+- [監視目的地資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [警報概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [啟動護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 
 ## 實施考量
 
@@ -662,16 +662,16 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 檢閱以下適用於此使用案例模式的平台護欄和限制。
 
-- 每個沙箱最多4,000個區段定義，包括帳戶對象 — [分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- 每個沙箱最多4,000個區段定義，包括帳戶對象 — [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 - 帳戶對象主要是使用批次評估來評估；串流資格僅限於簡單帳戶屬性條件
-- 每個目的地連線最多100個資料流 — [目的地護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
+- 每個目的地連線最多100個資料流 — [目的地護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 - 批次目的地每個檔案區段最多可匯出500萬個設定檔
 - 串流目的地具有目的地合作夥伴設定的每秒輸送量限制（例如，[!DNL Marketo] API速率限制）
 - 構成對象（來自對象構成）僅限於批次評估，且無法使用串流
 - 每個對象構成畫布最多10個構成區塊
 - [!DNL LinkedIn]個相符對象需要最小對象人數（通常為300名成員）才能啟用
 - CRM串流目的地受CRM提供者的API速率限制（例如，[!DNL Salesforce]大量API每日限制）所限制
-- [!DNL RT-CDP] B2B edition授權控制企業帳戶設定檔總數 — [RT-CDP產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
+- [!DNL RT-CDP] B2B edition授權控制企業帳戶設定檔總數 — [RT-CDP產品說明](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
 
 ### 常見陷阱
 
@@ -740,65 +740,65 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 **[!DNL RT-CDP]B2B edition**
 
 - [Real-Time CDP B2B edition概觀](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/overview#rtcdp-b2b)
-- [Real-Time CDP中的B2B結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b)
-- [帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/types/account-audiences)
-- [RT-CDP B2B edition產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
+- [Real-Time CDP中的B2B結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
+- [RT-CDP B2B edition產品說明](https://helpx.adobe.com/legal/product-descriptions/real-time-customer-data-platform-b2b-edition-prime-and-ultimate-packages.html)
 
 **對象評估與細分**
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
-- [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
-- [對象構成](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-composition)
-- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
-- [分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [區段產生器UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)
+- [對象構成](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition)
+- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 
 **目的地和啟用**
 
-- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
-- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
-- [Marketo Engage目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/social/linkedin)
-- [Salesforce CRM目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/crm/salesforce)
-- [Microsoft Dynamics 365目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
-- [Amazon S3目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [啟用串流目的地的對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
-- [對批次目的地啟用對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
+- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [Marketo Engage目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
+- [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
+- [Salesforce CRM目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/salesforce)
+- [Microsoft Dynamics 365目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/crm/microsoft-dynamics-365)
+- [Amazon S3目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
+- [啟用串流目的地的對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-segment-streaming-destinations)
+- [對批次目的地啟用對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [啟動護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
 
 **資料來源與聯結器**
 
-- [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)
-- [Marketo Engage聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
-- [Salesforce聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/crm/salesforce)
+- [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+- [Marketo Engage聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Salesforce聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/crm/salesforce)
 
 **資料模型與身分**
 
-- [XDM系統概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)
-- [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
-- [設定檔概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
-- [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
+- [XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [Identity Service總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [設定檔概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
+- [合併原則概觀](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
 
 **資料控管和隱私權**
 
-- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
+- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
 - [資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview)
 - [同意與偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
 **監視與可觀察性**
 
-- [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
-- [監視目的地資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
-- [監視來源資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/api-tutorials/monitor)
+- [警報概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/alerts/overview)
+- [監視目的地資料流](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-destinations)
+- [監視來源資料流](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/monitor)
 - [授權使用量儀表板](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 **報告與分析**
 
-- [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
-- [連線總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/overview)
-- [資料檢視總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)
+- [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [連線總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview)
+- [資料檢視總覽](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)
 
 **教學課程與指南**
 
 - [Real-Time CDP B2B edition快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro)
-- [建立B2B來源的結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b)
-- [沙箱工具](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/sandbox-tooling-api/overview)
+- [建立B2B來源的結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [沙箱工具](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/sandbox-tooling-api/overview)

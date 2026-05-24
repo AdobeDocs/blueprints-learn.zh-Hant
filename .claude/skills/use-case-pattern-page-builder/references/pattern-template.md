@@ -1,8 +1,8 @@
 ---
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 # 使用案例模式範本
@@ -82,7 +82,7 @@ The following scenarios illustrate how {{pattern name}} can be applied across di
 
 {{One-sentence description of what the pattern does.}}
 
-**Function Chain:** {{Step 1}} > {{Step 2}} > {{Step 3}} > {{Step 4}} > {{Step 5}}
+**Execution Plan:** {{Step 1}} > {{Step 2}} > {{Step 3}} > {{Step 4}} > {{Step 5}}
 
 ## Applications
 
@@ -92,44 +92,44 @@ The following Adobe applications are used in this use case pattern.
 - **[!DNL {{Application Name}}] ({{Abbreviation}})** -- {{Description of the application's role in this pattern}}
 - **[!DNL {{Application Name}}] ({{Abbreviation}})** -- {{Description of the application's role in this pattern}}
 
-## Foundational functions
+## Foundational capabilities
 
-The following foundational capabilities must be configured before implementing this pattern. Each function represents a prerequisite or assumed platform capability.
+The following foundational capabilities must be configured before implementing this pattern. Each capability represents a prerequisite or assumed platform capability.
 
-| Foundational Function | Status | What Must Be in Place | Experience League Reference |
+| Foundational Capability | Status | What Must Be in Place | Experience League Reference |
 | --- | --- | --- | --- |
-| {{Function name}} | {{Required / Assumed in Place / Not Applicable}} | {{Description of what must be configured or available}} | [{{Link text}}]({{URL}}) |
-| {{Function name}} | {{Required / Assumed in Place / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
-| {{Function name}} | {{Required / Assumed in Place / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
-| {{Function name}} | {{Required / Assumed in Place / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
+| {{Capability name}} | {{Required / Assumed in Place / Not Applicable}} | {{Description of what must be configured or available}} | [{{Link text}}]({{URL}}) |
+| {{Capability name}} | {{Required / Assumed in Place / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
+| {{Capability name}} | {{Required / Assumed in Place / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
+| {{Capability name}} | {{Required / Assumed in Place / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
 
-## Supporting functions
+## Supporting capabilities
 
 The following supporting capabilities enhance or extend the pattern but are not strictly required for a basic implementation.
 
-| Supporting Function | Status | Why It Matters | Experience League Reference |
+| Supporting Capability | Status | Why It Matters | Experience League Reference |
 | --- | --- | --- | --- |
-| {{Function name}} | {{Recommended / Included / Not Applicable}} | {{Description of why this function matters for this pattern}} | [{{Link text}}]({{URL}}) |
-| {{Function name}} | {{Recommended / Included / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
-| {{Function name}} | {{Recommended / Included / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
+| {{Capability name}} | {{Recommended / Included / Not Applicable}} | {{Description of why this capability matters for this pattern}} | [{{Link text}}]({{URL}}) |
+| {{Capability name}} | {{Recommended / Included / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
+| {{Capability name}} | {{Recommended / Included / Not Applicable}} | {{Description}} | [{{Link text}}]({{URL}}) |
 
-## Application functions
-
-### [!DNL {{Application Name}}] ({{Abbreviation}})
-
-| Function | Implementation Phase | Description |
-| --- | --- | --- |
-| {{Function name}} | {{Phase name (e.g., Setup, Configuration, Activation, Optimization)}} | {{Description of what this function does in context}} |
-| {{Function name}} | {{Phase name}} | {{Description}} |
-| {{Function name}} | {{Phase name}} | {{Description}} |
+## Application capabilities
 
 ### [!DNL {{Application Name}}] ({{Abbreviation}})
 
-| Function | Implementation Phase | Description |
+| Capability | Implementation Phase | Description |
 | --- | --- | --- |
-| {{Function name}} | {{Phase name}} | {{Description}} |
-| {{Function name}} | {{Phase name}} | {{Description}} |
-| {{Function name}} | {{Phase name}} | {{Description}} |
+| {{Capability name}} | {{Phase name (e.g., Setup, Configuration, Activation, Optimization)}} | {{Description of what this capability does in context}} |
+| {{Capability name}} | {{Phase name}} | {{Description}} |
+| {{Capability name}} | {{Phase name}} | {{Description}} |
+
+### [!DNL {{Application Name}}] ({{Abbreviation}})
+
+| Capability | Implementation Phase | Description |
+| --- | --- | --- |
+| {{Capability name}} | {{Phase name}} | {{Description}} |
+| {{Capability name}} | {{Phase name}} | {{Description}} |
+| {{Capability name}} | {{Phase name}} | {{Description}} |
 
 {{Repeat for each application listed in the Applications section.}}
 
@@ -235,7 +235,7 @@ Complete the following before beginning the implementation.
 - **Adobe產品名稱：**&#x200B;在正文和表格中，一律使用Adobe產品名稱的`[!DNL ...]`語法（例如`[!DNL Journey Optimizer]`）。 這是Experience League的慣例，可防止產品名稱的翻譯。
 - **商業目標連結：**&#x200B;使用從模式檔案到商業目標目錄的相對路徑： `../../business-objectives/{{category}}/{{filename}}.md`。
 - **Kebab-case檔案名稱：**&#x200B;模式檔案名稱必須是衍生自模式標題的Kebab-case。 範例：「事件觸發訊息」變成`event-triggered-messaging.md`。
-- **函式鏈：**&#x200B;使用` > ` （空格、大於空格）作為步驟之間的分隔符號。
-- **狀態值：**&#x200B;基礎函式使用：必要、已假設就緒、不適用。 支援函式使用：建議、包含、不適用。
+- **執行計畫：**&#x200B;使用` > ` （空格、大於、空格）作為步驟之間的分隔符號。
+- **狀態值：**&#x200B;基礎功能使用：必要、已假設就緒、不適用。 支援功能使用：建議、包含、不適用。
 - **實作階段：**&#x200B;常用階段名稱包括：設定、設定、啟動、最佳化、監視。
 - **先決條件：**&#x200B;每個專案使用`- [ ]`核取方塊語法。

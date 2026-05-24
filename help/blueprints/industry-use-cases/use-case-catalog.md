@@ -3,10 +3,10 @@ title: 使用案例目錄
 description: 依垂直方向瀏覽產業使用案例，以尋找Adobe Experience Platform和應用程式歷程的正確起點，並附上實作模式和業務目標的連結。
 doc-type: overview-page
 exl-id: 38593314-b8c9-49f6-85db-a4345ec444e7
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '4157'
-ht-degree: 31%
+ht-degree: 30%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 31%
 
 產業使用案例顯示特定垂直產業的組織如何套用Adobe Experience Platform和應用程式來取得可衡量的業務成果。 每個使用案例都描述具體的業務情境、其預期影響，以及提供詳細實作指引的[使用案例模式](/help/blueprints/use-case-patterns/overview.md)的連結。
 
-依產業瀏覽以尋找與貴組織相關的使用案例，然後遵循實施參考的模式連結，包括決定指引、功能鏈和Experience League檔案。
+依產業瀏覽以尋找與貴組織相關的使用案例，然後遵循實施參考的模式連結，包括決定指引、執行計畫和Experience League檔案。
 
 | 產業 | 主要主題 |
 | --- | --- |
@@ -31,7 +31,7 @@ ht-degree: 31%
 
 ## 使用案例如何連結至實作指引
 
-每個使用案例都連結到&#x200B;**使用案例模式** — 一種可重複的實作方法，可描述讓使用案例變成現實所需的功能鏈、決策點和設定步驟。 使用案例模式進而與[關鍵業務目標](/help/blueprints/business-objectives/overview.md)連結，協助您將實作工作與策略性結果保持一致。
+每個使用案例都連結到&#x200B;**使用案例模式** — 一種可重複的實作方法，可描述將使用案例變成現實所需的執行計畫、決定點和設定步驟。 使用案例模式進而與[關鍵業務目標](/help/blueprints/business-objectives/overview.md)連結，協助您將實作工作與策略性結果保持一致。
 
 ```
 Industry Use Case → Use Case Pattern → Key Business Objective

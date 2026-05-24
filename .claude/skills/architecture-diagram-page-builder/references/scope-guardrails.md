@@ -1,7 +1,7 @@
 ---
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Blueprint網站將&#x200B;**架構圖表頁面**&#x200B;與&#x200B;**使用案�
 | KPI和測量公式 | 使用案例模式會測量結果；架構頁面不會 |
 | 業務目標、業務影響 | KBO內容存在於`/help/blueprints/business-objectives/`之下；模式參考它 |
 | 戰術使用案例範例 | 「購物車放棄提醒」、「個人化首頁主圖」等 — 這些是模式內容 |
-| 函式鏈(`A > B > C > D`) | 函式鏈建構是使用案例模式範本的一部分 |
+| 功能(`A > B > C > D`) | 功能建構是使用案例模式範本的一部分 |
 | 角色敘述 | 「行銷人員想要……瑪利亞」 樣式案例屬於模式，而不是架構參照 |
 | 實作選項 | 多選項實作指引（最適合、運作方式、優點、限制）是模式建構 |
 | 基礎/支援函式表格 | 這些是模式頁面區段 |
@@ -47,7 +47,7 @@ Blueprint網站將&#x200B;**架構圖表頁面**&#x200B;與&#x200B;**使用案�
 - &quot;KPIs&quot;
 - 「業務影響」/「業務成果」
 - 「戰術使用案例」/「範例情境」
-- &quot;function chain&quot;
+- &quot;capabilities&quot;
 - &quot;實作選項&quot;
 - &quot;best for&quot;
 - 「優點與限制」
