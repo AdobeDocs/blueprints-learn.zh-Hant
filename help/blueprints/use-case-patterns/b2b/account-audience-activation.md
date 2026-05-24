@@ -3,7 +3,7 @@ title: B2B Audience Activation
 description: 瞭解如何跨網路、電子郵件和廣告頻道啟用以帳戶為基礎的B2B受眾。
 solution: Real-Time Customer Data Platform
 exl-id: 2b979159-37aa-41d4-a6b4-1105538f6546
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7611'
 ht-degree: 0%
@@ -98,7 +98,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 在網頁、電子郵件和廣告頻道中啟用以帳戶為基礎的B2B對象。
 
-**功能鏈：**&#x200B;帳戶設定檔擴充>帳戶對象評估>目的地設定> Audience Activation >監視
+**執行計畫：**&#x200B;帳戶設定檔擴充>帳戶對象評估>目的地設定> Audience Activation >監視
 
 ## 應用程式
 
@@ -108,11 +108,11 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 - **[!DNL Adobe Experience Platform] (AEP)** — B2B XDM資料模型化、從CRM和行銷自動化來源擷取資料、身分服務和控管的基礎基礎架構
 - **[!DNL Marketo Engage]** — 由啟用的帳戶對象提供的潛在客戶培養方案、評分和行銷活動執行的主要B2B行銷自動化目的地
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 必填 | 已布建[!DNL RT-CDP]個B2B edition的沙箱。 為B2B資料管理、對象建立和目的地啟用設定的角色。 如果帳戶資料包含受限制的欄位，則已實施ABAC原則。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
 | 資料模型與準備 | 必填 | 使用XDM商業帳戶、XDM商業機會、XDM商業活動和XDM個人資料類別設定的B2B XDM方案。 套用至帳戶屬性、人員 — 帳戶關係和機會資料的B2B欄位群組。 為每個B2B實體建立和啟用設定檔的資料集。 在帳戶、人員、機會和行銷活動實體之間定義的結構描述關係。 | 在Real-Time CDP中[XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[B2B結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b) |
@@ -132,13 +132,13 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 | 監控與可觀察性 | 已包含 | 監視CRM和[!DNL Marketo Engage]來源聯結器資料流可確保帳戶資料保持最新。 目的地啟用監視確認對象已成功傳遞至[!DNL LinkedIn]、[!DNL Marketo]和CRM目標。 警報規則會攔截會導致過時帳戶資料的內嵌失敗。 | [警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)，[監視目的地資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations) |
 | 報告與分析 | 推薦 | [!DNL CJA] B2B edition提供帳戶層級的分析，包括對象觸及率、參與和管道影響。 帳戶型歸因有助於評估啟用行銷活動對機會進展和收入的影響。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從「應用程式功能目錄」中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Real-Time CDP] B2B edition ([!DNL RT-CDP] B2B)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 帳戶設定檔統一 | 階段1：帳戶設定檔擴充 | 使用B2B XDM結構描述類別將CRM、行銷自動化和第三方來源的帳戶資料整合到統一的帳戶設定檔中 |
 | B2B身分解析 | 階段1：帳戶設定檔擴充 | 使用主要識別碼解決人員與帳戶的關係，將聯絡人和銷售機會對應至其關聯帳戶 |
@@ -150,7 +150,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 ### [!DNL Real-Time CDP] ([!DNL RT-CDP]) — 標準函式
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 對象評估 | 第2階段：帳戶對象評估 | 帳戶對象的基礎評估引擎，支援帳戶層級區段定義的批次評估 |
 | 目的地設定 | 階段3：目的地組態 | B2B特定目的地設定所使用的核心目的地連線基礎架構 |
@@ -209,7 +209,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 **Experience League：**
 
 - [Marketo Engage目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/adobe/marketo-engage)
-- [對Marketo Engage目的地啟用對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/adobe/marketo-engage#activate)
+- [對Marketo Engage目的地啟用對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage#activate)
 
 ### 選項B：批次啟用廣告平台的對象
 
@@ -360,9 +360,9 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 此階段透過合併CRM、行銷自動化和第三方來源的資料，建立統一的帳戶設定檔。
 
-**應用程式函式：** [!DNL RT-CDP] B2B：帳戶設定檔統一，[!DNL RT-CDP] B2B： B2B身分解析
+**應用程式功能：** [!DNL RT-CDP] B2B：帳戶設定檔統一，[!DNL RT-CDP] B2B： B2B身分解析
 
-**您要設定的專案：**&#x200B;此階段會合併CRM、行銷自動化和協力廠商來源的資料，以建立統一的帳戶設定檔。 B2B身分解析會對應個人與帳戶的關係，以便個人層級的參與資料（電子郵件開啟、網頁造訪、內容下載）可以彙總，並用於帳戶層級的對象評估。 此階段的基礎函式F2、F3和F4必須已經到位。
+**您要設定的專案：**&#x200B;此階段會合併CRM、行銷自動化和協力廠商來源的資料，以建立統一的帳戶設定檔。 B2B身分解析會對應個人與帳戶的關係，以便個人層級的參與資料（電子郵件開啟、網頁造訪、內容下載）可以彙總，並用於帳戶層級的對象評估。 此階段的基礎功能F2、F3和F4必須已經到位。
 
 此階段中的&#x200B;**決定點：**
 
@@ -407,7 +407,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 此階段會結合使用帳戶屬性、人員屬性和人員活動資料，以定義及評估帳戶層級的對象。
 
-**應用程式函式：** [!DNL RT-CDP] B2B：帳戶對象評估，[!DNL RT-CDP]：對象評估
+**應用程式功能：** [!DNL RT-CDP] B2B：帳戶對象評估，[!DNL RT-CDP]：對象評估
 
 **您將要設定的專案：**&#x200B;此階段會使用帳戶屬性、人員屬性和人員活動資料的組合，定義並評估帳戶層級的對象。 [!DNL RT-CDP] B2B edition中的帳戶對象可讓您根據實體特徵（產業、收入、員工人數）以及與這些帳戶相關聯之人員的參與行為來劃分帳戶。
 
@@ -468,7 +468,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 此階段會建立已驗證的連線，以連線至將傳送帳戶對象的目標目的地。
 
-**應用程式函式：** [!DNL RT-CDP] B2B：帳戶目的地組態，[!DNL RT-CDP] B2B： [!DNL Marketo Engage]整合，[!DNL RT-CDP]：目的地組態
+**應用程式功能：** [!DNL RT-CDP] B2B：帳戶目的地組態，[!DNL RT-CDP] B2B： [!DNL Marketo Engage]整合，[!DNL RT-CDP]：目的地組態
 
 **您的設定內容：**&#x200B;此階段會建立已驗證的連線，以連線至將傳送帳戶對象的目標目的地。 設定包括從目錄選取目的地、提供驗證認證、設定帳戶層級和人員層級的欄位對應，以及設定匯出排程。 每種目的地型別都有獨特的需求和功能。
 
@@ -543,7 +543,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 此階段會將評估的帳戶對象發佈至設定的目的地。
 
-**應用程式函式：** [!DNL RT-CDP] B2B：帳戶Audience Activation，[!DNL RT-CDP]： Audience Activation
+**應用程式功能：** [!DNL RT-CDP] B2B：帳戶Audience Activation，[!DNL RT-CDP]： Audience Activation
 
 **您的設定內容：**&#x200B;此階段會將評估的帳戶對象發佈到設定的目的地。 啟用會建立資料流，將帳戶對象（來源）連線至外部目的地（目標）、套用屬性對應，並根據設定的排程或串流行為起始匯出。 您也會設定隱藏對象，將不符合資格的帳戶排除在啟用之外。
 
@@ -609,7 +609,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 
 此階段會確保帳戶對象啟用符合資料治理原則和同意偏好設定，並監控持續啟用的資料流程的健康狀況。
 
-**應用程式函式：** [!DNL RT-CDP] B2B： B2B資料控管，[!DNL RT-CDP]：同意與控管強制執行
+**應用程式功能：** [!DNL RT-CDP] B2B： B2B資料控管，[!DNL RT-CDP]：同意與控管強制執行
 
 **您將要設定的專案：**&#x200B;此階段會確保帳戶對象啟用符合資料治理原則和同意偏好設定，並且持續監視啟用資料流程的健康狀況。 B2B資料控管會強制對敏感帳戶屬性（收入、來自協力廠商提供者的員工人數）加以限制，而同意執行會確保人員層級的通訊符合選擇退出偏好設定。 監視功能會確認啟用資料流是否成功完成。
 

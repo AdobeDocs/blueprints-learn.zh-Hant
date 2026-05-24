@@ -1,9 +1,9 @@
 ---
 name: architecture-diagram-page-builder
 description: 為Adobe Experience Platform Blueprint存放庫建立新架構圖表頁面的指南。 新增新的頂層架構圖、整合架構頁面或應用程式架構概觀時，請使用此技能。 架構頁面涵蓋頂層AEP和應用程式架構以及主要整合點，而非深入的使用案例（屬於使用案例模式產生器）。 處理完整的工作流程：收集頁面資訊、產生Markdown檔案、將其放置在正確的主題資料夾中，以及更新TOC.md。
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1393'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 - 主要資料流程和整合點的簡短清單說明
 - Experience League連結，以供進一步閱讀應用程式網域
 
-它們&#x200B;**不是**&#x200B;深入使用案例內容的位置。 KPI、業務目標、戰術使用案例範例、功能鏈和角色敘述都屬於使用案例模式頁面 — 透過`use-case-pattern-builder`技能產生。 如需完整護欄，請參閱`references/scope-guardrails.md`。
+它們&#x200B;**不是**&#x200B;深入使用案例內容的位置。 KPI、業務目標、戰術使用案例範例、功能和角色敘述都屬於使用案例模式頁面 — 透過`use-case-pattern-builder`技能產生。 如需完整護欄，請參閱`references/scope-guardrails.md`。
 
 ## 開始前的必要讀取
 
@@ -95,7 +95,7 @@ ht-degree: 2%
 - KPI或測量公式
 - 業務目標或業務影響敘述
 - 戰術使用案例範例（特定的個人化案例、行銷活動範例等）
-- 函式鏈（`A > B > C > D`樣式）
+- 功能（`A > B > C > D`樣式）
 - 角色導向的storytelling
 
 如果規劃的內容仍在架構頁面範圍內（頂層架構、系統資料流程、整合點、部署拓撲、邊緣與中樞），請與使用者確認並繼續進行階段3。
@@ -192,4 +192,4 @@ ht-degree: 2%
 - 架構圖表通常是SVG （偏好使用清晰度和縮放功能），但點陣來源圖稿可以接受PNG。
 - 需要`<img>`內嵌內嵌樣式字串(`border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;`)和`class="modal-image"` — 它們會啟用Experience League強制回應縮放互動。
 - 如果使用者正在建立全新主題資料夾尚不存在的頁面，請警告他們TOC.md在`+ Architecture Diagrams and Blueprints{#architecture-diagrams}`下需要新的頂層子區段。 將此作為單獨的步驟處理，並取得使用者的明確核准。
-- 如果架構圖表大量記錄&#x200B;*單一使用案例端對端* （包含KPI、業務目標、功能鏈），請將使用者重新導向至`use-case-pattern-builder` — 這不是架構頁面。
+- 如果架構圖表大量記錄&#x200B;*單一使用案例端對端* （包含KPI、業務目標、功能），請將使用者重新導向至`use-case-pattern-builder` — 這不是架構頁面。

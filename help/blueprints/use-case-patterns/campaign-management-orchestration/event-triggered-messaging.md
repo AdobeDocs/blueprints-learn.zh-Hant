@@ -3,7 +3,7 @@ title: 事件觸發式傳訊
 description: 瞭解如何傳遞情境式即時訊息來回應行為或系統事件。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 75137990-9848-40c0-abf3-adbd21d2de52
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '9040'
 ht-degree: 2%
@@ -94,13 +94,13 @@ ht-degree: 2%
 
 ## 使用案例模式
 
-本節說明驅動事件觸發式傳訊的核心模式及功能鏈。
+本節說明驅動事件觸發式傳訊的核心模式和執行計畫。
 
 **事件觸發訊息**
 
 接聽即時行為或系統事件，然後將內容相關訊息傳遞至觸發的設定檔。
 
-**函式鏈：**&#x200B;事件擷取>歷程專案>條件評估>訊息傳送>報告
+**執行計畫：**&#x200B;事件擷取>歷程專案>條件評估>訊息傳送>報告
 
 ## 應用程式
 
@@ -110,11 +110,11 @@ ht-degree: 2%
 - **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 歷程中條件式篩選的對象評估、同意和治理實施、設定檔擴充
 - **[!DNL Adobe Experience Platform] (AEP)** — 透過Web SDK、Mobile SDK或伺服器端API的即時事件擷取；資料模式；身分解析；Edge Network
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 已假設就位 | 已布建使用中管道設定的AJO沙箱。 指派給實作團隊的歷程建立和發佈許可權。 為歷程管理、內容製作和管道管理設定的使用者角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
 | 資料模型與準備 | 必填 | XDM ExperienceEvent結構描述必須擷取觸發事件，其中包含條件評估與訊息個人化所需的所有內容欄位（例如，購物車事件、產品詳細資料、購物車值所需的`commerce.productListAdds`）。 結構描述必須針對即時客戶個人檔案啟用。 必須建立對應的資料集並啟用設定檔。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
@@ -132,15 +132,15 @@ ht-degree: 2%
 | 資料生命週期管理 | 推薦 | 應該針對暫時性行為事件（頁面檢視、搜尋、點按）設定事件資料過期時間，以管理儲存成本和法規遵循。 在訊息傳送期間，通道特定的選擇加入/選擇退出執行必須有同意結構描述欄位。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)，[資料集有效期](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/ui/dataset-expiration) |
 | 資料使用標籤和實作 | 推薦 | 事件和設定檔欄位上的治理標籤可確保符合標準的個人化。 如果觸發的訊息包含使用PII或行為資料的個人化內容，則應審查資料使用標籤和治理政策，以防止訊息內容中出現未經授權的資料使用。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
 | 監控與可觀察性 | 已包含 | 歷程執行監視是報告階段的一部分。 此外，針對事件擷取失敗或歷程處理延遲設定警報，以偵測會阻止傳送觸發訊息的管道問題。 | [警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)，[可觀察性深入分析概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
-| 報告與分析 | 已包含 | 報告階段涵蓋歷程績效報告。 若要更深入地分析跨頻道及一段時間內的觸發式傳訊成效，請設定CJA連線和工作區，以分析轉換歸因、轉換時間和頻道效能。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
+| 報告與分析 | 已包含 | 報告階段涵蓋歷程績效報告。 若要更深入地分析跨頻道及一段時間內的觸發式傳訊成效，請設定CJA連線和工作區，以分析轉換歸因、轉換時間和頻道效能。 | [CJA概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從「應用程式功能目錄」中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Journey Optimizer] (AJO)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | Journey Orchestration | 歷程建立與設定 | 建立包含單一事件登入的歷程、設定符合條件的事件、新增條件節點、等待步驟、訊息動作、退出條件和重新登入規則 |
 | 通道設定 | 管道表面設定 | 設定或驗證管道表面（電子郵件、簡訊、推播），包括子網域委派、IP集區、寄件者設定和隱藏清單管理 |
@@ -151,7 +151,7 @@ ht-degree: 2%
 
 ### [!DNL Real-Time CDP] (RT-CDP)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 對象評估 | 基礎設定(F5) | 評估用於歷程中條件式篩選的對象區段（例如，高價值客戶區段、隱藏區段） |
 | 同意與治理實施 | 基礎設定(S2/S3) | 在訊息傳送期間強制執行同意偏好設定和資料使用治理原則，以確保符合規範的通訊 |
@@ -322,7 +322,7 @@ ht-degree: 2%
 
 ### 階段1：設定事件結構描述和資料收集
 
-**應用程式函式：** AEP：資料模型(F2)、AEP：資料來源與集合(F3)
+**應用程式功能：** AEP：資料模型(F2)、AEP：資料來源與集合(F3)
 
 **您的設定專案：**&#x200B;擷取觸發事件的XDM ExperienceEvent結構描述、儲存這些事件的資料集，以及可將事件串流至AEP的即時資料收集管道（Web SDK、Mobile SDK或伺服器API）。 此階段會建立歷程將監聽的資料基礎。
 
@@ -374,7 +374,7 @@ ht-degree: 2%
 
 ### 階段2：設定身分和設定檔
 
-**應用程式函式：** AEP：身分和設定檔組態(F4)
+**應用程式功能：** AEP：身分和設定檔組態(F4)
 
 **您要設定的專案：**&#x200B;觸發事件識別碼的身分名稱空間、事件結構描述的主要身分指定、跨裝置解析的身分連結規則，以及設定檔統一的合併原則。 這可確保觸發事件與統一客戶設定檔相關聯，以便歷程解決聯絡資訊並傳遞訊息。
 
@@ -409,7 +409,7 @@ ht-degree: 2%
 
 ### 階段3：設定管道表面
 
-**應用程式函式：** AJO：頻道設定
+**應用程式功能：** AJO：頻道設定
 
 **您要設定的專案：**&#x200B;定義觸發訊息之傳送基礎結構的頻道介面（預設集） — 子網域委派、IP集區、寄件者身分、回覆位址、取消訂閱處理和頻道特定認證（簡訊提供者、推播憑證）。 在建立訊息內容或發佈歷程之前，必須存在有效的管道表面。
 
@@ -460,7 +460,7 @@ ht-degree: 2%
 
 ### 階段4：建立訊息內容
 
-**應用程式函式：** AJO：訊息製作
+**應用程式功能：** AJO：訊息製作
 
 **您的設定內容：**&#x200B;歷程將傳送的訊息內容，包括版面設計、使用設定檔和事件屬性的個人化權杖、條件式內容區塊、可重複使用的片段（頁首、頁尾、法律免責宣告），以及內容預覽和測試。
 
@@ -607,7 +607,7 @@ ht-degree: 2%
 
 ### 階段6：測試並部署歷程
 
-**應用程式函式：** AJO： Journey Orchestration
+**應用程式功能：** AJO： Journey Orchestration
 
 **您將會設定的專案：**&#x200B;測試模式驗證，以驗證歷程在測試設定檔中的運作是否如預期，接著發佈歷程使其上線。
 
@@ -805,7 +805,7 @@ ht-degree: 2%
 
 ### 衝突與優先順序管理
 
-- [開始使用衝突與優先順序管理](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
+- [開始使用衝突與優先順序管理](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/gs-conflict-prioritization)
 - [識別潛在衝突](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/conflicts)
 - [優先順序分數](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/priority-scores)
 - [歷程上限和仲裁](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/conflict-prioritization/journey-capping)
@@ -834,7 +834,7 @@ ht-degree: 2%
 - [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
 - [身分名稱空間概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)
 - [身分識別圖連結規則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-linking-logic)
-- [設定檔概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
+- [設定檔概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 - [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
 
 ### 細分與對象
@@ -853,7 +853,7 @@ ht-degree: 2%
 ### 計算的屬性
 
 - [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
-- [計算屬性UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/ui)
+- [計算屬性UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
 
 ### 監視和可觀察性
 
@@ -863,7 +863,7 @@ ht-degree: 2%
 ### 護欄
 
 - [Journey Optimizer護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
-- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 - [擷取護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/guardrails)
 
 ### 教學課程與指南

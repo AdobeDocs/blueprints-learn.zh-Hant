@@ -3,7 +3,7 @@ title: 行為建議
 description: 瞭解如何使用選擇策略和排名模型來產生專案和內容推薦。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: db16e773-e0da-46c4-9fa5-d16f04feb46b
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7545'
 ht-degree: 2%
@@ -79,7 +79,7 @@ ht-degree: 2%
 
 使用AJO Decisioning選擇策略和排名模型，根據行為訊號產生專案層級或內容層級的建議，以提供內容相關內容。
 
-**功能鏈：**&#x200B;行為訊號擷取>決策策略評估>建議傳送>報告
+**執行計畫：**&#x200B;行為訊號擷取>決策策略評估>建議傳送>報告
 
 如需合併模式的指引，請參閱實作考量事項底下的模式組合一節。
 
@@ -91,11 +91,11 @@ ht-degree: 2%
 - **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 行為設定檔資料累積、建議範圍的對象評估，以及行為相似性評分的計算屬性
 - **[!DNL Adobe Experience Platform] (AEP)** — 透過[!DNL Web SDK]和[!DNL Mobile SDK]的行為事件擷取，[!DNL Edge Network]處理，事件和目錄資料的XDM結構描述管理
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 已假設就位 | 已啟用決策許可權的AJO沙箱。 布建的使用者角色可存取專案目錄管理、選擇策略設定和管道表面管理。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
 | 資料模型與準備 | 必填 | 體驗事件結構描述會擷取具有專案/產品識別碼的行為訊號（產品檢視、加入購物車、購買、內容互動）。 建議專案集的專案目錄結構（產品屬性、類別、影像、價格）。 具有身分欄位的設定檔結構描述。 已為[!DNL Real-Time Customer Profile]啟用所有結構描述。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition)，[建立資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/create) |
@@ -109,19 +109,19 @@ ht-degree: 2%
 
 | 支援功能 | 狀態 | 為什麼重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 推薦 | 類別相關性分數、產品互動頻率、購買造訪間隔和總支出等運算屬性可改善建議排名品質。[!DNL Customer AI] 傾向分數可透過預測購買可能性來進一步增強關聯性。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)，[Customer AI總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/intelligent-services/customer-ai/overview) |
+| 計算/衍生屬性建立 | 推薦 | 類別相關性分數、產品互動頻率、購買造訪間隔和總支出等運算屬性可改善建議排名品質。 [!DNL Customer AI]傾向分數可透過預測購買可能性來進一步增強關聯性。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)，[Customer AI總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/intelligent-services/customer-ai/overview) |
 | 資料生命週期管理 | 推薦 | 行為事件資料應該有適當的到期原則 — 建議相關性會隨著過時資料而降低。 在行為事件資料集上設定資料集過期原則，可確保資料集的新鮮度並管理儲存空間。 同意實作可確保符合規範地使用行為資料。 | [資料集有效期](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/ui/dataset-expiration)，[進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
 | 資料使用標籤和實作 | 推薦 | 行為資料上的治理標籤可確保針對建議合規使用互動歷史記錄。 當行為資料包含瀏覽模式、購買記錄或健康情況/金融產品興趣訊號時，尤其重要。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
-| 監控與可觀察性 | 推薦 | 應監控建議傳遞延遲、遞補率和專案目錄擷取健康狀態。 行為事件擷取失敗和決策錯誤的相關警示，有助於維持建議品質。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)，[警示概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview) |
-| 報告與分析 | 已包含 | 建議績效報表是函式鏈步驟4的一部分。[!DNL Customer Journey Analytics] 分析各表面和區段的建議成效、收入影響和專案層級績效，可提供最佳化深入分析。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home) |
+| 監控與可觀察性 | 推薦 | 應監控建議傳遞延遲、遞補率和專案目錄擷取健康狀態。 行為事件擷取失敗和決策錯誤的相關警示，有助於維持建議品質。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)，[警示概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview) |
+| 報告與分析 | 已包含 | 建議績效報告是「執行計畫步驟4」的一部分。 針對跨表面和區段的建議有效性、收入影響和專案層級績效進行的[!DNL Customer Journey Analytics]分析可提供最佳化深入分析。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從「應用程式功能目錄」中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Journey Optimizer] (AJO)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 決策 | 專案目錄與選擇策略設定 | 設定專案目錄（決定專案）、具有行為排名模型的選擇策略、篩選規則和遞補建議 |
 | 通道設定 | 管道和表面設定 | 設定網頁（程式碼型體驗）、應用程式內、內容卡片或電子郵件頻道的傳送介面，以便呈現建議 |
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 ### [!DNL Real-Time CDP] (RT-CDP)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 對象評估 | 對象範圍（選項C） | 評估用來設定建議範圍或定義電子郵件建議行銷活動目標母體的對象區段 |
 | 輪廓富集 | 行為訊號擴充 | 使用可改善建議排名的運算屬性（類別相關性分數、互動頻率）讓設定檔更為豐富 |
@@ -256,7 +256,7 @@ ht-degree: 2%
 
 **Experience League：**
 
-- [建立電子郵件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/email/create-email)
+- [建立電子郵件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/create-email)
 - [在訊息中傳遞優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
 
 ### 選項比較
@@ -288,7 +288,7 @@ ht-degree: 2%
 
 ### 階段1：設定行為事件綱要和資料收集
 
-**應用程式函式：** AEP：資料模型與準備(F2)、AEP：資料來源與集合(F3)
+**應用程式功能：** AEP：資料模型與準備(F2)、AEP：資料來源與集合(F3)
 
 此階段會建立XDM結構描述、資料集和資料收集機制，用於擷取行為訊號和專案目錄資料。 此資料基礎是所有建議邏輯所依賴的。
 
@@ -331,7 +331,7 @@ ht-degree: 2%
 
 ### 階段2：設定身分和設定檔
 
-**應用程式函式：** AEP：身分和設定檔組態(F4)
+**應用程式功能：** AEP：身分和設定檔組態(F4)
 
 此階段會設定身分名稱空間、主要身分指定和合併原則，以確保行為訊號正確與訪客設定檔相關聯，並可用於即時建議傳送。
 
@@ -372,7 +372,7 @@ ht-degree: 2%
 
 ### 階段3：設定料號型錄與選取策略
 
-**應用程式函式：** AJO： Decisioning
+**應用程式功能：** AJO：決策
 
 此階段會設定專案目錄（決定專案）、結合行為訊號與專案屬性進行排名的選擇策略、排除不合格專案的篩選規則，以及冷啟動設定檔的遞補建議。
 
@@ -442,7 +442,7 @@ ht-degree: 2%
 
 ### 階段4：設定通道和介面
 
-**應用程式函式：** AJO：頻道設定
+**應用程式功能：** AJO：頻道設定
 
 此階段會設定要在其中轉譯建議的傳送介面。 此設定因實施選項而異。
 
@@ -463,7 +463,7 @@ ht-degree: 2%
 選項A （Web即時建議）的&#x200B;**：**
 設定程式碼型體驗表面或Web頻道表面。 程式碼型體驗為自訂建議轉譯（輪播、格線、專案卡片）提供最大的彈性。 表面URI可識別建議出現在頁面上的位置。
 
-選項B的&#x200B;**（行動應用程式建議）：**
+選項B （行動應用程式建議）的&#x200B;**：**
 設定應用程式內訊息或內容卡介面。 建議將內容卡用於持續性建議摘要。 應用程式內訊息適用於情境式、行為觸發的建議。
 
 選項C （電子郵件行為建議）的&#x200B;**：**
@@ -480,7 +480,7 @@ ht-degree: 2%
 
 ### 階段5：設定內容與傳送
 
-**應用程式函式：** AJO：訊息製作
+**應用程式功能：** AJO：訊息製作
 
 此階段會定義建議演算範本，用以控制向訪客顯示建議專案的方式。 這包括專案版面設計、提取專案屬性（名稱、影像、價格、連結）的個人化運算式，以及整體建議體驗設計。
 
@@ -511,7 +511,7 @@ ht-degree: 2%
 選項A （Web即時建議）的&#x200B;**：**
 使用程式碼型體驗範本來設計推薦呈現。 使用HTML/CSS/JavaScript建立轉盤、格線或Widget版面。 Personalization運算式會參考決定回應屬性（專案名稱、影像URL、價格、產品URL）。 曝光和點選追蹤由[!DNL Web SDK]自動處理。
 
-選項B的&#x200B;**（行動應用程式建議）：**
+選項B （行動應用程式建議）的&#x200B;**：**
 使用專案顯示邏輯設定內容卡片或應用程式內訊息範本。 使用行動應用程式原生轉譯的JSON型內容結構。 包含每個建議專案的深層連結。
 
 選項C （電子郵件行為建議）的&#x200B;**：**
@@ -539,7 +539,7 @@ ht-degree: 2%
 
 ### 階段6：設定對象範圍設定和行銷活動/歷程（僅限選項C）
 
-**應用程式函式：** RT-CDP：對象評估、AJO：行銷活動執行或Journey Orchestration
+**應用程式功能：** RT-CDP：對象評估、AJO：行銷活動執行或Journey Orchestration
 
 針對電子郵件式建議（選項C），此階段會定義目標對象，並設定傳送建議電子郵件的行銷活動或歷程。 選項A和B會略過此階段，因為建議會在頁面/畫面載入時即時傳送。
 
@@ -608,7 +608,7 @@ ht-degree: 2%
 - [行銷活動全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/campaign-global-report-cja)
 - [歷程全域報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/journey-global-report-cja)
 - [使用Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reports/report-cja-manage)
-- [建立或編輯連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/create-connection)
+- [建立或編輯連線](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
 - [建立或編輯資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)
 - [Analysis Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
 - [計算量度概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)
@@ -699,7 +699,7 @@ ht-degree: 2%
 - [建立個人化優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [建立後備產品建議](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
 - [建立集合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-collections)
-- [建立集合限定詞](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
+- [建立集合限定詞](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-tags)
 - [建立決定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 - [排名策略](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/ranking/ranking-strategies)
 - [在訊息中傳遞優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/deliver-offers/deliver-offers-in-messages)
@@ -708,10 +708,10 @@ ht-degree: 2%
 ### 資料收集與網頁/行動SDK
 
 - [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
-- [安裝Web SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/install/overview)
+- [安裝Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)
 - [行動SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)
 - [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
-- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge-network-server-api/overview)
+- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
 
 ### XDM和資料模型化
 
@@ -725,7 +725,7 @@ ht-degree: 2%
 - [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
 - [身分名稱空間概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)
 - [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
-- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
+- [即時客戶個人檔案總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 
 ### 對象和細分
 
@@ -737,7 +737,7 @@ ht-degree: 2%
 ### 計算的屬性和設定檔擴充
 
 - [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
-- [計算屬性UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/ui)
+- [計算屬性UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
 - [Customer AI概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/intelligent-services/customer-ai/overview)
 
 ### 管道設定
@@ -772,7 +772,7 @@ ht-degree: 2%
 
 ### 監視和可觀察性
 
-- [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)
+- [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
 - [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
 
 ### 護欄

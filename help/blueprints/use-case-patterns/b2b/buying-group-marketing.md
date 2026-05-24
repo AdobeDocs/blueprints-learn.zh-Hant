@@ -3,7 +3,7 @@ title: 購買群組式行銷與歷程管理
 description: 瞭解如何開發符合潛在客戶購買群組資格的帳戶層級歷程，以改善B2B行銷效率。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 2bf57f67-80c8-4368-98d2-05706427772d
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7932'
 ht-degree: 0%
@@ -88,7 +88,7 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 開發符合潛在客戶購買群組資格的帳戶層級歷程，以改善B2B行銷效率。
 
-**功能鏈：**&#x200B;帳戶識別>購買群組定義>潛在客戶資格>帳戶歷程執行>參與計分>報告
+**執行計畫：**&#x200B;帳戶識別>購買群組定義>潛在客戶資格>帳戶歷程執行>參與計分>報告
 
 ## 應用程式
 
@@ -97,11 +97,11 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 - **[!DNL Journey Optimizer B2B Edition] ([!DNL AJO B2B])** — 協調帳戶層級的歷程、使用角色範本和解決方案興趣來管理購買群組、對個人和購買群組層級的參與評分、作者B2B電子郵件內容、傳送SMS訊息、設定銷售警示，以及提供B2B分析儀表板。
 - **[!DNL Real-Time CDP B2B Edition] ([!DNL RT-CDP B2B])** — 從跨來源B2B資料中統一帳戶設定檔、解析人員與帳戶的關係、評估帳戶層級的對象、設定B2B特定的目的地([!DNL Marketo Engage]、[!DNL LinkedIn]、CRM)，以及強制跨B2B資料進行資料控管。
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 必填 | 已啟用[!DNL AJO B2B Edition]和[!DNL RT-CDP B2B Edition]許可權的布建沙箱。 為B2B行銷人員、銷售作業和具有適當許可權以購買群組管理、帳戶歷程和CRM整合設定的Administrator設定的角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
 | 資料模型與準備 | 必填 | 使用B2B特定類別設定的B2B XDM結構描述：XDM商業帳戶、XDM商業機會、XDM商業人員（銷售機會/聯絡人）、XDM商業促銷活動和XDM商業行銷清單。 帳戶屬性、人員屬性和活動/參與資料的欄位群組必須準備就緒。 為每個結構描述建立和啟用設定檔的資料集。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[B2B結構描述類別](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
@@ -121,13 +121,13 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 | 監控與可觀察性 | 推薦 | 監視可確保B2B資料管道（CRM/[!DNL Marketo]同步）狀況良好、帳戶設定檔正在更新，以及帳戶歷程執行正在順利進行且沒有失敗。 針對來源資料流失敗發出警報對維護資料貨幣至關重要。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
 | 報告與分析 | 已包含 | [!DNL AJO B2B Edition]內的B2B分析儀表板提供購買群組參與度、帳戶歷程績效和管道量度。 [!DNL CJA B2B Edition]透過帳戶層級工作區分析、購買群組分析和商機關聯來延伸分析。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從應用程式功能目錄中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Journey Optimizer B2B Edition] ([!DNL AJO B2B])
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 解決方案興趣設定 | 階段1：解決方案興趣與購買群組設定 | 定義將產品或服務對應至購買群組資格標準的解決方案興趣 |
 | 購買群組管理 | 階段1：解決方案興趣與購買群組設定 | 使用角色範本、角色對應及解決方案興趣定義，建立及管理購買群組 |
@@ -142,7 +142,7 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 ### [!DNL Real-Time CDP B2B Edition] ([!DNL RT-CDP B2B])
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 帳戶設定檔統一 | 階段0：B2B Data Foundation | 使用專門的XDM B2B結構描述類別和欄位群組，將跨來源B2B資料整合至統一的帳戶設定檔中 |
 | B2B身分解析 | 階段0：B2B Data Foundation | 使用主要識別碼來解析人員與帳戶的關係，支援多重層次帳戶階層，以及多對多人員與帳戶的對應 |
@@ -353,7 +353,7 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 ### 第1階段：解決方案興趣與購買團體設定
 
-**應用程式功能：** [!DNL AJO B2B]：方案興趣組態，購買群組管理
+**應用程式功能：** [!DNL AJO B2B]：解決方案興趣組態，購買群組管理
 
 此階段定義解決方案興趣（產品/服務）和購買群組範本，這些範本構成了購買群組管理模型的核心。 您將建立解決方案興趣、根據角色需求定義角色範本，並設定潛在客戶購買群組角色的方式。
 

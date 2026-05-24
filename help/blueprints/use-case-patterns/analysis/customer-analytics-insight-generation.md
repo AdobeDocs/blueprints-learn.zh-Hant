@@ -3,7 +3,7 @@ title: Customer Analytics與Insight開發
 description: 瞭解如何建立跨管道分析工作區、計算量度和控制面板，以進行行為和效能分析。
 solution: Customer Journey Analytics, Experience Platform
 exl-id: 235a4eb0-91ae-4030-b90e-7eda08c67ae1
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '8947'
 ht-degree: 1%
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 建立跨管道分析工作區、計算量度和儀表板，以瞭解客戶行為和行銷活動績效。
 
-**函式鏈結：**&#x200B;資料連線>資料檢視設定> Workspace Analysis >計算度量建立>控制面板發佈
+**執行計畫：**&#x200B;資料連線>資料檢視設定> Workspace Analysis >計算度量建立>控制面板發佈
 
 如需組合指南，請參閱[實作選項](#implementation-options)區段。
 
@@ -104,11 +104,11 @@ ht-degree: 1%
 - **[!DNL Customer Journey Analytics] (CJA)** — 連線、資料檢視、工作區分析、引導式分析、計算量度、控制面板、對象發佈和內容分析
 - **[!DNL Adobe Experience Platform] (AEP)** — 資料湖、資料集、XDM結構描述、設定檔和事件資料（用於提供CJA連線）
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 已假設就位 | 已布建工作區建立和資料檢視存取許可權的CJA產品設定檔。 CJA連線可存取的AEP資料集。 指派給適當CJA角色的使用者。 | [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
 | 資料模型與準備 | 必填 | 要連線到CJA的XDM結構描述和資料集必須存在於AEP中。 結構描述設計會直接影響CJA資料檢視中可用的維度和量度。 事件結構需要時間戳記欄位；查詢結構需要索引鍵欄位。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home) |
@@ -128,15 +128,15 @@ ht-degree: 1%
 | 監控與可觀察性 | 推薦 | 應監控CJA連線健全狀況和資料的時效性。 設定來源資料流失敗和擷取問題的警報，以確保資料摘要CJA可靠且最新。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
 | 報告與分析 | 已包含 | 這是報表與分析實作。 當其他模式的參考計畫包含S5時，請針對分析實施使用此客戶分析和insight產生計畫。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從應用程式功能目錄中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Customer Journey Analytics] (CJA)
 
-下表列出在此模式中使用的CJA應用程式函式。
+下表列出在此模式中使用的CJA應用程式功能。
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 資料連線 | 階段1：資料連線 | 將AEP資料集繫結至CJA連線以進行跨管道分析，設定資料集型別和人員ID以進行跨資料集拼接 |
 | 資料檢視設定 | 階段2：資料檢視設定 | 定義維度、量度、歸因模型、持續性設定、工作階段引數，以及影響分析透檢視的衍生欄位 |
@@ -149,9 +149,9 @@ ht-degree: 1%
 
 ### [!DNL Adobe Experience Platform] (AEP)
 
-下表列出在此模式中使用的AEP應用程式函式。
+下表列出在此模式中使用的AEP應用程式功能。
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 資料湖與資料集 | 先決條件(F2、F3) | 提供源事件、設定檔和查詢資料集，以饋送CJA連線 |
 | Identity Service | 先決條件(F4) | 提供身分名稱空間設定，以便在CJA連線中的資料集之間拼接人員ID |
@@ -333,7 +333,7 @@ ht-degree: 1%
 | 重要視覺效果 | 自由表格、摘要數字、趨勢線 | 流量、流失、同類群組、歸因 | 與A或B相同，加上對象發佈 | funnel，趨勢，保留率，成長 |
 | 啟用功能 | 否（僅報告） | 否（僅報告） | 是（將受眾發佈至AEP） | 否（僅報告） |
 | 需要的對象 | 行銷分析師、行銷活動經理 | 資料分析師、歷程架構師 | 分析人員+啟用團隊 | 產品經理、成長分析師 |
-| 使用的CJA函式 | 連線，資料檢視， Workspace，計算量度，控制面板 | 連線，資料檢視， Workspace，計算量度，控制面板 | 與A或B相同，加上對象發佈 | 連線、資料檢視、引導式分析、控制面板 |
+| 使用的CJA功能 | 連線，資料檢視， Workspace，計算量度，控制面板 | 連線，資料檢視， Workspace，計算量度，控制面板 | 與A或B相同，加上對象發佈 | 連線、資料檢視、引導式分析、控制面板 |
 | 首次insight的時間 | 天 | 周 | 周 | 小時 — 天 |
 
 ### 選擇正確的選項
@@ -356,7 +356,7 @@ ht-degree: 1%
 
 ### 階段1：資料連線
 
-**應用程式函式：** CJA：資料連線
+**應用程式功能：** CJA：資料連線
 
 此階段會設定CJA連線，將一或多個AEP資料集繫結至CJA進行分析。 連線會定義哪些資料集流入CJA、如何透過人員ID跨資料集拼接事件，以及如何擷取歷史資料和串流資料。 這是AEP的Data Lake與CJA之間的基礎連結。
 
@@ -439,7 +439,7 @@ ht-degree: 1%
 
 ### 階段2：資料檢視設定
 
-**應用程式函式：** CJA：資料檢視組態
+**應用程式功能：** CJA：資料檢視組態
 
 此階段會設定資料檢視，定義連線資料在分析中的顯示方式。 資料檢視會決定要將哪些結構描述欄位公開為維度和量度、如何歸因和保留值、如何定義工作階段，以及哪些衍生欄位會將原始資料轉換為可分析的元件。 您可以從單一連線為不同的分析透檢視建立多個資料檢視。
 
@@ -541,7 +541,7 @@ ht-degree: 1%
 
 ### 階段3：分析和量度建立
 
-**應用程式函式：** CJA： Workspace Analysis， CJA：引導式分析， CJA：建立計算量度
+**應用程式功能：** CJA： Workspace Analysis， CJA：引導式分析， CJA：建立計算量度
 
 此階段會建立分析工作區（自由格式專案或引導式分析）、衍生KPI的計算量度、分段分析的篩選器以及關鍵事件的註解。 這是實現分析價值的地方，即建立可回答業務問題的表格、視覺效果和量度。
 
@@ -722,7 +722,7 @@ ht-degree: 1%
 
 ### 階段5：對象發佈（僅限選項C）
 
-**應用程式函式：** CJA：對象發佈
+**應用程式功能：** CJA：對象發佈
 
 此階段會設定CJA對象發佈，將分析發現的區段推送回AEP即時客戶設定檔，以便在RT-CDP目的地、AJO促銷活動或AJO歷程中進行下游啟用。
 

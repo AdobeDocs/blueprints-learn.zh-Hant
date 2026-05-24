@@ -3,7 +3,7 @@ title: 目的地的Audience啟用
 description: 瞭解如何使用Adobe Real-Time CDP評估對象區段並將其發佈到外部目的地以進行定位或抑制。
 solution: Real-Time Customer Data Platform, Experience Platform
 exl-id: b0b9d937-45d2-48f9-ac4c-3611c6e35f58
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7080'
 ht-degree: 1%
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 **Audience Activation至目的地** — 評估對象區段並發佈至外部目的地，以進行目標定位或隱藏。
 
-**功能鏈：**&#x200B;對象評估>目的地設定> Audience Activation >監視
+**執行計畫：**&#x200B;對象評估>目的地設定> Audience Activation >監視
 
 ## 應用程式
 
@@ -96,17 +96,17 @@ ht-degree: 1%
 
 ![企業目的地的對象和設定檔啟用的參考架構](/help/blueprints/audience-activation/assets/known_activation.svg)
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 已假設就位 | RT-CDP沙箱已布建並啟用。 指派給實作角色的目的地管理和啟用許可權。 目標平台可用的目的地帳戶認證。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
 | 資料模型與準備 | 必填 | 設定檔結構描述必須包含將對應至目的地欄位的屬性（例如電子郵件、電話、雜湊識別碼、人口統計屬性）。 結構描述必須已啟用設定檔，且資料集正在接收資料。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
 | 資料來源與收集 | 已假設就位 | 支援對象評估的設定檔資料必須擷取且為最新狀態。 批次和/或串流擷取管道可正常運作。 網頁SDK、來源聯結器或批次擷取，將資料傳送到已啟用設定檔的資料集。 | [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)，[網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home) |
 | 身分和設定檔設定 | 必填 | 必須設定目的地比對的身分名稱空間（例如Facebook自訂對象、Google Ads客戶比對的雜湊電子郵件）。 合併原則必須產生具有啟動所需所有屬性的統一設定檔。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview) |
-| 對象定義與細分 | 必填 | 使用區段產生器、對象構成或同盟對象構成所定義的目標對象。 根據啟動延遲需求選取的評估方法（批次、串流或邊緣）。 此函式在此計畫的階段1中執行。 | [區段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder) |
+| 對象定義與細分 | 必填 | 使用區段產生器、對象構成或同盟對象構成所定義的目標對象。 根據啟動延遲需求選取的評估方法（批次、串流或邊緣）。 此功能在此計畫的第1階段中執行。 | [區段服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder) |
 
 ## 支援功能
 
@@ -117,16 +117,16 @@ ht-degree: 1%
 | 計算/衍生屬性建立 | 推薦 | 期限值、參與分數或傾向分數等計算屬性可改善對象精確度，並提供擴充屬性以對應至目的地。 當目的地受益於值型或分數型對象細分時，特別有用。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview) |
 | 資料生命週期管理 | 推薦 | 資料集和設定檔到期原則可確保資料的時效性和合規性。 同意結構描述設定可確保僅啟用同意的設定檔。 將資料匯出至外部系統時，對於法規合規性而言至關重要。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
 | 資料使用標籤和實作 | 推薦 | 控管標籤和原則會防止將受限制的資料啟用至未經授權的目的地（例如，廣告平台的PII、資料合作夥伴的敏感區段）。 對於外部協力廠商系統的對象啟用尤其重要。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
-| 監控與可觀察性 | 已包含 | 啟動監視是功能鏈（階段5）的一部分。 涵蓋資料流執行監控、傳送狀態警示、對象母體追蹤和授權使用可見度。 | [監視目的地資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)，[警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview) |
+| 監控與可觀察性 | 已包含 | 啟動監視是執行計畫（階段5）的一部分。 涵蓋資料流執行監控、傳送狀態警示、對象母體追蹤和授權使用可見度。 | [監視目的地資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)，[警示概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview) |
 | 報告與分析 | 推薦 | CJA對對象啟用效能的分析，可測量啟用對象的效能（例如，來自隱藏的轉換提升度，來自相似對象的ROAS）。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從「應用程式功能目錄」中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Real-Time CDP] (RT-CDP)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 對象評估 | 階段1：對象評估 | 定義對象規則，並使用批次、串流或邊緣評估方法評估區段會籍 |
 | 對象構成 | 階段1：對象評估 | 選擇性地針對複雜的對象邏輯，透過擴充、排名、分割、排除和聯結作業來撰寫衍生對象 |
@@ -295,7 +295,7 @@ ht-degree: 1%
 
 ### 階段1：對象評估
 
-**應用程式函式：** RT-CDP：對象評估，RT-CDP：對象構成
+**應用程式功能：** RT-CDP：對象評估，RT-CDP：對象構成
 
 **您將設定的專案：**&#x200B;定義將啟動至目的地的目標對象。 這包括指定對象條件（哪些設定檔符合資格）、選取評估方法（成員資格更新的速度）並驗證對象母體。 這是所有啟用的起點 — 如果沒有已定義和已評估的對象，就沒有要啟用的內容。
 
@@ -369,7 +369,7 @@ ht-degree: 1%
 
 ### 階段2：目的地設定
 
-**應用程式函式：** RT-CDP：目的地組態
+**應用程式功能：** RT-CDP：目的地組態
 
 **您的設定內容：**&#x200B;建立已驗證連線到將發佈對象的外部目的地。 這包括從目錄選取目的地、提供驗證認證，以及設定目的地特定引數，例如檔案格式、儲存位置和匯出排程。 每個目的地都需要自己的連線設定。
 
@@ -446,7 +446,7 @@ ht-degree: 1%
 
 ### 階段3：對象啟用
 
-**應用程式函式：** RT-CDP： Audience Activation
+**應用程式功能：** RT-CDP： Audience Activation
 
 **您要設定的專案：**&#x200B;建立啟動資料流，將評估過的對象發佈到設定的目的地。 這涉及選取要啟動的對象、將設定檔屬性對應至目的地欄位，以及設定匯出排程。 啟動資料流會將來源對象連線至目標目的地，並管理正在進行的資料傳送。
 
@@ -573,7 +573,7 @@ ht-degree: 1%
 
 - [監視目的地的資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
 - [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
-- [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)
+- [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
 - [授權使用量儀表板](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 ## 實施考量
@@ -589,7 +589,7 @@ ht-degree: 1%
 - **批次評估容量：**&#x200B;依預設，每個區段評估工作最多2,400萬個設定檔
 - **對象構成：**&#x200B;每個畫布最多10個構成區塊；構成的對象僅供批次評估
 - **身分圖表：**&#x200B;每個圖表最多50個身分 — [身分服務護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/guardrails)
-- **計算屬性：**&#x200B;每個沙箱最多25個計算屬性 — [計算屬性護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview#guardrails)
+- **計算屬性：**&#x200B;每個沙箱最多25個計算屬性 — [計算屬性護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview#guardrails)
 - **啟動護欄概述：** [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
 
 ### 常見陷阱
@@ -683,7 +683,7 @@ ht-degree: 1%
 - [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
 - [身分名稱空間概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)
 - [身分識別圖連結規則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-linking-logic)
-- [設定檔概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
+- [設定檔概述](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home)
 - [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
 
 **資料模型與結構描述**
@@ -695,7 +695,7 @@ ht-degree: 1%
 
 - [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
 - [資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview)
-- [資料治理原則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/policies/overview)
+- [資料治理原則](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/overview)
 - [原則執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/overview)
 - [同意與偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/consent/adobe/overview)
 
@@ -703,29 +703,29 @@ ht-degree: 1%
 
 - [監視目的地的資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/dataflows/ui/monitor-destinations)
 - [警報概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview)
-- [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)
+- [可觀察性深入分析概觀](https://experienceleague.adobe.com/en/docs/experience-platform/observability/home)
 - [授權使用量儀表板](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license-usage-and-guardrails/license-usage-dashboard)
 
 **計算屬性**
 
 - [計算屬性概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview)
-- [計算屬性UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/ui)
+- [計算屬性UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/ui)
 
 **資料收集和來源**
 
 - [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)
 - [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
-- [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
+- [設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
 
 **管理**
 
 - [沙箱概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)
 - [存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home)
-- [以屬性為基礎的存取控制](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/abac/overview)
+- [以屬性為基礎的存取控制](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/overview)
 
 **護欄**
 
 - [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
 - [Identity Service護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/guardrails)
 - [啟動護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
-- [擷取護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/guardrails)
+- [擷取護欄](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)

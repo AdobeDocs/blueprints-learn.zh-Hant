@@ -3,7 +3,7 @@ title: 已知訪客網頁/應用程式Personalization
 description: 瞭解如何根據即時設定檔和區段會籍，將個人化內容、優惠或促銷活動傳遞給已識別的訪客。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 585adc0e-f528-4a09-b931-ef6b45fa8ec8
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '7968'
 ht-degree: 2%
@@ -78,13 +78,13 @@ ht-degree: 2%
 
 ## 使用案例模式
 
-本節說明核心模式及其功能鏈。
+本節說明核心模式及其執行計畫。
 
 **已知訪客的網頁/應用程式個人化**
 
 根據跨網路、行動應用程式內和內容卡表面的即時設定檔和區段會籍，將個人化內容、優惠或促銷活動提供給已識別的訪客。
 
-**功能鏈：**&#x200B;對象評估> Personalization Decisioning >表面/頻道設定>內容傳送>曝光追蹤>報告
+**執行計畫：**&#x200B;對象評估> Personalization Decisioning >表面/頻道設定>內容傳送>曝光追蹤>報告
 
 ## 應用程式
 
@@ -94,14 +94,14 @@ ht-degree: 2%
 - **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 對象評估（邊緣、串流和批次）、透過Edge Network的即時設定檔查詢、使用運算屬性和傾向分數擴充設定檔
 - **[!DNL Adobe Experience Platform] (AEP)** — 設定檔存放區、身分服務、Web SDK、行動SDK、資料流設定、邊緣網路傳遞
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 已假設就位 | 已設定Web管道、應用程式內管道和決策許可權的AJO沙箱。 布建了行銷人員和內容作者角色的使用者。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
-| 資料模型與準備 | 必填 | 設定檔結構描述必須包括用於個人化和分段的屬性（例如，忠誠度等級、購買記錄、產品興趣、生命週期階段）。 用於網頁/應用程式互動追蹤和轉換事件的體驗事件結構。 資料集已啟用[!DNL Real-Time Customer Profile]。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
+| 資料模型與準備 | 必填 | 設定檔結構描述必須包括用於個人化和分段的屬性（例如，忠誠度等級、購買記錄、產品興趣、生命週期階段）。 用於網頁/應用程式互動追蹤和轉換事件的體驗事件結構。 資料集已啟用[!DNL Real-Time Customer Profile]。 | [XDM系統總覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) |
 | 資料來源與收集 | 必填 | 在Web屬性上實作的Web SDK，用於體驗傳送和曝光追蹤。 在行動應用程式上實施行動SDK，以進行應用程式內和內容卡傳送。 資料流已設定AJO服務並啟用Edge個人化。 邊緣可用於次秒個人化的即時設定檔資料。 | [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)，[行動SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/mobile-sdk/overview)，[設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure) |
 | 身分和設定檔設定 | 必填 | 已設定的已知身分名稱空間（CRM ID、電子郵件、已驗證的使用者ID）。 匿名與已驗證工作階段之間的身分拼接可運作，以順暢地從匿名轉換為已知訪客個人化。 使用`isActiveOnEdge: true`設定的Edge合併原則可在邊緣解析已驗證的設定檔。 | [身分識別服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)，[合併原則總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview) |
 | 對象定義與細分 | 必填 | 使用設定檔屬性、行為資料和計算屬性定義的對象。 Edge或串流評估已啟用即時個人化資格。 用於區段型個人化的對象必須符合邊緣評估的資格。 | [細分服務總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)，[Edge細分](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation) |
@@ -116,15 +116,15 @@ ht-degree: 2%
 | 資料生命週期管理 | 推薦 | 設定檔和事件資料保留原則可確保全新、相關的資料為個人化決策提供支援。 同意執行可確保個人化遵循使用者偏好設定。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)，[Journey Optimizer中的同意](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent-restricted) |
 | 資料使用標籤和實作 | 推薦 | 用於個人化的設定檔屬性上的治理標籤（尤其是PII相鄰屬性，例如購買歷史記錄、位置、財務資料）可確保符合資料使用原則。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)，[資料使用標籤概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/labels/overview) |
 | 監控與可觀察性 | 推薦 | Edge傳遞與個人化效能監視有助於偵測延遲問題、傳遞失敗，或降低個人化體驗的資料時效性問題。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)，[警示概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview) |
-| 報告與分析 | 已包含 | Personalization效能報告是函式鏈步驟6的一部分。[!DNL Customer Journey Analytics] 分析可讓您深入調查個人化對各個訪客區段的轉換、參與和收入的影響。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
+| 報告與分析 | 已包含 | Personalization效能報告是執行計畫步驟6的一部分。 [!DNL Customer Journey Analytics]分析可讓您深入調查個人化對各個訪客區段的轉換、參與和收入的影響。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從「應用程式功能目錄」中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Journey Optimizer] (AJO)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 通道設定 | 介面和頻道設定 | 設定網頁、應用程式內和內容卡頻道介面，以進行個人化傳送 |
 | 訊息製作 | 內容製作 | 為每個表面使用動態內容、個人化運算式和條件區塊來製作個人化內容變體 |
@@ -136,7 +136,7 @@ ht-degree: 2%
 
 ### [!DNL Real-Time CDP] (RT-CDP)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 對象評估 | 對象定義和評估 | 透過邊緣或串流評估，使用設定檔屬性、行為資料和計算屬性來定義及評估對象 |
 | 即時設定檔查閱 | 內容傳送（執行階段） | 透過Edge Network存取即時設定檔屬性和區段會籍，以做出次秒個人化決策 |
@@ -244,7 +244,7 @@ ht-degree: 2%
 
 **這與Offer Decisioning選項B有何不同：**
 
-基礎架構相同 — 兩者都會使用邊緣的AJO Decisioning搭配網頁SDK，以及邊緣主動合併原則。 差異在於選取的內容。 此選項可管理選擇標準適合個人化的內容專案（區段會籍、行為排名）。[Offer Decisioning](offer-decisioning.md)選項B會管理規範的優惠方案目錄，其中適用性規則、上限和有效性視窗是業務需求。 如果您的專案集需要每個設定檔曝光次數上限、法規適用性限制或優惠方案生命週期管理，請改用Offer Decisioning選項B。
+基礎架構相同 — 兩者都會使用邊緣的AJO Decisioning搭配網頁SDK，以及邊緣主動合併原則。 差異在於選取的內容。 此選項可管理選擇標準適合個人化的內容專案（區段會籍、行為排名）。 [Offer Decisioning](offer-decisioning.md)選項B會管理規範的優惠方案目錄，其中適用性規則、上限和有效性視窗是業務需求。 如果您的專案集需要每個設定檔曝光次數上限、法規適用性限制或優惠方案生命週期管理，請改用Offer Decisioning選項B。
 
 ### 選項C：多表面個人化（網頁+應用程式內+內容卡）
 
@@ -321,7 +321,7 @@ ht-degree: 2%
 
 ### 階段1：定義對象並設定評估
 
-**應用程式函式：** RT-CDP：對象評估
+**應用程式功能：** RT-CDP：對象評估
 
 **您將要設定的專案：**&#x200B;定義可推動個人化內容選擇的對象。 這些受眾代表將接收個人化體驗的訪客區段 — 忠誠度等級、生命週期階段、行為同類群組或產品相似性群組。
 
@@ -368,7 +368,7 @@ ht-degree: 2%
 
 ### 階段2：設定決策（僅限選項B和C）
 
-**應用程式函式：** AJO：決策
+**應用程式功能：** AJO：決策
 
 **您要設定的專案：**&#x200B;設定決策基礎結構，以動態方式為每個訪客選取最佳內容或選件。 這包括版位（優惠方案出現的位置）、優惠方案（有哪些內容可用）、適用性規則（符合資格者）、排名策略（如何選擇最佳方案）和決定策略（一切如何連線）。
 
@@ -419,7 +419,7 @@ ht-degree: 2%
 
 ### 階段3：設定表面和通道
 
-**應用程式函式：** AJO：頻道設定
+**應用程式功能：** AJO：頻道設定
 
 **您的設定內容：**&#x200B;設定頻道介面，定義個人化內容的傳送位置。 每個表面型別（網頁、應用程式內、內容卡）都需要其專屬的設定，以指定表面URI、內容格式和傳送引數。
 
@@ -465,7 +465,7 @@ ht-degree: 2%
 
 ### 階段4：作者內容
 
-**應用程式函式：** AJO：訊息製作
+**應用程式功能：** AJO：訊息製作
 
 **您將要設定的專案：**&#x200B;為每個介面和區段或選件編寫個人化內容變體。 這包括設計視覺版面、新增參考設定檔屬性的個人化運算式、設定條件式內容區塊，以及建立可重複使用的內容片段。
 
@@ -530,7 +530,7 @@ ht-degree: 2%
 
 ### 階段5：設定並啟用行銷活動
 
-**應用程式函式：** AJO：行銷活動執行
+**應用程式功能：** AJO：行銷活動執行
 
 **您的設定內容：**&#x200B;建立並啟用AJO行銷活動，將對象、介面和內容繫結在一起以進行傳遞。 針對網頁個人化，行銷活動通常設定為立即或持續啟用，而非一次性排程傳送。
 
@@ -578,7 +578,7 @@ ht-degree: 2%
 
 ### 階段6：追蹤曝光數並收集資料
 
-**應用程式函式：** AEP：資料來源與集合
+**應用程式功能：** AEP：資料來源與集合
 
 **您要設定的專案：**&#x200B;確保將個人化體驗的曝光、互動和轉換追蹤回平台，以進行報告、對象重新評估和決策最佳化。
 
@@ -598,7 +598,7 @@ ht-degree: 2%
 
 ### 第7階段：報告並最佳化
 
-**應用程式功能：** AJO： Reporting &amp; Performance Analysis、Reporting &amp; Analysis
+**應用程式功能：** AJO：報表與效能分析、報表與分析
 
 **您的設定專案：**&#x200B;設定效能監視和分析，以測量介面、區段和內容變體間的個人化成效。 使用AJO原生報表進行營運量度，並使用[!DNL Customer Journey Analytics]進行跨管道業務影響分析。
 

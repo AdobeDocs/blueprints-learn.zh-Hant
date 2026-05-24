@@ -1,8 +1,8 @@
 ---
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 # 新增使用案例模式時要更新的頁面
@@ -64,5 +64,5 @@ ht-degree: 100%
 - [ ]檔案使用kebab大小寫命名慣例
 - [ ]所有Experience League連結都是有效的URL
 - [ ] Adobe產品名稱使用`[!DNL ...]`語法
-- [ ]函式鏈使用` > `分隔符號格式
+- [ ]執行計畫使用` > `分隔符號格式
 - [ ]圖樣檔包含所有必要的區段（請參閱pattern-template.md）

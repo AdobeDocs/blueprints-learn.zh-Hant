@@ -3,10 +3,10 @@ title: 批次傳出訊息啟用
 description: 瞭解如何在單一批次執行中評估對象及傳遞已排程的傳出訊息。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: 192853ce-02ab-46e6-9092-3db5354bc19c
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
 workflow-type: tm+mt
 source-wordcount: '8246'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 評估對象，然後在單一批次執行中將排程的傳出訊息（電子郵件、簡訊、推播）傳送給所有符合資格的設定檔。
 
-**功能鏈：**&#x200B;對象評估>訊息製作>行銷活動執行>報告
+**執行計畫：**&#x200B;對象評估>訊息編寫>行銷活動執行>報告
 
 ## 應用程式
 
@@ -94,11 +94,11 @@ ht-degree: 1%
 - **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 對象評估、同意和治理實施
 - **[!DNL Adobe Experience Platform] (AEP)** — 設定檔存放區、身分服務、結構描述、資料集、資料集合
 
-## 基礎函式
+## 基礎功能
 
-下列基本功能必須為此使用案例模式準備就緒。 對於每個函式，狀態會指出它通常是必要的、假設為預先設定或不適用。
+下列基本功能必須為此使用案例模式準備就緒。 對於每個功能，狀態會指出它通常是必要的、假定為預先設定還是不適用。
 
-| 基礎函式 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
+| 基礎功能 | 狀態 | 必須準備就緒的專案 | Experience League參考 |
 | --- | --- | --- | --- |
 | 管理與治理 | 已假設就位 | 布建使用中管道設定的AJO沙箱。 傳送委派的子網域、指派的IP集區及IP熱身完成。 已指派具有行銷活動/歷程建立許可權的使用者角色。 | [沙箱總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/home)，[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home) |
 | 資料模型與準備 | 必填 | XDM個人設定檔結構描述具有用於細分和個人化的屬性（例如名稱、電子郵件、偏好設定、層級）。 擷取促銷活動後轉換追蹤之目標轉換動作（例如`commerce.purchases`、`web.webInteraction`）的XDM ExperienceEvent結構描述。 兩個結構描述已啟用設定檔的資料集。 | [XDM系統總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)，[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition) |
@@ -118,13 +118,13 @@ ht-degree: 1%
 | 監控與可觀察性 | 已包含 | 即時傳送監視屬於報告階段的一部分。 平台層級的擷取失敗警示或授權使用狀況，可提供行銷活動層級量度以外的運作可見度。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home)，[警示概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/alerts/overview) |
 | 報告與分析 | 已包含 | 行銷活動和歷程報告包含在報告階段。 為了進行更深入的跨管道分析，CJA整合提供了funnel分析、歸因模型和同類群組分析，超出AJO內建的報表。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)，[AJO + CJA整合指南](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/cja-ajo) |
 
-## 應用程式函式
+## 應用程式功能
 
-此計畫會從應用程式功能目錄中執行下列功能。 函式會對應至實作階段，而非編號步驟。
+此計畫會從「應用程式功能目錄」中練習下列功能。 功能會對應至實作階段，而非編號步驟。
 
 ### [!DNL Journey Optimizer] (AJO)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 通道設定 | 階段2：通道設定 | 設定或驗證管道表面（電子郵件、簡訊或推播），包括子網域、IP集區、寄件者設定和隱藏清單 |
 | 訊息製作 | 階段3：訊息製作 | 使用範本、電子郵件Designer、個人化運算式、條件內容區塊和內容片段建立訊息內容 |
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 ### [!DNL Real-Time CDP] (RT-CDP)
 
-| 函式 | 實作階段 | 說明 |
+| 功能 | 實作階段 | 說明 |
 | --- | --- | --- |
 | 對象評估 | 階段1：對象評估 | 使用區段產生器或對象構成定義對象規則，選取評估方法（批次、串流或邊緣），並驗證對象母體 |
 | 同意與治理實施 | 階段1：對象評估 | 強制執行同意偏好設定和資料使用原則，以確保僅同意的設定檔會收到行銷活動訊息 |
@@ -309,7 +309,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 
 ### 階段1：評估對象
 
-**應用程式函式：** RT-CDP：對象評估
+**應用程式功能：** RT-CDP：對象評估
 
 此階段會定義並評估將接收行銷活動訊息的目標對象區段。 它會根據設定檔屬性、行為訊號和隱藏規則，判斷哪些設定檔符合傳送的資格。
 
@@ -381,7 +381,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 
 ### 階段2：設定通道
 
-**應用程式函式：** AJO：頻道設定
+**應用程式功能：** AJO：頻道設定
 
 此階段會驗證或建立定義訊息傳送基礎結構的管道表面（預設集） — 子網域、IP集區、寄件者身分、回覆位址和取消訂閱設定。 在可以編寫訊息內容或啟動行銷活動之前，必須存在有效的管道表面。
 
@@ -440,7 +440,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 
 ### 階段3：編寫訊息
 
-**應用程式函式：** AJO：訊息製作
+**應用程式功能：** AJO：訊息製作
 
 此階段會建立將傳送給對象的訊息內容。 這包括選取或建立內容範本、設計訊息版面、使用設定檔屬性新增個人化、針對對象特定變數設定條件式內容區塊、建立可重複使用的內容片段，以及使用範例設定檔預覽/測試訊息。
 
@@ -511,7 +511,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 
 ### 階段4：建立行銷活動或歷程
 
-**應用程式函式：** AJO：行銷活動執行（選項A和C）或AJO：Journey Orchestration （選項B）
+**應用程式功能：** AJO：行銷活動執行（選項A和C）或AJO：Journey Orchestration （選項B）
 
 此階段會建立行銷活動或歷程，將對象、訊息和執行機制繫結至交付專案單位。 這是三個實作選項分歧最大的地方。
 
@@ -599,7 +599,7 @@ API觸發的行銷活動會在觸發系統事件發生時透過REST API呼叫來
 
 ### 階段5：分析報表和效能
 
-**應用程式函式：** AJO：報表與效能分析
+**應用程式功能：** AJO：報表與效能分析
 
 此階段透過即時報告監視執行期間的傳遞量度，並透過歷史報告分析完成後的行銷活動績效。 可選擇設定CJA整合，以進行更深入的跨管道分析。
 
