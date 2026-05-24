@@ -9,7 +9,7 @@ ht-degree: 81%
 
 此檔案包含使用案例模式頁面的完整Markdown範本。 產生新模式時，以實際內容取代所有`{{placeholder}}`值。
 
----
+&#x200B;---
 
 ## 範本
 
@@ -227,7 +227,7 @@ Complete the following before beginning the implementation.
 | Scalability | {{description}} | {{description}} | {{description}} |
 ````
 
----
+&#x200B;---
 
 ## 使用此範本的相關附註
 
