@@ -71,7 +71,7 @@ ht-degree: 2%
 
 8. **主要資料流程/整合點** — 3-7專案符號，說明跨圖表顯示的關鍵流程與整合界限（例如，`Real-time event ingestion from Web SDK to Edge Network`、`Profile synchronization between Experience Platform Hub and Edge`）。
 
-9. **Experience League連結** — 連結3至6個相關Experience League檔案以供進一步閱讀。 每個都必須以`https://experienceleague.adobe.com/`開頭。
+9. **Experience League連結** — 連結3至6個相關Experience League檔案以供進一步閱讀。 每個都必須以`https://experienceleague.adobe.com/zh-hant`開頭。
 
    **請先推薦候選人。** 根據Adobe解決方案和頁面用途，建議可信4-8頁的Experience League文章（例如，每個命名解決方案的canonical登陸或概觀頁面、重要整合指南、部署參考）。 對於每個建議，請提出：
    - 文章標題
@@ -176,7 +176,7 @@ ht-degree: 2%
 
 2. **使用案例模式連結** — 檔案中的每個模式連結都指向`/help/blueprints/use-case-patterns/`下的現有Markdown檔案。 使用`Read`或glob確認每個目標都存在。
 
-3. **Experience League連結** — 抽查`## Further reading`區段中的每個URL是否都以`https://experienceleague.adobe.com/`開頭。
+3. **Experience League連結** — 抽查`## Further reading`區段中的每個URL是否都以`https://experienceleague.adobe.com/zh-hant`開頭。
 
 4. **TOC專案位置** — 新專案位於正確的子區段中，使用4個空格縮排，而且路徑與產生的檔案位置完全相符。
 
