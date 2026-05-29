@@ -3,7 +3,7 @@ title: 匿名訪客網頁Personalization
 description: 瞭解如何根據工作階段中的行為訊號，將個人化網頁內容傳遞給無法識別的訪客。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: e2446801-ffce-40e6-bfe9-abec623c9201
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
 workflow-type: tm+mt
 source-wordcount: '8109'
 ht-degree: 1%
@@ -108,7 +108,7 @@ ht-degree: 1%
 
 下列參考架構說明如何在邊緣收集匿名訪客訊號、根據對象規則進行評估，並用來提供個人化內容。
 
-![匿名對象啟用和個人化的參考架構](/help/blueprints/audience-activation/assets/anonymous_activation.svg)
+![匿名對象啟用和個人化的參考架構](/help/blueprints/audience-activation/assets/anonymous_activation.png)
 
 ## 基礎功能
 
@@ -128,9 +128,9 @@ ht-degree: 1%
 
 | 支援功能 | 狀態 | 為什麼這很重要 | Experience League參考 |
 | --- | --- | --- | --- |
-| 計算/衍生屬性建立 | 不適用 | 匿名訪客的值有限，因為有最低的歷史設定檔資料需要彙總。 如果邊緣設定檔累積來自先前跨多個工作階段匿名造訪的有意義行為資料，則可能變得適用。 | [計算屬性總覽](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview) |
+| 計算/衍生屬性建立 | 不適用 | 匿名訪客的值有限，因為有最低的歷史設定檔資料需要彙總。 如果邊緣設定檔累積來自先前跨多個工作階段匿名造訪的有意義行為資料，則可能變得適用。 | [計算屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/computed-attributes/overview) |
 | 資料生命週期管理 | 推薦 | 匿名邊緣設定檔的匿名設定檔過期時間應已設定，以管理儲存空間並遵守隱私權要求。 僅限ECID的設定檔可設為在14到365天之間過期。 應為行為資料收集強制執行Cookie同意原則。 | [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home) |
-| 資料使用標籤和實作 | 推薦 | 行為資料上的控管標籤可確保法規遵循，尤其是針對地理定位（S2敏感地理標籤）和以裝置為基礎的個人化。 標籤可防止在未經授權的個人化內容中使用受限制的行為資料。 | [資料控管概觀](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home) |
+| 資料使用標籤和實作 | 推薦 | 行為資料上的控管標籤可確保法規遵循，尤其是針對地理定位（S2敏感地理標籤）和以裝置為基礎的個人化。 標籤可防止在未經授權的個人化內容中使用受限制的行為資料。 | [資料控管概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home) |
 | 監控與可觀察性 | 推薦 | [!DNL Edge Network]和[!DNL Web SDK]資料流程監視可協助偵測個人化傳遞問題。 設定資料流失敗、擷取錯誤和邊緣傳送異常的警報。 在生產部署中，個人化失敗會降低訪客體驗，因此至關重要。 | [可觀察性深入分析概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/observability/home) |
 | 報告與分析 | 已包含 | Personalization績效報告是執行計畫（階段5）的一部分。 CJA對匿名訪客個人化成效的分析可讓您進行深入的funnel分析、同類群組比較，以及轉換影響測量，超出AJO原生報表所能提供的範圍。 | [CJA概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview) |
 
@@ -291,7 +291,7 @@ ht-degree: 1%
 **Experience League：**
 
 - [決策管理概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [建立產品建議放置環境](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [建立產品建議放置環境](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
 - [建立個人化優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [建立決定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-activities)
 
@@ -429,7 +429,7 @@ ht-degree: 1%
 - [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
 - [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
 - [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
-- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
 
 ### 階段3：編寫內容並建立變體
 
@@ -688,10 +688,10 @@ ht-degree: 1%
 
 **對象和細分**
 
-- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
+- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
 - [區段產生器UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)
 - [邊緣分段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [串流區段](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation)
+- [串流區段](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/streaming-segmentation)
 - [Profile Query Language參考](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/pql/overview)
 
 **Personalization與內容**
@@ -712,7 +712,7 @@ ht-degree: 1%
 **決定管理**
 
 - [決策管理概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)
-- [建立產品建議放置環境](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
+- [建立產品建議放置環境](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-placements)
 - [建立決定規則](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-decision-rules)
 - [建立個人化優惠方案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-personalized-offers)
 - [建立後備產品建議](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/create-components/creating-fallback-offers)
@@ -729,7 +729,7 @@ ht-degree: 1%
 **[!DNL Web SDK]和資料彙集**
 
 - [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
-- [安裝Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)
+- [安裝Web SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/install/overview)
 - [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
 - [標籤總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)
 
@@ -737,13 +737,13 @@ ht-degree: 1%
 
 - [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
 - [身分名稱空間概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces)
-- [合併原則概觀](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview)
+- [合併原則概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/merge-policies/overview)
 - [即時客戶個人檔案總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/home)
 
 **資料模式**
 
 - [XDM系統概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)
-- [結構描述組合基本面](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)
+- [結構描述組合基本面](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition)
 
 **報告和分析**
 
@@ -755,7 +755,7 @@ ht-degree: 1%
 
 **資料控管和隱私權**
 
-- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
 - [進階資料生命週期管理概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)
 - [同意和偏好設定欄位群組](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/consents)
 

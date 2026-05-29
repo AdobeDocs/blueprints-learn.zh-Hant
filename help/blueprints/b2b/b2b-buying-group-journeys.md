@@ -19,9 +19,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
 workflow-type: tm+mt
-source-wordcount: 2349
+source-wordcount: 2322
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Journey Optimizer B2B edition提供的B2B功能增強後，您現在可以解決
 
 如下圖所示，您可以在表單中或透過LinkedIn啟用收集詳細資訊，並在與聊天機器人互動時限定解決方案意圖。
 
-![購買團體歷程](./assets/buying-group-journey-diagram.svg){zoomable="yes"}
+![購買團體歷程](./assets/buying-group-journey-diagram.png){zoomable="yes"}
 
 當購買群組完成百分比足夠高時，您可以透過SQL或SOL將群組共用給銷售團隊，以將帳戶中的潛在客戶轉換為完成銷售。
 
