@@ -6,7 +6,7 @@ short-description: 將 RTCDP 設定檔和客群與 Adobe Target 整合。
 solution: Real-Time Customer Data Platform, Target, Experience Platform
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 26%
@@ -30,7 +30,7 @@ ht-degree: 26%
 
 ### 參考文件
 
-* [適用於即時客戶資料平台的Adobe Target連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant)
+* [適用於即時客戶資料平台的Adobe Target連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
 * [Edge資料流設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
 
 ## 整合模式
@@ -45,15 +45,15 @@ ht-degree: 26%
 
 架構
 
-![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP+Target.svg)
+![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP+Target.png)
 
 序列詳細資訊
 
-![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP+Target_flow.svg)
+![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP+Target_flow.png)
 
 概述架構
 
-![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/personalization_with_apps.svg)
+![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/personalization_with_apps.png)
 
 ## 實作模式
 
@@ -70,7 +70,7 @@ ht-degree: 26%
 
 使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。 此實作方法不支援即時邊緣區段評估。 不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
 
-[請參閱Adobe Target聯結器檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[請參閱Adobe Target聯結器檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
 [請參閱應用程式特定的SDK Blueprint](/help/blueprints/experience-platform/deployment/appsdk.md)
 
 ## 實施考量
