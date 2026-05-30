@@ -5,20 +5,13 @@ solution: Real-Time Customer Data Platform
 kt: 9311
 exl-id: 5215d077-b0a9-4417-ae9b-f4961d4a73fa
 TQID: https://experienceleague.adobe.com/-YX20LT7VkWqGr4ciUM1iNYS9DnZAwj57K-bUy-zVsg
-product_v2:
-  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
-feature_v2:
-  - id: ba929a52-9339-4154-9487-317dc875a3c7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+product_v2: id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+feature_v2: id: ba929a52-9339-4154-9487-317dc875a3c7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: b8b25146021472c6f513435df8e3be88254d9c3f
 workflow-type: tm+mt
-source-wordcount: 1034
+source-wordcount: 1036
 ht-degree: 48%
 
 ---
@@ -34,7 +27,7 @@ ht-degree: 48%
 
 * 針對 B2B 資料（包括公司帳戶、機會和銷售機會），建立人員對象，以針對各通道鎖定目標和個人化。
 * 對任何 Experience Platform 目標啟用對象，以用於鎖定目標和個人化。
-* 建立帳戶的受眾（例如公司清單），並透過LinkedIn之類的目的地鎖定這些公司，該目的地接受公司清單作為輸入或匯出至雲端儲存目的地以進行目標定位和銷售推廣。
+* 建立帳戶的受眾（例如公司清單），並透過LinkedIn或雲端儲存空間等目的地鎖定這些公司。 如需詳細資訊、需求和帳戶對象護欄，請參閱[Advertising目的地和檔案目的地的B2B帳戶啟用](b2b-account-activation.md)。
 
 ## 應用程式
 
@@ -114,9 +107,9 @@ ht-degree: 48%
 ## 相關文件
 
 * [即時客戶資料平台的B2B edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=zh-Hant)
-* [Real-time Customer Data Platform B2B edition快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
-* [Real-time Customer Data Platform B2B edition的護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
+* [Real-time Customer Data Platform B2B edition快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial)
+* [Real-time Customer Data Platform B2B edition的護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)
 * [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
-* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html?lang=zh-Hant)
+* [Marketo Engage](https://experienceleague.adobe.com/docs/marketo/using/home.html)
 * [Adobe Experience Platform - Marketo Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant)
-* [Adobe Experience Platform - Marketo目的地聯結器](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html?lang=zh-Hant)
+* [Adobe Experience Platform - Marketo目的地聯結器](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-lists-and-static-lists/static-lists/push-an-adobe-experience-cloud-segment-to-a-marketo-static-list.html)
