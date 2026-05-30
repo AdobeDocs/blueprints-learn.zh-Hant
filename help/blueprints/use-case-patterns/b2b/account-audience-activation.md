@@ -105,7 +105,7 @@ B2B行銷團隊需要在帳戶層級（而非個人層級）鎖定和啟用對�
 以下應用程式可用來實作此使用案例模式。
 
 - **[!DNL Real-Time CDP]B2B edition** — 帳戶設定檔統一、B2B身分解析、帳戶對象評估、B2B專屬目的地設定和帳戶對象啟用的核心平台
-- **[!DNL Adobe Experience Platform](AEP)** — B2B XDM資料模型化、從CRM和行銷自動化來源擷取資料、身分服務和控管的基礎基礎架構
+- **[!DNL Adobe Experience Platform] (AEP)** — B2B XDM資料模型化、從CRM和行銷自動化來源擷取資料、身分服務和控管的基礎基礎架構
 - **[!DNL Marketo Engage]** — 由啟用的帳戶對象提供的潛在客戶培養方案、評分和行銷活動執行的主要B2B行銷自動化目的地
 
 ## 相關文件

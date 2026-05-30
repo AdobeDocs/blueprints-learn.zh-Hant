@@ -92,8 +92,8 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 在此使用案例模式中使用以下Adobe應用程式。
 
-- **[!DNL Journey Optimizer B2B Edition]([!DNL AJO B2B])** — 協調帳戶層級的歷程、使用角色範本和解決方案興趣來管理購買群組、對個人和購買群組層級的參與評分、作者B2B電子郵件內容、傳送SMS訊息、設定銷售警示，以及提供B2B分析儀表板。
-- **[!DNL Real-Time CDP B2B Edition]([!DNL RT-CDP B2B])** — 從跨來源B2B資料中統一帳戶設定檔、解析人員與帳戶的關係、評估帳戶層級的對象、設定B2B特定的目的地([!DNL Marketo Engage]、[!DNL LinkedIn]、CRM)，以及強制跨B2B資料進行資料控管。
+- **[!DNL Journey Optimizer B2B Edition] ([!DNL AJO B2B])** — 協調帳戶層級的歷程、使用角色範本和解決方案興趣來管理購買群組、對個人和購買群組層級的參與評分、作者B2B電子郵件內容、傳送SMS訊息、設定銷售警示，以及提供B2B分析儀表板。
+- **[!DNL Real-Time CDP B2B Edition] ([!DNL RT-CDP B2B])** — 從跨來源B2B資料中統一帳戶設定檔、解析人員與帳戶的關係、評估帳戶層級的對象、設定B2B特定的目的地([!DNL Marketo Engage]、[!DNL LinkedIn]、CRM)，以及強制跨B2B資料進行資料控管。
 
 ## 相關文件
 
