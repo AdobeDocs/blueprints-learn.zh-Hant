@@ -1,7 +1,7 @@
 ---
 name: use-case-pattern-page-builder
 description: 為Adobe Experience Platform Blueprint存放庫建立新使用案例模式內容的指南。 在新增使用案例模式、建立實作指導內容，或使用者提及將模式新增到藍圖網站時，請使用此技能。 處理完整的工作流程：收集模式資訊、產生具有正確範本結構的Markdown檔案，以及更新所有互動參照頁面(TOC.md、overview.md)。
-source-git-commit: 2577bb034012a78fd30a65b7b44196b91921923e
+source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 94%
@@ -68,15 +68,15 @@ ht-degree: 94%
 
 2. **開啟區段** — `# {Pattern name}`標題，後面是介紹性段落和「使用本指南瞭解……」 句子。
 
-3. **使用案例概觀** — 3-5段落，說明模式範圍、適用時間、做和不做，以及典型利害關係人。
+3. **使用案例模式** — 說明段落和執行計畫。
 
-4. **關鍵業務目標** — 每個目標都作為連結標題，並附有簡短說明和KPI摘要列。
+4. **使用案例概觀** — 3-5段落，說明模式範圍、適用時間、做和不做，以及典型利害關係人。
 
-5. **戰術使用案例範例** — 6-10個案例的專案符號清單。
+5. **關鍵業務目標** — 每個目標都作為連結標題，並附有簡短說明和KPI摘要列。
 
-6. **關鍵績效指標** — 包含KPI、說明、測量欄的表格。
+6. **戰術使用案例範例** — 6-10個案例的專案符號清單。
 
-7. **使用案例模式** — 說明段落和執行計畫。
+7. **關鍵績效指標** — 包含KPI、說明、測量欄的表格。
 
 8. **應用程式** — 具有`[!DNL ...]`格式及說明的Adobe應用程式清單。
 
@@ -132,7 +132,7 @@ ht-degree: 94%
 
 5. **Frontmatter完整性** — 模式檔的YAML frontmatter中包含標題、說明、解決方案和exl-id。
 
-6. **Experience League連結** — 抽查任何Experience League URL是否可行（從`https://experienceleague.adobe.com/zh-hant`開始）。
+6. **Experience League連結** — 抽查任何Experience League URL是否可行（從`https://experienceleague.adobe.com/`開始）。
 
 向使用者報告任何驗證失敗，並在考慮任務完成之前修正它們。
 

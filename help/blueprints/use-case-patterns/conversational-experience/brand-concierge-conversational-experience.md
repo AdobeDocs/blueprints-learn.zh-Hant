@@ -3,20 +3,26 @@ title: Brand Concierge對話體驗
 description: 瞭解如何將數位屬性轉換為AI支援、品牌安全的對話體驗，以引導客戶探索。
 solution: Experience Platform, Real-Time Customer Data Platform
 exl-id: a9545328-316d-446a-9308-18af61c58d1c
-source-git-commit: fe4353cfe34855ad91ccb5698e30030322246c08
+source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
 
 # Brand Concierge對話體驗
 
-本指南針對使用[!DNL Adobe Brand Concierge]、與[!DNL Adobe Experience Platform] (AEP)和[!DNL Real-Time Customer Data Platform] ([!DNL RT-CDP])整合的AI支援交談體驗，提供完整的實作參考。 它專為需要跨數位資產部署品牌安全對話代理程式的解決方案架構師、行銷技術人員和實作工程師所設計。
-
-它涵蓋部署對話式體驗的所有可行方法，從產品諮詢聊天機器人到完整的網站導覽助理，並提供每個選項選擇時間的指引。 此計畫會處理代理程式設定、品牌控管、內容整合、部署策略、從交談訊號擴充設定檔，以及分析最佳化等問題。
+本指南提供使用[!DNL Adobe Brand Concierge]、與[!DNL Adobe Experience Platform] (AEP)和[!DNL Real-Time Customer Data Platform] ([!DNL RT-CDP])整合的AI支援交談體驗概觀。 它專為需要跨數位資產部署品牌安全對話代理程式的解決方案架構師、行銷技術人員和實作工程師所設計。
 
 [!DNL Brand Concierge]可讓品牌部署智慧型對話代理程式，瞭解品牌語調、存取核准的產品目錄和內容、根據即時設定檔資料提供個人化建議，以及將意圖和情緒訊號擷取回整合式客戶設定檔。 如此一來，對話式體驗不但能讓人感受到身臨其境的自然感，還能讓組織更加瞭解每位客戶。
+
+## 使用案例模式
+
+**Brand Concierge對話體驗**
+
+將數位屬性轉換為AI支援的品牌安全對話體驗，透過自然對話引導客戶探索，利用意圖和情緒訊號豐富設定檔，並提供個人化產品推薦。
+
+**執行計畫：**&#x200B;代理程式設定>品牌控管設定>內容整合>對話式體驗部署>設定檔擴充>分析和最佳化
 
 ## 使用案例概述
 
@@ -94,22 +100,14 @@ ht-degree: 1%
 | 受交談影響的收入 | [!DNL Brand Concierge]交談進行轉換前的購買收入 | 對話至購買歷程的歸因分析 |
 | 解決方案時間 | 從交談開始到解決或移交的平均持續時間 | 跨交談事件的時間戳記分析 |
 
-## 使用案例模式
-
-**Brand Concierge對話體驗**
-
-將數位屬性轉換為AI支援的品牌安全對話體驗，透過自然對話引導客戶探索，利用意圖和情緒訊號豐富設定檔，並提供個人化產品推薦。
-
-**功能鏈：**&#x200B;代理程式設定>品牌控管設定>內容整合>對話式體驗部署>設定檔擴充>分析和最佳化
-
 ## 應用程式
 
 以下應用程式可用來實作此使用案例模式。
 
 - **[!DNL Brand Concierge]** — AI支援的對話式體驗應用程式，提供代理程式協調器、Product Advisor Agent、網站顧問代理程式、品牌控管和對話式分析
-- **[!DNL Adobe Experience Platform] (AEP)** — 整合的資料基礎，提供對話式訊號的XDM結構描述、身分解析、即時客戶設定檔和資料收集基礎架構
-- **[!DNL Real-Time CDP] ([!DNL RT-CDP])** — 客戶資料平台提供個人化對話的即時設定檔查閱、從對話訊號進行對象細分，以及擴充設定檔與意圖和情緒資料
+- **[!DNL Adobe Experience Platform](AEP)** — 整合的資料基礎，提供對話式訊號的XDM結構描述、身分解析、即時客戶設定檔和資料收集基礎架構
+- **[!DNL Real-Time CDP]([!DNL RT-CDP])** — 客戶資料平台提供個人化對話的即時設定檔查閱、從對話訊號進行對象細分，以及擴充設定檔與意圖和情緒資料
 
 ## 相關文件
 
-如需實作指引和進一步資訊，請參閱Adobe Experience League上的[Brand Concierge概觀](https://experienceleague.adobe.com/zh-hant/docs/brand-concierge/content/documentation/overview)。
+如需實作指引和進一步資訊，請參閱Adobe Experience League上的[Brand Concierge概觀](https://experienceleague.adobe.com/en/docs/brand-concierge/content/documentation/overview)。
