@@ -106,7 +106,7 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 - [解決方案興趣](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
 - [角色範本](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
 - [建立購買群組](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
-- [購買群組階段](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [購買群組階段](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
 - [帳戶歷程概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
 - [帳戶歷程節點](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
 - [銷售警示電子郵件](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/sales-alert-email)
@@ -152,14 +152,14 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 ### 目標
 
 - [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
-- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
 - [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/social/linkedin)
 
 ### 護欄
 
 - [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
 - [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
-- [擷取護欄](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
+- [擷取護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/guardrails)
 - [Journey Optimizer護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
 
 ### 教學課程與快速入門
