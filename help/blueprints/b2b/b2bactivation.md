@@ -16,9 +16,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 95ba7aa681e67efb136adac15dc7894cb413a4f0
+source-git-commit: b8b25146021472c6f513435df8e3be88254d9c3f
 workflow-type: tm+mt
-source-wordcount: 1034
+source-wordcount: 1036
 ht-degree: 48%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 48%
 
 * 針對 B2B 資料（包括公司帳戶、機會和銷售機會），建立人員對象，以針對各通道鎖定目標和個人化。
 * 對任何 Experience Platform 目標啟用對象，以用於鎖定目標和個人化。
-* 建立帳戶的受眾（例如公司清單），並透過LinkedIn之類的目的地鎖定這些公司，該目的地接受公司清單作為輸入或匯出至雲端儲存目的地以進行目標定位和銷售推廣。
+* 建立帳戶的受眾（例如公司清單），並透過LinkedIn或雲端儲存空間等目的地鎖定這些公司。 如需詳細資訊、需求和帳戶對象護欄，請參閱[Advertising目的地和檔案目的地的B2B帳戶啟用](b2b-account-activation.md)。
 
 ## 應用程式
 

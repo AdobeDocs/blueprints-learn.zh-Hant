@@ -3,9 +3,9 @@ title: Advertising目的地和檔案目的地的B2B帳戶啟用
 description: 使用以帳戶為基礎的參與，建立受眾，並透過目的地鎖定他們。
 solution: Real-Time Customer Data Platform
 exl-id: 578c0019-6133-4508-ae9d-8a8a463376f0
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+source-git-commit: b8b25146021472c6f513435df8e3be88254d9c3f
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '735'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 4%
 * 帳戶屬性可供匯出。
 * 人員活動。
    * 事件回顧最多30天，事件述詞不排序。
-   * AND / OR受到支援（因此您可以說「A和B必須發生」）  但您無法說「A必須在B之前3天發生」)。
+   * 支援AND / OR （所以您可以說「A和B必須發生」，但您無法說「A必須在B之前3天發生」）。
 * 針對雲端儲存目標，匯出排程支援「區段評估後」選項。
 * [B2B設定檔與分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails)。
 
@@ -71,6 +71,7 @@ LinkedIn相符對象有一些要求，包括相符成員的最小對象人數為
 
 ## 相關文件
 
+* [B2B Audience和Profile Activation藍圖](b2bactivation.md) — 涵蓋人員層級和帳戶層級B2B啟用的父級Blueprint。
 * [即時客戶資料平台的B2B edition](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview)
 * [建立及啟用帳戶對象教學課程影片](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/audiences/create-audiences-with-b2b-data)
 * [建立帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/account-audiences)
