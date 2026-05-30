@@ -88,26 +88,26 @@ ht-degree: 0%
 
 **事件轉送**
 
-- [事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)
-- [事件轉送快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/getting-started)
-- [事件轉送監控](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/monitoring)
-- [事件轉送密碼](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/secrets)
+- [事件轉送概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview)
+- [事件轉送快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/getting-started)
+- [事件轉送監控](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/monitoring)
+- [事件轉送密碼](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/secrets)
 
 **事件轉送延伸模組**
 
-- [伺服器端擴充功能目錄](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/overview)
-- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
-- [Meta Conversions API擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview)
-- [Google Cloud Platform擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
-- [AWS擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/aws/overview)
-- [Snowflake擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/snowflake/overview)
-- [Google Ads增強型轉換延伸功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/google-ads-enhanced-conversions/overview)
-- [Mailchimp擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/mailchimp/overview)
+- [伺服器端擴充功能目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/overview)
+- [Adobe Cloud Connector擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/cloud-connector/overview)
+- [Meta Conversions API擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/meta/overview)
+- [Google Cloud Platform擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/google-cloud-platform/overview)
+- [AWS擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/aws/overview)
+- [Snowflake擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/snowflake/overview)
+- [Google Ads增強型轉換延伸功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/google-ads-enhanced-conversions/overview)
+- [Mailchimp擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/server/mailchimp/overview)
 
 **資料收集和Edge Network**
 
-- [設定資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)
-- [資料串流概觀](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [網頁SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)
-- [標籤總覽](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+- [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)
+- [資料串流概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)
+- [網頁SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)
+- [Edge Network伺服器API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge-network-server-api/overview)
+- [標籤總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)

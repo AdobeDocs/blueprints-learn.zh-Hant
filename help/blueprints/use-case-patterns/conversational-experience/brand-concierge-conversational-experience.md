@@ -110,4 +110,4 @@ ht-degree: 1%
 
 ## 相關文件
 
-如需實作指引和進一步資訊，請參閱Adobe Experience League上的[Brand Concierge概觀](https://experienceleague.adobe.com/en/docs/brand-concierge/content/documentation/overview)。
+如需實作指引和進一步資訊，請參閱Adobe Experience League上的[Brand Concierge概觀](https://experienceleague.adobe.com/zh-hant/docs/brand-concierge/content/documentation/overview)。
