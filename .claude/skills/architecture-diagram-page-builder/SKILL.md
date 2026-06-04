@@ -1,10 +1,10 @@
 ---
 name: architecture-diagram-page-builder
 description: 為Adobe Experience Platform Blueprint存放庫建立新架構圖表頁面的指南。 新增新的頂層架構圖、整合架構頁面或應用程式架構概觀時，請使用此技能。 架構頁面涵蓋頂層AEP和應用程式架構以及主要整合點，而非深入的使用案例（屬於使用案例模式產生器）。 處理完整的工作流程：收集頁面資訊、產生Markdown檔案、將其放置在正確的主題資料夾中，以及更新TOC.md。
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+source-git-commit: 4d236750286c28a8b8eb53a5bdec0645cc0e3e91
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 2%
+source-wordcount: '1556'
+ht-degree: 1%
 
 ---
 
@@ -34,57 +34,53 @@ ht-degree: 2%
 
 ## 階段1：資訊收集
 
-在產生任何檔案之前，詢問使用者以收集所有必要的資訊。 在提供或明確延遲每個必要專案之前，請勿繼續產生內容。
+**使用表單，而非線性面試。** 透過以邏輯批次化回合呈現`AskUserQuestion`表單，而不是一次詢問一個問題來收集所有必要資訊。 這可讓使用者快速且快速地進行瀏覽。
 
-### 必要資訊
+### AskUserQuestion限制
 
-1. **頁面標題** — 人類看得懂的標題（例如，`Adobe Journey Optimizer architecture diagrams`）。
+- 每個`AskUserQuestion`呼叫最多&#x200B;**4個問題**。
+- 每個問題最多&#x200B;**4個選項**。
+- 如果問題的可能選項超過4個，請將其分割為兩個呼叫（例如，詢問前4個選項，然後在第五個選項中輸入「是/否」）。
+- 針對套用多個答案（解決方案、模式、資料流程）的問題，請使用`multiSelect: true`。
 
-2. **主題資料夾** — 頁面所在位置。 請根據圖表的主要網域挑選一個網域：
-   - `experience-platform/` — 最上層AEP、多應用程式或平台層級的圖表
-   - `customer-journeys/` — AJO、行銷活動、歷程協調
-   - `customer-journey-analytics/` — CJA架構
-   - `audience-activation/` — RTCDP、對象和設定檔啟用
-   - `b2b/` — B2B專屬架構
+### 第1回合 — 核心頁面資訊（一個AskUserQuestion呼叫，最多4個問題）
 
-3. **檔案名稱** — Kebab大小寫，衍生自頁面標題（例如，`Journey Optimizer architecture` -> `journey-optimizer-architecture.md`）。 向使用者確認。
+請以單一表單要求下列所有專案：
 
-4. **頁面目的** — 1-2個句子，說明圖表整體說明的內容。 用於`description`前端內容欄位和開頭的段落。
+1. **頁面標題** — 顯示2-3個建議變體，衍生自使用者已告訴您的內容，加上一個「其他」逸出影格。
+2. **主題資料夾** — 將5個有效的資料夾顯示為選項；根據使用者的輸入建議最有可能的資料夾。
+3. **Adobe解決方案** — 多選；根據頁面主題建議最可能的候選人。
+4. **圖表計數** — 頁面將包含多少圖表(1 / 2 / 3 / 4+)。
 
-5. **Adobe解決方案** — 頁面中心的Adobe產品清單（以逗號分隔）。 用於`solution`前端內容欄位。 範例： `Experience Platform, Journey Optimizer, Customer Journey Analytics`。
+### 第2回合 — 圖表詳細資料（一個AskUserQuestion呼叫，最多4個問題）
 
-6. **圖表** — 一或多個圖表。 針對每個圖表，收集：
-   - **影像檔案名稱** （例如，`aep_data_flow.svg`）。 偏好使用SVG；可接受PNG。
-   - **章節標題** — 成為圖表的H2標題（例如，`Data flow diagram`、`Detailed architecture diagram`）。
-   - **用途說明** — 說明圖表顯示內容的1-2個句子。
-   - **替代文字** — 可存取的簡短說明。
+以單一形式詢問每個圖表的影像檔案名稱和頁面用途：
 
-7. **支援的使用案例模式** — 此架構可啟用2-5個現有模式。
+- 對於每個圖表（單一表單圓圈最多2個），詢問&#x200B;**影像檔案名稱**&#x200B;的問題包含2-3個建議的檔案名稱（衍生自頁面標題）加上「其他」選項。
+- 詢問&#x200B;**頁面目的** （1-2句描述）為帶有2-3個建議短語加上「其他」的問題。
+- 詢問是否需要&#x200B;**`>[!MORELIKETHIS]`圖說文字** （是/否）。 如果是「是」，則收集URL並在後續訊息中連結文字。
 
-   **請先推薦候選人。** 在要求使用者提供模式之前，請掃描`/help/blueprints/use-case-patterns/`並根據上述收集的頁面標題、頁面目的和Adobe解決方案建議3-6個可能的相符專案。 對於每個建議，請提出：
-   - 圖樣名稱（含連結的路徑）
-   - 一句理由說明為什麼它適合這個架構
+> **區段標題和替代文字：**&#x200B;當影像檔案名稱是描述性的（例如，`fac-architecture.svg`、`fac-dataflow.svg`）時，從其中推斷H2區段標題和替代文字 — 您不需要詢問使用者。 使用檔案名稱主體、標題化及人性化，作為章節標題（例如，`Architecture diagram`、`Data flow diagram`）。 只詢問檔案名稱是否模稜兩可。
 
-   將建議顯示為編號短清單，並要求使用者(a)接受任何專案，(b)拒絕任何專案，以及(c)新增您錯過的模式。 僅產生指向真實檔案的建議 — 在建議之前先執行glob/read確認。 請勿產生幻覺化圖樣名稱。
+### 第3回合 — 使用案例模式（掃描後詢問使用者問題）
 
-   對於每個接受的模式，擷取類別和檔案名稱。 產生之前，請先驗證`/help/blueprints/use-case-patterns/{category}/{pattern-file}.md`的每個檔案是否存在。
+在展示此表單之前，**glob`/help/blueprints/use-case-patterns/`**&#x200B;會根據頁面標題、用途和解決方案，識別3-5個可能的相符模式。 建議檔案之前，請先確認每個檔案都存在。
 
-8. **主要資料流程/整合點** — 3-7專案符號，說明跨圖表顯示的關鍵流程與整合界限（例如，`Real-time event ingestion from Web SDK to Edge Network`、`Profile synchronization between Experience Platform Hub and Edge`）。
+將前4名候選人列為`multiSelect`個問題。 如果第五個候選者較強，請針對該候選者另外提出「是/否」問題。 同時邀請使用者為您遺漏的任何模式命名。
 
-9. **Experience League連結** — 連結3至6個相關Experience League檔案以供進一步閱讀。 每個都必須以`https://experienceleague.adobe.com/zh-hant`開頭。
+僅包含已確認存在檔案的模式。 請勿產生幻覺化圖樣名稱。
 
-   **請先推薦候選人。** 根據Adobe解決方案和頁面用途，建議可信4-8頁的Experience League文章（例如，每個命名解決方案的canonical登陸或概觀頁面、重要整合指南、部署參考）。 對於每個建議，請提出：
-   - 文章標題
-   - URL
-   - 適合本頁原因的一行理由
+### 第4回合 — 資料流程和Experience League連結（一個AskUserQuestion呼叫）
 
-   將建議標示為&#x200B;**未驗證** （除非您實際擷取URL） — 使用者必須先確認或取代每個URL，它才能進入產生的檔案。 要求使用者(a)接受、(b)以他們已有的已驗證URL取代任何URL，以及(c)新增他們自己的URL。 切勿發明您尚未看到的URL；如果您不確定，則建議使用文章標題，並讓使用者提供URL。
+**資料流程：**&#x200B;建議3-5個預先寫入的資料流程專案符號做為`multiSelect`個問題（衍生自頁面主題）。 使用者選擇適用的專案。 將每個選項保留為一個簡潔的句子。 如果使用者需要不在您清單中的自訂流程，他們可以在後續中提供這些流程。
 
-### 可選
+**Experience League連結：**&#x200B;在表單之後，呈現包含4-6個建議連結的Markdown表格，內含文章標題、URL和單行基本原則。 將每個URL標籤為&#x200B;**未驗證**。 要求使用者(a)接受、(b)取代為已驗證的URL，或(c)新增他們自己的URL。 如果清單很長，請使用最多4個選項的後續追蹤`AskUserQuestion`；否則請接受純文字的確認。
 
-- **Related-content圖說文字** — 單一連結在頁面頂端附近呈現為`>[!MORELIKETHIS]`區塊。 當Experience League上有讀者應該注意的同層級整合或設定指南時，這個功能會很有用。
+切勿建立您尚未擷取的URL。 如果不確定，則建議文章標題，並讓使用者提供URL。
 
-如果使用者未提供所有必要的專案，請先詢問遺失的專案，然後再繼續。 請勿製作圖表、圖樣或連結。
+### 完成所有倒圓角時
+
+在產生任何檔案之前，請確認與使用者設定的完整資訊。 如果仍然遺失任何必要專案或將其標示為「其他」但沒有值，請先詢問該專案，然後再繼續。 請勿製作圖表、圖樣或連結。
 
 ## 階段2：範圍檢查
 
@@ -167,6 +163,8 @@ ht-degree: 2%
 ```
 
 除非使用者指定不同的位置，否則將新專案附加為相符子區段中的最後一個專案。 保留精確的4空格縮排 — 目錄剖析取決於此縮排。
+
+**放置之前先檢查巢狀子群組。** 某些子區段（尤其是`Audience & Profile Activation`）包含巢狀群組（例如，`Real-Time Customer Data Platform (RTCDP) {#known-customer-audience-activation}`）。 編輯前請先閱讀TOC.md中受影響的子區段。 新的頂層架構頁面屬於子區段的4空格縮排層級 — **not**&#x200B;在巢狀子群組內（使用6空格縮排）。 將新專案放在最後一個巢狀子群組專案的後面，並放在下一個頂層子區段標題之前。
 
 ## 階段5：驗證
 
