@@ -174,7 +174,7 @@ ht-degree: 1%
 
 2. **使用案例模式連結** — 檔案中的每個模式連結都指向`/help/blueprints/use-case-patterns/`下的現有Markdown檔案。 使用`Read`或glob確認每個目標都存在。
 
-3. **Experience League連結** — 抽查`## Further reading`區段中的每個URL是否都以`https://experienceleague.adobe.com/`開頭。
+3. **Experience League連結** — 抽查`## Further reading`區段中的每個URL是否都以`https://experienceleague.adobe.com/zh-hant`開頭。
 
 4. **TOC專案位置** — 新專案位於正確的子區段中，使用4個空格縮排，而且路徑與產生的檔案位置完全相符。
 
