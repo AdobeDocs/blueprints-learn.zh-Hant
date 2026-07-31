@@ -3,9 +3,9 @@ title: 行為建議
 description: 瞭解如何使用選擇策略和排名模型來產生專案和內容推薦。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: db16e773-e0da-46c4-9fa5-d16f04feb46b
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+source-git-commit: 9ea30e48ec0fade2f9a97b185e35fbfa93f49c43
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1652'
 ht-degree: 5%
 
 ---
@@ -36,19 +36,25 @@ ht-degree: 5%
 
 此使用案例模式支援下列業務目標。
 
-### [推動交叉銷售和追加銷售收入](../../business-objectives/revenue-monetization/drive-cross-sell-upsell-revenue.md)
+### 推動交叉銷售和追加銷售收入
+
+[推動交叉銷售和追加銷售收入](../../business-objectives/revenue-monetization/drive-cross-sell-upsell-revenue.md)
 
 根據行為和購買記錄，向現有客戶推廣補充性和優質產品或服務。
 
 **KPI：**&#x200B;向上銷售/交叉銷售%、遞增收入、客戶期限值
 
-### [提高轉換率](../../business-objectives/revenue-monetization/increase-conversion-rates.md)
+### 提高轉換率
+
+[提高轉換率](../../business-objectives/revenue-monetization/increase-conversion-rates.md)
 
 提高完成所需動作（例如購買、註冊或提交表單）的訪客和潛在客戶的百分比。
 
 **KPI：**&#x200B;轉換率、潛在客戶轉換、每個潛在客戶的成本
 
-### [提供個人化的客戶體驗](../../business-objectives/customer-experience/deliver-personalized-customer-experiences.md)
+### 提供個人化的客戶體驗
+
+[提供個人化的客戶體驗](../../business-objectives/customer-experience/deliver-personalized-customer-experiences.md)
 
 根據個別偏好設定、行為和生命週期階段量身打造內容、選件和訊息。
 
