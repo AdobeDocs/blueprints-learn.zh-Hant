@@ -20,7 +20,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
+source-git-commit: 4134ba7db88206379e267841a4642c555a7e56d5
 workflow-type: tm+mt
 source-wordcount: 486
 ht-degree: 12%
@@ -72,4 +72,4 @@ ht-degree: 12%
 
 下圖說明在Experience Platform和應用程式上建構使用案例時應注意的主要邊緣和中樞觀察延遲。
 
-![Experience Platform [!DNL Edge Network]和中心主要觀察延遲。](/help/blueprints/experience-platform/assets/aep_edge_hub_latency_v1.svg "Experience Platform Edge Network與中心主要觀察延遲"){width="1000" zoomable="yes"}
+![Experience Platform [!DNL Edge Network]和中心主要觀察延遲。](/help/blueprints/experience-platform/assets/aep_edge_hub_latency_v1.png "Experience Platform Edge Network與中心主要觀察延遲"){width="1000" zoomable="yes"}
