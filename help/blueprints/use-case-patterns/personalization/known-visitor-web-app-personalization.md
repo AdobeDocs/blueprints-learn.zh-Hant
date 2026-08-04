@@ -105,11 +105,11 @@ ht-degree: 4%
 ### 應用程式內和內容卡頻道
 
 - [應用程式內頻道概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/get-started-in-app)
-- [應用程式內頻道必要條件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/inapp-configuration)
+- [應用程式內頻道必要條件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/inapp-configuration)
 - [建立應用程式內訊息](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/in-app/create-in-app)
 - [內容卡頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/content-card/get-started-content-card)
 - [內容卡設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/content-card/content-card-configuration)
-- [建立內容卡片](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/content-card/create-content-card)
+- [建立內容卡](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/content-card/create-content-card)
 
 ### 決定管理
 

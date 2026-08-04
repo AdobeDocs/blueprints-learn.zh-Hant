@@ -6,7 +6,7 @@ short-description: 將 RTCDP 設定檔和客群與 Adobe Target 整合。
 solution: Real-Time Customer Data Platform, Target, Experience Platform
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
-source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
+source-git-commit: 045fac8362795eefcac0ef5202fe7a90cb6875da
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 26%
@@ -45,11 +45,11 @@ ht-degree: 26%
 
 架構
 
-![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP+Target.png)
+![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP-Target.png)
 
 序列詳細資訊
 
-![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP+Target_flow.png)
+![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP-Target_flow.png)
 
 概述架構
 
