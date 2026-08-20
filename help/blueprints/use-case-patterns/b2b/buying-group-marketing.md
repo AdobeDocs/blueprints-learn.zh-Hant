@@ -1,11 +1,11 @@
 ---
 title: 購買群組式行銷與歷程管理
 description: 瞭解如何開發符合潛在客戶購買群組資格的帳戶層級歷程，以改善B2B行銷效率。
-solution: Journey Optimizer, Real-Time Customer Data Platform
+solution: Journey Optimizer B2B Edition, Real-Time Customer Data Platform
 exl-id: 2bf57f67-80c8-4368-98d2-05706427772d
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+source-git-commit: c0a9cba3d6a55fae8f149f7ca479625458cd1b22
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -99,9 +99,9 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 下列資源提供本指南所參考之應用程式和功能的其他詳細資料。
 
-### [!DNL AJO B2B Edition]
+### [!DNL Journey Optimizer B2B Edition]
 
-- [AJO B2B edition檔案首頁](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/guide-overview)
+- [Journey Optimizer B2B edition檔案首頁](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/guide-overview)
 - [購買群組概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
 - [解決方案興趣](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
 - [角色範本](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
@@ -109,14 +109,14 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 - [購買群組階段](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
 - [帳戶歷程概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
 - [帳戶歷程節點](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
-- [銷售警示電子郵件](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/sales-alert-email)
-- [CRM銷售分析](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/crm-sales-insights)
+- [銷售警示電子郵件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/journey-content/email-channel/sales-alert-email)
+- [CRM銷售分析](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/accounts/buying-groups/incrm-insights)
 
 ### B2B電子郵件與內容
 
-- [B2B電子郵件製作](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/email-authoring)
-- [在AJO B2B中編寫SMS](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/sms-authoring)
-- [用於電子郵件製作的AI助理](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/content/ai-assistant-emails)
+- [B2B電子郵件製作](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/journey-content/email-channel/email-authoring)
+- [B2B SMS製作](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/journey-content/sms-authoring)
+- [產生電子郵件製作的內容](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/journey-content/email-channel/ai-assistant-emails)
 
 ### B2B analytics和儀表板
 

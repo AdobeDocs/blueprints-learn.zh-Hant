@@ -1,16 +1,16 @@
 ---
-title: AJO B2B付費媒體控制者
+title: 帳戶Journey Orchestration — 付費媒體控制者
 description: 行銷活動的優先順序及啟用付費媒體目的地的帳戶
 solution: Journey Optimizer B2B Edition
 exl-id: a4f4982f-2b56-4ce2-9c16-abdf627f97de
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: 796e113c40b6b4e8b56e5fbbd22122c066c30c6f
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1557'
 ht-degree: 0%
 
 ---
 
-# AJO B2B — 帳戶Journey Orchestration — 付費媒體控制者
+# 帳戶Journey Orchestration — 付費媒體控制者
 
 >[!TIP]
 >此Blueprint也可作為B2B啟用與行銷下的[使用案例模式](/help/blueprints/use-case-patterns/b2b/paid-media-orchestration.md)。
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ## B2B AEP中的資料模型
 
-在任何資料導向式協調流程中，架構設計都非常重要。 AEP/RTCDP中的帳戶和人員設定檔必須包含用於&#x200B;**分割路徑條件**&#x200B;的屬性（例如，追蹤旗標、解決方案興趣、角色、意圖類別、參與分數）。 B2B結構描述（XDM商業帳戶、XDM個人設定檔、關聯式）應該代表您的階層和資料來源。 如需詳細資訊，請參閱[RTCDP B2B結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)和[AJO B2B檔案](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/home)。
+在任何資料導向式協調流程中，架構設計都非常重要。 AEP/RTCDP中的帳戶和人員設定檔必須包含用於&#x200B;**分割路徑條件**&#x200B;的屬性（例如，追蹤旗標、解決方案興趣、角色、意圖類別、參與分數）。 B2B結構描述（XDM商業帳戶、XDM個人設定檔、關聯式）應該代表您的階層和資料來源。 如需詳細資訊，請參閱[RTCDP B2B結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)和[Journey Optimizer B2B edition檔案](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/guide-overview)。
 
 **注意：**&#x200B;歷程中的分割路徑邏輯會使用設定檔，並在支援的情況下使用關聯式資料；請確定瀑布式邏輯所需的欄位可在歷程中使用。
 
