@@ -19,10 +19,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 213e2d7d73d91fa7b487289dfe62685bc32d5029
+source-git-commit: b3bc4a99bf083cccc5cec076caf7faa2d8258501
 workflow-type: tm+mt
-source-wordcount: 2322
-ht-degree: 0%
+source-wordcount: 2351
+ht-degree: 1%
 
 ---
 
@@ -146,7 +146,7 @@ B2B銷售機會管理的重點在於客戶及其銷售機會。 技術層的設�
 
    首先，您可以定義並建立體驗結構，以符合B2B使用案例需求並涵蓋批次和即時資料來源。 此設計應呈現企業思考客戶與個人實體以及您想要支援的使用案例的方式。 若要讓結構描述成為B2B結構描述，該結構描述應該遵循[RTCDP B2B結構描述檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/tutorials/relationship-b2b)中可用的結構。
 
-   一個實用的做法是從圖表中取得實體名稱，並以相同的方式標籤這些實體，以識別架構中的這些實體。 請注意，某些結構需要特定金鑰（例如`sourceKey`）才能在RTCDP B2B中運作。 短期而言，Journey Optimizer B2B不支援帳戶和人員之間透過帳戶個人關係的&#x200B;_多對多_&#x200B;關係。 使用加速器指令碼以獲得最佳起點：
+   一個實用的做法是從圖表中取得實體名稱，並以相同的方式標籤這些實體，以識別架構中的這些實體。 請注意，某些結構需要特定金鑰（例如`sourceKey`）才能在RTCDP B2B中運作。  使用加速器指令碼以獲得最佳起點：
 
    * 使用[RTCDP B2B結構描述建立指令碼](https://github.com/adobe/experience-platform-postman-samples/tree/master/Postman%20Collections/CDP%20Namespaces%20and%20Schemas%20Utility)來產生初始結構描述
    * 將使用案例特定欄位新增到產生的結構描述中，以完成結構描述以符合組織的需求。
