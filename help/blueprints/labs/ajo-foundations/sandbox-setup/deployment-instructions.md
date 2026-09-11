@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 部署指示
 description: 使用DEP CLI將AJO架構基礎實驗室套件的結構描述、資料集、資料流和範例資料部署到您的沙箱。
 doc-type: article
 solution: Experience Platform
 exl-id: 3d6e9a1c-7b2f-4e8a-9d0c-1f5a8b6c2e3d
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 1%
@@ -67,15 +66,15 @@ CLI會部署到您的環境檔案指向的任何沙箱，因此這必須在您�
 1. 複製`envFiles/sample-env.json`並賦予其新名稱，例如`my-env.json`
 2. 開啟檔案，並使用[Developer Console設定](developer-console-setup.md)中的值填入下列欄位：
 
-| **欄位** | **值** |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `API_KEY` | 使用者端ID |
-| `CLIENT_SECRET` | 使用者端密碼 |
-| `IMS_ORG` | 組織ID |
-| `SCOPES` | 必須包括Experience Platform API和Adobe Journey Optimizer API範圍&#x200B;<br />*（例如cjm.suppression\_service.client.delete、cjm.suppression\_service.client.all、openid、session、AdobeID、read\_organizations、additional\_info.projectedProductContext）* |
-| `SANDBOX_NAME` | 您定位的沙箱 — 必須為空白且型別為`dev` |
+   | **欄位** | **值** |
+   | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | `API_KEY` | 使用者端ID |
+   | `CLIENT_SECRET` | 使用者端密碼 |
+   | `IMS_ORG` | 組織ID |
+   | `SCOPES` | 必須包括Experience Platform API和Adobe Journey Optimizer API範圍&#x200B;<br />*（例如cjm.suppression\_service.client.delete、cjm.suppression\_service.client.all、openid、session、AdobeID、read\_organizations、additional\_info.projectedProductContext）* |
+   | `SANDBOX_NAME` | 您定位的沙箱 — 必須為空白且型別為`dev` |
 
-&#x200B;3. 儲存並關閉檔案
+3. 儲存並關閉檔案
 
 >[!NOTE]
 >
@@ -118,7 +117,8 @@ CLI會部署到您的環境檔案指向的任何沙箱，因此這必須在您�
 >[!NOTE]
 >
 >使用步驟6，而不是分別執行步驟4和5 — 它會在一個階段中執行相同的動作，為您處理傳輸等待。
-> [!NOTE]
+
+>[!NOTE]
 >
 >CLI會自動檢查上述所有等待時間。 如果您過早執行步驟，它會封鎖並告訴您要等待多久。
 

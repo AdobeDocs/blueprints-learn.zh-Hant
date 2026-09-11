@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 測試電子郵件
 description: 瞭解如何在Adobe Journey Optimizer中傳送及驗證校訂電子郵件，以在啟用之前驗證個人化內容和條件變體。
 doc-type: article
 solution: Experience Platform
 exl-id: 1abab39e-811c-4010-a4f5-a7adc9e4e0a4
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -33,27 +32,27 @@ ht-degree: 0%
 1. 按一下&#x200B;**模擬內容**。
 2. 選取&#x200B;**模擬內容變化**。
 
-![按一下[模擬內容]並選取[模擬內容變數]](assets/content-simulation-click-simulate-content-variation.png)
+   ![按一下[模擬內容]並選取[模擬內容變數]](assets/content-simulation-click-simulate-content-variation.png)
 
-模擬面板隨即開啟。
+   模擬面板隨即開啟。
 
-&#x200B;3. 按一下&#x200B;**傳送證明**。
+3. 按一下&#x200B;**傳送證明**。
 
-![在模擬面板中傳送校樣按鈕](assets/test-the-email-click-send-proof-button.png)
+   ![在模擬面板中傳送校樣按鈕](assets/test-the-email-click-send-proof-button.png)
 
-&#x200B;4. 新增您自己的個人電子郵件地址。
+4. 新增您自己的個人電子郵件地址。
 
->[!NOTE]
->
->請注意，有時您的公司電子郵件會封鎖來自沙箱的電子郵件。 我建議您使用個人電子郵件。
+   >[!NOTE]
+   >
+   >請注意，有時您的公司電子郵件會封鎖來自沙箱的電子郵件。 我建議您使用個人電子郵件。
 
 
 
-&#x200B;5. 選取兩個變體。
-&#x200B;6. 新增主旨列前置詞
+5. 選取兩個變體。
+6. 新增主旨列前置詞
    1. 變數1:40以上
    2. 變體2:40以下
-&#x200B;7. 按一下&#x200B;**傳送證明**。 您收到綠色的確認訊息&quot;**已成功傳送校樣**&quot;
+7. 按一下&#x200B;**傳送證明**。 您收到綠色的確認訊息&quot;**已成功傳送校樣**&quot;
 
 ![顯示證明已成功傳送的綠色確認訊息](assets/test-the-email-proofs-sent-successfully-confirmation.png)
 

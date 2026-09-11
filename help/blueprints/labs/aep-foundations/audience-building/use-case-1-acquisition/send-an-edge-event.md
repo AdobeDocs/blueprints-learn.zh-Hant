@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 傳送Edge事件
 description: 透過Postman將未驗證的網頁事件傳送至Edge，並透過事件轉送、設定檔擷取、對象資格和目的地啟用進行追蹤。
 doc-type: article
 solution: Experience Platform
 exl-id: 465d09da-e30f-404c-8778-5df06e5a199f
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 0%
@@ -139,17 +138,17 @@ ht-degree: 0%
 1. 按一下&#x200B;**檢視**&#x200B;以查閱設定檔
 1. 按一下&#x200B;**設定檔識別碼**&#x200B;以開啟設定檔
 
-![查詢設定檔並按一下設定檔ID以開啟](assets/send-an-edge-event-lookup-profile.png)
+   ![查詢設定檔並按一下設定檔ID以開啟](assets/send-an-edge-event-lookup-profile.png)
 
 
 
-&#x200B;3. 按一下頂端導覽列中的&#x200B;**事件**，您就可以看到剛才傳入的事件
+3. 按一下頂端導覽列中的&#x200B;**事件**，您就可以看到剛才傳入的事件
 
-![在設定檔的[事件]索引標籤中檢視事件](assets/send-an-edge-event-view-the-profile-event.png)
+   ![在設定檔的[事件]索引標籤中檢視事件](assets/send-an-edge-event-view-the-profile-event.png)
 
 
 
-&#x200B;4. 檢閱頂端導覽中的「對象成員資格」索引標籤，以驗證設定檔是否符合對象的資格。  您應該會看到下列內容：
+4. 檢閱頂端導覽中的「對象成員資格」索引標籤，以驗證設定檔是否符合對象的資格。  您應該會看到下列內容：
 
 - 任何事件Edge （過去15分鐘內）
 - 任何事件串流（過去一小時內）

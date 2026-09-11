@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立結構描述
 description: 使用結構描述登入API從設定檔類別和標準與自訂欄位群組參考中組合客戶結構描述。
 doc-type: article
 solution: Experience Platform
 exl-id: 78ebc5b8-d088-48e9-857f-87085a87a280
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -19,34 +18,34 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->**尚未執行呼叫……1&rbrace;**
+>**尚未執行呼叫……1}**
 
 1. 按一下`XDM Schema Lab -> Create Schema`資料夾中的`Step 4 - Create Customer Account Schema` API呼叫。
 
-![步驟4 — 在Postman集合中建立客戶帳戶結構描述API呼叫](assets/create-schema-click-on-the-step-4-create-customer-account-schema.png)
+   ![步驟4 — 在Postman集合中建立客戶帳戶結構描述API呼叫](assets/create-schema-click-on-the-step-4-create-customer-account-schema.png)
 
 
 
-&#x200B;2. 開啟呼叫的正文並檢視結構描述的定義結構。 記住結構描述一律只由一(1)個類別和一個或多個欄位群組組成。
+2. 開啟呼叫的正文並檢視結構描述的定義結構。 記住結構描述一律只由一(1)個類別和一個或多個欄位群組組成。
 
-&#x200B;3. 使用下列專案填入結構描述內文中的`title`和`description`欄位：
+3. 使用下列專案填入結構描述內文中的`title`和`description`欄位：
 
-- 標題 — > `Sample Customer Schema - <your sandbox number>`
-- 說明 — > `Sample Customer Schema - <your sandbox number>`
+   - 標題 — > `Sample Customer Schema - <your sandbox number>`
+   - 說明 — > `Sample Customer Schema - <your sandbox number>`
 
-&#x200B;4. 以您從先前完成的實驗室區段儲存的`$ids`填入`$ref`欄位： [建立自訂欄位群組](./create-custom-field-groups.md)和[取得設定檔類別](./get-profile-class.md)。 您應該對下列每個專案都有$id：
+4. 以您從先前完成的實驗室區段儲存的`$ids`填入`$ref`欄位： [建立自訂欄位群組](./create-custom-field-groups.md)和[取得設定檔類別](./get-profile-class.md)。 您應該對下列每個專案都有$id：
 
-- 類別 — > XDM個別設定檔
-- 欄位群組 — >人口統計細節
-- 欄位群組 — >個人聯絡詳細資訊
-- 欄位群組 — >同意和偏好設定詳細資料
-- 欄位群組（自訂） ->客戶帳戶詳細資料
+   - 類別 — > XDM個別設定檔
+   - 欄位群組 — >人口統計細節
+   - 欄位群組 — >個人聯絡詳細資訊
+   - 欄位群組 — >同意和偏好設定詳細資料
+   - 欄位群組（自訂） ->客戶帳戶詳細資料
 
-在新增類別和欄位群組參考之前![清空結構描述要求內文](assets/create-schema-empty-schema-api-body.png "清空結構描述API內文")
+   在新增類別和欄位群組參考之前![清空結構描述要求內文](assets/create-schema-empty-schema-api-body.png "清空結構描述API內文")
 
 
 
-&#x200B;5. 請檢閱您的最終內文，並確定其外觀類似於以下內容
+5. 請檢閱您的最終內文，並確定其外觀類似於以下內容
 
 ![已完成結構描述要求內文，並填入標題、說明和所有$ref值](assets/create-schema-example-of-final-body-payload.png "最終內文裝載的範例")
 

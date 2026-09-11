@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 驗證與驗證
 description: 在UI中預覽擷取的資料集，並執行SQL查詢以驗證批次擷取的記錄和巢狀結構描述欄位。
 doc-type: article
 solution: Experience Platform
 exl-id: 7e7cd43d-cc24-4a40-a175-2c651436ab79
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -20,13 +19,13 @@ ht-degree: 0%
 1. 按一下&#x200B;**資料集**
 1. **找到**&#x200B;並&#x200B;**按一下**&#x200B;您建立的資料集名稱。
 
-![在資料集窗格中尋找並按一下資料集名稱](assets/verification-and-validation-access-dataset-in-datasets-pane.png "存取資料集窗格中的資料集")
+   ![在資料集窗格中尋找並按一下資料集名稱](assets/verification-and-validation-access-dataset-in-datasets-pane.png "存取資料集窗格中的資料集")
 
 
 
 1. 按一下右上角的&#x200B;**預覽資料集**
 
-![在資料集熒幕右上角預覽資料集按鈕位置](assets/verification-and-validation-preview-dataset-button-location.png "預覽資料集在右上角")
+   ![在資料集熒幕右上角預覽資料集按鈕位置](assets/verification-and-validation-preview-dataset-button-location.png "預覽資料集在右上角")
 
 
 
@@ -45,7 +44,7 @@ ht-degree: 0%
 1. **關閉**&#x200B;預覽
 1. 在資料集畫面中，按一下&#x200B;**資料表名稱**&#x200B;上的復製圖示。 在下列範例畫面中，資料表名稱為`customer_account_sm`
 
-在資料集畫面中，複製資料表名稱旁的圖示![複製資料表名稱")] (assets/verification-and-validation-copy-table-name.png "
+   在資料集畫面中，複製資料表名稱旁的圖示![複製資料表名稱")](assets/verification-and-validation-copy-table-name.png "
 
 
 
@@ -53,21 +52,21 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**建立查詢**
 
-![在查詢區段中建立查詢按鈕](assets/verification-and-validation-access-the-query-editor.png)
+   ![在查詢區段中建立查詢按鈕](assets/verification-and-validation-access-the-query-editor.png)
 
 
 
 1. 將下列SQL查詢複製貼到&#x200B;**編輯器**&#x200B;中。 請記得使用您在步驟6中取得的值來取代`<table_name>`。
 
-```sql
-SELECT * FROM <table_name>
-```
+   ```sql
+   SELECT * FROM <table_name>
+   ```
 
 
 
 1. 按&#x200B;**播放**&#x200B;按鈕。
 
-![具有SQL查詢和播放按鈕的查詢編輯器介面](assets/verification-and-validation-query-editor-interface.png "查詢編輯器介面")
+   ![具有SQL查詢和播放按鈕的查詢編輯器介面](assets/verification-and-validation-query-editor-interface.png "查詢編輯器介面")
 
 
 

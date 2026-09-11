@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 修正錯誤
 description: 修正日期格式錯誤的計算欄位運算式，然後使用來源、身分和設定檔監控量度確認成功。
 doc-type: article
 solution: Experience Platform
 exl-id: 7a3d0c15-4d58-497e-bfa5-9421d5d2eea7
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -19,17 +18,17 @@ ht-degree: 0%
 
 1. 按一下填入&#x200B;**person.birthDayAndMonth** XDM欄位之計算欄位旁的箭頭圖示
 
-![birthDayAndMonth修正的計算欄位運算式編輯器](assets/fixing-errors-update-the-calculated-expression.png)
+   ![birthDayAndMonth修正的計算欄位運算式編輯器](assets/fixing-errors-update-the-calculated-expression.png)
 
 1. 使用以下計算欄位代碼更新運算式，然後按一下&#x200B;**預覽**
 
-```none
-concat(date_part("mm", date(birth_Date, "M/d/yyyy")).toString(),"-", date_part("dd", date(birth_Date, "M/d/yyyy")).toString())
-```
+   ```none
+   concat(date_part("mm", date(birth_Date, "M/d/yyyy")).toString(),"-", date_part("dd", date(birth_Date, "M/d/yyyy")).toString())
+   ```
 
->[!NOTE]
->
->資料應以2位數的月份和2位數的日期顯示（例如4月27日顯示為04-27）。 `mm`與`dd`引數新增0個內距。
+   >[!NOTE]
+   >
+   >資料應以2位數的月份和2位數的日期顯示（例如4月27日顯示為04-27）。 `mm`與`dd`引數新增0個內距。
 
 1. 如果一切看起來正常&#x200B;**儲存**&#x200B;計算欄位
 

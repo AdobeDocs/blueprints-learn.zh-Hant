@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 實驗室練習
 description: 透過可列印的活頁簿，將三個Connection 5G使用案例對應至正確的AJO架構元件和協調流程引擎。
 doc-type: article
 solution: Experience Platform
 exl-id: 9e8f24a4-f206-41fe-8107-7184c0761698
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -20,7 +19,7 @@ ht-degree: 0%
 - 將使用案例對應至架構活頁簿 — [列印下方活頁簿]
 - 筆、鉛筆或熒光筆
 
-下載檔案 — [將功能對應到Architecture Experience.pdf](assets/lab-exercise-mapping-capabilities-to-architecture-exercise.pdf)
+下載檔案 — [將功能對應到Architecture Experience.pdf](assets/lab-exercise-mapping-capabilities-to-architecture.pdf)
 
 **對於三個Connection 5G使用案例中的每一個，您都將：**
 

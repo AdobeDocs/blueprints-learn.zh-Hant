@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 在Edge上驗證設定檔
 description: 瞭解如何檢查Edge設定檔存放區和「對象成員資格」標籤，以確認Edge網路上的設定檔狀態。
 doc-type: article
 solution: Experience Platform
 exl-id: f82ceba7-6916-49ff-8776-2d0238560df8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -23,15 +22,15 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**屬性**&#x200B;標籤和&#x200B;**Edge**&#x200B;選項按鈕以檢視Edge設定檔
 
-![顯示在[屬性]索引標籤上的Edge設定檔](assets/validate-profile-on-edge-attributes-tab.png)
+   ![顯示在[屬性]索引標籤上的Edge設定檔](assets/validate-profile-on-edge-attributes-tab.png)
 
->[!NOTE]
->
->您可能會看到設定檔的「刪減」版本，其中僅包含身分，視已過去的時間而定。
+   >[!NOTE]
+   >
+   >您可能會看到設定檔的「刪減」版本，其中僅包含身分，視已過去的時間而定。
 
 
 
-&#x200B;2. 按一下「對象成員資格」標籤。  它將是&#x200B;**空白**。
+2. 按一下「對象成員資格」標籤。  它將是&#x200B;**空白**。
 
 ![Edge設定檔上的空白對象會籍標籤](assets/validate-profile-on-edge-empty-audience-membership-tab.png)
 

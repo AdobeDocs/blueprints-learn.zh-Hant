@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立優惠收藏
 description: 使用以屬性為基礎的規則，將相關的優惠方案專案群組至收藏集，以便一起透過選擇策略進行評估。
 doc-type: article
 solution: Experience Platform
 exl-id: 0a54f4dc-2112-474a-8383-9dd1497c3c74
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -24,31 +23,31 @@ ht-degree: 0%
 1. 如有必要，請在左側邊欄中展開&#x200B;**決策**，然後按一下&#x200B;**目錄**。 您會看到在上一節中建立的四個優惠方案。
 2. 按一下優惠方案名稱左邊的&#x200B;**集合**
 
-目錄頁面上的![集合索引標籤](assets/create-offer-collection-collections-tab.png)
+   目錄頁面上的![集合索引標籤](assets/create-offer-collection-collections-tab.png)
 
-&#x200B;3. 按一下藍色的&#x200B;**建立集合**&#x200B;以建立新的集合。
-&#x200B;4. 為集合&#x200B;**命名iPhone 17集合**
-&#x200B;5. 在「集合規則」區段中，按一下包含文字的文字方塊&#x200B;**_按一下以建立決定專案_**。 按一下後，畫面就會顯示建立規則的選項。
+3. 按一下藍色的&#x200B;**建立集合**&#x200B;以建立新的集合。
+4. 為集合&#x200B;**命名iPhone 17集合**
+5. 在「集合規則」區段中，按一下包含文字的文字方塊&#x200B;**_按一下以建立決定專案_**。 按一下後，畫面就會顯示建立規則的選項。
 
-![集合規則文字方塊開啟以建立決定專案](assets/create-offer-collection-create-decision-item.png)
+   ![集合規則文字方塊開啟以建立決定專案](assets/create-offer-collection-create-decision-item.png)
 
-&#x200B;6. 按一下「**選取屬性**」按鈕，然後按一下「**裝置>製作**」，瀏覽選件專案結構描述。 按一下&#x200B;**儲存，**，您會看到&#39;Make&#39;屬性現在位於決定規則中。
+6. 按一下「**選取屬性**」按鈕，然後按一下「**裝置>製作**」，瀏覽選件專案結構描述。 按一下&#x200B;**儲存，**，您會看到&#39;Make&#39;屬性現在位於決定規則中。
 
-![Device Make屬性已新增至集合規則](assets/create-offer-collection-select-make-attribute.png)
+   ![Device Make屬性已新增至集合規則](assets/create-offer-collection-select-make-attribute.png)
 
->[!NOTE]
->
->請注意，您可用的選項與您建立優惠方案專案時所用的可設定欄位相同。 由於集合是優惠方案專案的群組，因此將其分組的規則取決於其屬性也是合理的。
+   >[!NOTE]
+   >
+   >請注意，您可用的選項與您建立優惠方案專案時所用的可設定欄位相同。 由於集合是優惠方案專案的群組，因此將其分組的規則取決於其屬性也是合理的。
 
-&#x200B;7. 保留「等於」運運算元，並在值欄位中輸入文字&#x200B;**iPhone**，您會看到專案數變更為4，表示您的所有優惠方案專案都符合該條件
+7. 保留「等於」運運算元，並在值欄位中輸入文字&#x200B;**iPhone**，您會看到專案數變更為4，表示您的所有優惠方案專案都符合該條件
 
-![集合規則顯示四個符合iPhone條件的選件專案](assets/create-offer-collection-four-matching-offers.png)
+   ![集合規則顯示四個符合iPhone條件的選件專案](assets/create-offer-collection-four-matching-offers.png)
 
->[!NOTE]
->
->您也可以按一下&#x200B;**預覽集合**&#x200B;按鈕，檢視符合條件的選件專案。
+   >[!NOTE]
+   >
+   >您也可以按一下&#x200B;**預覽集合**&#x200B;按鈕，檢視符合條件的選件專案。
 
-&#x200B;8. 選取全部四個優惠方案專案後，按一下藍色的&#x200B;**「建立」**&#x200B;按鈕。 這會將您帶往顯示您新建立之集合的頁面。
+8. 選取全部四個優惠方案專案後，按一下藍色的&#x200B;**「建立」**&#x200B;按鈕。 這會將您帶往顯示您新建立之集合的頁面。
 
 ![新建立的iPhone 17集合頁面](assets/create-offer-collection-created-collection-page.png)
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 檢視結構描述
 description: 透過UI和API檢視結構描述的身分描述項，並比較已解析與未解析結構描述回應的「接受」標頭選項。
 doc-type: article
 solution: Experience Platform
 exl-id: 44eedb82-259f-4f7f-84fe-acc2b42376eb
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -28,13 +27,13 @@ ht-degree: 0%
 
 1. 按一下以選取`Step 3 - Get Customer Account Schema and its descriptors` API。
 
-![步驟3 — 使用描述項API要求取得客戶帳戶結構描述](assets/view-schema-step-3-get-customer-account-schema-w-descriptors.png "步驟3 — 使用描述項取得客戶帳戶結構描述")
+   ![步驟3 — 使用描述項API要求取得客戶帳戶結構描述](assets/view-schema-step-3-get-customer-account-schema-w-descriptors.png "步驟3 — 使用描述項取得客戶帳戶結構描述")
 
 
 
 1. 在要求的URL中，將`<replace me>`取代為您從上一節（建立您的結構描述）儲存到呼叫結尾的`$meta:altId`，如下所示
 
-![附加altId的最後步驟5要求至URL](assets/view-schema-final-step-5-request.png "最後步驟5要求")
+   ![附加altId的最後步驟5要求至URL](assets/view-schema-final-step-5-request.png "最後步驟5要求")
 
 
 
@@ -57,11 +56,11 @@ ht-degree: 0%
 
 請注意請求中使用的&#x200B;**Accept**&#x200B;標頭。 此標頭會通知XDM結構描述登入傳回結構描述的`$refs`未解析（即顯示最小資訊量），以及它在API回應中的關聯描述項。  Adobe提供其他&#x200B;**Accept**&#x200B;標頭，供您用來取得結構描述的詳細資訊。
 
-步驟3取得客戶帳戶結構描述請求&rbrack;(assets/view-schema-accept-header.png "步驟3 — 取得客戶帳戶結構描述接受標題中的!&lbrack;接受標題欄位")
+步驟3取得客戶帳戶結構描述請求](assets/view-schema-accept-header.png "步驟3 — 取得客戶帳戶結構描述接受標題中的![接受標題欄位")
 
 >[!NOTE]
 >
->您可以在這裡閱讀有關各種Accept標頭的詳細資訊 — > [Experience League結構描述API端點](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/schemas.html?lang=zh-Hant#lookup)
+>您可以在這裡閱讀有關各種Accept標頭的詳細資訊 — > [Experience League結構描述API端點](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/schemas.html?lang=en#lookup)
 
 
 

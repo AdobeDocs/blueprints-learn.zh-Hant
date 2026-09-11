@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 設定檔與身分API
 description: 在Postman中使用設定檔實體API和身分識別服務叢集API來查詢設定檔屬性、事件和連結的身分。
 doc-type: article
 solution: Experience Platform
 exl-id: 1db55c5b-fdf8-4c63-b435-477626bb0450
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 1%
@@ -80,17 +79,17 @@ ht-degree: 1%
 1. 按一下&#x200B;**實體查詢（屬性）**&#x200B;要求以開啟它
 1. 按一下&#x200B;**傳送**&#x200B;按鈕以執行呼叫
 
-傳送![&#128279;](assets/profile-and-identity-apis-entity-lookup-attributes-request.png "設定檔實體查詢（屬性） API")之前，實體查詢（屬性）呼叫的Postman要求窗格
+   傳送](assets/profile-and-identity-apis-entity-lookup-attributes-request.png "設定檔實體查詢（屬性） API")之前，實體查詢（屬性）呼叫的![Postman要求窗格
 
-成功的要求應該會以`200 OK`回應，而且您應該會看到包含Depeche Mode設定檔所有屬性的結果。
+   成功的要求應該會以`200 OK`回應，而且您應該會看到包含Depeche Mode設定檔所有屬性的結果。
 
-![200 OK回應包含Depeche模式設定檔的所有屬性](assets/profile-and-identity-apis-successful-attributes-api-response.png "成功的設定檔實體（屬性） API回應")
+   ![200 OK回應包含Depeche模式設定檔的所有屬性](assets/profile-and-identity-apis-successful-attributes-api-response.png "成功的設定檔實體（屬性） API回應")
 
->[!NOTE]
->
->根據預設，如果在設定檔實體請求中未指定合併原則，則會使用沙箱中的預設合併原則
+   >[!NOTE]
+   >
+   >根據預設，如果在設定檔實體請求中未指定合併原則，則會使用沙箱中的預設合併原則
 
-使用實體API時，您可以利用許多查詢引數來變更傳回的回應。
+   使用實體API時，您可以利用許多查詢引數來變更傳回的回應。
 
 1. 在實體查詢（屬性）要求中，按一下要求的&#x200B;**引數**&#x200B;選項
 1. 勾選名為&#x200B;**欄位**&#x200B;的&#x200B;**索引鍵**&#x200B;旁的方塊
@@ -106,7 +105,7 @@ ht-degree: 1%
 
 ![篩選的200 OK回應只顯示「名字」、「姓氏」和「使用中產品」欄位](assets/profile-and-identity-apis-successful-filtered-attributes-response.png "成功的設定檔實體查詢（屬性） API回應，並啟用篩選器")
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >恭喜！  您已使用設定檔實體API成功查詢設定檔的屬性
 

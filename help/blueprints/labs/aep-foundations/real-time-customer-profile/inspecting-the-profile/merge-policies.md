@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 合併原則
 description: 建立不含身分拼接的合併原則，並透過電子郵件、客戶ID和GAID比較設定檔查閱，以檢視身分圖表如何塑造設定檔元件。
 doc-type: article
 solution: Experience Platform
 exl-id: ac7eb22f-141e-4cd8-9a2f-6a9687c3e839
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 0%
@@ -30,7 +29,7 @@ ht-degree: 0%
    - 時間戳記優先順序 — 將所有資料集的最新記錄當做真值集使用，並讓所有其他記錄以從最近到最舊的順序填入間隙
    - 資料集優先順序 — 挑選哪些XDM個別設定檔資料集允許用於形成設定檔，以及以什麼順序進行組合
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >當選擇資料集優先順序的合併方法時，您可以選擇在設定檔的格式中允許使用哪些XDM個別設定檔和XDM體驗事件資料集。
 >
@@ -122,9 +121,9 @@ ht-degree: 0%
 1. 按一下&#x200B;**檢視**&#x200B;按鈕以查閱設定檔
 1. 按一下設定檔的&#x200B;**連結**&#x200B;以檢視設定檔的詳細資料
 
-![使用預設時間戳記合併原則，透過電子郵件查詢深度模式設定檔](assets/merge-policies-lookup-depeche-mode-default-merge-policy.png "使用預設時間戳記合併原則查詢深度模式")
+   ![使用預設時間戳記合併原則，透過電子郵件查詢深度模式設定檔](assets/merge-policies-lookup-depeche-mode-default-merge-policy.png "使用預設時間戳記合併原則查詢深度模式")
 
-再次搜尋Depeche模式設定檔，但這次使用&#x200B;**無ID拼接**&#x200B;合併原則。
+   再次搜尋Depeche模式設定檔，但這次使用&#x200B;**無ID拼接**&#x200B;合併原則。
 
 1. 在左側邊欄中的&#x200B;**設定檔**&#x200B;上按一下滑鼠右鍵，然後選取&#x200B;**在新索引標籤中開啟**
 1. 在頂端導覽列中選取&#x200B;**瀏覽**
@@ -198,7 +197,7 @@ ht-degree: 0%
 
 如果沒有身分圖表，設定檔存放區只能使用單一識別碼（即主要身分）擷取設定檔片段
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >**有一些額外的時間，並且想要實驗……：**
 >

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 選項#2 — 使用預先彙總
 description: 使用上游計算的預先彙總使用量屬性，而非彙總對象規則內的事件，以建立完整串流對象。
 doc-type: article
 solution: Experience Platform
 exl-id: fe6ee041-814f-41c1-91cf-c3473cbca0c2
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
@@ -33,19 +32,19 @@ ht-degree: 0%
 1. 建立新對象
 1. 在「非事件屬性」索引標籤上搜尋「彙總」，並將兩個「彙總」拖曳至畫布上。 為每個設定適當的運運算元和值。
 
-![為每個彙總設定適當的運運算元和值](assets/option-2-use-pre-aggregates-set-operators-and-values.png)
+   ![為每個彙總設定適當的運運算元和值](assets/option-2-use-pre-aggregates-set-operators-and-values.png)
 
 
 
-&#x200B;3. 在設定檔上搜尋計畫名稱並將其新增（XDM個別設定檔> Devbc >計畫詳細資訊>計畫名稱）。 選取不等於「Ultimate」
+3. 在設定檔上搜尋計畫名稱並將其新增（XDM個別設定檔> Devbc >計畫詳細資訊>計畫名稱）。 選取不等於「Ultimate」
 
-![選取計畫名稱不等於Ultimate](assets/option-2-use-pre-aggregates-select-does-not-equal-ultimate.png)
+   ![選取計畫名稱不等於Ultimate](assets/option-2-use-pre-aggregates-select-does-not-equal-ultimate.png)
 
 
 
-&#x200B;4. 提供說明。  驗證評估方法是串流。
+4. 提供說明。  驗證評估方法是串流。
 
-&#x200B;5. 將對象儲存為&quot;*計費資料使用量高但無Ultimate計畫(Agg)*&quot;
+5. 將對象儲存為&quot;*計費資料使用量高但無Ultimate計畫(Agg)*&quot;
 
 >[!NOTE]
 >

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立計畫參考身分
 description: 使用結構描述登入API在查詢結構描述上建立參考身分描述項，以便用於批次細分。
 doc-type: article
 solution: Experience Platform
 exl-id: b3b8f480-af3b-4bf8-b74e-3842f59691b6
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -17,15 +16,15 @@ ht-degree: 0%
 
 1. 按一下`XDM Schema Lab -> Create Relationship Descriptors`資料夾中的`Step 3 - Reference Descriptor for Plan` API要求
 
->[!CAUTION]
->
->尚未執行要求
+   >[!CAUTION]
+   >
+   >尚未執行要求
 
-![步驟3 — 計畫結構描述API請求的參考描述項](assets/create-plan-reference-identity-step-3-descriptor-request.jpeg "步驟3 — 計畫結構描述的參考描述項")
+   ![步驟3 — 計畫結構描述API請求的參考描述項](assets/create-plan-reference-identity-step-3-descriptor-request.jpeg "步驟3 — 計畫結構描述的參考描述項")
 
 
 
-&#x200B;2. 更新API呼叫內文中的下列屬性。
+2. 更新API呼叫內文中的下列屬性。
 
 - 將`xdm:sourceSchema`屬性的值更新為您從[建立結構描述](../build-schema/create-schema.md)步驟中儲存的`Customer Account`結構描述的`$id`
 - 從`Customer Account`結構描述中將`xdm:sourceProperty`的值更新為`planID`欄位的路徑
@@ -54,9 +53,9 @@ ht-degree: 0%
 
 
 
-&#x200B;3. 繼續使用`Save`按鈕前請先儲存您的請求
+3. 繼續使用`Save`按鈕前請先儲存您的請求
 
-&#x200B;4. 按一下`Send`按鈕執行API
+4. 按一下`Send`按鈕執行API
 
 您現在應該會看到如下的`201 Created`回應
 

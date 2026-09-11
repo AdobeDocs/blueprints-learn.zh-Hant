@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 設定串流目的地
 description: 使用webhook端點、治理原則、對象和欄位對應來設定HTTP API串流目的地，以測試區段啟用。
 doc-type: article
 solution: Experience Platform
 exl-id: c52d301f-b308-40fc-a59c-ace1c96ccd13
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
@@ -55,15 +54,15 @@ ht-degree: 0%
 1. 連線型別&#x200B;**無**
 1. 按一下&#x200B;**連線至目的地**
 
-![連線到目的地](assets/setup-streaming-destination-connect-to-destination.png "連線到目的地")
+   ![連線到目的地](assets/setup-streaming-destination-connect-to-destination.png "連線到目的地")
 
->[!NOTE]
->
->通常我們會在此階段新增任何驗證認證，但此webhook不需要任何認證。
+   >[!NOTE]
+   >
+   >通常我們會在此階段新增任何驗證認證，但此webhook不需要任何認證。
 
 
 
-&#x200B;3. 請依照以下步驟填寫您目的地的設定詳細資料：
+3. 請依照以下步驟填寫您目的地的設定詳細資料：
 
 - **名稱** -> `Streaming DEP Webhook - [Your Initials]`
 - **描述** -> `[your webhook endpoint you copied above]`
@@ -92,7 +91,7 @@ ht-degree: 0%
 >
 >您可以進一步瞭解Experience League中的治理政策
 >
->[https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=zh-Hant#core-actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=zh-Hant#core-actions)
+>[https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html?lang=en#core-actions)
 
 ## 選取對象
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 設定對應
 description: 從批次擷取實驗室匯入對應集，並更新計算日期欄位以符合串流來源的日期格式。
 doc-type: article
 solution: Experience Platform
 exl-id: c05792af-5eab-4e62-a26e-a54478a988a8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # 設定對應
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >請僅當您成功完成批次擷取實驗室時，才依照本節操作。  否則，請遵循在批次擷取實驗室中找到的[對應資料](../batch-ingestion/mapping-data/overview.md)步驟。
 
@@ -27,7 +26,7 @@ ht-degree: 0%
 
 1. 按一下對應畫面上的&#x200B;**匯入對應**&#x200B;按鈕
 
-對應畫面上的![匯入對應按鈕](assets/configure-mapping-import-mapping-button.png)
+   對應畫面上的![匯入對應按鈕](assets/configure-mapping-import-mapping-button.png)
 
 
 

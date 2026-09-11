@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 驗證及排程資料流
 description: 驗證完整的「訂單」對應集、預覽輸出，以及排程每15分鐘執行一次資料流。
 doc-type: article
 solution: Experience Platform
 exl-id: b7f0c43b-092c-45ba-b95b-27cb4a49d110
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 7%
@@ -57,7 +56,7 @@ ht-degree: 7%
 
 1. 預覽對應輸出。 捲動所有屬性，確保右側任何屬性旁邊都沒有紅色驚歎號。
 
-![任何對應屬性上的預覽對應畫面都沒有錯誤](assets/verify-and-schedule-dataflow-preview-mapping-screen.png "預覽對應畫面看起來像這樣")
+   ![任何對應屬性上的預覽對應畫面都沒有錯誤](assets/verify-and-schedule-dataflow-preview-mapping-screen.png "預覽對應畫面看起來像這樣")
 
 1. 在預覽的左側導覽中，選取&#x200B;**productListItems**&#x200B;物件陣列。 右側會更新為只顯示該物件陣列中的屬性。
 
@@ -69,11 +68,11 @@ ht-degree: 7%
 
 ## 排程執行
 
-1. 將頻率設定為[分鐘]並將間隔設定為[15]，以將此排程設定為每15分鐘執行&#x200B;**&#x200B;**。 檢閱流程，然後按一下「完成」。
+1. 將頻率設定為[分鐘]並將間隔設定為[15]，以將此排程設定為每15分鐘執行&#x200B;****。 檢閱流程，然後按一下「完成」。
 
->[!CAUTION]
->
->請確認您的排程已設為15分鐘。 如果您將執行排程為&#x200B;**執行一次**，則即使您稍後對對應進行變更，也無法再次執行。
+   >[!CAUTION]
+   >
+   >請確認您的排程已設為15分鐘。 如果您將執行排程為&#x200B;**執行一次**，則即使您稍後對對應進行變更，也無法再次執行。
 
 1. 資料流執行不會立即開始，而且需要幾分鐘的時間。 因此，上次資料流執行狀態已設定為&quot;*沒有執行*&quot;。
 

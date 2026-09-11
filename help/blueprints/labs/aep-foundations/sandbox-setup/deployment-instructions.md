@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 部署指示
 description: 使用DEP CLI將AEP Foundation實驗室套件的結構描述、資料集、資料流和範例設定檔資料部署到您的沙箱。
 doc-type: article
 solution: Experience Platform
 exl-id: 9f2b6d4a-8e1c-4b7a-a3d5-6c9f0e2a4b8d
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 1%
@@ -15,7 +14,7 @@ ht-degree: 1%
 
 # 部署指示
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >只有在您按照自己的進度進行Labs時，才需要這樣做。 如果您正在參加即時培訓課程或活動，您的沙箱已為您部署。
 
@@ -58,17 +57,17 @@ AEP Foundation lab pack會使用DEP CLI部署至您的沙箱，這個命令列�
 CLI會部署到您的環境檔案指向的任何沙箱，因此這必須在您執行任何操作之前正確設定。
 
 1. 複製`envFiles/sample-env.json`並賦予其新名稱，例如`my-env.json`
-2. 開啟檔案，並使用[Developer Console安裝程式](developer-console-setup.md)中的值填入下列欄位：
+1. 開啟檔案，並使用[Developer Console安裝程式](developer-console-setup.md)中的值填入下列欄位：
 
-| **欄位** | **值** |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `API_KEY` | 使用者端ID |
-| `CLIENT_SECRET` | 使用者端密碼 |
-| `IMS_ORG` | 組織ID |
-| `SCOPES` | 必須包括Experience Platform API範圍(openid、session、AdobeID、read_organizations、additional_info.projectedProductContext) |
-| `SANDBOX_NAME` | 您定位的沙箱 — 必須為空白且型別為`dev` |
+   | **欄位** | **值** |
+   | --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+   | `API_KEY` | 使用者端ID |
+   | `CLIENT_SECRET` | 使用者端密碼 |
+   | `IMS_ORG` | 組織ID |
+   | `SCOPES` | 必須包括Experience Platform API範圍(openid、session、AdobeID、read_organizations、additional_info.projectedProductContext) |
+   | `SANDBOX_NAME` | 您定位的沙箱 — 必須為空白且型別為`dev` |
 
-&#x200B;3. 儲存並關閉檔案
+1. 儲存並關閉檔案
 
 >[!NOTE]
 >
@@ -90,7 +89,7 @@ CLI會部署到您的環境檔案指向的任何沙箱，因此這必須在您�
 
 執行步驟1需要大約2分鐘，執行步驟2需要大約6分鐘，而步驟3是快速驗證，不需要自行等待。 步驟之間的60到15分鐘間隔可讓AEP在幕後完成資料傳播，這是2小時時間軸的大部分。
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >CLI會自動檢查這些等待時間。 如果您太早執行步驟，它會封鎖並告訴您還有多少分鐘剩餘 — 您不需要自己追蹤時鐘。
 

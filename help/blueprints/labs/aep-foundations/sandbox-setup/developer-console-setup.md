@@ -4,7 +4,7 @@ description: 建立具有OAuth伺服器對伺服器憑證的Adobe Developer Cons
 doc-type: article
 solution: Experience Platform
 exl-id: 4a7c9e2b-1d3f-4a6e-8b9c-2d5e7f1a3c6b
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 開發人員控制檯設定
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >只有在您按照自己的進度進行Labs時，才需要這樣做。 如果您正在參加即時培訓課程或活動，您的沙箱已為您部署。
 

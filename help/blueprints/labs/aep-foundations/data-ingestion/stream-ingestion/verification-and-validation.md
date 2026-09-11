@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 驗證與驗證
 description: 在UI中預覽串流資料集，並執行SQL查詢以驗證擷取的記錄和巢狀結構描述欄位。
 doc-type: article
 solution: Experience Platform
 exl-id: fbdb0b6b-08b6-49b8-b6ab-d59d5941c678
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -20,13 +19,13 @@ ht-degree: 0%
 1. 按一下&#x200B;**資料集**
 1. **找到**&#x200B;並&#x200B;**按一下**&#x200B;您建立的資料集名稱。
 
-![存取「資料集」窗格中建立的資料集](assets/verification-and-validation-access-the-dataset-in-the-datasets-pane.png "存取「資料集」窗格中的資料集")
+   ![存取「資料集」窗格中建立的資料集](assets/verification-and-validation-access-the-dataset-in-the-datasets-pane.png "存取「資料集」窗格中的資料集")
 
 
 
 1. 按一下右上角的&#x200B;**預覽資料集**
 
-![預覽資料集按鈕位於資料集畫面的右上角](assets/verification-and-validation-preview-dataset-button.png "預覽資料集位於右上角")
+   ![預覽資料集按鈕位於資料集畫面的右上角](assets/verification-and-validation-preview-dataset-button.png "預覽資料集位於右上角")
 
 
 
@@ -45,7 +44,7 @@ ht-degree: 0%
 1. **關閉**&#x200B;預覽
 1. 在資料集畫面中，按一下&#x200B;**資料表名稱**&#x200B;上的復製圖示。 在下列範例畫面中，資料表名稱為`customer_account_sm`
 
-![從資料集畫面複製資料表名稱以用於查詢](assets/verification-and-validation-copy-the-table-name.png "複製資料表名稱")
+   ![從資料集畫面複製資料表名稱以用於查詢](assets/verification-and-validation-copy-the-table-name.png "複製資料表名稱")
 
 
 
@@ -53,21 +52,21 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**建立查詢**
 
-![從查詢區段存取查詢編輯器](assets/verification-and-validation-access-the-query-editor.png "存取查詢編輯器")
+   ![從查詢區段存取查詢編輯器](assets/verification-and-validation-access-the-query-editor.png "存取查詢編輯器")
 
 
 
 1. 開啟&#x200B;**增強型查詢編輯器**&#x200B;的切換按鈕
 
-![查詢編輯器介面已啟用增強型查詢編輯器切換](assets/verification-and-validation-enhanced-query-editor-toggle.png "查詢編輯器介面")
+   ![查詢編輯器介面已啟用增強型查詢編輯器切換](assets/verification-and-validation-enhanced-query-editor-toggle.png "查詢編輯器介面")
 
 
 
 1. 將下列SQL查詢複製貼到&#x200B;**編輯器**&#x200B;中。 記得要以您在步驟2中取得的值取代`<table_name>`。
 
-```sql
-SELECT * FROM <table_name>
-```
+   ```sql
+   SELECT * FROM <table_name>
+   ```
 
 
 
@@ -77,9 +76,9 @@ SELECT * FROM <table_name>
 
 1. 此外，執行以下SQL查詢以擷取XDM結構描述以及資料：
 
-```sql
-SELECT to_json(shippingAddress) FROM <table_name>
-```
+   ```sql
+   SELECT to_json(shippingAddress) FROM <table_name>
+   ```
 
 
 

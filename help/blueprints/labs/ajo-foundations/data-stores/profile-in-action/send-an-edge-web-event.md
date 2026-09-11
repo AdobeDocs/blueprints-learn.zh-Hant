@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 傳送Edge網路事件
 description: 瞭解如何使用資料串流ID，透過Postman API呼叫，將模擬的網頁事件傳送至Adobe Edge Network。
 doc-type: article
 solution: Experience Platform
 exl-id: 0823bcf7-35d9-492e-ad8d-3e8327f77dd8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -73,18 +72,18 @@ ht-degree: 0%
 
 1. 按一下右上角要求中的&#x200B;**變數**
 
-在Postman工具列中的![要求中的變數選項](assets/send-an-edge-web-event-click-variables-in-request.png)
+   在Postman工具列中的![要求中的變數選項](assets/send-an-edge-web-event-click-variables-in-request.png)
 
-&#x200B;2. 從頁面上的第一個步驟使用&#x200B;**資料流識別碼**&#x200B;更新&#x200B;**DATASTREAM_CONFIG** **值**。
+2. 從頁面上的第一個步驟使用&#x200B;**資料流識別碼**&#x200B;更新&#x200B;**DATASTREAM_CONFIG** **值**。
 
-![資料流ID為](assets/send-an-edge-web-event-update-datastream-config-variable.png)的DATASTREAM_CONFIG變數已更新
+   ![資料流ID為](assets/send-an-edge-web-event-update-datastream-config-variable.png)的DATASTREAM_CONFIG變數已更新
 
-&#x200B;3. **儲存**&#x200B;您的更新（ctrl+s或command+s）
-&#x200B;4. 按一下環境側邊欄右上角的&#39;**X**&#39;以關閉側邊欄
+3. **儲存**&#x200B;您的更新（ctrl+s或command+s）
+4. 按一下環境側邊欄右上角的&#39;**X**&#39;以關閉側邊欄
 
-![儲存後關閉Postman環境側欄](assets/send-an-edge-web-event-close-environment-sidebar.png)
+   ![儲存後關閉Postman環境側欄](assets/send-an-edge-web-event-close-environment-sidebar.png)
 
-&#x200B;5. **建立Web事件**&#x200B;要求現在已準備好傳送，因為所有變數現在都是藍色的，且在環境中都有值。
+5. **建立Web事件**&#x200B;要求現在已準備好傳送，因為所有變數現在都是藍色的，且在環境中都有值。
 
 ![建立所有變數皆已填入的Web事件要求](assets/send-an-edge-web-event-request-ready-to-send.png)
 

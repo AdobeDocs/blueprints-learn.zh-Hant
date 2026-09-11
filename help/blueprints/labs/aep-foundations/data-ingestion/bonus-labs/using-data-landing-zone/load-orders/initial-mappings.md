@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 初始對應
 description: 使用計算欄位運算式，手動對應Experience事件資料集的必要_id和時間戳記欄位。
 doc-type: article
 solution: Experience Platform
 exl-id: 4052d104-bf0c-4b2d-a298-8075279aeaf8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -31,23 +30,23 @@ ht-degree: 0%
 
 1. 若要對應&#x200B;**\_id，**&#x200B;請寫入下列計算欄位運算式，然後按一下預覽
 
-```none
-concat(orderID, "-", lastOrderStatusUpdate)
-```
+   ```none
+   concat(orderID, "-", lastOrderStatusUpdate)
+   ```
 
-![已準備儲存對應_id的計算欄位](assets/initial-mappings-calculated-field-for-id-mapping.png "對應_id的計算欄位將會看起來類似這樣。 按一下[儲存]儲存計算欄位")
+   ![已準備儲存對應_id的計算欄位](assets/initial-mappings-calculated-field-for-id-mapping.png "對應_id的計算欄位將會看起來類似這樣。 按一下[儲存]儲存計算欄位")
 
-![將計算欄位對應到_id屬性](assets/initial-mappings-map-calculated-field-to-id.png "將計算欄位對應到_id")
+   ![將計算欄位對應到_id屬性](assets/initial-mappings-map-calculated-field-to-id.png "將計算欄位對應到_id")
 
 1. 請確定目標結構描述中的&#x200B;**timestamp**&#x200B;欄位已對應到下列計算欄位：
 
-```none
-lastOrderStatusUpdate
-```
+   ```none
+   lastOrderStatusUpdate
+   ```
 
-![時間戳記對應的計算欄位運算式預覽](assets/initial-mappings-expression-preview.png "請撰寫下列運算式，然後按一下[預覽]。 請注意，此值區分大小寫，必須完全以此方式撰寫")
+   ![時間戳記對應的計算欄位運算式預覽](assets/initial-mappings-expression-preview.png "請撰寫下列運算式，然後按一下[預覽]。 請注意，此值區分大小寫，必須完全以此方式撰寫")
 
-![將計算欄位運算式&quot;inStore&quot;對應到order._devbc.acqSource](assets/initial-mappings-map-instore-expression-to-acqsource.png)
+   ![將計算欄位運算式&quot;inStore&quot;對應到order._devbc.acqSource](assets/initial-mappings-map-instore-expression-to-acqsource.png)
 
 1. 將計算欄位運算式&#x200B;**&quot;inStore&quot;**&#x200B;對應至&#x200B;**order.\_devbc.acqSource**
 
@@ -57,7 +56,7 @@ lastOrderStatusUpdate
 
 如果對應畫面現在抱怨有重複的對應，例如&#x200B;**orderStatus**&#x200B;對應到&#x200B;**order.\_devbc.acqSource，**&#x200B;請按一下「 — 」圖示以移除對應。
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >請記住，多個輸入欄位無法對應至相同的輸出欄位，因為這會使對應變得模稜兩可。 但單一輸入欄位可以對應到XDM結構描述中的多個輸出欄位。
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立資料串流
 description: 瞭解如何使用Adobe Experience Platform、Offer Decisioning和Journey Optimizer服務建立和設定資料串流，以啟用Edge事件處理。
 doc-type: article
 solution: Experience Platform
 exl-id: 37873340-476a-4303-886d-de4835bba8df
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
@@ -59,15 +58,15 @@ ht-degree: 0%
 
 1. 按一下熒幕中央的藍色&#x200B;**新增服務**&#x200B;按鈕
 
-資料流設定畫面上的![新增服務按鈕](assets/create-datastream-add-service-button.png)
+   資料流設定畫面上的![新增服務按鈕](assets/create-datastream-add-service-button.png)
 
-&#x200B;2. 設定下列專案：
+2. 設定下列專案：
    - **服務** -> `Adobe Experience Platform`
    - **事件資料集** -> `dep: Web`
    - **設定檔資料集** -> `dep: Customer Account`
    - **選取核取方塊** -> `Offer Decisioning`
    - **選取核取方塊** -> `Adobe Journey Optimizer`
-&#x200B;3. 完成時，按一下&#x200B;**儲存**
+3. 完成時，按一下&#x200B;**儲存**
 
 ![Adobe Experience Platform服務設定對話方塊，包含事件和設定檔資料集欄位](assets/create-datastream-configure-aep-service.png)
 

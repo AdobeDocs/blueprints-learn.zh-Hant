@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立決定規則
 description: 建立決策規則，將享受頂級電話優惠的資格限制在較高層級計畫的客戶。
 doc-type: article
 solution: Experience Platform
 exl-id: 1c1e2d82-ca09-4074-813d-3b29af77388b
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -24,22 +23,22 @@ ht-degree: 0%
 1. 如有必要，請登入Adobe Experience Cloud並導覽至&#x200B;**Adobe Journey Optimizer。**
 2. 如有必要，請展開左側邊欄中的&#x200B;**決策**&#x200B;功能表專案，然後按一下&#x200B;**策略設定。**
 
->[!WARNING]
->
->請確定您位於決定功能表中，而不是決定管理功能表中。 如果展開「決定管理」功能表，請將其收合以避免本實驗期間的導覽混亂。
+   >[!WARNING]
+   >
+   >請確定您位於決定功能表中，而不是決定管理功能表中。 如果展開「決定管理」功能表，請將其收合以避免本實驗期間的導覽混亂。
 
 3. 按一下[資格]功能表下的&#x200B;**決策規則**，接著按右上角的&#x200B;**建立規則**&#x200B;按鈕。
 
-使用「建立規則」按鈕的![決策規則頁面](assets/create-decision-rule-create-rule-button.png)
+   使用「建立規則」按鈕的![決策規則頁面](assets/create-decision-rule-create-rule-button.png)
 
-&#x200B;4. 這樣會開啟類似區段產生器UI的畫面。 按一下&#x200B;**XDM Individual Profile > DEP > Plan Details**，然後將&#x200B;**Plan ID**&#x200B;屬性拖曳至畫布，以將Plan ID屬性新增至規則畫布。
-&#x200B;5. 將下拉式清單從equals變更為&#x200B;**contains.**
-&#x200B;6. 在方塊中輸入文字&#x200B;**2**，按&#x200B;**Tab**&#x200B;鍵以接受2值，然後輸入&#x200B;**3，**&#x200B;再次按&#x200B;**Tab**，讓規則尋找包含2或3的任何計畫ID
-&#x200B;7. 使用右側邊欄中的&#x200B;**Name**&#x200B;文字方塊來命名決定規則&#x200B;**上層計畫**。 如有需要，可新增說明。 完成後，您的決定規則應該如下所示：
+4. 這樣會開啟類似區段產生器UI的畫面。 按一下&#x200B;**XDM Individual Profile > DEP > Plan Details**，然後將&#x200B;**Plan ID**&#x200B;屬性拖曳至畫布，以將Plan ID屬性新增至規則畫布。
+5. 將下拉式清單從equals變更為&#x200B;**contains.**
+6. 在方塊中輸入文字&#x200B;**2**，按&#x200B;**Tab**&#x200B;鍵以接受2值，然後輸入&#x200B;**3，**&#x200B;再次按&#x200B;**Tab**，讓規則尋找包含2或3的任何計畫ID
+7. 使用右側邊欄中的&#x200B;**Name**&#x200B;文字方塊來命名決定規則&#x200B;**上層計畫**。 如有需要，可新增說明。 完成後，您的決定規則應該如下所示：
 
-![已完成的上層計畫決定規則，其計畫識別碼包含2或3](assets/create-decision-rule-upper-tier-plans-finished.png "已完成的上層計畫決定規則，其計畫識別碼包含2或3")
+   ![已完成的上層計畫決定規則，其計畫識別碼包含2或3](assets/create-decision-rule-upper-tier-plans-finished.png "已完成的上層計畫決定規則，其計畫識別碼包含2或3")
 
-&#x200B;8. 規則正確後，按一下右上角的藍色&#x200B;**建立**&#x200B;按鈕，您會回到策略設定頁面，而您剛才建立的決定規則列示為唯一的決定規則。
+8. 規則正確後，按一下右上角的藍色&#x200B;**建立**&#x200B;按鈕，您會回到策略設定頁面，而您剛才建立的決定規則列示為唯一的決定規則。
 
 >[!NOTE]
 >

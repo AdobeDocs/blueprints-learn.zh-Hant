@@ -4,7 +4,7 @@ description: 練習建立HTTP API串流資料流，以傳送範例訂單事件�
 doc-type: article
 solution: Experience Platform
 exl-id: 558c21d1-f9b7-489b-9153-5f10d0b8448a
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
@@ -29,6 +29,6 @@ ht-degree: 0%
 1. 在Postman中，使用必要的資訊填入&#x200B;**建立訂單事件**，以成功串流資料並將它附加至您先前建立的客戶帳戶記錄
 1. 確認訂單已連結至您的設定檔
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >祝您好運，也祝您與Adobe Experience Platform諸神同在！

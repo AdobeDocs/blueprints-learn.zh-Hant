@@ -4,7 +4,7 @@ description: 使用Postman將模擬的Order Shipped事件直接串流至中心�
 doc-type: article
 solution: Experience Platform
 exl-id: a0f75f5a-e3b3-42a2-8547-f075a7661a22
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 1. 尋找&#x200B;**dep：訂單（串流）**&#x200B;的記錄，按一下資料流連結
 1. 在右邊欄複製並將&#x200B;**資料流ID**&#x200B;值儲存到您稍後可參考的位置
 
-&#x200B;> [!WARNING]
+>[!WARNING]
 >
 >在列的空白處按一下。  請勿按一下藍色連結！
 
@@ -79,7 +79,7 @@ ht-degree: 0%
    - **綠色** —> `Dataflow ID`
      - 值類似於GUID （開頭不是http）
 
-&#x200B;> [!CAUTION]
+>[!CAUTION]
 >
 >尚未執行！
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 串流設定檔
 description: 使用Postman和串流端點及資料流ID，透過HTTP API將客戶設定檔記錄傳送至Adobe Experience Platform。
 doc-type: article
 solution: Experience Platform
 exl-id: 937d153c-9230-4f5a-a397-6c177a3ea890
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 0%
@@ -79,18 +78,18 @@ curl --location '' \
 
 1. 複製&#x200B;**串流端點**&#x200B;值並將其儲存到您的本機電腦（假設您尚未離開上一節的步驟）。 如果您確實離開了，可以在「來源」 — >「帳戶」下找到它。
 
->[!NOTE]
->
->如果您確實離開了，您可以執行下列動作來進入此頁面：
->
->- 按一下左側邊欄中的&#x200B;**來源**
->- 確定您位於&#x200B;**帳戶**&#x200B;索引標籤上，然後按一下您建立的名為&#x200B;**串流擷取 — \&lt;您的首字母>**&#x200B;的帳戶
+   >[!NOTE]
+   >
+   >如果您確實離開了，您可以執行下列動作來進入此頁面：
+   >
+   >- 按一下左側邊欄中的&#x200B;**來源**
+   >- 確定您位於&#x200B;**帳戶**&#x200B;索引標籤上，然後按一下您建立的名為&#x200B;**串流擷取 — \&lt;您的首字母>**&#x200B;的帳戶
 
->[!NOTE]
->
->如果沒有看到此值，請確定您沒有按一下資料流列來選取該列。  請勿按一下藍色連結
+   >[!NOTE]
+   >
+   >如果沒有看到此值，請確定您沒有按一下資料流列來選取該列。  請勿按一下藍色連結
 
-![串流端點URL顯示在帳戶詳細資訊的右側](assets/stream-a-profile-streaming-endpoint-url-on-the-right.png)
+   ![串流端點URL顯示在帳戶詳細資訊的右側](assets/stream-a-profile-streaming-endpoint-url-on-the-right.png)
 
 
 
@@ -106,34 +105,34 @@ curl --location '' \
 
 1. 開啟Postman並導覽至&#x200B;**資料擷取實驗室 — >建立客戶帳戶** API要求並開啟
 
-![在Postman中開啟建立客戶帳戶API請求](assets/stream-a-profile-create-customer-account-api-request.png)
+   ![在Postman中開啟建立客戶帳戶API請求](assets/stream-a-profile-create-customer-account-api-request.png)
 
 
 
 1. 複製並貼上您先前儲存至請求URL的&#x200B;**串流端點**&#x200B;值
 
-![串流端點值已貼入建立客戶帳戶請求URL](assets/stream-a-profile-create-customer-account-streaming-endpoint-url.png)
+   ![串流端點值已貼入建立客戶帳戶請求URL](assets/stream-a-profile-create-customer-account-streaming-endpoint-url.png)
 
 
 
 1. 複製並貼上您先前儲存的資料流ID值至&#x200B;**x-adobe-flow-id**&#x200B;標頭值
 
-![資料流ID已貼到x-adobe-flow-id標頭值中](assets/stream-a-profile-copy-paste-x-adobe-flow-id.png)
+   ![資料流ID已貼到x-adobe-flow-id標頭值中](assets/stream-a-profile-copy-paste-x-adobe-flow-id.png)
 
 
 
 1. 在請求內文中，更新以下屬性，如下所示：
 
-- **名字** ->您的名字
-- **姓氏** ->您的姓氏
-- **電子郵件** ->您的電子郵件地址
-- **出生日期** -> YYYY-MM-DD
+   - **名字** ->您的名字
+   - **姓氏** ->您的姓氏
+   - **電子郵件** ->您的電子郵件地址
+   - **出生日期** -> YYYY-MM-DD
 
-**5. 儲存**&#x200B;您的請求
+   **5. 儲存**&#x200B;您的請求
 
 1. 按一下&#x200B;**傳送**&#x200B;按鈕，執行在您的客戶帳戶設定檔中串流的請求
 
-![最終建立客戶帳戶要求已準備好在Postman中傳送](assets/stream-a-profile-final-create-customer-account-request.png)
+   ![最終建立客戶帳戶要求已準備好在Postman中傳送](assets/stream-a-profile-final-create-customer-account-request.png)
 
 
 

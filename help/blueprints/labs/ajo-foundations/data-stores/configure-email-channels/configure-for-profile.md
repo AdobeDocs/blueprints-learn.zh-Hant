@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 為設定檔進行設定
 description: 瞭解如何使用AEP設定檔personalEmail.address屬性來設定歷程與協調行銷活動的電子郵件頻道。
 doc-type: article
 solution: Experience Platform
 exl-id: bb85e0aa-554e-4527-bf91-e7fd4f69ce71
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 8%
@@ -24,9 +23,9 @@ ht-degree: 8%
 1. 瀏覽至&#x200B;**頻道設定**，可在&#x200B;**管理→頻道→一般設定**&#x200B;下找到
 2. 按一下&#x200B;**建立組態**&#x200B;按鈕
 
-![建立頻道設定](assets/configure-for-profile-create-configuration-button.png)
+   ![建立頻道設定](assets/configure-for-profile-create-configuration-button.png)
 
-&#x200B;3. 在建立精靈中設定下列值：
+3. 在建立精靈中設定下列值：
    - **名稱：** `Profile-Email`
    - **頻道：** `Email`
    - **行銷動作：** `Email Targeting`
@@ -95,45 +94,45 @@ ht-degree: 8%
 
 1. 完成&#x200B;**執行詳細資料**&#x200B;區段。 在&#x200B;**歷程與動作**&#x200B;索引標籤 — > **執行維度**&#x200B;下，選取&#x200B;**設定檔**&#x200B;做為&#x200B;**Source**，然後按一下&#x200B;**執行地址**&#x200B;區段下&#x200B;**傳遞地址**&#x200B;的編輯圖示
 
-![執行詳細資料](assets/configure-for-profile-execution-details-journey-tab.png)
+   ![執行詳細資料](assets/configure-for-profile-execution-details-journey-tab.png)
 
-&#x200B;2. 按一下標題為&#x200B;**個人電子郵件**&#x200B;的資料夾以開啟
+2. 按一下標題為&#x200B;**個人電子郵件**&#x200B;的資料夾以開啟
 
-![傳遞地址](assets/configure-for-profile-personal-email-folder.png)
+   ![傳遞地址](assets/configure-for-profile-personal-email-folder.png)
 
-&#x200B;3. 按一下`Address`欄位上的&#x200B;**核取方塊**，然後按一下&#x200B;**選取**&#x200B;按鈕
+3. 按一下`Address`欄位上的&#x200B;**核取方塊**，然後按一下&#x200B;**選取**&#x200B;按鈕
 
-![個人電子郵件作為傳遞地址](assets/configure-for-profile-select-address-checkbox-journeys.png)
+   ![個人電子郵件作為傳遞地址](assets/configure-for-profile-select-address-checkbox-journeys.png)
 
-&#x200B;4. 針對&#x200B;**設定檔**，`personalEmail.address`現在已設定為&#x200B;**執行地址**&#x200B;區段下的&#x200B;**傳遞地址**
+4. 針對&#x200B;**設定檔**，`personalEmail.address`現在已設定為&#x200B;**執行地址**&#x200B;區段下的&#x200B;**傳遞地址**
 
-![已設定的傳遞位址](assets/configure-for-profile-delivery-address-configured-journeys.png)
+   ![已設定的傳遞位址](assets/configure-for-profile-delivery-address-configured-journeys.png)
 
-&#x200B;5. 按一下[協調的行銷活動]索引標籤，然後&#x200B;**核取**&#x200B;[啟用]核取方塊。
+5. 按一下[協調的行銷活動]索引標籤，然後&#x200B;**核取**[啟用]核取方塊。
 
-![協調的行銷活動設定](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
+   ![協調的行銷活動設定](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
 
-&#x200B;6. 在執行維度標題下，設定以下專案：
+6. 在執行維度標題下，設定以下專案：
    - **針對每個**&#x200B;傳遞一封郵件`Target Dimension`
    - **設定檔目標Dimension：** `dep-rel: Customer Account - customer_id`
 
-![目標Dimension](assets/configure-for-profile-target-dimension-settings.png)
+   ![目標Dimension](assets/configure-for-profile-target-dimension-settings.png)
 
-&#x200B;7. 在執行位址下設定以下專案：
+7. 在執行位址下設定以下專案：
    - **Source：** `Profile`
    - **傳遞位址：** `click on the Edit icon`
 
-![執行位址](assets/configure-for-profile-execution-address-source-profile.png)
+   ![執行位址](assets/configure-for-profile-execution-address-source-profile.png)
 
-&#x200B;8. 搜尋並按一下`Personal Email`資料夾以開啟它
+8. 搜尋並按一下`Personal Email`資料夾以開啟它
 
-![個人電子郵件設定檔屬性](assets/configure-for-profile-search-personal-email-folder.png)
+   ![個人電子郵件設定檔屬性](assets/configure-for-profile-search-personal-email-folder.png)
 
-&#x200B;9. 選取[個人電子郵件]資料夾中的`Address`欄位並按一下[選取] **&#x200B;**
+9. 選取[個人電子郵件]資料夾中的`Address`欄位並按一下[選取] ****
 
-![個人電子郵件作為傳遞地址](assets/configure-for-profile-select-address-field-orchestrated.png)
+   ![個人電子郵件作為傳遞地址](assets/configure-for-profile-select-address-field-orchestrated.png)
 
-&#x200B;10. 針對&#x200B;**協調的行銷活動**，**dep-rel：客戶帳戶 — customer\_id**&#x200B;已設定為&#x200B;**執行維度**&#x200B;的&#x200B;**設定檔目標Dimension**，**執行地址**&#x200B;的&#x200B;**Source**&#x200B;為&#x200B;**設定檔**，而`personalEmail.address`為&#x200B;**傳遞地址**
+10. 針對&#x200B;**協調的行銷活動**，**dep-rel：客戶帳戶 — customer\_id**&#x200B;已設定為&#x200B;**執行維度**&#x200B;的&#x200B;**設定檔目標Dimension**，**執行地址**&#x200B;的&#x200B;**Source**&#x200B;為&#x200B;**設定檔**，而`personalEmail.address`為&#x200B;**傳遞地址**
 
 ![執行維度已設定](assets/configure-for-profile-orchestrated-execution-dimension-configured.png)
 
@@ -147,7 +146,7 @@ ht-degree: 8%
 1. 再次檢視所有詳細資料以確保其相符。
 1. 向上捲動並按一下&#x200B;**提交**。
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >已觀察到處理電子郵件通道設定最多需要2小時！  啊呀！
 >

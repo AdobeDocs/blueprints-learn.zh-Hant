@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 登入和瀏覽
 description: 登入Adobe Experience Platform並導覽至「方案」區段，以瀏覽現有方案、欄位群組和資料型別。
 doc-type: article
 solution: Experience Platform
 exl-id: 35cac81f-4711-425e-8df1-b0c302eda562
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -43,7 +42,7 @@ ht-degree: 0%
 
 1. 按一下左側邊欄中的&#x200B;**結構描述**&#x200B;索引標籤
 
-左側邊欄導覽中的![結構描述索引標籤](assets/login-and-browse-schemas-tab-left-rail.png "使用左側邊欄導覽至結構描述")
+   左側邊欄導覽中的![結構描述索引標籤](assets/login-and-browse-schemas-tab-left-rail.png "使用左側邊欄導覽至結構描述")
 
 1. 在上方導覽列中，您會看到瀏覽現有結構描述的選項，以及檢視目前位於XDM登入中的欄位群組和資料型別的選項。
 

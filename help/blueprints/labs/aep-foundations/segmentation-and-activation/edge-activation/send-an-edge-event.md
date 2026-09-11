@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 傳送Edge事件
 description: 透過Postman將未驗證的Web事件傳送至Edge，並驗證其是否透過事件轉送、設定檔擷取和邊緣對象資格進行。
 doc-type: article
 solution: Experience Platform
 exl-id: 8d6e9552-1fa0-4f12-928c-03f836c1652e
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -110,11 +109,11 @@ ht-degree: 0%
 1. 按一下&#x200B;**檢視**&#x200B;以查閱設定檔
 1. 按一下&#x200B;**設定檔識別碼**&#x200B;以開啟設定檔
 
-![具有[檢視]連結的設定檔瀏覽搜尋結果，以開啟符合的設定檔](assets/send-an-edge-event-lookup-profile.png "查詢設定檔")
+   ![具有[檢視]連結的設定檔瀏覽搜尋結果，以開啟符合的設定檔](assets/send-an-edge-event-lookup-profile.png "查詢設定檔")
 
 1. 按一下頂端導覽列中的&#x200B;**事件**，您就可以看到剛才傳入的事件
 
-![顯示剛傳送至Edge之體驗事件的[設定檔事件]索引標籤](assets/send-an-edge-event-view-profile-event.png "檢視設定檔事件")
+   ![顯示剛傳送至Edge之體驗事件的[設定檔事件]索引標籤](assets/send-an-edge-event-view-profile-event.png "檢視設定檔事件")
 
 1. 檢閱頂端導覽中的「對象成員資格」索引標籤，以驗證設定檔是否符合對象的資格。 您應該會看到下列內容：
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立資料串流
 description: 使用事件轉送和Adobe Experience Platform服務建立及設定資料串流，以路由傳入的邊緣事件。
 doc-type: article
 solution: Experience Platform
 exl-id: f7ada451-2f87-48f4-8673-7bfa0df9d0d3
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 1%
@@ -58,13 +57,13 @@ ht-degree: 1%
 
 1. 按一下&#x200B;**新增服務**
 
-![含有[新增服務]按鈕的資料流詳細資訊頁面](assets/create-datastream-add-service-button.png "新增服務")
+   ![含有[新增服務]按鈕的資料流詳細資訊頁面](assets/create-datastream-add-service-button.png "新增服務")
 
 1. 設定下列專案：
 
-- 服務 — >事件轉送
-- 屬性 — >選取您在上一步建立的屬性。  其命名方式應如下所示：事件轉送屬性SB + \&lt;您的沙箱編號>
-- 環境 — >開發
+   - 服務 — >事件轉送
+   - 屬性 — >選取您在上一步建立的屬性。  其命名方式應如下所示：事件轉送屬性SB + \&lt;您的沙箱編號>
+   - 環境 — >開發
 
 1. 完成時，按一下&#x200B;**儲存**
 
@@ -80,17 +79,17 @@ ht-degree: 1%
 
 1. 按一下&#x200B;**新增服務**
 
-![反白顯示[新增服務]按鈕的資料流詳細資訊頁面，以新增Adobe Experience Platform服務](assets/create-datastream-add-second-service-button.png "新增服務")
+   ![反白顯示[新增服務]按鈕的資料流詳細資訊頁面，以新增Adobe Experience Platform服務](assets/create-datastream-add-second-service-button.png "新增服務")
 
 1. 設定下列專案：
 
-- 服務 — > Adobe Experience Platform
-- 事件資料集 — > dep： Web
-- 設定檔資料集 — > dep：客戶帳戶
-- 選取核取方塊 — > Edge分段
-- 選取核取方塊 — > Personalization目的地
+   - 服務 — > Adobe Experience Platform
+   - 事件資料集 — > dep： Web
+   - 設定檔資料集 — > dep：客戶帳戶
+   - 選取核取方塊 — > Edge分段
+   - 選取核取方塊 — > Personalization目的地
 
-![Adobe Experience Platform服務設定，包含事件資料集、設定檔資料集和分段核取方塊集](assets/create-datastream-aep-service-config.png "設定服務")
+   ![Adobe Experience Platform服務設定，包含事件資料集、設定檔資料集和分段核取方塊集](assets/create-datastream-aep-service-config.png "設定服務")
 
 1. 完成時，按一下&#x200B;**儲存**。
 

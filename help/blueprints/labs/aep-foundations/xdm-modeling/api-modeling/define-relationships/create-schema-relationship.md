@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立結構描述關係
 description: 使用結構描述登入API建立一對一的關係描述項，將客戶帳戶結構描述連結至查詢計畫結構描述。
 doc-type: article
 solution: Experience Platform
 exl-id: c9079585-fff1-4ee1-8992-93825fcde759
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -17,15 +16,15 @@ ht-degree: 0%
 
 1. 按一下`XDM Schema Lab -> Create Relationship Descriptors`資料夾中的`Step 2 - Relationship Descriptor Customer Account To Plan` API要求
 
->[!CAUTION]
->
->尚未執行要求
+   >[!CAUTION]
+   >
+   >尚未執行要求
 
-![步驟2 — 規劃API要求的關係描述項客戶帳戶](assets/create-schema-relationship-step-2-descriptor-request.png "步驟2 — 規劃的關係描述項客戶帳戶")
+   ![步驟2 — 規劃API要求的關係描述項客戶帳戶](assets/create-schema-relationship-step-2-descriptor-request.png "步驟2 — 規劃的關係描述項客戶帳戶")
 
 
 
-&#x200B;2. 更新API呼叫內文中的下列屬性。
+2. 更新API呼叫內文中的下列屬性。
 
 - 將`xdm:sourceSchema`屬性的值設定為您從[建立結構描述](../build-schema/create-schema.md)實驗室步驟中儲存的客戶帳戶結構描述的`$id`
 - 將`xdm:sourceProperty`的值設為客戶帳戶結構描述中`planID`欄位的路徑。
@@ -58,9 +57,9 @@ ht-degree: 0%
 
 
 
-&#x200B;3. 繼續使用`Save`按鈕前請先儲存您的請求
+3. 繼續使用`Save`按鈕前請先儲存您的請求
 
-&#x200B;4. 按一下`Send`按鈕執行API
+4. 按一下`Send`按鈕執行API
 
 您現在應該會看到如下的`201 Created`回應
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 決策和CBE的實際運作
 description: 使用Postman傳送測試設定檔的體驗事件，並驗證資格、排名和頻率上限傳回正確的優惠。
 doc-type: article
 solution: Experience Platform
 exl-id: 540e50c9-bf39-49a4-ae63-c1d7b94f6b8c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '2147'
 ht-degree: 0%
@@ -34,7 +33,7 @@ ht-degree: 0%
 1. 如有必要，請展開左側邊欄中的&#x200B;**客戶**&#x200B;專案，然後按一下&#x200B;**設定檔**
 1. 按一下「**瀏覽**」標籤，在已經為您建立或您作為先前Labs的一部分建立的所有設定檔中，您會看到這三個設定檔。
 
-在Postman集合中找出每個設定檔的對應體驗事件
+   在Postman集合中找出每個設定檔的對應體驗事件
 
 1. 如有必要，請開啟Postman
 1. 請確定&#x200B;**EDGE\_REGION**&#x200B;和&#x200B;**DATASTREAM\_CONFIG**&#x200B;環境變數仍已設定。 如果需要重新設定，請檢閱「匯入環境和收集」實驗室中的步驟。
@@ -44,7 +43,7 @@ ht-degree: 0%
 
 ## 傳入體驗事件
 
-&#x200B;> [!IMPORTANT]
+>[!IMPORTANT]
 >
 >請勿略過本章節的開頭文字說明！
 
@@ -69,48 +68,48 @@ Adobe Target活動和AJO Web Channel可讓AEP Web SDK自動擷取和套用其回
 1. 按一下&#x200B;**Bob - Page Bottom資料彙集**&#x200B;請求。
 2. 按一下&#x200B;**內文**&#x200B;標籤，並注意正在傳遞的引數，例如IdentityMap中的customerID名稱空間（表示他已驗證），以及傳遞到「phones\：apple\：iphone 17\：overview」頁面名稱中的「web.webPageDetails.name」引數。
 
-![Bob - Postman中的頁面底部資料收集要求內文](assets/decisioning-and-cbes-in-action-bob-page-bottom-request.png)
+   ![Bob - Postman中的頁面底部資料收集要求內文](assets/decisioning-and-cbes-in-action-bob-page-bottom-request.png)
 
-&#x200B;3. 按一下右上角的&#x200B;**傳送**&#x200B;以傳送頁面檢視。 您會得到類似以下的回應
+3. 按一下右上角的&#x200B;**傳送**&#x200B;以傳送頁面檢視。 您會得到類似以下的回應
 
-傳送Bob的Page Bottom資料收集事件後收到![回應](assets/decisioning-and-cbes-in-action-bob-data-collection-response.png)
+   傳送Bob的Page Bottom資料收集事件後收到![回應](assets/decisioning-and-cbes-in-action-bob-data-collection-response.png)
 
-&#x200B;4. 收到適當的回應後，請再按一下&#x200B;**傳送**，以第二次重新傳送相同的Page bottom事件。 等候幾秒鐘，然後為Bob設定檔傳送第3個資料收集呼叫。 您總共已傳送3個頁面底部呼叫。
+4. 收到適當的回應後，請再按一下&#x200B;**傳送**，以第二次重新傳送相同的Page bottom事件。 等候幾秒鐘，然後為Bob設定檔傳送第3個資料收集呼叫。 您總共已傳送3個頁面底部呼叫。
 
-此時，系統正在處理這些點選，並將Bob新增至「dep：對iPhone 17感興趣」串流區段。 完成後，Bob會進入歷程。 進入歷程後，只需要幾分鐘的時間，Bob就會進入歷程，並將區段預計到Bob的Edge設定檔商店。
+   此時，系統正在處理這些點選，並將Bob新增至「dep：對iPhone 17感興趣」串流區段。 完成後，Bob會進入歷程。 進入歷程後，只需要幾分鐘的時間，Bob就會進入歷程，並將區段預計到Bob的Edge設定檔商店。
 
-&#x200B;5. 返回AJO UI並按一下左側邊欄中的&#x200B;**設定檔**，然後按一下&#x200B;**瀏覽**&#x200B;索引標籤。
-&#x200B;6. 使用值為&#x200B;**287415903**&#x200B;的&#x200B;**customerID**&#x200B;名稱空間搜尋Bob的設定檔。
+5. 返回AJO UI並按一下左側邊欄中的&#x200B;**設定檔**，然後按一下&#x200B;**瀏覽**&#x200B;索引標籤。
+6. 使用值為&#x200B;**287415903**&#x200B;的&#x200B;**customerID**&#x200B;名稱空間搜尋Bob的設定檔。
 
-![使用customerID名稱空間搜尋Bob的設定檔](assets/decisioning-and-cbes-in-action-search-bob-profile.png)
+   ![使用customerID名稱空間搜尋Bob的設定檔](assets/decisioning-and-cbes-in-action-search-bob-profile.png)
 
-&#x200B;7. 按一下&#x200B;**檢視**&#x200B;以開啟Bob的設定檔（Bob的設定檔顏色可能與熒幕擷圖中所顯示的顏色不同）。
+7. 按一下&#x200B;**檢視**&#x200B;以開啟Bob的設定檔（Bob的設定檔顏色可能與熒幕擷圖中所顯示的顏色不同）。
 
-![Bob的設定檔頁面已在AJO中開啟](assets/decisioning-and-cbes-in-action-bob-profile-opened.png)
+   ![Bob的設定檔頁面已在AJO中開啟](assets/decisioning-and-cbes-in-action-bob-profile-opened.png)
 
-&#x200B;8. 在Bob的個人檔案開啟後，按一下&#x200B;**對象成員資格**&#x200B;標籤，您會看到Bob現在是「dep：對iPhone 17感興趣」區段的成員，至少從AEP Hub的角度是這樣。
-&#x200B;9. 按一下&#x200B;**屬性，**，然後選取&#x200B;**Edge**&#x200B;選項按鈕以切換至Edge檢視。
+8. 在Bob的個人檔案開啟後，按一下&#x200B;**對象成員資格**&#x200B;標籤，您會看到Bob現在是「dep：對iPhone 17感興趣」區段的成員，至少從AEP Hub的角度是這樣。
+9. 按一下&#x200B;**屬性，**，然後選取&#x200B;**Edge**&#x200B;選項按鈕以切換至Edge檢視。
 
-使用Edge選項按鈕的![屬性標籤以切換設定檔檢視](assets/decisioning-and-cbes-in-action-edge-view-toggle.png)
+   使用Edge選項按鈕的![屬性標籤以切換設定檔檢視](assets/decisioning-and-cbes-in-action-edge-view-toggle.png)
 
->[!WARNING]
->
->很遺憾發生UI錯誤，您必須按一下「屬性」標籤，將選項按鈕切換至Edge。
+   >[!WARNING]
+   >
+   >很遺憾發生UI錯誤，您必須按一下「屬性」標籤，將選項按鈕切換至Edge。
 
 
 
-&#x200B;10. 再按一下&#x200B;**對象成員資格，**，如果您執行這些步驟的速度足夠快，您會看到已選取Edge，並顯示Bob沒有「對象」成員資格
+10. 再按一下&#x200B;**對象成員資格，**，如果您執行這些步驟的速度足夠快，您會看到已選取Edge，並顯示Bob沒有「對象」成員資格
 
 ![Bob設定檔的Edge檢視尚未顯示對象成員資格](assets/decisioning-and-cbes-in-action-edge-audience-membership-empty.png)
 
-&#x200B;11. 在新的瀏覽器索引標籤中，導覽至您建立的歷程，然後按一下進入該歷程。 您會看到有一個設定檔已進入歷程且現在位於CBE節點。
+11. 在新的瀏覽器索引標籤中，導覽至您建立的歷程，然後按一下進入該歷程。 您會看到有一個設定檔已進入歷程且現在位於CBE節點。
 
 ![歷程畫布顯示Bob的設定檔已進入且位於CBE節點](assets/decisioning-and-cbes-in-action-bob-enters-journey.png)
 
 此時，Bob已進入Journey，且Edge投影目前正在組裝一個投影，以更新Bob在Edge上的設定檔。
 
-&#x200B;12. 切換回Postman，然後按一下Bob的第二個Experience Event呼叫，**Bob — 頁面頂端擷取。**
-&#x200B;13. 按一下&#x200B;**傳送**。 會發生什麼事？
+12. 切換回Postman，然後按一下Bob的第二個Experience Event呼叫，**Bob — 頁面頂端擷取。**
+13. 按一下&#x200B;**傳送**。 會發生什麼事？
     - 如果Bob的Edge設定檔尚未更新，您對於從資料收集呼叫得到的回應會非常類似。 如果是這種情況，請等待一兩分鐘，然後嘗試再次傳送Bob的頁面熱門擷取呼叫。
     - 如果Bob的Edge設定檔已更新，您將會收到先前設定JSON的回應，以及用於報表的其他資訊。 但在繼續之前，應該提供哪些iPhone 17產品？
 
@@ -118,19 +117,19 @@ Adobe Target活動和AJO Web Channel可讓AEP Web SDK自動擷取和套用其回
 
 ![Postman回應，顯示為Bob](assets/decisioning-and-cbes-in-action-bob-base-offer-response.png)傳回的基本層級優惠
 
-&#x200B;14. 請記住，此Postman要求會自動傳送此選件的顯示通知，因此AJO已為此選件記錄至少一次曝光。 再按一下&#x200B;**傳送**&#x200B;以傳送第二次曝光。 確認已再次傳回基本選件。
-&#x200B;15. 回想一下，3次曝光的頻率上限適用於Base、Pro和Ultra層機型。 按一下第三次&#x200B;**傳送**，以取得基礎層級的第三回應，並錄製另一個印象。
-&#x200B;16. 再按四次&#x200B;**傳送**，會發生什麼事？ 已達基本層級優惠方案的頻率上限，而您會在回應中收到一般優惠方案：
+14. 請記住，此Postman要求會自動傳送此選件的顯示通知，因此AJO已為此選件記錄至少一次曝光。 再按一下&#x200B;**傳送**&#x200B;以傳送第二次曝光。 確認已再次傳回基本選件。
+15. 回想一下，3次曝光的頻率上限適用於Base、Pro和Ultra層機型。 按一下第三次&#x200B;**傳送**，以取得基礎層級的第三回應，並錄製另一個印象。
+16. 再按四次&#x200B;**傳送**，會發生什麼事？ 已達基本層級優惠方案的頻率上限，而您會在回應中收到一般優惠方案：
 
 ![Postman回應，顯示在達到頻率上限後傳回的一般優惠方案](assets/decisioning-and-cbes-in-action-bob-generic-offer-after-cap.png)
 
-&#x200B;17. 再按一下&#x200B;**傳送**，您就會看到一般階層選件。 您可以再按一下「傳送100次」，系統會將相同的選件傳回，直到次日頻率上限重設為止。
+17. 再按一下&#x200B;**傳送**，您就會看到一般階層選件。 您可以再按一下「傳送100次」，系統會將相同的選件傳回，直到次日頻率上限重設為止。
 
 >[!WARNING]
 >
 >請記住，在AJO，一天會在格林威治標準時間午夜重設。 如果您在GMT午夜之後再傳送擷取呼叫，則會看到基礎層級選件傳回。
 
-&#x200B;18. 返回Journey Orchestration UI並按一下進入您建立的&#x200B;**iPhone 17放棄瀏覽**&#x200B;歷程。 由於歷程為即時狀態並發佈，因此您會開始看到統計資料。 您會看到1個設定檔已進入歷程且目前位於CBE節點。
+18. 返回Journey Orchestration UI並按一下進入您建立的&#x200B;**iPhone 17放棄瀏覽**&#x200B;歷程。 由於歷程為即時狀態並發佈，因此您會開始看到統計資料。 您會看到1個設定檔已進入歷程且目前位於CBE節點。
 
 ![歷程報告顯示目前位於CBE節點的一個設定檔](assets/decisioning-and-cbes-in-action-bob-enters-journey.png)
 
@@ -147,15 +146,15 @@ Adobe Target活動和AJO Web Channel可讓AEP Web SDK自動擷取和套用其回
 3. 等候幾分鐘讓三個設定檔符合串流區段的資格，進入歷程，然後將CBE投影到其Edge設定檔。
 4. 視需要多次傳送「頁面頂端擷取」呼叫，以驗證「決策」規則和「排名」公式是否如預期運作。
 
-**決策設定檔：預期行為**
+   **決策設定檔：預期行為**
 
-| 名字 | 姓氏 | 第1個選件 | 第2個選件 | 第3個選件 | 第4個選件 |
-| ---------- | ------------ | --------- | --------- | --------- | --------- |
-| Bob | 基本 | 基礎 | 通用 | 通用 | 通用 |
-| Peter | 專業 | Pro | 基礎 | 通用 | 通用 |
-| Ursula | Ultimate | Ultra | Pro | 基礎 | 通用 |
+   | 名字 | 姓氏 | 第1個選件 | 第2個選件 | 第3個選件 | 第4個選件 |
+   | ---------- | ------------ | --------- | --------- | --------- | --------- |
+   | Bob | 基本 | 基礎 | 通用 | 通用 | 通用 |
+   | Peter | 專業 | Pro | 基礎 | 通用 | 通用 |
+   | Ursula | Ultimate | Ultra | Pro | 基礎 | 通用 |
 
-&#x200B;5. 完成後，請返回歷程。 您會看到所有3個設定檔均已進入歷程並位於CBE節點。
+5. 完成後，請返回歷程。 您會看到所有3個設定檔均已進入歷程並位於CBE節點。
 
 >[!NOTE]
 >

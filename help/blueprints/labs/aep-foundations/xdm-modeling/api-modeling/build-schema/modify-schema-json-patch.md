@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 修改結構 — JSON修補程式
 description: 使用JSON PATCH API呼叫將新欄位新增至現有租使用者欄位群組，並檢視反映在結構描述中的變更。
 doc-type: article
 solution: Experience Platform
 exl-id: c0313594-d998-4525-a0a4-d9d844bed5ef
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -22,7 +21,7 @@ ht-degree: 0%
 若要深入瞭解JSON PATCH，請前往下列連結，但在本實驗中，假設您對此運作方式有一些概念😄
 
 - [https://jsonpatch.com/](https://jsonpatch.com/)
-- [Experience League API基礎知識](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=zh-Hant#json-patch)
+- [Experience League API基礎知識](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=en#json-patch)
 
 ![將遺失的planDescription欄位修補到現有結構描述中的圖表](assets/modify-schema-json-patch-patching-missing-plan-description-field.png "在遺失的欄位計畫描述中修補")
 
@@ -48,11 +47,11 @@ ht-degree: 0%
 1. 選取位於`XDM Schema Lab -> Customize Schema`資料夾中的`Step 1 - Get Tenant Field groups` API呼叫
 1. 按一下`Send`按鈕以執行要求
 
-![步驟1 — 取得租使用者欄位群組API要求](assets/modify-schema-json-patch-step-1-get-tenant-field-groups.png "步驟1 — 取得租使用者欄位群組")
+   ![步驟1 — 取得租使用者欄位群組API要求](assets/modify-schema-json-patch-step-1-get-tenant-field-groups.png "步驟1 — 取得租使用者欄位群組")
 
->[!NOTE]
->
->請記得您在自訂欄位群組中建立`plan`物件。 在XDM結構描述登入中自訂建立的物件稱為「租使用者」，因此使用`/schemaregistry/tenant/mixins/`路徑的API呼叫。
+   >[!NOTE]
+   >
+   >請記得您在自訂欄位群組中建立`plan`物件。 在XDM結構描述登入中自訂建立的物件稱為「租使用者」，因此使用`/schemaregistry/tenant/mixins/`路徑的API呼叫。
 
 
 
@@ -129,32 +128,32 @@ ht-degree: 0%
 
 1. 按一下`XDM Schema Lab -> Customize Schema`資料夾中的`Step 3 - Modify Tenant Field group` API呼叫
 
-![步驟3 — 修改租使用者欄位群組API呼叫](assets/modify-schema-json-patch-step-3-modify-tenant-field-group.png "步驟3 — 修改租使用者欄位群組")
+   ![步驟3 — 修改租使用者欄位群組API呼叫](assets/modify-schema-json-patch-step-3-modify-tenant-field-group.png "步驟3 — 修改租使用者欄位群組")
 
 
 
-&#x200B;2. 使用以下資訊更新請求內文
+2. 使用以下資訊更新請求內文
 
-- **op** ->` add`
-- **路徑** -> `path from previous step +`&#x200B;` the new field name`
-- **值** ->
-  - **標題** -> `Plan Description`
-  - **型別** -> `string`
-  - **描述** -> `High-level details about the plan`
+   - **op** ->` add`
+   - **路徑** -> `path from previous step +`` the new field name`
+   - **值** ->
+     - **標題** -> `Plan Description`
+     - **型別** -> `string`
+     - **描述** -> `High-level details about the plan`
 
-完成後，您的API要求應該看起來像這樣
+   完成後，您的API要求應該看起來像這樣
 
-![已完成JSON PATCH要求內文，新增planDescription欄位](assets/modify-schema-json-patch-step-3-final-call-example.png "步驟3 — 最終呼叫範例")
+   ![已完成JSON PATCH要求內文，新增planDescription欄位](assets/modify-schema-json-patch-step-3-final-call-example.png "步驟3 — 最終呼叫範例")
 
->[!WARNING]
->
->請確定您的路徑中包含新的欄位名稱&#x200B;**planDescription，**
+   >[!WARNING]
+   >
+   >請確定您的路徑中包含新的欄位名稱&#x200B;**planDescription，**
 
 
 
-&#x200B;3. 如果一切正常，請`Save`您的電話
+3. 如果一切正常，請`Save`您的電話
 
-&#x200B;4. `Execute`呼叫以執行PATCH
+4. `Execute`呼叫以執行PATCH
 
 您應該會看到`200 OK `回應，而現在應該會看到欄位群組中的`planDescription`欄位，如下所示：
 

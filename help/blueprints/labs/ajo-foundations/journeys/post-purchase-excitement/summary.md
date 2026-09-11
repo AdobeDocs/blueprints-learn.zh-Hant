@@ -4,7 +4,7 @@ description: 回顧在Adobe Journey Optimizer中建置及驗證Order Shipped事�
 doc-type: article
 solution: Experience Platform
 exl-id: c6f87223-a060-49d8-a784-d37d3422edd0
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >**如果您正在閱讀本文，這表示您已經到了實驗室的結尾。**
 >

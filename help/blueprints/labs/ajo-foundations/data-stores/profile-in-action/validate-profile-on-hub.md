@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 驗證集線器上的設定檔
 description: 瞭解如何在Real-time Customer Profile Hub上查詢設定檔，以及在串流事件後驗證其事件和區段會籍。
 doc-type: article
 solution: Experience Platform
 exl-id: f1c8b1ac-e57c-48c6-aa91-5c83f79ce7e3
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -53,9 +52,9 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**屬性**&#x200B;標題並檢視&#x200B;**JSON**
 
-![顯示segmentMembership的設定檔屬性JSON檢視](assets/validate-profile-on-hub-json-view.png)
+   ![顯示segmentMembership的設定檔屬性JSON檢視](assets/validate-profile-on-hub-json-view.png)
 
-&#x200B;2. 尋找&#x200B;**segmentMembership**。  應該看起來像這樣（您的ID將會不同）
+2. 尋找&#x200B;**segmentMembership**。  應該看起來像這樣（您的ID將會不同）
 
 ```json
   "segmentMembership": {
@@ -75,7 +74,7 @@ ht-degree: 0%
 >
 >**如何讀取segmentMembership？**
 >
->[https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/segmentation)
+>[https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation)
 >
 >**ups：**&#x200B;這是AEP支援之不同對象型別的對應索引鍵。  ups鍵包含規則產生器建立的對象。  其他對象將包含在其他索引鍵（例如AAM）中。
 >

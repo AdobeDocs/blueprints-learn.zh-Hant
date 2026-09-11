@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 設定事件
 description: 建立並設定單一的「訂單已出貨」事件（包括身分名稱空間設定），以作為歷程的登入觸發器。
 doc-type: article
 solution: Experience Platform
 exl-id: 4d1c1d4d-0dc6-4ea1-aa3c-f959bb3b9aa8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -31,51 +30,51 @@ ht-degree: 0%
 
 為了建立使用單一事件的歷程，我們需要先設定事件。
 
-1. 在左側邊欄的[管理]功能表下，按一下[設定] **&#x200B;**，然後在[事件]方塊上按一下[管理] **按鈕**
+1. 在左側邊欄的[管理]功能表下，按一下[設定] ****，然後在[事件]方塊上按一下[管理] **按鈕**
 
-「設定」底下的「事件」方塊上的「![」管理按鈕](assets/configure-event-open-events-manage.png)
+   「設定」底下的「事件」方塊上的「![」管理按鈕](assets/configure-event-open-events-manage.png)
 
-&#x200B;2. 在右上角按一下&#x200B;**建立事件**&#x200B;按鈕
+2. 在右上角按一下&#x200B;**建立事件**&#x200B;按鈕
 
-右上角的![建立事件按鈕](assets/configure-event-click-create-event-button.png)
+   右上角的![建立事件按鈕](assets/configure-event-click-create-event-button.png)
 
-&#x200B;3. 更新事件的設定，如下所示：
+3. 更新事件的設定，如下所示：
    - **名稱** = `orderShipped`
    - **型別** = `Unitary`
    - **事件識別碼型別** = `Rule based`
    - **結構描述** = `dep: Orders v.1`
 
-![orderShipped事件設定為Unitary型別和dep： Orders v.1結構描述](assets/configure-event-set-name-type-schema.png)
+   ![orderShipped事件設定為Unitary型別和dep： Orders v.1結構描述](assets/configure-event-set-name-type-schema.png)
 
-&#x200B;4. 在`Fields`輸入方塊中，按一下&#x200B;**鉛筆圖示**
+4. 在`Fields`輸入方塊中，按一下&#x200B;**鉛筆圖示**
 
-欄位輸入方塊中的![鉛筆圖示](assets/configure-event-click-fields-pencil-icon.png)
+   欄位輸入方塊中的![鉛筆圖示](assets/configure-event-click-fields-pencil-icon.png)
 
-&#x200B;5. 選取下列欄位以新增至事件，完成時按一下&#x200B;**確定**&#x200B;按鈕
+5. 選取下列欄位以新增至事件，完成時按一下&#x200B;**確定**&#x200B;按鈕
    - `Event Type (eventType)`
    - `Order ID (orderID)`
 
-已選取要新增至事件的![事件型別和訂單ID欄位](assets/configure-event-select-eventtype-orderid-fields.png)
+   已選取要新增至事件的![事件型別和訂單ID欄位](assets/configure-event-select-eventtype-orderid-fields.png)
 
->[!NOTE]
->
->請確定您只選取訂單ID欄位，而非訂單😁中的所有欄位
+   >[!NOTE]
+   >
+   >請確定您只選取訂單ID欄位，而非訂單😁中的所有欄位
 
 
 
-&#x200B;6. 在`Event Id condition input`中，按一下&#x200B;**鉛筆圖示**
+6. 在`Event Id condition input`中，按一下&#x200B;**鉛筆圖示**
 
-事件ID條件輸入中的![鉛筆圖示](assets/configure-event-click-event-id-condition-pencil.png)
+   事件ID條件輸入中的![鉛筆圖示](assets/configure-event-click-event-id-condition-pencil.png)
 
-&#x200B;7. **將** `Event Type`欄位拖曳到畫布上
+7. **將** `Event Type`欄位拖曳到畫布上
 
-![將[事件型別]欄位拖曳到條件畫布](assets/configure-event-drag-event-type-field-onto-canvas.png)
+   ![將[事件型別]欄位拖曳到條件畫布](assets/configure-event-drag-event-type-field-onto-canvas.png)
 
-&#x200B;8. 在出現的選取方塊中尋找並檢查標題為&#x200B;**orders.shipped.**&#x200B;的值 然後按一下&#x200B;**確定**&#x200B;按鈕。
+8. 在出現的選取方塊中尋找並檢查標題為&#x200B;**orders.shipped.**&#x200B;的值 然後按一下&#x200B;**確定**&#x200B;按鈕。
 
-![選取方塊中勾選的orders.shipped值](assets/configure-event-select-orders-shipped-value.png)
+   ![選取方塊中勾選的orders.shipped值](assets/configure-event-select-orders-shipped-value.png)
 
-&#x200B;9. 接著，使用下列值更新名稱空間和設定檔識別碼的最後兩個值：
+9. 接著，使用下列值更新名稱空間和設定檔識別碼的最後兩個值：
    - **名稱空間** —> `Email`
    - **設定檔識別碼** —> `personalEmail`
 

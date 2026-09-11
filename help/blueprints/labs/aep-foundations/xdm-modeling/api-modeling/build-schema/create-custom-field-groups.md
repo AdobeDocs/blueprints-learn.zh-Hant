@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立自訂欄位群組
 description: 使用結構描述登入API來建立自訂客戶帳戶詳細資料欄位群組，並儲存其$id以用於之後的結構描述。
 doc-type: article
 solution: Experience Platform
 exl-id: d3262db9-7c0b-476a-843f-1a2c224ee792
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
@@ -69,17 +68,17 @@ ht-degree: 0%
 
 
 
-&#x200B;2. 使用以下格式更新欄位群組的`title`和`description`： `Customer Account Details - Sandbox <your number here>`
+2. 使用以下格式更新欄位群組的`title`和`description`： `Customer Account Details - Sandbox <your number here>`
 
 
 
-![為自訂欄位群組填寫的標題和說明範例](assets/create-custom-field-groups-field-group-title-description-example.png "欄位群組標題和說明範例")
+   ![為自訂欄位群組填寫的標題和說明範例](assets/create-custom-field-groups-field-group-title-description-example.png "欄位群組標題和說明範例")
 
 
 
-&#x200B;3. 按一下`Send`按鈕以執行。  您應該會看到類似下列熒幕擷圖的回應。
+3. 按一下`Send`按鈕以執行。  您應該會看到類似下列熒幕擷圖的回應。
 
-&#x200B;4. 複製您新建立的客戶帳戶詳細資料欄位群組的`$id`值。
+4. 複製您新建立的客戶帳戶詳細資料欄位群組的`$id`值。
 
 建立自訂欄位群組後![成功的API回應](assets/create-custom-field-groups-step-2-create-custom-field-group-success.png "步驟2 — 建立自訂欄位群組成功")
 

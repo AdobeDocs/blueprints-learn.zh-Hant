@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立對象
 description: 瞭解如何在協調的行銷活動中使用「建立對象」活動，使用關聯式結構描述條件，以特定電話機代號來鎖定作用中的客戶系列。
 doc-type: article
 solution: Experience Platform
 exl-id: 697d3edb-2b63-4038-a934-3587495e17f7
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -25,13 +24,13 @@ ht-degree: 0%
 
 1. 在畫布上按一下&#x200B;**+符號**，然後選取&#x200B;**建立對象**&#x200B;活動，以將其新增至工作流程
 
-![將組建對象活動新增至工作流程畫布](assets/build-an-audience-add-activity.png)
+   ![將組建對象活動新增至工作流程畫布](assets/build-an-audience-add-activity.png)
 
 
 
-&#x200B;2. 在右邊欄中，您會看到「建置對象」屬性。 更新標籤以指出下列專案： `Active Lines with Apple`
+2. 在右邊欄中，您會看到「建置對象」屬性。 更新標籤以指出下列專案： `Active Lines with Apple`
 
-![使用Apple將對象標籤設為Active Lines &#x200B;](assets/build-an-audience-set-label.png)
+![使用Apple將對象標籤設為Active Lines ](assets/build-an-audience-set-label.png)
 
 
 ## 選取目標維度
@@ -40,9 +39,9 @@ ht-degree: 0%
 
 1. 按一下目標維度方塊中的&#x200B;**搜尋圖示**
 
-![目標維度方塊中的搜尋圖示](assets/build-an-audience-search-targeting-dimension.png)
+   ![目標維度方塊中的搜尋圖示](assets/build-an-audience-search-targeting-dimension.png)
 
-&#x200B;2. 在快顯視窗中，搜尋並選取名為&#x200B;**dep-rel： Customer Line**&#x200B;的資料表，然後按一下&#x200B;**確認**&#x200B;按鈕。
+2. 在快顯視窗中，搜尋並選取名為&#x200B;**dep-rel： Customer Line**&#x200B;的資料表，然後按一下&#x200B;**確認**&#x200B;按鈕。
 
 ![選取dep-rel： Customer Line資料表並按一下[確認]](assets/build-an-audience-select-customer-line-table.png)
 
@@ -62,9 +61,9 @@ ht-degree: 0%
 
 1. 在右側邊欄中，按一下&#x200B;**建立對象**&#x200B;按鈕
 
-右側邊欄中的![建立對象按鈕](assets/build-an-audience-click-create-audience.png)
+   右側邊欄中的![建立對象按鈕](assets/build-an-audience-click-create-audience.png)
 
-&#x200B;2. 接著按一下&#x200B;**新增條件**&#x200B;按鈕
+2. 接著按一下&#x200B;**新增條件**&#x200B;按鈕
 
 ![新增對象定義的條件按鈕](assets/build-an-audience-click-add-condition.png)
 
@@ -80,9 +79,9 @@ ht-degree: 0%
    - **屬性**： `Active Line`
    - **值**： `true`
 
-![條件1設定為作用中行等於true](assets/build-an-audience-condition-active-line-true.png)
+   ![條件1設定為作用中行等於true](assets/build-an-audience-condition-active-line-true.png)
 
-&#x200B;2. 按一下&#x200B;**重新整理**&#x200B;圖示以檢視條件的合格計數。
+2. 按一下&#x200B;**重新整理**&#x200B;圖示以檢視條件的合格計數。
 
 ![重新整理圖示顯示條件1](assets/build-an-audience-condition-1-refresh-count.png)的合格計數為241
 
@@ -96,31 +95,31 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**新增條件**&#x200B;按鈕，然後按一下&#x200B;**>**&#x200B;圖示來選取&#x200B;**dep-rel：** **產品\[查詢]**&#x200B;結構描述
 
-![按一下>圖示](assets/build-an-audience-select-product-lookup-schema.png)以選取dep-rel：產品[查詢]結構描述
+   ![按一下>圖示](assets/build-an-audience-select-product-lookup-schema.png)以選取dep-rel：產品[查詢]結構描述
 
 
-&#x200B;2. 尋找名為&#x200B;**Make**&#x200B;的欄位，然後按一下三個點並選取&#x200B;**分配值**
+2. 尋找名為&#x200B;**Make**&#x200B;的欄位，然後按一下三個點並選取&#x200B;**分配值**
 
-Make欄位![&#128279;](assets/build-an-audience-make-distribution-of-values.png)的值分佈選項
-
-
-
-&#x200B;3. 記下各種值。 您只想要`Apple`，而且幸好它沒有100個不同的拼字。 按一下&#x200B;**Apple欄位**&#x200B;以選取它，然後按一下右上角的&#x200B;**選取屬性和值按鈕**。
-
-使用Select屬性和值按鈕![&#128279;](assets/build-an-audience-select-apple-attribute-value.png)選取的Apple值
-
->[!NOTE]
->
->這是資料架構師應該以分項清單設計結構描述的主要範例。  這樣行銷人員就不必手動選取/輸入值。  資料架構師的恥辱！
+   Make欄位](assets/build-an-audience-make-distribution-of-values.png)的![值分佈選項
 
 
 
-&#x200B;4. `Make`欄位會連同下列條件一起自動新增。
+3. 記下各種值。 您只想要`Apple`，而且幸好它沒有100個不同的拼字。 按一下&#x200B;**Apple欄位**&#x200B;以選取它，然後按一下右上角的&#x200B;**選取屬性和值按鈕**。
+
+   使用Select屬性和值按鈕](assets/build-an-audience-select-apple-attribute-value.png)選取的![Apple值
+
+   >[!NOTE]
+   >
+   >這是資料架構師應該以分項清單設計結構描述的主要範例。  這樣行銷人員就不必手動選取/輸入值。  資料架構師的恥辱！
+
+
+
+4. `Make`欄位會連同下列條件一起自動新增。
    - **運運算元：** `Equal to`
    - **值：** `Apple`
    - **區分大小寫：** `Enabled`
 
-&#x200B;5. 按一下&#x200B;**計算圖示**，結果會顯示85。
+5. 按一下&#x200B;**計算圖示**，結果會顯示85。
 
 ![條件2已計算85](assets/build-an-audience-condition-2-final-count.png)的計數
 
@@ -134,15 +133,15 @@ Make欄位![&#128279;](assets/build-an-audience-make-distribution-of-values.png)
 
 1. 按一下「設定檔目標」標題下右側邊欄中的&#x200B;**計算圖示**，以取得對象規模的精確預估。 您將&#x200B;**65**&#x200B;視為&#x200B;**最終計數**。
 
-![顯示最終對象人數的計算圖示65](assets/build-an-audience-calculate-final-audience-size.png)
+   ![顯示最終對象人數的計算圖示65](assets/build-an-audience-calculate-final-audience-size.png)
 
->[!NOTE]
->
->請注意每個個別條件如何傳回不同的數字（條件#1 —> 241和條件#2 —> 85），但最終對象人數是兩個條件中較小者。  這是因為該AND運運算元。
+   >[!NOTE]
+   >
+   >請注意每個個別條件如何傳回不同的數字（條件#1 —> 241和條件#2 —> 85），但最終對象人數是兩個條件中較小者。  這是因為該AND運運算元。
 
 
 
-&#x200B;2. 如果您看到&#x200B;**65**&#x200B;的最終計數，請按一下熒幕右上方的&#x200B;**Confirm**&#x200B;按鈕，然後按一下右上方的&#x200B;**Save**&#x200B;按鈕以儲存您的工作。
+2. 如果您看到&#x200B;**65**&#x200B;的最終計數，請按一下熒幕右上方的&#x200B;**Confirm**&#x200B;按鈕，然後按一下右上方的&#x200B;**Save**&#x200B;按鈕以儲存您的工作。
 
 
 

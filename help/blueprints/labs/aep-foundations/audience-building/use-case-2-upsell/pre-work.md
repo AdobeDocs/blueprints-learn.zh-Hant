@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 前期工作
 description: 調查帳單使用情況和計畫名稱的結構描述欄位，強調缺少說明和重複欄位可能會混淆受眾建置器。
 doc-type: article
 solution: Experience Platform
 exl-id: c26de19e-82da-4070-a918-2d2c8ef2c116
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -22,15 +21,15 @@ ht-degree: 0%
 1. 建立新對象
 1. 在屬性中搜尋「使用狀況」。 按一下「i」以檢閱說明（沒有說明）。
 
-![搜尋屬性中的使用方式 — 未顯示說明](assets/pre-work-search-usage-in-attributes.png)
+   ![搜尋屬性中的使用方式 — 未顯示說明](assets/pre-work-search-usage-in-attributes.png)
 
 
 
-&#x200B;3. 搜尋「事件」中的「使用狀況」。  按一下「i」以檢閱說明（沒有說明）。
+3. 搜尋「事件」中的「使用狀況」。  按一下「i」以檢閱說明（沒有說明）。
 
 ![搜尋事件中的使用狀況 — 未顯示說明](assets/pre-work-search-usage-in-events.png)
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >這些都沒有說明，因此行銷人員可能會做出一些假設並猜測錯誤。
 >
@@ -41,7 +40,8 @@ ht-degree: 0%
 >- 在特定使用案例中推薦/偏好？
 >
 >在說明中提供這些資訊，我們就能提供更好的指引。
-> [!NOTE]
+
+>[!NOTE]
 >
 >嘗試搜尋「帳單」。  請注意，不會顯示為設定檔屬性。  這會顯示為「事件型別卡」以及「計費資料使用量」欄位。
 >
@@ -53,10 +53,10 @@ ht-degree: 0%
 
 
 
-搜尋計畫![&#128279;](assets/pre-work-duplicate-plan-name-field.png)時找到第一個計畫名稱屬性
+搜尋計畫](assets/pre-work-duplicate-plan-name-field.png)時找到![第一個計畫名稱屬性
 
 
 
-搜尋計畫![&#128279;](assets/pre-work-duplicate-plan-name-field--2.png)時找到第二個計畫名稱屬性
+搜尋計畫](assets/pre-work-duplicate-plan-name-field--2.png)時找到![第二個計畫名稱屬性
 
 根據說明，計畫名稱（計畫名稱）似乎是我們需要的名稱，而另一個名稱缺少說明。

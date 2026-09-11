@@ -4,7 +4,7 @@ description: 安裝Postman並熟悉其系列、環境和介面，然後再啟動
 doc-type: article
 solution: Experience Platform
 exl-id: 012878d9-fe87-4178-8b36-40b267b06760
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Postman安裝
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >本課程的各個labs需要Postman。  即使您已安裝Postman，也需要通過本實驗來確保您已安裝並正確設定環境檔案和API集合。
 

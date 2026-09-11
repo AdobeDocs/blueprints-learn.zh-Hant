@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 使用API自動化
 description: 執行Postman集合，單次自動建立結構描述、欄位群組、身分和關係描述項以及資料集。
 doc-type: article
 solution: Experience Platform
 exl-id: a490f93f-19da-4de3-81c8-4569c49c5354
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -31,29 +30,29 @@ ht-degree: 0%
 
 1. 在Postman中，導覽至&#x200B;**XDM結構描述實驗室**&#x200B;資料夾內的&#x200B;**使用API自動化**&#x200B;資料夾
 
-在Postman的XDM結構描述實驗室資料夾中![使用API資料夾自動化](assets/automate-with-apis-postman-automation-folder.png)
+   在Postman的XDM結構描述實驗室資料夾中![使用API資料夾自動化](assets/automate-with-apis-postman-automation-folder.png)
 
 
 
 1. 按一下&#x200B;**使用API自動化**&#x200B;資料夾，然後在工作區中按一下&#x200B;**執行**&#x200B;按鈕
 
->[!NOTE]
->
->「執行」按鈕位於Postman工作區的右上角
+   >[!NOTE]
+   >
+   >「執行」按鈕位於Postman工作區的右上角
 
-針對「使用API自動化」資料夾，在Postman工作區右上角的![執行按鈕](assets/automate-with-apis-click-folder-run-button.png "按一下資料夾「執行」")
+   針對「使用API自動化」資料夾，在Postman工作區右上角的![執行按鈕](assets/automate-with-apis-click-folder-run-button.png "按一下資料夾「執行」")
 
 
 
 1. 應會出現新視窗，顯示資料夾中的所有API呼叫。 將&#x200B;**延遲**&#x200B;設定為&#x200B;**500ms**，然後按一下&#x200B;**執行**&#x200B;按鈕。
 
-![執行自動化對話方塊，延遲設定為500毫秒，再按一下[執行]](assets/automate-with-apis-execute-automation-dialog.png " [執行自動化]")
+   ![執行自動化對話方塊，延遲設定為500毫秒，再按一下[執行]](assets/automate-with-apis-execute-automation-dialog.png " [執行自動化]")
 
 
 
 1. 您會看到API呼叫開始依序執行，而完成時您應該會看到32項通過的測試。
 
-![自動執行成功，共有32項通過測試](assets/automate-with-apis-successful-automation-32-passed-tests.png "自動執行成功")
+   ![自動執行成功，共有32項通過測試](assets/automate-with-apis-successful-automation-32-passed-tests.png "自動執行成功")
 
 
 
@@ -65,6 +64,6 @@ ht-degree: 0%
 
 ![以Postman建立的兩個資料集：前置詞符合自動化結構描述](assets/automate-with-apis-datasets-created-in-ui.png "自動化資料集")
 
-&#x200B;> [!TIP]
+>[!TIP]
 >
 >恭喜！  您剛剛將身分名稱空間、欄位群組、結構描述、身分/關係描述元的部署自動化，並為設定檔啟用結構描述，並利用結構描述產生資料集

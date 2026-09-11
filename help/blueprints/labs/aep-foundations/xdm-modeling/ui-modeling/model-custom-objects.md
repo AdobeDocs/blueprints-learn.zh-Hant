@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 為自訂物件建模
 description: 在結構描述編輯器中建立自訂帳戶、計畫和customerID欄位和物件（包括列舉值），以模型化沒有標準欄位群組相等的資料。
 doc-type: article
 solution: Experience Platform
 exl-id: 8c39b226-05f3-458a-b023-c59221a6713a
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -36,11 +35,11 @@ ht-degree: 0%
 
 1. 按一下結構描述頂端的&#x200B;**+ （新增）**&#x200B;按鈕以新增欄位
 
-在結構描述頂端新增(+)按鈕以新增自訂欄位![&#128279;](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)
+   在結構描述頂端新增(+)按鈕以新增自訂欄位](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)![
 
->[!NOTE]
->
->請注意，右側邊欄會開啟，並顯示一些欄位供您填寫
+   >[!NOTE]
+   >
+   >請注意，右側邊欄會開啟，並顯示一些欄位供您填寫
 
 
 
@@ -73,14 +72,14 @@ ht-degree: 0%
 
 1. 新增下列欄位，顯示在您剛建立的帳戶物件下方。
 
-| 欄位名稱 | 顯示名稱 | 類型 |
-| ------------ | ------------- | ---------- |
-| *createDate* | *建立日期* | *日期時間* |
-| *endDate* | *結束日期* | *日期時間* |
+   | 欄位名稱 | 顯示名稱 | 類型 |
+   | ------------ | ------------- | ---------- |
+   | *createDate* | *建立日期* | *日期時間* |
+   | *endDate* | *結束日期* | *日期時間* |
 
->[!NOTE]
->
->您注意到在新增欄位時，**指派給**&#x200B;選項已填入，並參考您用於帳戶物件的欄位群組。
+   >[!NOTE]
+   >
+   >您注意到在新增欄位時，**指派給**&#x200B;選項已填入，並參考您用於帳戶物件的欄位群組。
 
 
 
@@ -88,28 +87,28 @@ ht-degree: 0%
 
 
 
-![客戶帳戶結構描述已新增帳戶物件和子欄位](assets/model-custom-objects-account-object-with-child-fields.png)
+   ![客戶帳戶結構描述已新增帳戶物件和子欄位](assets/model-custom-objects-account-object-with-child-fields.png)
 
 
 
 1. 將另一個自訂欄位新增至帳戶物件。 按一下帳戶物件旁的&#x200B;**+ （新增）**&#x200B;按鈕。  建立下列欄位：
 
-| 欄位名稱 | 顯示名稱 | 類型 | 列舉 |
-| ----------- | ----------------- | -------- | --------------------------------------- |
-| *acqSource* | *已取得Source* | *字串* | *網頁：：網頁&#x200B;*<br />*市集：：商店內* |
+   | 欄位名稱 | 顯示名稱 | 類型 | 列舉 |
+   | ----------- | ----------------- | -------- | --------------------------------------- |
+   | *acqSource* | *已取得Source* | *字串* | *網頁：：網頁&#x200B;*<br />*市集：：商店內* |
 
-此欄位需要標準化的值，所以在欄位屬性中使用&#x200B;**列舉與建議值**&#x200B;選項。 選取&#x200B;**列舉**&#x200B;選項按鈕，在內嵌時新增此欄位的驗證以及易記標籤。 新增列舉值，如下所示：
+   此欄位需要標準化的值，所以在欄位屬性中使用&#x200B;**列舉與建議值**&#x200B;選項。 選取&#x200B;**列舉**&#x200B;選項按鈕，在內嵌時新增此欄位的驗證以及易記標籤。 新增列舉值，如下所示：
 
-- *網頁：：網頁*
-- *inStore ：：在存放區*
+   - *網頁：：網頁*
+   - *inStore ：：在存放區*
 
 
 
-![針對贏取Source欄位](assets/model-custom-objects-enum-values-for-acquisition-source-field.png)新增列舉值web和inStore
+   ![針對贏取Source欄位](assets/model-custom-objects-enum-values-for-acquisition-source-field.png)新增列舉值web和inStore
 
->[!NOTE]
->
->列舉和建議值的目標是讓一般使用者更容易分段。 列舉會在資料擷取時強制進行驗證，而建議值則否。 若要深入瞭解此功能，您可以在此處參閱檔案 — > [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant#enums-and-suggested-values)
+   >[!NOTE]
+   >
+   >列舉和建議值的目標是讓一般使用者更容易分段。 列舉會在資料擷取時強制進行驗證，而建議值則否。 若要深入瞭解此功能，您可以在此處參閱檔案 — > [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values)
 
 
 

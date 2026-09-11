@@ -4,7 +4,7 @@ description: 設定已啟用回填的循環15分鐘資料流排程，並瞭解UT
 doc-type: article
 solution: Experience Platform
 exl-id: 9865b1eb-0d98-4cae-a928-69ea897607ca
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ![資料流畫面顯示具有無執行狀態的新資料流](assets/schedule-dataflow-dataflows-screen-no-runs-status.png "資料流來源畫面")
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >您需要持續重新整理頁面才能看到狀態更新，因為後端不會將更新推送到UI。
 

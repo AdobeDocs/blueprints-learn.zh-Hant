@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 模型標準物件
 description: 在UI中建立「個人設定檔」結構描述，並新增和修剪標準欄位群組，例如「人口統計細節」和「同意」和「偏好設定」。
 doc-type: article
 solution: Experience Platform
 exl-id: ea516c0b-3644-483c-a167-0264cc795449
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 1. 按一下左側邊欄中的&#x200B;**結構描述**&#x200B;索引標籤
 
-左側邊欄導覽中的![結構描述索引標籤](assets/model-standard-objects-schemas-tab-left-rail.png "使用左側邊欄導覽至結構描述")
+   左側邊欄導覽中的![結構描述索引標籤](assets/model-standard-objects-schemas-tab-left-rail.png "使用左側邊欄導覽至結構描述")
 
 
 
@@ -36,13 +35,13 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**建立結構描述**&#x200B;以開始
 
-![建立結構描述按鈕](assets/model-standard-objects-create-schema-button.png "建立結構描述")
+   ![建立結構描述按鈕](assets/model-standard-objects-create-schema-button.png "建立結構描述")
 
 
 
 1. 選取&#x200B;**手動**
 
-![選取手動結構描述建立選項](assets/model-standard-objects-select-manual-option.png "選取手動")
+   ![選取手動結構描述建立選項](assets/model-standard-objects-select-manual-option.png "選取手動")
 
 
 
@@ -68,24 +67,24 @@ Adobe Experience Platform中有許多欄位群組是以標準XDM的形式存在�
 
 1. 按一下欄位群組區段左側邊欄上的&#x200B;**+ （新增）**。
 
-![在左側邊欄中新增欄位群組按鈕](assets/model-standard-objects-add-field-group-button.png "新增欄位群組")
+   ![在左側邊欄中新增欄位群組按鈕](assets/model-standard-objects-add-field-group-button.png "新增欄位群組")
 
 
 
 1. 搜尋&#x200B;**人口統計詳細資料**，或瀏覽清單來尋找它。
 
-- 當您找到欄位群組時，請按一下欄位群組右側的放大鏡來檢視其結構。  這是預覽您即將新增至結構描述的內容而不實際新增的實用方式。
-- 檢閱完成時關閉預覽
+   - 當您找到欄位群組時，請按一下欄位群組右側的放大鏡來檢視其結構。  這是預覽您即將新增至結構描述的內容而不實際新增的實用方式。
+   - 檢閱完成時關閉預覽
 
 
 
-![按一下放大鏡以預覽欄位群組的結構](assets/model-standard-objects-click-magnify-glass-to-preview-field-group-structure.png "按一下放大鏡以預覽欄位群組的結構")
+   ![按一下放大鏡以預覽欄位群組的結構](assets/model-standard-objects-click-magnify-glass-to-preview-field-group-structure.png "按一下放大鏡以預覽欄位群組的結構")
 
-![人口統計詳細資料欄位群組結構預覽](assets/model-standard-objects-demographic-details-structure-preview.png)
+   ![人口統計詳細資料欄位群組結構預覽](assets/model-standard-objects-demographic-details-structure-preview.png)
 
 
 
-&#x200B;3. **核取**&#x200B;欄位群組旁的核取方塊，然後按一下&#x200B;**新增欄位群組**&#x200B;按鈕
+3. **核取**&#x200B;欄位群組旁的核取方塊，然後按一下&#x200B;**新增欄位群組**&#x200B;按鈕
 
 ![選取[人口統計詳細資料]欄位群組以將其新增至您的結構描述](assets/model-standard-objects-select-demographic-details-field-group.png "選取[人口統計詳細資料]欄位群組以將其新增至您的結構描述")
 
@@ -126,24 +125,24 @@ Adobe Experience Platform中有許多欄位群組是以標準XDM的形式存在�
 1. 選取結構描述中的&#x200B;**人員**&#x200B;物件
 1. 按一下右側邊欄中的&#x200B;**管理相關欄位**
 
-![管理人口統計詳細資料欄位群組中個人物件的相關欄位選項](assets/model-standard-objects-manage-related-fields-person-object.png "管理個人物件的相關欄位，做為人口統計詳細資料欄位群組的一部分")
+   ![管理人口統計詳細資料欄位群組中個人物件的相關欄位選項](assets/model-standard-objects-manage-related-fields-person-object.png "管理個人物件的相關欄位，做為人口統計詳細資料欄位群組的一部分")
 
 
 
 1. 按一下人員左側的>形箭號來展開人員物件，並按一下name物件左側的>形箭號來展開全名物件。 僅保留以下欄位：
 
-- person.name.firstName
-- person.name.lastName
-- person.birthDayAndMonth
-- person.birthYear
+   - person.name.firstName
+   - person.name.lastName
+   - person.birthDayAndMonth
+   - person.birthYear
 
-完成後，請按一下右上角的&#x200B;**確認**&#x200B;按鈕。
+   完成後，請按一下右上角的&#x200B;**確認**&#x200B;按鈕。
 
-![管理相關欄位對話方塊，顯示選取的人口統計詳細資料個人欄位](assets/model-standard-objects-demographic-details-person-fields-dialog.png "管理人口統計詳細資料個人物件的相關欄位")
+   ![管理相關欄位對話方塊，顯示選取的人口統計詳細資料個人欄位](assets/model-standard-objects-demographic-details-person-fields-dialog.png "管理人口統計詳細資料個人物件的相關欄位")
 
->[!NOTE]
->
->您可以按一下&#x200B;**人口統計詳細資料**&#x200B;最上方的核取方塊，自動取消選取所有子物件，然後只重新選取您需要的子物件！
+   >[!NOTE]
+   >
+   >您可以按一下&#x200B;**人口統計詳細資料**&#x200B;最上方的核取方塊，自動取消選取所有子物件，然後只重新選取您需要的子物件！
 
 
 

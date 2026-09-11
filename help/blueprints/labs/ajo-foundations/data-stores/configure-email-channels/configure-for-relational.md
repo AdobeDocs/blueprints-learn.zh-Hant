@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 設定關聯式
 description: 瞭解如何使用關聯式結構描述中的電子郵件屬性來設定電子郵件頻道，僅用於協調的行銷活動。
 doc-type: article
 solution: Experience Platform
 exl-id: 6f299942-79a6-42c2-8a5b-dd4bccd6aad4
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 10%
@@ -24,9 +23,9 @@ ht-degree: 10%
 1. 瀏覽至&#x200B;**頻道設定**，可在&#x200B;**管理→頻道→一般設定**&#x200B;下找到
 2. 按一下&#x200B;**建立組態**&#x200B;按鈕
 
-![建立頻道設定](assets/configure-for-profile-create-configuration-button.png)
+   ![建立頻道設定](assets/configure-for-profile-create-configuration-button.png)
 
-&#x200B;3. 在建立精靈中設定下列值：
+3. 在建立精靈中設定下列值：
    - **名稱：** `Relational-Email`
    - **頻道：** `Email`
    - **行銷動作：** `Email Targeting`
@@ -99,29 +98,29 @@ ht-degree: 10%
 
 1. 在「已協調的行銷活動」索引標籤中，並&#x200B;**勾選**「已啟用」核取方塊。
 
-![設定協調的行銷活動](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
+   ![設定協調的行銷活動](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
 
-&#x200B;2. 在執行維度下設定以下專案：
+2. 在執行維度下設定以下專案：
    - **針對每個**&#x200B;傳遞一封郵件`Target Dimension `
    - **設定檔目標Dimension：** `dep-rel: Customer Account - customer_id`
 
-![執行維度](assets/configure-for-relational-execution-dimension-target-settings.png)
+   ![執行維度](assets/configure-for-relational-execution-dimension-target-settings.png)
 
-&#x200B;3. 在執行位址下設定以下專案：
+3. 在執行位址下設定以下專案：
    - **Source：** `Target Dimension`
    - **傳遞位址：** `click on the Edit button`
 
-![目標Dimension](assets/configure-for-relational-execution-address-source-target-dimension.png)
+   ![目標Dimension](assets/configure-for-relational-execution-address-source-target-dimension.png)
 
-&#x200B;4. 在快顯視窗中，按一下資料夾&#x200B;**dep-rel：客戶帳戶**
+4. 在快顯視窗中，按一下資料夾&#x200B;**dep-rel：客戶帳戶**
 
-![設定傳遞位址](assets/configure-for-relational-customer-account-folder.png)
+   ![設定傳遞位址](assets/configure-for-relational-customer-account-folder.png)
 
-&#x200B;5. 選取&#x200B;**電子郵件**&#x200B;並按一下&#x200B;**選取**&#x200B;按鈕
+5. 選取&#x200B;**電子郵件**&#x200B;並按一下&#x200B;**選取**&#x200B;按鈕
 
-![電子郵件為傳遞地址](assets/configure-for-relational-select-email-as-delivery-address.png)
+   ![電子郵件為傳遞地址](assets/configure-for-relational-select-email-as-delivery-address.png)
 
-&#x200B;6. 完成後，您的最終執行詳細資訊看起來像下面的熒幕擷圖
+6. 完成後，您的最終執行詳細資訊看起來像下面的熒幕擷圖
 
 ![執行維度已設定](assets/configure-for-relational-execution-details-final-result.png)
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 篩選行
 description: 瞭解如何透過分割活動篩選掉選擇退出的客戶行，並使用變更維度以使工作流程的目標維度與簡訊頻道設定一致。
 doc-type: article
 solution: Experience Platform
 exl-id: fb556a27-5c73-4457-ae98-dba43d445c7f
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
@@ -25,33 +24,33 @@ ht-degree: 0%
 
 1. 按一下Fork活動底部轉變上的&#x200B;**+**&#x200B;圖示，然後在快顯視窗中選取&#x200B;**分割**&#x200B;活動。
 
-![新增分割活動至底部分支分支](assets/filter-the-lines-add-split-activity.png)
+   ![新增分割活動至底部分支分支](assets/filter-the-lines-add-split-activity.png)
 
 
 
-&#x200B;2. 在右邊欄更新標籤以指出下列專案： `Filter out opt'd out lines`
+2. 在右邊欄更新標籤以指出下列專案： `Filter out opt'd out lines`
 
-![分割活動標籤設定為篩選退出選擇退出行](assets/filter-the-lines-set-split-label.png)
-
-
-
-&#x200B;3. 在右側邊欄中，展開預設區段&#x200B;**子集**&#x200B;區段，然後按一下&#x200B;**建立篩選器**&#x200B;按鈕
-
-![在子集區段中建立篩選器按鈕](assets/filter-the-lines-create-filter-button.png)
+   ![分割活動標籤設定為篩選退出選擇退出行](assets/filter-the-lines-set-split-label.png)
 
 
 
-&#x200B;4. 新增條件，以確保您移除所有選擇退出簡訊的客戶連結，然後按一下&#x200B;**確認**。
+3. 在右側邊欄中，展開預設區段&#x200B;**子集**&#x200B;區段，然後按一下&#x200B;**建立篩選器**&#x200B;按鈕
 
-![條件移除已選擇退出簡訊的客戶線路](assets/filter-the-lines-sms-optin-condition.png)
-
->[!NOTE]
->
->您必須找出如何建立條件，但最終結果符合上方的熒幕擷圖。  知道了！
+   ![在子集區段中建立篩選器按鈕](assets/filter-the-lines-create-filter-button.png)
 
 
 
-&#x200B;5. 按一下右上角的「儲存」按鈕以儲存作業。  您的畫布現在看起來像這樣\...
+4. 新增條件，以確保您移除所有選擇退出簡訊的客戶連結，然後按一下&#x200B;**確認**。
+
+   ![條件移除已選擇退出簡訊的客戶線路](assets/filter-the-lines-sms-optin-condition.png)
+
+   >[!NOTE]
+   >
+   >您必須找出如何建立條件，但最終結果符合上方的熒幕擷圖。  知道了！
+
+
+
+5. 按一下右上角的「儲存」按鈕以儲存作業。  您的畫布現在看起來像這樣\...
 
 儲存分割活動後![工作流程畫布](assets/filter-the-lines-canvas-after-split-save.png)
 
@@ -61,19 +60,19 @@ ht-degree: 0%
 
 1. 在工作流程畫布上，在您新增的分割條件後按一下&#x200B;**+**&#x200B;圖示，並選取&#x200B;**簡訊活動**
 
-![在分割條件後新增簡訊活動](assets/filter-the-lines-add-sms-activity.png)
+   ![在分割條件後新增簡訊活動](assets/filter-the-lines-add-sms-activity.png)
 
-![簡訊活動已新增至工作流程畫布](assets/filter-the-lines-sms-activity-on-canvas.png)
-
-
-
-&#x200B;2. 在右側欄中按一下編輯簡訊按鈕，開始設定簡訊
-
-在右側邊欄中![編輯簡訊按鈕](assets/filter-the-lines-edit-sms-button.png)
+   ![簡訊活動已新增至工作流程畫布](assets/filter-the-lines-sms-activity-on-canvas.png)
 
 
 
-&#x200B;3. 在頂端導覽列中，按一下「動作」功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
+2. 在右側欄中按一下編輯簡訊按鈕，開始設定簡訊
+
+   在右側邊欄中![編輯簡訊按鈕](assets/filter-the-lines-edit-sms-button.png)
+
+
+
+3. 在頂端導覽列中，按一下「動作」功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
 
 ![簡訊設定下拉式清單顯示無結果錯誤](assets/filter-the-lines-sms-configuration-no-results.png)
 
@@ -109,25 +108,25 @@ ht-degree: 0%
 
 1. 按一下簡訊編輯畫面上的上一頁按鈕
 
-![返回按鈕以結束簡訊編輯畫面](assets/filter-the-lines-exit-sms-editor.png)
+   ![返回按鈕以結束簡訊編輯畫面](assets/filter-the-lines-exit-sms-editor.png)
 
 
 
-&#x200B;2. 在工作流程畫布上，按一下篩選和簡訊活動之間的&#x200B;**+** **圖示**，然後選取&#x200B;**變更維度**。
+2. 在工作流程畫布上，按一下篩選和簡訊活動之間的&#x200B;**+** **圖示**，然後選取&#x200B;**變更維度**。
 
-![在篩選器和簡訊之間新增變更維度活動](assets/filter-the-lines-add-change-dimension.png)
+   ![在篩選器和簡訊之間新增變更維度活動](assets/filter-the-lines-add-change-dimension.png)
 
 
 
-&#x200B;3. 在右側，使用下列資訊更新變更維度：
+3. 在右側，使用下列資訊更新變更維度：
    - **標籤：** `Convert Line to Account`
    - **新目標維度：**`dep-rel: Customer Account`
 
-![變更維度設定為將Line轉換為帳戶](assets/filter-the-lines-change-dimension-settings.png)
+   ![變更維度設定為將Line轉換為帳戶](assets/filter-the-lines-change-dimension-settings.png)
 
 
 
-&#x200B;4. 按一下畫布右上角的&#x200B;**儲存**&#x200B;按鈕以儲存您的工作。 完成後，您的工作流程現在看起來像這樣……
+4. 按一下畫布右上角的&#x200B;**儲存**&#x200B;按鈕以儲存您的工作。 完成後，您的工作流程現在看起來像這樣……
 
 新增變更維度後![工作流程畫布](assets/filter-the-lines-workflow-after-change-dimension.png)
 
@@ -141,17 +140,17 @@ ht-degree: 0%
 
 1. 按一下工作流程畫布中的簡訊活動，然後在左側邊欄中按一下&#x200B;**編輯簡訊**&#x200B;按鈕
 
-![編輯簡訊按鈕以重新設定簡訊訊息](assets/filter-the-lines-edit-sms-button.png)
+   ![編輯簡訊按鈕以重新設定簡訊訊息](assets/filter-the-lines-edit-sms-button.png)
 
->[!NOTE]
->
->此畫面需要一些時間載入。  我知道這很煩人，相信我已得到修正
-
-
+   >[!NOTE]
+   >
+   >此畫面需要一些時間載入。  我知道這很煩人，相信我已得到修正
 
 
 
-&#x200B;2. 在頂端導覽列中按一下&#x200B;**動作**&#x200B;功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
+
+
+2. 在頂端導覽列中按一下&#x200B;**動作**&#x200B;功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
 
 ![簡訊設定已成功顯示選取的頻道](assets/filter-the-lines-sms-configuration-selected.png)
 

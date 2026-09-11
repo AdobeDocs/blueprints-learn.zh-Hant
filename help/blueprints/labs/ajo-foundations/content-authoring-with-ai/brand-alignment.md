@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 品牌一致性
 description: 瞭解如何使用AJO的AI驅動品牌一致性分數，根據品牌指引評估電子郵件內容，並套用AI建議以改善合規性。
 doc-type: article
 solution: Experience Platform
 exl-id: 2385232e-9059-469a-975d-3c7ace146c29
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%
@@ -46,11 +45,11 @@ Adobe Journey Optimizer包含&#x200B;**AI導向的Brand Alignment分數**，可�
 2. 在右側邊欄中找到&#x200B;**品牌一致性**&#x200B;索引標籤，或在側邊欄中找到&#x200B;**%圖示**。
 3. 按一下以開啟面板。
 
-在側邊欄中![品牌一致性索引標籤和百分比圖示](assets/brand-alignment-open-panel-icon.png)
+   在側邊欄中![品牌一致性索引標籤和百分比圖示](assets/brand-alignment-open-panel-icon.png)
 
-&#x200B;4. 確定已套用正確的品牌：
+4. 確定已套用正確的品牌：
    - **連線5G** （預設）。
-&#x200B;5. 按一下&#x200B;**評估分數**。
+5. 按一下&#x200B;**評估分數**。
 
 **解讀品牌分數和意見反應：**&#x200B;稍後您會看到內容的品牌相容分數。 此分數可以呈現為評等（例如高、Medium或低）或百分比，以及顏色指標（綠色、黃色、紅色）和評估時間。 高分數表示您的內容與品牌指引高度一致，而中或低分數表示中度或不良一致。
 
@@ -103,23 +102,23 @@ Adobe Journey Optimizer包含&#x200B;**AI導向的Brand Alignment分數**，可�
 1. 按一下進入電子郵件中標幟的文字區塊或影像。
 2. 使用您在上一個練習中貼上的段落，如下所示。
 
-![貼上說明段落中的已標幟文字區塊](assets/brand-alignment-flagged-text-block.png)
+   ![貼上說明段落中的已標幟文字區塊](assets/brand-alignment-flagged-text-block.png)
 
-&#x200B;3. 使用AI提供的建議修改。 按一下圖示，如下所示。
+3. 使用AI提供的建議修改。 按一下圖示，如下所示。
 
-![套用建議修改的AI建議圖示](assets/brand-alignment-ai-suggestion-icon.png)
+   ![套用建議修改的AI建議圖示](assets/brand-alignment-ai-suggestion-icon.png)
 
-&#x200B;4. 按一下&#x200B;**使用AI修正**&#x200B;按鈕，如下所示。
+4. 按一下&#x200B;**使用AI修正**&#x200B;按鈕，如下所示。
 
-針對已標幟的指引使用![Fix with AI按鈕](assets/brand-alignment-fix-with-ai-button.png)
+   針對已標幟的指引使用![Fix with AI按鈕](assets/brand-alignment-fix-with-ai-button.png)
 
-&#x200B;5. 您會看到以綠色反白顯示的建議變更，以及移除以紅色顯示並帶有刪除線的文字，如下圖所示。 您也會注意到分數已更新（在此案例中為80%）。 按一下&#x200B;**套用**&#x200B;按鈕讓變更生效。
+5. 您會看到以綠色反白顯示的建議變更，以及移除以紅色顯示並帶有刪除線的文字，如下圖所示。 您也會注意到分數已更新（在此案例中為80%）。 按一下&#x200B;**套用**&#x200B;按鈕讓變更生效。
 
-![以綠色反白顯示的建議變更，移除的文字以紅色點進](assets/brand-alignment-apply-suggested-changes.png)
+   ![以綠色反白顯示的建議變更，移除的文字以紅色點進](assets/brand-alignment-apply-suggested-changes.png)
 
-&#x200B;6. 變更會套用新文字。
-&#x200B;7. 檢閱所有醒目提示的區域並進行必要的更新，以更正內容（使用AI或手動編輯）。 在繼續之前，請確定已完成所有必要的變更。
-&#x200B;8. 儲存變更。
+6. 變更會套用新文字。
+7. 檢閱所有醒目提示的區域並進行必要的更新，以更正內容（使用AI或手動編輯）。 在繼續之前，請確定已完成所有必要的變更。
+8. 儲存變更。
 
 ![更正標幟的內容後儲存變更](assets/brand-alignment-save-changes.png)
 
@@ -131,16 +130,16 @@ Adobe Journey Optimizer包含&#x200B;**AI導向的Brand Alignment分數**，可�
 3. 按一下&#x200B;**重新評估分數**。
 4. 比較新分數與先前分數。
 
-![比較重新評估的品牌分數與先前的分數](assets/brand-alignment-re-evaluate-score-comparison.png)
+   ![比較重新評估的品牌分數與先前的分數](assets/brand-alignment-re-evaluate-score-comparison.png)
 
-例如：
+   例如：
 
-- 原始分數： **56%**
-- 更新分數： **90%**
+   - 原始分數： **56%**
+   - 更新分數： **90%**
 
-這表示您的更新已成功使電子郵件符合品牌標準。
+   這表示您的更新已成功使電子郵件符合品牌標準。
 
-&#x200B;5. 按一下&#x200B;**儲存**，完成您的電子郵件。
+5. 按一下&#x200B;**儲存**，完成您的電子郵件。
 
 ![儲存按鈕以完成電子郵件](assets/brand-alignment-save-finalize-email.png)
 

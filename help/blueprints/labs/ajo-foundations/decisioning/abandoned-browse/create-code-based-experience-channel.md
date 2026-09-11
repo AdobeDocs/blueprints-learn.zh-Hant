@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立程式碼型體驗管道
 description: 在Adobe Journey Optimizer中設定程式碼型體驗管道，將JSON選件資料傳回至任何要求決策的網頁、行動裝置或物件系統。
 doc-type: article
 solution: Experience Platform
 exl-id: c3353d3d-cd97-46b7-8ef8-c72fa9e7dfe5
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -23,29 +22,29 @@ ht-degree: 0%
 2. 按一下藍色&#x200B;**建立管道設定**&#x200B;按鈕
 3. 在「頻道設定詳細資料」頁面上，命名頻道&#x200B;**jsonOffer\_cbe**
 
->[!NOTE]
->
->由於CBE可由跨&#x200B;*N*&#x200B;個平台之任意數量的使用者端呼叫，因此我們將命名此CBE為對位置而言較為通用的名稱，但特定於其傳回JSON格式選件的事實。
+   >[!NOTE]
+   >
+   >由於CBE可由跨&#x200B;*N*&#x200B;個平台之任意數量的使用者端呼叫，因此我們將命名此CBE為對位置而言較為通用的名稱，但特定於其傳回JSON格式選件的事實。
 
 4. 將&#x200B;**選取管道**&#x200B;下拉式清單設定為&#x200B;**程式碼型體驗。**
 
->[!WARNING]
->
->我們不會在本實驗室中設定行銷動作，因為它會為我們的展示增加不必要的複雜性，但由於CBE可供任何數量的系統存取，在實際使用案例中，您將會設定此管道的所有可能行銷動作，以強制執行DULE標籤。
+   >[!WARNING]
+   >
+   >我們不會在本實驗室中設定行銷動作，因為它會為我們的展示增加不必要的複雜性，但由於CBE可供任何數量的系統存取，在實際使用案例中，您將會設定此管道的所有可能行銷動作，以強制執行DULE標籤。
 
 5. 勾選「程式碼型體驗設定」區域中的&#x200B;**網頁**&#x200B;方塊，並保留&#x200B;**單次頁面**&#x200B;選項為選取狀態。
 6. 在&#x200B;**頁面URL**&#x200B;文字方塊中輸入文字`https://connection5g.com/home`
 7. 在&#x200B;**頁面**&#x200B;上的位置文字方塊中，輸入文字&#x200B;**jsonOfferContainer**
 
->[!NOTE]
->
->並非每個傳送至Edge的體驗事件都會觸發個人化優惠請求。 您將在下一節中建立歷程，此CBE將會以您剛才設定的選取策略進行設定。 「頁面上的位置」設定是在Experience Events中傳遞的引數名稱，可告知Experience Edge傳回指派給該CBE的任何選件。 它通常也稱為表面。 無論是行動應用程式、網頁或其他IoT裝置，如果jsonOfferContainer值透過體驗事件傳遞至Edge及正確的eventType，則Edge會執行實驗室目前為止設定的邏輯並傳回適當的選件。
+   >[!NOTE]
+   >
+   >並非每個傳送至Edge的體驗事件都會觸發個人化優惠請求。 您將在下一節中建立歷程，此CBE將會以您剛才設定的選取策略進行設定。 「頁面上的位置」設定是在Experience Events中傳遞的引數名稱，可告知Experience Edge傳回指派給該CBE的任何選件。 它通常也稱為表面。 無論是行動應用程式、網頁或其他IoT裝置，如果jsonOfferContainer值透過體驗事件傳遞至Edge及正確的eventType，則Edge會執行實驗室目前為止設定的邏輯並傳回適當的選件。
 
 8. 按一下「格式」區段中的&#x200B;**JSON**&#x200B;選項按鈕。 完成後，您的CBE管道設定應如下所示：
 
-![已選取JSON格式並完成程式碼型體驗通道設定](assets/create-code-based-experience-channel-completed-config.png)
+   ![已選取JSON格式並完成程式碼型體驗通道設定](assets/create-code-based-experience-channel-completed-config.png)
 
-&#x200B;9. 一切看起來正確後，請按一下右上角的藍色&#x200B;**提交**&#x200B;按鈕。
+9. 一切看起來正確後，請按一下右上角的藍色&#x200B;**提交**&#x200B;按鈕。
 
 >[!TIP]
 >

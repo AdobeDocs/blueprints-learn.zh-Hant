@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 內容模擬
 description: 瞭解如何使用Adobe Journey Optimizer的模擬工具搭配範例設定檔資料，以驗證個人化欄位、內容變體和遞補行為。
 doc-type: article
 solution: Experience Platform
 exl-id: 3e2b064f-5680-461c-a49e-2a61514e146f
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -27,7 +26,7 @@ ht-degree: 0%
 
 ## 簡介
 
-在這個最終模組中，您將使用Adobe Journey Optimizer中的模擬工具，以&#x200B;**兩個條件式變體**&#x200B;測試您的電子郵件。
+在這個最終模組中，您將使用Adobe Journey Optimizer中的模擬工具，以&#x200B;**兩個條件式變體**測試您的電子郵件。
 這可讓您預覽不同客戶將會如何體驗您的個人化訊息，在啟動行銷活動之前確保準確性。
 
 您將會使用工具組中的範例測試設定檔檔案&#x200B;**sample.csv**。
@@ -51,9 +50,9 @@ ht-degree: 0%
    - **Jason**→40歲以下
 2. 按一下&#x200B;**上傳輸入資料**。
 
-![在模擬面板中上傳輸入資料按鈕](assets/content-simulation-click-upload-input-data.png)
+   ![在模擬面板中上傳輸入資料按鈕](assets/content-simulation-click-upload-input-data.png)
 
-&#x200B;3. 選擇&#x200B;**sample.csv**&#x200B;並按一下&#x200B;**繼續**。
+3. 選擇&#x200B;**sample.csv**&#x200B;並按一下&#x200B;**繼續**。
 
 ![選擇sample.csv並按一下[繼續]](assets/content-simulation-choose-sample-csv-continue.png)
 
@@ -72,7 +71,7 @@ AJO會根據上傳的設定檔，並排顯示這兩個變體。
 
 如果您向上捲動，現在也會看到具有名稱的個人化欄位，如下所述。
 
-變體1![&#128279;](assets/content-simulation-personalized-name-field-variant-1.png)中為Alex顯示的個人化名稱欄位
+變體1](assets/content-simulation-personalized-name-field-variant-1.png)中為Alex顯示的![個人化名稱欄位
 
 - **Jason** →看到&#x200B;**變體2** （年齡低於40歲）
 

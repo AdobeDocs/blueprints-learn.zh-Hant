@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立Edge受眾
 description: 建立並發佈Edge評估對象與批次同等專案，以比較每個對象對即時傳入事件的回應方式。
 doc-type: article
 solution: Experience Platform
 exl-id: 79265a8f-81dd-41a3-89c5-c6646e435328
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -42,7 +41,7 @@ ht-degree: 0%
 1. 前往&#x200B;**對象**&#x200B;並按一下&#x200B;**Experience Platform**&#x200B;資料夾
 1. 將「n」拖放名為&#x200B;**dep：任何事件串流（一小時內）**&#x200B;的對象到畫布上
 
-![將dep： Any Event Streaming （一小時內）對象拖曳至規則產生器畫布](assets/create-edge-audience-drag-audience-to-canvas.png)
+   ![將dep： Any Event Streaming （一小時內）對象拖曳至規則產生器畫布](assets/create-edge-audience-drag-audience-to-canvas.png)
 
 
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 檢視結構描述
 description: 在Experience Platform UI中及透過取得結構描述API呼叫，檢視新建立的客戶結構描述。
 doc-type: article
 solution: Experience Platform
 exl-id: 29302546-46dc-4c97-8fd8-deab6977635c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -19,9 +18,9 @@ ht-degree: 0%
 
 1. 開啟瀏覽器並導覽回`Schema -> Browse`區段。
 
->[!NOTE]
->
->重新整理UI以檢視它，因為您剛才已建立它，而且需要重新查詢結構描述登入
+   >[!NOTE]
+   >
+   >重新整理UI以檢視它，因為您剛才已建立它，而且需要重新查詢結構描述登入
 
 2. 搜尋結構描述`Sample Customer Schema - <your sandbox number>`
 

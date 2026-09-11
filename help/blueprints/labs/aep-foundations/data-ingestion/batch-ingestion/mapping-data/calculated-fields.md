@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 計算欄位
 description: 建立計算欄位運算式，以回填遺失的SMS同意值，並將出生日期分割為日、月和年欄位。
 doc-type: article
 solution: Experience Platform
 exl-id: ea5d006b-11c5-439c-af01-bc00b919851f
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -27,17 +26,17 @@ sms\_optIn欄位是客戶帳戶結構描述中的必填欄位。 問題是串流
 
 1. 按一下&#x200B;**新增欄位型別**&#x200B;圖示，然後選取&#x200B;**新增計算欄位**，以建立計算欄位。 對於所有遺失的值，假設未提供同意，並標示為&#x200B;**&quot;n&quot;**。 請注意，計算欄位會顯示在左欄，因為透過計算欄位的轉換是此新對應的輸入。
 
-![新欄位型別圖示功能表已選取[新增計算欄位]選項](assets/calculated-fields-add-a-calculated-field.png "新增計算欄位")
+   ![新欄位型別圖示功能表已選取[新增計算欄位]選項](assets/calculated-fields-add-a-calculated-field.png "新增計算欄位")
 
 
 
-1. 在[建立計算欄位]對話方塊中新增下列運算式，然後按一下[預覽] **&#x200B;**
+1. 在[建立計算欄位]對話方塊中新增下列運算式，然後按一下[預覽] ****
 
-```none
-iif(sms_optIn == null or sms_optIn == "", 'n', sms_optIn)
-```
+   ```none
+   iif(sms_optIn == null or sms_optIn == "", 'n', sms_optIn)
+   ```
 
-![使用sms_optIn運算式和預覽結果建立計算欄位對話方塊](assets/calculated-fields-sms-optin-calculated-field.png "sms_optIn計算欄位")
+   ![使用sms_optIn運算式和預覽結果建立計算欄位對話方塊](assets/calculated-fields-sms-optin-calculated-field.png "sms_optIn計算欄位")
 
 
 
@@ -55,13 +54,13 @@ iif(sms_optIn == null or sms_optIn == "", 'n', sms_optIn)
 1. 在右窗格中，您現在會看到目標結構面板已開啟。 在搜尋方塊中輸入&#x200B;**簡訊**
 1. 選取&#x200B;**val**&#x200B;欄位
 
-![針對計算欄位對應選取了sms.val欄位的目標結構描述面板](assets/calculated-fields-map-calculated-field-to-target-xdm-field.png)
+   ![針對計算欄位對應選取了sms.val欄位的目標結構描述面板](assets/calculated-fields-map-calculated-field-to-target-xdm-field.png)
 
 
 
-您的最終對應應如下所示：
+   您的最終對應應如下所示：
 
-![使用sms_optin計算欄位對應到目標結構描述的最終對應畫面](assets/calculated-fields-final-mapping-screen.png)
+   ![使用sms_optin計算欄位對應到目標結構描述的最終對應畫面](assets/calculated-fields-final-mapping-screen.png)
 
 
 
@@ -84,21 +83,21 @@ iif(sms_optIn == null or sms_optIn == "", 'n', sms_optIn)
 1. 新增計算欄位以擷取設定檔的出生日期和月份
 1. 針對計算欄位使用下列程式碼：
 
->[!NOTE]
->
->嘗試透過分別執行程式碼片段來瞭解正在發生的情況，而不是僅複製上述程式碼，以瞭解其構成方式，以便在單一行中建立更複雜的計算欄位，因為不允許使用多行。 請嘗試下列步驟：
->
->1. `date(birth_Date,"M/d/yyyy")`
->2. `date_part("day", date(birth_Date,"M/d/yyyy")).toString()`
->3. `date_part("month", date(birth_Date,"M/d/yyyy")).toString()`
->4. `concat(date_part("month", date(birth_Date,"M/d/yyyy")).toString(),`
->   `"-", date_part("day", date(birth_Date,"M/d/yyyy")).toString())`
+   >[!NOTE]
+   >
+   >嘗試透過分別執行程式碼片段來瞭解正在發生的情況，而不是僅複製上述程式碼，以瞭解其構成方式，以便在單一行中建立更複雜的計算欄位，因為不允許使用多行。 請嘗試下列步驟：
+   >
+   >1. `date(birth_Date,"M/d/yyyy")`
+   >2. `date_part("day", date(birth_Date,"M/d/yyyy")).toString()`
+   >3. `date_part("month", date(birth_Date,"M/d/yyyy")).toString()`
+   >4. `concat(date_part("month", date(birth_Date,"M/d/yyyy")).toString(),`
+   >   `"-", date_part("day", date(birth_Date,"M/d/yyyy")).toString())`
 
 
 
 1. 按一下「預覽」，您應該會看到下列結果。 如果一切正常，請按一下&#x200B;**儲存**
 
-![預覽出生日期和月份計算欄位運算式的結果](assets/calculated-fields-birth-day-month-preview.png)
+   ![預覽出生日期和月份計算欄位運算式的結果](assets/calculated-fields-birth-day-month-preview.png)
 
 
 
@@ -112,9 +111,9 @@ iif(sms_optIn == null or sms_optIn == "", 'n', sms_optIn)
 
 1. 使用下列程式碼建立新的計算欄位，以擷取設定檔的出生年份
 
-```none
-date_part("yyyy",date(birth_Date,"M/d/yyyy"))
-```
+   ```none
+   date_part("yyyy",date(birth_Date,"M/d/yyyy"))
+   ```
 
 1. 將計算欄位對應到&#x200B;**person.birthYear**&#x200B;的目標位置
 

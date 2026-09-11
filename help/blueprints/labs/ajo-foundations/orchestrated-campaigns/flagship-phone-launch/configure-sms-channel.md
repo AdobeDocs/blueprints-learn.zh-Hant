@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 設定簡訊頻道
 description: 瞭解如何設定Twilio型簡訊頻道及其執行維度，以用於協調的行銷活動。
 doc-type: article
 solution: Experience Platform
 exl-id: 63c994f2-4b6b-42e9-aa82-cb6697390a08
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -56,22 +55,22 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 1. 瀏覽至&#x200B;**管道** → **一般設定** → **管道設定**。
 
-![瀏覽到[一般設定]下的頻道設定](assets/configure-sms-channel-navigate-channel-configurations.png)
+   ![瀏覽到[一般設定]下的頻道設定](assets/configure-sms-channel-navigate-channel-configurations.png)
 
 
 
-&#x200B;2. 按一下&#x200B;**建立通道組態**。
+2. 按一下&#x200B;**建立通道組態**。
 
-![建立通道設定按鈕](assets/configure-sms-channel-click-create-configuration.png)
+   ![建立通道設定按鈕](assets/configure-sms-channel-click-create-configuration.png)
 
 
 
-&#x200B;3. 在SMS通道組態設定中填入下列值：
+3. 在SMS通道組態設定中填入下列值：
    - **名稱：** `Relational-SMS-Multi-Entity`
    - **頻道：** `Mobile Message`
    - **行銷動作：** `SMS Targeting`
 
-&#x200B;> [!NOTE]
+>[!NOTE]
 >
 >如果您收到錯誤訊息，指出使用者沒有許可權，請忽略該錯誤訊息並繼續。
 
@@ -93,46 +92,46 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 1. 在執行詳細資訊下，按一下索引標籤&#x200B;**協調的行銷活動**
 
-![執行詳細資訊下的協調行銷活動標籤](assets/configure-sms-channel-execution-details-tab.png)
+   ![執行詳細資訊下的協調行銷活動標籤](assets/configure-sms-channel-execution-details-tab.png)
 
 
 
-&#x200B;2. 確認已核取&#x200B;**已啟用**&#x200B;核取方塊
+2. 確認已核取&#x200B;**已啟用**&#x200B;核取方塊
 
-![已針對協調的行銷活動核取啟用核取方塊](assets/configure-sms-channel-enabled-checkbox.png)
+   ![已針對協調的行銷活動核取啟用核取方塊](assets/configure-sms-channel-enabled-checkbox.png)
 
 
 
-&#x200B;3. 在子區段&#x200B;**執行維度**&#x200B;下方，確定下列設定如下：
+3. 在子區段&#x200B;**執行維度**&#x200B;下方，確定下列設定如下：
    - **傳遞訊息給每：** `Target + Secondary Dimension`
    - **設定檔目標Dimension：** `dep-rel: Customer Account - customer_id`
    - **次要Dimension：** `Customer Line`
 
-![目標與次要維度的執行維度設定](assets/configure-sms-channel-execution-dimension-setup.png)
+   ![目標與次要維度的執行維度設定](assets/configure-sms-channel-execution-dimension-setup.png)
 
-![在執行維度設定「次要Dimension」](assets/configure-sms-channel-secondary-dimension-detail.png "次要Dimension")中，將次要Dimension設為「客戶行」
+   ![在執行維度設定「次要Dimension」](assets/configure-sms-channel-secondary-dimension-detail.png "次要Dimension")中，將次要Dimension設為「客戶行」
 
->[!NOTE]
->
->這可告知「協調的行銷活動」，當它傳送訊息時，應該針對符合設定檔目標Dimension的每筆記錄，傳送一則訊息。
-
-
-
-&#x200B;4. 在執行位址標題下，確定您選取&#x200B;**次要Dimension**&#x200B;的選項按鈕，然後按一下&#x200B;**簡訊執行欄位**&#x200B;上的編輯按鈕
-
-![執行位址已設定為具有編輯欄位的次要Dimension](assets/configure-sms-channel-execution-address-selection.png)
+   >[!NOTE]
+   >
+   >這可告知「協調的行銷活動」，當它傳送訊息時，應該針對符合設定檔目標Dimension的每筆記錄，傳送一則訊息。
 
 
 
-&#x200B;5. 在快顯視窗中，按一下結構描述&#x200B;**dep-rel： Customer Line**，然後選取&#x200B;**行動電話**。
+4. 在執行位址標題下，確定您選取&#x200B;**次要Dimension**&#x200B;的選項按鈕，然後按一下&#x200B;**簡訊執行欄位**&#x200B;上的編輯按鈕
 
-Dep-rel的![結構描述快顯功能表： Customer Line結構描述](assets/configure-sms-channel-customer-line-schema-popup.png)
-
-![從相關資料選取的行動電話欄位：客戶線路結構描述「行動電話欄位」](assets/configure-sms-channel-mobile-phone-field-selected.png "行動電話欄位")
+   ![執行位址已設定為具有編輯欄位的次要Dimension](assets/configure-sms-channel-execution-address-selection.png)
 
 
 
-&#x200B;6. 確認最終執行詳細資訊區段符合以下內容
+5. 在快顯視窗中，按一下結構描述&#x200B;**dep-rel： Customer Line**，然後選取&#x200B;**行動電話**。
+
+   Dep-rel的![結構描述快顯功能表： Customer Line結構描述](assets/configure-sms-channel-customer-line-schema-popup.png)
+
+   ![從相關資料選取的行動電話欄位：客戶線路結構描述「行動電話欄位」](assets/configure-sms-channel-mobile-phone-field-selected.png "行動電話欄位")
+
+
+
+6. 確認最終執行詳細資訊區段符合以下內容
 
 ![符合必要設定的最終執行詳細資料組態](assets/configure-sms-channel-final-execution-details.png)
 
@@ -142,21 +141,21 @@ Dep-rel的![結構描述快顯功能表： Customer Line結構描述](assets/con
 
 1. 您可以按一下&#x200B;**提交**&#x200B;按鈕以完成設定，並看到成功訊息
 
-提交頻道設定後![成功訊息](assets/configure-sms-channel-submit-success-message.png)
+   提交頻道設定後![成功訊息](assets/configure-sms-channel-submit-success-message.png)
 
 
 
-&#x200B;2. 在通道設定詳細目錄頁面上，在繼續之前，請確定狀態顯示為&#x200B;**作用中**
+2. 在通道設定詳細目錄頁面上，在繼續之前，請確定狀態顯示為&#x200B;**作用中**
 
-![頻道設定狀態顯示為[作用中]](assets/configure-sms-channel-active-status.png)
+   ![頻道設定狀態顯示為[作用中]](assets/configure-sms-channel-active-status.png)
 
->[!CAUTION]
->
->等到狀態變成&#x200B;**作用中**&#x200B;為止，否則未來的實驗室步驟將會非常失敗
+   >[!CAUTION]
+   >
+   >等到狀態變成&#x200B;**作用中**&#x200B;為止，否則未來的實驗室步驟將會非常失敗
 
 
 
-&#x200B;3. 當狀態變成「作用中」時，表示您已完成！
+3. 當狀態變成「作用中」時，表示您已完成！
 
 >[!TIP]
 >
@@ -168,4 +167,4 @@ Dep-rel的![結構描述快顯功能表： Customer Line結構描述](assets/con
 
 您現在已瞭解如何成功設定簡訊頻道。  請注意，這是以API為基礎的SMS，因此根據您的提供者，他們可能會使用替代方法進行驗證。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)以瞭解詳情。

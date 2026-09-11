@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立受眾#2
 description: 在沒有作用中iPhone 14行的情況下建立設定檔對象，然後使用設定檔型欄位將其從批次轉換為串流評估。
 doc-type: article
 solution: Experience Platform
 exl-id: 5a598e9b-9969-4287-8bbd-9de8864b3025
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 0%
@@ -90,80 +89,80 @@ ht-degree: 0%
 
 1. 開啟「*擁有iPhone 14*」對象，並將名稱變更為「*擁有iPhone 14批次*」。
 
->[!WARNING]
->
->目前無法在UI中變更評估方法。 參考此對象的任何對象也都必須刪除。 在決定使用區段內區段的建置策略時，請記住這一點。
+   >[!WARNING]
+   >
+   >目前無法在UI中變更評估方法。 參考此對象的任何對象也都必須刪除。 在決定使用區段內區段的建置策略時，請記住這一點。
 
 
 
 2. 建立新對象。 將「擁有iPhone 14對象批次」對象新增至畫布，然後按一下「轉換為規則」。
 
-![將擁有者iPhone 14批次對象新增至畫布，然後按一下「轉換為規則」](assets/build-audience-2-audience-to-the-canvas-and-click-convert-to-rules.png)
+   ![將擁有者iPhone 14批次對象新增至畫布，然後按一下「轉換為規則」](assets/build-audience-2-audience-to-the-canvas-and-click-convert-to-rules.png)
 
-![對象已轉換為畫布上的規則](assets/build-audience-2-audience-to-the-canvas-and-click-convert-to-rules-2.png)
-
-
-
-&#x200B;3. 將說明、名稱和評估方法更新至右下角的串流，然後按一下評估方法旁的資料夾圖示。 您應會看到以下內容：
-
-按一下資料夾圖示後，![評估方法設定為串流](assets/build-audience-2-evaluation-method-streaming-folder-icon.png)
+   ![對象已轉換為畫布上的規則](assets/build-audience-2-audience-to-the-canvas-and-click-convert-to-rules-2.png)
 
 
 
-雖然不明顯，但這是因為我們在查詢結構描述上使用產品名稱
+3. 將說明、名稱和評估方法更新至右下角的串流，然後按一下評估方法旁的資料夾圖示。 您應會看到以下內容：
+
+   按一下資料夾圖示後，![評估方法設定為串流](assets/build-audience-2-evaluation-method-streaming-folder-icon.png)
+
+
+
+   雖然不明顯，但這是因為我們在查詢結構描述上使用產品名稱
+
+   >[!NOTE]
+   >
+   >每當使用查詢時，我們的評估方法都會強制設為批次。
+   >
+   >如果您檢視路徑，發現路徑中任何位置都有「屬性」，就能分辨出來
+   >
+   >![包含「屬性」的路徑強制評估方法分批進行](assets/build-audience-2-path-contains-properties-forces-batch.png)
+
+
+
+
+
+4. 將產品名稱的現有值取代為現在來自XDM個別設定檔結構描述
+
+   取代下列路徑：
+
+   - XDM個別設定檔>部門>作用中產品>產品ID屬性>產品名稱
+
+   新增路徑：
+
+   - XDM個別設定檔>dep >作用中產品>模型
+
+   ![將產品名稱路徑取代為XDM個別設定檔作用中產品模型路徑](assets/build-audience-2-replace-with-xdm-individual-profile-path.png)
+
+   ![已更新參照XDM個人設定檔模型路徑的對象規則](assets/build-audience-2-replace-with-xdm-individual-profile-path--2.png)
+
+
+
+5. 將評估方法變更為串流，然後按一下資料夾圖示
+
+   ![將評估方法變更為串流，然後按一下資料夾圖示](assets/build-audience-2-change-evaluation-method-to-streaming.png)
+
+
+
+6. 對於新的串流合格對象，請提供說明。
+
+   - 將對象儲存為&quot;*擁有iPhone 14*&quot;對象。
+   - 按一下藍色按鈕&#x200B;**啟用受眾**&#x200B;到目的地
+
+   ![按一下符合串流資格對象的「啟用對象至目的地」](assets/build-audience-2-activate-audience-to-destination.png)
+
+
+
+7. 選取&#x200B;**串流DEP Webhook**&#x200B;目的地並按一下&#x200B;**下一步**
+
+8. 按一下&#x200B;**下一步**&#x200B;和&#x200B;**完成**
 
 >[!NOTE]
 >
->每當使用查詢時，我們的評估方法都會強制設為批次。
->
->如果您檢視路徑，發現路徑中任何位置都有「屬性」，就能分辨出來
->
->![包含「屬性」的路徑強制評估方法分批進行](assets/build-audience-2-path-contains-properties-forces-batch.png)
-
-
-
-
-
-&#x200B;4. 將產品名稱的現有值取代為現在來自XDM個別設定檔結構描述
-
-取代下列路徑：
-
-- XDM個別設定檔>部門>作用中產品>產品ID屬性>產品名稱
-
-新增路徑：
-
-- XDM個別設定檔>dep >作用中產品>模型
-
-![將產品名稱路徑取代為XDM個別設定檔作用中產品模型路徑](assets/build-audience-2-replace-with-xdm-individual-profile-path.png)
-
-![已更新參照XDM個人設定檔模型路徑的對象規則](assets/build-audience-2-replace-with-xdm-individual-profile-path--2.png)
-
-
-
-&#x200B;5. 將評估方法變更為串流，然後按一下資料夾圖示
-
-![將評估方法變更為串流，然後按一下資料夾圖示](assets/build-audience-2-change-evaluation-method-to-streaming.png)
-
-
-
-&#x200B;6. 對於新的串流合格對象，請提供說明。
-
-- 將對象儲存為&quot;*擁有iPhone 14*&quot;對象。
-- 按一下藍色按鈕&#x200B;**啟用受眾**&#x200B;到目的地
-
-![按一下符合串流資格對象的「啟用對象至目的地」](assets/build-audience-2-activate-audience-to-destination.png)
-
-
-
-&#x200B;7. 選取&#x200B;**串流DEP Webhook**&#x200B;目的地並按一下&#x200B;**下一步**
-
-&#x200B;8. 按一下&#x200B;**下一步**&#x200B;和&#x200B;**完成**
-
-&#x200B;> [!NOTE]
->
 >考量為什麼您可能想要選取批次vs串流或Edge：
 >
->最新的護欄： [https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+>最新的護欄： [https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 >[!TIP]
 >
