@@ -25,31 +25,31 @@ ht-degree: 0%
 
 ![從目標定位活動中選取組建對象](assets/build-an-audience-select-build-audience-activity.png)
 
-2. **建立對象**&#x200B;活動會開啟右側的詳細資料窗格，按一下「搜尋」圖示以選取&#x200B;**目標維度**。
+&#x200B;2. **建立對象**&#x200B;活動會開啟右側的詳細資料窗格，按一下「搜尋」圖示以選取&#x200B;**目標維度**。
 
 ![選取目標維度](assets/build-an-audience-select-targeting-dimension.png)
 
-3. 從清單中選取`dep-rel: Customer Account`並按一下&#x200B;**確認**
+&#x200B;3. 從清單中選取`dep-rel: Customer Account`並按一下&#x200B;**確認**
 
 ![選取dep-rel：客戶帳戶結構描述](assets/build-an-audience-select-customer-account-schema.png)
 
-4. 設定&#x200B;**目標維度**&#x200B;後，按一下「建立對象」以開始從關聯式結構描述建立對象的程式
+&#x200B;4. 設定&#x200B;**目標維度**&#x200B;後，按一下「建立對象」以開始從關聯式結構描述建立對象的程式
 
 ![按一下「建立對象」按鈕](assets/build-an-audience-create-audience-button.png)
 
-5. 建立對象詳細資料窗格隨即開啟，請按一下&#x200B;**新增條件**
+&#x200B;5. 建立對象詳細資料窗格隨即開啟，請按一下&#x200B;**新增條件**
 
 ![在[建立對象]窗格中按一下[新增條件]](assets/build-an-audience-add-condition.png)
 
-6. 按一下`dep-rel: Plan Lookup`旁邊的&#x200B;**>**，向下捲動並展開它
+&#x200B;6. 按一下`dep-rel: Plan Lookup`旁邊的&#x200B;**>**，向下捲動並展開它
 
 ![展開dep-rel：計畫查閱](assets/build-an-audience-expand-plan-lookup.png)
 
-7. 選取`dep-rel: Plan Name`並按一下&#x200B;**確認**
+&#x200B;7. 選取`dep-rel: Plan Name`並按一下&#x200B;**確認**
 
 ![選取dep-rel：計畫名稱](assets/build-an-audience-select-plan-name.png)
 
-8. 在「自訂條件」面板中，將運運算元保留為「等於」，並在「值」中，從下拉式清單中選取「基本」。
+&#x200B;8. 在「自訂條件」面板中，將運運算元保留為「等於」，並在「值」中，從下拉式清單中選取「基本」。
 
 ![計畫名稱等於Basic的自訂狀態](assets/build-an-audience-plan-name-equals-basic.png)
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 
 
-9. 設定自訂條件後，按一下「重新整理」圖示以計算並檢視計數。 有兩個位置可協助計算結果
+&#x200B;9. 設定自訂條件後，按一下「重新整理」圖示以計算並檢視計數。 有兩個位置可協助計算結果
 
 ![按一下[重新整理]圖示以計算預期的資料列計數](assets/build-an-audience-refresh-row-counts.png)
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 
 
-10. 計數(**38**)表示關聯式存放區中符合指定條件的列數。 按一下&#x200B;**確認**&#x200B;以結束&#x200B;**建立對象**&#x200B;窗格
+&#x200B;10. 計數(**38**)表示關聯式存放區中符合指定條件的列數。 按一下&#x200B;**確認**&#x200B;以結束&#x200B;**建立對象**&#x200B;窗格
 
 ![確認資料列計數並結束[建立對象窗格]](assets/build-an-audience-confirm-row-count.png)
 

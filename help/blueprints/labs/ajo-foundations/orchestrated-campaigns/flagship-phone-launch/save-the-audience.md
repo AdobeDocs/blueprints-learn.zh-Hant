@@ -29,7 +29,7 @@ ht-degree: 0%
 
 
 
-2. 更新變更維度的屬性，如下所示：
+&#x200B;2. 更新變更維度的屬性，如下所示：
    - **標籤：** `Convert Line to Account`
    - **新目標維度：** `dep-rel: Customer Account`
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 
 
-3. 完成後，這是您畫布的外觀。  儲存您的工作！
+&#x200B;3. 完成後，這是您畫布的外觀。  儲存您的工作！
 
 新增變更維度活動後![工作流程畫布](assets/save-the-audience-canvas-after-change-dimension.png)
 
@@ -57,21 +57,21 @@ ht-degree: 0%
 
 
 
-2. 將重複資料刪除活動的標籤更新為`Dedup customer id`
+&#x200B;2. 將重複資料刪除活動的標籤更新為`Dedup customer id`
 
 ![重複資料刪除活動標籤已設定為重複資料刪除客戶ID](assets/save-the-audience-deduplication-label.png)
 
 
 
-3. 現在按一下&#x200B;**+新增屬性**&#x200B;按鈕，並從標題為&#x200B;**客戶ID**&#x200B;的結構描述中選取欄位
+&#x200B;3. 現在按一下&#x200B;**+新增屬性**&#x200B;按鈕，並從標題為&#x200B;**客戶ID**&#x200B;的結構描述中選取欄位
 
 ![新增重複資料刪除活動的屬性按鈕](assets/save-the-audience-add-attribute-button.png)
 
-從結構描述](assets/save-the-audience-select-customer-id-field.png)中選取的![客戶識別碼欄位
+從結構描述![&#128279;](assets/save-the-audience-select-customer-id-field.png)中選取的客戶識別碼欄位
 
 
 
-4. 在「重複資料刪除」設定下，確定您有以下設定：
+&#x200B;4. 在「重複資料刪除」設定下，確定您有以下設定：
    - **要保留的重複專案：** `1`
    - **重複資料刪除方法：** `Random selection`
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 
 
-5. 完成後，您的畫布看起來像這樣。 在繼續之前，請按一下右上方的&#x200B;**儲存**&#x200B;按鈕。
+&#x200B;5. 完成後，您的畫布看起來像這樣。 在繼續之前，請按一下右上方的&#x200B;**儲存**&#x200B;按鈕。
 
 ![已在畫布上完整設定重複資料刪除活動](assets/save-the-audience-deduplication-configured.png)
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ![在重複資料刪除後新增儲存對象活動](assets/save-the-audience-add-save-audience-activity.png)
 
-2. 在右側欄中，將活動的屬性設定如下：
+&#x200B;2. 在右側欄中，將活動的屬性設定如下：
    - **對象標籤**： `Apple Upgrade Eligible Customer Accounts`
    - **設定檔對應欄位**： `dep-rel: Customer Account - customer id`
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 
 
-2. 按一下&#x200B;**開始**&#x200B;按鈕以執行工作流程。 您的工作流程現在看起來像這樣，而您會看到如下的計數：
+&#x200B;2. 按一下&#x200B;**開始**&#x200B;按鈕以執行工作流程。 您的工作流程現在看起來像這樣，而您會看到如下的計數：
    - 建置對象： `65`
    - 將行轉換為帳戶： `65`
    - 重複資料刪除客戶ID： `46`

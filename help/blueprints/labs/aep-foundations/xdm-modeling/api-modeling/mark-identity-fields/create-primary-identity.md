@@ -55,6 +55,6 @@ ht-degree: 0%
 
 ![201成功建立主要身分描述項後已建立回應](assets/create-primary-identity-201-created-response.png "已成功建立主要身分描述項")
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >恭喜！  您剛才在結構描述中建立了主要身分描述項

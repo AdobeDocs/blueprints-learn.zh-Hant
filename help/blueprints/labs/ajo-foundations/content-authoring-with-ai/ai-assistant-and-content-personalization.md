@@ -40,7 +40,7 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 在本練習中，您將改善使用AI助理所建立的電子郵件。
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >AI助理是&#x200B;**非決定性的**，這表示它每次使用時可能會產生稍微不同的內容。 您在練習中所看到的內容，可能與本指南中的熒幕擷取畫面或範例不完全相符。 沒關係 — 專注於學習流程和概念，而不是期望相同的結果。
 
@@ -54,18 +54,18 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 主旨列欄位工具列中的![AI助理圖示](assets/ai-assistant-and-content-personalization-ai-assistant-icon.png)
 
-6. 您會注意到，「品牌指引」預設為選取。
-7. 輸入提示：
+&#x200B;6. 您會注意到，「品牌指引」預設為選取。
+&#x200B;7. 輸入提示：
 
 >我們將推出iPhone 17，並希望主旨列朗朗上口
 
-8. 按&#x200B;**產生**。
-9. 檢閱產生的四個變體。
-10. 選擇具有最佳對齊分數的變體，然後按一下&#x200B;**選取**。
+&#x200B;8. 按&#x200B;**產生**。
+&#x200B;9. 檢閱產生的四個變體。
+&#x200B;10. 選擇具有最佳對齊分數的變體，然後按一下&#x200B;**選取**。
 
 ![從AI助理選取最符合的主旨行變體](assets/ai-assistant-and-content-personalization-select-subject-line-variant.png)
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >您的結果與實驗指南可能完全不同，因此您不必擔心。 選取您認為正確的標題，並繼續實驗。
 
@@ -78,32 +78,32 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 ![在行銷活動編輯器中編輯電子郵件內文按鈕](assets/ai-assistant-and-content-personalization-edit-email-body-button.png)
 
-2. 按一下&#x200B;**產品朗讀行**&#x200B;標題。
-3. 按一下&#x200B;**產生並選取文字**&#x200B;以開啟AI小幫手
+&#x200B;2. 按一下&#x200B;**產品朗讀行**&#x200B;標題。
+&#x200B;3. 按一下&#x200B;**產生並選取文字**&#x200B;以開啟AI小幫手
 
 ![產生並選取開啟AI助理的文字選項](assets/ai-assistant-and-content-personalization-generate-and-select-text.png)
 
-4. 從下拉式清單中選取&#x200B;**連線5G品牌指南**。
+&#x200B;4. 從下拉式清單中選取&#x200B;**連線5G品牌指南**。
 
 在AI助理下拉式清單中選取![連線5G品牌指南選項](assets/ai-assistant-and-content-personalization-brand-guidelines-dropdown.png)
 
-5. 提示：
+&#x200B;5. 提示：
 
 >*為iPhone 17上市撰寫醒目的大標題。 將其保留在10個字以內*
 
-6. 按一下「文字設定」以變更色調和通訊策略。 將通訊策略變更為&#x200B;**FOMO （害怕遺漏）**，語言變更為&#x200B;**英文**，音調變更為&#x200B;**令人興奮**。 縮小撥號，使用較短的版本。
+&#x200B;6. 按一下「文字設定」以變更色調和通訊策略。 將通訊策略變更為&#x200B;**FOMO （害怕遺漏）**，語言變更為&#x200B;**英文**，音調變更為&#x200B;**令人興奮**。 縮小撥號，使用較短的版本。
 
 ![文字設定面板，已選取FOMO通訊策略與激勵的語調](assets/ai-assistant-and-content-personalization-text-settings-fomo-tone.png)
 
-7. 按一下&#x200B;**產生**&#x200B;按鈕
-8. 檢閱並選取最佳版本，
-9. 如果您的文字很長，請使用滑桿來&#x200B;**「較短文字」**&#x200B;並重新產生文字。
+&#x200B;7. 按一下&#x200B;**產生**&#x200B;按鈕
+&#x200B;8. 檢閱並選取最佳版本，
+&#x200B;9. 如果您的文字很長，請使用滑桿來&#x200B;**「較短文字」**&#x200B;並重新產生文字。
 
 
 
 ![用來重新產生較短標題的較短文字滑桿](assets/ai-assistant-and-content-personalization-shorter-text-slider.png)
 
-10. 在您滿意文字後，請按一下&#x200B;**選取**
+&#x200B;10. 在您滿意文字後，請按一下&#x200B;**選取**
 
 ![選取產生的主圖示題文字](assets/ai-assistant-and-content-personalization-select-generated-hero-text.png)
 
@@ -115,19 +115,19 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 ![已選取要評估的樣板預留位置文字](assets/ai-assistant-and-content-personalization-select-templated-text.png)
 
-2. 按一下評估按鈕，如下所示。
+&#x200B;2. 按一下評估按鈕，如下所示。
 
 ![評估AI助理文字面板中的按鈕](assets/ai-assistant-and-content-personalization-click-evaluate-button.png)
 
-3. 系統會自動選取您的原始內容與您的品牌，如下面的步驟1和2所示。 按一下&#x200B;**評估**&#x200B;按鈕以繼續。
+&#x200B;3. 系統會自動選取您的原始內容與您的品牌，如下面的步驟1和2所示。 按一下&#x200B;**評估**&#x200B;按鈕以繼續。
 
 ![評估前已使用品牌准則自動選取原始內容](assets/ai-assistant-and-content-personalization-evaluate-brand-alignment.png)
 
-4. 如預期，您會注意到許多違反品牌指引的錯誤。 雖然可以使用AI來更正這些問題，但在此情況下，您不會修訂現有材料。 反之，您可以原樣保留內容，並從頭開始建立完全符合品牌標準的新內容。
+&#x200B;4. 如預期，您會注意到許多違反品牌指引的錯誤。 雖然可以使用AI來更正這些問題，但在此情況下，您不會修訂現有材料。 反之，您可以原樣保留內容，並從頭開始建立完全符合品牌標準的新內容。
 
 ![AI助理評估結果顯示品牌指引違規](assets/ai-assistant-and-content-personalization-brand-guideline-errors.png)
 
-5. 使用為您使用AI產生的新段落，並出現以下提示。 您可以使用以下提示對說明文字使用相同的方法。
+&#x200B;5. 使用為您使用AI產生的新段落，並出現以下提示。 您可以使用以下提示對說明文字使用相同的方法。
 
 提示：
 
@@ -156,11 +156,11 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 ![將影像元件拖曳到iPhone 17系列區塊下方](assets/ai-assistant-and-content-personalization-drag-image-component.png)
 
-2. 按一下外部，然後選取影像預留位置。 （請務必按一下影像，否則您將看不到Firefly選項）。
+&#x200B;2. 按一下外部，然後選取影像預留位置。 （請務必按一下影像，否則您將看不到Firefly選項）。
 
 ![選取影像預留位置以存取Firefly選項](assets/ai-assistant-and-content-personalization-select-image-placeholder.png)
 
-3. 在&#x200B;**Firefly**&#x200B;下，按一下&#x200B;**產生並選取影像**。
+&#x200B;3. 在&#x200B;**Firefly**&#x200B;下，按一下&#x200B;**產生並選取影像**。
 
 ![在Firefly下產生並選取影像選項](assets/ai-assistant-and-content-personalization-firefly-generate-select-image.png)
 
@@ -171,15 +171,15 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 已針對影像參考樣式選取![連線5G品牌指引](assets/ai-assistant-and-content-personalization-select-brand-guideline-reference.png)
 
-3. 按一下上傳影像
+&#x200B;3. 按一下上傳影像
 
 ![Firefly參考樣式面板中的「上傳影像」按鈕](assets/ai-assistant-and-content-personalization-click-upload-image.png)
 
-4. 從toolkit資料夾中選取reference.jpg
+&#x200B;4. 從toolkit資料夾中選取reference.jpg
 
 ![從Toolkit資料夾中選取reference.jpg](assets/ai-assistant-and-content-personalization-select-reference-jpg.png)
 
-5. 新增影像提示
+&#x200B;5. 新增影像提示
    `Portrait-oriented image of a confident man in his early to mid-40s, standing alone at night in a neon-lit urban street, focused on his smartphone. Cinematic cyberpunk-inspired city atmosphere with colorful LED signs, cool blue and warm orange lighting, shallow depth of field, soft bokeh lights in the background. Modern lifestyle, tech-savvy mood, realistic skin tones, high contrast, photorealistic, professional lighting, ultra-detailed`.
 
 ![已輸入縱向描述的Firefly影像提示欄位](assets/ai-assistant-and-content-personalization-firefly-image-prompt.png)
@@ -204,15 +204,15 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 ![檢閱Firefly產生的影像結果](assets/ai-assistant-and-content-personalization-review-firefly-results.png)
 
-2. 按一下&#x200B;**選取**&#x200B;您想要的選取影像。
+&#x200B;2. 按一下&#x200B;**選取**&#x200B;您想要的選取影像。
 
 ![選取想要產生的Firefly影像](assets/ai-assistant-and-content-personalization-select-firefly-image.png)
 
-3. 如果以上傳模式提示，請按一下&#x200B;**下一步**。
+&#x200B;3. 如果以上傳模式提示，請按一下&#x200B;**下一步**。
 
 ![上傳模組提示以按[下一步]](assets/ai-assistant-and-content-personalization-upload-modal-next.png)
 
-4. 然後按一下&#x200B;**匯入**。
+&#x200B;4. 然後按一下&#x200B;**匯入**。
 
 ![匯入按鈕以插入選取的影像](assets/ai-assistant-and-content-personalization-click-import-button.png)
 

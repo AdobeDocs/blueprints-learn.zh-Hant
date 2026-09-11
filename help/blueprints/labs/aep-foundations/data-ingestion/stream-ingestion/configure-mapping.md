@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 設定對應
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >請僅當您成功完成批次擷取實驗室時，才依照本節操作。  否則，請遵循在批次擷取實驗室中找到的[對應資料](../batch-ingestion/mapping-data/overview.md)步驟。
 

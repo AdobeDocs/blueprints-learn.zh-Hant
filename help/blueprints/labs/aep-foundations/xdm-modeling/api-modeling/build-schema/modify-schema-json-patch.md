@@ -133,10 +133,10 @@ ht-degree: 0%
 
 
 
-2. 使用以下資訊更新請求內文
+&#x200B;2. 使用以下資訊更新請求內文
 
 - **op** ->` add`
-- **路徑** -> `path from previous step +`` the new field name`
+- **路徑** -> `path from previous step +`&#x200B;` the new field name`
 - **值** ->
   - **標題** -> `Plan Description`
   - **型別** -> `string`
@@ -152,9 +152,9 @@ ht-degree: 0%
 
 
 
-3. 如果一切正常，請`Save`您的電話
+&#x200B;3. 如果一切正常，請`Save`您的電話
 
-4. `Execute`呼叫以執行PATCH
+&#x200B;4. `Execute`呼叫以執行PATCH
 
 您應該會看到`200 OK `回應，而現在應該會看到欄位群組中的`planDescription`欄位，如下所示：
 

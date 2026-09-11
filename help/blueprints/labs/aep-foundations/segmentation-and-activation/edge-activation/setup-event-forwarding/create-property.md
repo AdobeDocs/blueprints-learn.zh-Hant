@@ -26,9 +26,9 @@ ht-degree: 0%
 
 ![事件轉送區段的[新增屬性]按鈕反白顯示](assets/create-property-new-property-button.png "建立新的事件轉送屬性")
 
-3. 使用下列公式更新屬性名稱： `Event Forward Property SB + [sandbox number]`。 您的最終名稱可能如下： **事件轉寄屬性SB01**
+&#x200B;3. 使用下列公式更新屬性名稱： `Event Forward Property SB + [sandbox number]`。 您的最終名稱可能如下： **事件轉寄屬性SB01**
 
-4. 完成時，按一下&#x200B;**儲存**
+&#x200B;4. 完成時，按一下&#x200B;**儲存**
 
 ![事件轉送屬性名稱欄位已填入「儲存」按鈕反白顯示](assets/create-property-name-property-form.png)
 
@@ -40,17 +40,17 @@ ht-degree: 0%
 
 
 
-2. 您應該會看到類似以下的畫面。  按一下&#x200B;**擴充功能**。
+&#x200B;2. 您應該會看到類似以下的畫面。  按一下&#x200B;**擴充功能**。
 
 ![事件轉送屬性概觀畫面，其中醒目提示[擴充功能]索引標籤](assets/create-property-click-extensions-tab.png)
 
 
 
-3. 請執行以下動作來安裝Adobe Cloud Connector擴充功能：
+&#x200B;3. 請執行以下動作來安裝Adobe Cloud Connector擴充功能：
 
-4. 按一下頂端導覽列中的&#x200B;**目錄**
-5. 按一下&#x200B;**Adobe Cloud Connector**&#x200B;卡
-6. 在右側邊欄中，按一下&#x200B;**安裝**&#x200B;按鈕
+&#x200B;4. 按一下頂端導覽列中的&#x200B;**目錄**
+&#x200B;5. 按一下&#x200B;**Adobe Cloud Connector**&#x200B;卡
+&#x200B;6. 在右側邊欄中，按一下&#x200B;**安裝**&#x200B;按鈕
 
 ![延伸目錄與Adobe Cloud Connector卡及安裝按鈕強調顯示](assets/create-property-install-cloud-connector-extension.png)
 
@@ -74,13 +74,13 @@ ht-degree: 0%
 
 
 
-2. 按一下&#x200B;**建立新資料元素**&#x200B;按鈕
+&#x200B;2. 按一下&#x200B;**建立新資料元素**&#x200B;按鈕
 
 ![以[建立新資料元素]按鈕反白顯示的資料元素頁面](assets/create-property-create-new-data-element-button.png "建立新資料元素")
 
 
 
-3. 使用下列資訊設定新資料元素：
+&#x200B;3. 使用下列資訊設定新資料元素：
 
 | 元素型別 | 要設定的值 |
 | ----------------- | ------------------ |
@@ -92,13 +92,13 @@ ht-degree: 0%
 
 
 
-4. 按一下按鈕&#x200B;**開啟編輯器**&#x200B;以新增下列自訂程式碼：
+&#x200B;4. 按一下按鈕&#x200B;**開啟編輯器**&#x200B;以新增下列自訂程式碼：
 
 ![針對自訂程式碼反白顯示[開啟編輯器]按鈕的資料元素設定](assets/create-property-open-custom-code-editor.png "開啟編輯器")
 
 
 
-5. 將自訂程式碼新增到這類編輯器並儲存
+&#x200B;5. 將自訂程式碼新增到這類編輯器並儲存
 
 ```none
 var xdm = arc?.event || '';
@@ -115,7 +115,7 @@ return xdm;
 
 
 
-6. 按一下&#x200B;**儲存**&#x200B;按鈕以儲存您的資料元素。
+&#x200B;6. 按一下&#x200B;**儲存**&#x200B;按鈕以儲存您的資料元素。
 
 ![資料元素編輯器的[儲存]按鈕反白顯示](assets/create-property-save-data-element-button.png)
 
@@ -143,17 +143,17 @@ return xdm;
 
 
 
-2. 然後按一下&#x200B;**建立新規則**
+&#x200B;2. 然後按一下&#x200B;**建立新規則**
 
 顯示[建立新規則]按鈕的![規則頁面](assets/create-property-new-rule-button.png)
 
 
 
-3. 使用下列公式更新規則名稱： `"EF Rule SB" + [your sandbox number]` （即EF規則SB01）。 您可在瀏覽器視窗右上角找到您的沙箱編號，如下所示\...
+&#x200B;3. 使用下列公式更新規則名稱： `"EF Rule SB" + [your sandbox number]` （即EF規則SB01）。 您可在瀏覽器視窗右上角找到您的沙箱編號，如下所示\...
 
 ![瀏覽器視窗右上角顯示規則名稱中使用的沙箱編號](assets/create-property-sandbox-number-location.png)
 
-4. 完成時，按一下&#x200B;**儲存**
+&#x200B;4. 完成時，按一下&#x200B;**儲存**
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ return xdm;
 
 
 
-5. 按一下(+)符號以新增動作，以將動作新增至規則
+&#x200B;5. 按一下(+)符號以新增動作，以將動作新增至規則
 
 ![醒目提示有加號圖示的規則編輯器以新增動作](assets/create-property-add-action-button.png "新增動作")
 
@@ -182,7 +182,7 @@ return xdm;
 
 
 
-3. 使用下列資訊設定您的動作：
+&#x200B;3. 使用下列資訊設定您的動作：
 
 | 設定 | 值 |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -191,7 +191,7 @@ return xdm;
 | 方法 | Post |
 | URL | 使用您在設定串流目的地時使用的相同webhook URL。 您可以在瀏覽器中開啟新索引標籤，並導覽至「目的地 — >瀏覽」找到它 |
 | 內文 | 原始 |
-| 內文資料 | \{ &quot;data&quot;： \{ &quot;event&quot;： &quot;\{\{資料物件\}\}&quot; } |
+| 內文資料 | \&lbrace; &quot;data&quot;： \{ &quot;event&quot;： &quot;\{\{資料物件\}\}&quot; } |
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ return xdm;
 
 
 
-4. 完成後，您應該會看到動作已新增至規則。 按一下[儲存]以繼續。****
+&#x200B;4. 完成後，您應該會看到動作已新增至規則。 按一下[儲存]以繼續。**&#x200B;**
 
 ![規則編輯器顯示已設定動作，並反白顯示[儲存]按鈕](assets/create-property-save-rule-button.png "儲存您的規則")
 
@@ -229,13 +229,13 @@ return xdm;
 
 
 
-2. 按一下按鈕&#x200B;**新增資料庫**
+&#x200B;2. 按一下按鈕&#x200B;**新增資料庫**
 
 ![使用[新增程式庫]按鈕反白顯示[發佈流程]頁面](assets/create-property-add-library-button.png "新增程式庫")
 
 
 
-3. 使用下列資訊設定程式庫：
+&#x200B;3. 使用下列資訊設定程式庫：
 
 - 名稱 — > **EF資料庫**
 - 環境 — > **開發**
@@ -248,6 +248,6 @@ return xdm;
 
 
 
-4. 然後您應該會看到開發組建變成綠色，表示它已準備好使用
+&#x200B;4. 然後您應該會看到開發組建變成綠色，表示它已準備好使用
 
 ![發佈流程顯示開發組建狀態已變成綠色，且準備使用](assets/create-property-development-build-ready.png)

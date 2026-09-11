@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459564/?quality=12&learn=on)
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >首先恭喜您！ 透過API建置專案並不容易，但瞭解其運作方式將有助於您瞭解系統整體。 榮譽！
 

@@ -25,7 +25,7 @@ ht-degree: 0%
 
 
 
-2. 更新API呼叫內文中的下列屬性。
+&#x200B;2. 更新API呼叫內文中的下列屬性。
 
 - 將`xdm:sourceSchema`屬性的值更新為您從[建立結構描述](../build-schema/create-schema.md)步驟中儲存的`Customer Account`結構描述的`$id`
 - 從`Customer Account`結構描述中將`xdm:sourceProperty`的值更新為`planID`欄位的路徑
@@ -54,9 +54,9 @@ ht-degree: 0%
 
 
 
-3. 繼續使用`Save`按鈕前請先儲存您的請求
+&#x200B;3. 繼續使用`Save`按鈕前請先儲存您的請求
 
-4. 按一下`Send`按鈕執行API
+&#x200B;4. 按一下`Send`按鈕執行API
 
 您現在應該會看到如下的`201 Created`回應
 

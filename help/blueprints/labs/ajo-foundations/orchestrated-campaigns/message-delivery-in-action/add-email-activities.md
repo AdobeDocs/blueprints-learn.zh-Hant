@@ -37,43 +37,43 @@ ht-degree: 0%
 
 ![電子郵件詳細資料窗格](assets/add-email-activities-email-details-pane.png)
 
-2. 使用&#x200B;**電子郵件**&#x200B;活動的設定檔屬性&#x200B;**，將標籤重新命名為**&#x200B;電子郵件，然後按一下&#x200B;**編輯電子郵件**。 請注意，建立電子郵件內文僅供測試之用
+&#x200B;2. 使用&#x200B;**電子郵件**&#x200B;活動的設定檔屬性&#x200B;**，將標籤重新命名為**&#x200B;電子郵件，然後按一下&#x200B;**編輯電子郵件**。 請注意，建立電子郵件內文僅供測試之用
 
 ![重新命名電子郵件活動標籤，然後按一下[編輯電子郵件]](assets/add-email-activities-rename-and-edit-email.png)
 
-3. 選取「**動作**」標籤，然後從下拉式清單中選取「**設定檔 — 電子郵件**」頻道設定
+&#x200B;3. 選取「**動作**」標籤，然後從下拉式清單中選取「**設定檔 — 電子郵件**」頻道設定
 
 ![在[動作]索引標籤中選取設定檔 — 電子郵件通道設定](assets/add-email-activities-select-profile-email-channel.png)
 
-4. 接著，按一下&#x200B;**編輯內容**&#x200B;以新增一些測試內容
+&#x200B;4. 接著，按一下&#x200B;**編輯內容**&#x200B;以新增一些測試內容
 
 ![按一下[編輯內容]以新增測試內容](assets/add-email-activities-edit-content.png)
 
-5. 提供&#x200B;**主旨列** （「基本計畫成員的升級優惠」），然後按一下&#x200B;**編輯電子郵件內文**&#x200B;按鈕
+&#x200B;5. 提供&#x200B;**主旨列** （「基本計畫成員的升級優惠」），然後按一下&#x200B;**編輯電子郵件內文**&#x200B;按鈕
 
 ![新增主旨行並編輯電子郵件內文](assets/add-email-activities-subject-line-edit-body.png)
 
-6. 有許多選項，對於此測試，請選擇&#x200B;**自行編碼** HTML選項
+&#x200B;6. 有許多選項，對於此測試，請選擇&#x200B;**自行編碼** HTML選項
 
 ![選擇編碼您自己的HTML選項](assets/add-email-activities-code-your-own-html.png)
 
-7. 在&#x200B;**電子郵件Designer**&#x200B;中，插入測試行「有可用的升級優惠！」 在所示的`</body></html>`標籤之前，按一下&#x200B;**儲存**
+&#x200B;7. 在&#x200B;**電子郵件Designer**&#x200B;中，插入測試行「有可用的升級優惠！」 在所示的`</body></html>`標籤之前，按一下&#x200B;**儲存**
 
 ![在電子郵件Designer中插入測試行並按一下[儲存]](assets/add-email-activities-email-designer-save.png)
 
-8. 等候確認訊息出現在右下角
+&#x200B;8. 等候確認訊息出現在右下角
 
 ![顯示確認訊息](assets/add-email-activities-confirmation-message.png)
 
-9. 按一下&#x200B;**電子郵件Designer**&#x200B;旁的&#x200B;**向左箭號**&#x200B;結束
+&#x200B;9. 按一下&#x200B;**電子郵件Designer**&#x200B;旁的&#x200B;**向左箭號**&#x200B;結束
 
 ![按一下向左鍵結束電子郵件Designer](assets/add-email-activities-exit-email-designer.png)
 
-10. 確認對話方塊隨即出現，請按一下&#x200B;**儲存並關閉**&#x200B;按鈕
+&#x200B;10. 確認對話方塊隨即出現，請按一下&#x200B;**儲存並關閉**&#x200B;按鈕
 
 ![含有[儲存並關閉]按鈕的確認對話方塊](assets/add-email-activities-save-and-close-dialog.png)
 
-11. 檢閱電子郵件屬性和動作，包括新增至電子郵件內文的文字。 按一下&#x200B;**向左箭頭**&#x200B;以導覽回促銷活動畫布
+&#x200B;11. 檢閱電子郵件屬性和動作，包括新增至電子郵件內文的文字。 按一下&#x200B;**向左箭頭**&#x200B;以導覽回促銷活動畫布
 
 ![導覽回促銷活動畫布](assets/add-email-activities-back-to-campaign-canvas.png)
 

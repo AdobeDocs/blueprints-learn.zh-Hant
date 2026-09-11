@@ -75,7 +75,7 @@ CLI會部署到您的環境檔案指向的任何沙箱，因此這必須在您�
 | `SCOPES` | 必須包括Experience Platform API和Adobe Journey Optimizer API範圍&#x200B;<br />*（例如cjm.suppression\_service.client.delete、cjm.suppression\_service.client.all、openid、session、AdobeID、read\_organizations、additional\_info.projectedProductContext）* |
 | `SANDBOX_NAME` | 您定位的沙箱 — 必須為空白且型別為`dev` |
 
-3. 儲存並關閉檔案
+&#x200B;3. 儲存並關閉檔案
 
 >[!NOTE]
 >
@@ -118,7 +118,6 @@ CLI會部署到您的環境檔案指向的任何沙箱，因此這必須在您�
 >[!NOTE]
 >
 >使用步驟6，而不是分別執行步驟4和5 — 它會在一個階段中執行相同的動作，為您處理傳輸等待。
-
 > [!NOTE]
 >
 >CLI會自動檢查上述所有等待時間。 如果您過早執行步驟，它會封鎖並告訴您要等待多久。

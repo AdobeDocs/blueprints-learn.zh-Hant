@@ -26,7 +26,7 @@ ht-degree: 8%
 
 ![建立頻道設定](assets/configure-for-profile-create-configuration-button.png)
 
-3. 在建立精靈中設定下列值：
+&#x200B;3. 在建立精靈中設定下列值：
    - **名稱：** `Profile-Email`
    - **頻道：** `Email`
    - **行銷動作：** `Email Targeting`
@@ -97,43 +97,43 @@ ht-degree: 8%
 
 ![執行詳細資料](assets/configure-for-profile-execution-details-journey-tab.png)
 
-2. 按一下標題為&#x200B;**個人電子郵件**&#x200B;的資料夾以開啟
+&#x200B;2. 按一下標題為&#x200B;**個人電子郵件**&#x200B;的資料夾以開啟
 
 ![傳遞地址](assets/configure-for-profile-personal-email-folder.png)
 
-3. 按一下`Address`欄位上的&#x200B;**核取方塊**，然後按一下&#x200B;**選取**&#x200B;按鈕
+&#x200B;3. 按一下`Address`欄位上的&#x200B;**核取方塊**，然後按一下&#x200B;**選取**&#x200B;按鈕
 
 ![個人電子郵件作為傳遞地址](assets/configure-for-profile-select-address-checkbox-journeys.png)
 
-4. 針對&#x200B;**設定檔**，`personalEmail.address`現在已設定為&#x200B;**執行地址**&#x200B;區段下的&#x200B;**傳遞地址**
+&#x200B;4. 針對&#x200B;**設定檔**，`personalEmail.address`現在已設定為&#x200B;**執行地址**&#x200B;區段下的&#x200B;**傳遞地址**
 
 ![已設定的傳遞位址](assets/configure-for-profile-delivery-address-configured-journeys.png)
 
-5. 按一下[協調的行銷活動]索引標籤，然後&#x200B;**核取**[啟用]核取方塊。
+&#x200B;5. 按一下[協調的行銷活動]索引標籤，然後&#x200B;**核取**&#x200B;[啟用]核取方塊。
 
 ![協調的行銷活動設定](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
 
-6. 在執行維度標題下，設定以下專案：
+&#x200B;6. 在執行維度標題下，設定以下專案：
    - **針對每個**&#x200B;傳遞一封郵件`Target Dimension`
    - **設定檔目標Dimension：** `dep-rel: Customer Account - customer_id`
 
 ![目標Dimension](assets/configure-for-profile-target-dimension-settings.png)
 
-7. 在執行位址下設定以下專案：
+&#x200B;7. 在執行位址下設定以下專案：
    - **Source：** `Profile`
    - **傳遞位址：** `click on the Edit icon`
 
 ![執行位址](assets/configure-for-profile-execution-address-source-profile.png)
 
-8. 搜尋並按一下`Personal Email`資料夾以開啟它
+&#x200B;8. 搜尋並按一下`Personal Email`資料夾以開啟它
 
 ![個人電子郵件設定檔屬性](assets/configure-for-profile-search-personal-email-folder.png)
 
-9. 選取[個人電子郵件]資料夾中的`Address`欄位並按一下[選取] ****
+&#x200B;9. 選取[個人電子郵件]資料夾中的`Address`欄位並按一下[選取] **&#x200B;**
 
 ![個人電子郵件作為傳遞地址](assets/configure-for-profile-select-address-field-orchestrated.png)
 
-10. 針對&#x200B;**協調的行銷活動**，**dep-rel：客戶帳戶 — customer\_id**&#x200B;已設定為&#x200B;**執行維度**&#x200B;的&#x200B;**設定檔目標Dimension**，**執行地址**&#x200B;的&#x200B;**Source**&#x200B;為&#x200B;**設定檔**，而`personalEmail.address`為&#x200B;**傳遞地址**
+&#x200B;10. 針對&#x200B;**協調的行銷活動**，**dep-rel：客戶帳戶 — customer\_id**&#x200B;已設定為&#x200B;**執行維度**&#x200B;的&#x200B;**設定檔目標Dimension**，**執行地址**&#x200B;的&#x200B;**Source**&#x200B;為&#x200B;**設定檔**，而`personalEmail.address`為&#x200B;**傳遞地址**
 
 ![執行維度已設定](assets/configure-for-profile-orchestrated-execution-dimension-configured.png)
 
@@ -147,7 +147,7 @@ ht-degree: 8%
 1. 再次檢視所有詳細資料以確保其相符。
 1. 向上捲動並按一下&#x200B;**提交**。
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >已觀察到處理電子郵件通道設定最多需要2小時！  啊呀！
 >

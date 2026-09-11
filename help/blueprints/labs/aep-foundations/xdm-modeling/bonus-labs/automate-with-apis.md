@@ -65,6 +65,6 @@ ht-degree: 0%
 
 ![以Postman建立的兩個資料集：前置詞符合自動化結構描述](assets/automate-with-apis-datasets-created-in-ui.png "自動化資料集")
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >恭喜！  您剛剛將身分名稱空間、欄位群組、結構描述、身分/關係描述元的部署自動化，並為設定檔啟用結構描述，並利用結構描述產生資料集

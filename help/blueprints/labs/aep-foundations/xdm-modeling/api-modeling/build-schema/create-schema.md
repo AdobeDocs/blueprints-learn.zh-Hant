@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->**尚未執行呼叫……1}**
+>**尚未執行呼叫……1&rbrace;**
 
 1. 按一下`XDM Schema Lab -> Create Schema`資料夾中的`Step 4 - Create Customer Account Schema` API呼叫。
 
@@ -27,14 +27,14 @@ ht-degree: 0%
 
 
 
-2. 開啟呼叫的正文並檢視結構描述的定義結構。 記住結構描述一律只由一(1)個類別和一個或多個欄位群組組成。
+&#x200B;2. 開啟呼叫的正文並檢視結構描述的定義結構。 記住結構描述一律只由一(1)個類別和一個或多個欄位群組組成。
 
-3. 使用下列專案填入結構描述內文中的`title`和`description`欄位：
+&#x200B;3. 使用下列專案填入結構描述內文中的`title`和`description`欄位：
 
 - 標題 — > `Sample Customer Schema - <your sandbox number>`
 - 說明 — > `Sample Customer Schema - <your sandbox number>`
 
-4. 以您從先前完成的實驗室區段儲存的`$ids`填入`$ref`欄位： [建立自訂欄位群組](./create-custom-field-groups.md)和[取得設定檔類別](./get-profile-class.md)。 您應該對下列每個專案都有$id：
+&#x200B;4. 以您從先前完成的實驗室區段儲存的`$ids`填入`$ref`欄位： [建立自訂欄位群組](./create-custom-field-groups.md)和[取得設定檔類別](./get-profile-class.md)。 您應該對下列每個專案都有$id：
 
 - 類別 — > XDM個別設定檔
 - 欄位群組 — >人口統計細節
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 
 
-5. 請檢閱您的最終內文，並確定其外觀類似於以下內容
+&#x200B;5. 請檢閱您的最終內文，並確定其外觀類似於以下內容
 
 ![已完成結構描述要求內文，並填入標題、說明和所有$ref值](assets/create-schema-example-of-final-body-payload.png "最終內文裝載的範例")
 

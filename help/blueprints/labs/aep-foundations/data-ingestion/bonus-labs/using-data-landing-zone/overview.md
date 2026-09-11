@@ -24,7 +24,7 @@ ht-degree: 0%
 1. 安裝應用程式
 1. 首次啟動時接受使用者授權合約
 
-在Azure Storage Explorer](assets/overview-end-user-license-agreement-screen.png "使用者授權合約畫面中![使用者授權合約畫面")
+在Azure Storage Explorer&rbrack;(assets/overview-end-user-license-agreement-screen.png "使用者授權合約畫面中!&lbrack;使用者授權合約畫面")
 
 
 ## 使用Experience Platform設定Azure儲存體總管
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 
 
-1. 按一下[下一步]****&#x200B;繼續
+1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;繼續
 
 ![將SAS URL認證複製到連線資訊的SAS URL區段](assets/overview-copy-sas-url-into-connection-info.png "將SAS URL認證複製到連線資訊的SAS URL區段")
 
@@ -86,6 +86,6 @@ ht-degree: 0%
 
 ![Azure Storage Explorer顯示成功連線的資料登陸區域帳戶](assets/overview-successfully-connected-account.png)
 
-> [!TIP]
+&#x200B;> [!TIP]
 >
 >恭喜！  您已成功設定Azure儲存體總管

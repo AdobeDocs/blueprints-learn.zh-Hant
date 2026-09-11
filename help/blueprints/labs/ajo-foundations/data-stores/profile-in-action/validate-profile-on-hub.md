@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ![顯示segmentMembership的設定檔屬性JSON檢視](assets/validate-profile-on-hub-json-view.png)
 
-2. 尋找&#x200B;**segmentMembership**。  應該看起來像這樣（您的ID將會不同）
+&#x200B;2. 尋找&#x200B;**segmentMembership**。  應該看起來像這樣（您的ID將會不同）
 
 ```json
   "segmentMembership": {

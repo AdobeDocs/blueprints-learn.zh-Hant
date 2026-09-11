@@ -87,19 +87,19 @@ ht-degree: 0%
 
 在左側導覽中使用Assets選項的![內容管理區段](assets/building-content-fragments-content-management-assets-nav.png)
 
-2. 按一下「Assets管理」區段下的&#x200B;**Assets**。
+&#x200B;2. 按一下「Assets管理」區段下的&#x200B;**Assets**。
 
 Assets管理區段下的![Assets選項](assets/building-content-fragments-assets-under-assets-management.png)
 
-3. 按一下&#x200B;**「建立資料夾」**&#x200B;按鈕以建立資料夾。
+&#x200B;3. 按一下&#x200B;**「建立資料夾」**&#x200B;按鈕以建立資料夾。
 
 在Assets區域中![建立資料夾按鈕](assets/building-content-fragments-click-create-folder-button.png)
 
-4. 提供名字和姓氏之類的名稱。 例如： Nish\_Pithia\_LabAssets （您可以記住的資訊）
+&#x200B;4. 提供名字和姓氏之類的名稱。 例如： Nish\_Pithia\_LabAssets （您可以記住的資訊）
 
 ![以您的名字和姓氏命名新的資產資料夾](assets/building-content-fragments-name-asset-folder.png)
 
-5. **建立新片段：**&#x200B;在[內容管理]下按一下&#x200B;**片段**&#x200B;並建立新片段。
+&#x200B;5. **建立新片段：**&#x200B;在[內容管理]下按一下&#x200B;**片段**&#x200B;並建立新片段。
 
    內容管理下的![片段選項以建立新片段](assets/building-content-fragments-click-fragments-create-new.png)
 
@@ -113,35 +113,35 @@ Assets管理區段下的![Assets選項](assets/building-content-fragments-assets
 
    ![標頭片段名稱、說明和視覺片段型別欄位](assets/building-content-fragments-fragment-name-type-details.png)
 
-6. 按一下右上角的&#x200B;**建立按鈕**。
+&#x200B;6. 按一下右上角的&#x200B;**建立按鈕**。
 
 在新片段對話方塊右上角的![建立按鈕](assets/building-content-fragments-click-create-button-top-right.png)
 
 如此將可開啟空白的片段建立者畫面。
 
-7. 按一下「結構」下的1:1欄，然後在畫布上拖曳，如下所示。 （請按一下下方影像檢視動畫圖形）
+&#x200B;7. 按一下「結構」下的1:1欄，然後在畫布上拖曳，如下所示。 （請按一下下方影像檢視動畫圖形）
 
 ![將1:1資料行結構拖曳至片段畫布的動畫示範](assets/building-content-fragments-drag-1-1-columns-structure.gif)
 
-8. 接下來，將&quot;**image**&quot;拖曳到我們剛才新增的1:1列
+&#x200B;8. 接下來，將&quot;**image**&quot;拖曳到我們剛才新增的1:1列
 
 ![將影像元件拖曳到1:1列](assets/building-content-fragments-drag-image-onto-row.png)
 
-9. 上傳已提供的標誌影像。 按一下&#x200B;**「匯入媒體」按鈕**
+&#x200B;9. 上傳已提供的標誌影像。 按一下&#x200B;**「匯入媒體」按鈕**
 
 ![匯入媒體按鈕以上傳標誌影像](assets/building-content-fragments-click-import-media-button.png)
 
-10. **上傳標誌：**&#x200B;從影像的Toolkit資料夾上傳標誌(*C5G-Logo.png*)，然後按[下一步]。
+&#x200B;10. **上傳標誌：**&#x200B;從影像的Toolkit資料夾上傳標誌(*C5G-Logo.png*)，然後按[下一步]。
 
 ![從Toolkit資料夾中選取C5G-Logo.png以上傳](assets/building-content-fragments-upload-logo-select-file.png)
 
 ![選取標誌上傳後按[下一步]](assets/building-content-fragments-upload-logo-click-next.png)
 
-11. 選取您已建立的&#x200B;**資產資料夾**，然後按一下&#x200B;**匯入**。 檔案會儲存在您的資料夾中。
+&#x200B;11. 選取您已建立的&#x200B;**資產資料夾**，然後按一下&#x200B;**匯入**。 檔案會儲存在您的資料夾中。
 
 ![選取建立的資產資料夾並按一下[匯入]](assets/building-content-fragments-select-asset-folder-import.png)
 
-12. 標誌已正確放置，但太大，需要重新調整大小。 若要調整標誌大小，請更新其屬性。 按一下&#x200B;**樣式標籤**，然後拖曳滑桿將寬度設定為40%，如下所示。
+&#x200B;12. 標誌已正確放置，但太大，需要重新調整大小。 若要調整標誌大小，請更新其屬性。 按一下&#x200B;**樣式標籤**，然後拖曳滑桿將寬度設定為40%，如下所示。
 
 >[!NOTE]
 >
@@ -151,15 +151,15 @@ Assets管理區段下的![Assets選項](assets/building-content-fragments-assets
 
 ![樣式標籤寬度滑桿設為40%以調整標誌大小](assets/building-content-fragments-resize-logo-width-slider.png)
 
-13. 按一下&#x200B;**「儲存」**，您的片段就會儲存。 您會在確認時收到綠色列通知。
+&#x200B;13. 按一下&#x200B;**「儲存」**，您的片段就會儲存。 您會在確認時收到綠色列通知。
 
 儲存片段後![綠色確認列](assets/building-content-fragments-save-fragment-confirmation.png)
 
-14. 儲存的片段處於草稿模式。 您必須先發佈它才能使用。 按一下&#x200B;**上一步**&#x200B;按鈕。
+&#x200B;14. 儲存的片段處於草稿模式。 您必須先發佈它才能使用。 按一下&#x200B;**上一步**&#x200B;按鈕。
 
 ![在發佈前離開草稿片段的「上一步」按鈕](assets/building-content-fragments-click-back-button-draft.png)
 
-15. 按一下&#x200B;**發佈**&#x200B;按鈕。 您看到訊息「正在發佈片段，這可能需要一些時間。 我們會在完成後通知。」 確認時。 您的片段已準備好用於建立範本。
+&#x200B;15. 按一下&#x200B;**發佈**&#x200B;按鈕。 您看到訊息「正在發佈片段，這可能需要一些時間。 我們會在完成後通知。」 確認時。 您的片段已準備好用於建立範本。
 
 ![發佈按鈕和發佈片段確認訊息](assets/building-content-fragments-click-publish-fragment-button.png)
 

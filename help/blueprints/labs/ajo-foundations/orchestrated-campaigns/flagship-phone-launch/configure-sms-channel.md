@@ -60,18 +60,18 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 
 
-2. 按一下&#x200B;**建立通道組態**。
+&#x200B;2. 按一下&#x200B;**建立通道組態**。
 
 ![建立通道設定按鈕](assets/configure-sms-channel-click-create-configuration.png)
 
 
 
-3. 在SMS通道組態設定中填入下列值：
+&#x200B;3. 在SMS通道組態設定中填入下列值：
    - **名稱：** `Relational-SMS-Multi-Entity`
    - **頻道：** `Mobile Message`
    - **行銷動作：** `SMS Targeting`
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >如果您收到錯誤訊息，指出使用者沒有許可權，請忽略該錯誤訊息並繼續。
 
@@ -97,13 +97,13 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 
 
-2. 確認已核取&#x200B;**已啟用**&#x200B;核取方塊
+&#x200B;2. 確認已核取&#x200B;**已啟用**&#x200B;核取方塊
 
 ![已針對協調的行銷活動核取啟用核取方塊](assets/configure-sms-channel-enabled-checkbox.png)
 
 
 
-3. 在子區段&#x200B;**執行維度**&#x200B;下方，確定下列設定如下：
+&#x200B;3. 在子區段&#x200B;**執行維度**&#x200B;下方，確定下列設定如下：
    - **傳遞訊息給每：** `Target + Secondary Dimension`
    - **設定檔目標Dimension：** `dep-rel: Customer Account - customer_id`
    - **次要Dimension：** `Customer Line`
@@ -118,13 +118,13 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 
 
-4. 在執行位址標題下，確定您選取&#x200B;**次要Dimension**&#x200B;的選項按鈕，然後按一下&#x200B;**簡訊執行欄位**&#x200B;上的編輯按鈕
+&#x200B;4. 在執行位址標題下，確定您選取&#x200B;**次要Dimension**&#x200B;的選項按鈕，然後按一下&#x200B;**簡訊執行欄位**&#x200B;上的編輯按鈕
 
 ![執行位址已設定為具有編輯欄位的次要Dimension](assets/configure-sms-channel-execution-address-selection.png)
 
 
 
-5. 在快顯視窗中，按一下結構描述&#x200B;**dep-rel： Customer Line**，然後選取&#x200B;**行動電話**。
+&#x200B;5. 在快顯視窗中，按一下結構描述&#x200B;**dep-rel： Customer Line**，然後選取&#x200B;**行動電話**。
 
 Dep-rel的![結構描述快顯功能表： Customer Line結構描述](assets/configure-sms-channel-customer-line-schema-popup.png)
 
@@ -132,7 +132,7 @@ Dep-rel的![結構描述快顯功能表： Customer Line結構描述](assets/con
 
 
 
-6. 確認最終執行詳細資訊區段符合以下內容
+&#x200B;6. 確認最終執行詳細資訊區段符合以下內容
 
 ![符合必要設定的最終執行詳細資料組態](assets/configure-sms-channel-final-execution-details.png)
 
@@ -146,7 +146,7 @@ Dep-rel的![結構描述快顯功能表： Customer Line結構描述](assets/con
 
 
 
-2. 在通道設定詳細目錄頁面上，在繼續之前，請確定狀態顯示為&#x200B;**作用中**
+&#x200B;2. 在通道設定詳細目錄頁面上，在繼續之前，請確定狀態顯示為&#x200B;**作用中**
 
 ![頻道設定狀態顯示為[作用中]](assets/configure-sms-channel-active-status.png)
 
@@ -156,7 +156,7 @@ Dep-rel的![結構描述快顯功能表： Customer Line結構描述](assets/con
 
 
 
-3. 當狀態變成「作用中」時，表示您已完成！
+&#x200B;3. 當狀態變成「作用中」時，表示您已完成！
 
 >[!TIP]
 >

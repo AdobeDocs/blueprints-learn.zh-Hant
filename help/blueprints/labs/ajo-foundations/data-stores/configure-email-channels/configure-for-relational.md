@@ -26,7 +26,7 @@ ht-degree: 10%
 
 ![建立頻道設定](assets/configure-for-profile-create-configuration-button.png)
 
-3. 在建立精靈中設定下列值：
+&#x200B;3. 在建立精靈中設定下列值：
    - **名稱：** `Relational-Email`
    - **頻道：** `Email`
    - **行銷動作：** `Email Targeting`
@@ -101,27 +101,27 @@ ht-degree: 10%
 
 ![設定協調的行銷活動](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
 
-2. 在執行維度下設定以下專案：
+&#x200B;2. 在執行維度下設定以下專案：
    - **針對每個**&#x200B;傳遞一封郵件`Target Dimension `
    - **設定檔目標Dimension：** `dep-rel: Customer Account - customer_id`
 
 ![執行維度](assets/configure-for-relational-execution-dimension-target-settings.png)
 
-3. 在執行位址下設定以下專案：
+&#x200B;3. 在執行位址下設定以下專案：
    - **Source：** `Target Dimension`
    - **傳遞位址：** `click on the Edit button`
 
 ![目標Dimension](assets/configure-for-relational-execution-address-source-target-dimension.png)
 
-4. 在快顯視窗中，按一下資料夾&#x200B;**dep-rel：客戶帳戶**
+&#x200B;4. 在快顯視窗中，按一下資料夾&#x200B;**dep-rel：客戶帳戶**
 
 ![設定傳遞位址](assets/configure-for-relational-customer-account-folder.png)
 
-5. 選取&#x200B;**電子郵件**&#x200B;並按一下&#x200B;**選取**&#x200B;按鈕
+&#x200B;5. 選取&#x200B;**電子郵件**&#x200B;並按一下&#x200B;**選取**&#x200B;按鈕
 
 ![電子郵件為傳遞地址](assets/configure-for-relational-select-email-as-delivery-address.png)
 
-6. 完成後，您的最終執行詳細資訊看起來像下面的熒幕擷圖
+&#x200B;6. 完成後，您的最終執行詳細資訊看起來像下面的熒幕擷圖
 
 ![執行維度已設定](assets/configure-for-relational-execution-details-final-result.png)
 

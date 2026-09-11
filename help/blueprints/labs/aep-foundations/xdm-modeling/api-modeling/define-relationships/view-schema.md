@@ -32,15 +32,15 @@ ht-degree: 0%
 
 
 
-2. 在要求的URL中，將`<replace me>`取代為您從上一個區段[建立結構描述](../build-schema/create-schema.md)儲存的`$meta:altId`，如下所示
+&#x200B;2. 在要求的URL中，將`<replace me>`取代為您從上一個區段[建立結構描述](../build-schema/create-schema.md)儲存的`$meta:altId`，如下所示
 
 ![步驟四要求附加中繼資料:altId，至URL](assets/view-schema-final-step-4-request.png "最後步驟四要求")
 
 
 
-3. 使用`Save`按鈕儲存請求
+&#x200B;3. 使用`Save`按鈕儲存請求
 
-4. 按一下`Send`按鈕以執行要求
+&#x200B;4. 按一下`Send`按鈕以執行要求
 
 您現在應該會看到`200 OK`回應，而且應該能夠瀏覽至您建立之結構描述的結尾，透過XDM JSON結構的鏡頭檢視身分識別
 

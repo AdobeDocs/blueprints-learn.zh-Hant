@@ -31,7 +31,7 @@ ht-degree: 0%
 
 
 
-2. 所有行銷活動的測試執行開始，驗證結果
+&#x200B;2. 所有行銷活動的測試執行開始，驗證結果
 
 ![正在測試行銷活動執行](assets/test-the-campaign-verify-execution-results.png)
 
@@ -43,11 +43,11 @@ ht-degree: 0%
 
 ![使用設定檔屬性活動執行電子郵件測試](assets/test-the-campaign-run-test-profile-attribute.png)
 
-2. 等候確認訊息，然後按一下&#x200B;**檢視報告**&#x200B;以檢視電子郵件測試的詳細資料
+&#x200B;2. 等候確認訊息，然後按一下&#x200B;**檢視報告**&#x200B;以檢視電子郵件測試的詳細資料
 
 ![按一下[檢視報告]檢視電子郵件測試詳細資料](assets/test-the-campaign-view-report-1.png)
 
-3. 電子郵件報告頁面會顯示行銷活動統計資料和執行狀態。 電子郵件測試是活動的驗證，以確保沒有錯誤並且不會傳送電子郵件。 通常需要大約\~**5**&#x200B;分鐘才能完成。
+&#x200B;3. 電子郵件報告頁面會顯示行銷活動統計資料和執行狀態。 電子郵件測試是活動的驗證，以確保沒有錯誤並且不會傳送電子郵件。 通常需要大約\~**5**&#x200B;分鐘才能完成。
 
 ![電子郵件報告頁面，包含行銷活動統計資料](assets/test-the-campaign-campaign-statistics-1.png)
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 
 
-4. 電子郵件測試完成後，會顯示結果。 發生某些百分比的錯誤；按一下&#x200B;**檢視更多**&#x200B;以瞭解原因。
+&#x200B;4. 電子郵件測試完成後，會顯示結果。 發生某些百分比的錯誤；按一下&#x200B;**檢視更多**&#x200B;以瞭解原因。
 
 ![檢視更多連結的錯誤率](assets/test-the-campaign-error-rate-view-more.png)
 
-5. 原因狀態為`Email address not found in profile`
+&#x200B;5. 原因狀態為`Email address not found in profile`
 
 ![原因：在設定檔](assets/test-the-campaign-email-not-found-reason.png)中找不到電子郵件地址
 
@@ -81,11 +81,11 @@ ht-degree: 0%
 
 ![使用Target Dimension活動執行電子郵件測試](assets/test-the-campaign-run-test-target-dimension.png)
 
-2. 等候確認訊息，然後按一下&#x200B;**檢視報告**&#x200B;以檢視電子郵件測試的詳細資料
+&#x200B;2. 等候確認訊息，然後按一下&#x200B;**檢視報告**&#x200B;以檢視電子郵件測試的詳細資料
 
 ![按一下[檢視報告]檢視電子郵件測試詳細資料](assets/test-the-campaign-view-report-2.png)
 
-3. 電子郵件測試完成後，會顯示結果。 在此情況下不會有錯誤
+&#x200B;3. 電子郵件測試完成後，會顯示結果。 在此情況下不會有錯誤
 
 ![無錯誤的行銷活動統計資料](assets/test-the-campaign-campaign-statistics-2.png)
 

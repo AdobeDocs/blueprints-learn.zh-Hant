@@ -40,7 +40,7 @@ ht-degree: 0%
 1. 導覽至左側邊欄中的&#x200B;**來源**，然後按一下頂端導覽列中的&#x200B;**帳戶**
 1. 搜尋&#x200B;**dep： HTTP API \[raw]**，反白標示該列，並複製&#x200B;**串流端點**&#x200B;的值並儲存於您稍後可參考的位置
 
-帳戶並複製其串流端點](assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep： HTTP API \[raw]&quot;)
+帳戶並複製其串流端點&rbrack;(assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep： HTTP API \[raw]&quot;)
 
 ## 尋找網頁資料流ID
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 完成時，您最終的API要求應該看起來像這樣
 
-> [!CAUTION]
+&#x200B;> [!CAUTION]
 >
 >尚未執行！
 

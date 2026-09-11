@@ -41,7 +41,7 @@ ht-degree: 0%
 
 
 
-2. 將以下文字複製並貼到SMS訊息內文中。
+&#x200B;2. 將以下文字複製並貼到SMS訊息內文中。
 
 ```none
 Hi from Connection 5G! Your phone_make phone_model is eligible for a free upgrade to one of the new iPhone 17 models. Shop online or come into a store today to take advantage of this offer.
@@ -53,7 +53,7 @@ Hi from Connection 5G! Your phone_make phone_model is eligible for a free upgrad
 
 
 
-3. 使用左側邊欄中的&#x200B;**Target屬性**&#x200B;選項，更新訊息中名為&#x200B;**phone\_make**&#x200B;及下方&#x200B;**phone\_model**&#x200B;的兩個欄位。  完成時，您的訊息應與熒幕擷圖相符。
+&#x200B;3. 使用左側邊欄中的&#x200B;**Target屬性**&#x200B;選項，更新訊息中名為&#x200B;**phone\_make**&#x200B;及下方&#x200B;**phone\_model**&#x200B;的兩個欄位。  完成時，您的訊息應與熒幕擷圖相符。
 
 ![包含手機製造商和模型個人化的最終SMS訊息](assets/compose-the-sms-final-message-text.png)
 
@@ -63,13 +63,13 @@ Hi from Connection 5G! Your phone_make phone_model is eligible for a free upgrad
 
 
 
-4. 按一下編輯器上的&#x200B;**驗證**，並確定沒有驗證錯誤，若情況良好，請按一下&#x200B;**儲存**&#x200B;按鈕
+&#x200B;4. 按一下編輯器上的&#x200B;**驗證**，並確定沒有驗證錯誤，若情況良好，請按一下&#x200B;**儲存**&#x200B;按鈕
 
 ![訊息編輯器中的[驗證]和[儲存]按鈕](assets/compose-the-sms-validate-and-save.png)
 
 
 
-5. 完成返回工作流程畫布時，請按一下&#x200B;**上一頁箭頭(\&lt;-)**
+&#x200B;5. 完成返回工作流程畫布時，請按一下&#x200B;**上一頁箭頭(\&lt;-)**
 
 ![返回工作流程畫布的返回箭頭](assets/compose-the-sms-return-to-canvas.png)
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 本實驗結束時，您將能夠安裝Postman、設定基本的工作區和環境，以便進行未來labs所需的後續api呼叫。
 
-> [!IMPORTANT]
+&#x200B;> [!IMPORTANT]
 >
 >本課程的各個labs需要Postman。  即使您已安裝Postman，也需要完成本實驗，以確保已安裝並正確設定環境檔案和API集合。
 

@@ -29,19 +29,19 @@ ht-degree: 0%
 
 
 
-2. 在右邊欄更新標籤以指出下列專案： `Filter out opt'd out lines`
+&#x200B;2. 在右邊欄更新標籤以指出下列專案： `Filter out opt'd out lines`
 
 ![分割活動標籤設定為篩選退出選擇退出行](assets/filter-the-lines-set-split-label.png)
 
 
 
-3. 在右側邊欄中，展開預設區段&#x200B;**子集**&#x200B;區段，然後按一下&#x200B;**建立篩選器**&#x200B;按鈕
+&#x200B;3. 在右側邊欄中，展開預設區段&#x200B;**子集**&#x200B;區段，然後按一下&#x200B;**建立篩選器**&#x200B;按鈕
 
 ![在子集區段中建立篩選器按鈕](assets/filter-the-lines-create-filter-button.png)
 
 
 
-4. 新增條件，以確保您移除所有選擇退出簡訊的客戶連結，然後按一下&#x200B;**確認**。
+&#x200B;4. 新增條件，以確保您移除所有選擇退出簡訊的客戶連結，然後按一下&#x200B;**確認**。
 
 ![條件移除已選擇退出簡訊的客戶線路](assets/filter-the-lines-sms-optin-condition.png)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 
 
-5. 按一下右上角的「儲存」按鈕以儲存作業。  您的畫布現在看起來像這樣\...
+&#x200B;5. 按一下右上角的「儲存」按鈕以儲存作業。  您的畫布現在看起來像這樣\...
 
 儲存分割活動後![工作流程畫布](assets/filter-the-lines-canvas-after-split-save.png)
 
@@ -67,13 +67,13 @@ ht-degree: 0%
 
 
 
-2. 在右側欄中按一下編輯簡訊按鈕，開始設定簡訊
+&#x200B;2. 在右側欄中按一下編輯簡訊按鈕，開始設定簡訊
 
 在右側邊欄中![編輯簡訊按鈕](assets/filter-the-lines-edit-sms-button.png)
 
 
 
-3. 在頂端導覽列中，按一下「動作」功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
+&#x200B;3. 在頂端導覽列中，按一下「動作」功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
 
 ![簡訊設定下拉式清單顯示無結果錯誤](assets/filter-the-lines-sms-configuration-no-results.png)
 
@@ -113,13 +113,13 @@ ht-degree: 0%
 
 
 
-2. 在工作流程畫布上，按一下篩選和簡訊活動之間的&#x200B;**+** **圖示**，然後選取&#x200B;**變更維度**。
+&#x200B;2. 在工作流程畫布上，按一下篩選和簡訊活動之間的&#x200B;**+** **圖示**，然後選取&#x200B;**變更維度**。
 
 ![在篩選器和簡訊之間新增變更維度活動](assets/filter-the-lines-add-change-dimension.png)
 
 
 
-3. 在右側，使用下列資訊更新變更維度：
+&#x200B;3. 在右側，使用下列資訊更新變更維度：
    - **標籤：** `Convert Line to Account`
    - **新目標維度：**`dep-rel: Customer Account`
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 
 
-4. 按一下畫布右上角的&#x200B;**儲存**&#x200B;按鈕以儲存您的工作。 完成後，您的工作流程現在看起來像這樣……
+&#x200B;4. 按一下畫布右上角的&#x200B;**儲存**&#x200B;按鈕以儲存您的工作。 完成後，您的工作流程現在看起來像這樣……
 
 新增變更維度後![工作流程畫布](assets/filter-the-lines-workflow-after-change-dimension.png)
 
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 
 
-2. 在頂端導覽列中按一下&#x200B;**動作**&#x200B;功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
+&#x200B;2. 在頂端導覽列中按一下&#x200B;**動作**&#x200B;功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
 
 ![簡訊設定已成功顯示選取的頻道](assets/filter-the-lines-sms-configuration-selected.png)
 

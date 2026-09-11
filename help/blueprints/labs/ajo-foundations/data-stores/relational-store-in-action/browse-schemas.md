@@ -45,20 +45,20 @@ ht-degree: 0%
 
 
 
-2. 按一下&#x200B;**選取結構描述**
-3. 從快顯視窗中選取`dep-rel: Customer Account`，然後按一下&#x200B;**確認**
+&#x200B;2. 按一下&#x200B;**選取結構描述**
+&#x200B;3. 從快顯視窗中選取`dep-rel: Customer Account`，然後按一下&#x200B;**確認**
 
 ![選擇結構描述快顯視窗，相關資訊：已選擇客戶帳戶](assets/browse-schemas-select-schema-popup.png)
 
 
 
-4. 在ERD上，按一下&#x200B;**3點**&#x200B;並選取&#x200B;**顯示相關實體**
+&#x200B;4. 在ERD上，按一下&#x200B;**3點**&#x200B;並選取&#x200B;**顯示相關實體**
 
 ![在ERD內容功能表中顯示相關實體選項](assets/browse-schemas-show-related-entities.png)
 
 
 
-5. 檢視ERD，其中包含與dep-rel：客戶帳戶直接相關的所有表格。 您可以選擇下載ERD作為PNG檔案。
+&#x200B;5. 檢視ERD，其中包含與dep-rel：客戶帳戶直接相關的所有表格。 您可以選擇下載ERD作為PNG檔案。
 
 ![實體關係圖表顯示與客戶帳戶相關的表格](assets/browse-schemas-erd-diagram.png)
 

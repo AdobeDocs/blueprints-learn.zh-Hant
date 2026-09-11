@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## 導覽至動作
 
-在左側邊欄的[管理]功能表下，按一下[設定] ****，然後在[動作]方塊上按一下[管理] **按鈕**
+在左側邊欄的[管理]功能表下，按一下[設定] **&#x200B;**，然後在[動作]方塊上按一下[管理] **按鈕**
 
-設定](assets/configure-custom-action-open-actions-manage.png)底下[動作]方塊上的![管理按鈕
+設定![&#128279;](assets/configure-custom-action-open-actions-manage.png)底下[動作]方塊上的管理按鈕
 
 
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 右上角的![建立動作按鈕](assets/configure-custom-action-click-create-action-button.png)
 
-2. 在出現的設定面板中，更新下列基本值，如下所示：
+&#x200B;2. 在出現的設定面板中，更新下列基本值，如下所示：
    - **名稱**： `GetShippingDetails`
    - **描述**： `Call third party to get Shipping ETA and Tracking Number`
    - **動作型別**： `Custom`
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 
 
-2. **複製並貼上**&#x200B;以下承載到承載方塊中
+&#x200B;2. **複製並貼上**&#x200B;以下承載到承載方塊中
 
 ```json
 {
@@ -94,7 +94,7 @@ ht-degree: 0%
 >此即為上述Mockaroo端點應傳回的相同JSON結構：
 
 
-3. 將會顯示回應裝載。 按一下&#x200B;**儲存**&#x200B;按鈕。
+&#x200B;3. 將會顯示回應裝載。 按一下&#x200B;**儲存**&#x200B;按鈕。
 
 以「儲存」按鈕顯示的![回應承載](assets/configure-custom-action-save-response-payload.png)
 
@@ -112,13 +112,13 @@ ht-degree: 0%
 
 
 
-2. 按一下&#x200B;**查詢引數**&#x200B;標籤，並將`orderId`的值更新為&#x200B;**123**
+&#x200B;2. 按一下&#x200B;**查詢引數**&#x200B;標籤，並將`orderId`的值更新為&#x200B;**123**
 
 ![orderId值設為123](assets/configure-custom-action-set-orderid-query-parameter.png)的查詢引數索引標籤
 
 
 
-3. 按一下「**傳送」按鈕**，如果一切順利，您應該會看到200的回應代碼，以及裝載的預覽，如下所示……
+&#x200B;3. 按一下「**傳送」按鈕**，如果一切順利，您應該會看到200的回應代碼，以及裝載的預覽，如下所示……
 
 ![傳送測試要求後，回應200和裝載預覽](assets/configure-custom-action-response-200-preview.png)
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 
 
-4. 按一下&#x200B;**取消**&#x200B;按鈕以返回「動作」畫面，然後在右上欄向上捲動並按一下&#x200B;**儲存**&#x200B;按鈕
+&#x200B;4. 按一下&#x200B;**取消**&#x200B;按鈕以返回「動作」畫面，然後在右上欄向上捲動並按一下&#x200B;**儲存**&#x200B;按鈕
 
 >[!TIP]
 >

@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ![已選取JSON格式並完成程式碼型體驗通道設定](assets/create-code-based-experience-channel-completed-config.png)
 
-9. 一切看起來正確後，請按一下右上角的藍色&#x200B;**提交**&#x200B;按鈕。
+&#x200B;9. 一切看起來正確後，請按一下右上角的藍色&#x200B;**提交**&#x200B;按鈕。
 
 >[!TIP]
 >

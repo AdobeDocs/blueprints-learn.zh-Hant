@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 驗證事件
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >資料最終會出現在資料湖中。  **這可能需要60分鐘**。  我們知道資料集已啟用設定檔，因此事件將建立設定檔片段。
 >
@@ -31,16 +31,16 @@ ht-degree: 0%
 
 ![在查詢區段中建立查詢畫面](assets/validate-event-on-data-lake-create-query.png)
 
-2. 複製此SQL並將其貼到您的查詢中
+&#x200B;2. 複製此SQL並將其貼到您的查詢中
 
 ```sql
 SELECT identityMap['email'][0].id, * FROM dep_web
 where identityMap['email'][0].id = 'henry.creel@emailsim.io'
 ```
 
-3. **執行**&#x200B;查詢
+&#x200B;3. **執行**&#x200B;查詢
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >**記住**：資料最終會出現在資料湖中。  **這可能需要60分鐘**。
 >

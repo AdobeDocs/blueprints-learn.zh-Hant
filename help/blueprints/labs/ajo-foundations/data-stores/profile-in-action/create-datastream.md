@@ -61,13 +61,13 @@ ht-degree: 0%
 
 資料流設定畫面上的![新增服務按鈕](assets/create-datastream-add-service-button.png)
 
-2. 設定下列專案：
+&#x200B;2. 設定下列專案：
    - **服務** -> `Adobe Experience Platform`
    - **事件資料集** -> `dep: Web`
    - **設定檔資料集** -> `dep: Customer Account`
    - **選取核取方塊** -> `Offer Decisioning`
    - **選取核取方塊** -> `Adobe Journey Optimizer`
-3. 完成時，按一下&#x200B;**儲存**
+&#x200B;3. 完成時，按一下&#x200B;**儲存**
 
 ![Adobe Experience Platform服務設定對話方塊，包含事件和設定檔資料集欄位](assets/create-datastream-configure-aep-service.png)
 

@@ -29,9 +29,9 @@ ht-degree: 0%
 
 
 
-2. 在右邊欄中，您會看到「建置對象」屬性。 更新標籤以指出下列專案： `Active Lines with Apple`
+&#x200B;2. 在右邊欄中，您會看到「建置對象」屬性。 更新標籤以指出下列專案： `Active Lines with Apple`
 
-![使用Apple將對象標籤設為Active Lines ](assets/build-an-audience-set-label.png)
+![使用Apple將對象標籤設為Active Lines &#x200B;](assets/build-an-audience-set-label.png)
 
 
 ## 選取目標維度
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ![目標維度方塊中的搜尋圖示](assets/build-an-audience-search-targeting-dimension.png)
 
-2. 在快顯視窗中，搜尋並選取名為&#x200B;**dep-rel： Customer Line**&#x200B;的資料表，然後按一下&#x200B;**確認**&#x200B;按鈕。
+&#x200B;2. 在快顯視窗中，搜尋並選取名為&#x200B;**dep-rel： Customer Line**&#x200B;的資料表，然後按一下&#x200B;**確認**&#x200B;按鈕。
 
 ![選取dep-rel： Customer Line資料表並按一下[確認]](assets/build-an-audience-select-customer-line-table.png)
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 右側邊欄中的![建立對象按鈕](assets/build-an-audience-click-create-audience.png)
 
-2. 接著按一下&#x200B;**新增條件**&#x200B;按鈕
+&#x200B;2. 接著按一下&#x200B;**新增條件**&#x200B;按鈕
 
 ![新增對象定義的條件按鈕](assets/build-an-audience-click-add-condition.png)
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 ![條件1設定為作用中行等於true](assets/build-an-audience-condition-active-line-true.png)
 
-2. 按一下&#x200B;**重新整理**&#x200B;圖示以檢視條件的合格計數。
+&#x200B;2. 按一下&#x200B;**重新整理**&#x200B;圖示以檢視條件的合格計數。
 
 ![重新整理圖示顯示條件1](assets/build-an-audience-condition-1-refresh-count.png)的合格計數為241
 
@@ -99,15 +99,15 @@ ht-degree: 0%
 ![按一下>圖示](assets/build-an-audience-select-product-lookup-schema.png)以選取dep-rel：產品[查詢]結構描述
 
 
-2. 尋找名為&#x200B;**Make**&#x200B;的欄位，然後按一下三個點並選取&#x200B;**分配值**
+&#x200B;2. 尋找名為&#x200B;**Make**&#x200B;的欄位，然後按一下三個點並選取&#x200B;**分配值**
 
-Make欄位](assets/build-an-audience-make-distribution-of-values.png)的![值分佈選項
+Make欄位![&#128279;](assets/build-an-audience-make-distribution-of-values.png)的值分佈選項
 
 
 
-3. 記下各種值。 您只想要`Apple`，而且幸好它沒有100個不同的拼字。 按一下&#x200B;**Apple欄位**&#x200B;以選取它，然後按一下右上角的&#x200B;**選取屬性和值按鈕**。
+&#x200B;3. 記下各種值。 您只想要`Apple`，而且幸好它沒有100個不同的拼字。 按一下&#x200B;**Apple欄位**&#x200B;以選取它，然後按一下右上角的&#x200B;**選取屬性和值按鈕**。
 
-使用Select屬性和值按鈕](assets/build-an-audience-select-apple-attribute-value.png)選取的![Apple值
+使用Select屬性和值按鈕![&#128279;](assets/build-an-audience-select-apple-attribute-value.png)選取的Apple值
 
 >[!NOTE]
 >
@@ -115,12 +115,12 @@ Make欄位](assets/build-an-audience-make-distribution-of-values.png)的![值分
 
 
 
-4. `Make`欄位會連同下列條件一起自動新增。
+&#x200B;4. `Make`欄位會連同下列條件一起自動新增。
    - **運運算元：** `Equal to`
    - **值：** `Apple`
    - **區分大小寫：** `Enabled`
 
-5. 按一下&#x200B;**計算圖示**，結果會顯示85。
+&#x200B;5. 按一下&#x200B;**計算圖示**，結果會顯示85。
 
 ![條件2已計算85](assets/build-an-audience-condition-2-final-count.png)的計數
 
@@ -142,7 +142,7 @@ Make欄位](assets/build-an-audience-make-distribution-of-values.png)的![值分
 
 
 
-2. 如果您看到&#x200B;**65**&#x200B;的最終計數，請按一下熒幕右上方的&#x200B;**Confirm**&#x200B;按鈕，然後按一下右上方的&#x200B;**Save**&#x200B;按鈕以儲存您的工作。
+&#x200B;2. 如果您看到&#x200B;**65**&#x200B;的最終計數，請按一下熒幕右上方的&#x200B;**Confirm**&#x200B;按鈕，然後按一下右上方的&#x200B;**Save**&#x200B;按鈕以儲存您的工作。
 
 
 

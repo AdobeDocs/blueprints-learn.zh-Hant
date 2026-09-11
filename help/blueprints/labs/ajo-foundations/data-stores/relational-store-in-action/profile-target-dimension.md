@@ -37,21 +37,21 @@ ht-degree: 0%
 
 已選取Journey Optimizer的![應用程式圖示功能表](assets/profile-target-dimension-navigate-to-journey-optimizer.png)
 
-2. 按一下[資料管理]功能表下的&#x200B;**結構描述**，並確定已選取&#x200B;**瀏覽**&#x200B;索引標籤。
-3. 搜尋名為`dep-rel: Customer Account`的結構描述
+&#x200B;2. 按一下[資料管理]功能表下的&#x200B;**結構描述**，並確定已選取&#x200B;**瀏覽**&#x200B;索引標籤。
+&#x200B;3. 搜尋名為`dep-rel: Customer Account`的結構描述
 
 dep-rel的![結構描述搜尋：客戶帳戶](assets/profile-target-dimension-search-schema.png)
 
-4. 按一下結構描述的名稱，然後按一下欄位&#x200B;**customer\_id**&#x200B;以開啟結構描述
+&#x200B;4. 按一下結構描述的名稱，然後按一下欄位&#x200B;**customer\_id**&#x200B;以開啟結構描述
 
 ![已選取customer_id的結構描述欄位清單](assets/profile-target-dimension-select-customer-id-field.png)
 
-5. 在右側邊欄中，找出名為&#x200B;**身分識別**&#x200B;的核取方塊，**核取方塊**，然後選擇名為&#x200B;**customerID**&#x200B;的身分識別名稱空間
+&#x200B;5. 在右側邊欄中，找出名為&#x200B;**身分識別**&#x200B;的核取方塊，**核取方塊**，然後選擇名為&#x200B;**customerID**&#x200B;的身分識別名稱空間
 
 已選取customerID名稱空間的![身分核取方塊](assets/profile-target-dimension-choose-identity-namespace.png)
 
-6. 按一下&#x200B;**儲存**&#x200B;按鈕以儲存您的結構描述。 隨即顯示確認訊息
-7. 按一下左側邊欄中的&#x200B;**取消**&#x200B;按鈕或&#x200B;**結構描述**&#x200B;以結束結構描述UI
+&#x200B;6. 按一下&#x200B;**儲存**&#x200B;按鈕以儲存您的結構描述。 隨即顯示確認訊息
+&#x200B;7. 按一下左側邊欄中的&#x200B;**取消**&#x200B;按鈕或&#x200B;**結構描述**&#x200B;以結束結構描述UI
 
 >[!CAUTION]
 >
@@ -67,15 +67,15 @@ dep-rel的![結構描述搜尋：客戶帳戶](assets/profile-target-dimension-s
 
 ![已選取組態的管理功能表](assets/profile-target-dimension-configurations-menu.png)
 
-2. 選取&#x200B;**設定檔目標Dimension**&#x200B;並按一下&#x200B;**管理**
+&#x200B;2. 選取&#x200B;**設定檔目標Dimension**&#x200B;並按一下&#x200B;**管理**
 
 使用管理選項![設定檔目標Dimension設定](assets/profile-target-dimension-manage-configuration.png)
 
-3. 設定檔目標Dimension窗格開啟，按一下&#x200B;**建立**
+&#x200B;3. 設定檔目標Dimension窗格開啟，按一下&#x200B;**建立**
 
 使用「建立」按鈕![設定檔目標Dimension窗格](assets/profile-target-dimension-create-button.png)
 
-4. 從下拉式清單中選取結構描述`dep-rel: Customer Account`。
+&#x200B;4. 從下拉式清單中選取結構描述`dep-rel: Customer Account`。
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ dep-rel的![結構描述搜尋：客戶帳戶](assets/profile-target-dimension-s
 
 ![使用結構描述下拉式清單建立設定檔目標Dimension表單](assets/profile-target-dimension-select-schema-dropdown.png)
 
-5. 為&#x200B;**識別值**&#x200B;選取`/customer_id`
+&#x200B;5. 為&#x200B;**識別值**&#x200B;選取`/customer_id`
 
 ![已選取/customer_id的Identity值下拉式清單](assets/profile-target-dimension-select-identity-value.png)
 
@@ -93,7 +93,7 @@ dep-rel的![結構描述搜尋：客戶帳戶](assets/profile-target-dimension-s
 
 
 
-6. 按一下&#x200B;**儲存**&#x200B;按鈕以建立設定檔目標Dimension。 然後您會看到記錄出現。
+&#x200B;6. 按一下&#x200B;**儲存**&#x200B;按鈕以建立設定檔目標Dimension。 然後您會看到記錄出現。
 
 ![清單中的已儲存設定檔目標Dimension記錄](assets/profile-target-dimension-saved-record.png)
 

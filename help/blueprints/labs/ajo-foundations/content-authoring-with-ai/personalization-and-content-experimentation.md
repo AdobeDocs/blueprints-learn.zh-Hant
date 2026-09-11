@@ -49,23 +49,23 @@ Adobe Journey Optimizer中的Personalization可讓您根據個別設定檔、行
 
 電子郵件文字工具列中的![個人化圖示](assets/personalization-and-content-experimentation-click-personalization-icon.png)
 
-4. 搜尋&#x200B;**第一個名******。
+&#x200B;4. 搜尋&#x200B;**第一個名**&#x200B;**&#x200B;**。
 
 ![搜尋個人化面板中的First Name屬性](assets/personalization-and-content-experimentation-search-first-name-field.png)
 
-5. 按一下&#x200B;**+**&#x200B;以將其加入運算式區域。
-6. 在&#x200B;**名字**&#x200B;欄位後新增&#x200B;**空間**。
+&#x200B;5. 按一下&#x200B;**+**&#x200B;以將其加入運算式區域。
+&#x200B;6. 在&#x200B;**名字**&#x200B;欄位後新增&#x200B;**空間**。
 
 ![在運算式區域的[名字]欄位後面新增空格](assets/personalization-and-content-experimentation-add-space-after-first-name.png)
 
-7. 重複上述程式，但這次搜尋並新增&#x200B;**姓氏**。
+&#x200B;7. 重複上述程式，但這次搜尋並新增&#x200B;**姓氏**。
 
 您的最終語法會顯示名字和姓氏變數，兩者之間有清楚的區隔。
 
 ![在運算式語法中明確分隔的名字和姓氏變數](assets/personalization-and-content-experimentation-first-last-name-syntax-separated.png)
 
-8. 驗證片段。 請注意，您可以選擇將內容另存為片段。 如果您使用完整名稱來建立其他電子郵件內容，這是一個絕佳機會。 請略過此步驟並前往下一個步驟。
-9. 按一下&#x200B;**儲存**
+&#x200B;8. 驗證片段。 請注意，您可以選擇將內容另存為片段。 如果您使用完整名稱來建立其他電子郵件內容，這是一個絕佳機會。 請略過此步驟並前往下一個步驟。
+&#x200B;9. 按一下&#x200B;**儲存**
 
 您的檢視如下所示。 大括弧由變陣列成，每個個人都會收到含有其名稱的電子郵件。
 
@@ -107,24 +107,24 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
 
 在條件影像區塊上新增![變體按鈕](assets/personalization-and-content-experimentation-click-add-variant-button.png)
 
-3. 將第一個變體重新命名為&#x200B;**年齡超過40**&#x200B;歲。
+&#x200B;3. 將第一個變體重新命名為&#x200B;**年齡超過40**&#x200B;歲。
 
 ![將第一個變體重新命名為40](assets/personalization-and-content-experimentation-rename-variant-age-above-40.png)以上的年齡
 
-4. 按一下&#x200B;**「新增變體」**&#x200B;按鈕以建立新的變體，並將其重新命名為&#x200B;**年齡低於40歲。**
+&#x200B;4. 按一下&#x200B;**「新增變體」**&#x200B;按鈕以建立新的變體，並將其重新命名為&#x200B;**年齡低於40歲。**
 
 ![建立新變體並將其重新命名為年齡低於40歲](assets/personalization-and-content-experimentation-create-variant-age-below-40.png)
 
-5. 您可能可以使用「20年前Firefly」之類的提示來建立影像。 但是，為了節省時間，我們的工具箱中已經有名為&quot;**variant-age-below-40.jpg**.
-6. 按一下影像並匯入媒體。
+&#x200B;5. 您可能可以使用「20年前Firefly」之類的提示來建立影像。 但是，為了節省時間，我們的工具箱中已經有名為&quot;**variant-age-below-40.jpg**.
+&#x200B;6. 按一下影像並匯入媒體。
 
 ![按一下40以下變體的影像和匯入媒體](assets/personalization-and-content-experimentation-click-image-import-media.png)
 
-7. 選取&#x200B;**variant-age-below-40.jpg**&#x200B;影像。 按一下[下一步] ****&#x200B;匯入它，最後再按資料夾中的[匯入] **** （預設應該已在資料夾中）。
+&#x200B;7. 選取&#x200B;**variant-age-below-40.jpg**&#x200B;影像。 按一下[下一步] **&#x200B;**&#x200B;匯入它，最後再按資料夾中的[匯入] **&#x200B;**&#x200B;（預設應該已在資料夾中）。
 
 ![選取並匯入variant-age-below-40.jpg image](assets/personalization-and-content-experimentation-select-below-40-image.png)
 
-8. 嘗試在變體之間切換，您會看到套用的不同影像。
+&#x200B;8. 嘗試在變體之間切換，您會看到套用的不同影像。
 
 到目前為止，您已建立設計，但尚未套用邏輯。 下一個步驟會套用邏輯。
 
@@ -142,20 +142,20 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
 
 40歲以上變體的![條件邏輯圖示](assets/personalization-and-content-experimentation-click-conditional-logic-icon.png)
 
-3. 建立新條件。
+&#x200B;3. 建立新條件。
 
 ![為40歲以上的變體建立新條件](assets/personalization-and-content-experimentation-create-new-condition.png)
 
-4. 在屬性清單中搜尋&#x200B;**年**。
-5. 將&#x200B;**出生年份**&#x200B;拖曳到畫布中。
-6. 將條件設為：
+&#x200B;4. 在屬性清單中搜尋&#x200B;**年**。
+&#x200B;5. 將&#x200B;**出生年份**&#x200B;拖曳到畫布中。
+&#x200B;6. 將條件設為：
    - **birthYear \&lt; 1986**
 
 ![狀況設定為birthYear小於1986](assets/personalization-and-content-experimentation-birthyear-lt-1986.png)
 
-7. 為條件命名： **年齡超過40**
-8. 新增說明 — &quot;**40**&#x200B;歲以上人員的影像變體&quot;
-9. 按一下&#x200B;**新增→選取**。
+&#x200B;7. 為條件命名： **年齡超過40**
+&#x200B;8. 新增說明 — &quot;**40**&#x200B;歲以上人員的影像變體&quot;
+&#x200B;9. 按一下&#x200B;**新增→選取**。
 
 ![按一下[新增]，然後選取40歲以上的年齡條件](assets/personalization-and-content-experimentation-click-add-select-age-above-40.png)
 
@@ -168,9 +168,9 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
 
 ![狀況變更為birthYear大於或等於1986](assets/personalization-and-content-experimentation-condition-birthyear-greater-1986.png)
 
-3. 為條件命名： **年齡低於40**
-4. 新增說明。 &quot;**低於40**&#x200B;的人員的影像變體&quot;
-5. 按一下&#x200B;**新增→選取**。
+&#x200B;3. 為條件命名： **年齡低於40**
+&#x200B;4. 新增說明。 &quot;**低於40**&#x200B;的人員的影像變體&quot;
+&#x200B;5. 按一下&#x200B;**新增→選取**。
 
 ![按一下[新增]，然後選取40歲以下的年齡條件](assets/personalization-and-content-experimentation-click-add-select-age-below-40.png)
 

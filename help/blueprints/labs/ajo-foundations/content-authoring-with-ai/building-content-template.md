@@ -55,14 +55,14 @@ ht-degree: 0%
 
 ![瀏覽至內容管理，然後瀏覽內容範本](assets/building-content-template-navigate-content-templates.png)
 
-2. 按一下&#x200B;**建立範本**，然後填寫下列內容：
+&#x200B;2. 按一下&#x200B;**建立範本**，然後填寫下列內容：
    - **名稱：** `Promotional Template`
    - **描述：** `Promotional Template for phone products`
    - **頻道：** `Email`
 
 ![使用名稱、說明和電子郵件通道建立範本表單](assets/building-content-template-create-template-form-fields.png)
 
-3. 按一下&#x200B;**建立**。
+&#x200B;3. 按一下&#x200B;**建立**。
 
 ![建立按鈕以完成建立促銷範本](assets/building-content-template-click-create-button.png)
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ![新增主旨行並開啟要編輯的電子郵件內文](assets/building-content-template-add-subject-line-open-editor.png)
 
-2. 您會看到三個選項：
+&#x200B;2. 您會看到三個選項：
    1. 從頭開始設計
    2. 自行撰寫程式碼
    3. 匯入HTML
@@ -92,11 +92,11 @@ ht-degree: 0%
 
 ![正在從Toolkit資料夾上傳promotivation-template-final.html](assets/building-content-template-upload-html-template-file.png)
 
-2. 按一下[匯入]按鈕以&#x200B;**匯入**&#x200B;範本。
+&#x200B;2. 按一下[匯入]按鈕以&#x200B;**匯入**&#x200B;範本。
 
 ![匯入按鈕以匯入已上傳的HTML範本](assets/building-content-template-click-import-button.png)
 
-3. 等待配置呈現。 您會注意到影像連結中斷和品牌遺失等問題。 （這是正常行為，因為我們有預留位置資產）
+&#x200B;3. 等待配置呈現。 您會注意到影像連結中斷和品牌遺失等問題。 （這是正常行為，因為我們有預留位置資產）
 
 ![呈現範本顯示損毀的影像連結和遺漏的商標預留位置](assets/building-content-template-rendered-template-broken-images.png)
 
@@ -127,7 +127,7 @@ Adobe Journey Optimizer內文區段底下的&quot;**設定**&quot;和&quot;**樣
 
 ![標題片段在左側邊欄中顯示為使用藍色點](assets/building-content-template-header-fragment-live-sidebar.png)
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >如果您在此處看不到您的片段，則表示您未正確儲存該片段，需要重新上傳。
 
@@ -145,19 +145,19 @@ Adobe Journey Optimizer內文區段底下的&quot;**設定**&quot;和&quot;**樣
 
 在內容上方新增欄之後![範本配置](assets/building-content-template-column-added-above-content.png)
 
-2. 您的背景使用範本背景顏色，目前為黑色。 將其&#x200B;**背景顏色設定為白色。 按一下右側邊欄上[樣式]索引標籤中的**，並使用檢色器中的白色。
+&#x200B;2. 您的背景使用範本背景顏色，目前為黑色。 將其&#x200B;**背景顏色設定為白色。 按一下右側邊欄上[樣式]索引標籤中的**，並使用檢色器中的白色。
 
 ![使用檢色器將資料行背景顏色設定為白色](assets/building-content-template-set-background-color-white.png)
 
-3. 開啟&#x200B;**片段**&#x200B;並拖曳您的&#x200B;**標頭**&#x200B;片段。
+&#x200B;3. 開啟&#x200B;**片段**&#x200B;並拖曳您的&#x200B;**標頭**&#x200B;片段。
 
 ![從片段面板將標題片段拖曳到範本中](assets/building-content-template-drag-header-fragment-into-template.png)
 
-4. 請注意，標題片段已整齊對齊您的範本，如下所示。
+&#x200B;4. 請注意，標題片段已整齊對齊您的範本，如下所示。
 
 ![標頭片段在範本內整齊對齊](assets/building-content-template-header-fragment-aligned-template.png)
 
-5. 按一下&#x200B;**儲存**&#x200B;按鈕以儲存您的範本，然後按一下&#x200B;**上一步**。
+&#x200B;5. 按一下&#x200B;**儲存**&#x200B;按鈕以儲存您的範本，然後按一下&#x200B;**上一步**。
 
 ![按一下[上一步]之前儲存範本的儲存按鈕](assets/building-content-template-click-save-button-template.png)
 

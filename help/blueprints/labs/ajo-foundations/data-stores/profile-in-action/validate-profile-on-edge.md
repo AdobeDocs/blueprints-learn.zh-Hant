@@ -31,7 +31,7 @@ ht-degree: 0%
 
 
 
-2. 按一下「對象成員資格」標籤。  它將是&#x200B;**空白**。
+&#x200B;2. 按一下「對象成員資格」標籤。  它將是&#x200B;**空白**。
 
 ![Edge設定檔上的空白對象會籍標籤](assets/validate-profile-on-edge-empty-audience-membership-tab.png)
 
