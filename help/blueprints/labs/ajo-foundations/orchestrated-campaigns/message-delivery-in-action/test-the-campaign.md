@@ -111,4 +111,4 @@ ht-degree: 0%
 
 您現在已瞭解如何測試建立的行銷活動，以瞭解流量和行為。 在測試流程執行期間，我們已充分瞭解使用不同設定進行電子郵件通道設定的細微差別。
 
-如果您有興趣，可以在[這裡](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns)閱讀更多有關行銷活動測試模式的資訊。
+如果您有興趣，可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns)閱讀更多有關行銷活動測試模式的資訊。

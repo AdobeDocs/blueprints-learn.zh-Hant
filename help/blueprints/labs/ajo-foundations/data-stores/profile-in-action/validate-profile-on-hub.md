@@ -75,7 +75,7 @@ ht-degree: 0%
 >
 >**如何讀取segmentMembership？**
 >
->[https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation)
+>[https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/segmentation)
 >
 >**ups：**&#x200B;這是AEP支援之不同對象型別的對應索引鍵。  ups鍵包含規則產生器建立的對象。  其他對象將包含在其他索引鍵（例如AAM）中。
 >

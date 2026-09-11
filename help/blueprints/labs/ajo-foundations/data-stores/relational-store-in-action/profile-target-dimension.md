@@ -109,4 +109,4 @@ dep-rel的![結構描述搜尋：客戶帳戶](assets/profile-target-dimension-s
 
 您現在已瞭解導覽結構、將屬性標示為身分以及建立設定檔目標Dimension的簡易程度。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension)以瞭解詳情。

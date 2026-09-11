@@ -81,4 +81,4 @@ ht-degree: 0%
 
 您現在已瞭解在行銷活動中使用建立對象活動的簡易程度，只需從關聯式結構描述選擇正確的目標維度。 然後，您新增條件來調整對象建立條件，並使用重新整理選項來檢查預期的列數。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/build-audience)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/build-audience)以瞭解詳情。

@@ -163,7 +163,7 @@ ht-degree: 0%
 >
 >考量為什麼您可能想要選取批次vs串流或Edge：
 >
->最新的護欄： [https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+>最新的護欄： [https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
 
 >[!TIP]
 >
