@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 設定自訂Personalization目的地
 
-使用[自訂Personalization目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization)是讓對象可在Edge上供第三方使用的方法，通常使用網路伺服器API來用於個人化。
+使用[自訂Personalization目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/custom-personalization)是讓對象可在Edge上供第三方使用的方法，通常使用網路伺服器API來用於個人化。
 
 本實驗會設定自訂Personalization目的地，好讓我們可以將設定檔屬性傳送至Edge。
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->若要使用Adobe Target進行個人化，請使用[Adobe Target目的地。](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-v2) 此行為等同於自訂Personalization。
+>若要使用Adobe Target進行個人化，請使用[Adobe Target目的地。](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/adobe-target-v2) 此行為等同於自訂Personalization。
 
 1. 在左側邊欄中按一下&#x200B;**目的地**
 1. 在頂端邊欄中，按一下&#x200B;**目錄**
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->由於設定檔屬性可能包含敏感資料，因此所有[Edge Network伺服器API](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview)呼叫都必須在已驗證的內容中進行，才能在Edge上擷取屬性。
+>由於設定檔屬性可能包含敏感資料，因此所有[Edge Network伺服器API](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge-network-server-api/overview)呼叫都必須在已驗證的內容中進行，才能在Edge上擷取屬性。
 
 
 ### 檢閱
@@ -131,4 +131,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這是[自動強制執行](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/auto-enforcement)會針對您的[資料使用原則](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/overview)檢查的位置。 它將會使用您建立的規則檢查您的行銷動作，並引發任何錯誤。
+>這是[自動強制執行](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/enforcement/auto-enforcement)會針對您的[資料使用原則](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/policies/overview)檢查的位置。 它將會使用您建立的規則檢查您的行銷動作，並引發任何錯誤。

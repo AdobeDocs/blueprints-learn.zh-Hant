@@ -246,7 +246,7 @@ XDM體驗事件 — >產品清單專案資料夾
 >
 >容器是參考事件變數或陣列元素的方式。 您可以在此部落格中閱讀更多有關其後果的資訊，但為了簡單起見，這可讓您指定陣列中的單一元素是否同時符合兩個條件，或者條件是否可分佈在兩個元素中。
 >
->[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780)
+>[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780?profile.language=zh-Hant](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780?profile.language=zh-Hant)
 
 >[!WARNING]
 >

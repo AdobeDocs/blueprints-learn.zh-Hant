@@ -32,4 +32,4 @@ ht-degree: 1%
 
 您現在已瞭解在行銷活動畫布中使用分叉活動，針對流入的相同資料建立相同分支有多麼容易。 下一個步驟將使用「分支」活動的分支。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/fork)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/fork)以瞭解詳情。
