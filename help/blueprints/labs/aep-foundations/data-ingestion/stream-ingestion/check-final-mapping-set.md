@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 傳遞對應
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >在繼續之前，請確定您的最終對應符合下面顯示的內容。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 | concat(date\_part(&quot;mm&quot;， date(birth\_Date， &quot;yyyy-M-d&quot;))。toString()， &quot;-&quot;， date\_part(&quot;dd&quot;， date(birth\_Date， &quot;yyyy-M-d&quot;))。toString()) | person.birthDayAndMonth |
 | date\_part(&quot;yyyy&quot;，date(birth\_Date，&quot;yyyy-M-d&quot;)) | person.birthYear |
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >在繼續之前，請確定您的最終對應符合下面顯示的內容
 

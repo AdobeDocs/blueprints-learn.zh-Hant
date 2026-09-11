@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 檢查最終對應集
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >如果您來自串流擷取實驗室，請按一下以下連結以繼續該實驗室的下一個步驟：
 >
@@ -51,7 +51,7 @@ ht-degree: 0%
 | shipping\_state | shippingAddress.state |
 | shipping\_street\_address | shippingAddress.street1 |
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >在繼續之前，請確定您的最終對應符合下面顯示的內容。
 
@@ -65,6 +65,6 @@ ht-degree: 0%
 | concat(date\_part(&quot;month&quot;， date(birth\_Date，&quot;M/d/yyyy&quot;))。toString()， &quot;-&quot;， date\_part(&quot;day&quot;， date(birth\_Date，&quot;M/d/yyyy&quot;))。toString()) | person.birthDayAndMonth |
 | date\_part(&quot;yyyy&quot;，date(birth\_Date，&quot;M/d/yyyy&quot;)) | person.birthYear |
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >在繼續之前，請確定您的最終對應符合下面顯示的內容

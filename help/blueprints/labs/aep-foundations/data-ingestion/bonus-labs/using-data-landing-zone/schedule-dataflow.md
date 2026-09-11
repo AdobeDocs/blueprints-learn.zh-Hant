@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ![資料流畫面顯示具有無執行狀態的新資料流](assets/schedule-dataflow-dataflows-screen-no-runs-status.png "資料流來源畫面")
 
-> [!NOTE]
+&#x200B;> [!NOTE]
 >
 >您需要持續重新整理頁面才能看到狀態更新，因為後端不會將更新推送到UI。
 
