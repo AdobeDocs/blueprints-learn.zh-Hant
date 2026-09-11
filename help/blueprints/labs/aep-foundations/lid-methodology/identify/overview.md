@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 識別
 description: 瞭解LID方法的兩部分識別步驟：標籤剩餘的表格型別並識別關鍵識別欄位。
-doc-type: overview-page
+doc-type: article
 solution: Experience Platform
 exl-id: 83657cf0-db35-4d4d-8cfb-1934ff40baca
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 8fba6e953de0e588af5398b21554ebad085899fd
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
