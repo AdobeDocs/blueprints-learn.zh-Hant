@@ -69,27 +69,27 @@ ht-degree: 0%
 
 ![編輯行銷活動電子郵件活動的電子郵件選項](assets/creating-the-email-click-edit-email.png)
 
-11. 按一下&#x200B;**動作標籤**&#x200B;並選取&#x200B;**您的**&#x200B;電子郵件設定。 您的沙箱可能會將此顯示為關聯式電子郵件。 （選取任一）
+&#x200B;11. 按一下&#x200B;**動作標籤**&#x200B;並選取&#x200B;**您的**&#x200B;電子郵件設定。 您的沙箱可能會將此顯示為關聯式電子郵件。 （選取任一）
 
 已選取電子郵件設定的![動作標籤](assets/creating-the-email-action-tab-email-configuration.png)
 
-12. 按一下&#x200B;**內容標籤**
+&#x200B;12. 按一下&#x200B;**內容標籤**
 
 電子郵件編輯器中的![內容標籤](assets/creating-the-email-click-content-tab.png)
 
-13. 按一下&#x200B;**套用內容範本**
+&#x200B;13. 按一下&#x200B;**套用內容範本**
 
 在電子郵件編輯器中![套用內容範本選項](assets/creating-the-email-click-apply-content-template.png)
 
-14. 選取您建立的範本&#x200B;**「促銷範本」**，然後按一下&#x200B;**確認**
+&#x200B;14. 選取您建立的範本&#x200B;**「促銷範本」**，然後按一下&#x200B;**確認**
 
 ![選取促銷範本並按一下[確認]](assets/creating-the-email-select-promotional-template-confirm.png)
 
-15. 按一下&#x200B;**編輯電子郵件內文**
+&#x200B;15. 按一下&#x200B;**編輯電子郵件內文**
 
 套用範本後![編輯電子郵件內文選項](assets/creating-the-email-click-edit-email-body.png)
 
-16. 確認新的頁首、主圖、頁尾和內容區塊顯示正確。
+&#x200B;16. 確認新的頁首、主圖、頁尾和內容區塊顯示正確。
 
 ![在電子郵件中正確顯示頁首、主圖、頁尾和內容區塊](assets/creating-the-email-header-hero-footer-blocks-confirmed.png)
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
    ![從Toolkit資料夾上傳hero.png](assets/creating-the-email-upload-hero-png-file.png)
 
-5. 按[下一步]，**選取**&#x200B;您資產資料夾&#x200B;**，然後按[匯入]******
+5. 按[下一步]，**選取**&#x200B;您資產資料夾&#x200B;**，然後按[匯入]**&#x200B;**&#x200B;**
 
    ![選取資產資料夾並按一下主圖影像的匯入](assets/creating-the-email-select-folder-import-hero.png)
 

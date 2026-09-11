@@ -39,21 +39,21 @@ ht-degree: 1%
 
    輸入工作階段名稱和URL後![按[下一步]](assets/monitor-your-event-click-next-button.png)
 
-4. 將連結複製到您稍後可參考的位置
+&#x200B;4. 將連結複製到您稍後可參考的位置
 
-5. 按一下&#x200B;**完成**&#x200B;按鈕
+&#x200B;5. 按一下&#x200B;**完成**&#x200B;按鈕
 
    ![複製Assurance工作階段連結並按一下[完成]](assets/monitor-your-event-copy-link.png)
 
 
 
-6. 瀏覽至&#x200B;**設定**
+&#x200B;6. 瀏覽至&#x200B;**設定**
 
    ![瀏覽至Assurance工作階段中的[設定]索引標籤](assets/monitor-your-event-navigate-to-settings.png "按一下設定")
 
 
 
-7. 按一下&#x200B;**+**&#x200B;按鈕，然後按一下&#x200B;**完成**，以啟用&#x200B;**事件交易**&#x200B;和&#x200B;**Edge Delivery**
+&#x200B;7. 按一下&#x200B;**+**&#x200B;按鈕，然後按一下&#x200B;**完成**，以啟用&#x200B;**事件交易**&#x200B;和&#x200B;**Edge Delivery**
 
 ![啟用事件交易與Edge Delivery，然後按一下[完成]](assets/monitor-your-event-enable-event-transactions-and-edge-delivery.png)
 
@@ -62,14 +62,14 @@ ht-degree: 1%
 
 前往Postman ->建立網頁事件Edge （無驗證） ->標頭
 
-1. 將&#x200B;**x-adobe-aep-validation-token**&#x200B;新增至具有上述從Assurance複製的連結的標頭。 在您從Assurance複製的連結中，於=之後抓取&#x200B;**ID**&#x200B;值。 例如[https://www.adobe.com/?adb\_validation\_sessionid=](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)[`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)
+1. 將&#x200B;**x-adobe-aep-validation-token**&#x200B;新增至具有上述從Assurance複製的連結的標頭。 在您從Assurance複製的連結中，於=之後抓取&#x200B;**ID**&#x200B;值。 例如[https://www.adobe.com/?adb\_validation\_sessionid=](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0) [`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)
 1. 我們只會使用[`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)值，而非完整URL
 
    ![在Postman中新增具有Assurance工作階段ID的x-adobe-aep-validation-token標頭](assets/monitor-your-event-populate-the-x-adobe-aep-validation-token.png)
 
 
 
-3. 在Postman中，儲存並執行&#x200B;**建立網頁事件Edge （無驗證）**&#x200B;請求
+&#x200B;3. 在Postman中，儲存並執行&#x200B;**建立網頁事件Edge （無驗證）**&#x200B;請求
 
 
 

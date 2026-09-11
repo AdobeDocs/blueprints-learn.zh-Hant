@@ -102,14 +102,14 @@ Adobe Target活動和AJO Web Channel可讓AEP Web SDK自動擷取和套用其回
 
 ![Bob設定檔的Edge檢視尚未顯示對象成員資格](assets/decisioning-and-cbes-in-action-edge-audience-membership-empty.png)
 
-11. 在新的瀏覽器索引標籤中，導覽至您建立的歷程，然後按一下進入該歷程。 您會看到有一個設定檔已進入歷程且現在位於CBE節點。
+&#x200B;11. 在新的瀏覽器索引標籤中，導覽至您建立的歷程，然後按一下進入該歷程。 您會看到有一個設定檔已進入歷程且現在位於CBE節點。
 
 ![歷程畫布顯示Bob的設定檔已進入且位於CBE節點](assets/decisioning-and-cbes-in-action-bob-enters-journey.png)
 
 此時，Bob已進入Journey，且Edge投影目前正在組裝一個投影，以更新Bob在Edge上的設定檔。
 
-12. 切換回Postman，然後按一下Bob的第二個Experience Event呼叫，**Bob — 頁面頂端擷取。**
-13. 按一下&#x200B;**傳送**。 會發生什麼事？
+&#x200B;12. 切換回Postman，然後按一下Bob的第二個Experience Event呼叫，**Bob — 頁面頂端擷取。**
+&#x200B;13. 按一下&#x200B;**傳送**。 會發生什麼事？
     - 如果Bob的Edge設定檔尚未更新，您對於從資料收集呼叫得到的回應會非常類似。 如果是這種情況，請等待一兩分鐘，然後嘗試再次傳送Bob的頁面熱門擷取呼叫。
     - 如果Bob的Edge設定檔已更新，您將會收到先前設定JSON的回應，以及用於報表的其他資訊。 但在繼續之前，應該提供哪些iPhone 17產品？
 
@@ -117,19 +117,19 @@ Adobe Target活動和AJO Web Channel可讓AEP Web SDK自動擷取和套用其回
 
 ![Postman回應，顯示為Bob](assets/decisioning-and-cbes-in-action-bob-base-offer-response.png)傳回的基本層級優惠
 
-14. 請記住，此Postman要求會自動傳送此選件的顯示通知，因此AJO已為此選件記錄至少一次曝光。 再按一下&#x200B;**傳送**&#x200B;以傳送第二次曝光。 確認已再次傳回基本選件。
-15. 回想一下，3次曝光的頻率上限適用於Base、Pro和Ultra層機型。 按一下第三次&#x200B;**傳送**，以取得基礎層級的第三回應，並錄製另一個印象。
-16. 再按四次&#x200B;**傳送**，會發生什麼事？ 已達基本層級優惠方案的頻率上限，而您會在回應中收到一般優惠方案：
+&#x200B;14. 請記住，此Postman要求會自動傳送此選件的顯示通知，因此AJO已為此選件記錄至少一次曝光。 再按一下&#x200B;**傳送**&#x200B;以傳送第二次曝光。 確認已再次傳回基本選件。
+&#x200B;15. 回想一下，3次曝光的頻率上限適用於Base、Pro和Ultra層機型。 按一下第三次&#x200B;**傳送**，以取得基礎層級的第三回應，並錄製另一個印象。
+&#x200B;16. 再按四次&#x200B;**傳送**，會發生什麼事？ 已達基本層級優惠方案的頻率上限，而您會在回應中收到一般優惠方案：
 
 ![Postman回應，顯示在達到頻率上限後傳回的一般優惠方案](assets/decisioning-and-cbes-in-action-bob-generic-offer-after-cap.png)
 
-17. 再按一下&#x200B;**傳送**，您就會看到一般階層選件。 您可以再按一下「傳送100次」，系統會將相同的選件傳回，直到次日頻率上限重設為止。
+&#x200B;17. 再按一下&#x200B;**傳送**，您就會看到一般階層選件。 您可以再按一下「傳送100次」，系統會將相同的選件傳回，直到次日頻率上限重設為止。
 
 >[!WARNING]
 >
 >請記住，在AJO，一天會在格林威治標準時間午夜重設。 如果您在GMT午夜之後再傳送擷取呼叫，則會看到基礎層級選件傳回。
 
-18. 返回Journey Orchestration UI並按一下進入您建立的&#x200B;**iPhone 17放棄瀏覽**&#x200B;歷程。 由於歷程為即時狀態並發佈，因此您會開始看到統計資料。 您會看到1個設定檔已進入歷程且目前位於CBE節點。
+&#x200B;18. 返回Journey Orchestration UI並按一下進入您建立的&#x200B;**iPhone 17放棄瀏覽**&#x200B;歷程。 由於歷程為即時狀態並發佈，因此您會開始看到統計資料。 您會看到1個設定檔已進入歷程且目前位於CBE節點。
 
 ![歷程報告顯示目前位於CBE節點的一個設定檔](assets/decisioning-and-cbes-in-action-bob-enters-journey.png)
 

@@ -48,7 +48,7 @@ Adobe Journey Optimizer的&#x200B;**品牌**&#x200B;功能可協助您定義並�
 
 1. 從Toolkit資料夾開啟&#x200B;**Connection 5G Brand Guidelinate** PDF （請先解壓縮）。
 
-   ![從Toolkit資料夾開啟Connection 5G Brand Guidelinate PDF ](assets/brand-management-open-brand-guideline-pdf.png)
+   ![從Toolkit資料夾開啟Connection 5G Brand Guidelinate PDF &#x200B;](assets/brand-management-open-brand-guideline-pdf.png)
 
 2. 請檢閱檔案以瞭解Connection 5G使用的內容：
    - 語調

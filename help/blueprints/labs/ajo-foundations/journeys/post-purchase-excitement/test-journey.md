@@ -105,16 +105,16 @@ ht-degree: 0%
 
 
 
-8. **關閉**&#x200B;瀏覽器&#x200B;**標籤**
-9. 右上角的&#x200B;**關閉測試模式**
+&#x200B;8. **關閉**&#x200B;瀏覽器&#x200B;**標籤**
+&#x200B;9. 右上角的&#x200B;**關閉測試模式**
 
    右上方的![關閉測試模式按鈕](assets/test-journey-close-test-mode.png)
 
-10. 按一下右上角的&#x200B;**發佈**&#x200B;歷程
+&#x200B;10. 按一下右上角的&#x200B;**發佈**&#x200B;歷程
 
 右上角歷程的![發佈按鈕](assets/test-journey-publish-journey.png)
 
-11. 按一下左上方的\&lt; — 箭頭&#x200B;**關閉****歷程**
+&#x200B;11. 按一下左上方的\&lt; — 箭頭&#x200B;**關閉**&#x200B;**歷程**
 
 左上方的![向後箭頭以關閉歷程](assets/test-journey-close-journey-back-arrow.png)
 

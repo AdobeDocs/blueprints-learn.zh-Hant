@@ -48,7 +48,7 @@ Adobe Journey Optimizer中的Personalization可讓您根據個別設定檔、行
 
    電子郵件文字工具列中的![個人化圖示](assets/personalization-and-content-experimentation-click-personalization-icon.png)
 
-4. 搜尋&#x200B;**第一個名******。
+4. 搜尋&#x200B;**第一個名**&#x200B;**&#x200B;**。
 
    ![搜尋個人化面板中的First Name屬性](assets/personalization-and-content-experimentation-search-first-name-field.png)
 
@@ -119,7 +119,7 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
 
    ![按一下40以下變體的影像和匯入媒體](assets/personalization-and-content-experimentation-click-image-import-media.png)
 
-7. 選取&#x200B;**variant-age-below-40.jpg**&#x200B;影像。 按一下[下一步] ****&#x200B;匯入它，最後再按資料夾中的[匯入] **** （預設應該已在資料夾中）。
+7. 選取&#x200B;**variant-age-below-40.jpg**&#x200B;影像。 按一下[下一步] **&#x200B;**&#x200B;匯入它，最後再按資料夾中的[匯入] **&#x200B;**&#x200B;（預設應該已在資料夾中）。
 
    ![選取並匯入variant-age-below-40.jpg image](assets/personalization-and-content-experimentation-select-below-40-image.png)
 

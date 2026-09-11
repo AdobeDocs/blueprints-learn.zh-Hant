@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 簡介
 
-在這個最終模組中，您將使用Adobe Journey Optimizer中的模擬工具，以&#x200B;**兩個條件式變體**測試您的電子郵件。
+在這個最終模組中，您將使用Adobe Journey Optimizer中的模擬工具，以&#x200B;**兩個條件式變體**&#x200B;測試您的電子郵件。
 這可讓您預覽不同客戶將會如何體驗您的個人化訊息，在啟動行銷活動之前確保準確性。
 
 您將會使用工具組中的範例測試設定檔檔案&#x200B;**sample.csv**。
@@ -71,7 +71,7 @@ AJO會根據上傳的設定檔，並排顯示這兩個變體。
 
 如果您向上捲動，現在也會看到具有名稱的個人化欄位，如下所述。
 
-變體1](assets/content-simulation-personalized-name-field-variant-1.png)中為Alex顯示的![個人化名稱欄位
+變體1![&#128279;](assets/content-simulation-personalized-name-field-variant-1.png)中為Alex顯示的個人化名稱欄位
 
 - **Jason** →看到&#x200B;**變體2** （年齡低於40歲）
 

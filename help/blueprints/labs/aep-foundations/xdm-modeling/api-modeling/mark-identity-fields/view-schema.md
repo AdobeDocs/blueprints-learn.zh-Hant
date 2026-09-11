@@ -56,7 +56,7 @@ ht-degree: 0%
 
 請注意請求中使用的&#x200B;**Accept**&#x200B;標頭。 此標頭會通知XDM結構描述登入傳回結構描述的`$refs`未解析（即顯示最小資訊量），以及它在API回應中的關聯描述項。  Adobe提供其他&#x200B;**Accept**&#x200B;標頭，供您用來取得結構描述的詳細資訊。
 
-步驟3取得客戶帳戶結構描述請求](assets/view-schema-accept-header.png "步驟3 — 取得客戶帳戶結構描述接受標題中的![接受標題欄位")
+步驟3取得客戶帳戶結構描述請求&rbrack;(assets/view-schema-accept-header.png "步驟3 — 取得客戶帳戶結構描述接受標題中的!&lbrack;接受標題欄位")
 
 >[!NOTE]
 >

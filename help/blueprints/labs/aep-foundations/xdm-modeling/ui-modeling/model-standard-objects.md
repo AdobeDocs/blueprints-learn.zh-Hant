@@ -84,7 +84,7 @@ Adobe Experience Platform中有許多欄位群組是以標準XDM的形式存在�
 
 
 
-3. **核取**&#x200B;欄位群組旁的核取方塊，然後按一下&#x200B;**新增欄位群組**&#x200B;按鈕
+&#x200B;3. **核取**&#x200B;欄位群組旁的核取方塊，然後按一下&#x200B;**新增欄位群組**&#x200B;按鈕
 
 ![選取[人口統計詳細資料]欄位群組以將其新增至您的結構描述](assets/model-standard-objects-select-demographic-details-field-group.png "選取[人口統計詳細資料]欄位群組以將其新增至您的結構描述")
 

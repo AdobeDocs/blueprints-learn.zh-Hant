@@ -108,15 +108,15 @@ ht-degree: 0%
 
 
 
-5. 按一下「對象 — > Experience Platform」。 將「計費使用總和」>「140 GB」與「計費使用平均」>= 20 GB拖曳至「計畫名稱」旁。
+&#x200B;5. 按一下「對象 — > Experience Platform」。 將「計費使用總和」>「140 GB」與「計費使用平均」>= 20 GB拖曳至「計畫名稱」旁。
 
    ![將計費使用對象拖曳到計畫名稱旁](assets/option-1-using-audiences-to-aggregate-20-gb-next-to-plan-name.png)
 
 
 
-6. 將虛擬程式碼複製到說明中
+&#x200B;6. 將虛擬程式碼複製到說明中
 
-7. 勾選此專案可以是串流。 **它不能是串流**。 進行一些變更：
+&#x200B;7. 勾選此專案可以是串流。 **它不能是串流**。 進行一些變更：
 
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ ht-degree: 0%
 
 
 
-8. 將&#x200B;**計畫名稱（計畫名稱）**&#x200B;取代為： XDM個人設定檔> Devbc >計畫詳細資料> **計畫名稱**
+&#x200B;8. 將&#x200B;**計畫名稱（計畫名稱）**&#x200B;取代為： XDM個人設定檔> Devbc >計畫詳細資料> **計畫名稱**
 
    ![以非正規化計畫名稱欄位取代計畫名稱（計畫名稱）](assets/option-1-using-audiences-to-aggregate-replace-denormalized-plan-name.png)
 
@@ -142,7 +142,7 @@ ht-degree: 0%
 
 
 
-9. 驗證您現在是否可以將它儲存為串流。 將對象儲存為&quot;*計費資料使用量高但無Ultimate計畫*&quot;
+&#x200B;9. 驗證您現在是否可以將它儲存為串流。 將對象儲存為&quot;*計費資料使用量高但無Ultimate計畫*&quot;
 
 >[!NOTE]
 >

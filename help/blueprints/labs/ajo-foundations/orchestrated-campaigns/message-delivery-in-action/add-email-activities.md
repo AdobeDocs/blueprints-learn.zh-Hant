@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ![含有[儲存並關閉]按鈕的確認對話方塊](assets/add-email-activities-save-and-close-dialog.png)
 
-11. 檢閱電子郵件屬性和動作，包括新增至電子郵件內文的文字。 按一下&#x200B;**向左箭頭**&#x200B;以導覽回促銷活動畫布
+&#x200B;11. 檢閱電子郵件屬性和動作，包括新增至電子郵件內文的文字。 按一下&#x200B;**向左箭頭**&#x200B;以導覽回促銷活動畫布
 
 ![導覽回促銷活動畫布](assets/add-email-activities-back-to-campaign-canvas.png)
 

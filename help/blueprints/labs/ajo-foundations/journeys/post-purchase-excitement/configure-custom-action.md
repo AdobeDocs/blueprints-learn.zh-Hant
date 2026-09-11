@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## 導覽至動作
 
-在左側邊欄的[管理]功能表下，按一下[設定] ****，然後在[動作]方塊上按一下[管理] **按鈕**
+在左側邊欄的[管理]功能表下，按一下[設定] **&#x200B;**，然後在[動作]方塊上按一下[管理] **按鈕**
 
-設定](assets/configure-custom-action-open-actions-manage.png)底下[動作]方塊上的![管理按鈕
+設定![&#128279;](assets/configure-custom-action-open-actions-manage.png)底下[動作]方塊上的管理按鈕
 
 
 

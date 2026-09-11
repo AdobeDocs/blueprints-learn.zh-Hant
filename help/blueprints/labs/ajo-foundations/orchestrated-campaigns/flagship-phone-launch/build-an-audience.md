@@ -30,7 +30,7 @@ ht-degree: 0%
 
 2. 在右邊欄中，您會看到「建置對象」屬性。 更新標籤以指出下列專案： `Active Lines with Apple`
 
-![使用Apple將對象標籤設為Active Lines ](assets/build-an-audience-set-label.png)
+![使用Apple將對象標籤設為Active Lines &#x200B;](assets/build-an-audience-set-label.png)
 
 
 ## 選取目標維度
@@ -100,13 +100,13 @@ ht-degree: 0%
 
 2. 尋找名為&#x200B;**Make**&#x200B;的欄位，然後按一下三個點並選取&#x200B;**分配值**
 
-   Make欄位](assets/build-an-audience-make-distribution-of-values.png)的![值分佈選項
+   Make欄位![&#128279;](assets/build-an-audience-make-distribution-of-values.png)的值分佈選項
 
 
 
 3. 記下各種值。 您只想要`Apple`，而且幸好它沒有100個不同的拼字。 按一下&#x200B;**Apple欄位**&#x200B;以選取它，然後按一下右上角的&#x200B;**選取屬性和值按鈕**。
 
-   使用Select屬性和值按鈕](assets/build-an-audience-select-apple-attribute-value.png)選取的![Apple值
+   使用Select屬性和值按鈕![&#128279;](assets/build-an-audience-select-apple-attribute-value.png)選取的Apple值
 
    >[!NOTE]
    >

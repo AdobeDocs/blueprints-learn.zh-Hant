@@ -66,7 +66,7 @@ ht-degree: 0%
 
    ![新增重複資料刪除活動的屬性按鈕](assets/save-the-audience-add-attribute-button.png)
 
-   從結構描述](assets/save-the-audience-select-customer-id-field.png)中選取的![客戶識別碼欄位
+   從結構描述![&#128279;](assets/save-the-audience-select-customer-id-field.png)中選取的客戶識別碼欄位
 
 
 

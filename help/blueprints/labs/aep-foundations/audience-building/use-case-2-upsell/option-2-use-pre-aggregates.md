@@ -36,15 +36,15 @@ ht-degree: 0%
 
 
 
-3. 在設定檔上搜尋計畫名稱並將其新增（XDM個別設定檔> Devbc >計畫詳細資訊>計畫名稱）。 選取不等於「Ultimate」
+&#x200B;3. 在設定檔上搜尋計畫名稱並將其新增（XDM個別設定檔> Devbc >計畫詳細資訊>計畫名稱）。 選取不等於「Ultimate」
 
    ![選取計畫名稱不等於Ultimate](assets/option-2-use-pre-aggregates-select-does-not-equal-ultimate.png)
 
 
 
-4. 提供說明。  驗證評估方法是串流。
+&#x200B;4. 提供說明。  驗證評估方法是串流。
 
-5. 將對象儲存為&quot;*計費資料使用量高但無Ultimate計畫(Agg)*&quot;
+&#x200B;5. 將對象儲存為&quot;*計費資料使用量高但無Ultimate計畫(Agg)*&quot;
 
 >[!NOTE]
 >

@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ### 新增電子郵件動作
 
-1. 在[動作]功能表下，將&#39;n拖曳&#39;0}動作&#x200B;**至GetShippingDetails動作之後的畫布**
+1. 在[動作]功能表下，將&#39;n拖曳&#39;0&rbrace;動作&#x200B;**至GetShippingDetails動作之後的畫布**
 
    ![在GetShippingDetails動作之後，將[動作]節點拖曳到畫布上](assets/build-journey-drag-email-action-onto-canvas.png)
 
@@ -188,7 +188,7 @@ ht-degree: 0%
 
 ![儲存右上角及左上角的按鈕和後退箭號](assets/build-journey-save-and-back-arrow.png)
 
-12. 最後，按一下左上方的&#x200B;**\&lt;上一頁圖示**&#x200B;以回到歷程畫布
+&#x200B;12. 最後，按一下左上方的&#x200B;**\&lt;上一頁圖示**&#x200B;以回到歷程畫布
 
 左上方的![返回圖示以返回歷程畫布](assets/build-journey-back-icon-to-journey-canvas.png)
 

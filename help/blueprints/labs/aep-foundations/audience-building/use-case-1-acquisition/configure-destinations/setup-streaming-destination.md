@@ -62,7 +62,7 @@ ht-degree: 0%
 
 
 
-3. 請依照以下步驟填寫您目的地的設定詳細資料：
+&#x200B;3. 請依照以下步驟填寫您目的地的設定詳細資料：
 
 - **名稱** -> `Streaming DEP Webhook - [Your Initials]`
 - **描述** -> `[your webhook endpoint you copied above]`
