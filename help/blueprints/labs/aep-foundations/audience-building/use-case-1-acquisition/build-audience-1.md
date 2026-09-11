@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立受眾#1
 description: 建立串流對象，找出今天下單iPhone 14的設定檔，探索事件來源選擇和陣列容器。
 doc-type: article
 solution: Experience Platform
 exl-id: b8c1080e-b093-4d50-94da-5aced6bf0a08
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 0%
@@ -48,9 +47,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->&#x200B;* 訂單「資料夾」沒有「i」。 即使已填入我們的說明，但此說明並沒有，這可能會讓您的行銷人員感到困惑，因為他們可能會嘗試使用該說明或想知道它是什麼。
->&#x200B;* 事件卡片的「i」只會重複型別，因為事件型別是一個欄位，而不是多個。
->&#x200B;* 只有在合併的設定檔中有超過2%的值存在時，才會顯示摘要資料。 在篩選字串時，這也會推動任何自動完成。
+>* 訂單「資料夾」沒有「i」。 即使已填入我們的說明，但此說明並沒有，這可能會讓您的行銷人員感到困惑，因為他們可能會嘗試使用該說明或想知道它是什麼。
+>* 事件卡片的「i」只會重複型別，因為事件型別是一個欄位，而不是多個。
+>* 只有在合併的設定檔中有超過2%的值存在時，才會顯示摘要資料。 在篩選字串時，這也會推動任何自動完成。
 
 
 
@@ -58,7 +57,7 @@ ht-degree: 0%
 
 ![將「已下訂單」事件型別卡片拖曳到畫布上](assets/build-audience-1-drag-order-placed-event-onto-canvas.png)
 
-&#x200B;> [!TIP]
+> [!TIP]
 >
 >**選擇性：**
 >
@@ -247,7 +246,7 @@ XDM體驗事件 — >產品清單專案資料夾
 >
 >容器是參考事件變數或陣列元素的方式。 您可以在此部落格中閱讀更多有關其後果的資訊，但為了簡單起見，這可讓您指定陣列中的單一元素是否同時符合兩個條件，或者條件是否可分佈在兩個元素中。
 >
->[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780?profile.language=zh-Hant](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780?profile.language=zh-Hant)
+>[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/how-exactly-do-containers-work-in-aep-segmentation-a-deeper-look/ba-p/458780)
 
 >[!WARNING]
 >

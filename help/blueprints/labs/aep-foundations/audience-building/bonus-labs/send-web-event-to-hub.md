@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 傳送Web事件至中樞
 description: 瞭解如何使用Postman將網頁事件直接傳送至中心，並驗證其是否符合串流區段的資格及設定檔。
 doc-type: article
 solution: Experience Platform
 exl-id: a8343499-b4d5-4540-8fe1-7497bc20e437
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 0%
@@ -40,7 +39,7 @@ ht-degree: 0%
 1. 導覽至左側邊欄中的&#x200B;**來源**，然後按一下頂端導覽列中的&#x200B;**帳戶**
 1. 搜尋&#x200B;**dep： HTTP API \[raw]**，反白標示該列，並複製&#x200B;**串流端點**&#x200B;的值並儲存於您稍後可參考的位置
 
-帳戶並複製其串流端點&rbrack;(assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep： HTTP API \[raw]&quot;)
+帳戶並複製其串流端點](assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep： HTTP API \[raw]&quot;)
 
 ## 尋找網頁資料流ID
 
@@ -63,7 +62,7 @@ ht-degree: 0%
 
 完成時，您最終的API要求應該看起來像這樣
 
-&#x200B;> [!CAUTION]
+> [!CAUTION]
 >
 >尚未執行！
 

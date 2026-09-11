@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 檢查最終對應集
 description: 將串流擷取對應與預期的最終通過和計算欄位對應集進行比較。
 doc-type: article
 solution: Experience Platform
 exl-id: 8802aaca-f566-4972-8bd6-41aca9fae9bf
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 ## 傳遞對應
 
-&#x200B;> [!NOTE]
+> [!NOTE]
 >
 >在繼續之前，請確定您的最終對應符合下面顯示的內容。
 
@@ -62,7 +61,7 @@ ht-degree: 0%
 | concat(date\_part(&quot;mm&quot;， date(birth\_Date， &quot;yyyy-M-d&quot;))。toString()， &quot;-&quot;， date\_part(&quot;dd&quot;， date(birth\_Date， &quot;yyyy-M-d&quot;))。toString()) | person.birthDayAndMonth |
 | date\_part(&quot;yyyy&quot;，date(birth\_Date，&quot;yyyy-M-d&quot;)) | person.birthYear |
 
-&#x200B;> [!NOTE]
+> [!NOTE]
 >
 >在繼續之前，請確定您的最終對應符合下面顯示的內容
 

@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 使用案例#2 — 向上銷售
 description: 定義針對沒有最終手機計畫之高資料使用量客戶的向上銷售使用案例，比較啟用的對象彙總方法。
 doc-type: overview-page
 solution: Experience Platform
 exl-id: d0268de8-87eb-4dd9-b699-99d42716f20c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%

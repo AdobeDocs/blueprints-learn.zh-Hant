@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 護欄、AI模型和決策的未來
 description: 瞭解關鍵決策護欄、AI排名模型與公式有何差異，以及決策的建置區塊如何端對端連結。
 doc-type: article
 solution: Experience Platform
 exl-id: 90902f6e-ba3c-4852-ab82-ad852698b227
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%

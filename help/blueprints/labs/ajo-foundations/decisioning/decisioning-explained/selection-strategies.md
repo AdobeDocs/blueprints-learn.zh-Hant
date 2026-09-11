@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 選取策略
 description: 瞭解選取策略的三個元件，以及專案層級與策略層級資格和排名方法如何搭配運作。
 doc-type: article
 solution: Experience Platform
 exl-id: d15cc038-f012-4988-b033-7080fb065110
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%

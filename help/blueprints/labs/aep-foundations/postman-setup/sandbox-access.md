@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 沙箱存取
 description: 在啟動Labs之前，請確認您的Postman環境可以成功擷取指派的Experience Platform沙箱。
 doc-type: article
 solution: Experience Platform
 exl-id: c841e497-a695-4d3f-85e6-d653478cad1e
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%

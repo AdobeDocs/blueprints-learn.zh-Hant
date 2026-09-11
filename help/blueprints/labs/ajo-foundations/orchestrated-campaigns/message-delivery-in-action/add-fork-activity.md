@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 新增分叉活動
 description: 瞭解如何將「分支」活動新增至協調的行銷活動，以建立兩個相同的受眾資料分支。
 doc-type: article
 solution: Experience Platform
 exl-id: f4055087-29ea-4277-b2eb-4b42cbb65c06
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 1%
@@ -33,4 +32,4 @@ ht-degree: 1%
 
 您現在已瞭解在行銷活動畫布中使用分叉活動，針對流入的相同資料建立相同分支有多麼容易。 下一個步驟將使用「分支」活動的分支。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/fork)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/fork)以瞭解詳情。

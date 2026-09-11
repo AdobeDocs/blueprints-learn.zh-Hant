@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 摘要
 description: 檢閱使用Adobe Journey Optimizer中的片段、AI工具和模擬來建立個人化、品牌相容行銷活動的主要內容和完成檢查清單。
 doc-type: article
 solution: Experience Platform
 exl-id: 8c4d8a66-190d-4714-95a3-37955b1e1a8c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -36,7 +35,7 @@ ht-degree: 0%
 
 
 
-&#x200B;> [!TIP]
+> [!TIP]
 >
 >**如果您正在閱讀本文，這表示您已經到了實驗室的結尾。**
 >

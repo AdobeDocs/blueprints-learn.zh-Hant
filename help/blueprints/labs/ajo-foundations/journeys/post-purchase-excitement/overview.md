@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 購買後的興奮感
 description: 瞭解如何建置事件導向的購買後歷程，以觸發包含協力廠商API動態追蹤詳細資訊的送貨通知電子郵件。
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 570dc378-e7a3-4895-8f14-89d420b6b340
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%

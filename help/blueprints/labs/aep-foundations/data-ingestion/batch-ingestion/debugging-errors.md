@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 偵錯錯誤
 description: 使用預覽錯誤診斷來調查失敗的資料流執行，並區分INGEST格式錯誤與MAPPER轉換警告。
 doc-type: article
 solution: Experience Platform
 exl-id: beee191b-a860-494c-873f-ab2e407ffbf5
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -66,6 +65,6 @@ _dep.account.createDate. Details: Unable to convert
 Created on 2023-09-24T10:19:58Z to schema type DATE_TIME
 ```
 
-&#x200B;> [!NOTE]
+> [!NOTE]
 >
 >此錯誤並不嚴重，因為只會在對應期間導致警告。 資料流執行不會因此而失敗，所以本實驗不會修正此錯誤。

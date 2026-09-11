@@ -1,11 +1,10 @@
 ---
-hold: true
 title: Postman安裝
 description: 在稍後的Labs中進行API呼叫之前，請先安裝Postman並熟悉其集合、環境和工作區介面。
 doc-type: article
 solution: Experience Platform
 exl-id: c277edb5-f758-4955-bcd7-b15a9b9ab949
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 本實驗結束時，您將能夠安裝Postman、設定基本的工作區和環境，以便進行未來labs所需的後續api呼叫。
 
-&#x200B;> [!IMPORTANT]
+> [!IMPORTANT]
 >
 >本課程的各個labs需要Postman。  即使您已安裝Postman，也需要完成本實驗，以確保已安裝並正確設定環境檔案和API集合。
 

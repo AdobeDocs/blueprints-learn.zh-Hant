@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立決定專案
 description: 了解決定專案屬性與適用性設定的差異，以及決定專案、曝光次數與決定事件的組織層級護欄。
 doc-type: article
 solution: Experience Platform
 exl-id: 28752ac1-118c-41d9-af6a-9907f854df1e
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

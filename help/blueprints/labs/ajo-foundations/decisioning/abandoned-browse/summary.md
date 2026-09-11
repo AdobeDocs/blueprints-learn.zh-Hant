@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 摘要
 description: 回顧已完成的Adobe Journey Optimizer Decisioning實驗室，其中涵蓋優惠方案、適用性、排名、選擇策略及CBE測試。
 doc-type: article
 solution: Experience Platform
 exl-id: b7f1ca1b-6feb-4dde-9d08-ad811150443c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 1%
@@ -25,7 +24,7 @@ ht-degree: 1%
 
 
 
-&#x200B;> [!TIP]
+> [!TIP]
 >
 >**如果您正在閱讀本文，這表示您已經到了實驗室的結尾。**
 >

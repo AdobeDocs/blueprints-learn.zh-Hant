@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 設定來源
 description: 建立HTTP API串流帳戶，並設定資料流以將客戶帳戶JSON資料串流到已啟用設定檔的資料集中。
 doc-type: article
 solution: Experience Platform
 exl-id: a5c02337-8af3-45dc-82a0-fa9731892fe4
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%

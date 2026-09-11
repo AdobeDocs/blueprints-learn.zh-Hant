@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 排名公式
 description: 瞭解排名公式如何使用條件數學運算式，以動態方式調整每個設定檔的決定專案優先順序分數。
 doc-type: article
 solution: Experience Platform
 exl-id: 08183f1a-8db6-43c5-8b2e-05fa3d9c0f8d
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%

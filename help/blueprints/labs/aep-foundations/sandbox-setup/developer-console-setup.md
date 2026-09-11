@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 開發人員控制檯設定
 description: 建立具有OAuth伺服器對伺服器憑證的Adobe Developer Console專案，以供DEP CLI驗證您的沙箱。
 doc-type: article
 solution: Experience Platform
 exl-id: 4a7c9e2b-1d3f-4a6e-8b9c-2d5e7f1a3c6b
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # 開發人員控制檯設定
 
-&#x200B;> [!NOTE]
+> [!NOTE]
 >
 >只有在您按照自己的進度進行Labs時，才需要這樣做。 如果您正在參加即時培訓課程或活動，您的沙箱已為您部署。
 

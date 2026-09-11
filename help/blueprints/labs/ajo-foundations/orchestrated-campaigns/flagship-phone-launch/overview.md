@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 旗艦手機上市
 description: 在旗艦電話推出後，取得建立協調行銷活動的概覽，以帳戶持有人和個別行作為目標，提供SMS升級優惠。
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 04c509f1-aa10-4d29-aa59-5e627b79e498
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%

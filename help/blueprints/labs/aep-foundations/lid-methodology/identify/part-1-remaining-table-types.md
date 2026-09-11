@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 第1部分 — 剩餘的表格型別
 description: 識別並標示跨個別設定檔、體驗事件和查詢ERD需要反正規化的橋接表格和表格。
 doc-type: article
 solution: Experience Platform
 exl-id: 742b58fa-3feb-4275-ab45-eb8d3aade22c
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%

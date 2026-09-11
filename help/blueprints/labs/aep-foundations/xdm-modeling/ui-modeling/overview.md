@@ -1,11 +1,10 @@
 ---
-hold: true
 title: UI模式
 description: 瞭解如何將來源資料對應至XDM標準和自訂物件，並使用結構UI建置和設定描述檔的結構。
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 66c3a386-7292-49e4-a75a-619e73c2a14d
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 0%

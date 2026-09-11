@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 為設定檔進行設定
 description: 標示主要和人員身分欄位、建立方案關係、啟用即時客戶設定檔的方案，以及檢閱設定檔聯合方案。
 doc-type: article
 solution: Experience Platform
 exl-id: 52cfc0d2-ba8c-4f81-9e03-c5c2c5e276b7
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%
@@ -141,6 +140,7 @@ XDM個別設定檔類別的![設定檔聯合結構描述檢視](assets/configure
 >[!NOTE]
 >
 >請注意，顯示的結構是沙箱中所有啟用設定檔的結構描述的彙總合併檢視。 階層XDM結構中的類似欄位會合併在一起，而具有不同名稱和/或階層的欄位會新增到整體檢視。
+
 > [!NOTE]
 >
 >只有XDM個別設定檔型別會執行類似名稱欄位之間的合併。

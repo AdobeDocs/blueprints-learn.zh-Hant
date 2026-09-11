@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 摘要
 description: 回顧模擬的Web事件如何流經Adobe Experience Platform的Edge Network、即時設定檔和資料湖層。
 doc-type: article
 solution: Experience Platform
 exl-id: 2f2a2c92-0359-4101-973f-3cb012debb63
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 1%
@@ -23,7 +22,7 @@ ht-degree: 1%
 
 
 
-&#x200B;> [!TIP]
+> [!TIP]
 >
 >**如果您正在閱讀本文，這表示您已經到了實驗室的結尾。**
 >

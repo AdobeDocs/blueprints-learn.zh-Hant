@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 說明決策
 description: 透過使用撲克牌和註解的實作模擬來瞭解虛擬手機上市的AJO決策的八個建置組塊。
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 9098cf13-86ac-41d9-b0f2-0f8d988267df
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%

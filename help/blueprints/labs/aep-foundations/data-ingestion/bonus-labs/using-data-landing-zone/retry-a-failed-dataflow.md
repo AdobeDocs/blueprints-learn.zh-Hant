@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 重試失敗的資料流
 description: 重試失敗的資料流執行，以便根據新資料流中更新的對應規則重新處理來源資料。
 doc-type: article
 solution: Experience Platform
 exl-id: 83ecf037-e524-4887-b833-5ed96af40419
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 0%

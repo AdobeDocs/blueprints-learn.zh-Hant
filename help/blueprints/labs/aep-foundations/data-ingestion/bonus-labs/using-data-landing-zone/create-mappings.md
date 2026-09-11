@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 建立對應
 description: 套用先前的實驗室技術，以獨立將資料登陸區域來源檔案對應至目標XDM結構描述。
 doc-type: article
 solution: Experience Platform
 exl-id: 80052fd3-a824-4b71-ae7e-ce587f925950
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%

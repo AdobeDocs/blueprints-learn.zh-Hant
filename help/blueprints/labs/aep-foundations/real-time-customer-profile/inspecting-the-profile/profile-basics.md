@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 設定檔基本知識
 description: 探索設定檔聯合結構描述、在UI中查詢設定檔，並檢查其屬性、身分對應和身分圖表關係。
 doc-type: article
 solution: Experience Platform
 exl-id: 5be38b40-47ef-42ce-8829-39fa09394716
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%

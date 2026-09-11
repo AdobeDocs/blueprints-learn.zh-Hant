@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 使用案例#1 — 贏取
 description: 定義贏取使用案例，將目標鎖定於尚未訂購或擁有裝置的iPhone 14頁面訪客，並規劃受眾建立方法。
 doc-type: overview-page
 solution: Experience Platform
 exl-id: a85b1eb1-88f4-41b2-acce-2e34dbe6aff8
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%

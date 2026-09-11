@@ -1,11 +1,10 @@
 ---
-hold: true
 title: 捨棄的瀏覽
 description: 瞭解如何建立端對端放棄的瀏覽決策工作流程，以跨管道提供個人化、資格感知電話優惠方案。
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 37b8a0b3-2820-4303-81d2-19890a3c5782
-source-git-commit: 2b2b9b9c359c4cc6757ac62ad502ece9a4923095
+source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
