@@ -184,4 +184,4 @@ ht-degree: 0%
 
 您現在已瞭解建立行銷活動、執行讀取對象活動與設定檔目標Dimension的簡易性，以便運用關聯式結構。 您已使用「分割」活動根據條件分割對象。 最後，測試模式有助於瞭解設定檔與關聯式結構描述之間的資料一致性很重要。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience)以瞭解詳情。

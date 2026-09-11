@@ -21,7 +21,7 @@ ht-degree: 0%
 若要深入瞭解JSON PATCH，請前往下列連結，但在本實驗中，假設您對此運作方式有一些概念😄
 
 - [https://jsonpatch.com/](https://jsonpatch.com/)
-- [Experience League API基礎知識](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=en#json-patch)
+- [Experience League API基礎知識](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-fundamentals.html?lang=zh-Hant#json-patch)
 
 ![將遺失的planDescription欄位修補到現有結構描述中的圖表](assets/modify-schema-json-patch-patching-missing-plan-description-field.png "在遺失的欄位計畫描述中修補")
 

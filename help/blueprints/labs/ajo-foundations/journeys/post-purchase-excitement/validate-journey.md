@@ -119,7 +119,7 @@ limit 50
 
 >[!NOTE]
 >
->若想知道每個欄位的意思，請檢視AJO結構描述字典，並將下拉式清單變更為「歷程步驟事件」結構描述： [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en)
+>若想知道每個欄位的意思，請檢視AJO結構描述字典，並將下拉式清單變更為「歷程步驟事件」結構描述： [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=zh-Hant)
 
 
 

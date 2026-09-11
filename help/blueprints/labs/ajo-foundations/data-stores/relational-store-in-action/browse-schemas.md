@@ -69,4 +69,4 @@ ht-degree: 0%
 
 您現在已瞭解在結構描述和關係UI中導覽是多麼容易。  您可以選取特定結構並導覽以檢視關係，以協助瞭解並使用行銷活動協調流程中的資料。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/get-started-schemas)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/data-management/get-started-schemas)以瞭解詳情。
