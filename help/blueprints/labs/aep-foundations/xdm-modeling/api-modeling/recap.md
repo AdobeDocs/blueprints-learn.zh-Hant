@@ -4,13 +4,11 @@ description: 檢閱API模型化實驗室步驟，包括透過JSON修補建立客
 doc-type: article
 solution: Experience Platform
 exl-id: 0279cd68-af7b-43b4-8c6c-d8f8f96f0c0e
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '351'
 ht-degree: 0%
-
 ---
-
 
 # 重述
 
@@ -18,20 +16,20 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459564/?quality=12&learn=on)
 
->[!TIP]
+>[!SUCCESS]
 >
->首先恭喜您！ 透過API建置專案並不容易，但瞭解其運作方式將有助於您瞭解系統整體。 榮譽！
+>恭喜！ 瞭解此運作方式有助於您瞭解系統整體。
 
 
 
 ## 已建立客戶帳戶結構描述
 
-您已由`$ref`建立結構描述，其中包含Adobe建立的欄位群組，以及您自己的自訂建立的欄位群組（即租使用者）。  您也`$ref`結構描述要代表的類別（即XDM個別設定檔）
+您由`$ref`同時在Adobe建立的欄位群組和您自己的自訂建立的欄位群組（亦即租使用者）中建立結構描述。 您也`$ref`結構描述要代表的類別（即XDM Individual Profile）
 
 ![透過$ref](assets/recap-customer-account-schema.png "客戶帳戶結構描述參考欄位群組和類別的客戶帳戶結構描述")
 
 
-## JSON修補程式識別客戶帳戶結構描述
+## JSON已修補客戶帳戶結構
 
 您使用JSON修補程式方法來修改客戶帳戶結構，以新增欄位至計畫物件。 您是透過修補您在[建立自訂欄位群組](build-schema/create-custom-field-groups.md)中定義的名為`Customer Account Details`的`$ref`自訂欄位群組來達成此目的，而不是修補結構描述本身。
 
@@ -40,7 +38,7 @@ ht-degree: 0%
 
 ## 已標籤的身分欄位
 
-在此步驟中，您已執行兩個相同的`POST`呼叫，以便為客戶帳戶結構描述內的`_devbc.customerID`和`personalEmail.address`欄位建立`Identity Descriptors`。
+若要為客戶帳戶結構描述內的`_devbc.customerID`和`personalEmail.address`欄位建立`Identity Descriptors`，您已執行兩個相同的`POST`呼叫。
 
 1. `_devbc.customerID`欄位已設定為&#x200B;**主要**&#x200B;身分
 1. `personalEmail.address`欄位&#x200B;**未設定**&#x200B;為主要欄位
@@ -49,10 +47,10 @@ ht-degree: 0%
 
 ## 已建立查閱關係
 
-最後一個步驟是從XDM ERD on Paper lab建立客戶帳戶與計畫結構描述之間的關係。  這要求您在客戶帳戶結構描述上建立關係描述項（亦即如何將`Customer Account`結構描述關聯至`dep: Plan [Lookup]`結構描述）和參考身分描述項。
+最後一個步驟是從XDM ERD on Paper lab建立客戶帳戶與計畫結構描述之間的關係。 這要求您在客戶帳戶結構描述上建立關係描述項（也就是如何將`Customer Account`結構描述關聯至`dep: Plan [Lookup]`結構描述）和參考身分描述項。
 
 ![關聯性描述項和參照身分描述項，將客戶帳戶連結至計畫查詢結構描述](assets/recap-relationship-reference-identity-descriptors.png "關聯性和參照身分描述項")
 
 >[!NOTE]
 >
->`referenceIdentity`描述項會告訴即時客戶設定檔中，`Customer Account`結構描述中的哪個欄位符合哪個身分名稱空間。 請記住，定義查閱結構描述時，您必須將欄位標示為主要身分，並指派型別為`non-person`的名稱空間給它。
+>`referenceIdentity`描述項會告訴即時客戶設定檔中`Customer Account`結構描述中的哪個欄位符合哪個身分名稱空間。 請記住，定義查閱結構描述時，您必須將欄位標示為主要身分，並指派型別為`non-person`的名稱空間給它。

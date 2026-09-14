@@ -4,13 +4,11 @@ description: 在開始AEP Foundation啟動訓練營實驗室之前，請先完�
 doc-type: article
 solution: Experience Platform
 exl-id: 2b6e8a4c-9d1f-4c7a-b3e6-8a2c5f9d1e7b
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '124'
 ht-degree: 1%
-
 ---
-
 
 # 設定
 
@@ -20,9 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您參加即時培訓課程或活動，您的沙箱已為您部署 — 請略過本節，直接前往下方的Postman設定。
+>如果您參加即時培訓課程或活動，您的沙箱已為您部署 — 請略過本節，直接前往下面的Postman設定。
 
-如果您正在按照自己的步調進行此啟動營，並且還沒有使用中的沙箱和已部署的實驗室資產，請先完成以下操作：
+如果您還沒有已部署實驗室資產的工作中沙箱，請完成以下步驟：
 
 - [Developer Console設定](sandbox-setup/developer-console-setup.md)
 - [部署指示](sandbox-setup/deployment-instructions.md)

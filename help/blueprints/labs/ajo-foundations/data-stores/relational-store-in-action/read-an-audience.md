@@ -4,13 +4,11 @@ description: 瞭解如何在協調的行銷活動中，搭配使用讀取對象�
 doc-type: article
 solution: Experience Platform
 exl-id: f825efe9-4349-4195-a017-c956c15df946
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1264'
 ht-degree: 0%
-
 ---
-
 
 # 讀取對象
 
@@ -126,13 +124,13 @@ ht-degree: 0%
 
 10. 從清單中選取`Source`並按一下&#x200B;**確認**
 
-從目標維度資料行![&#128279;](assets/read-an-audience-select-source-attribute.png)中選取Source屬性
+從目標維度資料行](assets/read-an-audience-select-source-attribute.png)中選取![Source屬性
 
-&#x200B;11. Source欄的相異值可在下拉式清單中取得。 針對&#x200B;**自訂條件**，從下拉式清單中選取&#x200B;**「商店內」**，然後按一下&#x200B;**確認**&#x200B;結束
+11. Source欄的相異值可在下拉式清單中取得。 針對&#x200B;**自訂條件**，從下拉式清單中選取&#x200B;**「商店內」**，然後按一下&#x200B;**確認**&#x200B;結束
 
 ![自訂條件設定為](assets/read-an-audience-set-in-store-condition.png)
 
-&#x200B;12. 返回&#x200B;**分割**&#x200B;活動的詳細資料窗格，第一個分割的設定已完成。 按一下&#x200B;**將區段**&#x200B;新增至第二個分割
+12. 返回&#x200B;**分割**&#x200B;活動的詳細資料窗格，第一個分割的設定已完成。 按一下&#x200B;**將區段**&#x200B;新增至第二個分割
 
 ![在分割活動詳細資料窗格中新增區段按鈕](assets/read-an-audience-add-segment-button.png)
 
@@ -140,48 +138,48 @@ ht-degree: 0%
 
 ![名稱為Result](assets/read-an-audience-new-result-segment.png)的新區段
 
-&#x200B;13. 將「**Result**」重新命名為「**Not In Store**」，然後按一下「**建立篩選器**」以設定篩選器條件
+13. 將「**Result**」重新命名為「**Not In Store**」，然後按一下「**建立篩選器**」以設定篩選器條件
 
 ![區段已使用篩選選項](assets/read-an-audience-rename-not-in-store-segment.png)重新命名為「不在市集」
 
-&#x200B;14. 在&#x200B;**建立篩選器**&#x200B;窗格中，按一下&#x200B;**新增條件**。 遵循上述相同方法，按一下&#x200B;**>**&#x200B;以展開&#x200B;**目標維度**，然後從清單中選取`Source`，然後按一下&#x200B;**確認**
+14. 在&#x200B;**建立篩選器**&#x200B;窗格中，按一下&#x200B;**新增條件**。 遵循上述相同方法，按一下&#x200B;**>**&#x200B;以展開&#x200B;**目標維度**，然後從清單中選取`Source`，然後按一下&#x200B;**確認**
 
 ![目標維度已展開以顯示關聯式存放區欄](assets/read-an-audience-expand-targeting-dimension.png)
 
-從目標維度資料行![&#128279;](assets/read-an-audience-select-source-attribute.png)中選取Source屬性
+從目標維度資料行](assets/read-an-audience-select-source-attribute.png)中選取![Source屬性
 
-&#x200B;15. 對於&#x200B;**自訂條件**，請從下拉式清單中選取&#x200B;**「商店內」**，而運運算元則選取「**不等於**」。 按一下&#x200B;**確認**&#x200B;結束
+15. 對於&#x200B;**自訂條件**，請從下拉式清單中選取&#x200B;**「商店內」**，而運運算元則選取「**不等於**」。 按一下&#x200B;**確認**&#x200B;結束
 
 ![自訂條件設定為不等於In Store](assets/read-an-audience-set-not-in-store-condition.png)
 
-&#x200B;16. 返回&#x200B;**分割**&#x200B;活動的詳細資訊窗格，兩個「分割」的設定已完成。 按一下&#x200B;**開始**，在&#x200B;**測試模式**&#x200B;中執行行銷活動
+16. 返回&#x200B;**分割**&#x200B;活動的詳細資訊窗格，兩個「分割」的設定已完成。 按一下&#x200B;**開始**，在&#x200B;**測試模式**&#x200B;中執行行銷活動
 
 ![設定分割後，在測試模式下執行行銷活動的「開始」按鈕](assets/read-an-audience-start-test-mode-second-run.png)
 
-&#x200B;17. 測試執行開始，並在完成時顯示結果。 因為在關聯式結構描述中只找到&#x200B;**7**&#x200B;個相符的目標維度，所以在分割作業（**7**&#x200B;和&#x200B;**0**）之後也觀察到相同的計數
+17. 測試執行開始，並在完成時顯示結果。 因為在關聯式結構描述中只找到&#x200B;**7**&#x200B;個相符的目標維度，所以在分割作業（**7**&#x200B;和&#x200B;**0**）之後也觀察到相同的計數
 
 ![分割活動結果顯示7和0](assets/read-an-audience-verify-split-counts.png)的計數
 
-&#x200B;18. 按一下每個結果方塊並&#x200B;**預覽結果**&#x200B;以檢視結果
+18. 按一下每個結果方塊並&#x200B;**預覽結果**&#x200B;以檢視結果
 
 每個分割結果方塊的![預覽結果選項](assets/read-an-audience-preview-split-results.png)
 
-&#x200B;19. 按一下&#x200B;**停止**&#x200B;以停止行銷活動的&#x200B;**測試模式**
+19. 按一下&#x200B;**停止**&#x200B;以停止行銷活動的&#x200B;**測試模式**
 
 ![停止按鈕以結束最終測試模式執行](assets/read-an-audience-stop-test-mode-final.png)
 
 >[!NOTE]
 >
->讀取對象顯示&#x200B;**9**&#x200B;個設定檔。 由於我們在Source上建立了篩選器，且Source欄位存在於關聯式存放區中，因此我們必須從設定檔存放區加入關聯式存放區才能進行檢查。 透過Campaign Target Dimension以關聯式結構描述聯結時，總共只符合&#x200B;**7**&#x200B;個設定檔。 這&#x200B;**7**&#x200B;個相符的客戶ID可用於下列嘗試使用關聯資料的活動。 所有&#x200B;**7**&#x200B;客戶ID的`Source`已設為&#x200B;**「商店內」**，這透過分割流程顯而易見。
+>讀取對象顯示&#x200B;**9**&#x200B;個設定檔。 由於您在Source上建立了篩選器，且Source欄位存在於關聯式存放區中，因此您必須將設定檔存放區與關聯式存放區聯結才能進行檢查。 透過Campaign Target Dimension加入關聯式結構描述時，只有&#x200B;**7**&#x200B;個設定檔相符。 這&#x200B;**7**&#x200B;個相符的客戶ID可用於下列嘗試使用關聯資料的活動。 所有&#x200B;**7**&#x200B;客戶ID的`Source`已設為&#x200B;**「商店內」**，這透過分割流程顯而易見。
 >
 >因此，在使用AEP設定檔及其關聯式對應物進行擴充時，維持資料一致性至關重要。
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜，這將完成實驗以搭配關聯式結構描述使用讀取對象活動。
 
 ## 重述
 
-您現在已瞭解建立行銷活動、執行讀取對象活動與設定檔目標Dimension的簡易性，以便運用關聯式結構。 您已使用「分割」活動根據條件分割對象。 最後，測試模式有助於瞭解設定檔與關聯式結構描述之間的資料一致性很重要。
+您現在已瞭解建立行銷活動、執行讀取對象活動與設定檔目標Dimension的簡易性，以便使用關聯式結構描述。 您已使用「分割」活動根據條件分割對象。 最後，測試模式有助於瞭解設定檔與關聯式結構描述之間的資料一致性很重要。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience)以瞭解詳情。

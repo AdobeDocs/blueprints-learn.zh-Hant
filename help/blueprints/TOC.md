@@ -2,17 +2,15 @@
 user-guide-title: 客戶體驗協調業務目標、使用案例、架構圖表和藍圖
 breadcrumb-title: 使用案例和藍圖
 user-guide-description: 探索Adobe Experience Platform和應用程式的主要業務目標、使用案例模式及產業使用案例。 視覺化架構圖表和藍圖提供系統整合、資料流程和解決方案設計的技術參考，將業務價值連結至實作。
-product: adobe experience platform
+product: Adobe Experience Platform
 mini-toc-levels: 3
 role: Developer, User
 nudge: orange
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1169'
 ht-degree: 14%
-
 ---
-
 
 # 客戶體驗協調藍圖 {#architecture}
 
@@ -145,8 +143,8 @@ ht-degree: 14%
       + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
     + 已棄用的Blueprint{#deprecated-blueprints}
       + Campaign Standard{#campaign-standard}
-        + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard){target="_blank"}
-        + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
+        + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard){target="_blank"}
+        + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/en/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
       + Campaign v7{#campaign-v7}
         + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
 
@@ -211,7 +209,6 @@ ht-degree: 14%
             + [檢視結構描述](/help/blueprints/labs/aep-foundations/xdm-modeling/api-modeling/define-relationships/view-schema.md)
           + [重述](/help/blueprints/labs/aep-foundations/xdm-modeling/api-modeling/recap.md)
         + 額外的Labs{#aep-xdm-bonus}
-          + [概觀](/help/blueprints/labs/aep-foundations/xdm-modeling/bonus-labs/overview.md)
           + [使用API自動化](/help/blueprints/labs/aep-foundations/xdm-modeling/bonus-labs/automate-with-apis.md)
       + 資料攝取{#aep-ingestion}
         + [講座](/help/blueprints/labs/aep-foundations/data-ingestion/lectures.md)
@@ -240,7 +237,6 @@ ht-degree: 14%
           + [監視和偵錯錯誤](/help/blueprints/labs/aep-foundations/data-ingestion/stream-ingestion/monitoring-and-debugging-errors.md)
           + [驗證與驗證](/help/blueprints/labs/aep-foundations/data-ingestion/stream-ingestion/verification-and-validation.md)
         + 額外的Labs{#aep-ingestion-bonus}
-          + [概觀](/help/blueprints/labs/aep-foundations/data-ingestion/bonus-labs/overview.md)
           + [修正CreateDate的MAPPER錯誤](/help/blueprints/labs/aep-foundations/data-ingestion/bonus-labs/fix-mapper-errors-for-createdate.md)
           + [串流訂單事件](/help/blueprints/labs/aep-foundations/data-ingestion/bonus-labs/stream-an-order-event.md)
           + 使用資料登陸區域{#aep-ingestion-dlz}
@@ -287,7 +283,6 @@ ht-degree: 14%
           + [建置使用案例3](/help/blueprints/labs/aep-foundations/audience-building/use-case-3-outreach/build-use-case-3.md)
           + [批判性思維評論](/help/blueprints/labs/aep-foundations/audience-building/use-case-3-outreach/critical-thinking-review.md)
         + 額外的Labs{#aep-audiences-bonus}
-          + [概觀](/help/blueprints/labs/aep-foundations/audience-building/bonus-labs/overview.md)
           + [傳送訂單事件至中樞](/help/blueprints/labs/aep-foundations/audience-building/bonus-labs/send-order-event-to-hub.md)
           + [傳送Web事件至中樞](/help/blueprints/labs/aep-foundations/audience-building/bonus-labs/send-web-event-to-hub.md)
           + [監視您的事件](/help/blueprints/labs/aep-foundations/audience-building/bonus-labs/monitor-your-event.md)

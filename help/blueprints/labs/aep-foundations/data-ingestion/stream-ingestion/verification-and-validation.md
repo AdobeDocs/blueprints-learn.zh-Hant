@@ -4,13 +4,11 @@ description: 在UI中預覽串流資料集，並執行SQL查詢以驗證擷取�
 doc-type: article
 solution: Experience Platform
 exl-id: fbdb0b6b-08b6-49b8-b6ab-d59d5941c678
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '278'
 ht-degree: 0%
-
 ---
-
 
 # 驗證與驗證
 
@@ -56,13 +54,13 @@ ht-degree: 0%
 
 
 
-1. 開啟&#x200B;**增強型查詢編輯器**&#x200B;的切換按鈕
+1. 啟用&#x200B;**增強型查詢編輯器**&#x200B;切換
 
    ![查詢編輯器介面已啟用增強型查詢編輯器切換](assets/verification-and-validation-enhanced-query-editor-toggle.png "查詢編輯器介面")
 
 
 
-1. 將下列SQL查詢複製貼到&#x200B;**編輯器**&#x200B;中。 記得要以您在步驟2中取得的值取代`<table_name>`。
+1. 在&#x200B;**編輯器**&#x200B;中複製並貼上下列SQL查詢。 記得要以您在步驟2中取得的值取代`<table_name>`。
 
    ```sql
    SELECT * FROM <table_name>
@@ -82,12 +80,12 @@ ht-degree: 0%
 
 
 
-1. 若要存取`postalCode` **節點**&#x200B;中的資料，您可以輸入：
+1. 輸入下列專案以存取`postalCode` **節點**&#x200B;中的資料：
 
 ```sql
 SELECT shippingAddress.postalCode FROM <table_name>
 ```
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜！  您已成功內嵌並建立一組即時客戶個人檔案的範例

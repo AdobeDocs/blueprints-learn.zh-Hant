@@ -4,13 +4,11 @@ description: 使用Postman和串流端點及資料流ID，透過HTTP API將客�
 doc-type: article
 solution: Experience Platform
 exl-id: 937d153c-9230-4f5a-a397-6c177a3ea890
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '620'
 ht-degree: 0%
-
 ---
-
 
 # 串流設定檔
 
@@ -72,7 +70,7 @@ curl --location '' \
 
 ## 收集必要的值
 
-在您可以串流處理資料之前，您需要收集上面列出的幾個必要值（特別是串流端點URL和本文內容「標題」值）。
+在您串流處理資料之前，請先收集上方列出的必要值（具體而言，串流端點URL和本文內容「標題」值）。
 
 執行下列步驟：
 
@@ -101,7 +99,7 @@ curl --location '' \
 
 ## 更新您的API請求
 
-切換至您的Postman應用程式，並以您剛收集的資訊更新「建立客戶帳戶」請求。
+切換至您的Postman應用程式，並使用您收集的資訊更新「建立客戶帳戶」請求。
 
 1. 開啟Postman並導覽至&#x200B;**資料擷取實驗室 — >建立客戶帳戶** API要求並開啟
 
@@ -136,7 +134,7 @@ curl --location '' \
 
 
 
-1. 您應該會收到`200 OK`回應，指出Adobe Experience Platform已成功接收該回應
+1. 您會收到`200 OK`回應，指出Adobe Experience Platform已成功收到
 
 範例200 OK回應
 
@@ -151,8 +149,8 @@ curl --location '' \
 
 >[!NOTE]
 >
->記下回應中的&#x200B;**xactionId**。  如果發生錯誤，而您未看到擷取的記錄，則應一律將此作為客戶支援票證的一部分提供，因為它是我們的支援團隊用於偵錯任何環境問題的追蹤專案符號
+>記下回應中的&#x200B;**xactionId**。  如果發生錯誤，您沒有看到擷取的記錄，則應一律將此作為客戶支援票證的一部分提供，因為它是我們的支援團隊用於偵錯任何環境問題的關鍵參考
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜！  您已成功將設定檔記錄中的資料流傳輸至Adobe Experience Platform

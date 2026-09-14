@@ -4,19 +4,17 @@ description: 瞭解如何在測試模式中執行協調的行銷活動，並解�
 doc-type: article
 solution: Experience Platform
 exl-id: e77ae8ab-f18f-4683-8fdd-ba4f4629d96c
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '660'
 ht-degree: 0%
-
 ---
-
 
 # 測試行銷活動
 
 ## 目標
 
-在接下來的幾組步驟中，您將在測試模式下執行行銷活動，以在發佈行銷活動之前確認行銷活動如預期般運作。 在這種情況下，測試模式不會實際傳送電子郵件，但有助於驗證整個流程並及早識別問題。
+在接下來的幾個步驟中，您會以測試模式執行行銷活動，以在發佈行銷活動之前確認行銷活動如預期般運作。 在這種情況下，測試模式不會傳送電子郵件，但有助於驗證整個流程並及早識別問題。
 
 ## 開始工作流程
 
@@ -30,7 +28,7 @@ ht-degree: 0%
 
 
 
-2. 所有行銷活動的測試執行開始，驗證結果
+2. 所有行銷活動的測試執行開始。 驗證結果
 
 ![正在測試行銷活動執行](assets/test-the-campaign-verify-execution-results.png)
 
@@ -52,11 +50,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您可能需要重新整理頁面幾次，才能檢視最終測試結果。
+   >請視需要重新整理頁面幾次，以檢視最終測試結果。
 
 
 
-4. 電子郵件測試完成後，會顯示結果。 發生某些百分比的錯誤；按一下&#x200B;**檢視更多**&#x200B;以瞭解原因。
+4. 電子郵件測試完成後，會顯示結果。 發生某些百分比的錯誤；按一下&#x200B;**檢視更多**&#x200B;以檢視原因。
 
    ![檢視更多連結的錯誤率](assets/test-the-campaign-error-rate-view-more.png)
 
@@ -84,7 +82,7 @@ ht-degree: 0%
 
    ![按一下[檢視報告]檢視電子郵件測試詳細資料](assets/test-the-campaign-view-report-2.png)
 
-3. 電子郵件測試完成後，會顯示結果。 在此情況下不會有錯誤
+3. 電子郵件測試完成後，會顯示結果。 在這種情況下，沒有錯誤
 
 ![無錯誤的行銷活動統計資料](assets/test-the-campaign-campaign-statistics-2.png)
 
@@ -98,9 +96,9 @@ ht-degree: 0%
 
 ## 停止工作流程
 
-按一下&#x200B;**停止**&#x200B;按鈕以停止行銷活動的&#x200B;**測試模式**
+若要停止促銷活動的&#x200B;**測試模式**，請按一下&#x200B;**停止**&#x200B;按鈕
 
->[!TIP]
+>[!SUCCESS]
 >
 >兩個電子郵件通道設定都在相同行銷活動中測試，並且觀察到使用AEP設定檔屬性和在電子郵件通道設定中使用Target Dimension之間的差異。
 >
@@ -110,4 +108,4 @@ ht-degree: 0%
 
 您現在已瞭解如何測試建立的行銷活動，以瞭解流量和行為。 在測試流程執行期間，我們已充分瞭解使用不同設定進行電子郵件通道設定的細微差別。
 
-如果您有興趣，可以在[這裡](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns)閱讀更多有關行銷活動測試模式的資訊。
+如果您有興趣，請在[這裡](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns)閱讀更多有關行銷活動測試模式的資訊。

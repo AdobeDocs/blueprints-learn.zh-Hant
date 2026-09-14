@@ -4,19 +4,17 @@ description: 在結構描述編輯器中建立自訂帳戶、計畫和customerID
 doc-type: article
 solution: Experience Platform
 exl-id: 8c39b226-05f3-458a-b023-c59221a6713a
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '988'
 ht-degree: 0%
-
 ---
-
 
 # 為自訂物件建模
 
 ## 新增自訂欄位
 
-如演講中所述，沒有可模擬客戶帳戶自訂欄位的現成標準欄位群組或資料型別。  下列欄位目前視為自訂，必須在XDM結構描述中建模。
+如演講中所述，沒有可模擬客戶帳戶自訂欄位的標準預先建立欄位群組或資料型別。  下列欄位目前視為自訂，必須在XDM結構描述中建模。
 
 - \_\&lt;租使用者名稱稱>.account.createDate
 - \_\&lt;租使用者名稱稱>.account.endDate
@@ -27,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->請注意，\&lt;tenant-name>將特定於您正在使用的環境
+>請注意\&lt;tenant-name>是您目前使用的特定環境
 
 
 
@@ -35,7 +33,7 @@ ht-degree: 0%
 
 1. 按一下結構描述頂端的&#x200B;**+ （新增）**&#x200B;按鈕以新增欄位
 
-   在結構描述頂端新增(+)按鈕以新增自訂欄位![&#128279;](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)
+   在結構描述頂端新增(+)按鈕以新增自訂欄位](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)![
 
    >[!NOTE]
    >
@@ -43,15 +41,15 @@ ht-degree: 0%
 
 
 
-1. 利用以下詳細資料建立帳戶物件。 完成時，請按一下右側邊欄中的&#x200B;**套用**&#x200B;按鈕，以檢視結構描述工作區中的變更
+1. 使用以下詳細資料建立帳戶物件。 完成時，請按一下右側邊欄中的&#x200B;**套用**&#x200B;按鈕，以檢視結構描述工作區中的變更
 
 | 欄位名稱 | 顯示名稱 | 類型 | 指派至新欄位群組 |
 | ---------- | ------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| *帳戶* | *帳戶* | *物件* | *客戶帳戶詳細資料 — \[您的縮寫]*<br />*（請鍵入此專案並選取下拉式清單或按Enter）* |
+| *帳戶* | *帳戶* | *物件* | *客戶帳戶詳細資料 — \[您的縮寫]*<br />*（請鍵入並選取下拉式清單或按Enter）* |
 
 >[!WARNING]
 >
->您的欄位名稱必須遵循特定大小寫。 原因是我們已預先建立您正在建置的相同結構描述。 如果您的大小寫關閉，則會導致與沙箱中預先存在結構描述的欄位路徑衝突
+>您的欄位名稱必須遵循特定大小寫。 原因是您正在建置的相同結構描述已經預先建立。 如果您的大小寫功能關閉，則會導致與沙箱中預先存在結構描述的欄位路徑衝突
 
 ![加入帳戶物件及其指派的欄位群組](assets/model-custom-objects-adding-the-account-object.png "加入帳戶物件")
 
@@ -61,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->請注意，您的新自訂欄位群組會顯示在`Field groups`下方的左側邊欄中，且沒有鎖定圖示。  這表示這是一個自訂建立的欄位群組。
+>請注意，您的新自訂欄位群組會顯示在`Field groups`下方的左側邊欄中，且沒有鎖定圖示。  這個遺失的鎖定圖示表示它是一個自訂建立的欄位群組。
 
 >[!WARNING]
 >
@@ -70,7 +68,7 @@ ht-degree: 0%
 
 
 
-1. 新增下列欄位，顯示在您剛建立的帳戶物件下方。
+1. 在您剛建立的Account物件下新增下列欄位，如下所示。
 
    | 欄位名稱 | 顯示名稱 | 類型 |
    | ------------ | ------------- | ---------- |
@@ -83,7 +81,7 @@ ht-degree: 0%
 
 
 
-1. 完成後，您的結構描述帳戶物件應該如下所示。 **儲存**&#x200B;您的結構描述！
+1. 完成後，您結構描述的帳戶物件看起來如下所示。 **儲存**&#x200B;您的結構描述！
 
 
 
@@ -97,7 +95,7 @@ ht-degree: 0%
    | ----------- | ----------------- | -------- | --------------------------------------- |
    | *acqSource* | *已取得Source* | *字串* | *網頁：：網頁&#x200B;*<br />*市集：：商店內* |
 
-   此欄位需要標準化的值，所以在欄位屬性中使用&#x200B;**列舉與建議值**&#x200B;選項。 選取&#x200B;**列舉**&#x200B;選項按鈕，在內嵌時新增此欄位的驗證以及易記標籤。 新增列舉值，如下所示：
+   此欄位需要標準化的值，因此請在欄位的屬性中使用&#x200B;**列舉與建議值**&#x200B;選項。 選取&#x200B;**列舉**&#x200B;選項按鈕，在內嵌時新增此欄位的驗證以及易記標籤。 新增列舉值，如下所示：
 
    - *網頁：：網頁*
    - *inStore ：：在存放區*
@@ -108,7 +106,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >列舉和建議值的目標是讓一般使用者更容易分段。 列舉會在資料擷取時強制進行驗證，而建議值則否。 若要深入瞭解此功能，您可以在此處參閱檔案 — > [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant#enums-and-suggested-values)
+   >列舉和建議值的目標是讓一般使用者更容易分段。 列舉會在資料擷取時強制進行驗證，而建議值則否。 若要深入瞭解此功能，請前往這裡 — > [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values)參閱詳細檔案
 
 
 
@@ -116,7 +114,7 @@ ht-degree: 0%
 
 1. **儲存**&#x200B;您的結構描述
 
->[!TIP]
+>[!SUCCESS]
 >
 >您已成功在XDM結構描述登入中建立第一個自訂物件和欄位！
 
@@ -161,9 +159,9 @@ ht-degree: 0%
 
 ## 客戶ID欄位建立
 
-將&#x200B;**customerID**&#x200B;欄位新增為此欄位非常重要，因為它將做為結構描述的主要身分識別，以及用來儲存資料的一般欄位。
+將&#x200B;**customerID**&#x200B;欄位新增為此欄位非常重要，因為它是結構描述的主要身分識別，也是用來儲存資料的一般欄位。
 
-執行您先前執行的相同步驟，並利用下表來參考欄位的中繼資料。
+執行您先前執行的相同步驟，並使用下表來參考欄位的中繼資料。
 
 | 欄位名稱 | 顯示名稱 | 類型 | 欄位群組 |
 | ------------ | ------------- | -------- | --------------------------------------------- |
@@ -171,13 +169,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->從階層觀點來看，`customerID`可放置於結構描述中的任何位置。 在本實驗中，我們選擇將它放在根目錄，而不是巢狀內嵌在您先前建立的其中一個自訂物件中。  這就是資料架構擁有意見的地方
+>從階層觀點來看，`customerID`可放置於結構描述中的任何位置。 本實驗中的customerID欄位會保留在根目錄下，不會巢狀內嵌在您先前建立的其中一個自訂物件中。  這個位置是資料架構擁有意見的地方
 >
 >😄
 
 
 
-完成時，您的最終結果應該看起來會像下面的熒幕擷圖
+當您完成時，您的最終結果看起來就像下面的熒幕擷圖
 
 ![具有customerID欄位的客戶帳戶結構描述已新增至根](assets/model-custom-objects-customerid-field-added.png)
 
@@ -189,6 +187,6 @@ ht-degree: 0%
 
 ![加入所有自訂物件和欄位的最終結構描述](assets/model-custom-objects-final-schema-with-custom-objects.jpeg "加入自訂物件的最終結構描述")
 
->[!TIP]
+>[!SUCCESS]
 >
->您已建立您的第一個XDM結構描述！ 在下一節中，您將設定用於Real-Time Customer Profile的架構。
+>您已建立您的第一個XDM結構描述！ 在下一節中，您可以設定用於Real-Time Customer Profile的架構。

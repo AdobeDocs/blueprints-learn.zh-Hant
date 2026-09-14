@@ -4,13 +4,11 @@ description: 瞭解如何使用AEP設定檔personalEmail.address屬性來設定�
 doc-type: article
 solution: Experience Platform
 exl-id: bb85e0aa-554e-4527-bf91-e7fd4f69ce71
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 8%
-
+source-wordcount: '656'
+ht-degree: 5%
 ---
-
 
 # 為設定檔進行設定
 
@@ -48,6 +46,10 @@ ht-degree: 8%
 
 ![已選取email.dep-labs.com的子網域下拉式清單](assets/configure-for-profile-select-email-subdomain.png "設定子網域")
 
+>[!NOTE]
+>
+>如果您是自控進度的，而且沒有預先布建的子網域，請在這裡選取您自己的委派給Adobe的子網域，而非`email.dep-labs.com`。 請參閱[設定](../../setup.md)以瞭解如何委派一個。
+
 ## 設定IP集區詳細資料
 
 從&#x200B;**IP集區**&#x200B;下拉式清單中，選取&#x200B;**行銷**
@@ -76,11 +78,11 @@ ht-degree: 8%
 
 ## 設定密件副本電子郵件
 
-將此項留空
+將此欄位留空
 
 >[!NOTE]
 >
->您可以透過將電子郵件傳送到密件副本收件匣來保留已傳送之電子郵件的副本。 輸入您選擇的電子郵件地址，以便每封電子郵件都會以密件方式傳送至此密件副本地址。 請注意，密件副本地址網域必須不同於委派給 Adobe 的任何子網域。 此功能為選用。 *如何使用密件副本處理電子郵件*
+>您可以透過將電子郵件傳送到密件副本收件匣來保留已傳送之電子郵件的副本。 若要將每封傳送的電子郵件複製到此密件副本地址，請輸入您選擇的電子郵件地址。 請注意，密件副本地址網域必須不同於委派給 Adobe 的任何子網域。 此功能為選用。 *如何使用密件副本處理電子郵件*
 
 ## 設定電子郵件重試引數
 
@@ -108,7 +110,7 @@ ht-degree: 8%
 
    ![已設定的傳遞位址](assets/configure-for-profile-delivery-address-configured-journeys.png)
 
-5. 按一下[協調的行銷活動]索引標籤，然後&#x200B;**核取**&#x200B;[啟用]核取方塊。
+5. 按一下[協調的行銷活動]索引標籤，然後&#x200B;**核取**[啟用]核取方塊。
 
    ![協調的行銷活動設定](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
 
@@ -128,7 +130,7 @@ ht-degree: 8%
 
    ![個人電子郵件設定檔屬性](assets/configure-for-profile-search-personal-email-folder.png)
 
-9. 選取[個人電子郵件]資料夾中的`Address`欄位並按一下[選取] **&#x200B;**
+9. 選取[個人電子郵件]資料夾中的`Address`欄位並按一下[選取] ****
 
    ![個人電子郵件作為傳遞地址](assets/configure-for-profile-select-address-field-orchestrated.png)
 
@@ -138,7 +140,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->針對協調行銷活動，您會以電子郵件定位客戶帳戶，因此您只需為每個設定檔傳送&#x200B;*封訊息*。  您使用的執行位址來自設定檔本身（亦即儲存在&#x200B;**personalEmail.address**&#x200B;屬性下的AEP設定檔中的內容）
+>針對協調行銷活動，您會以電子郵件定位客戶帳戶，因此您只需為每個設定檔傳送&#x200B;*封訊息*。  您使用的執行位址來自設定檔本身（具體而言，就是儲存在&#x200B;**personalEmail.address**&#x200B;屬性下的AEP設定檔中的內容）
 
 
 ## 檢閱並儲存
@@ -148,7 +150,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->已觀察到處理電子郵件通道設定最多需要2小時！  啊呀！
+>已觀察到處理電子郵件通道設定最多需要2小時！
 >
 >在您等待此管道設定進行時，請繼續進行下一個練習。
 

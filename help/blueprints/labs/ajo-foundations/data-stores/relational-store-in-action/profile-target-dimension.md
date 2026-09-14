@@ -4,23 +4,21 @@ description: 瞭解如何將關聯式結構描述欄位標示為身分，並建�
 doc-type: article
 solution: Experience Platform
 exl-id: bfc71051-e471-4d5c-a9a7-bb6805a5acb1
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '559'
 ht-degree: 0%
-
 ---
-
 
 # 設定檔目標Dimension
 
 ## 目標
 
-在接下來的步驟中，您將導覽UI以檢視結構並設定身分。 接下來，您將設定設定檔目標Dimension ，這是行銷活動正在定位並與AEP設定檔進行協調以傳送的實體型別。
+在接下來的步驟中，您將導覽UI以檢視結構並設定身分。 接下來，您需要設定設定檔目標Dimension ，這是行銷活動要定位並與AEP設定檔進行協調的實體型別，以進行傳送。
 
-## 為什麼這很重要
+## 為什麼此設定很重要
 
-設定檔目標Dimension是用來告知Adobe Journey Optimizer如何聯結即時客戶設定檔與關聯式存放區之間的資料。 此組態的成分如下：
+設定檔目標Dimension是用來告知Adobe Journey Optimizer如何聯結即時客戶設定檔與關聯式存放區之間的資料。 此設定的元件如下：
 
 - 關聯式結構描述
 - 關聯式結構描述的單一欄位
@@ -28,7 +26,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->若沒有此設定，將無法讀取或共用對象，也無法從「協調的行銷活動」傳送任何訊息
+>您必須完成此設定，才能讀取或共用對象，或從協調的行銷活動傳送訊息
 
 ## 為身分加上標籤
 
@@ -100,7 +98,7 @@ ht-degree: 0%
 >
 >建立的記錄名稱是結構描述名稱&#x200B;*（dep-rel：客戶帳戶）*&#x200B;和標示為身分識別&#x200B;*(customer\_id)*&#x200B;的欄位的串連
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜！ 本實驗的「設定檔目標Dimension」建立步驟到此結束。
 
@@ -108,4 +106,4 @@ ht-degree: 0%
 
 您現在已瞭解導覽結構、將屬性標示為身分以及建立設定檔目標Dimension的簡易程度。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/target-dimension)以瞭解詳情。

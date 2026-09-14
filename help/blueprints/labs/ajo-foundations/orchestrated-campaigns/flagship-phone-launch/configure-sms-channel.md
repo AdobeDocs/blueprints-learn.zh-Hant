@@ -4,19 +4,17 @@ description: 瞭解如何設定Twilio型簡訊頻道及其執行維度，以用�
 doc-type: article
 solution: Experience Platform
 exl-id: 63c994f2-4b6b-42e9-aa82-cb6697390a08
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '676'
 ht-degree: 0%
-
 ---
-
 
 # 設定簡訊頻道
 
 ## 目標
 
-在接下來的步驟中，您將設定SMS通道。 此為必要欄位，以便您稍後在建置行銷活動時，傳送訊息給個別的線路負責人。
+在接下來的步驟中，您將設定SMS通道。 此為必要步驟，以便您稍後在建置行銷活動時，傳送訊息給個別的線路負責人。
 
 
 
@@ -43,7 +41,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在開始此步驟之前，您需要一個擁有已驗證電話號碼的免費Twilio試用帳戶。 在[twilio.com/try-twilio](https://www.twilio.com/try-twilio)註冊，然後在Twilio主控台儀表板上找到您的帳戶SID和驗證權杖。
+>在開始此步驟之前，您需要一個擁有已驗證電話號碼的免費Twilio試用帳戶。 在[twilio.com/try-twilio](https://www.twilio.com/try-twilio)註冊，然後在Twilio主控台儀表板上找到您的帳戶SID和驗證權杖。 如需完整逐步解說，請參閱Twilio的[快速入門手冊](https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account)。
 
 Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-credentials.png)
 
@@ -51,7 +49,7 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 ## 建立SMS頻道設定
 
-現在，您會將此API認證對應至歷程和行銷活動可使用的管道設定。
+現在，您將此API認證對應到歷程和行銷活動可使用的管道設定。
 
 1. 瀏覽至&#x200B;**管道** → **一般設定** → **管道設定**。
 
@@ -113,7 +111,7 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
    >[!NOTE]
    >
-   >這可告知「協調的行銷活動」，當它傳送訊息時，應該針對符合設定檔目標Dimension的每筆記錄，傳送一則訊息。
+   >此設定可告知「協調的行銷活動」，當它傳送訊息時，應該針對符合設定檔目標Dimension的每筆記錄，傳送一則訊息。
 
 
 
@@ -139,7 +137,7 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 ## 提交並檢閱
 
-1. 您可以按一下&#x200B;**提交**&#x200B;按鈕以完成設定，並看到成功訊息
+1. 按一下&#x200B;**提交**&#x200B;按鈕以完成設定並看到成功訊息
 
    提交頻道設定後![成功訊息](assets/configure-sms-channel-submit-success-message.png)
 
@@ -151,7 +149,7 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
    >[!CAUTION]
    >
-   >等到狀態變成&#x200B;**作用中**&#x200B;為止，否則未來的實驗室步驟將會非常失敗
+   >等到狀態變成&#x200B;**作用中**&#x200B;為止，否則未來的實驗室步驟將會失敗
 
 
 
@@ -165,6 +163,6 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 ## 重述
 
-您現在已瞭解如何成功設定簡訊頻道。  請注意，這是以API為基礎的SMS，因此根據您的提供者，他們可能會使用替代方法進行驗證。
+您現在已瞭解如何成功設定簡訊頻道。  請注意，此設定是以API為基礎的SMS，因此根據您的提供者，他們可能會使用替代方法進行驗證。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)以瞭解詳情。

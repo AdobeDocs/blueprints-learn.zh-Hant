@@ -4,19 +4,17 @@ description: 瞭解如何使用關聯式結構描述中的電子郵件屬性來�
 doc-type: article
 solution: Experience Platform
 exl-id: 6f299942-79a6-42c2-8a5b-dd4bccd6aad4
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 10%
-
+source-wordcount: '535'
+ht-degree: 3%
 ---
-
 
 # 設定關聯式
 
 ## 目標
 
-在接下來的幾個步驟中，您將使用關聯式結構描述`dep-rel: Customer Account`中的`email`屬性，建立僅用於協調行銷活動的電子郵件通道設定
+在接下來的步驟中，您會使用關聯式結構描述`dep-rel: Customer Account`中的`email`屬性，建立僅用於協調行銷活動的電子郵件通道設定
 
 ## 建立管道設定
 
@@ -52,6 +50,10 @@ ht-degree: 10%
 
 ![已選取email.dep-labs.com的子網域下拉式清單](assets/configure-for-profile-select-email-subdomain.png "設定子網域")
 
+>[!NOTE]
+>
+>如果您是自控進度的，而且沒有預先布建的子網域，請在這裡選取您自己的委派給Adobe的子網域，而非`email.dep-labs.com`。 請參閱[設定](../../setup.md)以瞭解如何委派一個。
+
 ## 設定IP集區詳細資料
 
 從&#x200B;**IP集區**&#x200B;下拉式清單中，選取&#x200B;**行銷**
@@ -80,11 +82,11 @@ ht-degree: 10%
 
 ## 設定密件副本電子郵件
 
-將此項留空
+將「密件副本電子郵件」欄位保留空白
 
 >[!NOTE]
 >
->您可以透過將電子郵件傳送到密件副本收件匣來保留已傳送之電子郵件的副本。 輸入您選擇的電子郵件地址，以便每封電子郵件都會以密件方式傳送至此密件副本地址。 請注意，密件副本地址網域必須不同於委派給 Adobe 的任何子網域。 此功能為選用。 *如何使用密件副本處理電子郵件*
+>若要保留已傳送電子郵件的復本，請將其傳送至密件副本收件匣。 輸入您選擇的電子郵件地址，以便每封傳送的電子郵件都會轉至此密件副本地址。 請注意，密件副本地址網域必須不同於委派給 Adobe 的任何子網域。 此功能為選用。 *如何使用密件副本處理電子郵件*
 
 ## 設定電子郵件重試引數
 
@@ -126,7 +128,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->針對協調行銷活動，您會以電子郵件定位客戶帳戶，因此每個Target Dimension只需要傳送一封訊息。  您使用的執行位址來自目標Dimension本身（亦即儲存在&#x200B;**電子郵件**&#x200B;位址的&#x200B;**dep-rel：客戶帳戶**&#x200B;資料表中的專案）
+>針對協調行銷活動，您會以電子郵件定位客戶帳戶，因此每個Target Dimension只需要傳送一封訊息。  您使用的執行位址來自Target Dimension本身（也就是儲存在&#x200B;**dep-rel：**&#x200B;電子郵件&#x200B;**位址的客戶帳戶**&#x200B;資料表中的專案）
 
 
 ## 檢閱並儲存

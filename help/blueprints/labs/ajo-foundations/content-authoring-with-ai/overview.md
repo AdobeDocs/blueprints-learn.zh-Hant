@@ -1,9 +1,8 @@
 ---
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 5%
-
+source-wordcount: '475'
+ht-degree: 4%
 ---
 ﻿---
 title: 概觀
@@ -24,17 +23,21 @@ exl-id: 70eaf77b-e407-4fbc-8338-ab47784e0721
 - **資料存放區 — 動作中的關聯存放區** **—>** [設定檔目標Dimension](../data-stores/relational-store-in-action/profile-target-dimension.md)
 - **資料存放區 — 設定電子郵件通道 — >** [設定關聯式](../data-stores/configure-email-channels/configure-for-relational.md)
 
-如果您尚未完成這些Labs，請先完成，然後再繼續。
+如果您尚未完成這些Labs，請立即完成後再繼續。
+
+>[!CAUTION]
+>
+>本實驗需要在沙箱中委派給Adobe的子網域。 如果您是自學型且還沒有設定，請參閱[設定](../setup.md)。
 
 ## Lab概述
 
-在這段影片中，您將瞭解在此實作實驗室的三個動作中會遇到什麼 — 設定Connection 5G品牌、建立片段、範本和AI輔助電子郵件，並透過模擬和校樣傳送進行驗證。
+在本影片中，您將瞭解此實作實驗室的三個部分中的預期內容：設定Connection 5G品牌、建立片段和範本、建立AI輔助電子郵件，並透過模擬和校樣傳送進行驗證。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491145/)
 
 ## 學習目標
 
-在本單元結束時，您將能夠：
+在本單元結束時，您可以：
 
 1. 說明在Adobe Journey Optimizer中建立內容的重要性。
 1. 識別並描述重要概念，包括品牌、品牌指引、歷程和範本。
@@ -69,7 +72,7 @@ AJO中的品牌代表唯一身分（例如Connection 5G）。 每個品牌都包
 - 書寫風格與色調
 - 語音規則
 - 法律要求
-- 色彩、影像和圖示等視覺標準
+- 視覺標準（色彩、影像、影象製作）
 
 ### &#x200B;3. 歷程
 
@@ -94,7 +97,7 @@ AJO中的品牌代表唯一身分（例如Connection 5G）。 每個品牌都包
 
 1. 在瀏覽器中開啟Adobe Journey Optimizer 。
 1. 使用您的憑證登入。
-1. 您進入主要儀表板。
+1. 主儀表板隨即出現。
 
 ### 找出主要導覽功能表
 
@@ -114,7 +117,7 @@ AJO中的品牌代表唯一身分（例如Connection 5G）。 每個品牌都包
 - 內容範本
 - 片段
 
-按一下每個按鈕並熟悉UI。 本實驗將詳細介紹每個章節。
+若要熟悉UI，請選取每個UI。 本實驗將詳細介紹每個章節。
 
 ![內容建立工具，包括導覽功能表中的Assets、內容範本和片段](assets/overview-content-creation-tools-navigation-menu.png)
 
