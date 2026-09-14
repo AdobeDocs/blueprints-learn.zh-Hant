@@ -124,13 +124,13 @@ ht-degree: 0%
 
 10. 從清單中選取`Source`並按一下&#x200B;**確認**
 
-從目標維度資料行](assets/read-an-audience-select-source-attribute.png)中選取![Source屬性
+從目標維度資料行![&#128279;](assets/read-an-audience-select-source-attribute.png)中選取Source屬性
 
-11. Source欄的相異值可在下拉式清單中取得。 針對&#x200B;**自訂條件**，從下拉式清單中選取&#x200B;**「商店內」**，然後按一下&#x200B;**確認**&#x200B;結束
+&#x200B;11. Source欄的相異值可在下拉式清單中取得。 針對&#x200B;**自訂條件**，從下拉式清單中選取&#x200B;**「商店內」**，然後按一下&#x200B;**確認**&#x200B;結束
 
 ![自訂條件設定為](assets/read-an-audience-set-in-store-condition.png)
 
-12. 返回&#x200B;**分割**&#x200B;活動的詳細資料窗格，第一個分割的設定已完成。 按一下&#x200B;**將區段**&#x200B;新增至第二個分割
+&#x200B;12. 返回&#x200B;**分割**&#x200B;活動的詳細資料窗格，第一個分割的設定已完成。 按一下&#x200B;**將區段**&#x200B;新增至第二個分割
 
 ![在分割活動詳細資料窗格中新增區段按鈕](assets/read-an-audience-add-segment-button.png)
 
@@ -138,33 +138,33 @@ ht-degree: 0%
 
 ![名稱為Result](assets/read-an-audience-new-result-segment.png)的新區段
 
-13. 將「**Result**」重新命名為「**Not In Store**」，然後按一下「**建立篩選器**」以設定篩選器條件
+&#x200B;13. 將「**Result**」重新命名為「**Not In Store**」，然後按一下「**建立篩選器**」以設定篩選器條件
 
 ![區段已使用篩選選項](assets/read-an-audience-rename-not-in-store-segment.png)重新命名為「不在市集」
 
-14. 在&#x200B;**建立篩選器**&#x200B;窗格中，按一下&#x200B;**新增條件**。 遵循上述相同方法，按一下&#x200B;**>**&#x200B;以展開&#x200B;**目標維度**，然後從清單中選取`Source`，然後按一下&#x200B;**確認**
+&#x200B;14. 在&#x200B;**建立篩選器**&#x200B;窗格中，按一下&#x200B;**新增條件**。 遵循上述相同方法，按一下&#x200B;**>**&#x200B;以展開&#x200B;**目標維度**，然後從清單中選取`Source`，然後按一下&#x200B;**確認**
 
 ![目標維度已展開以顯示關聯式存放區欄](assets/read-an-audience-expand-targeting-dimension.png)
 
-從目標維度資料行](assets/read-an-audience-select-source-attribute.png)中選取![Source屬性
+從目標維度資料行![&#128279;](assets/read-an-audience-select-source-attribute.png)中選取Source屬性
 
-15. 對於&#x200B;**自訂條件**，請從下拉式清單中選取&#x200B;**「商店內」**，而運運算元則選取「**不等於**」。 按一下&#x200B;**確認**&#x200B;結束
+&#x200B;15. 對於&#x200B;**自訂條件**，請從下拉式清單中選取&#x200B;**「商店內」**，而運運算元則選取「**不等於**」。 按一下&#x200B;**確認**&#x200B;結束
 
 ![自訂條件設定為不等於In Store](assets/read-an-audience-set-not-in-store-condition.png)
 
-16. 返回&#x200B;**分割**&#x200B;活動的詳細資訊窗格，兩個「分割」的設定已完成。 按一下&#x200B;**開始**，在&#x200B;**測試模式**&#x200B;中執行行銷活動
+&#x200B;16. 返回&#x200B;**分割**&#x200B;活動的詳細資訊窗格，兩個「分割」的設定已完成。 按一下&#x200B;**開始**，在&#x200B;**測試模式**&#x200B;中執行行銷活動
 
 ![設定分割後，在測試模式下執行行銷活動的「開始」按鈕](assets/read-an-audience-start-test-mode-second-run.png)
 
-17. 測試執行開始，並在完成時顯示結果。 因為在關聯式結構描述中只找到&#x200B;**7**&#x200B;個相符的目標維度，所以在分割作業（**7**&#x200B;和&#x200B;**0**）之後也觀察到相同的計數
+&#x200B;17. 測試執行開始，並在完成時顯示結果。 因為在關聯式結構描述中只找到&#x200B;**7**&#x200B;個相符的目標維度，所以在分割作業（**7**&#x200B;和&#x200B;**0**）之後也觀察到相同的計數
 
 ![分割活動結果顯示7和0](assets/read-an-audience-verify-split-counts.png)的計數
 
-18. 按一下每個結果方塊並&#x200B;**預覽結果**&#x200B;以檢視結果
+&#x200B;18. 按一下每個結果方塊並&#x200B;**預覽結果**&#x200B;以檢視結果
 
 每個分割結果方塊的![預覽結果選項](assets/read-an-audience-preview-split-results.png)
 
-19. 按一下&#x200B;**停止**&#x200B;以停止行銷活動的&#x200B;**測試模式**
+&#x200B;19. 按一下&#x200B;**停止**&#x200B;以停止行銷活動的&#x200B;**測試模式**
 
 ![停止按鈕以結束最終測試模式執行](assets/read-an-audience-stop-test-mode-final.png)
 

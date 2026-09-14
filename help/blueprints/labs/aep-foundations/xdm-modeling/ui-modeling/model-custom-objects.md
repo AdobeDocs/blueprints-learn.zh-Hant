@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 按一下結構描述頂端的&#x200B;**+ （新增）**&#x200B;按鈕以新增欄位
 
-   在結構描述頂端新增(+)按鈕以新增自訂欄位](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)![
+   在結構描述頂端新增(+)按鈕以新增自訂欄位![&#128279;](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)
 
    >[!NOTE]
    >

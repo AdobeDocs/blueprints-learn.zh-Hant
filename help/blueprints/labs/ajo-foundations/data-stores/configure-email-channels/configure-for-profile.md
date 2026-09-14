@@ -110,7 +110,7 @@ ht-degree: 5%
 
    ![已設定的傳遞位址](assets/configure-for-profile-delivery-address-configured-journeys.png)
 
-5. 按一下[協調的行銷活動]索引標籤，然後&#x200B;**核取**[啟用]核取方塊。
+5. 按一下[協調的行銷活動]索引標籤，然後&#x200B;**核取**&#x200B;[啟用]核取方塊。
 
    ![協調的行銷活動設定](assets/configure-for-profile-enable-orchestrated-campaign-tab.png)
 
@@ -130,7 +130,7 @@ ht-degree: 5%
 
    ![個人電子郵件設定檔屬性](assets/configure-for-profile-search-personal-email-folder.png)
 
-9. 選取[個人電子郵件]資料夾中的`Address`欄位並按一下[選取] ****
+9. 選取[個人電子郵件]資料夾中的`Address`欄位並按一下[選取] **&#x200B;**
 
    ![個人電子郵件作為傳遞地址](assets/configure-for-profile-select-address-field-orchestrated.png)
 

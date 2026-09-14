@@ -42,7 +42,7 @@ ht-degree: 0%
 1. **關閉**&#x200B;預覽
 1. 在資料集畫面中，按一下&#x200B;**資料表名稱**&#x200B;上的復製圖示。 在下列範例畫面中，資料表名稱為`customer_account_sm`
 
-   在資料集畫面中，複製資料表名稱旁的圖示![複製資料表名稱")](assets/verification-and-validation-copy-table-name.png "
+   在資料集畫面中，複製資料表名稱旁的圖示![複製資料表名稱")] (assets/verification-and-validation-copy-table-name.png "
 
 
 

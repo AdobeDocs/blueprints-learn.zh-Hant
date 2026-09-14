@@ -133,7 +133,7 @@ ht-degree: 0%
 2. 使用以下資訊更新請求內文
 
    - **op** ->` add`
-   - **路徑** -> `path from previous step +`` the new field name`
+   - **路徑** -> `path from previous step +`&#x200B;` the new field name`
    - **值** ->
      - **標題** -> `Plan Description`
      - **型別** -> `string`
