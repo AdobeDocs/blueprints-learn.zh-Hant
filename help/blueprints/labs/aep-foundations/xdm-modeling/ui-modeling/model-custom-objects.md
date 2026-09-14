@@ -106,7 +106,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >列舉和建議值的目標是讓一般使用者更容易分段。 列舉會在資料擷取時強制進行驗證，而建議值則否。 若要深入瞭解此功能，請前往這裡 — > [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values)參閱詳細檔案
+   >列舉和建議值的目標是讓一般使用者更容易分段。 列舉會在資料擷取時強制進行驗證，而建議值則否。 若要深入瞭解此功能，請前往這裡 — > [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant#enums-and-suggested-values)參閱詳細檔案
 
 
 

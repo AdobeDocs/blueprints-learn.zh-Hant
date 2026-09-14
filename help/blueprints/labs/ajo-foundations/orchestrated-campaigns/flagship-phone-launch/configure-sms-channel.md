@@ -165,4 +165,4 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 
 您現在已瞭解如何成功設定簡訊頻道。  請注意，此設定是以API為基礎的SMS，因此根據您的提供者，他們可能會使用替代方法進行驗證。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)以瞭解詳情。
