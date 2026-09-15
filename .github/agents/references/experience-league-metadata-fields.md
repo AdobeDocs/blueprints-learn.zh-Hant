@@ -8,7 +8,7 @@ ht-degree: 8%
 
 *來源為Adobe ExL Authoring Guide （抓取日期：2026年2月） + blueprint-learn.en*
 
----
+&#x200B;---
 
 ## 中繼資料階層
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 2. 使用手冊中的TOC.md
 3. 存放庫根目錄下的metadata.md （最低優先順序）
 
----
+&#x200B;---
 
 ## 文章層級欄位
 
@@ -68,7 +68,7 @@ ht-degree: 8%
 | `source-git-url` | Source存放庫URL。 | 完整GitHub URL |
 | `cloud` | 文章層級的雲端類別覆寫。 | 字首大寫；必須符合cloud.yml |
 
----
+&#x200B;---
 
 ## TOC.md欄位
 
@@ -82,7 +82,7 @@ ht-degree: 8%
 | `role` | 指南的預設受眾角色。 | 與文章`role`的值相同；以逗號分隔 |
 | `index` | 是否將指南編制索引。 | `yes`/`no` |
 
----
+&#x200B;---
 
 ## 存放庫層級metadata.md欄位
 
@@ -97,7 +97,7 @@ ht-degree: 8%
 | `git-repo` | GitHub存放庫URL；啟用「編輯此頁面」和「記錄問題」按鈕 |
 | `index` | 預設索引設定 |
 
----
+&#x200B;---
 
 ## 有效的解決方案值（區分大小寫）
 
@@ -122,7 +122,7 @@ ht-degree: 8%
 
 多個值：逗號分隔，如`Real-Time Customer Data Platform, Campaign`
 
----
+&#x200B;---
 
 ## 有效的產品值（`product`欄位 — 分析追蹤）
 
@@ -136,7 +136,7 @@ ht-degree: 8%
 - `adobe campaign` / `campaign` / `ac`
 - `adobe target` / `target` / `at`
 
----
+&#x200B;---
 
 ## 有效的角色值
 
@@ -148,7 +148,7 @@ ht-degree: 8%
 - `Leader`
 - `User`
 
----
+&#x200B;---
 
 ## 金鑰驗證規則
 

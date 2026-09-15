@@ -81,7 +81,7 @@ ht-degree: 1%
 1. 按一下&#x200B;**實體查詢（屬性）**&#x200B;要求以開啟它
 1. 按一下&#x200B;**傳送**&#x200B;按鈕以執行呼叫
 
-   傳送](assets/profile-and-identity-apis-entity-lookup-attributes-request.png "設定檔實體查詢（屬性） API")之前，實體查詢（屬性）呼叫的![Postman要求窗格
+   傳送![&#128279;](assets/profile-and-identity-apis-entity-lookup-attributes-request.png "設定檔實體查詢（屬性） API")之前，實體查詢（屬性）呼叫的Postman要求窗格
 
    成功的要求應該會以`200 OK`回應，而且您應該會看到包含Depeche Mode設定檔所有屬性的結果。
 
