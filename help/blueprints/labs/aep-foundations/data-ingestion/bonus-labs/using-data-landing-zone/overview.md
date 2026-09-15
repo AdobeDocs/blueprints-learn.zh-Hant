@@ -4,31 +4,29 @@ description: 使用SAS URL安裝並設定Azure Storage Explorer以連線至Adobe
 doc-type: overview-page
 solution: Experience Platform
 exl-id: d61bef25-7039-450d-a8e7-01bb12e8df7c
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
-
 ---
-
 
 # 使用資料登陸區域
 
 ## 先決條件
 
-如果您尚未下載Azure Storage Explorer，請立即下載，因為這是本實驗室的必要條件。  您可以透過以下連結找到下載專案：
+如果您尚未下載Azure Storage Explorer，請立即下載，因為這是本實驗室的必要條件。  請前往下列連結尋找下載專案：
 
 [下載Azure儲存體總管](https://azure.microsoft.com/en-us/blog/microsoft-azure-data-lake-storage-adls-in-storage-explorer-public-preview/)
 
 1. 安裝應用程式
-1. 首次啟動時接受使用者授權合約
+1. 第一次開啟應用程式時，請接受使用者授權合約
 
 在Azure Storage Explorer&rbrack;(assets/overview-end-user-license-agreement-screen.png "使用者授權合約畫面中!&lbrack;使用者授權合約畫面")
 
 
 ## 使用Experience Platform設定Azure儲存體總管
 
-1. 開啟Azure Storage Explorer，然後按一下&#x200B;**選取資源圖示**，然後選取&#x200B;**ADLS Gen 2容器或目錄**
+1. 開啟Azure Storage Explorer，然後按一下&#x200B;**選取資源圖示**，然後選取&#x200B;**ADLS Gen2容器或目錄**
 
    ![選取ADLS Gen2容器或目錄作為Azure儲存總管中的資源](assets/overview-choose-the-resource-as-shown-above.png)
 
@@ -50,7 +48,7 @@ ht-degree: 0%
 
 
 
-1. 前往Adobe Experience Platform ，並執行下列操作以導覽至資料登陸區域：
+1. 前往Adobe Experience Platform ，並執行下列操作導覽至資料登陸區域：
 
    - 導覽至&#x200B;**來源 — >目錄**
    - 在來源底下選取&#x200B;**雲端儲存空間**
@@ -85,6 +83,6 @@ ht-degree: 0%
 
 ![Azure Storage Explorer顯示成功連線的資料登陸區域帳戶](assets/overview-successfully-connected-account.png)
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜！  您已成功設定Azure儲存體總管

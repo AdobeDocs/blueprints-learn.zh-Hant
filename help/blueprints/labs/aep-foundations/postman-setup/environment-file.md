@@ -4,13 +4,11 @@ description: 匯入Postman環境檔案，並填入bootcamp的API呼叫所需的�
 doc-type: article
 solution: Experience Platform
 exl-id: 1461fac5-0714-44d4-b5c8-949df6bcff83
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '472'
 ht-degree: 0%
-
 ---
-
 
 # 環境檔案
 
@@ -25,7 +23,7 @@ ht-degree: 0%
 1. 按一下檔案，從瀏覽器上開啟`Environment File`
 1. 將檔案URL複製到剪貼簿
 1. 在本機電腦上啟動Postman，然後按一下工作區中的`Import`按鈕
-1. 將`Environment File`的URL貼到覆蓋圖上的匯入模組文字方塊中。  這應該會觸發自動匯入
+1. 將`Environment File`的URL貼到覆蓋圖上的匯入模組文字方塊中。  此動作會觸發自動匯入
 
 ![在Postman工作區中按一下[匯入]按鈕以匯入環境檔案](assets/environment-file-click-import-button.png "匯入按鈕")
 
@@ -35,7 +33,7 @@ ht-degree: 0%
 
 
 
-匯入後，您可以按一下左側邊欄中的「`Environments`」標籤，以驗證您的環境檔案是否存在。  您應該會看到類似下列的內容。
+匯入後，按一下左側邊欄中的`Environments`索引標籤，以驗證您的環境檔案是否存在。  您會看到類似以下的內容。
 
 匯入後![AEP Bootcamp環境列於「Postman環境」標籤下方](assets/environment-file-aep-bootcamp-environment-listed.png "AEP Bootcamp環境")
 
@@ -64,7 +62,7 @@ ht-degree: 0%
    - TECHNICAL\_ACCOUNT\_ID
    - IMS\_ORG
 
-完成時，您的環境檔案應如下所示：
+完成時，您的環境檔案應該看起來類似此影像：
 
 更新CLIENT_SECRET、CLIENT_ID、TECHNICAL_ACCOUNT_ID和IMS_ORG值之後的![環境檔案](assets/environment-file-with-developer-project-values.png "具有開發人員專案值的環境檔案")
 
@@ -77,7 +75,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您按照自己的步調使用這些Labs （而不是使用sandbox-assignment.pdf的即時培訓活動），您可以在從Adobe Experience Platform UI URL登入沙箱時找到這兩個值，例如：
+>如果您是獨立處理這些Labs，而不是在具有sandbox-assignment.pdf的即時訓練活動中處理，請在從Adobe Experience Platform UI URL登入沙箱時找到這兩個值。 例如：
 >
 >`https://experience.adobe.com/#/@dep/sname:prod/platform/home`
 >
@@ -93,6 +91,6 @@ ht-degree: 0%
 
 更新SANDBOX_NAME和TENANT_NAME值之後的![環境檔案](assets/environment-file-with-sandbox-name-and-tenant-name.png "具有SANDBOX_NAME的環境檔案")
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜！ 您已完成Postman環境設定

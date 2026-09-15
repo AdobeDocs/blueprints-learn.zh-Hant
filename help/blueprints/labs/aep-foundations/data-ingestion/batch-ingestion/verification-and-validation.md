@@ -4,13 +4,11 @@ description: 在UI中預覽擷取的資料集，並執行SQL查詢以驗證批�
 doc-type: article
 solution: Experience Platform
 exl-id: 7e7cd43d-cc24-4a40-a175-2c651436ab79
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '302'
 ht-degree: 0%
-
 ---
-
 
 # 驗證與驗證
 
@@ -35,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**預覽資料集**&#x200B;會顯示此資料集中最近成功的批次。 您看不到先前的批次。 此外，陣列和地圖等複雜資料今天無法檢視，且顯示為空白欄。 不要驚慌！ 若要取得更完整的檢視，您需要使用SQL來探索資料集，如下所述。
+>**預覽資料集**&#x200B;會顯示此資料集中最近成功的批次。 您看不到先前的批次。 此外，陣列和地圖等複雜資料今天無法檢視，且顯示為空白欄。 若要取得更完整的檢視，您需要使用SQL來探索資料集，如下所述。
 
 
 
@@ -56,7 +54,7 @@ ht-degree: 0%
 
 
 
-1. 將下列SQL查詢複製貼到&#x200B;**編輯器**&#x200B;中。 請記得使用您在步驟6中取得的值來取代`<table_name>`。
+1. 在&#x200B;**編輯器**&#x200B;中複製並貼上下列SQL查詢。 請記得使用您在步驟6中取得的值來取代`<table_name>`。
 
    ```sql
    SELECT * FROM <table_name>
@@ -72,7 +70,7 @@ ht-degree: 0%
 
 1. **預覽**&#x200B;結果
 
-1. 此外，執行以下SQL查詢以擷取XDM結構描述以及資料：
+1. 若要連同資料擷取XDM結構描述，請一併執行下列SQL查詢：
 
 ```sql
 SELECT to_json(shippingAddress) FROM <table_name>
@@ -84,6 +82,6 @@ SELECT to_json(shippingAddress) FROM <table_name>
 SELECT shippingAddress.postalCode FROM <table_name>
 ```
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜！  您已成功內嵌並建立一組即時客戶個人檔案的範例

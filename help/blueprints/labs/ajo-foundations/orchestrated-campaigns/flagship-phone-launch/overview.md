@@ -4,13 +4,11 @@ description: 在旗艦電話推出後，取得建立協調行銷活動的概覽�
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 04c509f1-aa10-4d29-aa59-5e627b79e498
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '283'
 ht-degree: 0%
-
 ---
-
 
 # 旗艦手機上市
 
@@ -20,15 +18,20 @@ ht-degree: 0%
 >
 >下列Labs必須在開始本實驗前完成
 
+- **Postman安裝程式** **—>** [Postman安裝](../../postman-setup/postman-installation.md)
 - **資料存放區 — 動作中的關聯存放區** **—>** [設定檔目標Dimension](../../data-stores/relational-store-in-action/profile-target-dimension.md)
 - **資料存放區 — 設定電子郵件通道 — >** [設定關聯式](../../data-stores/configure-email-channels/configure-for-relational.md)
   *（此設定步驟最多需要3小時才能完成）*
 
-如果您尚未完成這些Labs，請先完成，然後再繼續。
+如果您尚未完成這些Labs，請立即完成後再繼續。
+
+>[!CAUTION]
+>
+>本實驗需要在您的沙箱中安裝SMS認證才能完成設定SMS通道步驟 — 不會傳送實際訊息，但必須有Twilio認證。 如果您是自行設定進度且尚未布建這些專案，請參閱[設定](../../setup.md)。
 
 ## Lab概述
 
-在此影片中，您將瞭解旗艦級手機上市使用案例如何對應至精心安排的促銷活動，在建置促銷活動目標定位帳戶持有人和個別產品線之前，重述重要的思考問題和架構。
+在此影片中，您會瞭解旗艦級手機上市使用案例如何對應至精心安排的促銷活動，在建置促銷活動目標定位帳戶持有人和個別產品線之前，重述重要的思考問題和架構。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486217/)
 
@@ -44,7 +47,7 @@ ht-degree: 0%
 
 ## 使用案例說明
 
-製造商推出最新旗艦裝置後，立即傳送目標訊息給帳戶持有人，並列出使用舊款機型的使用者，邀請他們升級並體驗行動裝置的未來。
+製造商推出最新旗艦裝置後，立即傳送目標訊息給帳戶持有人，並列出使用舊型號的使用者，邀請他們升級至最新的行動運算技術。
 
 **索引鍵圖說文字：**
 

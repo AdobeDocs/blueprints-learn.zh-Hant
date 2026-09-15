@@ -4,13 +4,11 @@ description: 瞭解如何建置事件導向的購買後歷程，以觸發包含�
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 570dc378-e7a3-4895-8f14-89d420b6b340
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '326'
 ht-degree: 0%
-
 ---
-
 
 # 購買後的興奮感
 
@@ -20,17 +18,20 @@ ht-degree: 0%
 >
 >下列Labs必須在開始本實驗前完成
 
-這些實驗室必須先完成，才能開始此實驗：
-
+- **Postman安裝程式** **—>** [Postman安裝](../../postman-setup/postman-installation.md)
 - **資料存放區 — 動作中的關聯存放區** **—>** [設定檔目標Dimension](../../data-stores/relational-store-in-action/profile-target-dimension.md)
 - **資料存放區 — 設定電子郵件通道 — >** [設定設定檔](../../data-stores/configure-email-channels/configure-for-profile.md)
-  *（最多需要3小時才能完成）*
+  *（此步驟最多需要3小時才能完成）*
 
-如果您尚未完成這些步驟，請立即完成
+如果您尚未這麼做，請立即完成這些步驟
+
+>[!CAUTION]
+>
+>本實驗需要在沙箱中委派給Adobe的子網域。 如果您是自學型且還沒有設定，請參閱[設定](../../setup.md)。
 
 ## Lab概述
 
-在這段影片中，您將瞭解購買後興奮的使用案例如何對應到歷程，逐步解說批判性思維問題和架構，以便在訂單送貨後傳送個人化送貨通知。
+在這段影片中，您會瞭解購買後興奮的使用案例如何對應到歷程，逐步解說重要的思考問題和架構，以便在訂單送貨後傳送個人化送貨通知。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491146/)
 
@@ -51,7 +52,7 @@ ht-degree: 0%
 
 **索引鍵圖說文字：**
 
-- 最初下訂單通常會實作為交易式訊息，因為人們不想等候確認，而只是點了商品。
+- 初始訂單確認通常會實施為交易式訊息，因為客戶不想在下單後等待確認。
 - 訂單送貨通知也可以使用交易式訊息實施，但可在歷程中建置，以便允許自訂動作擷取送貨資訊並增強客戶溝通。
 
 >[!NOTE]

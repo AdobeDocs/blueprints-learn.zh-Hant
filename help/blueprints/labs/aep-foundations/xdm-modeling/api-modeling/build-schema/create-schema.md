@@ -4,13 +4,11 @@ description: 使用結構描述登入API從設定檔類別和標準與自訂欄�
 doc-type: article
 solution: Experience Platform
 exl-id: 78ebc5b8-d088-48e9-857f-87085a87a280
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '340'
 ht-degree: 0%
-
 ---
-
 
 # 建立結構描述
 
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->**尚未執行呼叫……1&rbrace;**
+>**尚未執行呼叫**
 
 1. 按一下`XDM Schema Lab -> Create Schema`資料夾中的`Step 4 - Create Customer Account Schema` API呼叫。
 
@@ -33,7 +31,7 @@ ht-degree: 0%
    - 標題 — > `Sample Customer Schema - <your sandbox number>`
    - 說明 — > `Sample Customer Schema - <your sandbox number>`
 
-4. 以您從先前完成的實驗室區段儲存的`$ids`填入`$ref`欄位： [建立自訂欄位群組](./create-custom-field-groups.md)和[取得設定檔類別](./get-profile-class.md)。 您應該對下列每個專案都有$id：
+4. 以您從先前完成之實驗室區段儲存的`$ids`填入`$ref`欄位： [建立自訂欄位群組](./create-custom-field-groups.md)和[取得設定檔類別](./get-profile-class.md)。 您對以下每個專案都有$id：
 
    - 類別 — > XDM個別設定檔
    - 欄位群組 — >人口統計細節
@@ -76,8 +74,8 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->在您將`$id`和`$meta:altId`儲存到某處之前，請勿繼續。  在未來的實驗室步驟中需要用到這些引數
+>在您將`$id`和`$meta:altId`儲存到某處之前，請勿繼續。  在未來的實驗室步驟中需要它們
 
->[!TIP]
+>[!SUCCESS]
 >
->**恭喜！ 您剛才已僅使用API建立結構描述**
+>**恭喜！ 您僅使用API**&#x200B;建立結構描述

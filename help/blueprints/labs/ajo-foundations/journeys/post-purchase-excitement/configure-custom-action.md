@@ -4,19 +4,17 @@ description: 在Adobe Journey Optimizer中設定可重複使用的自訂動作�
 doc-type: article
 solution: Experience Platform
 exl-id: f81cc8be-bc2a-43cb-a2d4-89834aa94dcb
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '492'
 ht-degree: 0%
-
 ---
-
 
 # 設定自訂動作
 
 ## 學習目標
 
-建立自訂動作，定義歷程將與外部端點或服務通訊的方式，以取得封裝到達時間的ETA。
+建立自訂動作，定義歷程與外部端點或服務通訊的方式，以取得套件到達時的ETA。
 
 ## 導覽至動作
 
@@ -57,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->變數可讓我們在歷程期間傳入值，而不是讓所有歷程都傳入靜態值
+>變數可讓您在歷程期間傳入值，而非對所有歷程使用靜態值
 
 - **驗證型別**： `No Authentication`
 
@@ -69,7 +67,7 @@ ht-degree: 0%
 
 ### 回應裝載詳細資料
 
-現在您必須提供範例裝載，讓動作知道回應裝載的外觀。
+現在您需要提供範例裝載，讓動作知道回應裝載是什麼樣子。
 
 1. 在[裝載]區域中，按一下&#x200B;**鉛筆圖示**&#x200B;以開啟[欄位設定]畫面
 
@@ -93,19 +91,19 @@ ht-degree: 0%
    >此即為上述Mockaroo端點應傳回的相同JSON結構：
 
 
-3. 將會顯示回應裝載。 按一下&#x200B;**儲存**&#x200B;按鈕。
+3. 回應裝載隨即顯示。 按一下&#x200B;**儲存**&#x200B;按鈕。
 
 以「儲存」按鈕顯示的![回應承載](assets/configure-custom-action-save-response-payload.png)
 
 >[!NOTE]
 >
->您可以將所有內容保留為字串，但在現實情況中，您可能想要更新以符合資料型別
+>您可以將一切都保留為字串，但在現實情況中，您可能想要更新以符合資料型別
 
 
 
 ### 測試動作
 
-1. 按一下右下邊欄中的&#x200B;**傳送測試要求**&#x200B;按鈕，驗證您沒有搗亂任何專案😀
+1. 按一下右下邊欄中的&#x200B;**傳送測試要求**&#x200B;按鈕，確認您的設定正確運作
 
    ![在右下邊欄中傳送測試要求按鈕](assets/configure-custom-action-click-send-test-request.png)
 
@@ -132,13 +130,13 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >如果您沒有看到200回應或預覽不再繼續。 請提高您的✋以取得協助。
+   >如果您沒有看到200回應或預覽，請勿繼續。 請向您的講師尋求協助。
 
 
 
 4. 按一下&#x200B;**取消**&#x200B;按鈕以返回「動作」畫面，然後在右上欄向上捲動並按一下&#x200B;**儲存**&#x200B;按鈕
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜！ 您的自訂動作已上線，這要歸功於您的專家級Ctrl+C、Ctrl+V技能。
 

@@ -4,17 +4,15 @@ description: 回顧瀏覽結構描述、設定設定檔目標Dimension，以及�
 doc-type: article
 solution: Experience Platform
 exl-id: 787276d3-5720-447b-ab5c-a910670eb011
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '102'
 ht-degree: 1%
-
 ---
-
 
 # 摘要
 
-您透過本實驗進行了下列活動：
+在本實驗中，您已進行下列活動：
 
 - 已瀏覽的結構描述和已檢視的結構描述之間的關係
 - 設定設定檔目標Dimension
@@ -26,6 +24,6 @@ ht-degree: 1%
 
 
 
->[!TIP]
+>[!SUCCESS]
 >
->恭喜，您現在可以繼續進行下一個實驗室，也可以進行下一個實驗室！
+>恭喜，您現在可以前往下一個實驗室！

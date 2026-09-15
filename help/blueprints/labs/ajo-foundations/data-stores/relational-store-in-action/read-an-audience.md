@@ -4,13 +4,11 @@ description: 瞭解如何在協調的行銷活動中，搭配使用讀取對象�
 doc-type: article
 solution: Experience Platform
 exl-id: f825efe9-4349-4195-a017-c956c15df946
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1264'
 ht-degree: 0%
-
 ---
-
 
 # 讀取對象
 
@@ -172,16 +170,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->讀取對象顯示&#x200B;**9**&#x200B;個設定檔。 由於我們在Source上建立了篩選器，且Source欄位存在於關聯式存放區中，因此我們必須從設定檔存放區加入關聯式存放區才能進行檢查。 透過Campaign Target Dimension以關聯式結構描述聯結時，總共只符合&#x200B;**7**&#x200B;個設定檔。 這&#x200B;**7**&#x200B;個相符的客戶ID可用於下列嘗試使用關聯資料的活動。 所有&#x200B;**7**&#x200B;客戶ID的`Source`已設為&#x200B;**「商店內」**，這透過分割流程顯而易見。
+>讀取對象顯示&#x200B;**9**&#x200B;個設定檔。 由於您在Source上建立了篩選器，且Source欄位存在於關聯式存放區中，因此您必須將設定檔存放區與關聯式存放區聯結才能進行檢查。 透過Campaign Target Dimension加入關聯式結構描述時，只有&#x200B;**7**&#x200B;個設定檔相符。 這&#x200B;**7**&#x200B;個相符的客戶ID可用於下列嘗試使用關聯資料的活動。 所有&#x200B;**7**&#x200B;客戶ID的`Source`已設為&#x200B;**「商店內」**，這透過分割流程顯而易見。
 >
 >因此，在使用AEP設定檔及其關聯式對應物進行擴充時，維持資料一致性至關重要。
 
->[!TIP]
+>[!SUCCESS]
 >
 >恭喜，這將完成實驗以搭配關聯式結構描述使用讀取對象活動。
 
 ## 重述
 
-您現在已瞭解建立行銷活動、執行讀取對象活動與設定檔目標Dimension的簡易性，以便運用關聯式結構。 您已使用「分割」活動根據條件分割對象。 最後，測試模式有助於瞭解設定檔與關聯式結構描述之間的資料一致性很重要。
+您現在已瞭解建立行銷活動、執行讀取對象活動與設定檔目標Dimension的簡易性，以便使用關聯式結構描述。 您已使用「分割」活動根據條件分割對象。 最後，測試模式有助於瞭解設定檔與關聯式結構描述之間的資料一致性很重要。
 
 若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience)以瞭解詳情。

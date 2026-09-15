@@ -4,13 +4,11 @@ description: 使用結構描述登入API在查詢結構描述上建立參考身�
 doc-type: article
 solution: Experience Platform
 exl-id: b3b8f480-af3b-4bf8-b74e-3842f59691b6
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 
 # 建立計畫參考身分
 
@@ -57,7 +55,7 @@ ht-degree: 0%
 
 &#x200B;4. 按一下`Send`按鈕執行API
 
-您現在應該會看到如下的`201 Created`回應
+您現在看到如下的`201 Created`回應
 
 ![201建立dep：計畫查詢參考身分描述項後建立的回應](assets/create-plan-reference-identity-dep-plan-descriptor-result.png "dep：計畫查詢參考身分描述項")
 
@@ -67,8 +65,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->從結構描述UI建立關係時，會在後端自動建立參考身分描述項。 **您只需在使用API建立結構描述時明確建立它們**
+>當您從結構描述UI建立關係時，參考身分描述項會自動在伺服器上建立。 **您只需在使用API建立結構描述時明確建立它們**
 
->[!TIP]
+>[!SUCCESS]
 >
->棒極了！ 您剛才已建立將`dep: Lookup Plan`結構描述與`Customer Account`結構描述建立關聯的所有必要描述項，並啟用它以在批次細分期間參考
+>棒極了！ 若要將`dep: Lookup Plan`結構描述與`Customer Account`結構描述建立關聯並允許在批次細分期間參考它，您已建立所有必要的描述項

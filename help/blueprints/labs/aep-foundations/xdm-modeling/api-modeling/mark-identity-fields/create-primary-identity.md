@@ -4,13 +4,11 @@ description: 使用結構描述登入API為客戶帳戶結構描述建立主要�
 doc-type: article
 solution: Experience Platform
 exl-id: db690081-e857-4875-8bb9-7ac197d73cab
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '144'
 ht-degree: 0%
-
 ---
-
 
 # 建立主要身分
 
@@ -50,10 +48,10 @@ ht-degree: 0%
 
 1. 繼續使用`Save`按鈕前請先儲存您的請求
 
-1. 按一下`Send`按鈕執行API。 您現在應該會看到如下的`201 Created`回應
+1. 按一下`Send`按鈕執行API。 您現在看到`201 Created`回應，如下所示
 
 ![201成功建立主要身分描述項後已建立回應](assets/create-primary-identity-201-created-response.png "已成功建立主要身分描述項")
 
->[!TIP]
+>[!SUCCESS]
 >
->恭喜！  您剛才在結構描述中建立了主要身分描述項
+>恭喜！  您在結構描述中建立了主要身分描述項
