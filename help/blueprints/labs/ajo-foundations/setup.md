@@ -5,9 +5,9 @@ doc-type: article
 
 solution: Experience Platform
 exl-id: 7c1a9e3d-5b8f-4a2e-9c6d-3f7b0e4a8c2d
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '357'
 ht-degree: 1%
 ---
 
@@ -34,13 +34,17 @@ ht-degree: 1%
 - [匯入環境檔案](postman-setup/import-environment-file.md)
 - [匯入API集合](postman-setup/import-api-collection.md)
 
+## 隨選整備
+
+在啟動Labs之前，請先完成上述Postman設定。 自控進度的學習者還需要一個委派的子網域用於電子郵件相關的Labs，並需要一個SMS認證用於Flagship電話啟動實驗室。
+
 ## 管道必要條件
 
 此訓練營稍後有兩個實驗室，取決於外部帳戶，只有自行進度的學習者才需要安排 — 如果您正在參加即時培訓課程或活動，這些已為您布建。
 
 ### 委派的子網域
 
-[設定電子郵件通道](data-stores/configure-email-channels/overview.md)實驗室 — 以及依賴它的所有專案（[正在執行的訊息傳遞](orchestrated-campaigns/message-delivery-in-action/overview.md)、[購買後的興奮](journeys/post-purchase-excitement/overview.md)以及[AJO品牌](content-authoring-with-ai/overview.md)） — 需要委派給Adobe的子網域才能傳送電子郵件。 如果您還沒有網域，請向任何網域註冊機構（例如Namecheap）註冊一個網域。 然後，若要將其子網域（例如`email.yourdomain.com`）委派給Adobe，請依照Adobe的[子網域委派指示](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain)操作。
+[設定電子郵件通道](data-stores/configure-email-channels/overview.md)實驗室 — 以及依賴它的所有專案（[正在執行的訊息傳遞](orchestrated-campaigns/message-delivery-in-action/overview.md)、[購買後的興奮](journeys/post-purchase-excitement/overview.md)以及[AJO品牌](content-authoring-with-ai/overview.md)） — 需要委派給Adobe的子網域才能傳送電子郵件。 如果您還沒有網域，請向任何網域註冊機構（例如Namecheap）註冊一個網域。 然後，若要將其子網域（例如`email.yourdomain.com`）委派給Adobe，請依照Adobe的[子網域委派指示](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain)操作。
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: 透過實作實驗室探索Adobe Journey Optimizer的架構、歷�
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 0b6c3ca7-3061-4d89-a6f8-f4c6a681706a
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '274'
 ht-degree: 1%
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ## 先決條件
 
-如果您正在以自己的步調處理此啟動營，則有兩個實驗室需要預先排程的外部帳戶： **設定電子郵件管道**&#x200B;需要委派給Adobe的子網域，以及&#x200B;**旗艦電話發佈**&#x200B;需要SMS認證。 如需詳細資訊，請參閱[設定](setup.md)。
+如果您正在以自己的步調進行此訓練營，請先完成[Postman設定](setup.md#postman-setup)，再開始進行Labs。 **設定電子郵件通道**&#x200B;及其相依Labs需要委派給Adobe的子網域，而&#x200B;**旗艦電話發佈**&#x200B;需要SMS認證。 如需詳細資訊，請參閱[設定](setup.md)。
 
 
 ## 簡介

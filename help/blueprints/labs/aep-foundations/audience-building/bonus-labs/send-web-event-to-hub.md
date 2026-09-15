@@ -4,15 +4,17 @@ description: 瞭解如何使用Postman將網頁事件直接傳送至中心，並
 doc-type: article
 solution: Experience Platform
 exl-id: a8343499-b4d5-4540-8fe1-7497bc20e437
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '512'
 ht-degree: 0%
-
 ---
 
-
 # 傳送Web事件至中樞
+
+>[!IMPORTANT]
+>
+>請先完成[Postman安裝程式](../../postman-setup/postman-installation.md)，再開始這個實驗室。 您還需要存取相關[外部目的地啟用工作流程](../use-case-1-acquisition/configure-destinations/setup-streaming-destination.md)的[webhook.site](https://webhook.site/)。
 
 ## 開啟Postman
 
@@ -39,7 +41,7 @@ ht-degree: 0%
 1. 導覽至左側邊欄中的&#x200B;**來源**，然後按一下頂端導覽列中的&#x200B;**帳戶**
 1. 搜尋&#x200B;**dep： HTTP API \[raw]**，反白標示該列，並複製&#x200B;**串流端點**&#x200B;的值並儲存於您稍後可參考的位置
 
-帳戶並複製其串流端點&rbrack;(assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep： HTTP API \[raw]&quot;)
+帳戶並複製其串流端點](assets/send-order-event-to-hub-http-api-raw-streaming-endpoint.png &quot;dep： HTTP API \[raw]&quot;)
 
 ## 尋找網頁資料流ID
 
@@ -85,9 +87,8 @@ ht-degree: 0%
    1. 任何活動Edge （15分鐘內）
       1. 請記住：當串流資料傳入時，所有以Edge評估儲存的對象也會在中心進行評估
    2. dep：任何事件串流（一小時內）
-1. 如果您沒有新的區段，您可能會在webhook上看不到任何內容。
-1. 事件轉送不會傳送任何內容。
-   1. 為什麼？ 此事件進入的是中心，而非Edge，因此，該事件不會顯示為「事件轉寄」要傳送的任何內容，也不會顯示在Assurance中。
+1. 此中心事件未傳送至您的webhook。
+   1. 事件轉送會處理傳送至Edge的事件，而非直接傳送至集線器的事件。 使用[external-destination啟用工作流程](../use-case-1-acquisition/configure-destinations/setup-streaming-destination.md)擷取webhook.site上的事件。
 1. 在至少30分鐘後，您甚至可以使用以下內容檢視您的資料集：
    1. 將下方的表格名稱變更為沙箱中的表格名稱。  若要尋找，請前往您的資料集清單並在&quot;`dest`&quot;上篩選，開啟資料集並在右側邊欄上複製表格名稱。
 

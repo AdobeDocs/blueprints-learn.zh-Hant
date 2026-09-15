@@ -4,13 +4,11 @@ description: 使用串流入口和REST API，透過串流來源將客戶帳戶�
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 973a9cac-dc9d-4c5f-87c3-16a55efd1314
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '120'
 ht-degree: 0%
-
 ---
-
 
 # 串流擷取
 
@@ -22,6 +20,10 @@ ht-degree: 0%
 - 從另一個資料流匯入對應集
 - 從UI取得資料流ID和資料集ID
 - 使用REST API來擷取事件
+
+>[!IMPORTANT]
+>
+>請先完成[Postman安裝程式](../../setup.md)，再開始這個實驗室。
 
 >[!NOTE]
 >

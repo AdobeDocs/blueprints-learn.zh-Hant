@@ -1,16 +1,14 @@
 ---
-title: 使用案例#1 — 贏取
+title: 使用案例 #1 - Acquisition
 description: 定義贏取使用案例，將目標鎖定於尚未訂購或擁有裝置的iPhone 14頁面訪客，並規劃受眾建立方法。
 doc-type: overview-page
 solution: Experience Platform
 exl-id: a85b1eb1-88f4-41b2-acce-2e34dbe6aff8
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 
 # 使用案例#1 — 贏取
 
@@ -25,6 +23,10 @@ ht-degree: 0%
 **使用案例定義**
 
 啟用所有造訪iPhone 14產品頁面且沒有訂購iPhone 14或沒有作用中iPhone 14的設定檔。
+
+>[!IMPORTANT]
+>
+>請先完成[Postman安裝程式](../../setup.md)，再開始這個實驗室。 您也需要存取[webhook.site](https://webhook.site/)，才能擷取啟用的對象資料。
 
 
 
