@@ -60,19 +60,19 @@ ht-degree: 1%
 
 設計和啟用帳戶對象時，請參閱下列護欄：
 
-- [Real-Time Customer Data Platform B2B edition的護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails?lang=en)
-- [帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences?lang=en)
-- [啟用帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)
-- [設定檔和分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
-- [串流細分資格標準更新](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/eligibility-criteria-update)
+- [Real-Time Customer Data Platform B2B edition的護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-guardrails?lang=en)
+- [帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/account-audiences?lang=en)
+- [啟用帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)
+- [設定檔和分段護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- [串流細分資格標準更新](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/eligibility-criteria-update)
 
 ## Real-Time Customer Data Platform B2B edition的實作步驟、帳戶對象建立和啟用
 
-- 如需Real-Time Customer Data Platform B2B edition的實施步驟，請參閱檔案： [Real-Time Customer Data Platform B2B edition快速入門](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial?lang=en)。
-- 如需帳戶對象建立步驟，請參閱[帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences?lang=en)檔案。
-- 如需帳戶對象啟用步驟，請參閱[啟用帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)檔案：
+- 如需Real-Time Customer Data Platform B2B edition的實施步驟，請參閱檔案： [Real-Time Customer Data Platform B2B edition快速入門](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-tutorial?lang=en)。
+- 如需帳戶對象建立步驟，請參閱[帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/account-audiences?lang=en)檔案。
+- 如需帳戶對象啟用步驟，請參閱[啟用帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)檔案：
 
-  - [LinkedIn相符對象目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en#required-mappings)的必要對應。
+  - [LinkedIn相符對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en#required-mappings)的必要對應。
 
 ## 實施考量
 
@@ -81,11 +81,11 @@ LinkedIn相符對象具有最低對象人數要求（例如300個相符成員）
 ## 相關文件
 
 - [B2B Audience和Profile Activation藍圖](b2bactivation.md) — 涵蓋人員層級和帳戶層級B2B啟用的父級Blueprint。
-- [Real-Time Customer Data Platform的B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview?lang=en)
-- [建立及啟用帳戶對象 — 教學課程影片](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences-with-b2b-data?lang=en)
-- [建立帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/account-audiences?lang=en)
-- [啟用帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)
-- [Adobe Experience Platform - LinkedIn目的地聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin?lang=en)
-- [Real-Time CDP B2B edition中的結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
-- [Real-Time CDP B2B edition的架構升級](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-architecture-upgrade)
-- [目標護欄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails)
+- [Real-Time Customer Data Platform的B2B edition](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview?lang=en)
+- [建立及啟用帳戶對象 — 教學課程影片](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/audiences/create-audiences-with-b2b-data?lang=en)
+- [建立帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/account-audiences?lang=en)
+- [啟用帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-account-audiences?lang=en)
+- [Adobe Experience Platform - LinkedIn目的地聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/social/linkedin?lang=en)
+- [Real-Time CDP B2B edition中的結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b)
+- [Real-Time CDP B2B edition的架構升級](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-architecture-upgrade)
+- [目標護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/guardrails)
