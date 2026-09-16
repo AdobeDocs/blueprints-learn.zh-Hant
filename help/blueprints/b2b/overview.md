@@ -7,20 +7,24 @@ exl-id: b89f77f7-96a4-4f3f-8123-c62989b64c2b
 TQID: https://experienceleague.adobe.com/eCN6p4FgOY5k3JqjlMx55YJjYMChqTiwxH-LWagH7pk
 product_v2:
   - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: a99add31cc9f485db119ca00426798545e6a7316
+    internal-label: Personalization
+source-git-commit: 7f0b624616480cf563142c08eb0598d1dd55d551
 workflow-type: tm+mt
-source-wordcount: 287
-ht-degree: 76%
-
+source-wordcount: '352'
+ht-degree: 62%
 ---
-
 # B2B Analytics、啟用和行銷藍圖
 
 B2B 對象與個人資料啟用是資料驅動行銷領域成功的關鍵。 但許多品牌仍將精力集中於以通道優先的啟用，這通常會導致不一致的觸及和個人化。
@@ -31,6 +35,8 @@ B2B 對象與個人資料啟用是資料驅動行銷領域成功的關鍵。 但
 |---|---|---|
 | **[B2B 分析](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/b2b.html?lang=zh-Hant)** | <ul><li>在客戶歷程分析中加入 B2B 公司客戶資訊</li></ul> | <ul><li>Adobe Customer Journey Analytics</li></ul> |
 | **[B2B 對象啟用](b2bactivation.md)** | <ul><li>跨網路、電子郵件和廣告通道鎖定 B2B 對象</li></ul> | <ul><li>Adobe Real-time Customer Data Platform B2B版</li></ul> |
+| **[B2B對象和設定檔啟用](b2b-audience-profile-activation.md)** | <ul><li>從各個管道和目的地的統一B2B設定檔建立並啟用人員和帳戶對象</li></ul> | <ul><li>Adobe Real-Time Customer Data Platform B2B edition</li><li>Adobe Journey Optimizer B2B edition</li><li>Adobe Customer Journey Analytics B2B edition</li></ul> |
+| **[B2B帳戶啟用](b2b-account-activation.md)** | <ul><li>針對目標定位、銷售外聯和分析，啟用廣告目標和雲端儲存空間的帳戶受眾</li></ul> | <ul><li>Adobe Real-Time Customer Data Platform B2B edition</li></ul> |
 | **[購買群組行銷和歷程管理](/help/blueprints/b2b/b2b-buying-group-journeys.md)** | <ul><li>設計並建立客戶歷程，讓銷售機會符合購買群組的銷售機會，進而提高行銷活動在確認銷售機會方面的成效</li></ul> | <ul><li>Adobe Journey Optimizer B2B edition</li><li>Adobe Real-time Customer Data Platform B2B版</li><li>Adobe Marketo Engage</li></ul> |
 | **[Marketo Engage與Workfront整合藍圖：概觀](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)** | <ul><li>最佳化 B2B 行銷活動規劃、開發和執行</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
 | **[Marketo Engage和Workfront整合藍圖：錄取和建立](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)** | <ul><li>自動進行 B2B 行銷活動請求接收，以執行行銷活動開發</li></ul> | <ul><li>Adobe Marketo Engage</li></ul><ul><li>Adobe Workfront + Workfront Fusion</li></ul> |
