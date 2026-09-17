@@ -5,9 +5,9 @@ doc-type: article
 
 solution: Experience Platform
 exl-id: 7c1a9e3d-5b8f-4a2e-9c6d-3f7b0e4a8c2d
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '357'
 ht-degree: 1%
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 1%
 - [Postman安裝](postman-setup/postman-installation.md)
 - [匯入環境檔案](postman-setup/import-environment-file.md)
 - [匯入API集合](postman-setup/import-api-collection.md)
+
+## 隨選整備
+
+在啟動Labs之前，請先完成上述Postman設定。 自控進度的學習者還需要一個委派的子網域用於電子郵件相關的Labs，並需要一個SMS認證用於Flagship電話啟動實驗室。
 
 ## 管道必要條件
 

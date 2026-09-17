@@ -4,13 +4,11 @@ description: 瞭解Edge、串流和批次啟用速度的差異，並預覽建立
 doc-type: overview-page
 solution: Experience Platform
 exl-id: 9ecadff9-3838-4cd4-93b1-7c23a232f84c
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '175'
 ht-degree: 0%
-
 ---
-
 
 # Edge啟用
 
@@ -23,6 +21,10 @@ Adobe有三種啟動速度，可滿足不同需求：
 1. 批次
 
 我們將透過事件轉送、Edge Audiences和Edge Personalization，瞭解如何使用Adobe Edge來啟用。 接著，我們將說明如何使用從中樞到外部Edge的串流目的地。
+
+>[!IMPORTANT]
+>
+>請先完成[Postman安裝程式](../../setup.md)，再開始這個實驗室。 您也需要存取[webhook.site](https://webhook.site/)，才能擷取傳送至外部目的地的事件。
 
 >[!NOTE]
 >

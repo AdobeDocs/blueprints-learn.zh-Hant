@@ -4,15 +4,17 @@ description: 瞭解如何透過API將訂單事件串流至中心、建立串流�
 doc-type: article
 solution: Experience Platform
 exl-id: d5de39d7-7340-487a-86fa-504344daeab7
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '696'
 ht-degree: 0%
-
 ---
 
-
 # 將訂單事件傳送至中樞
+
+>[!IMPORTANT]
+>
+>請先完成[Postman安裝程式](../../postman-setup/postman-installation.md)，再開始這個實驗室。 您也需要存取[webhook.site](https://webhook.site/)以及在[贏取使用案例](../use-case-1-acquisition/configure-destinations/setup-streaming-destination.md)中建立的&#x200B;**串流DEP Webhook**&#x200B;目的地。
 
 ## 串流至集線器與Edge
 
