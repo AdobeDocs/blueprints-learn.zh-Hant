@@ -3,14 +3,12 @@ title: 主要業務目標
 description: 瞭解Adobe Experience Platform使用案例模式可協助組織實現的主要業務目標。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 doc-type: overview-page
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: ebebdf85-3ca0-4d8d-a14e-3808dfe43382
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
-
 ---
-
-
 # 主要業務目標
 
 關鍵業務目標定義組織透過其數位體驗計畫尋求實現的戰略成果。 每個目標都會對應至一或多個[使用案例模式](/help/blueprints/use-case-patterns/overview.md)，這些模式說明如何實作Adobe Experience Platform和應用程式以傳遞這些結果。

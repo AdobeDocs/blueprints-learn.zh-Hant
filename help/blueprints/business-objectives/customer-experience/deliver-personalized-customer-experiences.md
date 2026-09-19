@@ -2,14 +2,12 @@
 title: 提供個人化的客戶體驗
 description: 瞭解如何根據個別偏好設定、行為和生命週期階段量身打造內容、選件和訊息。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 442567ac-ee71-4907-841b-1fd06e1522ae
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 3%
-
+ht-degree: 12%
 ---
-
-
 # 提供個人化的客戶體驗
 
 根據個別偏好設定、行為和生命週期階段量身打造內容、選件和訊息。 此目標專注於使用即時客戶資料和決策，以跨客戶歷程中的每個管道和接觸點提供相關的情境式體驗。

@@ -2,14 +2,12 @@
 title: 降低客戶贏取成本
 description: 瞭解如何改善目標定位效率、從贏取行銷活動中抑制現有客戶，以及最佳化媒體支出。
 solution: Experience Platform, Real-Time Customer Data Platform
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 2e913e53-a4f8-4d03-bfd6-f82de5104516
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 2%
-
 ---
-
-
 # 降低客戶贏取成本
 
 提升目標定位效率、從贏取促銷活動中抑制現有客戶，並最佳化媒體支出。 此目標專注於透過精確的受眾鎖定和智慧型抑制來確保行銷資金觸及真正的新前景，藉此最大化收購投資的回報。

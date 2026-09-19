@@ -2,14 +2,12 @@
 title: 提高客戶忠誠度和期限值
 description: 瞭解如何透過忠誠計畫、獎勵和個人化參與，深化客戶關係並最大化長期價值。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 4054a964-652a-492a-adae-e6a9edaf9e8a
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 3%
-
+ht-degree: 9%
 ---
-
-
 # 提高客戶忠誠度和期限值
 
 透過忠誠計畫、獎勵和個人化參與，深化客戶關係並最大化長期價值。 此目標專注於建立持續的客戶關係，透過一致、價值導向的體驗，推動重複購買、更高的期限值及品牌宣傳。

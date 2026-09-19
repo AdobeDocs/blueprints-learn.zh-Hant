@@ -2,14 +2,12 @@
 title: 改善資料品質和控管
 description: 瞭解如何確保資料乾淨、完整且合規，以實現準確定位、減少浪費及可靠分析。
 solution: Experience Platform, Real-Time Customer Data Platform
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: ecede85f-9af8-4d97-a33c-a14dfe1ed61c
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
-
 # 改善資料品質和控管
 
 確保資料乾淨、完整且合規，以實現準確定位、減少浪費及可靠分析。 此目標著重於建立所有下遊行銷活動所需的資料基礎，確保客戶資料準確、一致、妥善控管並符合法規。

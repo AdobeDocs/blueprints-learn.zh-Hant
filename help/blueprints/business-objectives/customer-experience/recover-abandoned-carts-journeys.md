@@ -2,14 +2,12 @@
 title: 復原放棄的購物車與歷程
 description: 瞭解如何在購買、應用程式或註冊流程期間中斷的使用者，重新與他們互動，並提供及時且個人化的後續追蹤。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 4e0f84b4-1b2a-4728-a551-ef1b2bde99ba
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 2%
-
+ht-degree: 7%
 ---
-
-
 # 復原放棄的購物車與歷程
 
 透過及時且個人化的後續追蹤，重新吸引在購買、應用程式或註冊流程中休假的使用者。 此目標專注於透過即時偵測放棄事件並傳遞內容相關訊息來擷取損失的收入，以解決障礙並激勵完成者。

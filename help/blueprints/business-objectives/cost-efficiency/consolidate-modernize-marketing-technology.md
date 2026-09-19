@@ -2,14 +2,12 @@
 title: 整合及更新行銷技術
 description: 瞭解如何移轉至統一、可擴充的平台，以減少工具碎片化和技術債。
 solution: Experience Platform, Real-Time Customer Data Platform
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 5ab6071e-e1b3-488a-b7ed-3153c9bf6cdb
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '140'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
-
 # 整合併更新行銷技術
 
 遷移至統一、可擴充的平台，減少工具分散和技術負債。 此目標著重於透過將單點解決方案整合至共用資料、控管和工作流程的整合平台，以簡化行銷技術棧疊。
