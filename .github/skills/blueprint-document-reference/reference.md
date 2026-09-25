@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 4%
@@ -121,9 +121,9 @@ ht-degree: 4%
 
 ## 此存放庫中的參考範例
 
-- **情境藍圖（長格式）**： `help/blueprints/audience-activation/real-time-lookup.md`
-- **索引標籤和資料表的概觀/中心**： `help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md`
-- **以護欄為中心**： `help/blueprints/experience-platform/guardrails.md`
+- **情境藍圖（長格式）**： `help/blueprints/architecture-diagrams/audience-profile-activation/real-time-lookup.md`
+- **索引標籤和資料表的概觀/中心**： `help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md`
+- **以護欄為中心**： `help/blueprints/architecture-diagrams/architecture-overviews/guardrails.md`
 - **導覽**： `help/blueprints/TOC.md`，`help/blueprints/overview.md`
 
 使用這些做為區段順序、Frontmatter、圖表放置和Experience League連結使用方式的模式。

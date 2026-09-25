@@ -3,13 +3,11 @@ title: 匿名訪客網頁Personalization
 description: 瞭解如何根據工作階段中的行為訊號，將個人化網頁內容傳遞給無法識別的訪客。
 solution: Journey Optimizer, Real-Time Customer Data Platform
 exl-id: e2446801-ffce-40e6-bfe9-abec623c9201
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1706'
 ht-degree: 4%
-
 ---
-
 # 匿名訪客網頁個人化
 
 本指南說明匿名訪客Web個人化使用案例模式，此模式使用[!DNL Adobe Journey Optimizer] (AJO)、[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)和[!DNL Adobe Experience Platform] (AEP)根據工作階段中的行為訊號，將個人化網頁內容傳送給匿名（未識別）訪客。 它專為需要瞭解此模式的功能、其支援的業務目標、其啟用的戰術使用案例以及所涉及的Adobe應用程式的解決方案架構師、行銷技術人員和實作工程師所設計。
@@ -101,12 +99,6 @@ ht-degree: 4%
 - **[!DNL Adobe Journey Optimizer] (AJO)** — Web頻道介面設定、內容製作（網頁和程式碼型體驗）、行銷活動執行、內容實驗（A/B測試）、決策（動態內容選擇）和報告
 - **[!DNL Adobe Real-Time Customer Data Platform] (RT-CDP)** — 根據工作階段中行為訊號進行即時對象評估的Edge細分；匿名邊緣設定檔管理
 - **[!DNL Adobe Experience Platform] (AEP)** — [!DNL Web SDK]用於行為訊號收集，[!DNL Edge Network]用於即時資料路由和個人化傳遞，資料流設定
-
-## 架構
-
-下列參考架構說明如何在邊緣收集匿名訪客訊號、根據對象規則進行評估，並用來提供個人化內容。
-
-![匿名對象啟用和個人化的參考架構](/help/blueprints/audience-activation/assets/anonymous_activation.png)
 
 ## 相關文件
 

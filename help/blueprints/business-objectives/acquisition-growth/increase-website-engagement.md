@@ -2,14 +2,12 @@
 title: 增加網站參與度
 description: 瞭解如何透過相關體驗改善網站逗留時間、每個工作階段頁面數以及與網頁內容的互動情形。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 41d03772-678a-4039-b470-6053c39e53aa
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 4%
-
+ht-degree: 10%
 ---
-
-
 # 增加網站參與度
 
 透過相關體驗，改善網站逗留時間、每個工作階段頁面數以及與網頁內容的互動。 此目標的中心在於提供情境式個人化Web體驗，讓訪客透過內容和轉換路徑持續參與和前進。

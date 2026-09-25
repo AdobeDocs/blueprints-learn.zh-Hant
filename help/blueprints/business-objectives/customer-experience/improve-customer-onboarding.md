@@ -2,14 +2,12 @@
 title: 改善客戶入門
 description: 瞭解如何透過簡化的個人化歡迎體驗和啟動歷程，為新客戶加快實現價值的時間。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 3a156fbb-b078-469a-8604-0d6d340e9941
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '162'
-ht-degree: 3%
-
+ht-degree: 8%
 ---
-
-
 # 改善客戶入門
 
 透過簡化的個人化歡迎體驗和啟動歷程，加快新客戶的價值實現時間。 此目標專注於透過新客戶的初始體驗，提供及時、相關的溝通以推動產品採用和早期參與。

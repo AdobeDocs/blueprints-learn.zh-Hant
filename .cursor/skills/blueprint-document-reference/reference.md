@@ -1,15 +1,14 @@
 ---
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 1%
-
+source-wordcount: '630'
+ht-degree: 4%
 ---
 # Blueprint檔案參考 — 詳細指南
 
 ## 檔案型別
 
-| 型別 | 用途 | 位置/範例 |
+| 類型 | 用途 | 位置/範例 |
 |------|---------|--------------------|
 | **總覽/集線器** | 介紹產品或區域；情境藍圖的連結 | e.g. `overview.md`, `journey-optimizer-overview.md` |
 | **情境藍圖** | 單一使用案例：架構、步驟、護欄 | e.g. `real-time-lookup.md`, `journey-optimizer-journeys.md` |
@@ -122,9 +121,9 @@ ht-degree: 1%
 
 ## 此存放庫中的參考範例
 
-- **情境藍圖（長格式）**： `help/blueprints/audience-activation/real-time-lookup.md`
-- **索引標籤和資料表的概觀/中心**： `help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md`
-- **以護欄為中心**： `help/blueprints/experience-platform/guardrails.md`
+- **情境藍圖（長格式）**： `help/blueprints/architecture-diagrams/audience-profile-activation/real-time-lookup.md`
+- **索引標籤和資料表的概觀/中心**： `help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md`
+- **以護欄為中心**： `help/blueprints/architecture-diagrams/architecture-overviews/guardrails.md`
 - **導覽**： `help/blueprints/TOC.md`，`help/blueprints/overview.md`
 
 使用這些做為區段順序、Frontmatter、圖表放置和Experience League連結使用方式的模式。

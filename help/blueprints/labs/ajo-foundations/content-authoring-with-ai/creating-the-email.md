@@ -4,13 +4,11 @@ description: 瞭解如何在Adobe Journey Optimizer中將品牌化內容範本�
 doc-type: article
 solution: Experience Platform
 exl-id: bf823714-7298-48fc-a18b-9bf2462ae52e
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
-
 ---
-
 
 # 建立電子郵件
 
@@ -69,27 +67,27 @@ ht-degree: 0%
 
 ![編輯行銷活動電子郵件活動的電子郵件選項](assets/creating-the-email-click-edit-email.png)
 
-&#x200B;11. 按一下&#x200B;**動作標籤**&#x200B;並選取&#x200B;**您的**&#x200B;電子郵件設定。 您的沙箱可能會將此顯示為關聯式電子郵件。 （選取任一）
+1. 按一下&#x200B;**動作標籤**&#x200B;並選取&#x200B;**您的**&#x200B;電子郵件設定。 您的沙箱可能會將此顯示為關聯式電子郵件。 （選取任一）
 
-已選取電子郵件設定的![動作標籤](assets/creating-the-email-action-tab-email-configuration.png)
+   已選取電子郵件設定的![動作標籤](assets/creating-the-email-action-tab-email-configuration.png)
 
-&#x200B;12. 按一下&#x200B;**內容標籤**
+1. 按一下&#x200B;**內容標籤**
 
-電子郵件編輯器中的![內容標籤](assets/creating-the-email-click-content-tab.png)
+   電子郵件編輯器中的![內容標籤](assets/creating-the-email-click-content-tab.png)
 
-&#x200B;13. 按一下&#x200B;**套用內容範本**
+1. 按一下&#x200B;**套用內容範本**
 
-在電子郵件編輯器中![套用內容範本選項](assets/creating-the-email-click-apply-content-template.png)
+   在電子郵件編輯器中![套用內容範本選項](assets/creating-the-email-click-apply-content-template.png)
 
-&#x200B;14. 選取您建立的範本&#x200B;**「促銷範本」**，然後按一下&#x200B;**確認**
+1. 選取您建立的範本&#x200B;**「促銷範本」**，然後按一下&#x200B;**確認**
 
-![選取促銷範本並按一下[確認]](assets/creating-the-email-select-promotional-template-confirm.png)
+   ![選取促銷範本並按一下[確認]](assets/creating-the-email-select-promotional-template-confirm.png)
 
-&#x200B;15. 按一下&#x200B;**編輯電子郵件內文**
+1. 按一下&#x200B;**編輯電子郵件內文**
 
-套用範本後![編輯電子郵件內文選項](assets/creating-the-email-click-edit-email-body.png)
+   套用範本後![編輯電子郵件內文選項](assets/creating-the-email-click-edit-email-body.png)
 
-&#x200B;16. 確認新的頁首、主圖、頁尾和內容區塊顯示正確。
+1. 確認新的頁首、主圖、頁尾和內容區塊顯示正確。
 
 ![在電子郵件中正確顯示頁首、主圖、頁尾和內容區塊](assets/creating-the-email-header-hero-footer-blocks-confirmed.png)
 

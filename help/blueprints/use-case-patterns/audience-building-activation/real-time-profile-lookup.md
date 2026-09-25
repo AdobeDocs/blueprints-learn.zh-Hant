@@ -3,13 +3,11 @@ title: 支援與銷售案例的即時設定檔存取
 description: '[!UICONTROL 即時客戶個人資料]查詢，提供代理協助的支援及銷售之內容。'
 solution: Data Collection
 kt: 7195
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 66%
-
+source-wordcount: '484'
+ht-degree: 65%
 ---
-
 # 支援與銷售案例的即時設定檔存取
 
 支援和銷售案例藍圖的即時設定檔存取顯示外部應用程式如何存取Adobe Experience Platform的[!UICONTROL 即時客戶設定檔]。
@@ -25,10 +23,6 @@ ht-degree: 66%
 ## 使用案例
 
 * 為代理支援的互動提供更深入的消費者背景，例如支援和銷售經驗。 使用對 Experience Platform 的個人資料查詢，代理可以獲得關於消費者的更多背景，例如最近的購買、行銷活動互動、傾向性、對象會籍，以及即時客戶輪廓中儲存的其他屬性和洞察。
-
-## 架構
-
-<img src="/help/blueprints/audience-activation/assets/customer_activity_hub.svg" alt="客戶活動中心 Blueprint 的參考架構" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
 
 ## 護欄
 

@@ -1,23 +1,21 @@
 ---
-title: Journey Optimizer — 第三方傳訊藍圖
-description: 示範Adobe Journey Optimizer如何與第三方傳訊系統搭配使用，以傳送個人化通訊。
+title: Journey Optimizer — 協力廠商傳訊藍圖
+description: 示範Adobe Journey Optimizer如何與協力廠商傳訊系統搭配使用，以傳送個人化通訊。
 solution: Journey Optimizer
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 61%
-
+ht-degree: 56%
 ---
+# 協力廠商傳訊藍圖
 
-# 第三方傳訊藍圖
-
-示範Adobe Journey Optimizer如何與第三方傳訊系統搭配使用，以傳送個人化通訊。
+示範Adobe Journey Optimizer如何與協力廠商傳訊系統搭配使用，以傳送個人化通訊。
 
 <br>
 
 ## 架構
 
-<img src="/help/blueprints/customer-journeys/journey-optimizer/images/3rd-party-messaging-architecture.svg" alt="Journey Optimizer 參考架構藍圖" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/images/ajo-third-party-messaging.png" alt="Journey Optimizer 參考架構藍圖" style="width:100%; border:1px solid #4a4a4a" class="modal-image" />
 
 <br>
 
@@ -29,7 +27,7 @@ ht-degree: 61%
 * 對於體驗事件類別型結構描述，當您想要觸發非規則型事件的事件時，請新增「Orchestration eventID」欄位群組
 * 對於以個別設定檔類別為基礎的結構描述，新增「設定檔測試詳細資料」欄位群組以便載入測試設定檔以用於Journey Optimizer
 
-**第三方傳訊應用程式**
+**協力廠商傳訊應用程式**
 
 * 傳送交易承載時必須支援 REST API 呼叫
 
@@ -71,9 +69,9 @@ ht-degree: 61%
 1. 設定您的Experience Platform資料來源，並決定應在歷程中快取哪些欄位
 1. 必須先設定串流資料（用於啟動客戶歷程）以取得協調流程ID。 然後會將此協調流程ID提供給開發人員在擷取期間使用
 1. 設定外部資料來源
-1. 為第三方應用程式設定自定動作
+1. 設定協力廠商應用程式的自訂動作
 
-### 行動推播設定（選用，因為第三方可能收集權杖）
+### 行動推播設定（選擇性，因為第三方可能會收集代號）
 
 1. 實作 Experience Platform Mobile SDK 以收集推播權杖和登入資訊，以系結回已知的客戶個人資料
 1. 運用 Adobe 標籤，並使用下列擴充功能建立行動屬性：

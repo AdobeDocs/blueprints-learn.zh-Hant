@@ -2,20 +2,18 @@
 title: AJO B2B付費媒體控制者
 description: 行銷活動的優先順序及啟用付費媒體目的地的帳戶
 solution: Journey Optimizer B2B Edition
-source-git-commit: 796e113c40b6b4e8b56e5fbbd22122c066c30c6f
+source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1499'
 ht-degree: 0%
-
 ---
-
 # AJO B2B — 帳戶Journey Orchestration — 付費媒體控制者
 
 ## 概觀
 
 大規模執行B2B付費媒體的行銷團隊面臨循環的問題：**帳戶一次結束多個行銷活動** （角色、類別意識、解決方案導向、追蹤），這會稀釋訊息、造成對象疲勞，並強制手動清單工作 — 上傳、排除和抑制 — 跨LinkedIn帳戶相符（帳戶目的地）。 如果沒有&#x200B;**瀑布式優先順序**&#x200B;和&#x200B;**自動行銷活動指派**，就沒有單一位置可決定哪個帳戶取得哪個訊息，且操作不會縮放。
 
-**付費媒體控制器**&#x200B;是解決此問題的完美解決方案。 它同時使用&#x200B;**Adobe Journey Optimizer B2B edition (AJO B2B)**&#x200B;和&#x200B;**Adobe Experience Platform (AEP)**：一個&#x200B;**帳戶歷程**&#x200B;會從Real-Time CDP讀取合格的帳戶對象、套用&#x200B;**分割路徑（瀑布）邏輯**&#x200B;以將每個帳戶指派給正好一個行銷活動層級，以及&#x200B;**將每個路徑直接**&#x200B;啟用到付費媒體目的地（**例如，LinkedIn相符對象**），沒有手動清單移交。 結果就是精確控制、較少的重疊，以及多頻道B2B付費媒體協調的可重複模式。
+**付費媒體控制器**&#x200B;是解決此問題的完美解決方案。 它同時使用&#x200B;**Adobe Journey Optimizer B2B Edition (AJO B2B)**&#x200B;和&#x200B;**Adobe Experience Platform (AEP)**：一個&#x200B;**帳戶歷程**&#x200B;會從Real-Time CDP讀取合格的帳戶對象、套用&#x200B;**分割路徑（瀑布）邏輯**&#x200B;以將每個帳戶指派給正好一個行銷活動層級，以及&#x200B;**將每個路徑直接**&#x200B;啟用到付費媒體目的地（**例如，LinkedIn相符對象**），沒有手動清單移交。 結果就是精確控制、較少的重疊，以及多頻道B2B付費媒體協調的可重複模式。
 
 ## 使用案例：行銷人員的故事：為什麼控制者重要
 
@@ -50,7 +48,7 @@ ht-degree: 0%
 
 以帳戶為中心的解決方案需要下列應用程式和服務：
 
-- **Adobe Journey Optimizer B2B edition** — 帳戶歷程、分割路徑（瀑布）邏輯、啟用至目的地。
+- **Adobe Journey Optimizer B2B Edition** — 帳戶歷程、分割路徑（瀑布）邏輯、啟用到目的地。
 - **Adobe Real-time Customer Data Platform (RTCDP) B2B edition** — 帳戶設定檔、帳戶對象（例如付費媒體的合格帳戶）。
 
 ## 架構
@@ -61,19 +59,15 @@ ht-degree: 0%
 2. **協調流程** — AJO B2B帳戶歷程： **讀取對象** （合格帳戶） → **分割路徑** （瀑布：例如，Purchase →解決方案導向的→ Persona → Category → Foundation） → **啟用到目的地** （每個指向LinkedIn或其他付費媒體的路徑）。
 3. **目的地** — 付費媒體管道（例如LinkedIn相符的對象）會從每個歷程路徑接收帳戶層級的啟用；不會手動上傳清單。
 
-## 架構圖
-
-<img src="/help/blueprints/b2b/assets/ajo-b2b-paid-media-activation-architecture.svg" alt="AJO B2B付費媒體控制器架構" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
-
 ## B2B AEP中的資料模型
 
-在任何資料導向式協調流程中，架構設計都非常重要。 AEP/RTCDP中的帳戶和人員設定檔必須包含用於&#x200B;**分割路徑條件**&#x200B;的屬性（例如，追蹤旗標、解決方案興趣、角色、意圖類別、參與分數）。 B2B結構描述（XDM商業帳戶、XDM個人設定檔、關聯式）應該代表您的階層和資料來源。 如需詳細資訊，請參閱[RTCDP B2B結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)和[Journey Optimizer B2B edition檔案](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/guide-overview)。
+在任何資料導向式協調流程中，架構設計都非常重要。 AEP/RTCDP中的帳戶和人員設定檔必須包含用於&#x200B;**分割路徑條件**&#x200B;的屬性（例如，追蹤旗標、解決方案興趣、角色、意圖類別、參與分數）。 B2B結構描述（XDM商業帳戶、XDM個人設定檔、關聯式）應該代表您的階層和資料來源。 如需詳細資訊，請參閱[RTCDP B2B結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)和[Journey Optimizer B2B Edition檔案](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/guide-overview)。
 
 **注意：**&#x200B;歷程中的分割路徑邏輯會使用設定檔，並在支援的情況下使用關聯式資料；請確定瀑布式邏輯所需的欄位可在歷程中使用。
 
 ### 護欄
 
-- **Journey Optimizer B2B edition** — 如需歷程限制、節點限制和目的地支援，請參閱[產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer-b2b.html)。
+- **Journey Optimizer B2B Edition** — 如需歷程限制、節點限制和目的地支援，請參閱[產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer-b2b.html)。
 - **Real-Time CDP** — 如需細分與啟用限制，請參閱[RTCDP護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/guardrails/overview)。
 
 ## 實作
@@ -107,10 +101,6 @@ ht-degree: 0%
    - 確認每個帳戶僅輸入一個路徑（第一個相符條件）。
    - 驗證啟用：帳戶會顯示在正確的目的地，並如預期從優先順序較低的行銷活動中排除。
 
-## 實作圖
-
-<img src="/help/blueprints/b2b/assets/ajo-b2b-paid-media-controller-canvas.svg" alt="AJO B2B付費媒體控制器畫布" style="width:90%; border:1px solid #4a4a4a" class="modal-image" />
-
 ### Audience Activation
 
 1. **啟用至LinkedIn （和其他目的地）。**
@@ -127,6 +117,5 @@ ht-degree: 0%
 
 ## 相關文件
 
-- [購買群組式行銷和歷程管理Blueprint](https://experienceleague.adobe.com/zh-hant/docs/blueprints-learn/architecture/b2b-activation/b2b-buying-group-journeys) — 在AJO B2B中帳戶和購買群組歷程。
-- [Adobe Journey Optimizer B2B edition](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b) — 產品檔案。
+- [Adobe Journey Optimizer B2B Edition](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b) — 產品檔案。
 - [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) — 帳戶對象與啟用。

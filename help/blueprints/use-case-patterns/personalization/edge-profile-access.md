@@ -3,13 +3,11 @@ title: 適用於Web和Mobile Personalization的即時Edge設定檔存取
 description: 在邊緣[!UICONTROL 即時客戶個人檔案]存取權，以提供即時網頁和行動個人化的內容。
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 719
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1933'
 ht-degree: 11%
-
 ---
-
 # 適用於Web和Mobile Personalization的即時Edge設定檔存取
 
 適用於Web和Mobile Personalization藍圖的即時Edge設定檔存取顯示，Web和行動應用程式如何在Edge存取Adobe Experience Platform的[!UICONTROL 即時客戶設定檔]，以進行高輸送量、低延遲的個人化。
@@ -50,7 +48,7 @@ ht-degree: 11%
 
 ## 架構圖
 
-<img src="/help/blueprints/audience-activation/assets/real-time-edge-lookup.svg" alt="適用於Web和Mobile Personalization的Edge設定檔存取參考架構" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
+<img src="/help/blueprints/architecture-diagrams/audience-profile-activation/assets/real_time_edge_profile_access.png" alt="即時Edge設定檔存取的參考架構" style="width:90%; border:1px solid #4a4a4a"  class="modal-image" />
 
 ## 護欄
 
@@ -69,7 +67,7 @@ Edge個人化可使用Real-time Customer Data Platform中的[自訂Personalizati
 * 此方法可根據對象成員資格為邊緣個人化提供低延遲和最佳效能。
 * 即時邊緣劃分需要網頁/行動SDK實作。
 * Web SDK和Mobile SDK **僅支援以對象成員資格為基礎的個人化**。
-* [請參閱Experience Platform網頁和行動SDK藍圖](/help/blueprints/experience-platform/deployment/websdk.md)，以瞭解SDK型實作。
+* [請參閱Experience Platform網頁和行動SDK藍圖](/help/blueprints/architecture-diagrams/architecture-overviews/websdk.md)，以瞭解SDK型實作。
 * 對於行動SDK實作，[Adobe Journey Optimizer - Decisioning擴充功能](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/)必須安裝在行動SDK中。
 
 ### 模式2：使用Edge Network伺服器API的屬性型個人化（設定檔屬性的必要專案）

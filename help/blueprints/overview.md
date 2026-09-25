@@ -6,20 +6,23 @@ exl-id: 52898310-9723-4ec2-ba10-f45fefe29e93
 TQID: https://experienceleague.adobe.com/hScp-97-JZqFMfBJdM6820M95dVE7YoagKJYfruEdao
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+    internal-label: Implementation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d63e7dbc225a99171dc6b0e7491b517757a5c6d8
+    internal-label: Implementation
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
 workflow-type: tm+mt
-source-wordcount: 359
+source-wordcount: '370'
 ht-degree: 1%
-
 ---
-
 # Customer Experience Orchestration使用案例和架構圖
 
 此網站包含&#x200B;**主要業務目標**，其中概述可使用Adobe Experience Platform和應用程式達成的主要業務價值和目標的範例。 **使用案例模式**&#x200B;以可重複的實作方法描述常見的平台和應用程式功能。 **產業使用案例範例**&#x200B;套用模式至垂直特定的商業案例。 **架構圖表和藍圖**&#x200B;是視覺架構和資料流程參考圖表，說明系統整合點、資料和內容流程以及作業順序，為解決方案設計提供技術參考。 這些層級共同將業務價值與實作相依性和架構連線起來。
@@ -93,34 +96,36 @@ ht-degree: 1%
 <table>
 <tr>
   <td>
-    <a href="experience-platform/guardrails.md">
-      <img alt="Experience Platform中心與Edge架構" src="experience-platform/assets/aep_edge_hub_latency_v1.png" />
+    <a href="architecture-diagrams/architecture-overviews/guardrails.md">
+      <img alt="Experience Platform中心與Edge架構" src="architecture-diagrams/architecture-overviews/assets/aep_edge_hub_latency.png" />
     </a>
     <div>
-      <a href="experience-platform/guardrails.md">
+      <a href="architecture-diagrams/architecture-overviews/guardrails.md">
     <strong>Experience Platform中心與Edge架構和護欄圖表</strong>
     </a>
     </div>
   </td>
    <td>
-    <a href="experience-platform/deployment/websdk.md">
-      <img alt="Edge順序圖" src="experience-platform/deployment/assets/web_sdk_sequence.svg" />
+    <a href="architecture-diagrams/architecture-overviews/websdk.md">
+      <img alt="Edge順序圖" src="architecture-diagrams/architecture-overviews/assets/sdk_sequence_diagram.png" />
     </a>
     <div>
-      <a href="experience-platform/deployment/websdk.md">
+      <a href="architecture-diagrams/architecture-overviews/websdk.md">
     <strong>網頁SDK和Edge Network順序圖</strong>
     </a>
     </div>
   </td>
   <td>
-    <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
-      <img alt="Journey Optimizer概觀圖表" src="customer-journeys/journey-optimizer/images/ajo-architecture.svg" />
+    <a href="architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md">
+      <img alt="Journey Optimizer概觀圖表" src="architecture-diagrams/customer-journeys/journey-optimizer/images/ajo-architecture.png" />
     </a>
     <div>
-      <a href="customer-journeys/journey-optimizer/journey-optimizer-overview.md">
+      <a href="architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md">
     <strong>Adobe Journey Optimizer概觀圖表</strong>
     </a>
     </div>
   </td>
 </tr>
 </table>
+
+[檢視所有架構圖表和藍圖](architecture-diagrams/overview.md)

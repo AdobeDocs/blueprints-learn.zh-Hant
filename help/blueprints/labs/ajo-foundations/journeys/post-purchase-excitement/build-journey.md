@@ -4,13 +4,11 @@ description: 建立回應Order Shipped事件的單一歷程、呼叫出貨ETA的
 doc-type: article
 solution: Experience Platform
 exl-id: 4dd15071-51e5-445a-932d-690d9a73a913
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 0%
-
 ---
-
 
 # 建立歷程
 
@@ -159,8 +157,8 @@ ht-degree: 0%
 
    ```json
    {{profile.person.name.firstName}}, your order has shipped
-   ETA: 
-   Tracking Number: 
+   ETA:
+   Tracking Number:
    ```
 
 8. 新增個人化欄位，如下所示（**按一下左側邊欄**&#x200B;欄位旁的加號「+」）：
@@ -188,7 +186,7 @@ ht-degree: 0%
 
 ![儲存右上角及左上角的按鈕和後退箭號](assets/build-journey-save-and-back-arrow.png)
 
-&#x200B;12. 最後，按一下左上方的&#x200B;**\&lt;上一頁圖示**&#x200B;以回到歷程畫布
+1. 最後，按一下左上方的&#x200B;**\&lt;上一頁圖示**&#x200B;以回到歷程畫布
 
 左上方的![返回圖示以返回歷程畫布](assets/build-journey-back-icon-to-journey-canvas.png)
 

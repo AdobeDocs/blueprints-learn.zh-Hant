@@ -2,14 +2,12 @@
 title: 提高轉換率
 description: 瞭解如何提高完成所需動作（例如購買、註冊或提交表單）的訪客和潛在客戶的百分比。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 47cb89e4-28d7-402c-9015-9b1b1ec0641a
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 2%
-
+ht-degree: 8%
 ---
-
-
 # 提高轉換率
 
 提高完成所需動作（例如購買、註冊或提交表單）的訪客和潛在客戶的百分比。 此目標專注於最佳化客戶歷程中的每個接觸點，以透過個人化體驗和及時傳送訊息來減少摩擦並推動行動。

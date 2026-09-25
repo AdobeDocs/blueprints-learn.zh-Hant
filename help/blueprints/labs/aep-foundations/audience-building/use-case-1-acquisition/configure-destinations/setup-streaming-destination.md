@@ -4,13 +4,11 @@ description: 使用webhook端點、治理原則、對象和欄位對應來設定
 doc-type: article
 solution: Experience Platform
 exl-id: c52d301f-b308-40fc-a59c-ace1c96ccd13
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 0%
-
 ---
-
 
 # 設定串流目的地
 
@@ -62,7 +60,7 @@ ht-degree: 0%
 
 
 
-&#x200B;3. 請依照以下步驟填寫您目的地的設定詳細資料：
+1. 請依照以下步驟填寫您目的地的設定詳細資料：
 
 - **名稱** -> `Streaming DEP Webhook - [Your Initials]`
 - **描述** -> `[your webhook endpoint you copied above]`

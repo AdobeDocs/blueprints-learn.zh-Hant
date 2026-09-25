@@ -2,14 +2,12 @@
 title: 提高交叉銷售和追加銷售收入
 description: 瞭解如何根據行為和購買記錄，向現有客戶推廣補充性和優質產品或服務。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 35e136e8-8b66-4f4c-8e77-7466553fc4b7
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 3%
-
+ht-degree: 10%
 ---
-
-
 # 推動交叉銷售和追加銷售收入
 
 根據行為和購買記錄，向現有客戶推廣補充性和優質產品或服務。 此目標專注於透過個人化決策和多管道參與，在適當的時間提供適當的產品建議和優惠，以提高客戶價值。

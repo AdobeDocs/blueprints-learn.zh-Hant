@@ -6,13 +6,11 @@ short-description: 將 RTCDP 設定檔和客群與 Adobe Target 整合。
 solution: Real-Time Customer Data Platform, Target, Experience Platform
 kt: 7194
 thumbnail: thumb-web-personalization-scenario2.jpg
-source-git-commit: 045fac8362795eefcac0ef5202fe7a90cb6875da
+source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1045'
 ht-degree: 26%
-
 ---
-
 
 # 已知客戶Personalization與Target
 
@@ -41,20 +39,6 @@ ht-degree: 26%
 | **透過Edge方法從Real-time Customer Data Platform串流及批次對象共用至Target** |  — 透過Edge Network從Real-time Customer Data Platform分享串流和批次對象至Target。 <br> — 即時評估的對象需要Web SDK和Edge Network實作。 |  — 將串流和批次RTCDP對象共用至Target不需要Web/Mobile SDK或Edge API實作Target，但需要啟用即時邊緣區段評估。 <br> — 如果使用AT.js，則僅支援對ECID身分名稱空間進行設定檔整合。 <br> — 若要在Edge上進行自訂身分名稱空間查閱，需要Web SDK/Edge API部署，而且每個身分都必須在身分對應中設定為身分。 <br> — 目標目的地必須在Real-time Customer Data Platform目的地中設定，僅支援RTCDP中的預設生產沙箱。 <br> — 與Target整合需要與Experience Platform執行個體相同的IMS組織。 |
 | **透過對象共用服務方法，從Real-time Customer Data Platform串流和批次對象共用至Target和Audience Manager** |  — 當需要從Audience Manager中的第三方資料和對象進行額外擴充時，可運用此整合模式。 |  — 將串流和批次對象共用至Target不需要Web/Mobile SDK，但需要啟用即時邊緣區段評估。 <br> — 如果使用AT.js，則僅支援對ECID身分名稱空間進行設定檔整合。 <br> — 若要在Edge上進行自訂身分名稱空間查閱，需要Web SDK/Edge API部署，而且每個身分都必須在身分對應中設定為身分。 <br> — 必須布建透過對象共用服務的對象投影。 <br> — 與Target整合需要與Experience Platform執行個體相同的IMS組織。 <br> — 只有來自預設生產沙箱的對象支援對象共用核心服務。 |
 
-## 將即時、串流和批次對象分享至 Adobe Target
-
-架構
-
-![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP-Target.png)
-
-序列詳細資訊
-
-![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/RTCDP-Target_flow.png)
-
-概述架構
-
-![線上/離線Web Personalization Blueprint的參考架構](/help/blueprints/audience-activation/assets/personalization_with_apps.png)
-
 ## 實作模式
 
 已知客戶個人化透過數種實作方法受支援。
@@ -62,7 +46,7 @@ ht-degree: 26%
 ### 實作模式1 - [!DNL Edge Network]搭配網頁/行動SDK或[!DNL Edge Network] API （建議做法）
 
 * 搭配使用[!DNL Edge Network]與Web/行動SDK。 即時邊緣分段需要 Web/Mobile SDK 或 Edge API 實作方法。
-* [請參閱 Experience Platform Web 與 Mobile SDK 藍圖](/help/blueprints/experience-platform/deployment/websdk.md)進行以 SDK 為基礎的實作。
+* [請參閱 Experience Platform Web 與 Mobile SDK 藍圖](/help/blueprints/architecture-diagrams/architecture-overviews/websdk.md)進行以 SDK 為基礎的實作。
 * 若要在行動SDK中使用，必須安裝[Adobe Journey Optimizer - Decisioning擴充功能](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/)。
 * [請參閱 [!DNL Edge Network] 伺服器API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)，以取得具有Edge設定檔的Adobe Target之API實作。
 
@@ -71,7 +55,7 @@ ht-degree: 26%
 使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。 此實作方法不支援即時邊緣區段評估。 不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
 
 [請參閱Adobe Target聯結器檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
-[請參閱應用程式特定的SDK Blueprint](/help/blueprints/experience-platform/deployment/appsdk.md)
+[請參閱Experience Platform Web SDK藍圖](/help/blueprints/architecture-diagrams/architecture-overviews/websdk.md)
 
 ## 實施考量
 

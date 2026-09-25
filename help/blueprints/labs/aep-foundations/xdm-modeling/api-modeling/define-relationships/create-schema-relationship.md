@@ -4,13 +4,11 @@ description: 使用結構描述登入API建立一對一的關係描述項，將�
 doc-type: article
 solution: Experience Platform
 exl-id: c9079585-fff1-4ee1-8992-93825fcde759
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
-
 ---
-
 
 # 建立結構描述關係
 
@@ -57,9 +55,9 @@ ht-degree: 0%
 
 
 
-&#x200B;3. 繼續使用`Save`按鈕前請先儲存您的請求
+1. 繼續使用`Save`按鈕前請先儲存您的請求
 
-&#x200B;4. 按一下`Send`按鈕執行API
+1. 按一下`Send`按鈕執行API
 
 您現在應該會看到如下的`201 Created`回應
 

@@ -1,9 +1,8 @@
 ---
-source-git-commit: 7511cc0e5c099d5d3ee1275a374cd9ffdc972335
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
-
+source-wordcount: '690'
+ht-degree: 1%
 ---
 # Blueprint評估規則
 
@@ -21,7 +20,7 @@ ht-degree: 0%
 標準形狀： `.claude/skills/use-case-pattern-builder/references/pattern-template.md`。
 - **架構圖** — 代表系統功能的視覺化圖表，
 整合和資料流程。 最簡單的敘述；圖表是成品。
-標準範例： [platform-data-flow.md](../help/blueprints/experience-platform/platform-data-flow.md)。
+標準範例： [platform-data-flow.md](../help/blueprints/architecture-diagrams/architecture-overviews/platform-data-flow.md)。
 
 ## 得分
 
@@ -89,7 +88,7 @@ ht-degree: 0%
      `audience-building-activation`, `personalization`, `campaign-management-orchestration`,
      `analysis`、`conversational-experience`或標示為`(new) <name>`的新類別。
    - `proposed_pattern_title` — 遵循現有模式的簡短動作導向標題
-命名樣式。
+     命名樣式。
 6. 針對`Diagram`和`Split`建議，建議：
    - `proposed_diagram_title` — 通常是商業框架裁剪的現有標題。
 7. 透過比較Blueprint的範圍與現有的模式目錄來擷取找到的任何重複專案

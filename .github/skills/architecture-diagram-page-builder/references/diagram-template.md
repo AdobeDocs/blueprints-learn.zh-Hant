@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '230'
 ht-degree: 0%
 ---
 # 架構圖表頁面範本
@@ -28,13 +28,13 @@ solution: {Comma-separated Adobe solutions, e.g. Experience Platform, Journey Op
 
 {1-2 sentence explanation of what the diagram shows and why it matters.}
 
-<img src="assets/{filename-1}" alt="{Alt text for diagram 1}" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![{Alt text for diagram 1}](assets/{filename-1}){width="1000" zoomable="yes"}
 
 ## {Diagram 2 section title}
 
 {1-2 sentence explanation.}
 
-<img src="assets/{filename-2}" alt="{Alt text for diagram 2}" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+![{Alt text for diagram 2}](assets/{filename-2}){width="1000" zoomable="yes"}
 
 ## Primary data flows and integration points
 
@@ -70,7 +70,7 @@ The architecture above supports the following use case patterns:
 
 - **一個H1** — 頁面標題。 完全符合`title`前置內容。
 - **每個圖表一個H2。** 圖表區段內沒有H3；請將其保留為1-2句介紹加上影像。
-- **`<img>`內嵌** — 需要內嵌樣式和`class="modal-image"`。 它們會驅動Experience League強制回應縮放互動。
+- **內嵌Markdown影像** — 提供描述性替代文字，並使用`{width="1000" zoomable="yes"}`做為圖表。
 - **影像路徑** — 一律為`assets/{filename}` （相對於頁面的主題資料夾）。 請勿使用絕對路徑。
 - **Adobe產品名稱** — 內文和專案符號會以`[!DNL ...]`換行。 範例： `[!DNL Real-Time CDP]`、`[!DNL Journey Optimizer]`、`[!DNL Experience Platform]`。
 - **使用案例模式連結** — 一律使用絕對`/help/blueprints/use-case-patterns/{category}/{file}.md`表單，因此連結會從任何可能包含此內容的頁面中解析。

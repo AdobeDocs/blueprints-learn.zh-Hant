@@ -1,12 +1,12 @@
 ---
-source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '665'
 ht-degree: 0%
 ---
 # 範圍護欄：架構頁面與使用案例模式頁面
 
-Blueprint網站將&#x200B;**架構圖表頁面**&#x200B;與&#x200B;**使用案例模式頁面**&#x200B;分開，因為它們滿足不同的讀取器需求。 本檔案會定義內容所屬的位置，以及如何處理跨越邊界的內容。
+此網站會將&#x200B;**架構圖表頁面**&#x200B;與&#x200B;**使用案例模式頁面**&#x200B;分開，因為它們滿足不同的讀取器需求。 本檔案會定義內容所屬的位置，以及如何處理跨越邊界的內容。
 
 ## 核心差異
 

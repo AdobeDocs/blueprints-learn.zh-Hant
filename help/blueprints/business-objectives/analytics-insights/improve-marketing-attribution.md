@@ -2,14 +2,12 @@
 title: 改善行銷歸因
 description: 瞭解如何準確衡量行銷接觸點、管道和行銷活動對轉換和收入結果的影響。
 solution: Experience Platform, Customer Journey Analytics
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 67686f67-15ee-4beb-919e-36a0c0c371a3
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 3%
-
 ---
-
-
 # 改善行銷歸因
 
 準確衡量行銷接觸點、管道和行銷活動對轉換和收入結果的影響。 此目標的重點在於建立跨管道歸因模型，將行銷活動與業務結果連結起來，以獲得更好的預算配置和行銷活動最佳化。

@@ -4,13 +4,11 @@ description: 調查帳單使用情況和計畫名稱的結構描述欄位，強�
 doc-type: article
 solution: Experience Platform
 exl-id: c26de19e-82da-4070-a918-2d2c8ef2c116
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
-
 ---
-
 
 # 前期工作
 
@@ -25,7 +23,7 @@ ht-degree: 0%
 
 
 
-&#x200B;3. 搜尋「事件」中的「使用狀況」。  按一下「i」以檢閱說明（沒有說明）。
+1. 搜尋「事件」中的「使用狀況」。  按一下「i」以檢閱說明（沒有說明）。
 
 ![搜尋事件中的使用狀況 — 未顯示說明](assets/pre-work-search-usage-in-events.png)
 

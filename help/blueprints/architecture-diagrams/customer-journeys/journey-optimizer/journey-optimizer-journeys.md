@@ -1,0 +1,77 @@
+---
+title: '[!DNL Journey Optimizer] — 歷程'
+description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
+solution: Journey Optimizer
+exl-id: 70573eb9-cd69-4fe6-b2ae-dae81665a308
+TQID: https://experienceleague.adobe.com/MuodOvJ52G9lmUAmsuj06q1aTXkRg7W0Bj6nxLp96N8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 12%
+---
+# [!DNL Journey Optimizer] — 歷程
+
+>[!TIP]
+>此架構也記錄為「行銷活動管理與協調」下的[使用案例模式](/help/blueprints/use-case-patterns/campaign-management-orchestration/event-triggered-messaging.md)。
+
+Adobe Journey Optimizer歷程是即時、事件導向的工作流程，可根據個別客戶行為提供個人化的多步驟體驗。 支援多種管道€」包括電子郵件、簡訊、推播通知、應用程式內傳訊、程式碼型體驗和自訂API型整合，讓品牌可透過客戶偏好的接觸點，根據內容與客戶互動。
+
+<br>
+
+## 架構
+
+![參考架構Adobe Journey Optimizer — 歷程](images/ajo-journeys-architecture.png){width="1000" zoomable="yes"}
+
+<br>
+
+## 歷程的架構考量事項
+
+- **設定檔新鮮度**： AJO歷程需要客戶設定檔的即時更新。 確保將饋送至Adobe Experience Platform (AEP)的資料來源設定為低延遲擷取，以維持設定檔準確性。
+- **可擴充的事件處理：**&#x200B;請確定基礎結構可以處理大量的歷程觸發程式和訊息傳送。
+- **模組化整合：**&#x200B;設計API和自訂動作，用於連結AJO與外部系統以進行動態個人化。
+- **身分解析**：跨裝置和管道精確拼接客戶身分至關重要。 未對齊的身分可能會導致歷程中斷或導向錯誤。
+- **區段資格計時**：以對象為基礎的歷程取決於區段會籍。 瞭解評估區段的頻率，以及該時間如何影響歷程進入和個人化。
+- **歷程進入條件**：設定檔必須符合特定條件才能進入歷程。 這些條件應謹慎設計，以避免非預期的排除或重疊。
+- **對象評估與延遲**：讀取對象步驟取決於Adobe Experience Platform中的區段評估，此評估可能不會即時發生。 架構者瞭解評估頻率和延遲，以避免對象資格延遲並確保及時個人化。
+
+<br>
+
+## 護欄
+
+[[!DNL Journey Optimizer]護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
+
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html?lang=zh-Hant)
+
+<br>
+
+## 相關文件
+
+- [[!DNL Experience Platform]檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
+- [[!DNL Experience Platform]標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+- [[!DNL Journey Optimizer]產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

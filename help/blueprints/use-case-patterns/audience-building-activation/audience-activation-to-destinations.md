@@ -3,13 +3,11 @@ title: 目的地的Audience啟用
 description: 瞭解如何使用Adobe Real-Time CDP評估對象區段並將其發佈到外部目的地以進行定位或抑制。
 solution: Real-Time Customer Data Platform, Experience Platform
 exl-id: b0b9d937-45d2-48f9-ac4c-3611c6e35f58
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1363'
 ht-degree: 4%
-
 ---
-
 # 目的地的Audience啟用
 
 本指南說明目的地使用案例模式的對象啟用，該模式會評估Adobe [!DNL Real-Time Customer Data Platform] (RT-CDP)中的對象區段，並將其發佈至廣告平台、雲端儲存空間、CRM系統或資料合作夥伴，以進行目標定位、隱藏、相似對象建模或分析擴充。 它專為需要瞭解此模式的功能、其支援的業務目標、其啟用的戰術使用案例以及所涉及的Adobe應用程式的解決方案架構師、行銷技術人員和實作工程師所設計。
@@ -92,7 +90,7 @@ ht-degree: 4%
 
 下列參考架構說明對象和設定檔資料如何從Real-Time CDP流向企業目的地，包括雲端儲存空間、串流端點和SaaS應用程式。
 
-![企業目的地的對象和設定檔啟用的參考架構](/help/blueprints/audience-activation/assets/known_activation.png)
+![Adobe Real-Time CDP啟用的參考架構](/help/blueprints/architecture-diagrams/audience-profile-activation/assets/real_time_cdp_activation.png)
 
 ## 相關文件
 

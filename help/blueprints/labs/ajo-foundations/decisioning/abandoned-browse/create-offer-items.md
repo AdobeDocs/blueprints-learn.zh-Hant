@@ -4,13 +4,11 @@ description: 建立具有優先順序、適用性規則和頻率上限的層級i
 doc-type: article
 solution: Experience Platform
 exl-id: 76214d87-5107-4829-9d6e-91073e1008ca
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
-
 ---
-
 
 # 建立優惠專案
 
@@ -84,7 +82,7 @@ ht-degree: 0%
 >
 >實際上，如果選件較複雜，則應設定適當的核准程式，以確保已正確建立選件專案。 為了節省本實驗的時間，您只需核准您建立的每個優惠方案專案。
 
-&#x200B;12. 按一下選件專案標題旁的&#x200B;**向左箭頭**&#x200B;以返回「選件」頁面，您會看到列出您的iphone：17\：generic選件。
+1. 按一下選件專案標題旁的&#x200B;**向左箭頭**&#x200B;以返回「選件」頁面，您會看到列出您的iphone：17\：generic選件。
 
 ## 建立基本模型優惠方案專案
 
@@ -150,7 +148,7 @@ ht-degree: 0%
 
 ![已完成Ultra層選件專案的組態](assets/create-offer-items-ultra-offer-final-config.png)
 
-&#x200B;11. 在您確認所有設定皆正確後，請儲存並核准此選件專案。 您現在會看到全部四個優惠方案專案，每個專案都有獨特的優先順序。
+1. 在您確認所有設定皆正確後，請儲存並核准此選件專案。 您現在會看到全部四個優惠方案專案，每個專案都有獨特的優先順序。
 
 ![優惠方案頁面列出所有四個具有唯一優先順序的優惠方案專案](assets/create-offer-items-all-four-offers-priority.png)
 

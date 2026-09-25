@@ -2,14 +2,12 @@
 title: 改善客戶參與度
 description: 瞭解如何提升所有數位和實體接觸點的互動頻率和深度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+exl-id: 9a2143c7-f962-4651-886a-a4be6ceff3fc
+source-git-commit: ccfd8c987a0090ca690e15a4bd89f4d96ec9c01f
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 3%
-
+ht-degree: 10%
 ---
-
-
 # 改善客戶參與度
 
 增加所有數位和實體接觸點的互動頻率和深度。 此目標專注於提供相關、即時的互動，鼓勵跨管道更深入地建立關係並更頻繁地與品牌互動。

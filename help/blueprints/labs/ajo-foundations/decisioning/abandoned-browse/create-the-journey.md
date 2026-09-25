@@ -4,13 +4,11 @@ description: 建立歷程以觸發程式碼型體驗動作和決定原則，將J
 doc-type: article
 solution: Experience Platform
 exl-id: 34f56d95-564b-4cf6-b105-22da276e8e41
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 0%
-
 ---
-
 
 # 建立歷程
 
@@ -77,67 +75,67 @@ ht-degree: 0%
 >
 >遞補優惠為選用，因為只有當使用者可能不符合任何優惠方案的資格時，才會套用遞補優惠。 在我們的案例中，我們的選取策略是針對所有訪客，而唯一能到達CBE節點的是進入歷程的人。 驗證是歷程進入的必要條件（在歷程中設定的名稱空間是他們只有在驗證之後才會擁有的名稱空間）。 我們也在排名公式中建立了遞補優惠，因此我們不需要設定此遞補優惠。
 
-&#x200B;11. 按一下藍色的&#x200B;**下一步**&#x200B;按鈕以檢閱決定原則。
+1. 按一下藍色的&#x200B;**下一步**&#x200B;按鈕以檢閱決定原則。
 
-在建立決定原則之前，請先檢閱決定原則的步驟![&#128279;](assets/create-the-journey-review-decision-policy.png)
+   在建立決定原則之前，請先檢閱決定原則的步驟![&#128279;](assets/create-the-journey-review-decision-policy.png)
 
-&#x200B;12. 一切看起來正確後，按一下藍色的&#x200B;**建立**&#x200B;按鈕。 建立後，您會返回運算式編輯器頁面。
-&#x200B;13. 您應該會看到類似下列的畫面；如果沒有，請再按一下&#x200B;**決定原則**，您就會看到您的決定原則出現。
+1. 一切看起來正確後，按一下藍色的&#x200B;**建立**&#x200B;按鈕。 建立後，您會返回運算式編輯器頁面。
+1. 您應該會看到類似下列的畫面；如果沒有，請再按一下&#x200B;**決定原則**，您就會看到您的決定原則出現。
 
-顯示決定原則的![運算式編輯器已準備好插入](assets/create-the-journey-decision-policy-ready.png)
+   顯示決定原則的![運算式編輯器已準備好插入](assets/create-the-journey-decision-policy-ready.png)
 
-&#x200B;14. 按一下&#x200B;**+插入原則**&#x200B;按鈕，您會看到ForEach回圈出現在程式碼編輯器中：
+1. 按一下&#x200B;**+插入原則**&#x200B;按鈕，您會看到ForEach回圈出現在程式碼編輯器中：
 
-插入決定原則之後，將![ForEach回圈插入程式碼編輯器中](assets/create-the-journey-foreach-loop-inserted.png)
+   插入決定原則之後，將![ForEach回圈插入程式碼編輯器中](assets/create-the-journey-foreach-loop-inserted.png)
 
->[!NOTE]
->
->為何每個回圈使用？ 在本例中，我們只傳回單一選件。 不過，請考慮先前傳回多個選件的步驟。 考慮功能時，這裡的循環機制是合理的。
+   >[!NOTE]
+   >
+   >為何每個回圈使用？ 在本例中，我們只傳回單一選件。 不過，請考慮先前傳回多個選件的步驟。 考慮功能時，這裡的循環機制是合理的。
 
-&#x200B;15. 在回圈範圍內新增有效的JSON，以傳回手機應提供給一般使用者的品牌、型號和階層。 由於也設有頻率上限，因此需要將trackingToken新增至回應。 稍後在指示中進一步說明。 為節省時間，只需將這些行程式碼複製並貼到For Each回圈中的程式碼編輯器中：
+1. 在回圈範圍內新增有效的JSON，以傳回手機應提供給一般使用者的品牌、型號和階層。 由於也設有頻率上限，因此需要將trackingToken新增至回應。 稍後在指示中進一步說明。 為節省時間，只需將這些行程式碼複製並貼到For Each回圈中的程式碼編輯器中：
 
-```javascript
-{
-     "make":"",
-     "model":"",
-     "tier":"",
-     "trackingToken":""
- },
-```
+   ```javascript
+   {
+        "make":"",
+        "model":"",
+        "tier":"",
+        "trackingToken":""
+    },
+   ```
 
-![初始JSON，在ForEach回圈中具有make、model、tier和trackingToken欄位](assets/create-the-journey-initial-json-in-loop.png)
+   ![初始JSON，在ForEach回圈中具有make、model、tier和trackingToken欄位](assets/create-the-journey-initial-json-in-loop.png)
 
->[!NOTE]
->
->回想一下，您已將屬性新增至標準選件XDM結構描述，特別是品牌、模型和階層。 接著您會在建立優惠方案時填入這些屬性。 您現在可新增這些屬性，作為使用所選選件之值填入的變數。 trackingToken欄位是系統產生的值，用於追蹤點按和曝光數。
+   >[!NOTE]
+   >
+   >回想一下，您已將屬性新增至標準選件XDM結構描述，特別是品牌、模型和階層。 接著您會在建立優惠方案時填入這些屬性。 您現在可新增這些屬性，作為使用所選選件之值填入的變數。 trackingToken欄位是系統產生的值，用於追蹤點按和曝光數。
 
-&#x200B;16. 將游標置於&#39;make&#39;節點的&#x200B;**&quot;**&#x200B;之間。 在決定原則功能表中導覽至&#x200B;**\_dep > Device > Make**&#x200B;節點，以插入優惠方案製作。  按一下&#x200B;**Make**&#x200B;元素上的&#x200B;**+**&#x200B;圖示，您會看到它填入編輯器。
+1. 將游標置於&#39;make&#39;節點的&#x200B;**&quot;**&#x200B;之間。 在決定原則功能表中導覽至&#x200B;**\_dep > Device > Make**&#x200B;節點，以插入優惠方案製作。  按一下&#x200B;**Make**&#x200B;元素上的&#x200B;**+**&#x200B;圖示，您會看到它填入編輯器。
 
-![將決定原則的屬性填入JSON編輯器](assets/create-the-journey-populate-make-attribute.png)
+   ![將決定原則的屬性填入JSON編輯器](assets/create-the-journey-populate-make-attribute.png)
 
-&#x200B;17. 以類似方式新增&#x200B;**模型**&#x200B;和&#x200B;**層**&#x200B;屬性。
-&#x200B;18. 按一下屬性導覽中的&#x200B;**決定原則**&#x200B;以返回根層級。
-&#x200B;19. 透過&#x200B;**\_experience > decisioning > decisionitem >追蹤Token**&#x200B;路徑導覽至追蹤Token值，填入trackingToken屬性。
-&#x200B;20. 最後，將整段程式碼封裝在方括弧(**\[]**)中。 您最終的JSON程式碼應如下所示：
+1. 以類似方式新增&#x200B;**模型**&#x200B;和&#x200B;**層**&#x200B;屬性。
+1. 按一下屬性導覽中的&#x200B;**決定原則**&#x200B;以返回根層級。
+1. 透過&#x200B;**\_experience > decisioning > decisionitem >追蹤Token**&#x200B;路徑導覽至追蹤Token值，填入trackingToken屬性。
+1. 最後，將整段程式碼封裝在方括弧(**\[]**)中。 您最終的JSON程式碼應如下所示：
 
-![CBE回應中置於方括弧內的最終JSON程式碼](assets/create-the-journey-final-json-code.png)
+   ![CBE回應中置於方括弧內的最終JSON程式碼](assets/create-the-journey-final-json-code.png)
 
->[!WARNING]
->
->請務必在整個決定專案兩側加上括弧「\[ ]」。 困惑？ 請再次參閱步驟#20。
+   >[!WARNING]
+   >
+   >請務必在整個決定專案兩側加上括弧「\[ ]」。 困惑？ 請再次參閱步驟#20。
 
 
 
-&#x200B;21. 一旦所有專案都看上方的熒幕擷圖後，按一下右上方的&#x200B;**儲存並關閉**&#x200B;以儲存您的程式碼。 接著，您會返回「程式碼型體驗」頁面。
-&#x200B;22. 按一下歷程名稱旁的向後箭頭&#x200B;**\&lt;**&#x200B;圖示，您就會回到畫布。
+1. 一旦所有專案都看上方的熒幕擷圖後，按一下右上方的&#x200B;**儲存並關閉**&#x200B;以儲存您的程式碼。 接著，您會返回「程式碼型體驗」頁面。
+1. 按一下歷程名稱旁的向後箭頭&#x200B;**\&lt;**&#x200B;圖示，您就會回到畫布。
 
-從程式碼型體驗編輯器返回後的![歷程畫布](assets/create-the-journey-return-to-canvas.png)
+   從程式碼型體驗編輯器返回後的![歷程畫布](assets/create-the-journey-return-to-canvas.png)
 
-&#x200B;23. 按一下藍色的&#x200B;**儲存**&#x200B;按鈕，儲存CBE動作節點。 您的歷程現在看起來像這樣：
+1. 按一下藍色的&#x200B;**儲存**&#x200B;按鈕，儲存CBE動作節點。 您的歷程現在看起來像這樣：
 
-![歷程畫布顯示已完成的CBE動作節點](assets/create-the-journey-completed-canvas.png)
+   ![歷程畫布顯示已完成的CBE動作節點](assets/create-the-journey-completed-canvas.png)
 
-&#x200B;24. 歷程完成時，按一下右上方的藍色&#x200B;**發佈**&#x200B;按鈕，然後在確認方塊出現時再按一次&#x200B;**發佈**。 過了一兩會兒，您會看到您的歷程現在已上線！
+1. 歷程完成時，按一下右上方的藍色&#x200B;**發佈**&#x200B;按鈕，然後在確認方塊出現時再按一次&#x200B;**發佈**。 過了一兩會兒，您會看到您的歷程現在已上線！
 
 ![已發佈並上線的iPhone 17放棄瀏覽歷程](assets/create-the-journey-published-live.png)
 

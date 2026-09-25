@@ -4,13 +4,11 @@ description: 瞭解如何在協調的行銷活動中，使用不同的電子郵�
 doc-type: article
 solution: Experience Platform
 exl-id: e911a251-9f9f-484c-a2de-101b0fc2c417
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
-
 ---
-
 
 # 新增電子郵件活動
 
@@ -72,7 +70,7 @@ ht-degree: 0%
 
 ![含有[儲存並關閉]按鈕的確認對話方塊](assets/add-email-activities-save-and-close-dialog.png)
 
-&#x200B;11. 檢閱電子郵件屬性和動作，包括新增至電子郵件內文的文字。 按一下&#x200B;**向左箭頭**&#x200B;以導覽回促銷活動畫布
+1. 檢閱電子郵件屬性和動作，包括新增至電子郵件內文的文字。 按一下&#x200B;**向左箭頭**&#x200B;以導覽回促銷活動畫布
 
 ![導覽回促銷活動畫布](assets/add-email-activities-back-to-campaign-canvas.png)
 

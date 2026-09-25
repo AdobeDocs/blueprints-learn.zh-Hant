@@ -4,13 +4,11 @@ description: 使用資料元素和規則建立事件轉送屬性，以將傳入�
 doc-type: article
 solution: Experience Platform
 exl-id: eabd5f75-7706-4c96-982e-2512509bdc55
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
-
 ---
-
 
 # 建立屬性
 
@@ -208,7 +206,7 @@ ht-degree: 0%
 
 
 
-&#x200B;4. 完成後，您應該會看到動作已新增至規則。 按一下[儲存]以繼續。**&#x200B;**
+1. 完成後，您應該會看到動作已新增至規則。 按一下[儲存]以繼續。**&#x200B;**
 
 ![規則編輯器顯示已設定動作，並反白顯示[儲存]按鈕](assets/create-property-save-rule-button.png "儲存您的規則")
 

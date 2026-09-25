@@ -1,16 +1,14 @@
 ---
-title: 選項#1 — 使用對象來彙總
+title: 選項 #1 - using Audiences to aggregate
 description: 建立對計費使用事件和非標準化計畫資料使用對象內總和平均彙總的受眾，以啟用串流評估。
 doc-type: article
 solution: Experience Platform
 exl-id: da019755-07a3-406c-8ac7-7878325a14bf
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '813'
 ht-degree: 0%
-
 ---
-
 
 # 選項#1 — 使用對象來彙總
 
@@ -108,15 +106,15 @@ ht-degree: 0%
 
 
 
-&#x200B;5. 按一下「對象 — > Experience Platform」。 將「計費使用總和」>「140 GB」與「計費使用平均」>= 20 GB拖曳至「計畫名稱」旁。
+1. 按一下「對象 — > Experience Platform」。 將「計費使用總和」>「140 GB」與「計費使用平均」>= 20 GB拖曳至「計畫名稱」旁。
 
    ![將計費使用對象拖曳到計畫名稱旁](assets/option-1-using-audiences-to-aggregate-20-gb-next-to-plan-name.png)
 
 
 
-&#x200B;6. 將虛擬程式碼複製到說明中
+1. 將虛擬程式碼複製到說明中
 
-&#x200B;7. 勾選此專案可以是串流。 **它不能是串流**。 進行一些變更：
+1. 勾選此專案可以是串流。 **它不能是串流**。 進行一些變更：
 
    >[!NOTE]
    >
@@ -126,7 +124,7 @@ ht-degree: 0%
 
 
 
-&#x200B;8. 將&#x200B;**計畫名稱（計畫名稱）**&#x200B;取代為： XDM個人設定檔> Devbc >計畫詳細資料> **計畫名稱**
+1. 將&#x200B;**計畫名稱（計畫名稱）**&#x200B;取代為： XDM個人設定檔> Devbc >計畫詳細資料> **計畫名稱**
 
    ![以非正規化計畫名稱欄位取代計畫名稱（計畫名稱）](assets/option-1-using-audiences-to-aggregate-replace-denormalized-plan-name.png)
 
@@ -142,7 +140,7 @@ ht-degree: 0%
 
 
 
-&#x200B;9. 驗證您現在是否可以將它儲存為串流。 將對象儲存為&quot;*計費資料使用量高但無Ultimate計畫*&quot;
+1. 驗證您現在是否可以將它儲存為串流。 將對象儲存為&quot;*計費資料使用量高但無Ultimate計畫*&quot;
 
 >[!NOTE]
 >
