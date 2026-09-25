@@ -1,0 +1,141 @@
+---
+title: '[!DNL Journey Optimizer]'
+description: 使用 Adobe Experience Platform 做為串流資料、客戶個人資料和分眾的中心，執行觸發式訊息和體驗。
+solution: Journey Optimizer
+exl-id: 97831309-f235-4418-bd52-28af815e1878
+TQID: https://experienceleague.adobe.com/Rfi-0QD8bQpD-Zp2CDpzqxrge0yVs2CFt5mDKibNogI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: addf009e-030a-4310-8534-776a3e62ed48
+    internal-label: Customer lifecycle
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
+  - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+    internal-label: Audience segmentation
+source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 15%
+---
+# [!DNL Journey Optimizer]
+
+Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原生應用程式，可跨多個管道即時和排程協調客戶歷程。 它支援事件導向觸發器、受眾細分和決策服務，透過電子郵件、簡訊、推播、網頁和應用程式內傳訊提供個人化體驗。 它可整合傳入和傳出系統，允許跨客戶生命週期進行統一的受眾狀態管理和情境式參與。
+
+此概觀概述應用程式的技術功能，並深入探討構成[!DNL Journey Optimizer]的各種架構元件。
+
+<br>
+
+## 使用案例
+
+>[!BEGINTABS]
+>[!TAB 歷程（事件導向，即時）]
+
+- **放棄復原：**&#x200B;當使用者透過電子郵件、推播或應用程式內放棄購物車、表單或sessionTuns¬a€}時，觸發個人化訊息。
+- **新使用者註冊：**&#x200B;新使用者註冊新帳戶偏好設定、相關促銷活動或權益後，請立即與他們互動
+- **異動訊息：**&#x200B;使用事件觸發器傳送即時確認、警示或更新（例如已送出訂單、重設密碼）。
+- **關聯式鎖定目標：**&#x200B;根據使用者的訊號與位置即時與使用者通訊，以協助引導和引導其體驗
+- **關聯式向上銷售/交叉銷售：**&#x200B;根據即時設定檔屬性和最近的互動，提供個人化優惠。
+
+>[!TAB 行銷活動協調流程（已排程，品牌已啟動）]
+
+- **促銷活動**：針對產品啟動、季節性優惠或銷售活動，啟動多步驟、多管道行銷活動。
+- **生命週期行銷**：自動循環行銷活動，例如生日訊息、續約提醒或忠誠度里程碑。
+- **以對象為基礎的Funnel推送**：根據商業邏輯或CRM屬性，將對象細分並推送到結構化的行銷活動中。
+- **電子報與內容發佈**：透過電子郵件和行動裝置，排程並傳遞個人化內容給目標對象。
+- **重新參與行銷活動**：識別休眠的使用者，並根據非使用狀態臨界值將其重新匯入參與流程。
+
+>[!ENDTABS]
+
+<br>
+
+## 架構
+
+![Adobe Journey Optimizer的參考架構](images/ajo-architecture.png){width="1000" zoomable="yes"}
+
+<br>
+
+## 範例情境
+
+| 狀況 | 說明 |
+| :-- | :-- |
+| [個歷程](journey-optimizer-journeys.md) | Adobe Journey Optimizer中的AJO歷程是由即時事件或受眾區段觸發的自動個人化客戶體驗，可讓行銷人員跨電子郵件、簡訊和推播通知等通道傳送相關訊息。 |
+| [行銷活動協調流程](journey-optimizer-campaigns.md) | AJO Campaign Orchestration可讓行銷人員使用即時資料和對象深入分析，設計和執行個人化的跨頻道行銷活動。 它支援動態目標定位、訊息傳送和歷程邏輯，以最佳化跨電子郵件、簡訊、推播和自訂通道的客戶參與。 |
+
+<br>
+
+## 整合模式
+
+| 整合 | 說明 | 技術考量 |
+| :-- | :-- | :-- |
+| [協力廠商訊息](3rd-party-messaging.md) | 示範Adobe [!DNL Journey Optimizer]如何與協力廠商傳訊平台整合，以協調及提供個人化的客戶通訊。 | <ul><li>協力廠商系統必須支援&#x200B;**持有人權杖驗證**</li><li>**由於多租使用者架構，不支援**&#x200B;靜態IP。</li><li>請注意，第三方系統上的&#x200B;**API速率限制**；客戶可能需要購買額外的容量來處理源自&#x200B;**Adobe Journey Optimizer**&#x200B;的流量。</li><li>訊息裝載或傳遞邏輯中不支援&#x200B;**決定管理**。</li></ul> |
+| 使用Adobe Campaign v8](../campaign-v8/ajo-and-campaign-v8.md)的[[!DNL Journey Optimizer]  | 示範Adobe [!DNL Journey Optimizer]如何整合Adobe Campaign v8的交易式傳訊功能，以執行最終訊息傳送。 | <ul><li>沒有訊息限制。 每5分鐘最多4,000則訊息。</li><li>僅支援事件起始歷程的</li><li>Campaign傳送的訊息不支援決定管理</li></ul> |
+
+<br>
+
+## 先決條件
+
+Adobe [!DNL Experience Platform]：
+
+- 必須先在系統中設定結構描述和資料集，然後才能設定[!DNL Journey Optimizer]資料來源
+- 針對XDM體驗事件類別型結構，當您想要觸發非規則型事件的事件時，請新增「協調流程eventID」欄位群組
+- 針對XDM個別設定檔類別型結構描述，請新增「設定檔測試詳細資料」欄位群組，以便載入測試設定檔以與[!DNL Journey Optimizer]搭配使用
+
+<br>
+
+電子郵件：
+
+- 必須準備好要用於訊息傳送的子網域
+- 子網域可以完全委派給 Adobe（建議），或 CNAME 可用來指向 Adobe 專用的 DNS 伺服器（自訂）
+- 每個子網域都需要 Google TXT 記錄，以確保良好的傳遞能力
+
+<br>
+
+行動推播：
+
+- 客戶必須有可建立應用程式的行動裝置開發人員
+- Adobe Experience Platform Mobile SDK
+
+<br>
+
+## 護欄
+
+[[!DNL Journey Optimizer]護欄產品連結](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails.html)
+
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/deployment/guardrails.html)
+
+## 相關文件
+
+- [[!DNL Experience Platform]檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
+- [[!DNL Experience Platform]標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
+- [[!DNL Experience Platform Mobile SDK]檔案](https://experienceleague.adobe.com/docs/mobile.html)
+- [[!DNL Journey Optimizer]檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+- [[!DNL Journey Optimizer]產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

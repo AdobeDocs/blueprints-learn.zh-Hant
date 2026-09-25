@@ -1,14 +1,14 @@
 ---
 user-guide-title: 客戶體驗協調業務目標、使用案例、架構圖表和藍圖
 breadcrumb-title: 使用案例和藍圖
-user-guide-description: 探索Adobe Experience Platform和應用程式的主要業務目標、使用案例模式及產業使用案例。 視覺化架構圖表和藍圖提供系統整合、資料流程和解決方案設計的技術參考，將業務價值連結至實作。
+user-guide-description: 探索Adobe Experience Platform和應用程式的主要業務目標、使用案例模式及產業使用案例。 視覺化架構圖表和藍圖提供系統整合、資料流程和解決方案設計的技術參考，以"將業務價值與實作連結。
 product: Adobe Experience Platform
 mini-toc-levels: 3
 role: Developer, User
 nudge: orange
-source-git-commit: 7f0b624616480cf563142c08eb0598d1dd55d551
+source-git-commit: 7349d665e8bea0dfff5d088e2c3a56f33e5924cb
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1043'
 ht-degree: 14%
 ---
 
@@ -89,65 +89,39 @@ ht-degree: 14%
   + [電信](/help/blueprints/industry-use-cases/telecommunications/telecommunications-overview.md)
   + [技術](/help/blueprints/industry-use-cases/technology/technology-overview.md)
   + [旅遊業及旅館業](/help/blueprints/industry-use-cases/travel-hospitality/travel-hospitality-overview.md)
-+ 架構圖與藍圖{#architecture-diagrams}
-  + 架構概述{#architecture-overview}
-    + [Experience Cloud](/help/blueprints/experience-platform/experience-cloud.md)
-    + [Experience Platform與應用程式](/help/blueprints/experience-platform/platform-applications.md)
-    + [Experience Platform資料流程](/help/blueprints/experience-platform/platform-data-flow.md)
-    + [Experience Platform護欄](/help/blueprints/experience-platform/guardrails.md)
-    + 部署{#deployment}
-      + [Experience Platform Web SDK &amp; [!DNL Edge Network]](/help/blueprints/experience-platform/deployment/websdk.md)
-      + [應用程式 SDK](/help/blueprints/experience-platform/deployment/appsdk.md)
-  + 對象與個人資料啟用{#audience-activation}
-    + [以裝置為基礎 — 使用Audience Manager鎖定匿名受眾](/help/blueprints/audience-activation/audience-manager.md)
-    + Real-Time Customer Data Platform (RTCDP) {#known-customer-audience-activation}
-      + [社交和廣告目的地的受眾啟用](/help/blueprints/audience-activation/advertising-activation.md)
-      + [企業目的地Blueprint的對象和設定檔啟用](/help/blueprints/audience-activation/enterprise-destinations.md)
-      + [支援和銷售情境的即時設定檔存取](/help/blueprints/audience-activation/customer-activity.md)
-      + [網頁和行動個人化的即時邊緣設定檔存取](/help/blueprints/audience-activation/real-time-lookup.md)
-      + [透過區段比對進行對象共同作業](/help/blueprints/audience-activation/segment-match.md)
-      + [使用Target的已知客戶個人化](/help/blueprints/audience-activation/rtcdp-target.md)
-      + [個人檔案擴充的自訂資料科學](/help/blueprints/audience-activation/data-science.md)
-  + B2B啟用與行銷{#b2b-activation}
-    + [概觀](/help/blueprints/b2b/overview.md)
-    + [B2B啟用](/help/blueprints/b2b/b2bactivation.md)
-    + [B2B對象和設定檔啟用](/help/blueprints/b2b/b2b-audience-profile-activation.md)
-    + [B2B帳戶啟用](/help/blueprints/b2b/b2b-account-activation.md)
-    + [購買群組式行銷和歷程管理](/help/blueprints/b2b/b2b-buying-group-journeys.md)
-    + [使用Marketo資料的B2B歷程](/help/blueprints/b2b/b2b-journeys-with-marketo.md)
-    + [B2B付費媒體控制器](/help/blueprints/b2b/ajo-b2b-paid-media-controller.md)
-    + Marketo Engage與Workfront整合Blueprint{#marketo-engage-and-workfront-integration-blueprint}
-      + [概觀](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md)
-      + [攝入與建立](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/intake-and-create.md)
-      + [檢閱和核准](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/review-and-approve-blueprint.md)
-      + [客戶成功案例](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/customer-success-stories.md)
-  + Customer Journey Analytics{#customer-journey-analytics}
-    + [概觀](/help/blueprints/customer-journey-analytics/overview.md)
-    + [B2B Customer Journey Analytics](/help/blueprints/customer-journey-analytics/b2b-cja.md)
-    + [將CJA對象共用至RTCDP](/help/blueprints/customer-journey-analytics/cja-rtcdp.md)
-    + [CJA 與 Journey Optimizer](/help/blueprints/customer-journey-analytics/cja-ajo.md)
-    + [資料分析與情報](/help/blueprints/customer-journey-analytics/analysis.md)
++ 架構圖{#architecture-diagrams}
+  + [概觀](/help/blueprints/architecture-diagrams/overview.md)
+  + 架構概述{#architecture-overviews}
+    + [概觀](/help/blueprints/architecture-diagrams/architecture-overviews/overview.md)
+    + [Adobe Experience Cloud](/help/blueprints/architecture-diagrams/architecture-overviews/experience-cloud.md)
+    + [Adobe Experience Platform與應用程式](/help/blueprints/architecture-diagrams/architecture-overviews/platform-applications.md)
+    + [Adobe Experience Platform資料流程](/help/blueprints/architecture-diagrams/architecture-overviews/platform-data-flow.md)
+    + [Adobe Experience Platform與應用程式護欄](/help/blueprints/architecture-diagrams/architecture-overviews/guardrails.md)
+    + [Adobe Experience Platform Web SDK &amp; [!DNL Edge Network]](/help/blueprints/architecture-diagrams/architecture-overviews/websdk.md)
+  + 對象與個人資料啟用{#audience-profile-activation}
+    + [概觀](/help/blueprints/architecture-diagrams/audience-profile-activation/overview.md)
+    + [Adobe Real-Time CDP啟用](/help/blueprints/architecture-diagrams/audience-profile-activation/rtcdp-activation.md)
+    + [即時Edge設定檔存取](/help/blueprints/architecture-diagrams/audience-profile-activation/real-time-lookup.md)
+    + [Adobe Real-Time CDP與Adobe Target整合](/help/blueprints/architecture-diagrams/audience-profile-activation/rtcdp-target-integration.md)
+  + B2B啟用與行銷{#b2b-activation-marketing}
+    + [概觀](/help/blueprints/architecture-diagrams/b2b-activation-marketing/overview.md)
+    + [B2B對象和設定檔啟用](/help/blueprints/architecture-diagrams/b2b-activation-marketing/b2b-audience-profile-activation.md)
+    + [B2B帳戶啟用](/help/blueprints/architecture-diagrams/b2b-activation-marketing/b2b-account-activation.md)
+  + 客戶分析{#customer-insights}
+    + [概觀](/help/blueprints/architecture-diagrams/customer-insights/overview.md)
+    + [Adobe Customer Journey Analytics](/help/blueprints/architecture-diagrams/customer-insights/cja.md)
+    + [Adobe Customer Journey Analytics與Adobe Journey Optimizer整合](/help/blueprints/architecture-diagrams/customer-insights/cja-ajo-integration.md)
   + 客戶歷程{#customer-journeys}
-    + [概觀](/help/blueprints/customer-journeys/overview.md)
+    + [概觀](/help/blueprints/architecture-diagrams/customer-journeys/overview.md)
     + Journey Optimizer{#journey-optimizer}
-      + [Journey Optimizer](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md)
-      + [AJO歷程](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
-      + [AJO行銷活動](/help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
-      + [協力廠商訊息](/help/blueprints/customer-journeys/journey-optimizer/3rd-party-messaging.md)
-    + 決策管理{#decision-management}
-      + [概觀](/help/blueprints/customer-journeys/decision-management/decision-management-overview.md)
-      + [Edge上的決定管理](/help/blueprints/customer-journeys/decision-management/decision-management-edge.md)
-      + [中樞的決策管理](/help/blueprints/customer-journeys/decision-management/decision-management-hub.md)
+      + [Journey Optimizer](/help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md)
+      + [AJO歷程](/help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-journeys.md)
+      + [AJO行銷活動](/help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-campaigns.md)
+      + [協力廠商訊息](/help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/3rd-party-messaging.md)
     + Campaign v8{#campaign-v8}
-      + [Campaign v8](/help/blueprints/customer-journeys/campaign-v8/campaign-v8-overview.md)
-      + [Real-Time CDP與Adobe [!DNL Campaign] v8](/help/blueprints/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)
-      + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
-    + 已棄用的Blueprint{#deprecated-blueprints}
-      + Campaign Standard{#campaign-standard}
-        + [[!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard){target="_blank"}
-        + [Real-Time CDP與Adobe [!DNL Campaign Standard]](https://experienceleague.adobe.com/zh-hant/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/get-started-sources-destinations)
-      + Campaign v7{#campaign-v7}
-        + [Campaign v7](/help/blueprints/customer-journeys/campaign-v7/campaign-v7-overview.md)
+      + [Campaign v8](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/campaign-v8-overview.md)
+      + [Real-Time CDP與Adobe [!DNL Campaign] v8](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)
+      + [Journey Optimizer 搭配 Adobe Campaign v8](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)
 
 + 實作實驗室{#labs}
   + [實作實驗室概觀](/help/blueprints/labs/overview.md)

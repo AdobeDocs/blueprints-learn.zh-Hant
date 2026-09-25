@@ -1,9 +1,9 @@
 ---
 name: architecture-diagram-page-builder
 description: 為Adobe Experience Platform Blueprint存放庫建立新架構圖表頁面的指南。 新增新的頂層架構圖、整合架構頁面或應用程式架構概觀時，請使用此技能。 架構頁面涵蓋頂層AEP和應用程式架構以及主要整合點，而非深入的使用案例（屬於使用案例模式產生器）。 處理完整的工作流程：收集頁面資訊、產生Markdown檔案、將其放置在正確的主題資料夾中，以及更新TOC.md。
-source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
+source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1568'
 ht-degree: 1%
 ---
 
@@ -119,8 +119,8 @@ ht-degree: 1%
    - 說明圖表用途的1-2個句子
    - 使用標準慣例嵌入影像：
 
-     ```html
-     <img src="assets/{filename}" alt="{Alt Text}" style="border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;" class="modal-image" />
+     ```markdown
+     ![{Alt Text}](assets/{filename}){width="1000" zoomable="yes"}
      ```
 
 6. **`## Use case patterns supported`** — 專案符號清單。 每個專案符號：
@@ -147,12 +147,11 @@ ht-degree: 1%
 
 | 主題資料夾 | TOC子區段 |
 | --- | --- |
-| `experience-platform/` | `+ Architecture overviews{#architecture-overview}` |
-| `experience-platform/deployment/` | `+ Deployment{#deployment}` （架構概觀的子區段） |
-| `audience-activation/` | `+ Audience & Profile Activation{#audience-activation}` |
-| `b2b/` | `+ B2B activation & marketing{#b2b-activation}` |
-| `customer-journey-analytics/` | `+ Customer Journey Analytics{#customer-journey-analytics}` |
-| `customer-journeys/` | `+ Customer journeys{#customer-journeys}` |
+| `architecture-diagrams/architecture-overviews/` | `+ Architecture overviews{#architecture-overviews}` |
+| `architecture-diagrams/audience-profile-activation/` | `+ Audience & Profile Activation{#audience-profile-activation}` |
+| `architecture-diagrams/b2b-activation-marketing/` | `+ B2B activation & marketing{#b2b-activation-marketing}` |
+| `architecture-diagrams/customer-insights/` | `+ Customer Insights{#customer-insights}` |
+| `architecture-diagrams/customer-journeys/` | `+ Customer journeys{#customer-journeys}` |
 
 專案格式（4空格縮排+ `+`）：
 
@@ -172,7 +171,7 @@ ht-degree: 1%
 
 2. **使用案例模式連結** — 檔案中的每個模式連結都指向`/help/blueprints/use-case-patterns/`下的現有Markdown檔案。 使用工作區搜尋或檔案讀取來確認每個目標都存在。
 
-3. **Experience League連結** — 抽查`## Further reading`區段中的每個URL是否都以`https://experienceleague.adobe.com/zh-hant`開頭。
+3. **Experience League連結** — 抽查`## Further reading`區段中的每個URL是否都以`https://experienceleague.adobe.com/`開頭。
 
 4. **TOC專案位置** — 新專案位於正確的子區段中，使用4個空格縮排，而且路徑與產生的檔案位置完全相符。
 
@@ -186,6 +185,6 @@ ht-degree: 1%
 
 - 請一律遵循現有頁面的慣例，在內文和專案符號中使用`[!DNL ...]`語法作為Adobe產品名稱。
 - 架構圖表通常是SVG （偏好使用清晰度和縮放功能），但點陣來源圖稿可以接受PNG。
-- 需要`<img>`內嵌內嵌樣式字串(`border:1px solid #4a4a4a; width:90%; margin-bottom: 15px;`)和`class="modal-image"` — 它們會啟用Experience League強制回應縮放互動。
-- 如果使用者正在建立全新主題資料夾尚不存在的頁面，請警告他們TOC.md在`+ Architecture Diagrams and Blueprints{#architecture-diagrams}`下需要新的頂層子區段。 將此作為單獨的步驟處理，並取得使用者的明確核准。
+- 使用Markdown影像搭配描述性替代文字、相對`assets/{filename}`路徑以及圖表縮放`{width="1000" zoomable="yes"}`。
+- 如果使用者正在建立尚未存在的全新主題資料夾頁面，請停止並改用`architecture-diagram-category-builder`技能 — 它會處理命名慣例執行、TOC.md子區段建立、類別`overview.md`和登陸頁面卡片格線。 請勿在此技能範圍內建立新的主題資料夾。
 - 如果架構圖表大量記錄&#x200B;*單一使用案例端對端* （包含KPI、業務目標、功能），請將使用者重新導向至`use-case-pattern-builder` — 這不是架構頁面。
