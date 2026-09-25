@@ -1,21 +1,20 @@
 ---
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 1%
-
+source-wordcount: '630'
+ht-degree: 4%
 ---
 # Blueprint檔案參考 — 詳細指南
 
 ## 檔案型別
 
-| 型別 | 用途 | 位置/範例 |
+| 類型 | 用途 | 位置/範例 |
 |------|---------|--------------------|
 | **總覽/集線器** | 介紹產品或區域；情境藍圖的連結 | e.g. `overview.md`, `journey-optimizer-overview.md` |
 | **情境藍圖** | 單一使用案例：架構、步驟、護欄 | e.g. `real-time-lookup.md`, `journey-optimizer-journeys.md` |
 | **目錄** | 導覽；請勿作為內容範本使用 | `help/blueprints/TOC.md` |
 
-&#x200B;---
+---
 
 ## 完整章節參考資料
 
@@ -46,7 +45,7 @@ ht-degree: 1%
 - **藍圖藍圖**&#x200B;或&#x200B;**整合模式**：包含藍圖藍圖的藍圖名稱、簡短說明和連結的表格。
 - **必要條件**，**護欄**，**相關檔案**：與上述內容相同；請保持簡潔。
 
-&#x200B;---
+---
 
 ## Adobe Experience League — 代理程式指引
 
@@ -65,7 +64,7 @@ ht-degree: 1%
 | 內容類型 | 基礎URL | 範例路徑 |
 |--------------|----------|--------------|
 | Experience Platform檔案 | `https://experienceleague.adobe.com/docs/experience-platform/` | `.../profile/home.html`, `.../destinations/catalog/...` |
-| Experience League (en) | `https://experienceleague.adobe.com/zh-hant/docs/` | 與`/en/`的上述結構相同。 |
+| Experience League (en) | `https://experienceleague.adobe.com/en/docs/` | 與`/en/`的上述結構相同。 |
 | Journey Optimizer | `https://experienceleague.adobe.com/docs/journey-optimizer/` | `.../using/get-started/guardrails.html` |
 | Web SDK | `https://experienceleague.adobe.com/docs/experience-platform/web-sdk/` | `.../home.html`, `.../commands/command-responses.html` |
 | Edge Network伺服器API | `https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/` | `.../overview.html`, `.../guardrails.html` |
@@ -77,7 +76,7 @@ ht-degree: 1%
 
 ### Markdown中的連結格式
 
-- **描述性連結文字**： `[Create schemas](https://experienceleague.adobe.com/zh-hant...)`不是「按一下這裡」。
+- **描述性連結文字**： `[Create schemas](https://experienceleague.adobe.com/...)`不是「按一下這裡」。
 - **文字中的產品名稱**：使用每個Adobe樣式的`[!DNL Product Name]` （例如`[!DNL Real-time Customer Profile]`）。
 - **外部連結**：只有在範本或管道需要時才新增`{target="_blank"}` （檢查存放庫中的現有Blueprint）。
 
@@ -98,19 +97,19 @@ ht-degree: 1%
 ## Related documentation
 
 ### Destination configurations
-* [Custom Personalization Connection](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/custom-personalization)
-* [Activate audiences to edge personalization destinations](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
+* [Custom Personalization Connection](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/custom-personalization)
+* [Activate audiences to edge personalization destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)
 
 ### SDK documentation
-* [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=zh-Hant)
-* [Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)
+* [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html)
+* [Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)
 
 ### Profile and segmentation
-* [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
-* [Profile Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
+* [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Profile Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html)
 ```
 
-&#x200B;---
+---
 
 ## 存放庫與目錄
 
@@ -118,13 +117,13 @@ ht-degree: 1%
 - **Assets**：與Blueprint共同找到（例如`assets/`、`images/`）或在共用資料夾中（例如`experience-platform/assets/`）。
 - **目錄**：新增、重新命名或移動Blueprint頁面時編輯`help/blueprints/TOC.md`。 保留frontmatter (`user-guide-title`， `breadcrumb-title`， `user-guide-description`， `product`， `mini-toc-levels`， `role`)和`+`階層。
 
-&#x200B;---
+---
 
 ## 此存放庫中的參考範例
 
-- **情境藍圖（長格式）**： `help/blueprints/audience-activation/real-time-lookup.md`
-- **索引標籤和資料表的概觀/中心**： `help/blueprints/customer-journeys/journey-optimizer/journey-optimizer-overview.md`
-- **以護欄為中心**： `help/blueprints/experience-platform/guardrails.md`
+- **情境藍圖（長格式）**： `help/blueprints/architecture-diagrams/audience-profile-activation/real-time-lookup.md`
+- **索引標籤和資料表的概觀/中心**： `help/blueprints/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview.md`
+- **以護欄為中心**： `help/blueprints/architecture-diagrams/architecture-overviews/guardrails.md`
 - **導覽**： `help/blueprints/TOC.md`，`help/blueprints/overview.md`
 
 使用這些做為區段順序、Frontmatter、圖表放置和Experience League連結使用方式的模式。

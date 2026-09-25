@@ -4,13 +4,11 @@ description: 透過登入和退出計數、電子郵件傳遞報告以及步驟�
 doc-type: article
 solution: Experience Platform
 exl-id: 2e6e73e5-6bd8-4dde-ba06-29b67f927131
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
-
 ---
-
 
 # 驗證歷程
 
@@ -55,7 +53,7 @@ ht-degree: 0%
 
 3個外部事件
 
-&#x200B;5. 按一下&#x200B;**電子郵件**&#x200B;標籤（在左側邊欄上）
+1. 按一下&#x200B;**電子郵件**&#x200B;標籤（在左側邊欄上）
    - **電子郵件 — 傳送效能**
      - 您看到&#x200B;**已傳遞**&#x200B;及&#x200B;**已傳送**&#x200B;的某些值（計數將取決於您傳入的事件數、任何錯誤等）
      - 希望您沒有錯誤（除非您先前遇到一些問題）
@@ -64,7 +62,7 @@ ht-degree: 0%
 
    ![電子郵件索引標籤顯示傳送效能和統計資料](assets/validate-journey-email-tab-sending-performance.png)
 
-&#x200B;6. 前往檢查您的&#x200B;**電子郵件收件匣**，檢視您是否收到電子郵件（如下所示）
+1. 前往檢查您的&#x200B;**電子郵件收件匣**，檢視您是否收到電子郵件（如下所示）
    - *，*&#x200B;您的訂單已送出ETA： *10/17/2026*&#x200B;追蹤號碼： *051009364*
 
    >[!NOTE]
@@ -81,7 +79,7 @@ ht-degree: 0%
 
 
 
-&#x200B;7. *在30-60分鐘之後*，您甚至可以在資料湖中使用下列專案檢查您的資料集： **查詢** -> **建立查詢** -> **複製/貼上SQL** -> **執行**
+1. *在30-60分鐘之後*，您甚至可以在資料湖中使用下列專案檢查您的資料集： **查詢** -> **建立查詢** -> **複製/貼上SQL** -> **執行**
 
 >[!NOTE]
 >
@@ -119,7 +117,7 @@ limit 50
 
 >[!NOTE]
 >
->若想知道每個欄位的意思，請檢視AJO結構描述字典，並將下拉式清單變更為「歷程步驟事件」結構描述： [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=zh-Hant](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=zh-Hant)
+>若想知道每個欄位的意思，請檢視AJO結構描述字典，並將下拉式清單變更為「歷程步驟事件」結構描述： [https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en)
 
 
 

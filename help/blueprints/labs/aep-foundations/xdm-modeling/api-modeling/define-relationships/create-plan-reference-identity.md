@@ -4,7 +4,7 @@ description: 使用結構描述登入API在查詢結構描述上建立參考身�
 doc-type: article
 solution: Experience Platform
 exl-id: b3b8f480-af3b-4bf8-b74e-3842f59691b6
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -51,9 +51,9 @@ ht-degree: 0%
 
 
 
-&#x200B;3. 繼續使用`Save`按鈕前請先儲存您的請求
+1. 繼續使用`Save`按鈕前請先儲存您的請求
 
-&#x200B;4. 按一下`Send`按鈕執行API
+1. 按一下`Send`按鈕執行API
 
 您現在看到如下的`201 Created`回應
 

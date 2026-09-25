@@ -1,13 +1,12 @@
 ---
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '665'
 ht-degree: 0%
-
 ---
 # 範圍護欄：架構頁面與使用案例模式頁面
 
-Blueprint網站將&#x200B;**架構圖表頁面**&#x200B;與&#x200B;**使用案例模式頁面**&#x200B;分開，因為它們滿足不同的讀取器需求。 本檔案會定義內容所屬的位置，以及如何處理跨越邊界的內容。
+此網站會將&#x200B;**架構圖表頁面**&#x200B;與&#x200B;**使用案例模式頁面**&#x200B;分開，因為它們滿足不同的讀取器需求。 本檔案會定義內容所屬的位置，以及如何處理跨越邊界的內容。
 
 ## 核心差異
 
@@ -18,7 +17,7 @@ Blueprint網站將&#x200B;**架構圖表頁面**&#x200B;與&#x200B;**使用案�
 
 | 類別 | 範例 |
 | --- | --- |
-| 頂層架構 | AEP和應用程式、Experience Cloud市場結構、集線器與Edge拓撲的概觀圖表 |
+| 頂層架構 | AEP和應用程式、Experience Cloud Marketecture、中樞與邊緣拓撲的概觀圖表 |
 | 系統資料流程 | 即時與批次擷取路徑、中樞與邊緣之間的設定檔同步、查閱與啟用流程 |
 | 整合點 | 其中AEP與AJO、CJA、Target、Campaign、Marketo、Workfront整合；SDK邊界；API介面 |
 | 部署拓撲 | Web SDK與Mobile SDK部署、伺服器端轉送、邊緣節點放置的比較 |

@@ -1,16 +1,14 @@
 ---
-title: 建立受眾#3
+title: 建立對象 #3
 description: 建立iPhone 14產品頁面訪客的受眾，並使用受眾來與其他受眾結合，以啟用串流啟用。
 doc-type: article
 solution: Experience Platform
 exl-id: 999f9a20-1655-4eab-a796-a19d69a06879
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1061'
 ht-degree: 0%
-
 ---
-
 
 # 建立受眾#3
 
@@ -134,17 +132,17 @@ ht-degree: 0%
 
 
 
-&#x200B;5. 提供說明。
+1. 提供說明。
 
-&#x200B;6. 變更為串流
+1. 變更為串流
 
-&#x200B;7. 儲存為&quot;*造訪的iPhone 14頁面但不擁有/訂購*&quot;
+1. 儲存為&quot;*造訪的iPhone 14頁面但不擁有/訂購*&quot;
 
-&#x200B;8. 按一下藍色按鈕&#x200B;**啟用受眾**&#x200B;到目的地
+1. 按一下藍色按鈕&#x200B;**啟用受眾**&#x200B;到目的地
 
-&#x200B;9. 選取&#x200B;**串流DEP Webhook**&#x200B;目的地，然後按[下一步]
+1. 選取&#x200B;**串流DEP Webhook**&#x200B;目的地，然後按[下一步]
 
-&#x200B;10. 按一下「下一步」並完成
+1. 按一下「下一步」並完成
 
 >[!NOTE]
 >
@@ -158,7 +156,7 @@ ht-degree: 0%
 >
 >出於一些原因，我們將簡單的需求分割成許多對象。 此需求適用於串流，但這兩項需求會將我們的對象轉換為批次。 如需串流適用性規則的詳細資訊，請參閱此處：
 >
->[https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=zh-Hant](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=zh-Hant)
+>[https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html)
 
 >[!NOTE]
 >
@@ -168,7 +166,7 @@ ht-degree: 0%
 >
 >我們需要瞭解，在對象中使用對象時，AEP將會嘗試在必要時進行排序。 在有些邊緣案例中這是不可能的，例如如果使用「對象」，則每24小時會進行設定檔取消資格。
 >
->[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535?profile.language=zh-Hant](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535?profile.language=zh-Hant)
+>[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535)
 
 
 

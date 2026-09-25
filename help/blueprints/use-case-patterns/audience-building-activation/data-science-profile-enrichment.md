@@ -1,15 +1,13 @@
 ---
 title: 自訂 Profile Enrichment 藍圖的資料科學
-description: 瞭解如何將資料科學的深入分析內嵌至 [!DNL Experience Platform] ，以豐富即時客戶個人檔案。
+description: 瞭解如何將資料科學的深入分析內嵌至[!DNL Experience Platform]，以豐富即時客戶個人檔案。
 solution: Data Collection
 kt: 7203
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+source-git-commit: 0c41931afad32e806d57271439e31dda84a4b2ca
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 64%
-
+source-wordcount: '421'
+ht-degree: 63%
 ---
-
 # 個人檔案擴充藍圖的自訂資料科學
 
 個人資料擴充藍圖的自訂資料科學說明如何使用資料來訓練、部署和評分模型，從資料科學和機器學習工具提供機器學習對[!DNL Experience Platform]和[!DNL Real-Time Customer Data Platform]的深入分析。
@@ -22,13 +20,9 @@ ht-degree: 64%
 * 使用模型驅動的洞察和屬性豐富[!UICONTROL 即時客戶輪廓]，以進行更細緻的個人化和最佳的歷程。
 * 對模型訓練和評分以確定客戶洞察，例如客戶期限值、轉換或流失傾向性、產品和內容相似性及參與分數。
 
-## 架構
-
-<img src="/help/blueprints/audience-activation/assets/data_science.svg" alt="為豐富個人資料自訂資料科學藍圖的參考架構" style="width:90%; border:1px solid #4a4a4a" />
-
 ## 護欄
 
-* 如需將資料科學結果擷取到[!DNL Experience Platform]的詳細護欄和端對端延遲，以及即時客戶設定檔，請參閱[部署護欄檔案](/help/blueprints/experience-platform/guardrails.md)中參考的資料擷取護欄和延遲圖表。
+* 如需將資料科學結果擷取到[!DNL Experience Platform]的詳細護欄和端對端延遲，以及即時客戶設定檔，請參閱[部署護欄檔案](/help/blueprints/architecture-diagrams/architecture-overviews/guardrails.md)中參考的資料擷取護欄和延遲圖表。
 
 ## 實施考量
 

@@ -1,16 +1,15 @@
 ---
-source-git-commit: 7511cc0e5c099d5d3ee1275a374cd9ffdc972335
+source-git-commit: c766cd3153efce4635089d008daf3eb426eb7a24
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
-
+source-wordcount: '690'
+ht-degree: 1%
 ---
 # Blueprint評估規則
 
 此規則會套用至「架構圖表和藍圖」區段下的每個檔案
 / [TOC.md](../help/blueprints/TOC.md) （第76到133行），以建議每個藍圖是否應成為
 **使用案例模式**、**架構圖表** (兩者皆有（**分割**）)，或標籤為已選取
-現有模式的&#x200B;**重複**。
+現有模式的**重複**。
 
 套用此規則的輸出為[blueprint-audit.md](blueprint-audit.md)。
 
@@ -21,7 +20,7 @@ ht-degree: 0%
 標準形狀： `.claude/skills/use-case-pattern-builder/references/pattern-template.md`。
 - **架構圖** — 代表系統功能的視覺化圖表，
 整合和資料流程。 最簡單的敘述；圖表是成品。
-標準範例： [platform-data-flow.md](../help/blueprints/experience-platform/platform-data-flow.md)。
+標準範例： [platform-data-flow.md](../help/blueprints/architecture-diagrams/architecture-overviews/platform-data-flow.md)。
 
 ## 得分
 
@@ -42,11 +41,11 @@ ht-degree: 0%
 
 ### 圖表訊號（每個= +1圖表）
 
-&#x200B;6. **架構/資料流程影像出現** — `.svg`、`.png`或`.jpg`顯示系統拓撲，
+6. **架構/資料流程影像出現** — `.svg`、`.png`或`.jpg`顯示系統拓撲，
 資料流程或整合箭頭。
-&#x200B;7. **系統間整合拓撲、部署圖形或護欄** — 說明如何進行
+7. **系統間整合拓撲、部署圖形或護欄** — 說明如何進行
 元件連線，資料存留於此處、部署模式（邊緣與中樞）或容量限制。
-&#x200B;8. **對象是解決方案架構師** — 框架使用部署、SDK、edge、hub或類似專案
+8. **對象是解決方案架構師** — 框架使用部署、SDK、edge、hub或類似專案
 架構導向的術語而非行銷人員導向的框架(行銷活動、歷程、
 對象)。
 
@@ -58,7 +57,7 @@ ht-degree: 0%
 
 1. **檔案名稱為`overview.md`** →建議= `Navigation`。 已排除在移轉之外；
 頁面是TOC樣式的登陸頁面，會在子檔案結算後進行修訂。
-2. **`help/blueprints/use-case-patterns/`**&#x200B;中已經存在對等模式→
+2. **`help/blueprints/use-case-patterns/`**中已經存在對等模式→
 建議= `Duplicate`。 移轉動作是將藍圖簡化為純粹的
 架構圖並在現有模式中新增「參閱使用案例模式」交叉連結。
 在`duplicate_of`欄中記錄現有的模式路徑。
@@ -89,7 +88,7 @@ ht-degree: 0%
      `audience-building-activation`, `personalization`, `campaign-management-orchestration`,
      `analysis`、`conversational-experience`或標示為`(new) <name>`的新類別。
    - `proposed_pattern_title` — 遵循現有模式的簡短動作導向標題
-命名樣式。
+     命名樣式。
 6. 針對`Diagram`和`Split`建議，建議：
    - `proposed_diagram_title` — 通常是商業框架裁剪的現有標題。
 7. 透過比較Blueprint的範圍與現有的模式目錄來擷取找到的任何重複專案

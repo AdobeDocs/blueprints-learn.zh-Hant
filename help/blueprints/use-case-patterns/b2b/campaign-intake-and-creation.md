@@ -1,13 +1,11 @@
 ---
 title: 擷取並建立藍圖
-description: 擷取和建立 — Marketo Engage和Workfront整合藍圖
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+description: 擷取與建立 — Marketo Engage與Workfront整合
+source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 85%
-
+source-wordcount: '1319'
+ht-degree: 86%
 ---
-
 # 擷取並建立藍圖 {#intake-and-create}
 
 進入行銷運營團隊發起新行銷活動的行銷請求數量，可以將一個高效運轉的團隊轉變為重複性任務的循環門，導致倦怠和創新停滯。
@@ -19,12 +17,6 @@ ht-degree: 85%
 要實現此整合，您將使用 Workfront Fusion ，這是一個工作自動化層，可讓您自動化 Workfront 與其他系統之間的工作流程。
 
 以下工作流程顯示行銷活動管理員使用 Workfront 請求表單發出的網路研討會請求。 然後請求中提交的詳細資訊會觸發在 Marketo Engage 中為網路研討會建立的方案和電子郵件。 此外，請求表單會提供詳細資訊，以作為內容填入電子郵件。
-
-![錄取和建立Blueprint](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/intake-and-create-1.png){zoomable="yes"}
-
->[!TIP]
->
->若要進一步了解 Workfront 中用於組織行銷活動工作的不同類型物件，以及其如何對應至 Marketo Engage 方案，請查看 [Marketo 和 Workfront 概觀](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md){target="_blank"}。
 
 ## 為自動化準備您的行銷活動開發流程 {#prepare-your-campaign-development-process-for-automation}
 
@@ -100,8 +92,6 @@ ht-degree: 85%
 
 透過 Marketo Engage，語彙基元可用來將內容填入您的行銷活動資產中。 例如，從您的卓越中心複製電子郵件範本後，Workfront Fusion 可從 Workfront 中的行銷活動請求取得詳細資訊，並傳遞至 Marketo Engage 方案中的「我的語彙基元」。 接著，語彙基元值可直接繼承至電子郵件中，以建置電子郵件。
 
-![使用Token填入內容圖表](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/intake-and-create-2.png){zoomable="yes"}
-
 ### 從 AEM Assets 填入影像 {#populate-images-from-aem-assets}
 
 您可以利用 Marketo Engage 語彙基元搭配 AEM Assets 中資產的連結，進一步自動化電子郵件和登陸頁面開發。 行銷活動請求者可在請求過程中從 AEM Assets 提交已發佈的影像連結。 Workfront Fusion 接著可取得這些連結，並使用 Marketo Engage 語彙基元將其嵌入電子郵件的 HTML 中。
@@ -148,12 +138,8 @@ ht-degree: 85%
 
 以下範例說明如何使用預先建立的[Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=zh-Hant){target="_blank"}和[Marketo Engage](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=zh-Hant){target="_blank"}模組在Fusion中組合工作流程邏輯，讓您更快地實現自動化。
 
-![接收及建立自動化流程](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/assets/intake-and-create-3.png)
-
 ## 資源 {#resources}
 
 * [Adobe Marketo Engage模組](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/marketo-modules.html?lang=zh-Hant){target="_blank"}
 
 * [Adobe Workfront模組](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/fusion-apps-and-modules/workfront-modules.html?lang=zh-Hant){target="_blank"}
-
-* [Marketo和Workfront概觀](/help/blueprints/b2b/marketo-engage-and-workfront-integration-blueprint/overview.md){target="_blank"}

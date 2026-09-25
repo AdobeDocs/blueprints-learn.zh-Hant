@@ -4,7 +4,7 @@ description: 在UI中建立「個人設定檔」結構描述，並新增和修�
 doc-type: article
 solution: Experience Platform
 exl-id: ea516c0b-3644-483c-a167-0264cc795449
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
@@ -82,7 +82,7 @@ Adobe Experience Platform中有許多欄位群組是以標準XDM的形式存在�
 
 
 
-&#x200B;3. **核取**&#x200B;欄位群組旁的核取方塊，然後按一下&#x200B;**新增欄位群組**&#x200B;按鈕
+1. **核取**&#x200B;欄位群組旁的核取方塊，然後按一下&#x200B;**新增欄位群組**&#x200B;按鈕
 
 ![選取[人口統計詳細資料]欄位群組以將其新增至您的結構描述](assets/model-standard-objects-select-demographic-details-field-group.png "選取[人口統計詳細資料]欄位群組以將其新增至您的結構描述")
 

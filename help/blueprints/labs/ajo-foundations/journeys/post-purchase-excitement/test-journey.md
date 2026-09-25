@@ -4,13 +4,11 @@ description: 使用歷程測試模式模擬器來觸發「訂單已出貨」事�
 doc-type: article
 solution: Experience Platform
 exl-id: fc3dbfb9-b44b-4866-acc9-398a8b52f2b9
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
-
 ---
-
 
 # 測試歷程
 
@@ -105,16 +103,16 @@ ht-degree: 0%
 
 
 
-&#x200B;8. **關閉**&#x200B;瀏覽器&#x200B;**標籤**
-&#x200B;9. 右上角的&#x200B;**關閉測試模式**
+1. **關閉**&#x200B;瀏覽器&#x200B;**標籤**
+1. 右上角的&#x200B;**關閉測試模式**
 
    右上方的![關閉測試模式按鈕](assets/test-journey-close-test-mode.png)
 
-&#x200B;10. 按一下右上角的&#x200B;**發佈**&#x200B;歷程
+1. 按一下右上角的&#x200B;**發佈**&#x200B;歷程
 
-右上角歷程的![發佈按鈕](assets/test-journey-publish-journey.png)
+   右上角歷程的![發佈按鈕](assets/test-journey-publish-journey.png)
 
-&#x200B;11. 按一下左上方的\&lt; — 箭頭&#x200B;**關閉**&#x200B;**歷程**
+1. 按一下左上方的\&lt; — 箭頭&#x200B;**關閉****歷程**
 
 左上方的![向後箭頭以關閉歷程](assets/test-journey-close-journey-back-arrow.png)
 

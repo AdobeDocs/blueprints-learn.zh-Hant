@@ -4,13 +4,11 @@ description: 透過Postman將未驗證的網頁事件傳送至Edge，並透過�
 doc-type: article
 solution: Experience Platform
 exl-id: 465d09da-e30f-404c-8778-5df06e5a199f
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 0%
-
 ---
-
 
 # 傳送Edge事件
 
@@ -142,13 +140,13 @@ ht-degree: 0%
 
 
 
-&#x200B;3. 按一下頂端導覽列中的&#x200B;**事件**，您就可以看到剛才傳入的事件
+1. 按一下頂端導覽列中的&#x200B;**事件**，您就可以看到剛才傳入的事件
 
    ![在設定檔的[事件]索引標籤中檢視事件](assets/send-an-edge-event-view-the-profile-event.png)
 
 
 
-&#x200B;4. 檢閱頂端導覽中的「對象成員資格」索引標籤，以驗證設定檔是否符合對象的資格。  您應該會看到下列內容：
+1. 檢閱頂端導覽中的「對象成員資格」索引標籤，以驗證設定檔是否符合對象的資格。  您應該會看到下列內容：
 
 - 任何事件Edge （過去15分鐘內）
 - 任何事件串流（過去一小時內）
