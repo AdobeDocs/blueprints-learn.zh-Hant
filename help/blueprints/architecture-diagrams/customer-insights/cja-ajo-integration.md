@@ -32,6 +32,6 @@ ht-degree: 0%
 
 ## 進一步閱讀
 
-- [Journey Optimizer報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/reports/sharing-overview)
-- [Customer Journey Analytics概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
-- [發佈Customer Journey Analytics對象](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)
+- [Journey Optimizer報告](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/reports/sharing-overview)
+- [Customer Journey Analytics概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
+- [發佈Customer Journey Analytics對象](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/publish)

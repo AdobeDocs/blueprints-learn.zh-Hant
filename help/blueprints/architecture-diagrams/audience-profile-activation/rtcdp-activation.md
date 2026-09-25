@@ -34,6 +34,6 @@ ht-degree: 0%
 
 ## 進一步閱讀
 
-- [Adobe Real-Time CDP目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
-- [對目的地啟用對象](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
-- [Adobe Real-Time CDP護欄](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview)
+- [Adobe Real-Time CDP目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
+- [對目的地啟用對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations)
+- [Adobe Real-Time CDP護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/guardrails/overview)

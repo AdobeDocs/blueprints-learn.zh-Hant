@@ -59,6 +59,6 @@ ht-degree: 15%
 
 * [Experience Platform檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 * [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-* [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html)
-* [Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
+* [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+* [Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
 * [Journey Optimizer產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

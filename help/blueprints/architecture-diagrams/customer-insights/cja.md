@@ -48,6 +48,6 @@ Adobe Customer Journey Analytics將來自Adobe Experience Platform和其他來�
 
 ## 進一步閱讀
 
-- [Customer Journey Analytics概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
-- [Customer Journey Analytics連線](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection)
-- [發佈Customer Journey Analytics對象](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)
+- [Customer Journey Analytics概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
+- [Customer Journey Analytics連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/create-connection)
+- [發佈Customer Journey Analytics對象](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/publish)
