@@ -156,7 +156,7 @@ ht-degree: 0%
 >
 >出於一些原因，我們將簡單的需求分割成許多對象。 此需求適用於串流，但這兩項需求會將我們的對象轉換為批次。 如需串流適用性規則的詳細資訊，請參閱此處：
 >
->[https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html)
+>[https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=zh-Hant](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=zh-Hant)
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ ht-degree: 0%
 >
 >我們需要瞭解，在對象中使用對象時，AEP將會嘗試在必要時進行排序。 在有些邊緣案例中這是不可能的，例如如果使用「對象」，則每24小時會進行設定檔取消資格。
 >
->[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535)
+>[https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535?profile.language=zh-Hant](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-blogs/peeking-underneath-the-hood-of-segments-in-aep-adobe-experience/ba-p/453535?profile.language=zh-Hant)
 
 
 

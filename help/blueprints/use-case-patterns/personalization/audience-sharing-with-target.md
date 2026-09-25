@@ -28,7 +28,7 @@ ht-degree: 26%
 
 ### 參考文件
 
-* [適用於即時客戶資料平台的Adobe Target連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)
+* [適用於即時客戶資料平台的Adobe Target連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant)
 * [Edge資料流設定](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)
 
 ## 整合模式
@@ -54,7 +54,7 @@ ht-degree: 26%
 
 使用傳統應用程式專用的 SDK（例如 At.js 和 AppMeasurement.js）。 此實作方法不支援即時邊緣區段評估。 不過，使用此實作方法，可支援從 Experience Platform 中心串流和批次共用對象。
 
-[請參閱Adobe Target聯結器檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+[請參閱Adobe Target聯結器檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
 [請參閱Experience Platform Web SDK藍圖](/help/blueprints/architecture-diagrams/architecture-overviews/websdk.md)
 
 ## 實施考量
