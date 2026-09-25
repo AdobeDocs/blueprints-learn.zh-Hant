@@ -67,7 +67,7 @@ ht-degree: 0%
 9. 按一下藍色的&#x200B;**下一步**&#x200B;按鈕。 這是您新增選取策略的位置。 按一下&#x200B;**+新增**&#x200B;按鈕（您可能需要向下捲動才能看到它），然後選擇&#x200B;**選取策略**。
 10. 勾選您唯一應該擁有的選取策略（**iPhone 17選取策略**）旁的方塊，然後按一下&#x200B;**儲存**。 完成後，您會看到以下內容：
 
-已為決定原則](assets/create-the-journey-selection-strategy-selected.png)選取![iPhone 17選取策略
+已為決定原則![&#128279;](assets/create-the-journey-selection-strategy-selected.png)選取iPhone 17選取策略
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 1. 按一下藍色的&#x200B;**下一步**&#x200B;按鈕以檢閱決定原則。
 
-   在建立決定原則之前，請先檢閱決定原則的步驟](assets/create-the-journey-review-decision-policy.png)![
+   在建立決定原則之前，請先檢閱決定原則的步驟![&#128279;](assets/create-the-journey-review-decision-policy.png)
 
 1. 一切看起來正確後，按一下藍色的&#x200B;**建立**&#x200B;按鈕。 建立後，您會返回運算式編輯器頁面。
 1. 您應該會看到類似下列的畫面；如果沒有，請再按一下&#x200B;**決定原則**，您就會看到您的決定原則出現。

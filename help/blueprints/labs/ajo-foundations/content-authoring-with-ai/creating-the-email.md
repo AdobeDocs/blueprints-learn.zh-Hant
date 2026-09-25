@@ -112,7 +112,7 @@ ht-degree: 0%
 
    ![從Toolkit資料夾上傳hero.png](assets/creating-the-email-upload-hero-png-file.png)
 
-5. 按[下一步]，**選取**&#x200B;您資產資料夾&#x200B;**，然後按[匯入]******
+5. 按[下一步]，**選取**&#x200B;您資產資料夾&#x200B;**，然後按[匯入]**&#x200B;**&#x200B;**
 
    ![選取資產資料夾並按一下主圖影像的匯入](assets/creating-the-email-select-folder-import-hero.png)
 

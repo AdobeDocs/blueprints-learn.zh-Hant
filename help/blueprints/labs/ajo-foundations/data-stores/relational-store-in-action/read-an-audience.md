@@ -124,7 +124,7 @@ ht-degree: 0%
 
 10. 從清單中選取`Source`並按一下&#x200B;**確認**
 
-從目標維度資料行](assets/read-an-audience-select-source-attribute.png)中選取![Source屬性
+從目標維度資料行![&#128279;](assets/read-an-audience-select-source-attribute.png)中選取Source屬性
 
 1. Source欄的相異值可在下拉式清單中取得。 針對&#x200B;**自訂條件**，從下拉式清單中選取&#x200B;**「商店內」**，然後按一下&#x200B;**確認**&#x200B;結束
 
@@ -146,7 +146,7 @@ ht-degree: 0%
 
    ![目標維度已展開以顯示關聯式存放區欄](assets/read-an-audience-expand-targeting-dimension.png)
 
-   從目標維度資料行](assets/read-an-audience-select-source-attribute.png)中選取![Source屬性
+   從目標維度資料行![&#128279;](assets/read-an-audience-select-source-attribute.png)中選取Source屬性
 
 1. 對於&#x200B;**自訂條件**，請從下拉式清單中選取&#x200B;**「商店內」**，而運運算元則選取「**不等於**」。 按一下&#x200B;**確認**&#x200B;結束
 

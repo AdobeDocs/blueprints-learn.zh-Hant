@@ -107,7 +107,7 @@ ht-degree: 0%
 
 ### 新增電子郵件動作
 
-1. 在[動作]功能表下，將&#39;n拖曳&#39;0}動作&#x200B;**至GetShippingDetails動作之後的畫布**
+1. 在[動作]功能表下，將&#39;n拖曳&#39;0&rbrace;動作&#x200B;**至GetShippingDetails動作之後的畫布**
 
    ![在GetShippingDetails動作之後，將[動作]節點拖曳到畫布上](assets/build-journey-drag-email-action-onto-canvas.png)
 

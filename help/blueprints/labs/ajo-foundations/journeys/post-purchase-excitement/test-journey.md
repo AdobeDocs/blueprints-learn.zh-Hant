@@ -112,7 +112,7 @@ ht-degree: 0%
 
    右上角歷程的![發佈按鈕](assets/test-journey-publish-journey.png)
 
-1. 按一下左上方的\&lt; — 箭頭&#x200B;**關閉****歷程**
+1. 按一下左上方的\&lt; — 箭頭&#x200B;**關閉**&#x200B;**歷程**
 
 左上方的![向後箭頭以關閉歷程](assets/test-journey-close-journey-back-arrow.png)
 

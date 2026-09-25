@@ -51,10 +51,10 @@ ht-degree: 0%
 
 
 
-搜尋計畫](assets/pre-work-duplicate-plan-name-field.png)時找到![第一個計畫名稱屬性
+搜尋計畫![&#128279;](assets/pre-work-duplicate-plan-name-field.png)時找到第一個計畫名稱屬性
 
 
 
-搜尋計畫](assets/pre-work-duplicate-plan-name-field--2.png)時找到![第二個計畫名稱屬性
+搜尋計畫![&#128279;](assets/pre-work-duplicate-plan-name-field--2.png)時找到第二個計畫名稱屬性
 
 根據說明，計畫名稱（計畫名稱）似乎是我們需要的名稱，而另一個名稱缺少說明。

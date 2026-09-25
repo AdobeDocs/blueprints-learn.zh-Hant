@@ -60,7 +60,7 @@ ht-degree: 1%
 
 前往Postman ->建立網頁事件Edge （無驗證） ->標頭
 
-1. 將&#x200B;**x-adobe-aep-validation-token**&#x200B;新增至具有上述從Assurance複製的連結的標頭。 在您從Assurance複製的連結中，於=之後抓取&#x200B;**ID**&#x200B;值。 例如[https://www.adobe.com/?adb\_validation\_sessionid=](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)[`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)
+1. 將&#x200B;**x-adobe-aep-validation-token**&#x200B;新增至具有上述從Assurance複製的連結的標頭。 在您從Assurance複製的連結中，於=之後抓取&#x200B;**ID**&#x200B;值。 例如[https://www.adobe.com/?adb\_validation\_sessionid=](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0) [`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)
 1. 我們只會使用[`efa4a9ed-02d8-4647-80fa-f01a5be273d0`](https://www.adobe.com/?adb_validation_sessionid=efa4a9ed-02d8-4647-80fa-f01a5be273d0)值，而非完整URL
 
    ![在Postman中新增具有Assurance工作階段ID的x-adobe-aep-validation-token標頭](assets/monitor-your-event-populate-the-x-adobe-aep-validation-token.png)
