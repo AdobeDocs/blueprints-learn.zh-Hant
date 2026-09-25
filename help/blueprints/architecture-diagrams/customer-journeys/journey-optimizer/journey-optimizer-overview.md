@@ -59,7 +59,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 >[!BEGINTABS]
 >[!TAB 歷程（事件導向，即時）]
 
-- **放棄復原：**&#x200B;當使用者透過電子郵件、推播或應用程式內放棄購物車、表單或sessionTuns¬a€}時，觸發個人化訊息。
+- **放棄復原：**&#x200B;當使用者透過電子郵件、推播或應用程式內放棄購物車、表單或sessionTuns¬a€&rbrace;時，觸發個人化訊息。
 - **新使用者註冊：**&#x200B;新使用者註冊新帳戶偏好設定、相關促銷活動或權益後，請立即與他們互動
 - **異動訊息：**&#x200B;使用事件觸發器傳送即時確認、警示或更新（例如已送出訂單、重設密碼）。
 - **關聯式鎖定目標：**&#x200B;根據使用者的訊號與位置即時與使用者通訊，以協助引導和引導其體驗
@@ -97,7 +97,7 @@ Adobe [!DNL Journey Optimizer]是以Adobe Experience Platform建置的雲端原�
 | 整合 | 說明 | 技術考量 |
 | :-- | :-- | :-- |
 | [協力廠商訊息](3rd-party-messaging.md) | 示範Adobe [!DNL Journey Optimizer]如何與協力廠商傳訊平台整合，以協調及提供個人化的客戶通訊。 | <ul><li>協力廠商系統必須支援&#x200B;**持有人權杖驗證**</li><li>**由於多租使用者架構，不支援**&#x200B;靜態IP。</li><li>請注意，第三方系統上的&#x200B;**API速率限制**；客戶可能需要購買額外的容量來處理源自&#x200B;**Adobe Journey Optimizer**&#x200B;的流量。</li><li>訊息裝載或傳遞邏輯中不支援&#x200B;**決定管理**。</li></ul> |
-| 使用Adobe Campaign v8](../campaign-v8/ajo-and-campaign-v8.md)的[[!DNL Journey Optimizer]  | 示範Adobe [!DNL Journey Optimizer]如何整合Adobe Campaign v8的交易式傳訊功能，以執行最終訊息傳送。 | <ul><li>沒有訊息限制。 每5分鐘最多4,000則訊息。</li><li>僅支援事件起始歷程的</li><li>Campaign傳送的訊息不支援決定管理</li></ul> |
+| 使用Adobe Campaign v8[&#128279;](../campaign-v8/ajo-and-campaign-v8.md)的[!DNL Journey Optimizer]  | 示範Adobe [!DNL Journey Optimizer]如何整合Adobe Campaign v8的交易式傳訊功能，以執行最終訊息傳送。 | <ul><li>沒有訊息限制。 每5分鐘最多4,000則訊息。</li><li>僅支援事件起始歷程的</li><li>Campaign傳送的訊息不支援決定管理</li></ul> |
 
 <br>
 
