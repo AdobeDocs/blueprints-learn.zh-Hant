@@ -3,13 +3,16 @@ title: 贏取新客戶
 description: 瞭解如何透過鎖定目標的贏取行銷活動、相似對象和付費媒體最佳化，來擴大客戶基礎。
 solution: Experience Platform, Real-Time Customer Data Platform
 exl-id: 57b2da92-f099-4c82-899b-9023f1ac81dc
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 5%
-
 ---
-
 # 贏取新客戶
 
 透過鎖定目標的贏取促銷活動、相似對象和付費媒體最佳化，來擴大客戶基礎。 此目標專注於透過精準的受眾目標定位和抑制現有客戶，以大規模觸及新潛在客戶並同時維持成本效益。

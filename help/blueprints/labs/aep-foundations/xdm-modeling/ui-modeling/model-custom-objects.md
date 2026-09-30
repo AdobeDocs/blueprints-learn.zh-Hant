@@ -4,7 +4,10 @@ description: 在結構描述編輯器中建立自訂帳戶、計畫和customerID
 doc-type: article
 solution: Experience Platform
 exl-id: 8c39b226-05f3-458a-b023-c59221a6713a
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
@@ -33,7 +36,7 @@ ht-degree: 0%
 
 1. 按一下結構描述頂端的&#x200B;**+ （新增）**&#x200B;按鈕以新增欄位
 
-   在結構描述頂端新增(+)按鈕以新增自訂欄位![&#128279;](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)
+   在結構描述頂端新增(+)按鈕以新增自訂欄位](assets/model-custom-objects-add-a-custom-field-to-your-schema.png)![
 
    >[!NOTE]
    >
@@ -106,7 +109,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >列舉和建議值的目標是讓一般使用者更容易分段。 列舉會在資料擷取時強制進行驗證，而建議值則否。 若要深入瞭解此功能，請前往這裡 — > [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant#enums-and-suggested-values)參閱詳細檔案
+   >列舉和建議值的目標是讓一般使用者更容易分段。 列舉會在資料擷取時強制進行驗證，而建議值則否。 若要深入瞭解此功能，請前往這裡 — > [https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=en#enums-and-suggested-values)參閱詳細檔案
 
 
 

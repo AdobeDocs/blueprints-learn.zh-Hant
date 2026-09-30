@@ -3,13 +3,18 @@ title: 保險使用案例
 description: 瞭解保險組織如何使用Adobe Experience Platform來個人化保單管理、改善索賠體驗及促進客戶保留。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: a082598f-555b-49a4-b201-a55bee793959
-source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '2543'
 ht-degree: 0%
-
 ---
-
 # 保險使用案例
 
 保險組織使用Adobe Experience Platform統一保單管理、索賠和參與系統的保單持有人資料，以便在客戶關係的每個階段提供個人化通訊。 藉由將行為訊號與保單和索賠資訊連結，保險公司可以主動與客戶互動，提供相關優惠、及時的服務更新，以及有意義的支援，以提升保固期和終身價值。

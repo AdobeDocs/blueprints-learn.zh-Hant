@@ -4,13 +4,14 @@ description: 瞭解如何在Adobe Experience Platform中瀏覽關聯式結構描
 doc-type: article
 solution: Experience Platform
 exl-id: ac0e6743-4a83-4a8b-9bc6-f012b636312e
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
-
 ---
-
 
 # 瀏覽結構描述
 
@@ -69,4 +70,4 @@ ht-degree: 0%
 
 您現在已瞭解在結構描述和關係UI中導覽是多麼容易。  您可以選取特定結構並導覽以檢視關係，以協助瞭解並使用行銷活動協調流程中的資料。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/data-management/get-started-schemas)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/get-started-schemas)以瞭解詳情。

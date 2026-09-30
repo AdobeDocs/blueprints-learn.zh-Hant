@@ -3,13 +3,16 @@ title: 購買群組式行銷與歷程管理
 description: 瞭解如何開發符合潛在客戶購買群組資格的帳戶層級歷程，以改善B2B行銷效率。
 solution: Journey Optimizer B2B Edition, Real-Time Customer Data Platform
 exl-id: 2bf57f67-80c8-4368-98d2-05706427772d
-source-git-commit: c0a9cba3d6a55fae8f149f7ca479625458cd1b22
+product_v2:
+  - id: aacce07f-424e-489e-8d02-a4fb2f4211bd
+    internal-label: Journey Optimizer B2B Edition
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 1%
-
 ---
-
 # 購買群組式行銷和歷程管理
 
 本指南說明購買群組型行銷和歷程管理使用案例模式，此模式使用[!DNL Adobe Journey Optimizer B2B Edition]和[!DNL Real-Time CDP B2B Edition]來透過購買群組管理實作帳戶層級的歷程協調。 它專為需要瞭解此模式的功能、其支援的業務目標、其啟用的戰術使用案例以及所涉及的Adobe應用程式的解決方案架構師、行銷技術人員和實作工程師所設計。
@@ -92,8 +95,8 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 在此使用案例模式中使用以下Adobe應用程式。
 
-- **[!DNL Journey Optimizer B2B Edition] ([!DNL AJO B2B])** — 協調帳戶層級的歷程、使用角色範本和解決方案興趣來管理購買群組、對個人和購買群組層級的參與評分、作者B2B電子郵件內容、傳送SMS訊息、設定銷售警示，以及提供B2B分析儀表板。
-- **[!DNL Real-Time CDP B2B Edition] ([!DNL RT-CDP B2B])** — 從跨來源B2B資料中統一帳戶設定檔、解析人員與帳戶的關係、評估帳戶層級的對象、設定B2B特定的目的地([!DNL Marketo Engage]、[!DNL LinkedIn]、CRM)，以及強制跨B2B資料進行資料控管。
+- **[!DNL Journey Optimizer B2B Edition]([!DNL AJO B2B])** — 協調帳戶層級的歷程、使用角色範本和解決方案興趣來管理購買群組、對個人和購買群組層級的參與評分、作者B2B電子郵件內容、傳送SMS訊息、設定銷售警示，以及提供B2B分析儀表板。
+- **[!DNL Real-Time CDP B2B Edition]([!DNL RT-CDP B2B])** — 從跨來源B2B資料中統一帳戶設定檔、解析人員與帳戶的關係、評估帳戶層級的對象、設定B2B特定的目的地([!DNL Marketo Engage]、[!DNL LinkedIn]、CRM)，以及強制跨B2B資料進行資料控管。
 
 ## 相關文件
 
@@ -101,68 +104,68 @@ B2B組織面臨根本性的挑戰：購買決策很少由單一個人做出。 �
 
 ### [!DNL Journey Optimizer B2B Edition]
 
-- [Journey Optimizer B2B edition檔案首頁](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/guide-overview)
-- [購買群組概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
-- [解決方案興趣](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
-- [角色範本](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
-- [建立購買群組](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
-- [購買群組階段](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
-- [帳戶歷程概觀](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
-- [帳戶歷程節點](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
-- [銷售警示電子郵件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/journey-content/email-channel/sales-alert-email)
-- [CRM銷售分析](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/accounts/buying-groups/incrm-insights)
+- [Journey Optimizer B2B Edition檔案首頁](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
+- [購買群組概觀](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-overview)
+- [解決方案興趣](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/solution-interests)
+- [角色範本](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-role-templates)
+- [建立購買群組](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-groups-create)
+- [購買群組階段](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/buying-groups/buying-group-stages)
+- [帳戶歷程概觀](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-overview)
+- [帳戶歷程節點](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/account-journeys/journey-nodes)
+- [銷售警示電子郵件](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/journey-content/email-channel/sales-alert-email)
+- [CRM銷售分析](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/accounts/buying-groups/incrm-insights)
 
 ### B2B電子郵件與內容
 
-- [B2B電子郵件製作](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/journey-content/email-channel/email-authoring)
-- [B2B SMS製作](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/journey-content/sms-authoring)
-- [產生電子郵件製作的內容](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/journey-content/email-channel/ai-assistant-emails)
+- [B2B電子郵件製作](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/journey-content/email-channel/email-authoring)
+- [B2B SMS製作](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/journey-content/sms-authoring)
+- [產生電子郵件製作的內容](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/journey-content/email-channel/ai-assistant-emails)
 
 ### B2B analytics和儀表板
 
-- [購買群組儀表板](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/dashboards/buying-groups-dashboard)
-- [參與儀表板](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/dashboards/engagement-dashboard)
-- [智慧型儀表板](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/dashboards/intelligent-dashboard)
+- [購買群組儀表板](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/buying-groups-dashboard)
+- [參與儀表板](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/engagement-dashboard)
+- [智慧型儀表板](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/dashboards/intelligent-dashboard)
 - [CJA B2B edition概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b)
 
 ### [!DNL RT-CDP B2B Edition]
 
 - [RT-CDP B2B edition概述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview)
-- [Real-Time CDP中的B2B結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/schemas/b2b)
-- [帳戶對象](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/types/account-audiences)
-- [Marketo Engage來源聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
+- [Real-Time CDP中的B2B結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b)
+- [帳戶對象](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/account-audiences)
+- [Marketo Engage來源聯結器](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo)
 
 ### 資料基礎
 
-- [XDM系統概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)
-- [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
-- [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)
-- [Segmentation Service概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/home)
+- [XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)
+- [Identity Service總覽](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)
+- [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+- [Segmentation Service概述](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/home)
 
 ### 管道設定
 
-- [開始使用電子郵件設定](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
-- [設定簡訊頻道](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
+- [開始使用電子郵件設定](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/configure-email/get-started-email-config)
+- [設定簡訊頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration)
 
 ### 資料控管與隱私權
 
-- [資料控管概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-governance/home)
-- [進階資料生命週期管理](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/home)
+- [資料控管概覽](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/home)
+- [進階資料生命週期管理](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/home)
 
 ### 目標
 
-- [目標概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/home)
-- [目的地目錄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/overview)
-- [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/social/linkedin)
+- [目標概覽](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home)
+- [目的地目錄](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/overview)
+- [LinkedIn符合的對象目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/linkedin)
 
 ### 護欄
 
-- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/guardrails)
+- [即時客戶個人檔案護欄](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails)
 - [分段護欄](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/guardrails)
-- [擷取護欄](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/guardrails)
-- [Journey Optimizer護欄](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/guardrails)
+- [擷取護欄](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails)
+- [Journey Optimizer護欄](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/guardrails)
 
 ### 教學課程與快速入門
 
-- [AJO B2B edition快速入門](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b/user/guide-overview)
+- [AJO B2B edition快速入門](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview)
 - [RT-CDP B2B edition教學課程](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-tutorial)

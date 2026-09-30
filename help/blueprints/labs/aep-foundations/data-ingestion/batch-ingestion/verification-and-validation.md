@@ -4,7 +4,10 @@ description: 在UI中預覽擷取的資料集，並執行SQL查詢以驗證批�
 doc-type: article
 solution: Experience Platform
 exl-id: 7e7cd43d-cc24-4a40-a175-2c651436ab79
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -42,7 +45,7 @@ ht-degree: 0%
 1. **關閉**&#x200B;預覽
 1. 在資料集畫面中，按一下&#x200B;**資料表名稱**&#x200B;上的復製圖示。 在下列範例畫面中，資料表名稱為`customer_account_sm`
 
-   在資料集畫面中，複製資料表名稱旁的圖示![複製資料表名稱")] (assets/verification-and-validation-copy-table-name.png "
+   在資料集畫面中，複製資料表名稱旁的圖示![複製資料表名稱")](assets/verification-and-validation-copy-table-name.png "
 
 
 

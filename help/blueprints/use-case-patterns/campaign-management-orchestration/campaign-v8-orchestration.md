@@ -3,7 +3,12 @@ title: Campaign v8藍圖、Campaign和平台
 description: 瞭解Campaign v8的藍圖。
 solution: Campaign,Campaign v8
 version: Campaign v8
-source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: d0e9f0b2-1f2b-4134-9844-49cd4e950f27
+    internal-label: Campaign v8
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 29%
@@ -62,8 +67,8 @@ Adobe Campaign v8是新一代的行銷活動管理平台，專為電子郵件和
 
 | 狀況 | 說明 | 技術考量 |
 | :-- | :--- | :--- |
-| 使用Adobe [!DNL Campaign]&#x200B;[&#128279;](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)的[!DNL Real-time Customer Data Platform]  | 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign]搭配使用，以提供個人化的對話 | <ul><li>透過使用雲端儲存空間檔案交換和Adobe [!DNL Campaign]擷取工作流程，從[!DNL Real-Time CDP]到Adobe [!DNL Campaign]共用設定檔和對象 </li><li>從Adobe [!DNL Campaign]輕鬆將客戶對話中的傳遞和互動資料分享回[!DNL Real-Time CDP]，以強化即時客戶設定檔並提供訊息行銷活動的跨管道報告</li></ul> |
-| 使用Adobe [!DNL Campaign]&#x200B;[&#128279;](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)的[!DNL Journey Optimizer]  | 顯示如何使用Adobe Journey Optimizer來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe [!DNL Campaign]異動訊息系統來傳送訊息 | <ul><li>可透過即時消息伺服器每小時發送最多 1M 訊息<li>不會從[!DNL Journey Optimizer]執行任何節流，因此請確定售前企業架構師的技術審查</li><li>Campaign v8 承載不支援決策管理</li></ul> |
+| 使用Adobe [!DNL Campaign]](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/rtcdp-and-campaign-v8.md)的[[!DNL Real-time Customer Data Platform]  | 展示Adobe Experience Platform及其即時客戶設定檔和集中式細分工具如何與Adobe [!DNL Campaign]搭配使用，以提供個人化的對話 | <ul><li>透過使用雲端儲存空間檔案交換和Adobe [!DNL Campaign]擷取工作流程，從[!DNL Real-Time CDP]到Adobe [!DNL Campaign]共用設定檔和對象 </li><li>從Adobe [!DNL Campaign]輕鬆將客戶對話中的傳遞和互動資料分享回[!DNL Real-Time CDP]，以強化即時客戶設定檔並提供訊息行銷活動的跨管道報告</li></ul> |
+| 使用Adobe [!DNL Campaign]](/help/blueprints/architecture-diagrams/customer-journeys/campaign-v8/ajo-and-campaign-v8.md)的[[!DNL Journey Optimizer]  | 顯示如何使用Adobe Journey Optimizer來利用即時客戶設定檔編排1:1體驗，並利用原生Adobe [!DNL Campaign]異動訊息系統來傳送訊息 | <ul><li>可透過即時消息伺服器每小時發送最多 1M 訊息<li>不會從[!DNL Journey Optimizer]執行任何節流，因此請確定售前企業架構師的技術審查</li><li>Campaign v8 承載不支援決策管理</li></ul> |
 
 <br>
 
@@ -134,11 +139,11 @@ Adobe Campaign v8是新一代的行銷活動管理平台，專為電子郵件和
 
 ## 實施步驟
 
-請參閱快速入門手冊， [實作 Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html?lang=zh-Hant)
+請參閱快速入門手冊， [實作 Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/implement/implement.html)
 
 ## 相關文件
 
-- [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=zh-Hant)
+- [Campaign v8檔案](https://experienceleague.adobe.com/docs/campaign-v8.html)
 - [Campaign v8產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-campaign-managed-cloud-services.html)
-- [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/launch.html?lang=zh-Hant)
-- [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
+- [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/launch.html)
+- [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html)

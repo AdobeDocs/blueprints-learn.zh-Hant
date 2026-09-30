@@ -4,7 +4,10 @@ description: 使用SAS URL安裝並設定Azure Storage Explorer以連線至Adobe
 doc-type: overview-page
 solution: Experience Platform
 exl-id: d61bef25-7039-450d-a8e7-01bb12e8df7c
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -21,7 +24,7 @@ ht-degree: 0%
 1. 安裝應用程式
 1. 第一次開啟應用程式時，請接受使用者授權合約
 
-在Azure Storage Explorer&rbrack;(assets/overview-end-user-license-agreement-screen.png "使用者授權合約畫面中!&lbrack;使用者授權合約畫面")
+在Azure Storage Explorer](assets/overview-end-user-license-agreement-screen.png "使用者授權合約畫面中![使用者授權合約畫面")
 
 
 ## 使用Experience Platform設定Azure儲存體總管
@@ -67,7 +70,7 @@ ht-degree: 0%
 
 
 
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;繼續
+1. 按一下[下一步]****&#x200B;繼續
 
    ![將SAS URL認證複製到連線資訊的SAS URL區段](assets/overview-copy-sas-url-into-connection-info.png "將SAS URL認證複製到連線資訊的SAS URL區段")
 

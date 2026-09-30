@@ -2,7 +2,14 @@
 title: Adobe Customer Journey Analytics與Adobe Journey Optimizer整合
 description: 用於分析Adobe Customer Journey Analytics中的Adobe Journey Optimizer行銷活動和歷程深入分析以及發佈對象回溯以進行歷程執行的架構。
 solution: Customer Journey Analytics, Journey Optimizer, Experience Platform
-source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -32,6 +39,6 @@ ht-degree: 0%
 
 ## 進一步閱讀
 
-- [Journey Optimizer報告](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/reports/sharing-overview)
-- [Customer Journey Analytics概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)
-- [發佈Customer Journey Analytics對象](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/publish)
+- [Journey Optimizer報告](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/reports/sharing-overview)
+- [Customer Journey Analytics概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)
+- [發佈Customer Journey Analytics對象](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish)

@@ -4,13 +4,14 @@ description: 透過結構描述UI和取得結構描述API，檢視客戶帳戶�
 doc-type: article
 solution: Experience Platform
 exl-id: dae48ef4-f762-4173-8564-c1ad40c0109b
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
-
 ---
-
 
 # 檢視結構描述
 

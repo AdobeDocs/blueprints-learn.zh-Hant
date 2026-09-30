@@ -4,13 +4,14 @@ description: 將歷史訂單JSON檔案上傳至資料登陸區域，並設定以
 doc-type: article
 solution: Experience Platform
 exl-id: 046d50ad-687e-4cdb-a8b1-3c55ab39b68e
-source-git-commit: 3039df0c022176e9dada9c5a300f2df14429033d
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
-
 ---
-
 
 # 設定來源
 
@@ -52,7 +53,7 @@ ht-degree: 0%
 1. 在資料流詳細資訊畫面中，選擇&#x200B;**新資料集**
 1. 將輸出資料集命名為&#x200B;**Orders - YourNameHere**
 1. 選取結構描述名稱&#x200B;**dep：訂單**
-1. 開啟&#x200B;**設定檔資料集**&#x200B;切換方塊
+1. 開啟&#x200B;**設定檔資料集**切換方塊
 （如果您未開啟此功能，設定檔存放區將無法監視是否有新資料進入此資料集，因此不會將此資料擷取到設定檔中）
 1. 開啟&#x200B;**啟用部分擷取**
 （如果您未開啟此功能，如果其中一個記錄發生錯誤，擷取可能會失敗）

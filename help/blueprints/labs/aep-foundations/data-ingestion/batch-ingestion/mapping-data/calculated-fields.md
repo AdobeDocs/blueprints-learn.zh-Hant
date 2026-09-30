@@ -4,13 +4,14 @@ description: 建立計算欄位運算式，以回填遺失的SMS同意值，並�
 doc-type: article
 solution: Experience Platform
 exl-id: ea5d006b-11c5-439c-af01-bc00b919851f
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
-
 ---
-
 
 # 計算欄位
 
@@ -30,7 +31,7 @@ sms\_optIn欄位是客戶帳戶結構描述中的必填欄位。 問題是串流
 
 
 
-1. 在[建立計算欄位]對話方塊中新增下列運算式，然後按一下[預覽] **&#x200B;**
+1. 在[建立計算欄位]對話方塊中新增下列運算式，然後按一下[預覽] ****
 
    ```none
    iif(sms_optIn == null or sms_optIn == "", 'n', sms_optIn)

@@ -4,7 +4,10 @@ description: 使用資料元素和規則建立事件轉送屬性，以將傳入�
 doc-type: article
 solution: Experience Platform
 exl-id: eabd5f75-7706-4c96-982e-2512509bdc55
-source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
@@ -188,7 +191,7 @@ ht-degree: 0%
 | 方法 | Post |
 | URL | 使用您在設定串流目的地時使用的相同webhook URL。 您可以在瀏覽器中開啟新索引標籤，並導覽至「目的地 — >瀏覽」找到它 |
 | 內文 | 原始 |
-| 內文資料 | \&lbrace; &quot;data&quot;： \{ &quot;event&quot;： &quot;\{\{資料物件\}\}&quot; } |
+| 內文資料 | \{ &quot;data&quot;： \{ &quot;event&quot;： &quot;\{\{資料物件\}\}&quot; } |
 
 >[!NOTE]
 >
@@ -206,7 +209,7 @@ ht-degree: 0%
 
 
 
-1. 完成後，您應該會看到動作已新增至規則。 按一下[儲存]以繼續。**&#x200B;**
+1. 完成後，您應該會看到動作已新增至規則。 按一下[儲存]以繼續。****
 
 ![規則編輯器顯示已設定動作，並反白顯示[儲存]按鈕](assets/create-property-save-rule-button.png "儲存您的規則")
 

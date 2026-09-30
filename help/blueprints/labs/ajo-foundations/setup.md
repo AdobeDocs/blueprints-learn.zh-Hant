@@ -2,10 +2,12 @@
 title: 設定
 description: 在啟動Postman基礎實驗室之前，完成所需的沙箱部署和AJO設定步驟。
 doc-type: article
-
 solution: Experience Platform
 exl-id: 7c1a9e3d-5b8f-4a2e-9c6d-3f7b0e4a8c2d
-source-git-commit: 8b3391d41cd4a3ea6cb52d5167e627b7f6bd2c6e
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 1%
@@ -44,7 +46,7 @@ ht-degree: 1%
 
 ### 委派的子網域
 
-[設定電子郵件通道](data-stores/configure-email-channels/overview.md)實驗室 — 以及依賴它的所有專案（[正在執行的訊息傳遞](orchestrated-campaigns/message-delivery-in-action/overview.md)、[購買後的興奮](journeys/post-purchase-excitement/overview.md)以及[AJO品牌](content-authoring-with-ai/overview.md)） — 需要委派給Adobe的子網域才能傳送電子郵件。 如果您還沒有網域，請向任何網域註冊機構（例如Namecheap）註冊一個網域。 然後，若要將其子網域（例如`email.yourdomain.com`）委派給Adobe，請依照Adobe的[子網域委派指示](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain)操作。
+[設定電子郵件通道](data-stores/configure-email-channels/overview.md)實驗室 — 以及依賴它的所有專案（[正在執行的訊息傳遞](orchestrated-campaigns/message-delivery-in-action/overview.md)、[購買後的興奮](journeys/post-purchase-excitement/overview.md)以及[AJO品牌](content-authoring-with-ai/overview.md)） — 需要委派給Adobe的子網域才能傳送電子郵件。 如果您還沒有網域，請向任何網域註冊機構（例如Namecheap）註冊一個網域。 然後，若要將其子網域（例如`email.yourdomain.com`）委派給Adobe，請依照Adobe的[子網域委派指示](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/delegate-subdomain)操作。
 
 >[!NOTE]
 >

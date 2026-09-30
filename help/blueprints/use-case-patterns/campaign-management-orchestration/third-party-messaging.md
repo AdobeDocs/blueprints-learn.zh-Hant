@@ -2,7 +2,10 @@
 title: Journey Optimizer — 協力廠商傳訊藍圖
 description: 示範Adobe Journey Optimizer如何與協力廠商傳訊系統搭配使用，以傳送個人化通訊。
 solution: Journey Optimizer
-source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 56%
@@ -35,9 +38,9 @@ ht-degree: 56%
 
 ## 護欄
 
-[Journey Optimizer Guardrails產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html?lang=zh-Hant)
+[Journey Optimizer Guardrails產品連結](https://experienceleague.adobe.com/docs/journeys/using/starting-with-journeys/limitations.html)
 
-[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html?lang=zh-Hant)
+[護欄和端對端延遲指引](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/architecture-overview/guardrails.html)
 
 <br>
 
@@ -88,6 +91,6 @@ ht-degree: 56%
 
 * [Experience Platform檔案](https://experienceleague.adobe.com/docs/experience-platform.html?lang=zh-Hant)
 * [Experience Platform標籤檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-* [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hant)
-* [Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html?lang=zh-Hant)
+* [Experience Platform Mobile SDK檔案](https://experienceleague.adobe.com/docs/mobile.html)
+* [Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html)
 * [Journey Optimizer產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-journey-optimizer.html)

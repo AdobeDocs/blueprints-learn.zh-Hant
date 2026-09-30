@@ -3,13 +3,16 @@ title: 啟用資料導向式決策
 description: 瞭解如何使用自助分析、即時客戶見解和AI支援的預測來強化團隊以指導策略。
 solution: Experience Platform, Customer Journey Analytics
 exl-id: 0ff0e873-a95c-4286-9378-56db02d209a1
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 3%
-
 ---
-
 # 啟用資料導向式決策
 
 為團隊提供自助分析、即時客戶見解和AI支援的預測以指導策略。 此目標著重於讓組織的決策者能夠存取並操作客戶和效能資料。

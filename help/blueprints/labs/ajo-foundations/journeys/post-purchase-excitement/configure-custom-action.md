@@ -4,7 +4,10 @@ description: 在Adobe Journey Optimizer中設定可重複使用的自訂動作�
 doc-type: article
 solution: Experience Platform
 exl-id: f81cc8be-bc2a-43cb-a2d4-89834aa94dcb
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
@@ -18,9 +21,9 @@ ht-degree: 0%
 
 ## 導覽至動作
 
-在左側邊欄的[管理]功能表下，按一下[設定] **&#x200B;**，然後在[動作]方塊上按一下[管理] **按鈕**
+在左側邊欄的[管理]功能表下，按一下[設定] ****，然後在[動作]方塊上按一下[管理] **按鈕**
 
-設定![&#128279;](assets/configure-custom-action-open-actions-manage.png)底下[動作]方塊上的管理按鈕
+設定](assets/configure-custom-action-open-actions-manage.png)底下[動作]方塊上的![管理按鈕
 
 
 

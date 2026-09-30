@@ -4,13 +4,14 @@ description: 透過UI和API檢視結構描述的身分描述項，並比較已�
 doc-type: article
 solution: Experience Platform
 exl-id: 44eedb82-259f-4f7f-84fe-acc2b42376eb
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
-
 ---
-
 
 # 檢視結構描述
 
@@ -56,11 +57,11 @@ ht-degree: 0%
 
 請注意請求中使用的&#x200B;**Accept**&#x200B;標頭。 此標頭會通知XDM結構描述登入傳回結構描述的`$refs`未解析（即顯示最小資訊量），以及它在API回應中的關聯描述項。  Adobe提供其他&#x200B;**Accept**&#x200B;標頭，供您用來取得結構描述的詳細資訊。
 
-步驟3取得客戶帳戶結構描述請求&rbrack;(assets/view-schema-accept-header.png "步驟3 — 取得客戶帳戶結構描述接受標題中的!&lbrack;接受標題欄位")
+步驟3取得客戶帳戶結構描述請求](assets/view-schema-accept-header.png "步驟3 — 取得客戶帳戶結構描述接受標題中的![接受標題欄位")
 
 >[!NOTE]
 >
->您可以在這裡閱讀有關各種Accept標頭的詳細資訊 — > [Experience League結構描述API端點](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/schemas.html?lang=zh-Hant#lookup)
+>您可以在這裡閱讀有關各種Accept標頭的詳細資訊 — > [Experience League結構描述API端點](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/schemas.html?lang=en#lookup)
 
 
 

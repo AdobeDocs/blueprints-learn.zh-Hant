@@ -3,13 +3,14 @@ title: 使用案例目錄
 description: 依垂直方向瀏覽產業使用案例，以尋找Adobe Experience Platform和應用程式歷程的正確起點，並附上實作模式和業務目標的連結。
 doc-type: overview-page
 exl-id: 38593314-b8c9-49f6-85db-a4345ec444e7
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '4157'
 ht-degree: 30%
-
 ---
-
 # 使用案例目錄
 
 產業使用案例顯示特定垂直產業的組織如何套用Adobe Experience Platform和應用程式來取得可衡量的業務成果。 每個使用案例都描述具體的業務情境、其預期影響，以及提供詳細實作指引的[使用案例模式](/help/blueprints/use-case-patterns/overview.md)的連結。

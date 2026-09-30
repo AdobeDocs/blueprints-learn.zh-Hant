@@ -4,7 +4,10 @@ description: 瞭解如何在協調的行銷活動中，搭配使用讀取對象�
 doc-type: article
 solution: Experience Platform
 exl-id: f825efe9-4349-4195-a017-c956c15df946
-source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -124,7 +127,7 @@ ht-degree: 0%
 
 10. 從清單中選取`Source`並按一下&#x200B;**確認**
 
-從目標維度資料行![&#128279;](assets/read-an-audience-select-source-attribute.png)中選取Source屬性
+從目標維度資料行](assets/read-an-audience-select-source-attribute.png)中選取![Source屬性
 
 1. Source欄的相異值可在下拉式清單中取得。 針對&#x200B;**自訂條件**，從下拉式清單中選取&#x200B;**「商店內」**，然後按一下&#x200B;**確認**&#x200B;結束
 
@@ -146,7 +149,7 @@ ht-degree: 0%
 
    ![目標維度已展開以顯示關聯式存放區欄](assets/read-an-audience-expand-targeting-dimension.png)
 
-   從目標維度資料行![&#128279;](assets/read-an-audience-select-source-attribute.png)中選取Source屬性
+   從目標維度資料行](assets/read-an-audience-select-source-attribute.png)中選取![Source屬性
 
 1. 對於&#x200B;**自訂條件**，請從下拉式清單中選取&#x200B;**「商店內」**，而運運算元則選取「**不等於**」。 按一下&#x200B;**確認**&#x200B;結束
 
@@ -182,4 +185,4 @@ ht-degree: 0%
 
 您現在已瞭解建立行銷活動、執行讀取對象活動與設定檔目標Dimension的簡易性，以便使用關聯式結構描述。 您已使用「分割」活動根據條件分割對象。 最後，測試模式有助於瞭解設定檔與關聯式結構描述之間的資料一致性很重要。
 
-若您有興趣，請參閱[此處](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience)以瞭解詳情。
+若您有興趣，請參閱[此處](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/design-campaigns/read-audience)以瞭解詳情。

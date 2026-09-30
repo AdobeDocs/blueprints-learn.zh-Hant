@@ -4,13 +4,18 @@ description: 瞭解實作Adobe Experience Platform和應用程式以實現關鍵
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 doc-type: overview-page
 exl-id: 58caa6ad-0d1c-4290-9614-c68c9c9028bb
-source-git-commit: e79d9d6490e4f50c4611dd879b53f0e63a90cd65
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 0%
-
+source-wordcount: '1098'
+ht-degree: 8%
 ---
-
 # 使用案例模式
 
 使用案例模式會為Adobe Experience Platform和應用程式定義可重複的實作方法。 每個模式描述特定功能、提供該功能的執行計畫、相關的應用程式及其支援的[關鍵業務目標](/help/blueprints/business-objectives/overview.md)。
@@ -72,7 +77,7 @@ ht-degree: 0%
 | [B2B對象啟用](b2b/account-audience-activation.md) | 在網頁、電子郵件和廣告頻道中啟用以帳戶為基礎的B2B對象 | [!DNL Real-Time CDP] B2B edition |
 | [購買群組行銷與歷程管理](b2b/buying-group-marketing.md) | 開發符合潛在客戶購買群組資格的帳戶層級歷程，以改善B2B行銷效率 | [!DNL Journey Optimizer] B2B edition，[!DNL Real-Time CDP] B2B edition |
 | [B2B分析](b2b/account-analytics.md) | 在跨管道客戶歷程分析中加入B2B帳戶層級資訊 | [!DNL Customer Journey Analytics] B2B edition，[!DNL Real-Time CDP] B2B edition |
-| 使用Marketo資料的[B2B歷程](b2b/marketo-data-journeys.md) | 使用Marketo資料部署Journey Optimizer B2B edition，以協調購買團體歷程和帳戶參與 | [!DNL Journey Optimizer] B2B edition，[!DNL Marketo Engage]，[!DNL Real-Time CDP] B2B edition |
+| 使用Marketo資料的[B2B歷程](b2b/marketo-data-journeys.md) | 使用Marketo資料部署Journey Optimizer B2B Edition，以協調購買團體歷程和帳戶參與 | [!DNL Journey Optimizer] B2B edition，[!DNL Marketo Engage]，[!DNL Real-Time CDP] B2B edition |
 | [AJO B2B付費媒體控制站](b2b/paid-media-orchestration.md) | 使用Waterfall邏輯來協調B2B付費媒體行銷活動，將帳戶指派給行銷活動並啟用至目的地 | [!DNL Journey Optimizer] B2B edition，[!DNL Real-Time CDP] B2B edition |
 | [Marketo和Workfront錄取與建立](b2b/campaign-intake-and-creation.md) | 使用Workfront Forms和Fusion自動化行銷活動請求接收和Marketo Engage方案建立 | [!DNL Marketo Engage], [!DNL Workfront], [!DNL Workfront Fusion] |
 | [Marketo和Workfront檢閱及核准](b2b/campaign-review-and-approval.md) | 使用Fusion自動化整合Workfront校訂和核准工作流程與Marketo Engage電子郵件資產 | [!DNL Marketo Engage], [!DNL Workfront], [!DNL Workfront Fusion] |
@@ -94,33 +99,33 @@ ht-degree: 0%
 *已失效的客戶已有90天未購買。 您想要透過目標優惠重新與他們互動。*
 
 - **優惠方案選擇是否為動態的（不同客戶會根據資格或排名獲得不同的優惠方案）？**
-   - 是→[Offer Decisioning](personalization/offer-decisioning.md)作為優惠方案圖層，封裝在[多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)中，適用於重新參與順序
-   - 沒有（所有合格失效客戶都有相同優惠），僅→[多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+  - 是→[Offer Decisioning](personalization/offer-decisioning.md)作為優惠方案圖層，封裝在[多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)中，適用於重新參與順序
+  - 沒有（所有合格失效客戶都有相同優惠），僅→[多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)
 
 ### 購買後的後續追蹤
 
 *客戶剛完成購買。 您想要傳送確認、交叉銷售建議和忠誠度獎勵通知。*
 
 - **此序列是否需要根據即時事件（例如，已申請獎勵、已檢閱產品）的回應式分支？**
-   - 是→[多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)
-   - [批次傳出訊息啟用](campaign-management-orchestration/batch-outbound-message-activation.md)→無（固定順序，無分支）
+  - 是→[多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+  - [批次傳出訊息啟用](campaign-management-orchestration/batch-outbound-message-activation.md)→無（固定順序，無分支）
 - **它是否包含個人化產品推薦？**
-   - 是→在內容層使用[行為建議](personalization/behavioral-recommendation.md)延伸
+  - 是→在內容層使用[行為建議](personalization/behavioral-recommendation.md)延伸
 
 ### 忠誠度里程碑個人化
 
 *客戶達到新的忠誠度等級。 您想要顯示個人化網頁內容，並傳送祝賀訊息。*
 
 - **網頁內容是否個人化（每個層級或區段有不同的內容）？**
-   - 是→網頁表面的[已知訪客網頁/應用程式個人化](personalization/known-visitor-web-app-personalization.md)
+  - 是→網頁表面的[已知訪客網頁/應用程式個人化](personalization/known-visitor-web-app-personalization.md)
 - **傳出訊息是否為單一傳送或培養順序？**
-   - 單一傳送→[事件觸發的訊息](campaign-management-orchestration/event-triggered-messaging.md)
-   - [多步→協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)的順序
+  - 單一傳送→[事件觸發的訊息](campaign-management-orchestration/event-triggered-messaging.md)
+  - [多步→協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)的順序
 
 ### 重新參與行銷活動
 
 *非使用中使用者的區段需要多重觸控重新啟用順序。*
 
 - **個別訊息需要即時從多個優惠方案變體中進行選擇嗎？**
-   - 是→[具有決策的跨頻道歷程](campaign-management-orchestration/cross-channel-journey-with-decisioning.md)
-   - 沒有→ [多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)
+  - 是→[具有決策的跨頻道歷程](campaign-management-orchestration/cross-channel-journey-with-decisioning.md)
+  - 沒有→ [多步驟協調歷程](campaign-management-orchestration/multi-step-orchestrated-journey.md)

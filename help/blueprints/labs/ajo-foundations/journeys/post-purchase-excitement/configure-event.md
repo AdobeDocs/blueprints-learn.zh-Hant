@@ -4,13 +4,14 @@ description: 建立並設定單一的「訂單已出貨」事件（包括身分�
 doc-type: article
 solution: Experience Platform
 exl-id: 4d1c1d4d-0dc6-4ea1-aa3c-f959bb3b9aa8
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
-
 ---
-
 
 # 設定事件
 
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 為了建立使用單一事件的歷程，我們需要先設定事件。
 
-1. 在左側邊欄的[管理]功能表下，按一下[設定] **&#x200B;**，然後在[事件]方塊上按一下[管理] **按鈕**
+1. 在左側邊欄的[管理]功能表下，按一下[設定] ****，然後在[事件]方塊上按一下[管理] **按鈕**
 
    「設定」底下的「事件」方塊上的「![」管理按鈕](assets/configure-event-open-events-manage.png)
 

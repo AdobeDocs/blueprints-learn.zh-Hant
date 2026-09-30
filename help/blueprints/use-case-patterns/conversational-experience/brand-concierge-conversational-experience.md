@@ -3,13 +3,16 @@ title: Brand Concierge對話體驗
 description: 瞭解如何將數位屬性轉換為AI支援、品牌安全的對話體驗，以引導客戶探索。
 solution: Experience Platform, Real-Time Customer Data Platform
 exl-id: a9545328-316d-446a-9308-18af61c58d1c
-source-git-commit: 349d26f612d4002d1de3d27c7f893bd63ac467a3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 1%
-
 ---
-
 # Brand Concierge對話體驗
 
 本指南提供使用[!DNL Adobe Brand Concierge]、與[!DNL Adobe Experience Platform] (AEP)和[!DNL Real-Time Customer Data Platform] ([!DNL RT-CDP])整合的AI支援交談體驗概觀。 它專為需要跨數位資產部署品牌安全對話代理程式的解決方案架構師、行銷技術人員和實作工程師所設計。
@@ -105,9 +108,9 @@ ht-degree: 1%
 以下應用程式可用來實作此使用案例模式。
 
 - **[!DNL Brand Concierge]** — AI支援的對話式體驗應用程式，提供代理程式協調器、Product Advisor Agent、網站顧問代理程式、品牌控管和對話式分析
-- **[!DNL Adobe Experience Platform] (AEP)** — 整合的資料基礎，提供對話式訊號的XDM結構描述、身分解析、即時客戶設定檔和資料收集基礎架構
-- **[!DNL Real-Time CDP] ([!DNL RT-CDP])** — 客戶資料平台提供個人化對話的即時設定檔查閱、從對話訊號進行對象細分，以及擴充設定檔與意圖和情緒資料
+- **[!DNL Adobe Experience Platform](AEP)** — 整合的資料基礎，提供對話式訊號的XDM結構描述、身分解析、即時客戶設定檔和資料收集基礎架構
+- **[!DNL Real-Time CDP]([!DNL RT-CDP])** — 客戶資料平台提供個人化對話的即時設定檔查閱、從對話訊號進行對象細分，以及擴充設定檔與意圖和情緒資料
 
 ## 相關文件
 
-如需實作指引和進一步資訊，請參閱Adobe Experience League上的[Brand Concierge概觀](https://experienceleague.adobe.com/zh-hant/docs/brand-concierge/content/documentation/overview)。
+如需實作指引和進一步資訊，請參閱Adobe Experience League上的[Brand Concierge概觀](https://experienceleague.adobe.com/en/docs/brand-concierge/content/documentation/overview)。

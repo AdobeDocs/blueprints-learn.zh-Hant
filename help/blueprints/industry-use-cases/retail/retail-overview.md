@@ -3,13 +3,18 @@ title: 零售使用案例
 description: 探索零售組織如何使用Adobe Experience Platform來個人化購物體驗、復原放棄的購物車，並提高客戶忠誠度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 89a5b6b5-bb71-4154-bb3b-f6dbbbef13eb
-source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '6082'
 ht-degree: 0%
-
 ---
-
 # 零售使用案例
 
 零售組織使用Adobe Experience Platform將線上商店、實體地點和忠誠計畫的客戶資料整合為每位購物者的單一檢視。 此基礎可啟用個人化購物體驗、可彌補收入損失的及時外聯，以及可讓客戶回訪的忠誠度策略。

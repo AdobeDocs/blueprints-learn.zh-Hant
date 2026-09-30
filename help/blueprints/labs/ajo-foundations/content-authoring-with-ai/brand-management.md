@@ -4,13 +4,14 @@ description: 瞭解如何透過上傳品牌指引PDF、調整擷取的詳細資�
 doc-type: article
 solution: Experience Platform
 exl-id: 84be70f5-6c3b-40e2-ad38-ac737363f845
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1414'
 ht-degree: 0%
-
 ---
-
 
 # 品牌管理
 
@@ -48,7 +49,7 @@ Adobe Journey Optimizer的&#x200B;**品牌**&#x200B;功能可協助您定義並�
 
 1. 從Toolkit資料夾開啟&#x200B;**Connection 5G Brand Guidelinate** PDF （請先解壓縮）。
 
-   ![從Toolkit資料夾開啟Connection 5G Brand Guidelinate PDF &#x200B;](assets/brand-management-open-brand-guideline-pdf.png)
+   ![從Toolkit資料夾開啟Connection 5G Brand Guidelinate PDF ](assets/brand-management-open-brand-guideline-pdf.png)
 
 2. 請檢閱檔案以瞭解Connection 5G使用的內容：
    - 語調

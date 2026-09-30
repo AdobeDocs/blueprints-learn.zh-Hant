@@ -4,13 +4,14 @@ description: 將自訂裝置屬性（如品牌、型號和階層）新增至標�
 doc-type: article
 solution: Experience Platform
 exl-id: 00326a7c-8139-46f5-85bd-5ea1f63f29cf
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 0%
-
 ---
-
 
 # 建立優惠屬性
 
@@ -75,7 +76,7 @@ ht-degree: 0%
 
    ![顯示已完成的「製作」、「模型」和「階層」欄位的選件結構描述](assets/create-offer-attributes-make-model-tier-fields.png)
 
-3. 建立所有新的XDM欄位/屬性後，按一下右上角的「儲存&#x200B;**&#x200B;**」，畫面底部就會顯示綠色的「已成功儲存的結構描述」訊息。 您現在已經完成本節中的步驟。
+3. 建立所有新的XDM欄位/屬性後，按一下右上角的「儲存&#x200B;****」，畫面底部就會顯示綠色的「已成功儲存的結構描述」訊息。 您現在已經完成本節中的步驟。
 
 >[!WARNING]
 >

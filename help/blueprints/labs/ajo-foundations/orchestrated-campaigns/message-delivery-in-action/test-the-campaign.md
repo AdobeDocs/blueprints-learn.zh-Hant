@@ -4,7 +4,10 @@ description: 瞭解如何在測試模式中執行協調的行銷活動，並解�
 doc-type: article
 solution: Experience Platform
 exl-id: e77ae8ab-f18f-4683-8fdd-ba4f4629d96c
-source-git-commit: df6c1852a6e0357dc9f166c88e77dcf9d334f955
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
@@ -108,4 +111,4 @@ ht-degree: 0%
 
 您現在已瞭解如何測試建立的行銷活動，以瞭解流量和行為。 在測試流程執行期間，我們已充分瞭解使用不同設定進行電子郵件通道設定的細微差別。
 
-如果您有興趣，請在[這裡](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns)閱讀更多有關行銷活動測試模式的資訊。
+如果您有興趣，請在[這裡](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns)閱讀更多有關行銷活動測試模式的資訊。

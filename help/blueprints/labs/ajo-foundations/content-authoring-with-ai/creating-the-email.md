@@ -4,7 +4,10 @@ description: 瞭解如何在Adobe Journey Optimizer中將品牌化內容範本�
 doc-type: article
 solution: Experience Platform
 exl-id: bf823714-7298-48fc-a18b-9bf2462ae52e
-source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
@@ -112,7 +115,7 @@ ht-degree: 0%
 
    ![從Toolkit資料夾上傳hero.png](assets/creating-the-email-upload-hero-png-file.png)
 
-5. 按[下一步]，**選取**&#x200B;您資產資料夾&#x200B;**，然後按[匯入]**&#x200B;**&#x200B;**
+5. 按[下一步]，**選取**&#x200B;您資產資料夾&#x200B;**，然後按[匯入]******
 
    ![選取資產資料夾並按一下主圖影像的匯入](assets/creating-the-email-select-folder-import-hero.png)
 

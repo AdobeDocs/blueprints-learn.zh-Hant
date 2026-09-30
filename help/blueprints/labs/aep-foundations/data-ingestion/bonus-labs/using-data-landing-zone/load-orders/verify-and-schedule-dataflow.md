@@ -4,13 +4,14 @@ description: 驗證完整的「訂單」對應集、預覽輸出，以及排程�
 doc-type: article
 solution: Experience Platform
 exl-id: b7f0c43b-092c-45ba-b95b-27cb4a49d110
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 7%
-
 ---
-
 
 # 驗證及排程資料流
 
@@ -68,7 +69,7 @@ ht-degree: 7%
 
 ## 排程執行
 
-1. 將頻率設定為[分鐘]並將間隔設定為[15]，以將此排程設定為每15分鐘執行&#x200B;**&#x200B;**。 檢閱流程，然後按一下「完成」。
+1. 將頻率設定為[分鐘]並將間隔設定為[15]，以將此排程設定為每15分鐘執行&#x200B;****。 檢閱流程，然後按一下「完成」。
 
    >[!CAUTION]
    >
