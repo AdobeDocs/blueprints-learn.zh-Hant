@@ -2,7 +2,10 @@
 title: B2B對象和設定檔啟用
 description: 透過Real-Time Customer Data Platform B2B edition提供以帳戶為基礎和以人物為基礎的對象，以跨管道和目的地啟用。
 solution: Real-Time Customer Data Platform
-source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 5%

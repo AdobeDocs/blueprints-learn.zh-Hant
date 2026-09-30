@@ -1,7 +1,10 @@
 ---
 title: 擷取並建立藍圖
 description: 擷取與建立 — Marketo Engage與Workfront整合
-source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 86%

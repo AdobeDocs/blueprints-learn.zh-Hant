@@ -3,13 +3,18 @@ title: 電信使用案例
 description: 瞭解電信組織如何使用Adobe Experience Platform來減少流失率、推動裝置並規劃升級，以及改善客戶參與度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 653632f0-81be-435c-a703-56c5bc132794
-source-git-commit: 4b4d85f80abaa6219e7ea210864a07a141564921
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '3527'
 ht-degree: 0%
-
 ---
-
 # 電信使用案例
 
 電信組織使用Adobe Experience Platform來建立每個訂閱者的統一檢視，並提供個人化體驗，以減少流失、增加計畫和裝置升級，以及加強長期客戶關係。 透過連線網路使用資料、計費資訊和客戶互動，電信提供者可以預測訂戶需求，並透過其偏好的管道在正確的時間與他們互動。

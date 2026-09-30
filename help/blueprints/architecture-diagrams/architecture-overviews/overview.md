@@ -3,7 +3,10 @@ title: 架構概述
 description: 最上層圖表會顯示Adobe Experience Cloud應用程式、Adobe Experience Platform及其SDK如何結合在一起，再加上護欄和延遲。
 solution: Experience Platform
 doc-type: overview-page
-source-git-commit: 7b2542ddb50449d5f41b81d1fe95781aaffa972a
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%

@@ -3,13 +3,18 @@ title: 金融服務使用案例
 description: 瞭解金融服務組織如何使用Adobe Experience Platform來個人化產品選件、防止流失並深化客戶關係。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: 1f22d684-11bd-473d-8b10-5f88cb0cd088
-source-git-commit: 0236bd326730ee9a0be621ee0e60ddc3d352410d
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '4039'
 ht-degree: 0%
-
 ---
-
 # 金融服務使用案例
 
 金融服務組織仰賴Adobe Experience Platform整合銀行、貸款和投資管道的客戶資料，提供強化關係並推動增長的個人化體驗。 這些組織將帳戶活動、交易歷史記錄和行為訊號集合在一起，便可在適當的時間提供適當的優惠，同時維持客戶期望的信任和合規性。

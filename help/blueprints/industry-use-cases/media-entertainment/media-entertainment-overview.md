@@ -3,13 +3,18 @@ title: 媒體與娛樂使用案例
 description: 探索媒體和娛樂組織如何使用Adobe Experience Platform來個人化內容探索、減少訂閱者流失並增加受眾參與度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: cfcf689f-9579-447f-9ef9-72e0c80c1f27
-source-git-commit: e8185f348f926acab2ca2e0c3cd55c08c663cf41
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '3363'
 ht-degree: 0%
-
 ---
-
 # 媒體與娛樂使用案例
 
 媒體和娛樂組織使用Adobe Experience Platform將串流平台、內容資料庫和訂閱者帳戶的對象資料整合為每個檢視者或聽眾的單一檢視。 此基礎可啟用個人化內容探索、主動訂閱者保留和參與策略，讓受眾回訪時瞭解更多。

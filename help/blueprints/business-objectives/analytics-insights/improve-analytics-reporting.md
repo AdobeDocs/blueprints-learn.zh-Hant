@@ -3,13 +3,16 @@ title: 改善分析和報告
 description: 瞭解如何透過統一的儀表板和自助服務工具增強報告功能，以更快、更實際可行的行銷深入分析。
 solution: Experience Platform, Customer Journey Analytics
 exl-id: 9a663191-c89a-41f6-9a10-f99101880ac9
-source-git-commit: 8284380fb9202991f3da7d755225da2e38a50cac
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 3%
-
 ---
-
 # 改善分析和報告
 
 增強報告功能，透過統一的儀表板和自助服務工具提供更快、更實際可行的行銷深入分析。 此目標的重點在於為團隊提供全方位的跨管道分析，以便更快地識別趨勢、機會和問題。

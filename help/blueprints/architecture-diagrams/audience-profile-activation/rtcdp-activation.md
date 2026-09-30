@@ -2,7 +2,12 @@
 title: Adobe Real-Time CDP啟用
 description: 用於啟用對象和設定檔資料的架構參考，從Adobe Real-Time CDP到廣告、社交、雲端儲存空間，以及企業目的地。
 solution: Real-Time Customer Data Platform, Experience Platform
-source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%

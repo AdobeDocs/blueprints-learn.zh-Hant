@@ -2,7 +2,10 @@
 title: AJO B2B付費媒體控制者
 description: 行銷活動的優先順序及啟用付費媒體目的地的帳戶
 solution: Journey Optimizer B2B Edition
-source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
+product_v2:
+  - id: aacce07f-424e-489e-8d02-a4fb2f4211bd
+    internal-label: Journey Optimizer B2B Edition
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 0%
@@ -117,5 +120,5 @@ ht-degree: 0%
 
 ## 相關文件
 
-- [Adobe Journey Optimizer B2B Edition](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b) — 產品檔案。
+- [Adobe Journey Optimizer B2B Edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b) — 產品檔案。
 - [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) — 帳戶對象與啟用。

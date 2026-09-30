@@ -3,7 +3,10 @@ title: Advertising和檔案目的地的B2B帳戶啟用
 description: 使用以帳戶為基礎的參與來建立帳戶對象，並將這些對象啟用至廣告目標和雲端儲存空間。
 solution: Real-Time Customer Data Platform
 exl-id: 578c0019-6133-4508-ae9d-8a8a463376f0
-source-git-commit: ce7331f279a6e59db95ca3b763148440598cde84
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%

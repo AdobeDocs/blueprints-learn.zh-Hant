@@ -3,13 +3,18 @@ title: 旅遊業及旅館業使用案例
 description: 探索旅遊及旅館組織如何使用Adobe Experience Platform來個人化預訂體驗、復原放棄的預訂，並建立訪客忠誠度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: fbdcc015-96a4-4015-93e2-3fc7db375c13
-source-git-commit: 5cbdfd028816a872c9424daf29aabe8db1954197
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '3744'
 ht-degree: 0%
-
 ---
-
 # 旅遊業及旅館業使用案例
 
 旅遊和酒店組織使用Adobe Experience Platform，將預訂引擎、忠誠度計畫、屬性管理系統和數位接觸點的訪客資料整合到每個旅客的單一檢視中。 此統一基礎可支援個人化體驗，激發預訂興趣、復原放棄的預訂，並建立可促進重複造訪的訪客忠誠度。

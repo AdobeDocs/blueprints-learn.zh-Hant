@@ -3,13 +3,18 @@ title: 汽車使用案例
 description: 瞭解汽車組織如何使用Adobe Experience Platform來個人化車輛購買歷程、改善服務保留率，並建立擁有者忠誠度。
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 exl-id: ee83c739-0907-481d-ba3f-358af4e03c67
-source-git-commit: e5c88f240fe86bbc494402842a3d974f803aab03
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 4%
-
 ---
-
 # 汽車使用案例
 
 汽車組織使用Adobe Experience Platform將經銷商互動、線上車輛研究、服務記錄及連線車輛系統的客戶資料整合為每個擁有者的單一檢視。 此基礎可在整個擁有權生命週期中啟用個人化體驗，從最初的車輛研究到購買、服務和忠誠度。

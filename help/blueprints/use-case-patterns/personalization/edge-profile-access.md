@@ -3,7 +3,10 @@ title: 適用於Web和Mobile Personalization的即時Edge設定檔存取
 description: 在邊緣[!UICONTROL 即時客戶個人檔案]存取權，以提供即時網頁和行動個人化的內容。
 solution: Real-Time Customer Data Platform, Data Collection
 kt: 719
-source-git-commit: 79738031788419872e32b8f754febacbfd18cc06
+product_v2:
+  - id: fdddec33-c9cb-4459-b8b6-2664395a6f10
+    internal-label: Real-Time Customer Data Platform
+source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
 workflow-type: tm+mt
 source-wordcount: '1933'
 ht-degree: 11%
