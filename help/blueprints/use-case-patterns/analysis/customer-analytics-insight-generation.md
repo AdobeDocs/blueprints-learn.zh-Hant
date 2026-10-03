@@ -125,7 +125,7 @@ ht-degree: 3%
 - [資料檢視總覽](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)
 - [建立或編輯資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)
 - [元件設定概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/overview)
-- [持續性設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
+- [持續性設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)
 - [歸因設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/attribution)
 - [格式設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/format)
 - [量度重複資料刪除](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication)
@@ -137,7 +137,7 @@ ht-degree: 3%
 
 - [Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/home)
 - [建立專案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects)
-- [自由格式表格](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
+- [自由格式表格](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/freeform-table)
 - [流量視覺效果](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/flow/flow)
 - [流失視覺效果](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/fallout/fallout-flow)
 - [同類群組表格](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/visualizations/cohort-table/cohort-analysis)
@@ -192,7 +192,7 @@ ht-degree: 3%
 
 - [資料集總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/overview)
 - [XDM系統概覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/home)
-- [來源概觀](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+- [來源概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/home)
 - [Identity Service總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)
 - [Audience Portal概述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-portal)
 

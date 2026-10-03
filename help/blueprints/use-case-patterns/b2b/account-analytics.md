@@ -151,7 +151,7 @@ B2B Analytics利用[!DNL CJA] B2B edition建立以帳戶為中心的分析檢視
 
 **對象**
 
-- [受眾概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
+- [受眾概述](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/audiences-overview)
 - [建立及發佈對象](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/publish)
 - [管理對象](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/audiences/manage)
 
