@@ -120,5 +120,5 @@ ht-degree: 0%
 
 ## 相關文件
 
-- [Adobe Journey Optimizer B2B Edition](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b) — 產品檔案。
+- [Adobe Journey Optimizer B2B Edition](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-b2b) — 產品檔案。
 - [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/b2b-overview) — 帳戶對象與啟用。
