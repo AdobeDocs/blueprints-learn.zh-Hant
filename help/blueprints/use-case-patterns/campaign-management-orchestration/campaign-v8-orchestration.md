@@ -49,7 +49,7 @@ Adobe Campaign v8是新一代的行銷活動管理平台，專為電子郵件和
 
 ## 架構圖
 
-深入瞭解[Campaign v8部署模型](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html#ac-deployment){target="_blank"}。
+深入瞭解[Campaign v8部署模型](https://experienceleague.adobe.com/docs/campaign/campaign-v8/config/architecture/architecture.html?lang=zh-Hant#ac-deployment){target="_blank"}。
 
 ### Campaign企業(FFDA)部署
 
