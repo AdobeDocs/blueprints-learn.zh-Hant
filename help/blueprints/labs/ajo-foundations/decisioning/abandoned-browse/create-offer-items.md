@@ -7,7 +7,7 @@ exl-id: 76214d87-5107-4829-9d6e-91073e1008ca
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 43fcd38b8bd9c068695b1f325c367d35381d6dbe
+source-git-commit: f76215380509d20a9204e6dd3cab4cb852e0ad31
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
@@ -86,7 +86,7 @@ ht-degree: 0%
    >
    >實際上，如果選件較複雜，則應設定適當的核准程式，以確保已正確建立選件專案。 為了節省本實驗的時間，您只需核准您建立的每個優惠方案專案。
 
-1. 按一下選件專案標題旁的&#x200B;**向左箭頭**&#x200B;以返回「選件」頁面，您會看到列出您的iphone：17\：generic選件。
+12. 按一下選件專案標題旁的&#x200B;**向左箭頭**&#x200B;以返回「選件」頁面，您會看到列出您的iphone：17\：generic選件。
 
 ## 建立基本模型優惠方案專案
 
@@ -123,7 +123,7 @@ ht-degree: 0%
    >
    >頻率上限規則中提到的「天數」是指GMT時區的天數。  以天數為上限的邏輯會在午夜(GMT)重設。
 
-7. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;繼續檢閱步驟。
+7. 按一下[下一步]****&#x200B;繼續檢閱步驟。
 8. 確定一切如預期顯示，然後按一下&#x200B;**儲存**&#x200B;按鈕。 儲存後，按一下&#x200B;**核准。**
 9. 核准後，按一下標題旁邊的左箭頭並返回選件頁面。 您現在會看到兩個選件，每個都具有適當的優先順序。
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
    ![Pro優惠方案專案資格與每日最多3次曝光的設定](assets/create-offer-items-pro-offer-eligibility-capping.png)
 
-6. 確認一切正確後，請按一下[下一步] **&#x200B;**。 最終選件專案設定看起來像這樣：
+6. 確認一切正確後，請按一下[下一步] ****。 最終選件專案設定看起來像這樣：
 
    ![已完成Pro層級優惠方案專案的設定](assets/create-offer-items-pro-offer-final-config.png)
 
