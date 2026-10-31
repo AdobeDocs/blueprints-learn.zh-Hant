@@ -56,7 +56,7 @@ ht-degree: 11%
 ## 護欄
 
 * [[!UICONTROL 即時客戶設定檔]資料的護欄](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)
-* [Edge Network護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html)
+* [Edge Network護欄](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/guardrails.html?lang=zh-Hant)
 * Edge設定檔具有14天的存留時間(TTL)。 如果使用者未在Edge上活動14天，Edge設定檔可能會過期，且需要從中心擷取，這可能會影響第一頁個人化。
 * Edge個人化支援對符合邊緣細分條件的對象進行即時對象成員資格評估。 透過適當的設定，也可從邊緣取得批次和來自集線器的串流對象。
 
