@@ -1,13 +1,14 @@
 ---
 name: blueprint-document-reference
 description: 建立和編輯Adobe數位體驗Blueprint檔案的參考。 用於建立新Blueprint、新增Blueprint頁面，或使用者詢問Blueprint結構、區段、範本或參考Adobe Experience League時。
-source-git-commit: 83e85d946e455cde46001af0a2112637b7fe24cc
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 1%
-
 ---
-
 
 # Blueprint檔案參考
 
@@ -98,8 +99,8 @@ exl-id: [UUID - if this is already popultated keep it as is. Disregard and remov
 ## 引用Adobe Experience League
 
 - **何時連結**：連結至Experience League以取得產品檔案、API參考、護欄、教學課程和設定步驟。 不要重複冗長的程式；摘要並連結。
-- **URL格式**：使用完整的URL。 偏好`https://experienceleague.adobe.com/docs/?lang=zh-Hant...`或`https://experienceleague.adobe.com/zh-hant/docs/...`。 對於開發人員檔案，`https://developer.adobe.com/...`也是有效的。
-- **連結文字**：使用描述性文字（例如，「[建立結構描述] (url)」而非「按一下這裡」）。 對於連結文字中的產品名稱，請視情況使用`[!DNL Product Name]`。
+- **URL格式**：使用完整的URL。 偏好`https://experienceleague.adobe.com/docs/...`或`https://experienceleague.adobe.com/en/docs/...`。 對於開發人員檔案，`https://developer.adobe.com/...`也是有效的。
+- **連結文字**：使用描述性文字（例如，「[建立結構描述](url)」而非「按一下這裡」）。 對於連結文字中的產品名稱，請視情況使用`[!DNL Product Name]`。
 - **相關檔案區段**：以「相關檔案」區段結束Blueprint，依類別群組連結（例如目的地設定、SDK檔案、設定檔和區段、教學課程）。
 
 如需詳細的URL模式、連結分組和範例，請參閱[reference.md](reference.md)。

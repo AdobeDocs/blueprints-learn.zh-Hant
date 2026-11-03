@@ -1,14 +1,18 @@
 ---
-source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '3507'
 ht-degree: 6%
 ---
+
 # 藍圖稽核與建議
 
 此稽核會將[評估規則](rubric.md)套用至下的每個檔案
 [TOC.md](../help/blueprints/TOC.md) （第76-133行）的「架構圖表和藍圖」區段，以及
-建議每個Blueprint是否應該成為使用案例&#x200B;**模式**，一種架構
+建議每個Blueprint是否應該成為使用案例**模式**，一種架構
 **圖表**，兩者皆為（**分割**），或標籤為現有模式的&#x200B;**重複**。
 
 這僅是稽核 — 未移動任何內容。 移轉待處理專案（批次A-D動作）
@@ -122,7 +126,7 @@ B2B行銷運作實務。 新類別總共彙總7個模式：3個已重新定位
 **擱置中 — 當Blueprint為&#x200B;*已刪除*時新增（縮減為現成圖表時不會新增）：**，如果
 模式、分割或複製列的藍圖稍後會完全移除，請從新增重新導向
 標準模式URL的Blueprint URL。 預設移轉方法（簡化圖表）
-讓Blueprint URL保持作用中，**不需要**&#x200B;這些重新導向。 以下列出
+讓Blueprint URL保持作用中，**不需要**這些重新導向。 以下列出
 如果任何Blueprint已完全淘汰，則為完整性：
 
 ```

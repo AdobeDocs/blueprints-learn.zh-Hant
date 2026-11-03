@@ -1,9 +1,13 @@
 ---
-source-git-commit: 2ed15399073fce5ebd1c2ba07b1cf70ec706452c
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 2%
 ---
+
 # 移轉狀態a€」使用案例模式的Blueprint
 
 本檔案會擷取藍圖重組工作的狀態，以便在不同工作階段間乾淨地繼續。
@@ -66,7 +70,7 @@ Aa€&quot;E之後的使用案例模式總數：6個類別中的&#x200B;**26個�
 | 2 | `enterprise-destinations.md` | 交叉連結提示+圖表已移轉至模式(`audience-activation-to-destinations`) |
 | 3 | `advertising-activation.md` | 移除實作步驟（99 a†&#39; 35行） |
 | 4 | `customer-activity.md` | 移除實作步驟（51a†&#39; 40行） |
-| 5 | `data-science.md` | 移除實作考量（46個a†&grave; 40行） |
+| 5 | `data-science.md` | 移除實作考量（46個a†` 40行） |
 | 6 | `real-time-lookup.md` | 先決條件+實作模式/步驟/考量已移除（156 a†&#39; 73行） |
 | 7 | `segment-match.md` | **沒有變更** （使用者選擇保持原狀） |
 | 8 | `rtcdp-target.md` | 實作模式+已移除考量事項（99 a†&#39; 74行） |
@@ -112,10 +116,10 @@ Aa€&quot;E之後的使用案例模式總數：6個類別中的&#x200B;**26個�
 
 ## 仍未解決的問題（來自稽核）
 
-&#x200B;2. 「**`journey-optimizer-journeys.md`** a€」標籤為不確定的`event-triggered-messaging`重複專案；修剪前請先驗證範圍。
-&#x200B;3. 「**`customer-journey-analytics/analysis.md`** a€」內容與Experience Platform查詢服務有關，而非CJA；請考慮重新定位至`experience-platform/`。
-&#x200B;4. **`customer-success-stories.md`** a€」僅限連結的頁面；確認導覽分類。
-&#x200B;5. 由已完成的B2B架構配置取代的歷史TOC錨點問題。
+2. 「**`journey-optimizer-journeys.md`** a€」標籤為不確定的`event-triggered-messaging`重複專案；修剪前請先驗證範圍。
+3. 「**`customer-journey-analytics/analysis.md`** a€」內容與Experience Platform查詢服務有關，而非CJA；請考慮重新定位至`experience-platform/`。
+4. **`customer-success-stories.md`** a€」僅限連結的頁面；確認導覽分類。
+5. 由已完成的B2B架構配置取代的歷史TOC錨點問題。
 
 ## 如何繼續
 

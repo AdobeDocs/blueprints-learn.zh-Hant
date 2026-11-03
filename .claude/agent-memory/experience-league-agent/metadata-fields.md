@@ -1,15 +1,18 @@
 ---
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 1%
-
+source-wordcount: '768'
+ht-degree: 8%
 ---
+
 # Adobe Experience League — 核准的中繼資料欄位參考
 
 *來源為Adobe ExL Authoring Guide （抓取日期：2026年2月） + blueprint-learn.en*
 
-&#x200B;---
+---
 
 ## 中繼資料階層
 
@@ -18,7 +21,7 @@ ht-degree: 1%
 2. 使用手冊中的TOC.md
 3. 存放庫根目錄下的metadata.md （最低優先順序）
 
-&#x200B;---
+---
 
 ## 文章層級欄位
 
@@ -42,7 +45,7 @@ ht-degree: 1%
 |-------|-------------|----------------------|
 | `kt` | 舊版知識文章JIRA號碼。 用於分析追蹤。 | 整數（例如`7207`）；可接受空白；`null`可接受 |
 | `thumbnail` | recommendations/analytics的縮圖影像參考。 | 檔案名稱字串、`null`或空白 |
-| `version` | 產品版本篩選器。 主要用於AEM和Campaign藍圖。 | E.g. `Campaign v8`，`Campaign v8 Client Console`；必須符合version.yml |
+| `version` | 產品版本篩選器。 主要用於AEM和Campaign藍圖。 | E.g. `Campaign v8`， `Campaign v8 Client Console`；必須符合version.yml |
 | `doc-type` | 用於存放庫/分析的內容分類。 | `blueprint`、`overview-page`、`Video`、`Tutorial`、`Troubleshooting` （偏好使用小寫） |
 | `feature` | 在ExL頁面上顯示為「主題」的主題標籤。 | 每篇文章1-2；標題大小寫；必須符合feature.yml；逗號分隔 |
 | `feature-set` | 用於功能驗證的父項應用程式。 | 必須符合feature.yml值 |
@@ -69,7 +72,7 @@ ht-degree: 1%
 | `source-git-url` | Source存放庫URL。 | 完整GitHub URL |
 | `cloud` | 文章層級的雲端類別覆寫。 | 字首大寫；必須符合cloud.yml |
 
-&#x200B;---
+---
 
 ## TOC.md欄位
 
@@ -83,7 +86,7 @@ ht-degree: 1%
 | `role` | 指南的預設受眾角色。 | 與文章`role`的值相同；以逗號分隔 |
 | `index` | 是否將指南編制索引。 | `yes`/`no` |
 
-&#x200B;---
+---
 
 ## 存放庫層級metadata.md欄位
 
@@ -98,7 +101,7 @@ ht-degree: 1%
 | `git-repo` | GitHub存放庫URL；啟用「編輯此頁面」和「記錄問題」按鈕 |
 | `index` | 預設索引設定 |
 
-&#x200B;---
+---
 
 ## 有效的解決方案值（區分大小寫）
 
@@ -123,7 +126,7 @@ ht-degree: 1%
 
 多個值：逗號分隔，如`Real-Time Customer Data Platform, Campaign`
 
-&#x200B;---
+---
 
 ## 有效的產品值（`product`欄位 — 分析追蹤）
 
@@ -137,7 +140,7 @@ ht-degree: 1%
 - `adobe campaign` / `campaign` / `ac`
 - `adobe target` / `target` / `at`
 
-&#x200B;---
+---
 
 ## 有效的角色值
 
@@ -149,7 +152,7 @@ ht-degree: 1%
 - `Leader`
 - `User`
 
-&#x200B;---
+---
 
 ## 金鑰驗證規則
 
