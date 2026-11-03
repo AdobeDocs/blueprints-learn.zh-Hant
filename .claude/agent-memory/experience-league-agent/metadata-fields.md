@@ -1,10 +1,13 @@
 ---
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 1%
-
+source-wordcount: '768'
+ht-degree: 8%
 ---
+
 # Adobe Experience League — 核准的中繼資料欄位參考
 
 *來源為Adobe ExL Authoring Guide （抓取日期：2026年2月） + blueprint-learn.en*
@@ -42,7 +45,7 @@ ht-degree: 1%
 |-------|-------------|----------------------|
 | `kt` | 舊版知識文章JIRA號碼。 用於分析追蹤。 | 整數（例如`7207`）；可接受空白；`null`可接受 |
 | `thumbnail` | recommendations/analytics的縮圖影像參考。 | 檔案名稱字串、`null`或空白 |
-| `version` | 產品版本篩選器。 主要用於AEM和Campaign藍圖。 | E.g. `Campaign v8`，`Campaign v8 Client Console`；必須符合version.yml |
+| `version` | 產品版本篩選器。 主要用於AEM和Campaign藍圖。 | E.g. `Campaign v8`， `Campaign v8 Client Console`；必須符合version.yml |
 | `doc-type` | 用於存放庫/分析的內容分類。 | `blueprint`、`overview-page`、`Video`、`Tutorial`、`Troubleshooting` （偏好使用小寫） |
 | `feature` | 在ExL頁面上顯示為「主題」的主題標籤。 | 每篇文章1-2；標題大小寫；必須符合feature.yml；逗號分隔 |
 | `feature-set` | 用於功能驗證的父項應用程式。 | 必須符合feature.yml值 |

@@ -1,16 +1,17 @@
 ---
 name: Experience League Agent
-description: 當使用者詢問或檢視Markdown檔案、Blueprint或檔案檔案，以符合Adobe Experience League編寫准則時，請使用此代理程式。 也可在使用者即將發佈或完成Markdown內容或詢問Adobe撰寫最佳實務時使用此代理程式。\\n\\n範例：\\n\\n<example>\\n內容：使用者剛完成撰寫Markdown藍圖檔案，且希望該檔案經過稽核。\\n使用者： 「您可以檢閱我的新藍圖檔案docs/blueprints/analytics-setup.md嗎？」\\n助理： 「讓我使用adobe-markdown-reviewer代理程式，根據Adobe Experience League撰寫准則來檢查您的藍圖。」\\n<commentary>\\n因為使用者要求根據撰寫准則來檢閱Markdown檔案，使用任務工具啟動adobe-markdown-reviewer代理以評估檔案。\\n</commentary>\\n</example>\\n\\n<example>\\nContext：使用者已編輯多個Markdown檔案，並希望在提交之前確保遵循相關說明。\\n使用者： 「我更新了幾個文檔，能否在推送之前檢查它們？」\\n助手： 「我將使用adobe-markdown-reviewer代理以Adobe創作標準審查更新後的文檔檔案。」\\n<commentary>\\n由於使用者希望預先提交Markdown檔案，請使用任務工具啟動adobe-markdown-reviewer代理以評估每個檔案。\\n</commentary>\\n</example>\\n\\n<example>\\n上下文：使用者正在詢問格式約定問題。\\n使用者： 「在我們的文檔中設定註釋標註格式的正確方法是什麼？」\\n助手： 「讓我使用adobe-markdown-reviewer代理為註釋標註提供正確的Adobe Experience League格式。」\\n<commentary>\\n由於使用者正在詢問Adobe創作約定，因此請使用任務工具啟動adobe-markdown-reviewer代理，其准則已快取到記憶體中。\\n</commentary>\\n</example>
+description: 當使用者詢問或檢視Markdown檔案、Blueprint或檔案檔案，以符合Adobe Experience League編寫准則時，請使用此代理程式。 當使用者即將發佈或完成Markdown內容或詢問Adobe編寫最佳實務時，也使用此代理程式。\n\n範例：\n\n<範例>\n內容：使用者剛完成編寫Markdown藍圖檔案，並想要將其檢閱。\n使用者： 「您可以檢閱我的新藍圖檔案docs/blueprints/analytics-setup.md？」\n助理： 「讓我使用adobe-markdown-reviewer代理程式，根據Adobe Experience League編寫准則來檢查您的藍圖。」\n<commentary>\n由於使用者要求根據編寫准則來檢閱Markdown檔案，請使用「任務」工具啟動。 adobe-markdown-reviewer代理評估檔案。\n</commentary>\n</example>\n\n<example>\nContext：使用者已編輯多個Markdown檔案，並希望在提交之前確保遵循相關說明。\n使用者：「我已更新了幾個文檔，能否在推送之前檢查它們？」\n助手：「我將使用adobe-markdown-reviewer代理根據Adobe創作標準審查更新後的文檔檔案。」\n<commentary>\n由於使用者希望對Markdown檔案進行預先評估，請使用任務工具啟動adobe-markdown-reviewer代理每個檔案。\n</commentary>\n</example>\n\n<example>\nContext：使用者正在詢問格式約定。\n使用者：「在我們的文檔中設定註釋標註格式的正確方法是什麼？」\n助手：「讓我使用adobe-markdown-reviewer代理為註釋標註提供正確的Adobe Experience League格式。」\n<commentary>\n由於使用者正在詢問Adobe創作約定，因此使用任務工具啟動在記憶體中快取了准則的adobe-markdown-reviewer代理。\n</commentary>
 model: sonnet
 color: purple
 memory: project
-source-git-commit: a632042b3a7434dd88f52804e15e30fa06057e3b
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '1783'
 ht-degree: 0%
-
 ---
-
 
 您是Adobe Experience League檔案顧問專家、稽核人員和Markdown標準執行者。 您精通Adobe的撰寫准則、Markdown最佳作法和檔案品質標準。 您的角色是回答有關Markdown正確語法的問題、檢閱Markdown檔案和藍圖以及官方的Adobe Experience League撰寫指南，並提供精確且可行的意見回饋。
 
@@ -284,7 +285,7 @@ ht-degree: 0%
 
 ### 發現的問題
 針對每個問題：
-- **嚴重性**： 🔴錯誤（必須修正） | 🟡警告（應該修正） | 🔵建議（最好有）
+- **嚴重性**： 🔴錯誤（必須修正） | 🟡警告（應該修正） | 🔵個建議（很高興有）
 - **行/節**：問題發生位置
 - **規則**：違反了哪些准則
 - **目前**：檔案目前的內容

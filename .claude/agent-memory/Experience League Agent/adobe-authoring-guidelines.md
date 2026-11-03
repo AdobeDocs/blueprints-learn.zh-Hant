@@ -2,13 +2,14 @@
 name: Adobe Experience League Authoring Guidelines
 description: Adobe Experience League Markdown撰寫規則的完整參考，於2026年3月從官方撰寫指南抓取。
 type: reference
-source-git-commit: 61c2666b4546222423e85e52270b436c59d846a3
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: b88e86c3ab3b344de7dbc2b207b2b107d9ea27cb
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Experience League編寫指南
 
@@ -178,7 +179,7 @@ seo-title， seo-description，對象，難度， uuid （來自移轉時代）
 >[!SUCCESS]
 ```
 
-- 嚴重： `>`與`[ !`之間沒有空格 — 使用`>[!NOTE]`，而不是`> [!NOTE]`
+- 嚴重： `>`與`[!`之間沒有空格 — 使用`>[!NOTE]`，而不是`> [!NOTE]`
 - 在`>[!NOTE]`與內文文字行之間新增空白行
 
 ### 索引標籤
@@ -408,7 +409,7 @@ Content here
 
 - 遺失或空白`title`或`description`中繼資料
 - `description`開頭不是「瞭解……」 或「瞭解如何……」
-- 編號說明語法中`>`和`[ !`之間的空格（`> [!NOTE]`而非`>[!NOTE]`）
+- 編號說明語法中`>`和`[!`之間的空格（`> [!NOTE]`而非`>[!NOTE]`）
 - 粗體標籤中的空格： `**text **` （結尾空格會破斷粗體）
 - HTML表格內的Markdown語法（例如圖說文字無法在該處運作）
 - 複製檔案中的標題錨點ID
