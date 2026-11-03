@@ -16,7 +16,7 @@ ht-degree: 0%
 Source： https://experienceleague.adobe.com/en/docs/authoring-guide/using/home
 已抓取：2026-03-15
 
----
+&#x200B;---
 
 ## &#x200B;1. 中繼資料/正面內容
 
@@ -55,7 +55,7 @@ Source： https://experienceleague.adobe.com/en/docs/authoring-guide/using/home
 ### 已棄用的欄位
 seo-title， seo-description，對象，難度， uuid （來自移轉時代）
 
----
+&#x200B;---
 
 ## &#x200B;2. MARKDOWN語法（ADOBE風格）
 
@@ -121,10 +121,13 @@ seo-title， seo-description，對象，難度， uuid （來自移轉時代）
 
   ```
   ```javascript
+
   code here
+
   ```
 
   ```
+
   
   
 - 選項： `{line-numbers="true"}`、`{start-line="7"}`、`{highlight="11-13, 16"}`
@@ -141,7 +144,7 @@ seo-title， seo-description，對象，難度， uuid （來自移轉時代）
 - Markdown表格版面配置選項：在表格後面新增`{style="table-layout:auto"}` （含空白行）
 - 避免出現非常寬/高的表格，因為水準卷軸可見度有問題
 
----
+&#x200B;---
 
 ## &#x200B;3. 特殊ADOBE語法擴充功能
 
@@ -175,6 +178,7 @@ seo-title， seo-description，對象，難度， uuid （來自移轉時代）
 >[!ERROR]
 >[!SUCCESS]
 ```
+
 - 嚴重： `>`與`[!`之間沒有空格 — 使用`>[!NOTE]`，而不是`> [!NOTE]`
 - 在`>[!NOTE]`與內文文字行之間新增空白行
 
@@ -199,6 +203,7 @@ Content here
 Content inside
 +++
 ```
+
 注意：不支援巢狀可摺疊區段。
 
 ### 陰影方塊
@@ -214,6 +219,7 @@ Content here
 ```
 >[!VIDEO](https://video.tv.adobe.com/v/ID/?quality=12&learn=on)
 ```
+
 新增成績單的`{transcript=true}`。
 
 ### 更多相關資訊
@@ -239,6 +245,7 @@ Content here
 ```
 [!BADGE Label]{type=Informative url="https://example.com" tooltip="text"}
 ```
+
 型別： `Informative` （藍色）、`Positive` （綠色）、`Negative` （紅色）、`Neutral` （灰色）、`Caution` （黃色）
 
 ### 文字反白顯示（預覽）
@@ -272,7 +279,7 @@ Content here
 - 水準規則
 - 巢狀可摺疊區段
 
----
+&#x200B;---
 
 ## &#x200B;4. 檔案命名和資料夾結構
 
@@ -302,7 +309,7 @@ Content here
 - TOC中繼資料： `user-guide-description`，選擇性`breadcrumb-title`
 - `mini-toc-levels`：控制右方導覽標題顯示（1-6，預設2）
 
----
+&#x200B;---
 
 ## &#x200B;5. 內容品質和編輯標準
 
@@ -348,7 +355,7 @@ Content here
 - 只有`title`中繼資料欄位的字首大寫
 - 專有名詞一律大寫
 
----
+&#x200B;---
 
 ## &#x200B;6. SEO最佳作法
 
@@ -365,7 +372,7 @@ Content here
 - 使用AnswerThePublic、Google Trends等工具來研究關鍵字
 - 內容應展示E-E-A-T （經驗、專業知識、授權、可信度）
 
----
+&#x200B;---
 
 ## &#x200B;7. 本地化
 
@@ -385,7 +392,7 @@ Content here
 - `[!DNL ProductName]` — 防止翻譯產品/品牌名稱
 - 「不要本地化」資料夾中的影像會排除在本地化之外
 
----
+&#x200B;---
 
 ## &#x200B;8. 內容型別
 
@@ -396,7 +403,7 @@ Content here
 - **知識庫文章**：簡短、暫時相關的疑難排解內容
 - **登陸頁面/首頁**：獨立管理(SCCM)
 
----
+&#x200B;---
 
 ## &#x200B;9. 要避免的常見驗證錯誤
 
