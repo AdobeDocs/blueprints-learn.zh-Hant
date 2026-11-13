@@ -7,9 +7,9 @@ exl-id: e4e8eabd-ab91-4693-9b8a-0f94dd15db13
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: c86067364972ee7f0f50fed308f19e797efd087a
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '272'
 ht-degree: 0%
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 
 
-4. 在顯示的強制回應視窗中，選取&#x200B;**協調流程 — 行銷**&#x200B;並按一下&#x200B;**確認**
+4. 在顯示的強制回應視窗中，選取&#x200B;**協調行銷與異動**，然後按一下&#x200B;**確認**
 
 ![選取協調流程 — 行銷並按一下[確認]](assets/create-an-orchestrated-campaign-select-orchestration-marketing.png)
 
