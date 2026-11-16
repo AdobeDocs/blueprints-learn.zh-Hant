@@ -4,13 +4,11 @@ description: 瞭解如何在協調的行銷活動中使用「建立對象」活�
 doc-type: article
 solution: Experience Platform
 exl-id: 697d3edb-2b63-4038-a934-3587495e17f7
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 44d25df10492b3df80fe3887f75ab71e1ebf4743
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
-
 ---
-
 
 # 建立對象
 
@@ -30,7 +28,7 @@ ht-degree: 0%
 
 2. 在右邊欄中，您會看到「建置對象」屬性。 更新標籤以指出下列專案： `Active Lines with Apple`
 
-![使用Apple將對象標籤設為Active Lines &#x200B;](assets/build-an-audience-set-label.png)
+![使用Apple將對象標籤設為Active Lines ](assets/build-an-audience-set-label.png)
 
 
 ## 選取目標維度
@@ -100,13 +98,13 @@ ht-degree: 0%
 
 2. 尋找名為&#x200B;**Make**&#x200B;的欄位，然後按一下三個點並選取&#x200B;**分配值**
 
-   Make欄位![&#128279;](assets/build-an-audience-make-distribution-of-values.png)的值分佈選項
+   Make欄位](assets/build-an-audience-make-distribution-of-values.png)的![值分佈選項
 
 
 
 3. 記下各種值。 您只想要`Apple`，而且幸好它沒有100個不同的拼字。 按一下&#x200B;**Apple欄位**&#x200B;以選取它，然後按一下右上角的&#x200B;**選取屬性和值按鈕**。
 
-   使用Select屬性和值按鈕![&#128279;](assets/build-an-audience-select-apple-attribute-value.png)選取的Apple值
+   使用Select屬性和值按鈕](assets/build-an-audience-select-apple-attribute-value.png)選取的![Apple值
 
    >[!NOTE]
    >
@@ -165,6 +163,6 @@ ht-degree: 0%
 
 ## 重述
 
-您已成功建立第一個對象，現在應該會看到在建置對象活動中開發和驗證計數的簡易程度。
+您已成功建立對象，現在應該會看到在建置對象活動中開發和驗證計數的簡易程度。
 
 回顧後![已完成建立對象活動](assets/build-an-audience-recap-completed-audience.png)
