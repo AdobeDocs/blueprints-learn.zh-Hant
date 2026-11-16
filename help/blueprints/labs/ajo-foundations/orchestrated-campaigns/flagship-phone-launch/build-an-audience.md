@@ -4,13 +4,11 @@ description: 瞭解如何在協調的行銷活動中使用「建立對象」活�
 doc-type: article
 solution: Experience Platform
 exl-id: 697d3edb-2b63-4038-a934-3587495e17f7
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 44d25df10492b3df80fe3887f75ab71e1ebf4743
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
-
 ---
-
 
 # 建立對象
 
@@ -165,6 +163,6 @@ ht-degree: 0%
 
 ## 重述
 
-您已成功建立第一個對象，現在應該會看到在建置對象活動中開發和驗證計數的簡易程度。
+您已成功建立對象，現在應該會看到在建置對象活動中開發和驗證計數的簡易程度。
 
 回顧後![已完成建立對象活動](assets/build-an-audience-recap-completed-audience.png)

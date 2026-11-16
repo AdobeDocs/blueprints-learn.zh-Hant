@@ -7,7 +7,7 @@ exl-id: bfc71051-e471-4d5c-a9a7-bb6805a5acb1
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 9750fa1d2fe4054d4c9efd76f5f58210a4d99adc
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 
 
-6. 按一下&#x200B;**儲存**&#x200B;按鈕以建立設定檔目標Dimension。 然後您會看到記錄出現。
+6. 按一下「**建立**」按鈕以建立設定檔目標Dimension。 然後您會看到記錄出現。
 
 ![清單中的已儲存設定檔目標Dimension記錄](assets/profile-target-dimension-saved-record.png)
 

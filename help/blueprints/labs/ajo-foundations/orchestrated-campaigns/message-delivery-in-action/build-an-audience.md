@@ -4,13 +4,11 @@ description: 瞭解如何使用「建立對象」活動，從關聯式結構描�
 doc-type: article
 solution: Experience Platform
 exl-id: 7576e64b-d99a-4864-b877-f4ae77e1d7bd
-source-git-commit: 3076f01e06023cebd30ead73d61f4540da9ce791
+source-git-commit: 9a38e7016b9fdca00bc49be00fe03a0e8e5ed26d
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
-
 ---
-
 
 # 建立對象
 
@@ -40,11 +38,11 @@ ht-degree: 0%
 
    ![在[建立對象]窗格中按一下[新增條件]](assets/build-an-audience-add-condition.png)
 
-6. 按一下`dep-rel: Plan Lookup`旁邊的&#x200B;**>**，向下捲動並展開它
+6. 按一下`dep-rel: Plan [Lookup]`旁邊的&#x200B;**>**，向下捲動並展開它
 
    ![展開dep-rel：計畫查閱](assets/build-an-audience-expand-plan-lookup.png)
 
-7. 選取`dep-rel: Plan Name`並按一下&#x200B;**確認**
+7. 選取`Plan Name`並按一下&#x200B;**確認**
 
    ![選取dep-rel：計畫名稱](assets/build-an-audience-select-plan-name.png)
 

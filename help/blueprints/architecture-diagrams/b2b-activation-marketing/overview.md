@@ -20,10 +20,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: c2381a0f7223d8cbb0dae05d056fd45ff5701f0f
+source-git-commit: ea991411ae0339bb4a1a36ac994fa76097d37307
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 76%
+source-wordcount: '164'
+ht-degree: 79%
 ---
 # B2B啟用與行銷
 
@@ -33,5 +33,4 @@ B2B 對象與個人資料啟用是資料驅動行銷領域成功的關鍵。 但
 
 | 圖表 | 說明 |
 | --- | --- |
-| [B2B對象和設定檔啟用](b2b-audience-profile-activation.md) | 使用Real-Time Customer Data Platform B2B edition啟用帳戶型和人員型對象 |
-| [B2B帳戶啟用](b2b-account-activation.md) | 透過廣告和檔案型目的地來鎖定B2B帳戶 |
+| [B2B對象和設定檔啟用](b2b-audience-profile-activation.md) | 透過Real-Time Customer Data Platform B2B edition在支援的管道和帳戶受眾中，啟用People受眾的廣告和檔案目標 |

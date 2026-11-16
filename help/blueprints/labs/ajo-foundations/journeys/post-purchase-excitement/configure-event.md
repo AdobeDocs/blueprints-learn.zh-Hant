@@ -7,9 +7,9 @@ exl-id: 4d1c1d4d-0dc6-4ea1-aa3c-f959bb3b9aa8
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: f567be64556e08729dc2df77f7c120771eabf03c
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '592'
 ht-degree: 0%
 ---
 
@@ -78,6 +78,7 @@ ht-degree: 0%
 9. 接著，使用下列值更新名稱空間和設定檔識別碼的最後兩個值：
    - **名稱空間** —> `Email`
    - **設定檔識別碼** —> `personalEmail`
+     （您會在您環境的租使用者名稱稱底線下找到它，在此範例中，_dep.）
 
 ![名稱空間設為「電子郵件」，而設定檔識別碼設為「個人電子郵件」](assets/configure-event-select-profile-identifier.png)
 
