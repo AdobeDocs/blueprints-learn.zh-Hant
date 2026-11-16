@@ -7,9 +7,9 @@ exl-id: 5602b0ba-95e2-455f-affd-081df540c999
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 5ddc029828ce7ecc167555ed900a136690b10677
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '131'
 ht-degree: 4%
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 4%
 
    ![按一下「建立行銷活動」按鈕](assets/create-a-campaign-click-create-campaign.png)
 
-3. 選取&#x200B;**協調流程 — 行銷**&#x200B;並按一下&#x200B;**確認**
+3. 選取&#x200B;**協調行銷與異動**&#x200B;並按一下&#x200B;**確認**
 
-   ![選取協調流程 — 行銷並按一下[確認]](assets/create-a-campaign-select-orchestration-marketing.png)
+   ![選取協調行銷與交易，然後按一下[確認]](assets/create-a-campaign-select-orchestration-marketing.png)
 
 4. 在下方提供行銷活動詳細資料，然後在完成時按一下&#x200B;**儲存按鈕**
    - **名稱：** `OC-MDL-Campaign-Test`
