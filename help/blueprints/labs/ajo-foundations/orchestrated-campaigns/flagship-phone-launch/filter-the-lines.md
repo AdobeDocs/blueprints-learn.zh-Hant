@@ -7,9 +7,9 @@ exl-id: fb556a27-5c73-4457-ae98-dba43d445c7f
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 689f227965176096ccd1785699de65046af4f3d3
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '371'
 ht-degree: 0%
 ---
 
@@ -59,111 +59,27 @@ ht-degree: 0%
 
 ## 新增簡訊活動
 
-1. 在工作流程畫布上，在您新增的分割條件後按一下&#x200B;**+**&#x200B;圖示，並選取&#x200B;**簡訊活動**
+1. 在工作流程畫布上，在您新增的分割條件後按一下&#x200B;**+**&#x200B;圖示，並選取&#x200B;**行動訊息活動**
 
-   ![在分割條件後新增簡訊活動](assets/filter-the-lines-add-sms-activity.png)
+   ![在分割條件之後新增行動訊息活動](assets/filter-the-lines-add-sms-activity.png)
 
    ![簡訊活動已新增至工作流程畫布](assets/filter-the-lines-sms-activity-on-canvas.png)
 
 
 
-2. 在右側欄中按一下編輯簡訊按鈕，開始設定簡訊
+2. 在右側欄中按一下編輯行動訊息按鈕，以開始設定SMS訊息
 
-   在右側邊欄中![編輯簡訊按鈕](assets/filter-the-lines-edit-sms-button.png)
-
-
-
-3. 在頂端導覽列中，按一下「動作」功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
-
-![簡訊設定下拉式清單顯示無結果錯誤](assets/filter-the-lines-sms-configuration-no-results.png)
-
->[!CAUTION]
->
->糟糕，沒有🫨！  為什麼沒有結果？  您尚未設定簡訊通道嗎？  產品是否損壞？
->
->嚇壞了!!!!!!!!!
+   ![編輯右邊欄中的行動訊息按鈕](assets/filter-the-lines-edit-sms-button.png)
 
 
 
-## 驚慌時刻
-
-分叉轉變目前具有客戶行的目標維度（即目前結果與關聯式存放區中的表格相關）。  協調行銷活動的獨特之處在於，您一律在傳送時間加入回即時客戶設定檔，因此訊息的傳送和追蹤資訊會歸因於設定檔。  此連線是從Customer Account表格為您預先建立的。
-
-簡訊的頻道設定已預先為您設定，目前看起來如下所示……
-
-![在設定SMS通道實驗室期間設定的執行詳細資料設定](assets/configure-sms-channel-final-execution-details.png)
-
-**閱讀方式如下：**
-
-- 針對在次要維度（即客戶明細行）中找到的相關記錄數，針對目標維度（即客戶帳戶）傳遞一則訊息
-- 使用在次要維度（即客戶線路）中找到的行動電話號碼執行每次SMS傳送
-
-這種將許多訊息傳送至一個設定檔的獨特功能，是協調行銷活動的主要功能之一，使其與歷程不同。
-
-
-您如何讓此功能發揮作用？  新增變更維度😀
-
-
-
-## 新增變更維度
-
-1. 按一下簡訊編輯畫面上的上一頁按鈕
-
-   ![返回按鈕以結束簡訊編輯畫面](assets/filter-the-lines-exit-sms-editor.png)
-
-
-
-2. 在工作流程畫布上，按一下篩選和簡訊活動之間的&#x200B;**+** **圖示**，然後選取&#x200B;**變更維度**。
-
-   ![在篩選器和簡訊之間新增變更維度活動](assets/filter-the-lines-add-change-dimension.png)
-
-
-
-3. 在右側，使用下列資訊更新變更維度：
-   - **標籤：** `Convert Line to Account`
-   - **新目標維度：**`dep-rel: Customer Account`
-
-   ![變更維度設定為將Line轉換為帳戶](assets/filter-the-lines-change-dimension-settings.png)
-
-
-
-4. 按一下畫布右上角的&#x200B;**儲存**&#x200B;按鈕以儲存您的工作。 完成後，您的工作流程現在看起來像這樣……
-
-新增變更維度後![工作流程畫布](assets/filter-the-lines-workflow-after-change-dimension.png)
-
-
-
-## SMS訊息設定
-
-現在您已修正工作流程，請重新設定簡訊。
-
-
-
-1. 按一下工作流程畫布中的簡訊活動，然後在左側邊欄中按一下&#x200B;**編輯簡訊**&#x200B;按鈕
-
-   ![編輯簡訊按鈕以重新設定簡訊訊息](assets/filter-the-lines-edit-sms-button.png)
-
-   >[!NOTE]
-   >
-   >此畫面需要一些時間載入。  我知道這很煩人，相信我已得到修正
-
-
-
-
-
-2. 在頂端導覽列中按一下&#x200B;**動作**&#x200B;功能表專案，然後從SMS設定下拉式清單中選取您先前建立的管道。
+3. 在頂端導覽列中，按一下「動作」功能表專案，然後從行動訊息設定下拉式清單中選取您先前建立的頻道。
 
 ![簡訊設定已成功顯示選取的頻道](assets/filter-the-lines-sms-configuration-selected.png)
 
->[!TIP]
->
->感覺良好，不是😮‍💨
 
 
 
 ## 重述
 
-您順利通過本課程，並滿懷希望地學習了兩項非常重要的東西：
-
-1. 您的最終結果目標維度必須符合您要使用的管道設定
-1. 變更維度活動可能會成為您確保此功能正常運作的最佳朋友
+您篩選掉所有因選擇退出而不允許以SMS訊息鎖定的行，並新增簡訊活動給允許鎖定的對象。
