@@ -27,7 +27,7 @@ ht-degree: 0%
 
    ![按一下以驗證歷程](assets/test-journey-click-validate.png)
 
-5. 按一下&#x200B;**警示**&#x200B;並確保沒有錯誤（警告正常）
+&#x200B;5. 按一下&#x200B;**警示**&#x200B;並確保沒有錯誤（警告正常）
 
    ![開啟歷程後，警示面板未顯示任何錯誤](assets/test-journey-alerts-no-errors.png)
 
@@ -37,7 +37,7 @@ ht-degree: 0%
    >
    >表示電子郵件變體缺少選擇退出連結
 
-6. 按一下&#x200B;**模擬**，然後選取&#x200B;**測試模式**
+&#x200B;6. 按一下&#x200B;**模擬**，然後選取&#x200B;**測試模式**
 
    ![按模擬](assets/test-journey-select-test-mode.png)
 
@@ -51,11 +51,11 @@ ht-degree: 0%
 
 
 
-7. 按一下左側的&#x200B;**觸發事件**，並填寫下列屬性：
+&#x200B;7. 按一下左側的&#x200B;**觸發事件**，並填寫下列屬性：
    - **事件型別**： `orders.shipped`
    - **個人電子郵件**： `henry.creel@emailsim.io`
    - **訂單識別碼**： `123`
-8. 按一下&#x200B;**傳送** （請注意，按一下傳送後需要幾秒鐘才會回應）
+&#x200B;8. 按一下&#x200B;**傳送** （請注意，按一下傳送後需要幾秒鐘才會回應）
 
    ![觸發已填寫的事件表單並按一下](assets/test-journey-trigger-event-send.png)傳送
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 
 
-9. 在&#x200B;**結果** ->下，按一下左側的&#x200B;**顯示記錄檔**
+&#x200B;9. 在&#x200B;**結果** ->下，按一下左側的&#x200B;**顯示記錄檔**
 
 觸發測試事件後![在結果底下顯示記錄選項](assets/test-journey-show-log-results.png)
 
@@ -121,7 +121,7 @@ ht-degree: 0%
 
    右上角歷程的![發佈按鈕](assets/test-journey-publish-journey.png)
 
-1. 按一下左上方的\&lt; — 箭頭&#x200B;**關閉****歷程**
+1. 按一下左上方的\&lt; — 箭頭&#x200B;**關閉**&#x200B;**歷程**
 
 左上方的![向後箭頭以關閉歷程](assets/test-journey-close-journey-back-arrow.png)
 
