@@ -7,9 +7,9 @@ exl-id: e77ae8ab-f18f-4683-8fdd-ba4f4629d96c
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 7c7ee72676fd17a248694548fb59ea87c52a293c
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '661'
 ht-degree: 0%
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ## 目標
 
-在接下來的幾個步驟中，您會以測試模式執行行銷活動，以在發佈行銷活動之前確認行銷活動如預期般運作。 在這種情況下，測試模式不會傳送電子郵件，但有助於驗證整個流程並及早識別問題。
+在接下來的幾組步驟中，您會以測試模式執行行銷活動，以在發佈行銷活動之前確認行銷活動如預期般運作。 在這種情況下，測試模式不會傳送電子郵件，但有助於驗證整個流程並及早識別問題。
 
 ## 開始工作流程
 
-1. 設定兩個電子郵件流程後，行銷活動會如下所示。 按一下&#x200B;**開始**&#x200B;按鈕，在&#x200B;**測試模式**&#x200B;中執行行銷活動
+1. 設定兩個電子郵件流程後，行銷活動會如下所示。 按一下&#x200B;**開始**&#x200B;按鈕，以測試模式執行行銷活動
 
    ![按一下[開始]以測試模式執行行銷活動](assets/test-the-campaign-click-start-test-mode.png)
 
@@ -111,4 +111,4 @@ ht-degree: 0%
 
 您現在已瞭解如何測試建立的行銷活動，以瞭解流量和行為。 在測試流程執行期間，我們已充分瞭解使用不同設定進行電子郵件通道設定的細微差別。
 
-如果您有興趣，請在[這裡](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns)閱讀更多有關行銷活動測試模式的資訊。
+如果您有興趣，請在[這裡](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/launch/start-monitor-campaigns)閱讀更多有關行銷活動測試模式的資訊。

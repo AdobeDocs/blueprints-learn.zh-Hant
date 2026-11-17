@@ -7,9 +7,9 @@ exl-id: f1c8b1ac-e57c-48c6-aa91-5c83f79ce7e3
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: da2fcc7a4afc091c28a4cfdff96055dbf7dbb41a
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '398'
 ht-degree: 0%
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 檢查中心設定檔
 
-1. 按一下&#x200B;**設定檔識別碼**&#x200B;以開啟設定檔
+1. 按一下設定檔的&#x200B;**檢視**&#x200B;按鈕以開啟設定檔
 1. 先按一下&#x200B;**屬性**&#x200B;標籤，再按一下&#x200B;**集線器**&#x200B;選項按鈕以檢視&#x200B;**集線器設定檔**
 
 在[屬性]索引標籤上顯示![中心設定檔](assets/validate-profile-on-hub-attributes-tab.png)
@@ -75,7 +75,7 @@ ht-degree: 0%
 >
 >**如何讀取segmentMembership？**
 >
->[https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/segmentation)
+>[https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/segmentation)
 >
 >**ups：**&#x200B;這是AEP支援之不同對象型別的對應索引鍵。  ups鍵包含規則產生器建立的對象。  其他對象將包含在其他索引鍵（例如AAM）中。
 >

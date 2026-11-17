@@ -7,9 +7,9 @@ exl-id: 3deb822b-8374-4537-a260-f4f6f4d67569
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 4efa9da0ca6b73b4710a15a007712edcaa3ee867
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '424'
 ht-degree: 0%
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 
 
-3. 使用左側邊欄中的&#x200B;**Target屬性**&#x200B;選項，更新訊息中名為&#x200B;**phone\_make**&#x200B;及下方&#x200B;**phone\_model**&#x200B;的兩個欄位。  完成時，您的訊息應與熒幕擷圖相符。
+3. 將訊息中名為&#x200B;**phone\_make**&#x200B;與下方&#x200B;**phone\_model**&#x200B;的兩個欄位，取代為左側邊欄中對應的&#x200B;**目標屬性**&#x200B;選項。  完成時，您的訊息應與下方的熒幕擷圖相符。 （變數命名路徑應該會提供要在何處尋找它們的提示。）
 
    ![包含手機製造商和模型個人化的最終SMS訊息](assets/compose-the-sms-final-message-text.png)
 

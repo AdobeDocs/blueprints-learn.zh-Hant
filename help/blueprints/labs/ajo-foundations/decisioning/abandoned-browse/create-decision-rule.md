@@ -7,9 +7,9 @@ exl-id: 1c1e2d82-ca09-4074-813d-3b29af77388b
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 74b5a717f6c16c75e26426619885202f4b658171
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '526'
 ht-degree: 0%
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >請確定您位於決定功能表中，而不是決定管理功能表中。 如果展開「決定管理」功能表，請將其收合以避免本實驗期間的導覽混亂。
+   >請確定您位於決定功能表中，而不是決定管理功能表中（如果兩者在您的環境中都可見）。 如果展開「決定管理」功能表，請將其收合以避免本實驗期間的導覽混亂。
 
 3. 按一下[資格]功能表下的&#x200B;**決策規則**，接著按右上角的&#x200B;**建立規則**&#x200B;按鈕。
 
    使用「建立規則」按鈕的![決策規則頁面](assets/create-decision-rule-create-rule-button.png)
 
-4. 這樣會開啟類似區段產生器UI的畫面。 按一下&#x200B;**XDM Individual Profile > DEP > Plan Details**，然後將&#x200B;**Plan ID**&#x200B;屬性拖曳至畫布，以將Plan ID屬性新增至規則畫布。
+4. 這樣會開啟類似區段產生器UI的畫面。 按一下&#x200B;**XDM Individual Profile > DEP > Plan Details**，然後將&#x200B;**Plan ID**&#x200B;屬性拖曳至畫布，以將Plan ID屬性新增至規則畫布。 (請注意，租使用者名稱稱（在此範例中為Dep）在您的環境中可能不同。 您也可以在「屬性」搜尋列中搜尋「計畫詳細資訊」。)
 5. 將下拉式清單從equals變更為&#x200B;**contains.**
 6. 在方塊中輸入文字&#x200B;**2**，按&#x200B;**Tab**&#x200B;鍵以接受2值，然後輸入&#x200B;**3，**&#x200B;再次按&#x200B;**Tab**，讓規則尋找包含2或3的任何計畫ID
 7. 使用右側邊欄中的&#x200B;**Name**&#x200B;文字方塊來命名決定規則&#x200B;**上層計畫**。 如有需要，可新增說明。 完成後，您的決定規則應該如下所示：
