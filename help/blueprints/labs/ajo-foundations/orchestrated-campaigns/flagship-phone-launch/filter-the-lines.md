@@ -7,9 +7,9 @@ exl-id: fb556a27-5c73-4457-ae98-dba43d445c7f
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 689f227965176096ccd1785699de65046af4f3d3
+source-git-commit: f189618dc8bfa198b25d646faa3ca0e0f5af5916
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '443'
 ht-degree: 0%
 ---
 
@@ -57,9 +57,25 @@ ht-degree: 0%
 
 
 
+## 新增變更維度
+
+1. 在工作流程畫布上，在您新增的分割條件後按一下&#x200B;**+**&#x200B;圖示，並選取&#x200B;**變更維度**&#x200B;活動
+
+   ![在分割條件後新增變更維度活動](assets/filter-the-lines-add-change-dimension-activity.png)
+
+2. 更新變更維度的屬性，如下所述，然後按一下&#x200B;**確認**：
+標籤： `Convert Line to Account`
+新的目標維度： `dep-rel: Customer Account`
+
+   ![編輯目標維度](assets/filter-the-lines-add-edit-target-dimension.png)
+
+   ![編輯目標維度](assets/filter-the-lines-add-select-target-dimension.png)
+
+
+
 ## 新增簡訊活動
 
-1. 在工作流程畫布上，在您新增的分割條件後按一下&#x200B;**+**&#x200B;圖示，並選取&#x200B;**行動訊息活動**
+1. 在您新增的變更維度之後，按一下&#x200B;**+**&#x200B;圖示，並選取&#x200B;**行動訊息活動**
 
    ![在分割條件之後新增行動訊息活動](assets/filter-the-lines-add-sms-activity.png)
 
@@ -67,9 +83,9 @@ ht-degree: 0%
 
 
 
-2. 在右側欄中按一下編輯行動訊息按鈕，以開始設定SMS訊息
+2. 在右側邊欄中，請先將Target選擇變更為&#x200B;**每個次要維度一個訊息**，然後按一下&#x200B;**編輯行動訊息**&#x200B;按鈕以開始設定SMS訊息
 
-   ![編輯右邊欄中的行動訊息按鈕](assets/filter-the-lines-edit-sms-button.png)
+   ![在右側邊欄中鎖定並編輯行動訊息按鈕](assets/filter-the-lines-edit-sms-button.png)
 
 
 
@@ -82,4 +98,4 @@ ht-degree: 0%
 
 ## 重述
 
-您篩選掉所有因選擇退出而不允許以SMS訊息鎖定的行，並新增簡訊活動給允許鎖定的對象。
+您篩選掉所有因選擇退出而不允許以SMS訊息鎖定的行，將維度從行變更為帳戶，並為允許鎖定的對象新增SMS活動。
