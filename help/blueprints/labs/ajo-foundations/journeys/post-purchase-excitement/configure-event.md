@@ -31,7 +31,7 @@ ht-degree: 0%
 
 為了建立使用單一事件的歷程，我們需要先設定事件。
 
-1. 在左側邊欄的[管理]功能表下，按一下[設定] **&#x200B;**，然後在[事件]方塊上按一下[管理] **按鈕**
+1. 在左側邊欄的[管理]功能表下，按一下[設定] ****，然後在[事件]方塊上按一下[管理] **按鈕**
 
    「設定」底下的「事件」方塊上的「![」管理按鈕](assets/configure-event-open-events-manage.png)
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
    欄位輸入方塊中的![鉛筆圖示](assets/configure-event-click-fields-pencil-icon.png)
 
-5. 選取下列欄位以新增至事件，完成時按一下&#x200B;**確定**&#x200B;按鈕
+5. Select下列欄位可新增至事件，完成時請按一下&#x200B;**確定**&#x200B;按鈕
    - `Event Type (eventType)`
    - `Order ID (orderID)`
 
