@@ -1,27 +1,27 @@
 ---
-title: AI助理與內容個人化
-description: 使用Adobe Journey Optimizer的AI Assistant產生品牌內主旨列、調整電子郵件副本和色調，並在電子郵件設計工具中建立Firefly產生的影像。
+title: AI輔助內容個人化
+description: 使用Adobe Journey Optimizer的AI來產生品牌內主旨列、調整電子郵件副本和色調，並在電子郵件設計工具中建立Firefly產生的影像。
 doc-type: article
 solution: Experience Platform
 exl-id: 1f30c920-7b2b-4343-b663-ebbed1ae4709
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 43a7d8153e8ad7e24162b9bb6c0d5bbcea784330
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1322'
 ht-degree: 5%
 ---
 
-# AI助理與內容個人化
+# AI輔助內容個人化
 
-**用途：**&#x200B;瞭解如何使用Adobe Journey Optimizer的AI助理產生主旨列、調整電子郵件文字、調整色調，以及直接在電子郵件設計工具中建立品牌內Firefly影像。
+**用途：**&#x200B;瞭解如何使用Adobe Journey Optimizer的AI直接在電子郵件設計工具中產生主旨列、調整電子郵件文字、調整色調，以及建立品牌內Firefly影像。
 
 ## 學習目標
 
 在本單元結束時，您將能夠：
 
-1. 使用AI助理產生主旨行和預先標題。
+1. 使用AI產生主旨行和預先標題。
 1. 精簡主圖文字、說明、語調和訊息。
 1. 套用AI驅動的重述、摘要和色調調整。
 1. 使用Adobe Firefly搭配參考樣式和品牌設定來產生影像。
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 ## 簡介
 
-AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
+AJO中的AI協助可幫助您建置更聰明、符合品牌規範的內容。
 它可以：
 
 - 產生主旨列
@@ -38,21 +38,21 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 - 使用Firefly建立品牌影像
 - 確保一切符合Connection 5G准則
 
-在本練習中，您將改善使用AI助理所建立的電子郵件。
+在本練習中，您將改善使用AI建立的電子郵件。
 
 >[!NOTE]
 >
->AI助理是&#x200B;**非決定性的**，這表示它每次使用時可能會產生稍微不同的內容。 您在練習中所看到的內容，可能與本指南中的熒幕擷取畫面或範例不完全相符。 沒關係 — 專注於學習流程和概念，而不是期望相同的結果。
+>AI是&#x200B;**非決定性**，這表示每次使用它時可能會產生稍微不同的內容。 您在練習中所看到的內容，可能與本指南中的熒幕擷取畫面或範例不完全相符。 沒關係 — 專注於學習流程和概念，而不是期望相同的結果。
 
-## 使用AI助理建立電子郵件主旨列
+## 使用AI建立電子郵件主旨列
 
 1. 按一下「上一步」按鈕，或編輯您在上一個模組中建立的電子郵件，以返回Campaign。 在上一步中，您可以按一下右側的&#x200B;**設定**&#x200B;標籤。
 2. 按一下電子郵件容器>按一下「編輯電子郵件」按鈕。
 3. 按一下「內容」標籤，然後按一下「電子郵件內文」
-4. 選取&#x200B;**主旨列**&#x200B;欄位。
-5. 按一下&#x200B;**AI助理圖示**。 （請參閱下文）
+4. Select **主旨列**&#x200B;欄位。
+5. 按一下&#x200B;**AI圖示**。 （請參閱下文）
 
-   主旨列欄位工具列中的![AI助理圖示](assets/ai-assistant-and-content-personalization-ai-assistant-icon.png)
+   主旨列欄位工具列中的![AI圖示](assets/ai-assistant-and-content-personalization-ai-assistant-icon.png)
 
 6. 您會注意到，「品牌指引」預設為選取。
 7. 輸入提示：
@@ -61,13 +61,13 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 8. 按&#x200B;**產生**。
 9. 檢閱產生的四個變體。
-10. 選擇具有最佳對齊分數的變體，然後按一下&#x200B;**選取**。
+10. 選擇具有最佳對齊分數的變體，然後按一下&#x200B;**Select**。
 
-![從AI助理選取最符合的主旨行變體](assets/ai-assistant-and-content-personalization-select-subject-line-variant.png)
+![從AI選取最符合的主旨行變體](assets/ai-assistant-and-content-personalization-select-subject-line-variant.png)
 
 >[!NOTE]
 >
->您的結果與實驗指南可能完全不同，因此您不必擔心。 選取您認為正確的標題，並繼續實驗。
+>您的結果與實驗指南可能完全不同，因此您不必擔心。 Select就是您認為合適的標題，請繼續實驗室。
 
 
 
@@ -79,13 +79,13 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
    ![在行銷活動編輯器中編輯電子郵件內文按鈕](assets/ai-assistant-and-content-personalization-edit-email-body-button.png)
 
 2. 按一下&#x200B;**產品朗讀行**&#x200B;標題。
-3. 按一下&#x200B;**產生並選取文字**&#x200B;以開啟AI小幫手
+3. 按一下&#x200B;**產生並選取文字**&#x200B;以啟動AI協助
 
-   ![產生並選取開啟AI助理的文字選項](assets/ai-assistant-and-content-personalization-generate-and-select-text.png)
+   ![產生並選取開啟AI的文字選項](assets/ai-assistant-and-content-personalization-generate-and-select-text.png)
 
-4. 從下拉式清單中選取&#x200B;**連線5G品牌指南**。
+4. Select **連線5G Brand Guidelines** （從下拉式清單）。
 
-   在AI助理下拉式清單中選取![連線5G品牌指南選項](assets/ai-assistant-and-content-personalization-brand-guidelines-dropdown.png)
+   在AI下拉式清單中選取![連線5G品牌指引選項](assets/ai-assistant-and-content-personalization-brand-guidelines-dropdown.png)
 
 5. 提示：
 
@@ -103,7 +103,7 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
    ![用來重新產生較短標題的較短文字滑桿](assets/ai-assistant-and-content-personalization-shorter-text-slider.png)
 
-10. 在您滿意文字後，請按一下&#x200B;**選取**
+10. 在您滿意文字後，請按一下&#x200B;**Select**
 
 ![選取產生的主圖示題文字](assets/ai-assistant-and-content-personalization-select-generated-hero-text.png)
 
@@ -111,13 +111,13 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 這一次，您將測試AI如何協助尋找問題。
 
-1. 選取下面是範本化文字且沒有意義的文字。
+1. Select下方的文字是範本化文字，沒有意義。
 
    ![已選取要評估的樣板預留位置文字](assets/ai-assistant-and-content-personalization-select-templated-text.png)
 
 2. 按一下評估按鈕，如下所示。
 
-   ![評估AI助理文字面板中的按鈕](assets/ai-assistant-and-content-personalization-click-evaluate-button.png)
+   ![評估AI文字面板中的按鈕](assets/ai-assistant-and-content-personalization-click-evaluate-button.png)
 
 3. 系統會自動選取您的原始內容與您的品牌，如下面的步驟1和2所示。 按一下&#x200B;**評估**&#x200B;按鈕以繼續。
 
@@ -125,7 +125,7 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 4. 如預期，您會注意到許多違反品牌指引的錯誤。 雖然可以使用AI來更正這些問題，但在此情況下，您不會修訂現有材料。 反之，您可以原樣保留內容，並從頭開始建立完全符合品牌標準的新內容。
 
-   ![AI助理評估結果顯示品牌指引違規](assets/ai-assistant-and-content-personalization-brand-guideline-errors.png)
+   ![AI評估結果顯示品牌指引違規](assets/ai-assistant-and-content-personalization-brand-guideline-errors.png)
 
 5. 使用為您使用AI產生的新段落，並出現以下提示。 您可以使用以下提示對說明文字使用相同的方法。
 
@@ -146,7 +146,7 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 ## 新增Firefly產生的影像
 
-到目前為止，我們已在主旨行和文字上測試AI助理。 影像呢？
+到目前為止，我們已在主旨行和文字上測試AI。 影像呢？
 
 在深入探討AI影像產生之前，請先瞭解您可以建立的體驗型別。
 
@@ -167,7 +167,7 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 ## 上傳參考影像
 
 1. 開啟&#x200B;**參考樣式**。
-2. 在品牌選擇上選取&#x200B;**連線5G品牌指引**
+2. Select **連線5G品牌指引**&#x200B;於品牌選取上
 
    已針對影像參考樣式選取![連線5G品牌指引](assets/ai-assistant-and-content-personalization-select-brand-guideline-reference.png)
 
@@ -175,7 +175,7 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
    ![Firefly參考樣式面板中的「上傳影像」按鈕](assets/ai-assistant-and-content-personalization-click-upload-image.png)
 
-4. 從toolkit資料夾中選取reference.jpg
+4. toolkit資料夾中的Select reference.jpg
 
    ![從Toolkit資料夾中選取reference.jpg](assets/ai-assistant-and-content-personalization-select-reference-jpg.png)
 
@@ -198,13 +198,13 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 ![Firefly影像設定，包括比例、內容型別和光線，然後產生](assets/ai-assistant-and-content-personalization-firefly-image-settings.png)
 
 
-## 選取並插入產生的影像
+## Select並插入產生的影像
 
 1. 檢查產生的所有影像，以檢閱Firefly結果。
 
    ![檢閱Firefly產生的影像結果](assets/ai-assistant-and-content-personalization-review-firefly-results.png)
 
-2. 按一下&#x200B;**選取**&#x200B;您想要的選取影像。
+2. 按一下&#x200B;**Select**&#x200B;以取得您想要的選取影像。
 
    ![選取想要產生的Firefly影像](assets/ai-assistant-and-content-personalization-select-firefly-image.png)
 
@@ -228,7 +228,7 @@ AJO中的AI助理可幫助您建置更聰明、符合品牌規範的內容。
 
 ## 重述
 
-您已成功使用AI助理來：
+您已成功使用AI來：
 
 - 產生主旨列
 - 精簡主圖文字

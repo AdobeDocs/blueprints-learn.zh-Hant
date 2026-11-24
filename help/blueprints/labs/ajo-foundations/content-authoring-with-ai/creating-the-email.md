@@ -7,9 +7,9 @@ exl-id: bf823714-7298-48fc-a18b-9bf2462ae52e
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 6f54406bc0cda8e0fa5f028201a1ed1c2953e3cf
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '668'
 ht-degree: 0%
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    ![在歷程管理中建立行銷活動按鈕](assets/creating-the-email-click-create-campaign-button.png)
 
-3. 選取「**協調流程 — 行銷**」並按一下&#x200B;**確認**
+3. Select &quot;**協調流程 — 行銷**&quot;並按一下&#x200B;**確認**
 
    ![選取協調流程 — 行銷並按一下確認](assets/creating-the-email-select-orchestration-marketing.png)
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 
    ![讀取對象方塊和對象資料夾圖示](assets/creating-the-email-read-audience-folder-icon.png)
 
-7. 選取&#x200B;**dep：對iPhone 17**&#x200B;對象感興趣並按一下「**新增對象**」按鈕
+7. 在&#x200B;**dep：對iPhone 17**&#x200B;對象感興趣的Select中按一下「**新增對象**」按鈕
 
    ![選取對iPhone 17對象感興趣並按一下[新增對象]](assets/creating-the-email-select-audience-add-button.png)
 
-8. 選取實體 — **dep-rel：客戶帳戶 — customer\_id** （或任何與此部分無關的專案）
+8. Select實體 — **dep-rel：客戶帳戶 — customer\_id** （或任何對此部分無關緊要的專案）
 9. 按一下&#x200B;**+符號**&#x200B;以新增&#x200B;**電子郵件活動**，然後從頻道活動中選取&#x200B;**電子郵件**。
 
    ![正在從頻道活動新增電子郵件活動](assets/creating-the-email-add-email-channel-activity.png)
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![編輯行銷活動電子郵件活動的電子郵件選項](assets/creating-the-email-click-edit-email.png)
 
-1. 按一下&#x200B;**動作標籤**&#x200B;並選取&#x200B;**您的**&#x200B;電子郵件設定。 您的沙箱可能會將此顯示為關聯式電子郵件。 （選取任一）
+1. 按一下&#x200B;**動作標籤**&#x200B;並選取&#x200B;**您的**&#x200B;電子郵件設定。 您的沙箱可能會將此顯示為關聯式電子郵件。 （Select任何）
 
    已選取電子郵件設定的![動作標籤](assets/creating-the-email-action-tab-email-configuration.png)
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
    在電子郵件編輯器中![套用內容範本選項](assets/creating-the-email-click-apply-content-template.png)
 
-1. 選取您建立的範本&#x200B;**「促銷範本」**，然後按一下&#x200B;**確認**
+1. Select您建立的範本&#x200B;**「促銷範本」**，然後按一下&#x200B;**確認**
 
    ![選取促銷範本並按一下[確認]](assets/creating-the-email-select-promotional-template-confirm.png)
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
    ![從Toolkit資料夾上傳hero.png](assets/creating-the-email-upload-hero-png-file.png)
 
-5. 按[下一步]，**選取**&#x200B;您資產資料夾&#x200B;**，然後按[匯入]**&#x200B;**&#x200B;**
+5. 按一下「**下一步，** Select **您的資產資料夾**」，然後按&#x200B;**匯入**
 
    ![選取資產資料夾並按一下主圖影像的匯入](assets/creating-the-email-select-folder-import-hero.png)
 
@@ -140,4 +140,4 @@ ht-degree: 0%
 - 更新主圖與產品影像
 - 增強的樣式
 
-您現在已準備好進入下一個模組 — **AI助理與內容個人化**，您將在其中使用AI精簡文字並自動產生影像。
+您現在已準備好進入下一個模組 — **AI輔助內容個人化**，您將在其中使用AI精簡文字並自動產生影像。
