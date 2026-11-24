@@ -7,9 +7,9 @@ exl-id: 1abab39e-811c-4010-a4f5-a7adc9e4e0a4
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: efdf51a410acd377a38ec73a9c71964a78320a0b
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '405'
 ht-degree: 0%
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 此時，您已瞭解我們不僅可個人化設定檔屬性，也可使用屬性來建立條件式邏輯，以決定您要顯示的內容。 Adobe Journey Optimizer功能極為強大，為行銷人員提供極大的彈性。
 
 1. 按一下&#x200B;**模擬內容**。
-2. 選取&#x200B;**模擬內容變化**。
+2. Select **模擬內容變化**。
 
-   ![按一下[模擬內容]並選取[模擬內容變數]](assets/content-simulation-click-simulate-content-variation.png)
+   ![按一下模擬內容變化](assets/content-simulation-click-simulate-content-variation.png)
 
    模擬面板隨即開啟。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 
 
-5. 選取兩個變體。
+5. Select前兩個變體（第三個是遞補內容）。
 6. 新增主旨列前置詞
    1. 變數1:40以上
    2. 變體2:40以下

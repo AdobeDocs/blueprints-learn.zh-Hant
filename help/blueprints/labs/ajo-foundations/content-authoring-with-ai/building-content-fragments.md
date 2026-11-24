@@ -4,9 +4,9 @@ description: 瞭解如何將電子郵件設計分成可重複使用的片段（�
 doc-type: article
 solution: Experience Platform
 exl-id: 253a9332-dc08-420d-ac11-2bf342f0dc38
-source-git-commit: 96308d5726def849ef22540a5d13618017c40cc3
+source-git-commit: d935e9a5179579e35c6aa5fe9e495f5bba1a1b03
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '916'
 ht-degree: 0%
 ---
 
@@ -96,7 +96,13 @@ ht-degree: 0%
 
    ![以您的名字和姓氏命名新的資產資料夾](assets/building-content-fragments-name-asset-folder.png)
 
-5. **建立新片段：**&#x200B;在[內容管理]下按一下&#x200B;**片段**&#x200B;並建立新片段。
+5. 連按兩下您新建立的資料夾以&#x200B;**開啟**。 然後按一下&#x200B;**新增Assets**，從您的Toolkit資料夾中瀏覽或拖放所有.png和.jpg影像。 然後按一下&#x200B;**上傳**
+
+   ![按一下「新增資產並上傳影像檔案」](assets/building-content-fragments-add-assets-and-upload-image-files.png)
+
+   ![按一下上傳](assets/building-content-fragments-click-upload.png)
+
+6. **建立新片段：**&#x200B;在[內容管理]下按一下&#x200B;**片段**&#x200B;並建立新片段。
 
    內容管理下的![片段選項以建立新片段](assets/building-content-fragments-click-fragments-create-new.png)
 
@@ -106,57 +112,51 @@ ht-degree: 0%
 
    **描述：**&#x200B;範本的片段標頭
 
-   **型別：**&#x200B;選取視覺片段
+   **型別：** Select視覺片段
 
    ![標頭片段名稱、說明和視覺片段型別欄位](assets/building-content-fragments-fragment-name-type-details.png)
 
-6. 按一下右上角的&#x200B;**建立按鈕**。
+7. 按一下右上角的&#x200B;**建立按鈕**。
 
    在新片段對話方塊右上角的![建立按鈕](assets/building-content-fragments-click-create-button-top-right.png)
 
    如此將可開啟空白的片段建立者畫面。
 
-7. 按一下「結構」下的1:1欄，然後在畫布上拖曳，如下所示。 （請按一下下方影像檢視動畫圖形）
+8. 前往左欄中的&#x200B;**元件**&#x200B;索引標籤。 然後按一下[結構]底下的&#x200B;**1:1欄**，並拖曳畫布，如下所示。 （請按一下下方影像檢視動畫圖形）
 
-   ![將1:1資料行結構拖曳至片段畫布的動畫示範](assets/building-content-fragments-drag-1-1-columns-structure.gif)
+   ![將1:1資料行結構拖曳到片段畫布](assets/building-content-fragments-drag-1-1-columns-structure.png)
 
-8. 接下來，將&quot;**image**&quot;拖曳到我們剛才新增的1:1列
+9. 接下來，將&quot;**image**&quot;拖曳到我們剛才新增的1:1列
 
    ![將影像元件拖曳到1:1列](assets/building-content-fragments-drag-image-onto-row.png)
 
-9. 上傳已提供的標誌影像。 按一下&#x200B;**「匯入媒體」按鈕**
+10. 按一下&#x200B;**「瀏覽」**&#x200B;以選取您已提供並已上傳至Assets的標誌影像。
 
-   ![匯入媒體按鈕以上傳標誌影像](assets/building-content-fragments-click-import-media-button.png)
+![按一下[瀏覽]按鈕以選取標誌影像](assets/building-content-fragments-click-browse-button.png)
 
-10. **上傳標誌：**&#x200B;從影像的Toolkit資料夾上傳標誌(*C5G-Logo.png*)，然後按[下一步]。
+11. 導覽至您的資料夾，按一下標誌影像(*C5G-Logo.png*)，然後按一下&#x200B;**Select**。
 
-![從Toolkit資料夾中選取C5G-Logo.png以上傳](assets/building-content-fragments-upload-logo-select-file.png)
+![從Assets資料夾中選取C5G-Logo.png](assets/building-content-fragments-select-logo-from-assets.png)
 
-![選取標誌上傳後按[下一步]](assets/building-content-fragments-upload-logo-click-next.png)
+12. 標誌已正確放置，但太大，需要重新調整大小。 若要調整標誌大小，請更新其屬性。 按一下右欄中的&#x200B;**樣式**&#x200B;索引標籤，並拖曳滑桿將寬度設定為40%，如下所示。
 
-1. 選取您已建立的&#x200B;**資產資料夾**，然後按一下&#x200B;**匯入**。 檔案會儲存在您的資料夾中。
-
-   ![選取建立的資產資料夾並按一下[匯入]](assets/building-content-fragments-select-asset-folder-import.png)
-
-1. 標誌已正確放置，但太大，需要重新調整大小。 若要調整標誌大小，請更新其屬性。 按一下&#x200B;**樣式標籤**，然後拖曳滑桿將寬度設定為40%，如下所示。
-
-   >[!NOTE]
-   >
-   >請注意，當切換按鈕開啟時，40數字代表%，而非畫素。 如果您想要絕對的畫素完美值，請將按鈕切換為px。
+>[!NOTE]
+>
+>請注意，當切換按鈕開啟時，40數字代表%，而非畫素。 如果您想要絕對的畫素完美值，請將按鈕切換為px。
 
 
 
-   ![樣式標籤寬度滑桿設為40%以調整標誌大小](assets/building-content-fragments-resize-logo-width-slider.png)
+![樣式標籤寬度滑桿設為40%以調整標誌大小](assets/building-content-fragments-resize-logo-width-slider.png)
 
-1. 按一下&#x200B;**「儲存」**，您的片段就會儲存。 您會在確認時收到綠色列通知。
+13. 按一下&#x200B;**「儲存」**，您的片段就會儲存。 您會在確認時收到綠色列通知。
 
-   儲存片段後![綠色確認列](assets/building-content-fragments-save-fragment-confirmation.png)
+儲存片段後![綠色確認列](assets/building-content-fragments-save-fragment-confirmation.png)
 
-1. 儲存的片段處於草稿模式。 您必須先發佈它才能使用。 按一下&#x200B;**上一步**&#x200B;按鈕。
+14. 儲存的片段處於草稿模式。 您必須先發佈它才能使用。 按一下&#x200B;**上一步**&#x200B;按鈕。
 
-   ![在發佈前離開草稿片段的「上一步」按鈕](assets/building-content-fragments-click-back-button-draft.png)
+![在發佈前離開草稿片段的「上一步」按鈕](assets/building-content-fragments-click-back-button-draft.png)
 
-1. 按一下&#x200B;**發佈**&#x200B;按鈕。 您看到訊息「正在發佈片段，這可能需要一些時間。 我們會在完成後通知。」 確認時。 您的片段已準備好用於建立範本。
+15. 按一下&#x200B;**發佈**&#x200B;按鈕。 您看到訊息「正在發佈片段，這可能需要一些時間。 我們會在完成後通知。」 確認時。 您的片段已準備好用於建立範本。
 
 ![發佈按鈕和發佈片段確認訊息](assets/building-content-fragments-click-publish-fragment-button.png)
 

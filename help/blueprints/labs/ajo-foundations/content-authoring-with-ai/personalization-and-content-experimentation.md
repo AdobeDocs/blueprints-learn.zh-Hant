@@ -7,9 +7,9 @@ exl-id: b79327e0-dfc4-49bf-a112-3675c825c479
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: a9a9e6b1a44f5f104e0454ab52da01fb47db425e
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1227'
 ht-degree: 0%
 ---
 
@@ -44,12 +44,12 @@ Adobe Journey Optimizer中的Personalization可讓您根據個別設定檔、行
 此部分練習可讓個人化保持簡單。 根據設定檔將名字和姓氏新增至電子郵件。 Personalization是以您定義的XDM個別設定檔結構描述所管理的設定檔資料為基礎。 XDM Individual Profile結構描述是您唯一可用來個人化Journey Optimizer內容的結構描述。
 
 1. 開啟在舊版模組中建立的電子郵件。
-2. 在主圖示題上方新增文字區塊，內容為： **嗨，**
+2. 新增文字&#x200B;**&quot;嗨，&quot;**，在標題正上方的主圖示題區塊中
 3. 按一下&#x200B;**個人化**&#x200B;圖示。
 
    電子郵件文字工具列中的![個人化圖示](assets/personalization-and-content-experimentation-click-personalization-icon.png)
 
-4. 搜尋&#x200B;**第一個名**&#x200B;**&#x200B;**。
+4. 搜尋&#x200B;**名字**。
 
    ![搜尋個人化面板中的First Name屬性](assets/personalization-and-content-experimentation-search-first-name-field.png)
 
@@ -102,7 +102,7 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
 
 為40歲以下的人建立另一個影像（請記住，您為40多歲的人建立了Firefly影像），並將其用於此練習。
 
-1. 選取現有的影像區塊。 （按一下影像）並按一下&#x200B;**條件式區塊**。
+1. Select現有的影像區塊。 （按一下影像）並按一下&#x200B;**條件式區塊**。
 2. 按一下&#x200B;**新增變體**。
 
    在條件影像區塊上新增![變體按鈕](assets/personalization-and-content-experimentation-click-add-variant-button.png)
@@ -116,13 +116,13 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
    ![建立新變體並將其重新命名為年齡低於40歲](assets/personalization-and-content-experimentation-create-variant-age-below-40.png)
 
 5. 您可能可以使用「20年前Firefly」之類的提示來建立影像。 但是，為了節省時間，我們的工具箱中已經有名為&quot;**variant-age-below-40.jpg**.
-6. 按一下影像並匯入媒體。
+6. 按一下影像並&#x200B;**Select資產**。
 
-   ![按一下40以下變體的影像和匯入媒體](assets/personalization-and-content-experimentation-click-image-import-media.png)
+   ![按一下影像並Select40以下變體的資產](assets/personalization-and-content-experimentation-click-image-import-media.png)
 
-7. 選取&#x200B;**variant-age-below-40.jpg**&#x200B;影像。 按一下[下一步] **&#x200B;**&#x200B;匯入它，最後再按資料夾中的[匯入] **&#x200B;**&#x200B;（預設應該已在資料夾中）。
+7. 在您的Assets資料夾中，使用Select **variant-age-below-40.jpg**&#x200B;影像，然後按一下&#x200B;**Select**。
 
-   ![選取並匯入variant-age-below-40.jpg image](assets/personalization-and-content-experimentation-select-below-40-image.png)
+   ![選取並匯入variant-age-below-40.jpg image](assets/personalization-and-content-experimentation-select-below-40-image-from-assets.png)
 
 8. 嘗試在變體之間切換，您會看到套用的不同影像。
 
@@ -137,7 +137,7 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
 
 ## 「40歲以上」的邏輯
 
-1. 選取並將&#x200B;**年齡暫留在40**&#x200B;個變體以上。
+1. Select並將&#x200B;**年齡暫留在40**&#x200B;變體以上。
 2. 按一下&#x200B;**條件式邏輯**&#x200B;圖示。
 
    40歲以上變體的![條件邏輯圖示](assets/personalization-and-content-experimentation-click-conditional-logic-icon.png)
@@ -155,14 +155,14 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
 
 7. 為條件命名： **年齡超過40**
 8. 新增說明 — &quot;**40**&#x200B;歲以上人員的影像變體&quot;
-9. 按一下&#x200B;**新增→選取**。
+9. 按一下&#x200B;**新增Select**。
 
-![按一下[新增]，然後選取40歲以上的年齡條件](assets/personalization-and-content-experimentation-click-add-select-age-above-40.png)
+![按一下「新增」，然後按一下40歲以上年齡的Select條件](assets/personalization-and-content-experimentation-click-add-select-age-above-40.png)
 
 
 ## 「40歲以下」的邏輯
 
-1. 選取並暫留&#x200B;**40**&#x200B;區段以下的年齡。
+1. Select並將&#x200B;**年齡暫留在40**&#x200B;區段以下。
 2. 重複這些步驟，但將邏輯變更為：
    - **birthYear >= 1986**
 
@@ -170,9 +170,9 @@ Adobe Journey Optimizer中的動態內容可讓您建立順暢地因應對象需
 
 3. 為條件命名： **年齡低於40**
 4. 新增說明。 &quot;**低於40**&#x200B;的人員的影像變體&quot;
-5. 按一下&#x200B;**新增→選取**。
+5. 按一下&#x200B;**新增Select**。
 
-![按一下[新增]，然後選取40歲以下的年齡條件](assets/personalization-and-content-experimentation-click-add-select-age-below-40.png)
+![按一下[新增]，然後按一下40歲以下的Select條件](assets/personalization-and-content-experimentation-click-add-select-age-below-40.png)
 
 
 ## 驗證變體切換

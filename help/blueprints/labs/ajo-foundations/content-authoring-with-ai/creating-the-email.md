@@ -7,9 +7,9 @@ exl-id: bf823714-7298-48fc-a18b-9bf2462ae52e
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 6f54406bc0cda8e0fa5f028201a1ed1c2953e3cf
+source-git-commit: 8a0e198d205b9003fa61cf555debc6c20585b70a
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '656'
 ht-degree: 0%
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
    ![在歷程管理中建立行銷活動按鈕](assets/creating-the-email-click-create-campaign-button.png)
 
-3. Select &quot;**協調流程 — 行銷**&quot;並按一下&#x200B;**確認**
+3. Select &quot;**協調行銷與異動**&quot;並按一下&#x200B;**確認**
 
    ![選取協調流程 — 行銷並按一下確認](assets/creating-the-email-select-orchestration-marketing.png)
 
@@ -107,19 +107,15 @@ ht-degree: 0%
 
    ![正在從影像移除暫存來源URL](assets/creating-the-email-remove-temporary-source-url.png)
 
-3. 按一下&#x200B;**匯入媒體**
+3. 按一下&#x200B;**Select資產**
 
-   主圖影像的![匯入媒體按鈕](assets/creating-the-email-click-import-media.png)
+   ![Select主圖影像的資產按鈕](assets/creating-the-email-click-import-media.png)
 
-4. 從您的工具組上傳`hero.png`。 （您可以拖曳檔案）
+4. 從資料夾Select `hero.png`並按一下&#x200B;**Select**。
 
-   ![從Toolkit資料夾上傳hero.png](assets/creating-the-email-upload-hero-png-file.png)
+   ![從Assets資料夾中選取hero.png](assets/creating-the-email-select-hero-png-file.png)
 
-5. 按一下「**下一步，** Select **您的資產資料夾**」，然後按&#x200B;**匯入**
-
-   ![選取資產資料夾並按一下主圖影像的匯入](assets/creating-the-email-select-folder-import-hero.png)
-
-6. 您的電子郵件範本即將推出。 其外觀如下。 按一下&#x200B;**「儲存」**&#x200B;以儲存您的工作。
+5. 您的電子郵件範本即將推出。 其外觀如下。 按一下&#x200B;**「儲存」**&#x200B;以儲存您的工作。
 
 ![儲存前已使用新的主圖影像更新電子郵件範本](assets/creating-the-email-save-updated-email-template.png)
 
@@ -128,7 +124,7 @@ ht-degree: 0%
 
 ### 取代產品影像
 
-請更新所有的產品影像（toolkit資料夾中提供的影像），並為您的喜好新增圓框線。 您的電子郵件看起來比較好，沒有任何損毀的連結，如下所示。 對所有產品卡片重複此程式。
+請繼續更新所有產品影像（影像已提供在工具包資料夾中，您已將其上傳至Assets），並為您的喜好新增圓形邊框。 您的電子郵件看起來比較好，沒有任何損毀的連結，如下所示。 對所有產品卡片重複此程式。
 
 ![電子郵件包含所有產品影像已更新且沒有中斷連結](assets/creating-the-email-product-images-updated-no-broken-links.png)
 
