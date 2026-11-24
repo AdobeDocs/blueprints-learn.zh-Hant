@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 簡介
 
-在此單元中，您將使用Adobe Journey Optimizer中的模擬工具，以&#x200B;**兩個條件式變體**測試您的電子郵件。
+在此單元中，您將使用Adobe Journey Optimizer中的模擬工具，以&#x200B;**兩個條件式變體**&#x200B;測試您的電子郵件。
 這可讓您預覽不同客戶將會如何體驗您的個人化訊息，在啟動行銷活動之前確保準確性。
 
 您將會使用工具組中的範例測試設定檔檔案&#x200B;**sample.csv**。
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    在模擬面板中輸入資料的![上傳按鈕](assets/content-simulation-click-upload-input-data.png)
 
-3. 選擇&#x200B;**sample.csv**&#x200B;並按一下&#x200B;**繼續**。
+&#x200B;3. 選擇&#x200B;**sample.csv**&#x200B;並按一下&#x200B;**繼續**。
 
    ![選擇sample.csv並按一下[開啟]](assets/content-simulation-choose-sample-csv-continue.png)
 
@@ -64,7 +64,7 @@ AJO會處理檔案，並及時準備預覽。
 **預期結果：**
 
 - **Alex**→看到&#x200B;**變體1** （年齡超過40歲）
-按一下第一個變體上方的鉛筆圖示以**顯示變體詳細資料**
+按一下第一個變體上方的鉛筆圖示以&#x200B;**顯示變體詳細資料**
 
 ![按一下鉛筆圖示以檢視變體詳細資料](assets/content-simulation-click-pencil-icon.png)
 
@@ -72,7 +72,7 @@ AJO會處理檔案，並及時準備預覽。
 ![年齡超過40](assets/content-simulation-variant-1-age-above-40.png)歲的Alex設定檔轉譯Variant 1
 
 - **Jason** →看到&#x200B;**變體2** （年齡低於40歲）
-按一下第二個變體上方的鉛筆圖示以**顯示變體詳細資料**
+按一下第二個變體上方的鉛筆圖示以&#x200B;**顯示變體詳細資料**
 
 ![按一下鉛筆圖示以檢視變體詳細資料](assets/content-simulation-click-pencil-icon-for-second-variant.png)
 

@@ -193,13 +193,13 @@ AJO中的AI協助可幫助您建置更聰明、符合品牌規範的內容。
 
 ![Firefly影像設定，包括比例、內容型別和光線，然後產生](assets/ai-assistant-and-content-personalization-firefly-image-settings.png)
 
-3. Select右側的變數可加以檢視，並將&#x200B;**將**&#x200B;幾個我的最愛儲存到您的Assets資料夾，以供稍後使用。 您也可以按一下「產生更多」幾次以取得更多變化。
+&#x200B;3. Select右側的變數可加以檢視，並將&#x200B;**將**&#x200B;幾個我的最愛儲存到您的Assets資料夾，以供稍後使用。 您也可以按一下「產生更多」幾次以取得更多變化。
 
 ![瀏覽變數並儲存一些](assets/ai-assistant-and-content-personalization-browse-image-variations.png)
 
 ![儲存至您的Assets資料夾](assets/ai-assistant-and-content-personalization-save-image-variations-into-assets.png)
 
-4. 現在只要從影像產生介面&#x200B;**取消**&#x200B;即可。
+&#x200B;4. 現在只要從影像產生介面&#x200B;**取消**&#x200B;即可。
 
 
 
@@ -209,11 +209,11 @@ AJO中的AI協助可幫助您建置更聰明、符合品牌規範的內容。
 
 ![按一下影像區塊中的[瀏覽]](assets/ai-assistant-and-content-personalization-click-browse-in-image-block.png)
 
-2. Select您的其中一個變數並按一下&#x200B;**Select**
+&#x200B;2. Select您的其中一個變數並按一下&#x200B;**Select**
 
 ![Select您的其中一個變數](assets/ai-assistant-and-content-personalization-select-one-of-your-variations.png)
 
-3. Select右欄中的&#x200B;**樣式**&#x200B;索引標籤，並將圓角邊框半徑10套用至影像
+&#x200B;3. Select右欄中的&#x200B;**樣式**&#x200B;索引標籤，並將圓角邊框半徑10套用至影像
 
 ![具有圓形影像轉角的最終電子郵件區塊設計](assets/ai-assistant-and-content-personalization-final-block-design.png)
 

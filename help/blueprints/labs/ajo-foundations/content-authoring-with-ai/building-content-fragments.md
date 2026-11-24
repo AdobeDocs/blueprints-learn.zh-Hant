@@ -134,11 +134,11 @@ ht-degree: 0%
 
 ![按一下[瀏覽]按鈕以選取標誌影像](assets/building-content-fragments-click-browse-button.png)
 
-11. 導覽至您的資料夾，按一下標誌影像(*C5G-Logo.png*)，然後按一下&#x200B;**Select**。
+&#x200B;11. 導覽至您的資料夾，按一下標誌影像(*C5G-Logo.png*)，然後按一下&#x200B;**Select**。
 
 ![從Assets資料夾中選取C5G-Logo.png](assets/building-content-fragments-select-logo-from-assets.png)
 
-12. 標誌已正確放置，但太大，需要重新調整大小。 若要調整標誌大小，請更新其屬性。 按一下右欄中的&#x200B;**樣式**&#x200B;索引標籤，並拖曳滑桿將寬度設定為40%，如下所示。
+&#x200B;12. 標誌已正確放置，但太大，需要重新調整大小。 若要調整標誌大小，請更新其屬性。 按一下右欄中的&#x200B;**樣式**&#x200B;索引標籤，並拖曳滑桿將寬度設定為40%，如下所示。
 
 >[!NOTE]
 >
@@ -148,15 +148,15 @@ ht-degree: 0%
 
 ![樣式標籤寬度滑桿設為40%以調整標誌大小](assets/building-content-fragments-resize-logo-width-slider.png)
 
-13. 按一下&#x200B;**「儲存」**，您的片段就會儲存。 您會在確認時收到綠色列通知。
+&#x200B;13. 按一下&#x200B;**「儲存」**，您的片段就會儲存。 您會在確認時收到綠色列通知。
 
 儲存片段後![綠色確認列](assets/building-content-fragments-save-fragment-confirmation.png)
 
-14. 儲存的片段處於草稿模式。 您必須先發佈它才能使用。 按一下&#x200B;**上一步**&#x200B;按鈕。
+&#x200B;14. 儲存的片段處於草稿模式。 您必須先發佈它才能使用。 按一下&#x200B;**上一步**&#x200B;按鈕。
 
 ![在發佈前離開草稿片段的「上一步」按鈕](assets/building-content-fragments-click-back-button-draft.png)
 
-15. 按一下&#x200B;**發佈**&#x200B;按鈕。 您看到訊息「正在發佈片段，這可能需要一些時間。 我們會在完成後通知。」 確認時。 您的片段已準備好用於建立範本。
+&#x200B;15. 按一下&#x200B;**發佈**&#x200B;按鈕。 您看到訊息「正在發佈片段，這可能需要一些時間。 我們會在完成後通知。」 確認時。 您的片段已準備好用於建立範本。
 
 ![發佈按鈕和發佈片段確認訊息](assets/building-content-fragments-click-publish-fragment-button.png)
 
