@@ -4,13 +4,11 @@ description: 瞭解如何透過匯入HTML並插入先前建立的標頭片段，
 doc-type: article
 solution: Experience Platform
 exl-id: e73f06b1-be8a-4096-949c-900db13db9f8
-source-git-commit: 0b33b2740ee7f5af73d64f217b4475650c1d28a0
+source-git-commit: 0ba4d425f258e4c02e1563cdec2da1f815bfcc65
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '842'
 ht-degree: 0%
-
 ---
-
 
 # 建立內容範本
 
@@ -77,7 +75,7 @@ ht-degree: 0%
    2. 自行撰寫程式碼
    3. 匯入HTML
 
-選取第三個選項。 按一下&#x200B;**匯入HTML**
+Select是第三個選項。 按一下&#x200B;**匯入HTML**
 
 
 
@@ -104,7 +102,7 @@ ht-degree: 0%
 
 ### 左側面板
 
-Adobe Journey Optimizer (AJO)中的「**結構**」和「**內容**」元件是設計電子郵件、登陸頁面和內容片段時所使用的基本元素。 結構會定義版面配置架構，而「內容」則會提供置於這些版面配置內的實際建置區塊。
+在「元件」索引標籤下方，Adobe Journey Optimizer (AJO)中的「**結構**」和「**內容**」元件是設計電子郵件、登入頁面和內容片段時所用的基本元素。 結構會定義版面配置架構，而「內容」則會提供置於這些版面配置內的實際建置區塊。
 
 Adobe Journey Optimizer中的內文區段是您的電子郵件或頁面內容的主要容器。 它是視覺設計空間的根目錄，其中所有結構元件（欄、版面）和內容元件（文字、影像、按鈕等） 是巢狀的。
 

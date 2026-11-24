@@ -7,9 +7,9 @@ exl-id: 1f30c920-7b2b-4343-b663-ebbed1ae4709
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 43a7d8153e8ad7e24162b9bb6c0d5bbcea784330
+source-git-commit: ea468b0eddaacdb7beaa1227c9c335371d089f34
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1311'
 ht-degree: 5%
 ---
 
@@ -91,19 +91,12 @@ AJO中的AI協助可幫助您建置更聰明、符合品牌規範的內容。
 
    >*為iPhone 17上市撰寫醒目的大標題。 將其保留在10個字以內*
 
-6. 按一下「文字設定」以變更色調和通訊策略。 將通訊策略變更為&#x200B;**FOMO （害怕遺漏）**，語言變更為&#x200B;**英文**，音調變更為&#x200B;**令人興奮**。 縮小撥號，使用較短的版本。
+6. 按一下「文字設定」以變更色調和通訊策略。 將通訊策略變更為&#x200B;**FOMO （害怕遺漏）**，語言變更為&#x200B;**英文**，音調變更為&#x200B;**令人興奮**。
 
    ![文字設定面板，已選取FOMO通訊策略與激勵的語調](assets/ai-assistant-and-content-personalization-text-settings-fomo-tone.png)
 
 7. 按一下&#x200B;**產生**&#x200B;按鈕
-8. 檢閱並選取最佳版本，
-9. 如果您的文字很長，請使用滑桿來&#x200B;**「較短文字」**&#x200B;並重新產生文字。
-
-
-
-   ![用來重新產生較短標題的較短文字滑桿](assets/ai-assistant-and-content-personalization-shorter-text-slider.png)
-
-10. 在您滿意文字後，請按一下&#x200B;**Select**
+8. 檢閱並&#x200B;**Select**&#x200B;最佳版本
 
 ![選取產生的主圖示題文字](assets/ai-assistant-and-content-personalization-select-generated-hero-text.png)
 
@@ -123,17 +116,17 @@ AJO中的AI協助可幫助您建置更聰明、符合品牌規範的內容。
 
    ![評估前已使用品牌准則自動選取原始內容](assets/ai-assistant-and-content-personalization-evaluate-brand-alignment.png)
 
-4. 如預期，您會注意到許多違反品牌指引的錯誤。 雖然可以使用AI來更正這些問題，但在此情況下，您不會修訂現有材料。 反之，您可以原樣保留內容，並從頭開始建立完全符合品牌標準的新內容。
+4. 如預期，您會注意到許多違反品牌指引的錯誤。 雖然這些可以使用AI更正，但在此情況下，您不需要修訂此預留位置文字。 您而是可以為說明輸入所有新內容。
 
    ![AI評估結果顯示品牌指引違規](assets/ai-assistant-and-content-personalization-brand-guideline-errors.png)
 
-5. 使用為您使用AI產生的新段落，並出現以下提示。 您可以使用以下提示對說明文字使用相同的方法。
+5. 您可以遵循與先前的主圖示題相同的步驟，使用下列提示或……以節省時間，您也可以使用下面提供的現成段落取代預留位置文字。
 
 提示：
 
 >*為新的iPhone 17撰寫引人入勝的產品說明。 強調最令人印象深刻的功能，例如進階攝影機、電池續航力及效能。 基調應該是優質、令人興奮、且易於讓廣大觀眾理解的。 將其保留在3個句子以下。*
 
-為了節省時間，已為您建立文字。 複製並貼到下方以取得您的文字。
+已準備好的段落：
 
 >探索iPhone 17™ — 配備進階攝影機，提供令人驚豔的像片、持續一整天的電池供電時間，以及超快效能，讓您保持領先地位。 不要錯過這種創新的體驗。
 
@@ -171,7 +164,7 @@ AJO中的AI協助可幫助您建置更聰明、符合品牌規範的內容。
 
    已針對影像參考樣式選取![連線5G品牌指引](assets/ai-assistant-and-content-personalization-select-brand-guideline-reference.png)
 
-3. 按一下上傳影像
+3. 按一下&#x200B;**上傳影像**
 
    ![Firefly參考樣式面板中的「上傳影像」按鈕](assets/ai-assistant-and-content-personalization-click-upload-image.png)
 
@@ -186,43 +179,45 @@ AJO中的AI協助可幫助您建置更聰明、符合品牌規範的內容。
 
 ## 選擇影像設定
 
-選擇您的&#x200B;**影像設定**：
+向下捲動左欄，然後按一下&#x200B;**其他設定**
+
+![Select mre設定](assets/ai-assistant-and-content-personalization-select-more-settings.png)
 
 1. 選擇下列設定：
    - **比例：**&#x200B;橫向(4:3)
    - **內容型別：**&#x200B;像片
    - **色彩和色調：**&#x200B;冷色調
    - **照明：**&#x200B;戲劇性的照明
-1. 按&#x200B;**產生**&#x200B;按鈕
+
+2. 按&#x200B;**產生**&#x200B;按鈕
 
 ![Firefly影像設定，包括比例、內容型別和光線，然後產生](assets/ai-assistant-and-content-personalization-firefly-image-settings.png)
 
+&#x200B;3. Select右側的變數可加以檢視，並將&#x200B;**將**&#x200B;幾個我的最愛儲存到您的Assets資料夾，以供稍後使用。 您也可以按一下「產生更多」幾次以取得更多變化。
 
-## Select並插入產生的影像
+![瀏覽變數並儲存一些](assets/ai-assistant-and-content-personalization-browse-image-variations.png)
 
-1. 檢查產生的所有影像，以檢閱Firefly結果。
+![儲存至您的Assets資料夾](assets/ai-assistant-and-content-personalization-save-image-variations-into-assets.png)
 
-   ![檢閱Firefly產生的影像結果](assets/ai-assistant-and-content-personalization-review-firefly-results.png)
+&#x200B;4. 現在只要從影像產生介面&#x200B;**取消**&#x200B;即可。
 
-2. 按一下&#x200B;**Select**&#x200B;以取得您想要的選取影像。
 
-   ![選取想要產生的Firefly影像](assets/ai-assistant-and-content-personalization-select-firefly-image.png)
-
-3. 如果以上傳模式提示，請按一下&#x200B;**下一步**。
-
-   ![上傳模組提示以按[下一步]](assets/ai-assistant-and-content-personalization-upload-modal-next.png)
-
-4. 然後按一下&#x200B;**匯入**。
-
-![匯入按鈕以插入選取的影像](assets/ai-assistant-and-content-personalization-click-import-button.png)
 
 ## 完成區塊設計
 
-套用圓角邊框半徑10，只要您有時間就可以顯得新潮。
+1. 回到電子郵件設計工具介面，按一下影像區塊上的&#x200B;**瀏覽**。
 
-經過幾次反複和變異後，您便擁有最終設計。 您的最終版面配置類似於範例。
+![按一下影像區塊中的[瀏覽]](assets/ai-assistant-and-content-personalization-click-browse-in-image-block.png)
+
+&#x200B;2. Select您的其中一個變數並按一下&#x200B;**Select**
+
+![Select您的其中一個變數](assets/ai-assistant-and-content-personalization-select-one-of-your-variations.png)
+
+&#x200B;3. Select右欄中的&#x200B;**樣式**&#x200B;索引標籤，並將圓角邊框半徑10套用至影像
 
 ![具有圓形影像轉角的最終電子郵件區塊設計](assets/ai-assistant-and-content-personalization-final-block-design.png)
+
+經過幾次反複和變異後，您便擁有最終設計。 您的最終版面配置會類似於上述範例。
 
 此時，您應該對使用AI加速及提升內容建立速度感到有信心。
 
