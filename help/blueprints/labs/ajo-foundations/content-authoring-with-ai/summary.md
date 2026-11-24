@@ -7,9 +7,9 @@ exl-id: 8c4d8a66-190d-4714-95a3-37955b1e1a8c
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 54e14714c83a6815926f12db8aad1476b0266d7b
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '263'
 ht-degree: 0%
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 - 您可以在Adobe Journey Optimizer (AJO)中自信地建立、設定和測試品牌通訊。
 - 使用&#x200B;**片段**&#x200B;和&#x200B;**範本**&#x200B;可簡化內容建立作業，並確保訊息間的品牌一致性。
-- **AI小幫手**&#x200B;和&#x200B;**品牌一致性分數**&#x200B;工具有助於在啟動之前維持語調、品質和合規性。
+- **AI**&#x200B;和&#x200B;**品牌一致性分數**&#x200B;工具有助於在啟動之前維持語調、品質和合規性。
 - **Personalization**&#x200B;可讓您根據即時設定檔屬性和行為一對一地量身打造內容。
 - **動態內容**&#x200B;可使用目標規則與條件式邏輯，在不同區段間啟用訊息變化。
 - 使用&#x200B;**模擬設定檔**&#x200B;進行測試，並執行&#x200B;**法規遵循檢查**，以確保訊息正確轉譯，並在上線前符合品牌標準。
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 - [ ]您是否建立並設定Connection 5G品牌？
 - [ ]您是否建置並套用頁首/頁尾片段？
-- [ ]您是否使用AI助理產生內容？
+- [ ]您是否使用AI產生內容？
 - [ ]您是否執行品牌一致性檢查並解決問題？
 - [ ]您是否使用測試設定檔測試您的歷程並檢閱電子郵件？
 

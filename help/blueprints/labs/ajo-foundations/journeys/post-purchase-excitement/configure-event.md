@@ -51,7 +51,7 @@ ht-degree: 0%
 
    欄位輸入方塊中的![鉛筆圖示](assets/configure-event-click-fields-pencil-icon.png)
 
-5. 選取下列欄位以新增至事件，完成時按一下&#x200B;**確定**&#x200B;按鈕
+5. Select下列欄位可新增至事件，完成時請按一下&#x200B;**確定**&#x200B;按鈕
    - `Event Type (eventType)`
    - `Order ID (orderID)`
 

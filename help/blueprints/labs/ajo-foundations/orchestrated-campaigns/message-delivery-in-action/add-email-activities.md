@@ -7,9 +7,9 @@ exl-id: e911a251-9f9f-484c-a2de-101b0fc2c417
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 526f170e52c0479362c6a72bfd4cbeadc825d464
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '462'
 ht-degree: 0%
 ---
 
@@ -69,17 +69,13 @@ ht-degree: 0%
 
    ![按一下向左鍵結束電子郵件Designer](assets/add-email-activities-exit-email-designer.png)
 
-10. 確認對話方塊隨即出現，請按一下&#x200B;**儲存並關閉**&#x200B;按鈕
-
-![含有[儲存並關閉]按鈕的確認對話方塊](assets/add-email-activities-save-and-close-dialog.png)
-
-1. 檢閱電子郵件屬性和動作，包括新增至電子郵件內文的文字。 按一下&#x200B;**向左箭頭**&#x200B;以導覽回促銷活動畫布
+10. 檢閱電子郵件屬性和動作，包括新增至電子郵件內文的文字。 按一下&#x200B;**向左箭頭**&#x200B;以導覽回促銷活動畫布
 
 ![導覽回促銷活動畫布](assets/add-email-activities-back-to-campaign-canvas.png)
 
 ## 新增底部分支電子郵件活動
 
-回到行銷活動畫布，按一下底部流程的&#x200B;**+**，並從&#x200B;**頻道活動**&#x200B;中選取&#x200B;**電子郵件**。 請遵循上述相同步驟（步驟2至11），但以下步驟除外：
+回到行銷活動畫布，按一下底部流程的&#x200B;**+**，並從&#x200B;**頻道活動**&#x200B;中選取&#x200B;**電子郵件**。 請遵循上述相同步驟（步驟2至10），但以下步驟除外：
 
 - 針對&#x200B;**電子郵件**&#x200B;活動，使用Target Dimension **將標籤重新命名為**&#x200B;電子郵件
 - 在電子郵件設定中，選擇&#x200B;**關聯式電子郵件**&#x200B;電子郵件通道設定

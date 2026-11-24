@@ -7,9 +7,9 @@ exl-id: fc3dbfb9-b44b-4866-acc9-398a8b52f2b9
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 929145a02a8a2f3505e9e12ff605c500eac1cc79
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '429'
 ht-degree: 0%
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 0%
 
 ## 測試歷程
 
-1. 如果您沒有看到歷程清單，請按一下左側邊欄上的&#x200B;**歷程**&#x200B;和&#x200B;**瀏覽標籤**
+1. 如果您尚未在歷程中，如果沒有看到歷程清單，請按一下左側邊欄中的&#x200B;**歷程**&#x200B;和&#x200B;**瀏覽標籤**
 2. 按一下您的&#x200B;**歷程**&#x200B;以開啟
-3. 按一下&#x200B;**警示**&#x200B;並確保沒有錯誤（警告正常）
+3. 先按一下右上方的&#x200B;**驗證**&#x200B;按鈕
+
+   ![按一下以驗證歷程](assets/test-journey-click-validate.png)
+
+4. 按一下&#x200B;**警示**&#x200B;並確保沒有錯誤（警告正常）
 
    ![開啟歷程後，警示面板未顯示任何錯誤](assets/test-journey-alerts-no-errors.png)
 
@@ -33,9 +37,11 @@ ht-degree: 0%
    >
    >表示電子郵件變體缺少選擇退出連結
 
-4. 按一下&#x200B;**模擬**，然後在左側選取&#x200B;**測試模式**
+5. 按一下&#x200B;**模擬**，然後選取&#x200B;**測試模式**
 
-   在左側[模擬]下選取了![測試模式](assets/test-journey-select-test-mode.png)
+   ![按模擬](assets/test-journey-select-test-mode.png)
+
+   在快顯視窗中選取![測試模式](assets/test-journey-select-test-mode-in-popup.png)
 
 
 
@@ -45,11 +51,11 @@ ht-degree: 0%
 
 
 
-5. 按一下&#x200B;**觸發事件**&#x200B;並填寫這些屬性：
+6. 按一下左側的&#x200B;**觸發事件**，並填寫下列屬性：
    - **事件型別**： `orders.shipped`
    - **個人電子郵件**： `henry.creel@emailsim.io`
    - **訂單識別碼**： `123`
-6. 按一下&#x200B;**傳送** （請注意，按一下傳送後需要幾秒鐘才會回應）
+7. 按一下&#x200B;**傳送** （請注意，按一下傳送後需要幾秒鐘才會回應）
 
    ![觸發已填寫的事件表單並按一下](assets/test-journey-trigger-event-send.png)傳送
 
@@ -65,7 +71,7 @@ ht-degree: 0%
 
 
 
-7. 在&#x200B;**結果** ->下，按一下左側的&#x200B;**顯示記錄檔**
+8. 在&#x200B;**結果** ->下，按一下左側的&#x200B;**顯示記錄檔**
 
 觸發測試事件後![在結果底下顯示記錄選項](assets/test-journey-show-log-results.png)
 
@@ -106,12 +112,12 @@ ht-degree: 0%
 
 
 
-1. **關閉**&#x200B;瀏覽器&#x200B;**標籤**
+1. **關閉**&#x200B;記錄檔的瀏覽器&#x200B;**標籤**
 1. 右上角的&#x200B;**關閉測試模式**
 
    右上方的![關閉測試模式按鈕](assets/test-journey-close-test-mode.png)
 
-1. 按一下右上角的&#x200B;**發佈**&#x200B;歷程
+1. 再次按一下&#x200B;**驗證**，然後在右上方&#x200B;**發佈**&#x200B;歷程
 
    右上角歷程的![發佈按鈕](assets/test-journey-publish-journey.png)
 

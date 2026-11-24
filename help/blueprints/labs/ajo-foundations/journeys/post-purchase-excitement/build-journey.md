@@ -97,7 +97,7 @@ ht-degree: 0%
 
 4. 在出現的強制回應視窗中，展開&#x200B;**Context** -> **orderShipped** -> **Order**，然後選取&#x200B;**訂單ID (orderID)**，然後按一下&#x200B;**確定**
 
-   ![從orderShipped訂單內容欄位中選取訂單識別碼(orderID)](assets/build-journey-select-order-id-context-field.png)
+   來自orderShipped訂單內容欄位的![Select訂單識別碼(orderID)](assets/build-journey-select-order-id-context-field.png)
 
 5. 回到右側邊欄，確定「逾時」或錯誤的選項為&#x200B;**未勾選**，然後按一下&#x200B;**儲存按鈕**
 
@@ -111,9 +111,9 @@ ht-degree: 0%
 
    ![在GetShippingDetails動作之後，將[動作]節點拖曳到畫布上](assets/build-journey-drag-email-action-onto-canvas.png)
 
-2. 選取行銷動作的&#x200B;**電子郵件**，然後選取&#x200B;**新增**。
+2. Select **電子郵件**&#x200B;以取得行銷動作，然後&#x200B;**新增**。
 
-   ![選取電子郵件作為行銷動作，然後按一下[新增]](assets/build-journey-select-email-marketing-action.png)
+   ![Select電子郵件作為行銷動作，然後按一下[新增]](assets/build-journey-select-email-marketing-action.png)
 
 3. 在右側邊欄中，按一下&#x200B;**設定動作**
 
@@ -209,7 +209,7 @@ ht-degree: 0%
 2. 按一下空白文字方塊，然後在左側邊欄中向下展開至&#x200B;**內容** -> **orderShipped** -> **\_dep**，然後按一下&#x200B;**personalEmail**&#x200B;欄位。  然後按一下「**確定」按鈕**
 （請注意，以底線開頭的租使用者名稱稱可能因您的環境而不同，在此範例中為_dep。）
 
-   ![選取orderShipped內容_dep](assets/build-journey-select-personalemail-context-field.png)下的personalEmail欄位
+   ![Select orderShipped內容_dep](assets/build-journey-select-personalemail-context-field.png)下的personalEmail欄位
 
    >[!WARNING]
    >

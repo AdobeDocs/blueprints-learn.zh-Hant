@@ -7,9 +7,9 @@ exl-id: bb85e0aa-554e-4527-bf91-e7fd4f69ce71
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: bcc54e483dddad7417ee13613323198c8ce12bec
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '667'
 ht-degree: 5%
 ---
 
@@ -51,6 +51,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
+>您的環境的子網域可能不同。
 >如果您是自控進度的，而且沒有預先布建的子網域，請在這裡選取您自己的委派給Adobe的子網域，而非`email.dep-labs.com`。 請參閱[設定](../../setup.md)以瞭解如何委派一個。
 
 ## 設定IP集區詳細資料

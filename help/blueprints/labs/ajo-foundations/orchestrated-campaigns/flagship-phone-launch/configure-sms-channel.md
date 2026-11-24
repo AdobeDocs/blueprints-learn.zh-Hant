@@ -7,9 +7,9 @@ exl-id: 63c994f2-4b6b-42e9-aa82-cb6697390a08
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: 1d6ba1444c119437eb8a86d5c4a1050d56d16023
+source-git-commit: 027d4d3373dd18fa4711e5c403465c03d374de70
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '678'
 ht-degree: 0%
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 導覽至管道
 
 1. 在Adobe Journey Optimizer中，移至&#x200B;**管理** -> **管道**&#x200B;功能表。
-1. 選取&#x200B;**API認證**→**SMS設定**。
+1. Select **SMS設定** → **API認證**。
 1. 按一下&#x200B;**建立API認證**。
 
 ![在「管理管道」功能表中瀏覽到「簡訊設定」和API認證](assets/configure-sms-channel-navigate-to-sms-settings.png "瀏覽到「簡訊設定」")
@@ -106,11 +106,11 @@ Twilio廠商的![SMS API認證欄位](assets/configure-sms-channel-enter-api-cre
 3. 在子區段&#x200B;**執行維度**&#x200B;下方，確定下列設定如下：
    - **傳遞訊息給每：** `Target + Secondary Dimension`
    - **設定檔目標Dimension：** `dep-rel: Customer Account - customer_id`
-   - **次要Dimension：** `Customer Line`
+   - **次要Dimension：** `dep-rel: Customer Line`
 
    ![目標與次要維度的執行維度設定](assets/configure-sms-channel-execution-dimension-setup.png)
 
-   ![在執行維度設定「次要Dimension」](assets/configure-sms-channel-secondary-dimension-detail.png "次要Dimension")中，將次要Dimension設為「客戶行」
+   ![次要Dimension設定為dep-rel：執行維度設定「次要Dimension」中的客戶行](assets/configure-sms-channel-secondary-dimension-detail.png "次要Dimension")
 
    >[!NOTE]
    >
