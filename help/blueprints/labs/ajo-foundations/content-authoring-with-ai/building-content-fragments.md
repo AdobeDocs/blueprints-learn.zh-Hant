@@ -4,7 +4,7 @@ description: 瞭解如何將電子郵件設計分成可重複使用的片段（�
 doc-type: article
 solution: Experience Platform
 exl-id: 253a9332-dc08-420d-ac11-2bf342f0dc38
-source-git-commit: d935e9a5179579e35c6aa5fe9e495f5bba1a1b03
+source-git-commit: 71aca15b0ca0257d3ea0a84b52fed76ca4e372f0
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 0%
@@ -132,33 +132,31 @@ ht-degree: 0%
 
 10. 按一下&#x200B;**「瀏覽」**&#x200B;以選取您已提供並已上傳至Assets的標誌影像。
 
-![按一下[瀏覽]按鈕以選取標誌影像](assets/building-content-fragments-click-browse-button.png)
+    ![按一下[瀏覽]按鈕以選取標誌影像](assets/building-content-fragments-click-browse-button.png)
 
-&#x200B;11. 導覽至您的資料夾，按一下標誌影像(*C5G-Logo.png*)，然後按一下&#x200B;**Select**。
+11. 導覽至您的資料夾，按一下標誌影像(*C5G-Logo.png*)，然後按一下&#x200B;**Select**。
 
-![從Assets資料夾中選取C5G-Logo.png](assets/building-content-fragments-select-logo-from-assets.png)
+    ![從Assets資料夾中選取C5G-Logo.png](assets/building-content-fragments-select-logo-from-assets.png)
 
-&#x200B;12. 標誌已正確放置，但太大，需要重新調整大小。 若要調整標誌大小，請更新其屬性。 按一下右欄中的&#x200B;**樣式**&#x200B;索引標籤，並拖曳滑桿將寬度設定為40%，如下所示。
+12. 標誌已正確放置，但太大，需要重新調整大小。 若要調整標誌大小，請更新其屬性。 按一下右欄中的&#x200B;**樣式**&#x200B;索引標籤，並拖曳滑桿將寬度設定為40%，如下所示。
 
->[!NOTE]
->
->請注意，當切換按鈕開啟時，40數字代表%，而非畫素。 如果您想要絕對的畫素完美值，請將按鈕切換為px。
+    >[!NOTE]
+    >
+    >請注意，當切換按鈕開啟時，40數字代表%，而非畫素。 如果您想要絕對的畫素完美值，請將按鈕切換為px。
 
+    ![樣式標籤寬度滑桿設為40%以調整標誌大小](assets/building-content-fragments-resize-logo-width-slider.png)
 
+13. 按一下&#x200B;**「儲存」**，您的片段就會儲存。 您會在確認時收到綠色列通知。
 
-![樣式標籤寬度滑桿設為40%以調整標誌大小](assets/building-content-fragments-resize-logo-width-slider.png)
+    儲存片段後![綠色確認列](assets/building-content-fragments-save-fragment-confirmation.png)
 
-&#x200B;13. 按一下&#x200B;**「儲存」**，您的片段就會儲存。 您會在確認時收到綠色列通知。
+14. 儲存的片段處於草稿模式。 您必須先發佈它才能使用。 按一下&#x200B;**上一步**&#x200B;按鈕。
 
-儲存片段後![綠色確認列](assets/building-content-fragments-save-fragment-confirmation.png)
+    ![在發佈前離開草稿片段的「上一步」按鈕](assets/building-content-fragments-click-back-button-draft.png)
 
-&#x200B;14. 儲存的片段處於草稿模式。 您必須先發佈它才能使用。 按一下&#x200B;**上一步**&#x200B;按鈕。
+15. 按一下&#x200B;**發佈**&#x200B;按鈕。 您看到訊息「正在發佈片段，這可能需要一些時間。 我們會在完成後通知。」 確認時。 您的片段已準備好用於建立範本。
 
-![在發佈前離開草稿片段的「上一步」按鈕](assets/building-content-fragments-click-back-button-draft.png)
-
-&#x200B;15. 按一下&#x200B;**發佈**&#x200B;按鈕。 您看到訊息「正在發佈片段，這可能需要一些時間。 我們會在完成後通知。」 確認時。 您的片段已準備好用於建立範本。
-
-![發佈按鈕和發佈片段確認訊息](assets/building-content-fragments-click-publish-fragment-button.png)
+    ![發佈按鈕和發佈片段確認訊息](assets/building-content-fragments-click-publish-fragment-button.png)
 
 您看到狀態變更為&#x200B;**「即時」**。 此時，您已完成建置標題片段，此片段將用於下一個步驟。
 

@@ -7,7 +7,7 @@ exl-id: 1f30c920-7b2b-4343-b663-ebbed1ae4709
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
-source-git-commit: ea468b0eddaacdb7beaa1227c9c335371d089f34
+source-git-commit: 71aca15b0ca0257d3ea0a84b52fed76ca4e372f0
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 5%
@@ -191,31 +191,29 @@ AJO中的AI協助可幫助您建置更聰明、符合品牌規範的內容。
 
 2. 按&#x200B;**產生**&#x200B;按鈕
 
-![Firefly影像設定，包括比例、內容型別和光線，然後產生](assets/ai-assistant-and-content-personalization-firefly-image-settings.png)
+   ![Firefly影像設定，包括比例、內容型別和光線，然後產生](assets/ai-assistant-and-content-personalization-firefly-image-settings.png)
 
-&#x200B;3. Select右側的變數可加以檢視，並將&#x200B;**將**&#x200B;幾個我的最愛儲存到您的Assets資料夾，以供稍後使用。 您也可以按一下「產生更多」幾次以取得更多變化。
+3. Select右側的變數可加以檢視，並將&#x200B;**將**&#x200B;幾個我的最愛儲存到您的Assets資料夾，以供稍後使用。 您也可以按一下「產生更多」幾次以取得更多變化。
 
-![瀏覽變數並儲存一些](assets/ai-assistant-and-content-personalization-browse-image-variations.png)
+   ![瀏覽變數並儲存一些](assets/ai-assistant-and-content-personalization-browse-image-variations.png)
 
-![儲存至您的Assets資料夾](assets/ai-assistant-and-content-personalization-save-image-variations-into-assets.png)
+   ![儲存至您的Assets資料夾](assets/ai-assistant-and-content-personalization-save-image-variations-into-assets.png)
 
-&#x200B;4. 現在只要從影像產生介面&#x200B;**取消**&#x200B;即可。
-
-
+4. 現在只要從影像產生介面&#x200B;**取消**&#x200B;即可。
 
 ## 完成區塊設計
 
 1. 回到電子郵件設計工具介面，按一下影像區塊上的&#x200B;**瀏覽**。
 
-![按一下影像區塊中的[瀏覽]](assets/ai-assistant-and-content-personalization-click-browse-in-image-block.png)
+   ![按一下影像區塊中的[瀏覽]](assets/ai-assistant-and-content-personalization-click-browse-in-image-block.png)
 
-&#x200B;2. Select您的其中一個變數並按一下&#x200B;**Select**
+2. Select您的其中一個變數並按一下&#x200B;**Select**
 
-![Select您的其中一個變數](assets/ai-assistant-and-content-personalization-select-one-of-your-variations.png)
+   ![Select您的其中一個變數](assets/ai-assistant-and-content-personalization-select-one-of-your-variations.png)
 
-&#x200B;3. Select右欄中的&#x200B;**樣式**&#x200B;索引標籤，並將圓角邊框半徑10套用至影像
+3. Select右欄中的&#x200B;**樣式**&#x200B;索引標籤，並將圓角邊框半徑10套用至影像
 
-![具有圓形影像轉角的最終電子郵件區塊設計](assets/ai-assistant-and-content-personalization-final-block-design.png)
+   ![具有圓形影像轉角的最終電子郵件區塊設計](assets/ai-assistant-and-content-personalization-final-block-design.png)
 
 經過幾次反複和變異後，您便擁有最終設計。 您的最終版面配置會類似於上述範例。
 
